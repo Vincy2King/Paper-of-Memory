@@ -1,0 +1,59 @@
+{
+  "project_name": "Memory Papers Tracker",
+  "project_description": "A GitHub-friendly tracker for memory-related papers with one page of introduction per paper.",
+  "lookback_days": 7,
+  "keywords": [
+    "memory benchmark",
+    "memory benchmarks",
+    "long-term memory",
+    "episodic memory",
+    "working memory",
+    "agent memory",
+    "memory-augmented",
+    "memory augmented",
+    "retrieval memory",
+    "conversational memory",
+    "context memory",
+    "persistent memory",
+    "memory retrieval",
+    "memory compression",
+    "memory reasoning"
+  ],
+  "highlight_keywords": [
+    "benchmark",
+    "agent",
+    "long-term",
+    "episodic",
+    "retrieval",
+    "compression",
+    "conversation",
+    "context"
+  ],
+  "sources": {
+    "arxiv": {
+      "enabled": true,
+      "lookback_days": 7,
+      "max_results_per_keyword": 25,
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.IR",
+        "cs.LG",
+        "cs.HC"
+      ]
+    },
+    "openreview": {
+      "enabled": true,
+      "lookback_days": 14,
+      "max_results_per_keyword": 30,
+      "group_ids": []
+    },
+    "acl_anthology": {
+      "enabled": true,
+      "lookback_days": 30,
+      "max_items": 1000,
+      "feed_url": "https://aclanthology.org/papers/index.xml"
+    }
+  },
+  "tracked_topics_note": "Edit this file to narrow or expand what counts as memory-related."
+}

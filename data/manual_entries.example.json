@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Example Memory Paper Title",
+    "source": "OpenReview",
+    "venue": "ICLR 2026",
+    "url": "https://openreview.net/forum?id=example",
+    "published": "2026-04-24",
+    "authors": ["Author A", "Author B"],
+    "abstract": "This paper studies long-term memory for language agents and introduces a benchmark plus a retrieval-based memory module.",
+    "tags": ["agent", "benchmark", "long-term"],
+    "matched_keywords": ["agent memory", "long-term memory"],
+    "intro": "这是一条示例数据。你可以直接替换成真正想收录的论文。"
+  }
+]
