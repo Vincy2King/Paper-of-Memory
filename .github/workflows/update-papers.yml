@@ -1,6 +1,14 @@
 name: Update Memory Papers
 
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/update-papers.yml"
+      - "scripts/**"
+      - "config/**"
+      - "data/manual_entries.json"
   workflow_dispatch:
   schedule:
     - cron: "0 */12 * * *"
@@ -34,4 +42,3 @@ jobs:
           fi
           git commit -m "chore: update memory papers"
           git push
-
