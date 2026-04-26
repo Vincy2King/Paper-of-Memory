@@ -39,18 +39,28 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **65**
-- Last generated: **2026-04-25**
+- Total tracked papers: **75**
+- Last generated: **2026-04-26**
 
 ## Papers by Source
 
 - arXiv: **45**
-- OpenReview: **20**
+- OpenReview: **30**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-04-25 | OpenReview | [WebCoach: Self-Evolving Web Agents with Cross-Session Memory Guidance](content/papers/webcoach-self-evolving-web-agents-with-cross-session-memory-guidance.md) | agent, benchmark, context |
+| 2026-04-25 | OpenReview | [PROCED-MEM: BENCHMARKING PROCEDURAL MEMORY RETRIEVAL IN LANGUAGE AGENTS ACROSS DOMAINS](content/papers/proced-mem-benchmarking-procedural-memory-retrieval-in-language-agents-across-do.md) | agent, benchmark, context |
+| 2026-04-25 | OpenReview | [MemoGraph: Augmenting LLMs with Explicit Episodic Memory for Multi-step Mathematical Reasoning](content/papers/memograph-augmenting-llms-with-explicit-episodic-memory-for-multi-step-mathemati.md) | agent, benchmark, context |
+| 2026-04-25 | OpenReview | [MEMORY IS RECONSTRUCTED, NOT RETRIEVED: GRAPH MEMORY FOR LLM AGENTS](content/papers/memory-is-reconstructed-not-retrieved-graph-memory-for-llm-agents.md) | agent, benchmark, context |
+| 2026-04-25 | OpenReview | [Learning Safe Robot Planning from Unsafe Experiences: An Episodic Memory Approach for LLM-based Agents](content/papers/learning-safe-robot-planning-from-unsafe-experiences-an-episodic-memory-approach.md) | agent, episodic, retrieval |
+| 2026-04-25 | OpenReview | [Episodic Memory from Compression Boundaries in Latent Representation Space](content/papers/episodic-memory-from-compression-boundaries-in-latent-representation-space.md) | agent, compression, context |
+| 2026-04-25 | OpenReview | [ENGRAM: Effective, Lightweight Memory Orchestration for Conversational Agents](content/papers/engram-effective-lightweight-memory-orchestration-for-conversational-agents.md) | agent, benchmark, context |
+| 2026-04-25 | OpenReview | [Diagnosing Retrieval vs. Utilization Bottlenecks in LLM Agent Memory](content/papers/diagnosing-retrieval-vs-utilization-bottlenecks-in-llm-agent-memory.md) | agent, context, retrieval |
+| 2026-04-25 | OpenReview | [CloneMem: Benchmarking Long-Term Memory for AI Clones](content/papers/clonemem-benchmarking-long-term-memory-for-ai-clones.md) | agent, benchmark, conversation |
+| 2026-04-25 | OpenReview | [AMA-Bench: Evaluating Long-Horizon Memory for Agentic Applications](content/papers/ama-bench-evaluating-long-horizon-memory-for-agentic-applications.md) | agent, benchmark, retrieval |
 | 2026-04-23 | arXiv | [Working Memory Constraints Scaffold Learning in Transformers under Data Scarcity](content/papers/working-memory-constraints-scaffold-learning-in-transformers-under-data-scarcity.md) | working memory |
 | 2026-04-23 | arXiv | [Spatial Metaphors for LLM Memory: A Critical Analysis of the MemPalace Architecture](content/papers/spatial-metaphors-for-llm-memory-a-critical-analysis-of-the-mempalace-architectu.md) | benchmark, long-term, retrieval |
 | 2026-04-23 | arXiv | [Seeing Further and Wider: Joint Spatio-Temporal Enlargement for Micro-Video Popularity Prediction](content/papers/seeing-further-and-wider-joint-spatio-temporal-enlargement-for-micro-video-popul.md) | benchmark, retrieval |
@@ -61,16 +71,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-04-23 | arXiv | [Beyond N-gram: Data-Aware X-GRAM Extraction for Efficient Embedding Parameter Scaling](content/papers/beyond-n-gram-data-aware-x-gram-extraction-for-efficient-embedding-parameter-sca.md) | context, retrieval |
 | 2026-04-23 | arXiv | [AEL: Agent Evolving Learning for Open-Ended Environments](content/papers/ael-agent-evolving-learning-for-open-ended-environments.md) | agent, benchmark, retrieval |
 | 2026-04-22 | arXiv | [To Know is to Construct: Schema-Constrained Generation for Agent Memory](content/papers/to-know-is-to-construct-schema-constrained-generation-for-agent-memory.md) | agent, benchmark, context |
-| 2026-04-22 | arXiv | [Self-Aware Vector Embeddings for Retrieval-Augmented Generation: A Neuroscience-Inspired Framework for Temporal, Confidence-Weighted, and Relational Knowledge](content/papers/self-aware-vector-embeddings-for-retrieval-augmented-generation-a-neuroscience-i.md) | agent, benchmark, context |
-| 2026-04-22 | arXiv | [SCM: Sleep-Consolidated Memory with Algorithmic Forgetting for Large Language Models](content/papers/scm-sleep-consolidated-memory-with-algorithmic-forgetting-for-large-language-mod.md) | benchmark, context, conversation |
-| 2026-04-22 | arXiv | [Memory-Augmented LLM-based Multi-Agent System for Automated Feature Generation on Tabular Data](content/papers/memory-augmented-llm-based-multi-agent-system-for-automated-feature-generation-o.md) | agent |
-| 2026-04-22 | arXiv | [Masked by Consensus: Disentangling Privileged Knowledge in LLM Correctness](content/papers/masked-by-consensus-disentangling-privileged-knowledge-in-llm-correctness.md) | retrieval |
-| 2026-04-22 | arXiv | [Lightweight LLM Agent Memory with Small Language Models](content/papers/lightweight-llm-agent-memory-with-small-language-models.md) | agent, context, conversation |
-| 2026-04-22 | arXiv | [HiGMem: A Hierarchical and LLM-Guided Memory System for Long-Term Conversational Agents](content/papers/higmem-a-hierarchical-and-llm-guided-memory-system-for-long-term-conversational-.md) | agent, benchmark, context |
-| 2026-04-22 | arXiv | [Dual-Cluster Memory Agent: Resolving Multi-Paradigm Ambiguity in Optimization Problem Solving](content/papers/dual-cluster-memory-agent-resolving-multi-paradigm-ambiguity-in-optimization-pro.md) | agent, benchmark |
-| 2026-04-22 | arXiv | [Automatic Ontology Construction Using LLMs as an External Layer of Memory, Verification, and Planning for Hybrid Intelligent Systems](content/papers/automatic-ontology-construction-using-llms-as-an-external-layer-of-memory-verifi.md) | agent, benchmark, context |
-| 2026-04-22 | arXiv | [Ask Only When Needed: Proactive Retrieval from Memory and Skills for Experience-Driven Lifelong Agents](content/papers/ask-only-when-needed-proactive-retrieval-from-memory-and-skills-for-experience-d.md) | agent, episodic, retrieval |
-| 2026-04-22 | arXiv | [AAC: Admissible-by-Architecture Differentiable Landmark Compression for ALT](content/papers/aac-admissible-by-architecture-differentiable-landmark-compression-for-alt.md) | benchmark, compression |
 
 ## Suggested GitHub Setup
 

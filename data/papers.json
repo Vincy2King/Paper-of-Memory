@@ -1,5 +1,356 @@
 [
   {
+    "abstract": "Multimodal LLM-powered agents have recently demonstrated impressive capabilities in web navigation, enabling agents to complete complex browsing tasks across diverse domains. However, current agents struggle with repetitive errors and lack the ability to learn from past experiences across sessions, limiting their long-term robustness and sample efficiency. We introduce WebCoach, a model-agnostic self-evolving framework that equips web browsing agents with persistent cross-session memory, enabling improved long-term planning, reflection, and continual learning without retraining. WebCoach consists of three key components: (1) a WebCondenser, which standardizes raw navigation logs into concise summaries; (2) an External Memory Store, which organizes complete trajectories as episodic experiences; and (3) a Coach, which retrieves relevant experiences based on similarity and recency, and decides whether to inject task-specific advice into the agent via runtime hooks. This design empowers web agents to access long-term memory beyond their native context window, improving robustness in complex browsing tasks. Moreover, WebCoach achieves self-evolution by continuously curating episodic memory from new navigation trajectories, enabling agents to improve over time without retraining. Evaluations on the WebVoyager benchmark demonstrate that WebCoach consistently improves the performance of browser-use agents across three different LLM backbones. With a 38B model, it increases task success rates from 47% to 61% while reducing or maintaining the average number of steps. Notably, smaller base models with WebCoach achieve performance comparable to the same web agent using GPT-4o.",
+    "authors": [
+      "Genglin Liu",
+      "Shijie Geng",
+      "Sha Li",
+      "Hejie Cui",
+      "Sarah Zhang",
+      "Xin Liu",
+      "Tianyi Liu"
+    ],
+    "categories": [
+      "ICLR.cc/2026/Workshop/MemAgent/-/Submission"
+    ],
+    "id": "openreview:FDrGfjwQM5",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, episodic` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ICLR 2026 Workshop MemAgents` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Multimodal LLM-powered agents have recently demonstrated impressive capabilities in web navigation, enabling agents to complete complex browsing tasks across diverse domains.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, current agents struggle with repetitive errors and lack the ability to learn from past experiences across sessions, limiting their long-term robustness and sample efficiency.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "episodic memory",
+      "long-term memory"
+    ],
+    "one_liner": "Multimodal LLM-powered agents have recently demonstrated impressive capabilities in web navigation, enabling agents to complete complex browsing tasks across diverse domains.",
+    "published": "2026-03-03",
+    "relevance": "- 来源：OpenReview\n- Venue：ICLR 2026 Workshop MemAgents\n- 高亮主题命中：agent, benchmark, context, episodic, long-term\n- 检索关键词命中：episodic memory, long-term memory\n- 来源分类信息：ICLR.cc/2026/Workshop/MemAgent/-/Submission",
+    "slug": "webcoach-self-evolving-web-agents-with-cross-session-memory-guidance",
+    "source": "OpenReview",
+    "source_key": "FDrGfjwQM5",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "episodic",
+      "long-term"
+    ],
+    "title": "WebCoach: Self-Evolving Web Agents with Cross-Session Memory Guidance",
+    "updated": "2026-04-25",
+    "url": "https://openreview.net/forum?id=FDrGfjwQM5",
+    "venue": "ICLR 2026 Workshop MemAgents"
+  },
+  {
+    "abstract": "We introduce Proced-Mem, a benchmark for procedural memory retrieval in language agents with two sub-domains: text-based household tasks (ALFWorld) and real computer environments (OSWorld). Evaluating retrieval independently of downstream execution is critical because current agent evaluations conflate retrieval with planning and execution, masking whether agents retrieve relevant procedures or succeed despite poor memory access. Proced-Mem evaluates up to seven methods across text, visual, and lexical modalities, using an LLM-as-judge protocol for ALFWorld and a leave-one-out protocol with hierarchical ground truth at two granularity levels for OSWorld. Across both sub-domains, we find a generalization cliff (30–42% MAP degradation on novel contexts) and a granularity-method reversal where visual features rank first at coarse retrieval but last at fine-grained procedural matching. Proced-Mem provides the first diagnostic framework for identifying such failure modes, enabling the principled design of retrieval systems that generalize across granularity levels and modalities.",
+    "authors": [
+      "Ishant Kohar",
+      "Aswanth Krishnan"
+    ],
+    "categories": [
+      "ICLR.cc/2026/Workshop/MemAgent/-/Submission"
+    ],
+    "id": "openreview:4YhU3BZgoZ",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, retrieval` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ICLR 2026 Workshop MemAgents Poster` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：We introduce Proced-Mem, a benchmark for procedural memory retrieval in language agents with two sub-domains: text-based household tasks (ALFWorld) and real computer environments (OSWorld).\n\n进一步看，论文的核心做法或实验重点可以概括为：Evaluating retrieval independently of downstream execution is critical because current agent evaluations conflate retrieval with planning and execution, masking whether agents retrieve relevant procedures or succeed...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory retrieval"
+    ],
+    "one_liner": "We introduce Proced-Mem, a benchmark for procedural memory retrieval in language agents with two sub-domains: text-based household tasks (ALFWorld) and real computer...",
+    "published": "2026-03-03",
+    "relevance": "- 来源：OpenReview\n- Venue：ICLR 2026 Workshop MemAgents Poster\n- 高亮主题命中：agent, benchmark, context, retrieval\n- 检索关键词命中：memory retrieval\n- 来源分类信息：ICLR.cc/2026/Workshop/MemAgent/-/Submission",
+    "slug": "proced-mem-benchmarking-procedural-memory-retrieval-in-language-agents-across-do",
+    "source": "OpenReview",
+    "source_key": "4YhU3BZgoZ",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "retrieval"
+    ],
+    "title": "PROCED-MEM: BENCHMARKING PROCEDURAL MEMORY RETRIEVAL IN LANGUAGE AGENTS ACROSS DOMAINS",
+    "updated": "2026-04-25",
+    "url": "https://openreview.net/forum?id=4YhU3BZgoZ",
+    "venue": "ICLR 2026 Workshop MemAgents Poster"
+  },
+  {
+    "abstract": "Large Language Models (LLMs) fundamentally struggle with complex mathematical reasoning due to the volatility of their implicit parametric memory, which leads to context drift and hallucination. Existing paradigms, relying on linear generation or static retrieval, fail to maintain a precise, persistent record of the evolving proof state. To address this, we propose \\textbf{MemoGraph}, a neuro-symbolic framework that augments LLMs with an explicit episodic memory layer. We formulate reasoning as the dynamic maintenance of a heterogeneous graph, enabling state-aware reading that utilizes graph-structural encoding to retrieve relevant principles from a verified semantic memory. Furthermore, we introduce a write-gating verification module to intercept invalid deductions before they are consolidated into the reasoning context. Empirical evaluations across multiple benchmarks demonstrate that MemoGraph significantly outperforms strong baselines in both accuracy and robustness by ensuring memory integrity, establishing a scalable paradigm for trustworthy reasoning agents.",
+    "authors": [
+      "Yutong Li",
+      "Yitian Zhou",
+      "Guo Chen",
+      "Xudong Wang",
+      "Chenghao Li",
+      "Chaoning Zhang"
+    ],
+    "categories": [
+      "ICLR.cc/2026/Workshop/MemAgent/-/Submission"
+    ],
+    "id": "openreview:HaCqQlEjCN",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, episodic` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ICLR 2026 Workshop MemAgents` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Large Language Models (LLMs) fundamentally struggle with complex mathematical reasoning due to the volatility of their implicit parametric memory, which leads to context drift and hallucination.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing paradigms, relying on linear generation or static retrieval, fail to maintain a precise, persistent record of the evolving proof state.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "episodic memory"
+    ],
+    "one_liner": "Large Language Models (LLMs) fundamentally struggle with complex mathematical reasoning due to the volatility of their implicit parametric memory, which leads to context drift...",
+    "published": "2026-03-03",
+    "relevance": "- 来源：OpenReview\n- Venue：ICLR 2026 Workshop MemAgents\n- 高亮主题命中：agent, benchmark, context, episodic, retrieval\n- 检索关键词命中：episodic memory\n- 来源分类信息：ICLR.cc/2026/Workshop/MemAgent/-/Submission",
+    "slug": "memograph-augmenting-llms-with-explicit-episodic-memory-for-multi-step-mathemati",
+    "source": "OpenReview",
+    "source_key": "HaCqQlEjCN",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "episodic",
+      "retrieval"
+    ],
+    "title": "MemoGraph: Augmenting LLMs with Explicit Episodic Memory for Multi-step Mathematical Reasoning",
+    "updated": "2026-04-25",
+    "url": "https://openreview.net/forum?id=HaCqQlEjCN",
+    "venue": "ICLR 2026 Workshop MemAgents"
+  },
+  {
+    "abstract": "Despite recent progress, LLM agents still struggle with reasoning over long interaction histories. While current memory-augmented agents rely on a static ``retrieve-then-reason'' paradigm, this rigid pipeline design prevents them from dynamically adapting memory access to intermediate evidence discovered during inference. To bridge this gap, we propose MRAgent, a framework that combines an associative memory graph with an active reconstruction mechanism. We represent memory as a Cue–Tag–Content graph, where associative tags serve as semantic bridges connecting fine-grained cues to memory contents. Operating on this structure, our active reconstruction mechanism integrates LLM reasoning directly into memory access, allowing the agent to iteratively explore and prune retrieval paths based on accumulated evidence. This ensures that memory retrieval is dynamically adapted to the reasoning context while avoiding combinatorial explosion caused by unconstrained expansion. Experiments on the LoCoMo benchmark and LongMemEval benchmark demonstrate significant improvements over strong baselines (up to $23\\%$), while substantially reducing token and runtime cost, highlighting the effectiveness of active and associative reconstruction for long-horizon memory reasoning.",
+    "authors": [
+      "Shuo Ji",
+      "Yibo Li",
+      "Bryan Hooi"
+    ],
+    "categories": [
+      "ICLR.cc/2026/Workshop/MemAgent/-/Submission"
+    ],
+    "id": "openreview:YPoHy6lgKP",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, retrieval` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ICLR 2026 Workshop MemAgents` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Despite recent progress, LLM agents still struggle with reasoning over long interaction histories.\n\n进一步看，论文的核心做法或实验重点可以概括为：While current memory-augmented agents rely on a static ``retrieve-then-reason'' paradigm, this rigid pipeline design prevents them from dynamically adapting memory access to intermediate evidence discovered during...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory reasoning",
+      "memory retrieval",
+      "memory-augmented"
+    ],
+    "one_liner": "Despite recent progress, LLM agents still struggle with reasoning over long interaction histories.",
+    "published": "2026-03-03",
+    "relevance": "- 来源：OpenReview\n- Venue：ICLR 2026 Workshop MemAgents\n- 高亮主题命中：agent, benchmark, context, retrieval\n- 检索关键词命中：memory reasoning, memory retrieval, memory-augmented\n- 来源分类信息：ICLR.cc/2026/Workshop/MemAgent/-/Submission",
+    "slug": "memory-is-reconstructed-not-retrieved-graph-memory-for-llm-agents",
+    "source": "OpenReview",
+    "source_key": "YPoHy6lgKP",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "retrieval"
+    ],
+    "title": "MEMORY IS RECONSTRUCTED, NOT RETRIEVED: GRAPH MEMORY FOR LLM AGENTS",
+    "updated": "2026-04-25",
+    "url": "https://openreview.net/forum?id=YPoHy6lgKP",
+    "venue": "ICLR 2026 Workshop MemAgents"
+  },
+  {
+    "abstract": "LLM-based robotic agents can generate unsafe commands that harm humans, objects, or the environment. We propose an episodic safety memory system that learns to filter harmful instructions by storing and retrieving past violation experiences. Our memory architecture maintains episodic stores of unsafe instances and consolidates recurring patterns into semantic constraints. Real-time memory retrieval blocks similar unsafe commands before execution. Preliminary experiments on ConceptGraphs-based planning show 94% safety rate (vs. 52% baseline) while maintaining 97% task success, suggesting that learning from unsafe experiences can enable safer LLM-based robotic agents.",
+    "authors": [
+      "Hang Zhao",
+      "Jing Du",
+      "Shengwei An"
+    ],
+    "categories": [
+      "ICLR.cc/2026/Workshop/MemAgent/-/Submission"
+    ],
+    "id": "openreview:KrmyJtyE6k",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, episodic, retrieval` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ICLR 2026 Workshop MemAgents` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：LLM-based robotic agents can generate unsafe commands that harm humans, objects, or the environment.\n\n进一步看，论文的核心做法或实验重点可以概括为：We propose an episodic safety memory system that learns to filter harmful instructions by storing and retrieving past violation experiences.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "episodic memory",
+      "memory retrieval"
+    ],
+    "one_liner": "LLM-based robotic agents can generate unsafe commands that harm humans, objects, or the environment.",
+    "published": "2026-03-03",
+    "relevance": "- 来源：OpenReview\n- Venue：ICLR 2026 Workshop MemAgents\n- 高亮主题命中：agent, episodic, retrieval\n- 检索关键词命中：episodic memory, memory retrieval\n- 来源分类信息：ICLR.cc/2026/Workshop/MemAgent/-/Submission",
+    "slug": "learning-safe-robot-planning-from-unsafe-experiences-an-episodic-memory-approach",
+    "source": "OpenReview",
+    "source_key": "KrmyJtyE6k",
+    "tags": [
+      "agent",
+      "episodic",
+      "retrieval"
+    ],
+    "title": "Learning Safe Robot Planning from Unsafe Experiences: An Episodic Memory Approach for LLM-based Agents",
+    "updated": "2026-04-25",
+    "url": "https://openreview.net/forum?id=KrmyJtyE6k",
+    "venue": "ICLR 2026 Workshop MemAgents"
+  },
+  {
+    "abstract": "Long-term memory in Large Language Model (LLM) agents requires selective persistence: only a subset of interactions should be consolidated beyond the current context window. Existing memory systems rely on heuristic importance rules or similarity-based novelty, which remain external to the model’s internal computation. We propose a geometric principle for memory formation: episodic memory can emerge from compression failure in latent representation space. We approximate the manifold of routine LLM activations using Sparse Autoencoders (SAEs) and define representational surprise as reconstruction error relative to this learned manifold. Deviations from routine structure yield elevated residuals, providing an unsupervised, model-internal signal for memory writing. We demonstrate this principle through ReSuME, a surprise-gated memory mechanism that commits turns to memory only when normalized reconstruction error exceeds a calibrated threshold. In long-horizon multi-turn dialogue settings, representational surprise separates routine, critical, and out-of-distribution states, and achieves a superior performance–memory trade-off compared to heuristic and similarity-based baselines under fixed budgets. Covariance-aware normalization further enables robust cross-domain calibration. These results suggest that episodic memory gating in neural agents can be grounded in intrinsic latent geometry rather than externally engineered rules.",
+    "authors": [
+      "David Oneil Campos Ferreira",
+      "Priscila Rocha Maia Freitas Ribeiro",
+      "EMANUEL BORGES PASSINATO",
+      "Diogo Fernandes Costa Silva",
+      "Arlindo Rodrigues Galvão Filho"
+    ],
+    "categories": [
+      "ICLR.cc/2026/Workshop/MemAgent/-/Submission"
+    ],
+    "id": "openreview:En9aRT4uz8",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, compression, context, episodic` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ICLR 2026 Workshop MemAgents Oral` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Long-term memory in Large Language Model (LLM) agents requires selective persistence: only a subset of interactions should be consolidated beyond the current context window.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing memory systems rely on heuristic importance rules or similarity-based novelty, which remain external to the model’s internal computation.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "episodic memory",
+      "long-term memory"
+    ],
+    "one_liner": "Long-term memory in Large Language Model (LLM) agents requires selective persistence: only a subset of interactions should be consolidated beyond the current context window.",
+    "published": "2026-03-03",
+    "relevance": "- 来源：OpenReview\n- Venue：ICLR 2026 Workshop MemAgents Oral\n- 高亮主题命中：agent, compression, context, episodic, long-term\n- 检索关键词命中：episodic memory, long-term memory\n- 来源分类信息：ICLR.cc/2026/Workshop/MemAgent/-/Submission",
+    "slug": "episodic-memory-from-compression-boundaries-in-latent-representation-space",
+    "source": "OpenReview",
+    "source_key": "En9aRT4uz8",
+    "tags": [
+      "agent",
+      "compression",
+      "context",
+      "episodic",
+      "long-term"
+    ],
+    "title": "Episodic Memory from Compression Boundaries in Latent Representation Space",
+    "updated": "2026-04-25",
+    "url": "https://openreview.net/forum?id=En9aRT4uz8",
+    "venue": "ICLR 2026 Workshop MemAgents Oral"
+  },
+  {
+    "abstract": "Large language models (LLMs) deployed in user-facing applications require long-horizon consistency: the capacity to remember prior interactions, respect user preferences, and ground reasoning in past events. However, contemporary memory systems often adopt complex architectures such as knowledge graphs, multi-stage retrieval, and operating-system–style schedulers, which introduce engineering complexity and reproducibility challenges. We present ENGRAM, a lightweight state-of-the-art memory system that organizes conversation into three canonical memory types—episodic, semantic, and procedural—through a single router and retriever. Each user turn is converted into typed memory records with normalized schemas and embeddings and persisted in a database. At query time, the system retrieves top-k dense neighbors per type, merges results with simple set operations, and provides relevant evidence as context to the model. ENGRAM attains state-of-the-art results on the LoCoMo benchmark, a realistic multi-session conversational question-answering (QA) suite for long-horizon memory, and exceeds the full-context baseline by 15 absolute points on LongMemEval, an extended-horizon conversational benchmark, while using only $\\approx 1\\%$% of the tokens. Our results suggest that careful memory typing and straightforward dense retrieval enable effective long-term memory management in language models, challenging the trend toward architectural complexity in this domain.",
+    "authors": [
+      "Daivik Patel",
+      "Shrenik Patel"
+    ],
+    "categories": [
+      "ICLR.cc/2026/Workshop/MemAgent/-/Submission"
+    ],
+    "id": "openreview:qajz4UkgIw",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, conversation` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ICLR 2026 Workshop MemAgents` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Large language models (LLMs) deployed in user-facing applications require long-horizon consistency: the capacity to remember prior interactions, respect user preferences, and ground reasoning in past events.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, contemporary memory systems often adopt complex architectures such as knowledge graphs, multi-stage retrieval, and operating-system–style schedulers, which introduce engineering complexity and reproducibility...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "long-term memory"
+    ],
+    "one_liner": "Large language models (LLMs) deployed in user-facing applications require long-horizon consistency: the capacity to remember prior interactions, respect user preferences, and...",
+    "published": "2026-03-03",
+    "relevance": "- 来源：OpenReview\n- Venue：ICLR 2026 Workshop MemAgents\n- 高亮主题命中：agent, benchmark, context, conversation, episodic, long-term\n- 检索关键词命中：long-term memory\n- 来源分类信息：ICLR.cc/2026/Workshop/MemAgent/-/Submission",
+    "slug": "engram-effective-lightweight-memory-orchestration-for-conversational-agents",
+    "source": "OpenReview",
+    "source_key": "qajz4UkgIw",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "conversation",
+      "episodic",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "ENGRAM: Effective, Lightweight Memory Orchestration for Conversational Agents",
+    "updated": "2026-04-25",
+    "url": "https://openreview.net/forum?id=qajz4UkgIw",
+    "venue": "ICLR 2026 Workshop MemAgents"
+  },
+  {
+    "abstract": "Memory-augmented LLM agents store and retrieve information from prior interactions, yet the relative importance of how memories are written versus how they are retrieved remains unclear. We introduce a diagnostic framework that analyzes how performance differences manifest across write strategies, retrieval methods, and memory utilization behavior, and apply it to a $3 \\times 3$ study crossing three write strategies (raw chunks, Mem0-style fact extraction, MemGPT-style summarization) with three retrieval methods (cosine, BM25, hybrid reranking). On LoCoMo, retrieval method is the dominant factor: average accuracy spans $20$ points across retrieval methods ($57.1\\%$ to $77.2\\%$) but only $3$-$8$ points across write strategies. Raw chunked storage, which requires zero LLM calls, matches or outperforms expensive lossy alternatives, suggesting that current memory pipelines may discard useful context that downstream retrieval mechanisms fail to compensate for. Failure analysis shows that performance breakdowns most often manifest at the retrieval stage rather than at utilization. We argue that, under current retrieval practices, improving retrieval quality yields larger gains than increasing write-time sophistication.",
+    "authors": [
+      "Boqin Yuan",
+      "Yue Su",
+      "Kun Yao"
+    ],
+    "categories": [
+      "ICLR.cc/2026/Workshop/MemAgent/-/Submission"
+    ],
+    "id": "openreview:cxYbqAtBIz",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, context, retrieval` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ICLR 2026 Workshop MemAgents Poster` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Memory-augmented LLM agents store and retrieve information from prior interactions, yet the relative importance of how memories are written versus how they are retrieved remains unclear.\n\n进一步看，论文的核心做法或实验重点可以概括为：We introduce a diagnostic framework that analyzes how performance differences manifest across write strategies, retrieval methods, and memory utilization behavior, and apply it to a $3 \\times 3$ study crossing three...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory",
+      "memory-augmented"
+    ],
+    "one_liner": "Memory-augmented LLM agents store and retrieve information from prior interactions, yet the relative importance of how memories are written versus how they are retrieved remains...",
+    "published": "2026-03-03",
+    "relevance": "- 来源：OpenReview\n- Venue：ICLR 2026 Workshop MemAgents Poster\n- 高亮主题命中：agent, context, retrieval\n- 检索关键词命中：agent memory, memory-augmented\n- 来源分类信息：ICLR.cc/2026/Workshop/MemAgent/-/Submission",
+    "slug": "diagnosing-retrieval-vs-utilization-bottlenecks-in-llm-agent-memory",
+    "source": "OpenReview",
+    "source_key": "cxYbqAtBIz",
+    "tags": [
+      "agent",
+      "context",
+      "retrieval"
+    ],
+    "title": "Diagnosing Retrieval vs. Utilization Bottlenecks in LLM Agent Memory",
+    "updated": "2026-04-25",
+    "url": "https://openreview.net/forum?id=cxYbqAtBIz",
+    "venue": "ICLR 2026 Workshop MemAgents Poster"
+  },
+  {
+    "abstract": "AI Clones aim to simulate an individual’s thoughts and behaviors to enable long-term, personalized interaction, placing stringent demands on memory systems to model experiences, emotions, and opinions over time. Existing memory benchmarks primarily rely on user–agent conversational histories, which are temporally fragmented and insufficient for capturing continuous life trajectories. We introduce CloneMem, a benchmark for evaluating long-term memory in AI Clone scenarios grounded in non-conversational digital traces, including diaries, social media posts, and emails, spanning one to three years. CloneMem} adopts a top-down data construction framework to ensure longitudinal coherence and defines tasks that assess an agent’s ability to track evolving personal states. Experiments show that current memory mechanisms struggle in this setting, highlighting open challenges for life-grounded personalized AI. Code and dataset are available at https://anonymous.4open.science/r/CloneMem-C6E1",
+    "authors": [
+      "Sen Hu",
+      "Zhiyu Zhang",
+      "YUXIANG WEI",
+      "Xueran Han",
+      "Zhenheng Tang",
+      "Ronghao Chen",
+      "Huacan Wang"
+    ],
+    "categories": [
+      "ICLR.cc/2026/Workshop/MemAgent/-/Submission"
+    ],
+    "id": "openreview:iC2umYHSKW",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, conversation, long-term` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ICLR 2026 Workshop MemAgents` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：AI Clones aim to simulate an individual’s thoughts and behaviors to enable long-term, personalized interaction, placing stringent demands on memory systems to model experiences, emotions, and opinions over time.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing memory benchmarks primarily rely on user–agent conversational histories, which are temporally fragmented and insufficient for capturing continuous life trajectories.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "long-term memory",
+      "memory benchmark",
+      "memory benchmarks"
+    ],
+    "one_liner": "AI Clones aim to simulate an individual’s thoughts and behaviors to enable long-term, personalized interaction, placing stringent demands on memory systems to model experiences,...",
+    "published": "2026-03-03",
+    "relevance": "- 来源：OpenReview\n- Venue：ICLR 2026 Workshop MemAgents\n- 高亮主题命中：agent, benchmark, conversation, long-term\n- 检索关键词命中：long-term memory, memory benchmark, memory benchmarks\n- 来源分类信息：ICLR.cc/2026/Workshop/MemAgent/-/Submission",
+    "slug": "clonemem-benchmarking-long-term-memory-for-ai-clones",
+    "source": "OpenReview",
+    "source_key": "iC2umYHSKW",
+    "tags": [
+      "agent",
+      "benchmark",
+      "conversation",
+      "long-term"
+    ],
+    "title": "CloneMem: Benchmarking Long-Term Memory for AI Clones",
+    "updated": "2026-04-25",
+    "url": "https://openreview.net/forum?id=iC2umYHSKW",
+    "venue": "ICLR 2026 Workshop MemAgents"
+  },
+  {
+    "abstract": "Large Language Models (LLMs) are deployed as autonomous agents in increasingly complex applications, where enabling long horizon memory is critical for achieving strong performance. However, a significant gap exists between practical applications and current evaluation standards for agent memory: existing benchmarks primarily focus on dialogue centric, human agent interactions. In reality, agent memory consists of a continuous stream of agent environment interactions that are primarily composed of machine generated representations. To bridge this gap, we introduce AMA Bench (Agent Memory with Any Length) to evaluate long horizon memory for LLMs in real agentic applications. It features two key components: (1) a set of real world agentic trajectories across representative agentic applications paired with expert curated QA, and (2) a set of synthetic agentic trajectories that scale to arbitrary horizons paired with rule based QA. Our comprehensive study shows that existing memory systems underperform on AMA Bench primarily because they suffer from a loss of causality and objective information, and are constrained by the lossy nature of similarity based retrieval employed by many memory systems. To address these limitations, we propose AMA Agent, an effective memory system featuring a causality graph and tool augmented retrieval. Our results demonstrate that AMA Agent achieves 57.22% average accuracy on AMA Bench, surpassing the strongest memory system baselines by 11.16%.",
+    "authors": [
+      "Yujie Zhao",
+      "Boqin Yuan",
+      "Junbo Huang",
+      "Haocheng Yuan",
+      "Zhongming Yu",
+      "Lanxiang Hu",
+      "Haozhou Xu",
+      "Abhilash Shankarampeta",
+      "Zimeng Huang",
+      "Wentao Ni",
+      "Yuandong Tian",
+      "Jishen Zhao"
+    ],
+    "categories": [
+      "ICLR.cc/2026/Workshop/MemAgent/-/Submission"
+    ],
+    "id": "openreview:GoSVL7mLcM",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, retrieval` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ICLR 2026 Workshop MemAgents Oral` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Large Language Models (LLMs) are deployed as autonomous agents in increasingly complex applications, where enabling long horizon memory is critical for achieving strong performance.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, a significant gap exists between practical applications and current evaluation standards for agent memory: existing benchmarks primarily focus on dialogue centric, human agent interactions.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "Large Language Models (LLMs) are deployed as autonomous agents in increasingly complex applications, where enabling long horizon memory is critical for achieving strong...",
+    "published": "2026-03-03",
+    "relevance": "- 来源：OpenReview\n- Venue：ICLR 2026 Workshop MemAgents Oral\n- 高亮主题命中：agent, benchmark, retrieval\n- 检索关键词命中：agent memory\n- 来源分类信息：ICLR.cc/2026/Workshop/MemAgent/-/Submission",
+    "slug": "ama-bench-evaluating-long-horizon-memory-for-agentic-applications",
+    "source": "OpenReview",
+    "source_key": "GoSVL7mLcM",
+    "tags": [
+      "agent",
+      "benchmark",
+      "retrieval"
+    ],
+    "title": "AMA-Bench: Evaluating Long-Horizon Memory for Agentic Applications",
+    "updated": "2026-04-25",
+    "url": "https://openreview.net/forum?id=GoSVL7mLcM",
+    "venue": "ICLR 2026 Workshop MemAgents Oral"
+  },
+  {
     "abstract": "We investigate the integration of human-like working memory constraints into the Transformer architecture and implement several cognitively inspired attention variants, including fixed-width windows based and temporal decay based attention mechanisms. Our modified GPT-2 models are trained from scratch on developmentally plausible datasets (10M and 100M words). Performance is evaluated on grammatical judgment tasks (BLiMP) and alignment with human reading time data. Our results indicate that these cognitively-inspired constraints, particularly fixed-width attention, can significantly improve grammatical accuracy especially when training data is scarce. These constrained models also tend to show a stronger alignment with human processing metrics. The findings suggest that such constraints may serve as a beneficial inductive bias, guiding models towards more robust linguistic representations, especially in data-limited settings.",
     "authors": [
       "Pranava Madhyastha",
