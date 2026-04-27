@@ -351,6 +351,47 @@
     "venue": "ICLR 2026 Workshop MemAgents Oral"
   },
   {
+    "abstract": "Large token-indexed lookup tables provide a compute-decoupled scaling path, but their practical gains are often limited by poor parameter efficiency and rapid memory growth. We attribute these limitations to Zipfian under-training of the long tail, heterogeneous demand across layers, and \"slot collapse\" that produces redundant embeddings. To address this, we propose X-GRAM, a frequency-aware dynamic token-injection framework. X-GRAM employs hybrid hashing and alias mixing to compress the tail while preserving head capacity, and refines retrieved vectors via normalized SwiGLU ShortConv to extract diverse local n-gram features. These signals are integrated into attention value streams and inter-layer residuals using depth-aware gating, effectively aligning static memory with dynamic context. This design introduces a memory-centric scaling axis that decouples model capacity from FLOPs. Extensive evaluations at the 0.73B and 1.15B scales show that X-GRAM improves average accuracy by as much as 4.4 points over the vanilla backbone and 3.2 points over strong retrieval baselines, while using substantially smaller tables in the 50% configuration. Overall, by decoupling capacity from compute through efficient memory management, X-GRAM offers a scalable and practical paradigm for future memory-augmented architectures. Code aviliable in https://github.com/Longyichen/X-gram.",
+    "authors": [
+      "Yilong Chen",
+      "Yanxi Xie",
+      "Zitian Gao",
+      "He Xin",
+      "Yihao Xiao",
+      "Jason Klein Liu",
+      "Haoming Luo",
+      "Yifan Luo",
+      "Zhengmao Ye",
+      "Tingwen Liu",
+      "Xin Zhao",
+      "Ran Tao",
+      "Bryan Dai"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "id": "2604.21724v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `context, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Large token-indexed lookup tables provide a compute-decoupled scaling path, but their practical gains are often limited by poor parameter efficiency and rapid memory growth.\n\n进一步看，论文的核心做法或实验重点可以概括为：We attribute these limitations to Zipfian under-training of the long tail, heterogeneous demand across layers, and \"slot collapse\" that produces redundant embeddings.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory augmented",
+      "memory-augmented"
+    ],
+    "one_liner": "Large token-indexed lookup tables provide a compute-decoupled scaling path, but their practical gains are often limited by poor parameter efficiency and rapid memory growth.",
+    "published": "2026-04-23",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：context, retrieval\n- 检索关键词命中：memory augmented, memory-augmented\n- 来源分类信息：cs.CL",
+    "slug": "beyond-n-gram-data-aware-x-gram-extraction-for-efficient-embedding-parameter-sca",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2604.21724v2",
+    "tags": [
+      "context",
+      "retrieval"
+    ],
+    "title": "Beyond N-gram: Data-Aware X-GRAM Extraction for Efficient Embedding Parameter Scaling",
+    "updated": "2026-04-24",
+    "url": "http://arxiv.org/abs/2604.21724v2",
+    "venue": ""
+  },
+  {
     "abstract": "We investigate the integration of human-like working memory constraints into the Transformer architecture and implement several cognitively inspired attention variants, including fixed-width windows based and temporal decay based attention mechanisms. Our modified GPT-2 models are trained from scratch on developmentally plausible datasets (10M and 100M words). Performance is evaluated on grammatical judgment tasks (BLiMP) and alignment with human reading time data. Our results indicate that these cognitively-inspired constraints, particularly fixed-width attention, can significantly improve grammatical accuracy especially when training data is scarce. These constrained models also tend to show a stronger alignment with human processing metrics. The findings suggest that such constraints may serve as a beneficial inductive bias, guiding models towards more robust linguistic representations, especially in data-limited settings.",
     "authors": [
       "Pranava Madhyastha",
@@ -444,6 +485,40 @@
     "title": "Seeing Further and Wider: Joint Spatio-Temporal Enlargement for Micro-Video Popularity Prediction",
     "updated": "2026-04-23",
     "url": "http://arxiv.org/abs/2604.20311v2",
+    "venue": ""
+  },
+  {
+    "abstract": "The transition from stateless language model inference to persistent, multi session autonomous agents has revealed memory to be a primary architectural bottleneck in the deployment of production grade agentic systems. Existing methodologies largely depend on hybrid semantic graph architectures, which impose substantial computational overhead during both ingestion and retrieval. These systems typically require large language model mediated entity extraction, explicit graph schema maintenance, and multi query retrieval pipelines. This paper introduces Memanto, a universal memory layer for agentic artificial intelligence that challenges the prevailing assumption that knowledge graph complexity is necessary to achieve high fidelity agent memory. Memanto integrates a typed semantic memory schema comprising thirteen predefined memory categories, an automated conflict resolution mechanism, and temporal versioning. These components are enabled by Moorcheh's Information Theoretic Search engine, a no indexing semantic database that provides deterministic retrieval within sub ninety millisecond latency while eliminating ingestion delay. Through systematic benchmarking on the LongMemEval and LoCoMo evaluation suites, Memanto achieves state of the art accuracy scores of 89.8 percent and 87.1 percent respectively. These results surpass all evaluated hybrid graph and vector based systems while requiring only a single retrieval query, incurring no ingestion cost, and maintaining substantially lower operational complexity. A five stage progressive ablation study is presented to quantify the contribution of each architectural component, followed by a discussion of the implications for scalable deployment of agentic memory systems.",
+    "authors": [
+      "Seyed Moein Abtahi",
+      "Rasa Rahnema",
+      "Hetkumar Patel",
+      "Neel Patel",
+      "Majid Fekri",
+      "Tara Khani"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2604.22085v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：The transition from stateless language model inference to persistent, multi session autonomous agents has revealed memory to be a primary architectural bottleneck in the deployment of production grade agentic systems.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing methodologies largely depend on hybrid semantic graph architectures, which impose substantial computational overhead during both ingestion and retrieval.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "The transition from stateless language model inference to persistent, multi session autonomous agents has revealed memory to be a primary architectural bottleneck in the...",
+    "published": "2026-04-23",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, retrieval\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.AI",
+    "slug": "memanto-typed-semantic-memory-with-information-theoretic-retrieval-for-long-hori",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2604.22085v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "retrieval"
+    ],
+    "title": "Memanto: Typed Semantic Memory with Information-Theoretic Retrieval for Long-Horizon Agents",
+    "updated": "2026-04-23",
+    "url": "http://arxiv.org/abs/2604.22085v1",
     "venue": ""
   },
   {

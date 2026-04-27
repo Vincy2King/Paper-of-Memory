@@ -39,12 +39,12 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **75**
-- Last generated: **2026-04-26**
+- Total tracked papers: **77**
+- Last generated: **2026-04-27**
 
 ## Papers by Source
 
-- arXiv: **45**
+- arXiv: **47**
 - OpenReview: **30**
 
 ## Latest Papers
@@ -61,16 +61,16 @@ python3 scripts/update_papers.py --build-only
 | 2026-04-25 | OpenReview | [Diagnosing Retrieval vs. Utilization Bottlenecks in LLM Agent Memory](content/papers/diagnosing-retrieval-vs-utilization-bottlenecks-in-llm-agent-memory.md) | agent, context, retrieval |
 | 2026-04-25 | OpenReview | [CloneMem: Benchmarking Long-Term Memory for AI Clones](content/papers/clonemem-benchmarking-long-term-memory-for-ai-clones.md) | agent, benchmark, conversation |
 | 2026-04-25 | OpenReview | [AMA-Bench: Evaluating Long-Horizon Memory for Agentic Applications](content/papers/ama-bench-evaluating-long-horizon-memory-for-agentic-applications.md) | agent, benchmark, retrieval |
+| 2026-04-24 | arXiv | [Beyond N-gram: Data-Aware X-GRAM Extraction for Efficient Embedding Parameter Scaling](content/papers/beyond-n-gram-data-aware-x-gram-extraction-for-efficient-embedding-parameter-sca.md) | context, retrieval |
 | 2026-04-23 | arXiv | [Working Memory Constraints Scaffold Learning in Transformers under Data Scarcity](content/papers/working-memory-constraints-scaffold-learning-in-transformers-under-data-scarcity.md) | working memory |
 | 2026-04-23 | arXiv | [Spatial Metaphors for LLM Memory: A Critical Analysis of the MemPalace Architecture](content/papers/spatial-metaphors-for-llm-memory-a-critical-analysis-of-the-mempalace-architectu.md) | benchmark, long-term, retrieval |
 | 2026-04-23 | arXiv | [Seeing Further and Wider: Joint Spatio-Temporal Enlargement for Micro-Video Popularity Prediction](content/papers/seeing-further-and-wider-joint-spatio-temporal-enlargement-for-micro-video-popul.md) | benchmark, retrieval |
+| 2026-04-23 | arXiv | [Memanto: Typed Semantic Memory with Information-Theoretic Retrieval for Long-Horizon Agents](content/papers/memanto-typed-semantic-memory-with-information-theoretic-retrieval-for-long-hori.md) | agent, benchmark, retrieval |
 | 2026-04-23 | arXiv | [FSFM: A Biologically-Inspired Framework for Selective Forgetting of Agent Memory](content/papers/fsfm-a-biologically-inspired-framework-for-selective-forgetting-of-agent-memory.md) | agent, context |
 | 2026-04-23 | arXiv | [EngramaBench: Evaluating Long-Term Conversational Memory with Structured Graph Retrieval](content/papers/engramabench-evaluating-long-term-conversational-memory-with-structured-graph-re.md) | benchmark, context, conversation |
 | 2026-04-23 | arXiv | [Dementia classification from spontaneous speech using wrapper-based feature selection](content/papers/dementia-classification-from-spontaneous-speech-using-wrapper-based-feature-sele.md) | memory |
 | 2026-04-23 | arXiv | [ColorBrowserAgent: Complex Long-Horizon Browser Agent with Adaptive Knowledge Evolution](content/papers/colorbrowseragent-complex-long-horizon-browser-agent-with-adaptive-knowledge-evo.md) | agent, compression |
 | 2026-04-23 | arXiv | [Beyond N-gram: Data-Aware X-GRAM Extraction for Efficient Embedding Parameter Scaling](content/papers/beyond-n-gram-data-aware-x-gram-extraction-for-efficient-embedding-parameter-sca.md) | context, retrieval |
-| 2026-04-23 | arXiv | [AEL: Agent Evolving Learning for Open-Ended Environments](content/papers/ael-agent-evolving-learning-for-open-ended-environments.md) | agent, benchmark, retrieval |
-| 2026-04-22 | arXiv | [To Know is to Construct: Schema-Constrained Generation for Agent Memory](content/papers/to-know-is-to-construct-schema-constrained-generation-for-agent-memory.md) | agent, benchmark, context |
 
 ## Suggested GitHub Setup
 
