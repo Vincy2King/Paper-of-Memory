@@ -39,19 +39,20 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **87**
+- Total tracked papers: **88**
 - Last generated: **2026-04-28**
 
 ## Papers by Source
 
 - ACL Anthology: **1**
 - arXiv: **56**
-- OpenReview: **30**
+- OpenReview: **31**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-04-28 | OpenReview | [PlugMem: A Task-Agnostic Plugin Memory Module for LLM Agents](content/papers/plugmem-a-task-agnostic-plugin-memory-module-for-llm-agents.md) | agent, benchmark, context |
 | 2026-04-27 | arXiv | [The AI Codebase Maturity Model: From Assisted Coding to Fully Autonomous Systems](content/papers/the-ai-codebase-maturity-model-from-assisted-coding-to-fully-autonomous-systems.md) | agent |
 | 2026-04-27 | arXiv | [TSAssistant: A Human-in-the-Loop Agentic Framework for Automated Target Safety Assessment](content/papers/tsassistant-a-human-in-the-loop-agentic-framework-for-automated-target-safety-as.md) | agent, conversation |
 | 2026-04-27 | arXiv | [Poster: ClawdGo: Endogenous Security Awareness Training for Autonomous AI Agents](content/papers/poster-clawdgo-endogenous-security-awareness-training-for-autonomous-ai-agents.md) | agent |
@@ -71,7 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-04-25 | OpenReview | [CloneMem: Benchmarking Long-Term Memory for AI Clones](content/papers/clonemem-benchmarking-long-term-memory-for-ai-clones.md) | agent, benchmark, conversation |
 | 2026-04-25 | OpenReview | [AMA-Bench: Evaluating Long-Horizon Memory for Agentic Applications](content/papers/ama-bench-evaluating-long-horizon-memory-for-agentic-applications.md) | agent, benchmark, retrieval |
 | 2026-04-25 | arXiv | [AI Identity: Standards, Gaps, and Research Directions for AI Agents](content/papers/ai-identity-standards-gaps-and-research-directions-for-ai-agents.md) | agent |
-| 2026-04-24 | arXiv | [Beyond N-gram: Data-Aware X-GRAM Extraction for Efficient Embedding Parameter Scaling](content/papers/beyond-n-gram-data-aware-x-gram-extraction-for-efficient-embedding-parameter-sca.md) | context, retrieval |
 
 ## Suggested GitHub Setup
 

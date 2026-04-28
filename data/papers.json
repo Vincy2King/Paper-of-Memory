@@ -1,5 +1,47 @@
 [
   {
+    "abstract": "Long-term memory is essential for large language model (LLM) agents operating in complex environments, yet existing memory designs are either task-specific and non-transferable, or task-agnostic but less effective due to low task-relevance and context explosion from raw memory retrieval. We propose PlugMem, a task-agnostic plugin memory module that can be attached to arbitrary LLM agents without task-specific redesign. Motivated by the fact that decision-relevant information is concentrated as abstract knowledge rather than raw experience, we draw on cognitive science to structure episodic memories into a compact, extensible knowledge-centric memory graph that explicitly represents propositional and prescriptive knowledge. This representation enables efficient memory retrieval and reasoning over task-relevant knowledge, rather than verbose raw trajectories, and departs from other graph-based methods like GraphRAG by treating knowledge as the unit of memory access and organization instead of entities or text chunks. We evaluate PlugMem unchanged across three heterogeneous benchmarks (long-horizon conversational question answering, multi-hop knowledge retrieval, and web agent tasks). The results show that PlugMem consistently outperforms task-agnostic baselines and exceeds task-specific memory designs, while also achieving the highest information density under a unified information-theoretic analysis.",
+    "authors": [
+      "Ke Yang",
+      "Zixi Chen",
+      "Xuan He",
+      "Jize Jiang",
+      "Michel Galley",
+      "Chenglong Wang",
+      "Jianfeng Gao",
+      "Jiawei Han",
+      "ChengXiang Zhai"
+    ],
+    "categories": [
+      "MSLD/2026/Meeting/-/Submission"
+    ],
+    "id": "openreview:J74M9PYORo",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, conversation` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `MSLD 2026 Poster` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Long-term memory is essential for large language model (LLM) agents operating in complex environments, yet existing memory designs are either task-specific and non-transferable, or task-agnostic but less effective due...\n\n进一步看，论文的核心做法或实验重点可以概括为：We propose PlugMem, a task-agnostic plugin memory module that can be attached to arbitrary LLM agents without task-specific redesign.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "long-term memory",
+      "memory retrieval"
+    ],
+    "one_liner": "Long-term memory is essential for large language model (LLM) agents operating in complex environments, yet existing memory designs are either task-specific and non-transferable,...",
+    "published": "2026-04-28",
+    "relevance": "- 来源：OpenReview\n- Venue：MSLD 2026 Poster\n- 高亮主题命中：agent, benchmark, context, conversation, episodic, long-term\n- 检索关键词命中：long-term memory, memory retrieval\n- 来源分类信息：MSLD/2026/Meeting/-/Submission",
+    "slug": "plugmem-a-task-agnostic-plugin-memory-module-for-llm-agents",
+    "source": "OpenReview",
+    "source_key": "J74M9PYORo",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "conversation",
+      "episodic",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "PlugMem: A Task-Agnostic Plugin Memory Module for LLM Agents",
+    "updated": "2026-04-28",
+    "url": "https://openreview.net/forum?id=J74M9PYORo",
+    "venue": "MSLD 2026 Poster"
+  },
+  {
     "abstract": "AI coding tools are widely adopted, but most teams plateau at prompt-and-review without a framework for systematic progression. This paper presents the AI Codebase Maturity Model (ACMM), a 6-level framework describing how codebases evolve from basic AI-assisted coding to fully autonomous systems. Inspired by CMMI, each level is defined by its feedback loop topology - the specific mechanisms that must exist before the next level becomes possible. I validate the model through a 100-day experience report maintaining KubeStellar Console, a CNCF Kubernetes dashboard built from scratch with Claude Code (Opus) and GitHub Copilot, and through the initial production deployment of Hive - an open-source multi-agent orchestration system that realizes Level 6: full autonomy. The system currently operates with 74 CI/CD workflows, 32 nightly test suites, 91% code coverage, and achieves bug-to-fix times under 30 minutes - 24 hours a day. The central finding: the intelligence of an AI-driven development system resides not in the AI model itself, but in the infrastructure of instructions, tests, metrics, and feedback loops that surround it. You cannot skip levels, and at each level, the thing that unlocks the next one is another feedback mechanism. Testing - the volume of test cases, the coverage thresholds, and the reliability of test execution - proved to be the single most important investment in the entire journey. v2 extends the model from 5 to 6 levels, adding Level 6 (Fully Autonomous) with Hive as reference implementation and Beads for cross-agent memory continuity, plus throughput acceleration data showing 5x PR throughput and 37x issue throughput from Level 2 to Level 6.",
     "authors": [
       "Andy Anderson"
