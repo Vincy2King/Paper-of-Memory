@@ -1,5 +1,230 @@
 [
   {
+    "abstract": "AI coding tools are widely adopted, but most teams plateau at prompt-and-review without a framework for systematic progression. This paper presents the AI Codebase Maturity Model (ACMM), a 6-level framework describing how codebases evolve from basic AI-assisted coding to fully autonomous systems. Inspired by CMMI, each level is defined by its feedback loop topology - the specific mechanisms that must exist before the next level becomes possible. I validate the model through a 100-day experience report maintaining KubeStellar Console, a CNCF Kubernetes dashboard built from scratch with Claude Code (Opus) and GitHub Copilot, and through the initial production deployment of Hive - an open-source multi-agent orchestration system that realizes Level 6: full autonomy. The system currently operates with 74 CI/CD workflows, 32 nightly test suites, 91% code coverage, and achieves bug-to-fix times under 30 minutes - 24 hours a day. The central finding: the intelligence of an AI-driven development system resides not in the AI model itself, but in the infrastructure of instructions, tests, metrics, and feedback loops that surround it. You cannot skip levels, and at each level, the thing that unlocks the next one is another feedback mechanism. Testing - the volume of test cases, the coverage thresholds, and the reliability of test execution - proved to be the single most important investment in the entire journey. v2 extends the model from 5 to 6 levels, adding Level 6 (Fully Autonomous) with Hive as reference implementation and Beads for cross-agent memory continuity, plus throughput acceleration data showing 5x PR throughput and 37x issue throughput from Level 2 to Level 6.",
+    "authors": [
+      "Andy Anderson"
+    ],
+    "categories": [
+      "cs.SE",
+      "cs.AI"
+    ],
+    "id": "2604.09388v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：AI coding tools are widely adopted, but most teams plateau at prompt-and-review without a framework for systematic progression.\n\n进一步看，论文的核心做法或实验重点可以概括为：This paper presents the AI Codebase Maturity Model (ACMM), a 6-level framework describing how codebases evolve from basic AI-assisted coding to fully autonomous systems.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "AI coding tools are widely adopted, but most teams plateau at prompt-and-review without a framework for systematic progression.",
+    "published": "2026-04-10",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.SE, cs.AI",
+    "slug": "the-ai-codebase-maturity-model-from-assisted-coding-to-fully-autonomous-systems",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2604.09388v2",
+    "tags": [
+      "agent"
+    ],
+    "title": "The AI Codebase Maturity Model: From Assisted Coding to Fully Autonomous Systems",
+    "updated": "2026-04-27",
+    "url": "http://arxiv.org/abs/2604.09388v2",
+    "venue": ""
+  },
+  {
+    "abstract": "Target Safety Assessment (TSA) requires systematic integration of heterogeneous evidence, including genetic, transcriptomic, target homology, pharmacological, and clinical data, to evaluate potential safety liabilities of therapeutic targets. This process is inherently iterative and expert-driven, posing challenges in scalability and reproducibility. We present TSAssistant, a multi-agent framework designed to support TSA report drafting through a modular, section-based, and human-in-the-loop paradigm. The framework decomposes report generation into a coordinated pipeline of specialised subagents, each targeting a single TSA section. Specialised subagents retrieve structured and unstructured data as well as literature evidence from curated biomedical sources through standardised tool interfaces, producing individually citable, evidence-grounded sections. Agent behaviour is governed by a hierarchical instruction architecture comprising system prompts, domain-specific skill modules, and runtime user instructions. A key feature is an interactive refinement loop in which users may manually edit sections, append new information, upload additional sources, or re-invoke agents to revise specific sections, with the system maintaining conversational memory across iterations. TSAssistant is designed to reduce the mechanical burden of evidence synthesis and report drafting, supporting a hybrid model in which agentic AI augments evidence synthesis while toxicologists retain final decision authority.",
+    "authors": [
+      "Xiaochen Zheng",
+      "Zhiwen Jiang",
+      "Melanie Guerard",
+      "Klas Hatje",
+      "Tatyana Doktorova"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "id": "2604.23938v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, conversation` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Target Safety Assessment (TSA) requires systematic integration of heterogeneous evidence, including genetic, transcriptomic, target homology, pharmacological, and clinical data, to evaluate potential safety...\n\n进一步看，论文的核心做法或实验重点可以概括为：This process is inherently iterative and expert-driven, posing challenges in scalability and reproducibility.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "conversational memory"
+    ],
+    "one_liner": "Target Safety Assessment (TSA) requires systematic integration of heterogeneous evidence, including genetic, transcriptomic, target homology, pharmacological, and clinical data,...",
+    "published": "2026-04-27",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, conversation\n- 检索关键词命中：conversational memory\n- 来源分类信息：cs.CL",
+    "slug": "tsassistant-a-human-in-the-loop-agentic-framework-for-automated-target-safety-as",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2604.23938v1",
+    "tags": [
+      "agent",
+      "conversation"
+    ],
+    "title": "TSAssistant: A Human-in-the-Loop Agentic Framework for Automated Target Safety Assessment",
+    "updated": "2026-04-27",
+    "url": "http://arxiv.org/abs/2604.23938v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Autonomous AI agents deployed on platforms such as OpenClaw face prompt injection, memory poisoning, supply-chain attacks, and social engineering, yet existing defences address only the platform perimeter, leaving the agent's own threat judgement entirely untrained. We present ClawdGo, a framework for endogenous security awareness training: we teach the agent to recognise and reason about threats from the inside, at inference time, with no model modification. Four contributions are introduced: TLDT (Three-Layer Domain Taxonomy) organises 12 trainable dimensions across Self-Defence, Owner-Protection, and Enterprise-Security layers; ASAT (Autonomous Security Awareness Training) is a self-play loop where the agent alternates attacker, defender, and evaluator roles under weakest-first curriculum scheduling; CSMA (Cross-Session Memory Accumulation) compounds skill gains via a four-layer persistent memory architecture and Axiom Crystallisation Promotion (ACP); and SACP (Security Awareness Calibration Problem) formalises the precision-recall tradeoff introduced by endogenous training. Live experiments show weakest-first ASAT raises average TLDT score from 80.9 to 96.9 over 16 sessions, outperforming uniform-random scheduling by 6.5 points and covering 11 of 12 dimensions. CSMA retains the full gain across sessions; cold-start ablation recovers only 2.4 points, leaving a 13.6-point gap. E-mode generates 32 TLDT-conformant scenarios covering all 12 dimensions. SACP is observed when a heavily trained agent classifies a legitimate capability assessment as prompt injection (30/160).",
+    "authors": [
+      "Jiaqi Li",
+      "Yang Zhao",
+      "Bin Sun",
+      "Yang Yu",
+      "Jian Chang",
+      "Lidong Zhai"
+    ],
+    "categories": [
+      "cs.CR",
+      "cs.AI"
+    ],
+    "id": "2604.24020v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Autonomous AI agents deployed on platforms such as OpenClaw face prompt injection, memory poisoning, supply-chain attacks, and social engineering, yet existing defences address only the platform perimeter, leaving the...\n\n进一步看，论文的核心做法或实验重点可以概括为：We present ClawdGo, a framework for endogenous security awareness training: we teach the agent to recognise and reason about threats from the inside, at inference time, with no model modification.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "persistent memory"
+    ],
+    "one_liner": "Autonomous AI agents deployed on platforms such as OpenClaw face prompt injection, memory poisoning, supply-chain attacks, and social engineering, yet existing defences address...",
+    "published": "2026-04-27",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent\n- 检索关键词命中：persistent memory\n- 来源分类信息：cs.CR, cs.AI",
+    "slug": "poster-clawdgo-endogenous-security-awareness-training-for-autonomous-ai-agents",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2604.24020v1",
+    "tags": [
+      "agent"
+    ],
+    "title": "Poster: ClawdGo: Endogenous Security Awareness Training for Autonomous AI Agents",
+    "updated": "2026-04-27",
+    "url": "http://arxiv.org/abs/2604.24020v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Despite a century of empirical memory research, existing AI agent memory systems rely on system-engineering metaphors (virtual-memory paging, flat LLM storage, Zettelkasten notes), none integrating principles of consolidation, forgetting, and reconsolidation. We present ZenBrain, a multi-layer memory architecture integrating fifteen neuroscience models. It implements seven memory layers (working, short-term, episodic, semantic, procedural, core, cross-context) orchestrated by nine foundational algorithms (Two-Factor Synaptic Model, vmPFC-coupled FSRS, Simulation-Selection sleep, Bayesian confidence, and five more) plus six new Predictive Memory Architecture (PMA) components: a four-channel NeuromodulatorEngine, prediction-error-gated ReconsolidationEngine, TripleCopyMemory with divergent decay, four-dimensional PriorityMap with amygdala fast-path, StabilityProtector (NogoA/HDAC3 analogue), and MetacognitiveMonitor for bias detection. The 15-algorithm ablation reveals a cooperative survival network: under stress, 9 of 15 algorithms become individually critical (delta-Q up to -93.7%, Wilcoxon, 10 seeds, alpha=0.005). Simulation-Selection sleep achieves 37% stability improvement (p<0.005) with 47.4% storage reduction. TripleCopyMemory retains S(t)=0.912 at 30 days; PriorityMap reaches NDCG@10=0.997. Multi-layer routing beats a flat single-layer baseline by 20.7% F1 on LoCoMo (p<0.005) and 19.5% on MemoryArena (p=0.015). On LongMemEval-500, ZenBrain holds the highest mean rank on all 12 system-judge cells (4 systems x 3 LLM judges), three-judge mean J=0.545 vs letta=0.485, a-mem=0.414, mem0=0.394; all 9 pair-wise contrasts clear Bonferroni (alpha=0.05/18, min p=6.2e-31, d in [0.18, 0.52]). Under LongMemEval's binary judge, ZenBrain reaches 91.3% of oracle accuracy at 1/106th the per-query token budget. Open-source with 11,589 automated test cases.",
+    "authors": [
+      "Alexander Bering"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.LG"
+    ],
+    "id": "2604.23878v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, context, episodic` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Despite a century of empirical memory research, existing AI agent memory systems rely on system-engineering metaphors (virtual-memory paging, flat LLM storage, Zettelkasten notes), none integrating principles of...\n\n进一步看，论文的核心做法或实验重点可以概括为：We present ZenBrain, a multi-layer memory architecture integrating fifteen neuroscience models.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "Despite a century of empirical memory research, existing AI agent memory systems rely on system-engineering metaphors (virtual-memory paging, flat LLM storage, Zettelkasten...",
+    "published": "2026-04-26",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, context, episodic\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.AI, cs.LG",
+    "slug": "zenbrain-a-neuroscience-inspired-7-layer-memory-architecture-for-autonomous-ai-s",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2604.23878v1",
+    "tags": [
+      "agent",
+      "context",
+      "episodic"
+    ],
+    "title": "ZenBrain: A Neuroscience-Inspired 7-Layer Memory Architecture for Autonomous AI Systems",
+    "updated": "2026-04-26",
+    "url": "http://arxiv.org/abs/2604.23878v1",
+    "venue": ""
+  },
+  {
+    "abstract": "As large language models (LLMs) evolve from conversational assistants into agents capable of handling complex tasks, they are increasingly deployed in high-risk domains. However, existing benchmarks largely rely on mixed queries and posterior evaluation, output-level scoring, which quantifies hallucination severity but offers limited insight into where and why hallucinations arise in the generation pipeline. We therefore reformulate hallucination evaluation as a diagnostic problem and propose PRISM, a controlled benchmark that disentangles hallucinations into four dimensions: knowledge missing, knowledge errors, reasoning errors, and instruction-following errors, grounded in three stages of generation (memory, instruction, and reasoning). PRISM contains 9,448 instances across 65 tasks and supports fine-grained, stage-aware diagnostic evaluation. Evaluating 24 mainstream open-source and proprietary LLMs, we uncover consistent trade-offs across instruction following, memory retrieval, and logical reasoning, showing that mitigation strategies often improve specific dimensions at the expense of others. We hope PRISM provides a framework for understanding the specific mechanisms behind LLMs hallucinations, ultimately accelerating the development of trustworthy large language models.",
+    "authors": [
+      "Yuhe Wu",
+      "Guangyu Wang",
+      "Yuran Chen",
+      "Jiatong Zhang",
+      "Yutong Zhang",
+      "Yujie Chen",
+      "Jiaming Shang",
+      "Guang Zhang",
+      "Zhuang Liu"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "id": "2604.16909v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, conversation, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：As large language models (LLMs) evolve from conversational assistants into agents capable of handling complex tasks, they are increasingly deployed in high-risk domains.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, existing benchmarks largely rely on mixed queries and posterior evaluation, output-level scoring, which quantifies hallucination severity but offers limited insight into where and why hallucinations arise in...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory retrieval"
+    ],
+    "one_liner": "As large language models (LLMs) evolve from conversational assistants into agents capable of handling complex tasks, they are increasingly deployed in high-risk domains.",
+    "published": "2026-04-18",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, conversation, retrieval\n- 检索关键词命中：memory retrieval\n- 来源分类信息：cs.CL, cs.AI",
+    "slug": "prism-probing-reasoning-instruction-and-source-memory-in-llm-hallucinations",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2604.16909v2",
+    "tags": [
+      "agent",
+      "benchmark",
+      "conversation",
+      "retrieval"
+    ],
+    "title": "PRISM: Probing Reasoning, Instruction, and Source Memory in LLM Hallucinations",
+    "updated": "2026-04-26",
+    "url": "http://arxiv.org/abs/2604.16909v2",
+    "venue": ""
+  },
+  {
+    "abstract": "Humans use introspection to evaluate their understanding through private internal states inaccessible to external observers. We investigate whether large language models possess similar privileged knowledge about answer correctness, information unavailable through external observation. We train correctness classifiers on question representations from both a model's own hidden states and external models, testing whether self-representations provide a performance advantage. On standard evaluation, we find no advantage: self-probes perform comparably to peer-model probes. We hypothesize this is due to high inter-model agreement of answer correctness. To isolate genuine privileged knowledge, we evaluate on disagreement subsets, where models produce conflicting predictions. Here, we discover domain-specific privileged knowledge: self-representations consistently outperform peer representations in factual knowledge tasks, but show no advantage in math reasoning. We further localize this domain asymmetry across model layers, finding that the factual advantage emerges progressively from early-to-mid layers onward, consistent with model-specific memory retrieval, while math reasoning shows no consistent advantage at any depth.",
+    "authors": [
+      "Tomer Ashuach",
+      "Shai Gretz",
+      "Yoav Katz",
+      "Yonatan Belinkov",
+      "Liat Ein-Dor"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "id": "2604.12373v5",
+    "intro": "这篇论文被纳入仓库，是因为它和 `retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Humans use introspection to evaluate their understanding through private internal states inaccessible to external observers.\n\n进一步看，论文的核心做法或实验重点可以概括为：We investigate whether large language models possess similar privileged knowledge about answer correctness, information unavailable through external observation.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory retrieval"
+    ],
+    "one_liner": "Humans use introspection to evaluate their understanding through private internal states inaccessible to external observers.",
+    "published": "2026-04-14",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：retrieval\n- 检索关键词命中：memory retrieval\n- 来源分类信息：cs.CL",
+    "slug": "masked-by-consensus-disentangling-privileged-knowledge-in-llm-correctness",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2604.12373v5",
+    "tags": [
+      "retrieval"
+    ],
+    "title": "Masked by Consensus: Disentangling Privileged Knowledge in LLM Correctness",
+    "updated": "2026-04-26",
+    "url": "http://arxiv.org/abs/2604.12373v5",
+    "venue": ""
+  },
+  {
+    "abstract": "LLM routing has achieved promising results in integrating the strengths of diverse models while balancing efficiency and performance. However, to support more realistic and challenging applications, routing must extend into agentic LLM settings, where task planning, multi-round cooperation among heterogeneous agents, and memory utilization are indispensable. To address this gap, we propose GraphPlanner, a heterogeneous graph memory-augmented agentic router for multi-agent LLMs that generates routing workflows for each query and supports both inductive and transductive inference. GraphPlanner formulates workflow generation as a Markov Decision Process (MDP), where at each step it selects both the LLM backbone and the agent role, including Planner, Executor, and Summarizer. By leveraging a heterogeneous graph, denoted as GARNet, to capture interaction memories among queries, agents, and responses, GraphPlanner integrates historical memory and workflow memory into richer state representations. The entire pipeline is optimized with reinforcement learning, jointly improving task-specific performance and computational efficiency. We evaluate GraphPlanner across 14 diverse LLM tasks and demonstrate that: (1) GraphPlanner outperforms strong single-round and multi-round routers, improving accuracy by up to 9.3% while reducing GPU cost from 186.26 GiB to 1.04 GiB; (2) GraphPlanner generalizes robustly to unseen tasks and LLMs, exhibiting strong zero-shot capabilities; and (3) GraphPlanner effectively leverages historical memories, supporting both inductive and transductive inference for more adaptive routing. Our code for GraphPlanner is released at https://github.com/ulab-uiuc/GraphPlanner.",
+    "authors": [
+      "Tao Feng",
+      "Haozhen Zhang",
+      "Zijie Lei",
+      "Peixuan Han",
+      "Jiaxuan You"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "id": "2604.23626v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：LLM routing has achieved promising results in integrating the strengths of diverse models while balancing efficiency and performance.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, to support more realistic and challenging applications, routing must extend into agentic LLM settings, where task planning, multi-round cooperation among heterogeneous agents, and memory utilization are...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory augmented",
+      "memory-augmented"
+    ],
+    "one_liner": "LLM routing has achieved promising results in integrating the strengths of diverse models while balancing efficiency and performance.",
+    "published": "2026-04-26",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent\n- 检索关键词命中：memory augmented, memory-augmented\n- 来源分类信息：cs.CL",
+    "slug": "graphplanner-graph-memory-augmented-agentic-routing-for-multi-agent-llms",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2604.23626v1",
+    "tags": [
+      "agent"
+    ],
+    "title": "GraphPlanner: Graph Memory-Augmented Agentic Routing for Multi-Agent LLMs",
+    "updated": "2026-04-26",
+    "url": "http://arxiv.org/abs/2604.23626v1",
+    "venue": ""
+  },
+  {
     "abstract": "Multimodal LLM-powered agents have recently demonstrated impressive capabilities in web navigation, enabling agents to complete complex browsing tasks across diverse domains. However, current agents struggle with repetitive errors and lack the ability to learn from past experiences across sessions, limiting their long-term robustness and sample efficiency. We introduce WebCoach, a model-agnostic self-evolving framework that equips web browsing agents with persistent cross-session memory, enabling improved long-term planning, reflection, and continual learning without retraining. WebCoach consists of three key components: (1) a WebCondenser, which standardizes raw navigation logs into concise summaries; (2) an External Memory Store, which organizes complete trajectories as episodic experiences; and (3) a Coach, which retrieves relevant experiences based on similarity and recency, and decides whether to inject task-specific advice into the agent via runtime hooks. This design empowers web agents to access long-term memory beyond their native context window, improving robustness in complex browsing tasks. Moreover, WebCoach achieves self-evolution by continuously curating episodic memory from new navigation trajectories, enabling agents to improve over time without retraining. Evaluations on the WebVoyager benchmark demonstrate that WebCoach consistently improves the performance of browser-use agents across three different LLM backbones. With a 38B model, it increases task success rates from 47% to 61% while reducing or maintaining the average number of steps. Notably, smaller base models with WebCoach achieve performance comparable to the same web agent using GPT-4o.",
     "authors": [
       "Genglin Liu",
@@ -169,6 +394,37 @@
     "updated": "2026-04-25",
     "url": "https://openreview.net/forum?id=KrmyJtyE6k",
     "venue": "ICLR 2026 Workshop MemAgents"
+  },
+  {
+    "abstract": "Agentic AI systems face security challenges that stateless large language models do not. They plan across extended horizons, maintain persistent memory, invoke external tools, and coordinate with peer agents. Existing security analyses organize threats by attack type (prompt injection, jailbreaking), but provide no principled model of which architectural component is vulnerable or over what timescale the threat manifests. This paper makes five contributions. First, we introduce the Layered Attack Surface Model (LASM), a seven-layer framework that maps threats to distinct architectural components: Foundation, Cognitive, Memory, Tool Execution, Multi-Agent Coordination, Ecosystem, and Governance, the accountability and observability layer that spans the stack analogously to the network management plane. Second, we introduce attack temporality as an orthogonal analytical dimension with four classes: Instantaneous (T1), Session-Persistent (T2), Cross-Session Cumulative (T3), and Sub-Session-Stack, Non-Session-Bounded (T4). Third, through a systematic review of 94 papers (2021--2025), we show that the most dangerous emerging threats concentrate at the intersection of high-layer attacks (L5--L7) and slow-burn temporality (T3--T4): covert agent collusion, long-term memory poisoning, MCP supply-chain compromise, and alignment failure that manifests as an insider threat with no external adversary. Only 8 of 120 paper-cell assignments (7%) fall in this zone. Fourth, we propose a cross-layer defense taxonomy spanning all seven LASM layers and all four temporality classes, exposing which threat classes existing defenses leave unaddressed. Fifth, we survey evaluation benchmarks, identify five research gaps in the under-studied high-layer, slow-burn zone, and argue that agentic security must be treated as a distributed systems problem embedded in an adversarial ecosystem.",
+    "authors": [
+      "Kexin Chu"
+    ],
+    "categories": [
+      "cs.CR",
+      "cs.LG"
+    ],
+    "id": "2604.23338v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, long-term` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Agentic AI systems face security challenges that stateless large language models do not.\n\n进一步看，论文的核心做法或实验重点可以概括为：They plan across extended horizons, maintain persistent memory, invoke external tools, and coordinate with peer agents.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "long-term memory",
+      "persistent memory"
+    ],
+    "one_liner": "Agentic AI systems face security challenges that stateless large language models do not.",
+    "published": "2026-04-25",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, long-term\n- 检索关键词命中：long-term memory, persistent memory\n- 来源分类信息：cs.CR, cs.LG",
+    "slug": "from-stateless-queries-to-autonomous-actions-a-layered-security-framework-for-ag",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2604.23338v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "long-term"
+    ],
+    "title": "From Stateless Queries to Autonomous Actions: A Layered Security Framework for Agentic AI Systems",
+    "updated": "2026-04-25",
+    "url": "http://arxiv.org/abs/2604.23338v1",
+    "venue": ""
   },
   {
     "abstract": "Long-term memory in Large Language Model (LLM) agents requires selective persistence: only a subset of interactions should be consolidated beyond the current context window. Existing memory systems rely on heuristic importance rules or similarity-based novelty, which remain external to the model’s internal computation. We propose a geometric principle for memory formation: episodic memory can emerge from compression failure in latent representation space. We approximate the manifold of routine LLM activations using Sparse Autoencoders (SAEs) and define representational surprise as reconstruction error relative to this learned manifold. Deviations from routine structure yield elevated residuals, providing an unsupervised, model-internal signal for memory writing. We demonstrate this principle through ReSuME, a surprise-gated memory mechanism that commits turns to memory only when normalized reconstruction error exceeds a calibrated threshold. In long-horizon multi-turn dialogue settings, representational surprise separates routine, critical, and out-of-distribution states, and achieves a superior performance–memory trade-off compared to heuristic and similarity-based baselines under fixed budgets. Covariance-aware normalization further enables robust cross-domain calibration. These results suggest that episodic memory gating in neural agents can be grounded in intrinsic latent geometry rather than externally engineered rules.",
@@ -349,6 +605,36 @@
     "updated": "2026-04-25",
     "url": "https://openreview.net/forum?id=GoSVL7mLcM",
     "venue": "ICLR 2026 Workshop MemAgents Oral"
+  },
+  {
+    "abstract": "AI agents are now running real transactions, workflows, and sub-agent chains across organizational boundaries without continuous human supervision. This creates a problem no current infrastructure is equipped to solve: how do you identify, verify, and hold accountable an entity with no body, no persistent memory, and no legal standing? We define AI Identity as the continuous relationship between what an AI agent is declared to be and what it is observed to do, bounded by the confidence that those two things correspond at any given moment. Through a structured survey of industry trends, emerging standards, and technical literature, we conduct a gap analysis across the full agent identity lifecycle and make three contributions: (1) a structural comparison of human and AI identity across four dimensions (substrate, persistence, verifiability, and legal standing) showing that the asymmetry is fundamental and that extending human frameworks to agents without structural modification produces systematic failures; (2) an evaluation of current technical and regulatory documents against the identity requirements of autonomous agents, finding that none adequately address the challenge of governing nondeterministic, boundary-crossing entities; and (3) identification of five critical gaps (semantic intent verification, recursive delegation accountability, agent identity integrity, governance opacity and enforcement, and operational sustainability) that no current technology or regulatory instrument resolves. These gaps are structural; more engineering effort alone will not close them. Foundational research on AI identity is the central conclusion of this report.",
+    "authors": [
+      "Takumi Otsuka",
+      "Kentaroh Toyoda",
+      "Alex Leung"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.CR"
+    ],
+    "id": "2604.23280v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：AI agents are now running real transactions, workflows, and sub-agent chains across organizational boundaries without continuous human supervision.\n\n进一步看，论文的核心做法或实验重点可以概括为：This creates a problem no current infrastructure is equipped to solve: how do you identify, verify, and hold accountable an entity with no body, no persistent memory, and no legal standing?\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "persistent memory"
+    ],
+    "one_liner": "AI agents are now running real transactions, workflows, and sub-agent chains across organizational boundaries without continuous human supervision.",
+    "published": "2026-04-25",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent\n- 检索关键词命中：persistent memory\n- 来源分类信息：cs.AI, cs.CR",
+    "slug": "ai-identity-standards-gaps-and-research-directions-for-ai-agents",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2604.23280v1",
+    "tags": [
+      "agent"
+    ],
+    "title": "AI Identity: Standards, Gaps, and Research Directions for AI Agents",
+    "updated": "2026-04-25",
+    "url": "http://arxiv.org/abs/2604.23280v1",
+    "venue": ""
   },
   {
     "abstract": "Large token-indexed lookup tables provide a compute-decoupled scaling path, but their practical gains are often limited by poor parameter efficiency and rapid memory growth. We attribute these limitations to Zipfian under-training of the long tail, heterogeneous demand across layers, and \"slot collapse\" that produces redundant embeddings. To address this, we propose X-GRAM, a frequency-aware dynamic token-injection framework. X-GRAM employs hybrid hashing and alias mixing to compress the tail while preserving head capacity, and refines retrieved vectors via normalized SwiGLU ShortConv to extract diverse local n-gram features. These signals are integrated into attention value streams and inter-layer residuals using depth-aware gating, effectively aligning static memory with dynamic context. This design introduces a memory-centric scaling axis that decouples model capacity from FLOPs. Extensive evaluations at the 0.73B and 1.15B scales show that X-GRAM improves average accuracy by as much as 4.4 points over the vanilla backbone and 3.2 points over strong retrieval baselines, while using substantially smaller tables in the 50% configuration. Overall, by decoupling capacity from compute through efficient memory management, X-GRAM offers a scalable and practical paradigm for future memory-augmented architectures. Code aviliable in https://github.com/Longyichen/X-gram.",
@@ -1479,6 +1765,35 @@
     "updated": "2026-04-20",
     "url": "http://arxiv.org/abs/2604.17979v1",
     "venue": ""
+  },
+  {
+    "abstract": "",
+    "authors": [
+      "Thomas Baier",
+      "Selene Santamaría",
+      "Piek Vossen"
+    ],
+    "categories": [],
+    "id": "acl:2025.dnd-16.11",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, episodic, long-term` 这些主题直接相关。\n\n它当前来自 `ACL Anthology`，并与 `Dialogue & Discourse` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：The abstract is not available yet.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "long-term memory"
+    ],
+    "one_liner": "This paper is tracked as a memory-related work and awaits a fuller summary.",
+    "published": "2025-12",
+    "relevance": "- 来源：ACL Anthology\n- Venue：Dialogue & Discourse\n- 高亮主题命中：agent, episodic, long-term\n- 检索关键词命中：long-term memory",
+    "slug": "a-modular-architecture-for-creating-multimodal-embodied-agents-with-an-episodic-",
+    "source": "ACL Anthology",
+    "source_key": "2025.dnd-16.11",
+    "tags": [
+      "agent",
+      "episodic",
+      "long-term"
+    ],
+    "title": "A modular architecture for creating multimodal embodied agents with an episodic Knowledge Graph as an explainable and controllable long-term memory",
+    "updated": "2026-04-20",
+    "url": "https://aclanthology.org/2025.dnd-16.11",
+    "venue": "Dialogue & Discourse"
   },
   {
     "abstract": "Large Language Model (LLM)-based Multi-Agent Systems (MAS) enable complex problem-solving but introduce significant debugging challenges, characterized by long interaction traces, inter-agent dependencies, and delayed error manifestation. Existing diagnostic approaches often rely on expensive expert annotation or ''LLM-as-a-judge'' paradigms, which struggle to pinpoint decisive error steps within extended contexts. In this paper, we introduce ErrorProbe, a self-improving framework for semantic failure attribution that identifies responsible agents and the originating error step. The framework operates via a three-stage pipeline: (1) operationalizing the MAS failure taxonomy to detect local anomalies, (2) performing symptom-driven backward tracing to prune irrelevant context, and (3) employing a specialized multi-agent team (Strategist, Investigator, Arbiter) to validate error hypotheses through tool-grounded execution. Crucially, ErrorProbe maintains a verified episodic memory that updates only when error patterns are confirmed by executable evidence, without the need for annotation. Experiments across the TracerTraj and Who&When benchmarks demonstrate that ErrorProbe significantly outperforms baselines, particularly in step-level localization, while the verified memory enables robust cross-domain transfer without retraining.",
