@@ -1,5 +1,43 @@
 [
   {
+    "abstract": "Existing methods for AI psychological counselors predominantly rely on supervised fine-tuning using static dialogue datasets. However, this contrasts with human experts, who continuously refine their proficiency through clinical practice and accumulated experience. To bridge this gap, we propose an Experience-Driven Lifelong Learning Agent (\\texttt{PsychAgent}) for psychological counseling. First, we establish a Memory-Augmented Planning Engine tailored for longitudinal multi-session interactions, which ensures therapeutic continuity through persistent memory and strategic planning. Second, to support self-evolution, we design a Skill Evolution Engine that extracts new practice-grounded skills from historical counseling trajectories. Finally, we introduce a Reinforced Internalization Engine that integrates the evolved skills into the model via rejection fine-tuning, aiming to improve performance across diverse scenarios. Comparative analysis shows that our approach achieves higher scores than strong general LLMs (e.g., GPT-5.4, Gemini-3) and domain-specific baselines across all reported evaluation dimensions. These results suggest that lifelong learning can improve the consistency and overall quality of multi-session counseling responses.",
+    "authors": [
+      "Yutao Yang",
+      "Junsong Li",
+      "Qianjun Pan",
+      "Jie Zhou",
+      "Kai Chen",
+      "Qin Chen",
+      "Jingyuan Zhao",
+      "Ningning Zhou",
+      "Xin Li",
+      "Liang He"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2604.00931v3",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Existing methods for AI psychological counselors predominantly rely on supervised fine-tuning using static dialogue datasets.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, this contrasts with human experts, who continuously refine their proficiency through clinical practice and accumulated experience.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory augmented",
+      "memory-augmented",
+      "persistent memory"
+    ],
+    "one_liner": "Existing methods for AI psychological counselors predominantly rely on supervised fine-tuning using static dialogue datasets.",
+    "published": "2026-04-01",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent\n- 检索关键词命中：memory augmented, memory-augmented, persistent memory\n- 来源分类信息：cs.AI",
+    "slug": "psychagent-an-experience-driven-lifelong-learning-agent-for-self-evolving-psycho",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2604.00931v3",
+    "tags": [
+      "agent"
+    ],
+    "title": "PsychAgent: An Experience-Driven Lifelong Learning Agent for Self-Evolving Psychological Counselor",
+    "updated": "2026-04-28",
+    "url": "http://arxiv.org/abs/2604.00931v3",
+    "venue": ""
+  },
+  {
     "abstract": "Long-term memory is essential for large language model (LLM) agents operating in complex environments, yet existing memory designs are either task-specific and non-transferable, or task-agnostic but less effective due to low task-relevance and context explosion from raw memory retrieval. We propose PlugMem, a task-agnostic plugin memory module that can be attached to arbitrary LLM agents without task-specific redesign. Motivated by the fact that decision-relevant information is concentrated as abstract knowledge rather than raw experience, we draw on cognitive science to structure episodic memories into a compact, extensible knowledge-centric memory graph that explicitly represents propositional and prescriptive knowledge. This representation enables efficient memory retrieval and reasoning over task-relevant knowledge, rather than verbose raw trajectories, and departs from other graph-based methods like GraphRAG by treating knowledge as the unit of memory access and organization instead of entities or text chunks. We evaluate PlugMem unchanged across three heterogeneous benchmarks (long-horizon conversational question answering, multi-hop knowledge retrieval, and web agent tasks). The results show that PlugMem consistently outperforms task-agnostic baselines and exceeds task-specific memory designs, while also achieving the highest information density under a unified information-theoretic analysis.",
     "authors": [
       "Ke Yang",
@@ -40,6 +78,49 @@
     "updated": "2026-04-28",
     "url": "https://openreview.net/forum?id=J74M9PYORo",
     "venue": "MSLD 2026 Poster"
+  },
+  {
+    "abstract": "The proliferation of cloud-native architectures, characterized by microservices and dynamic orchestration, has rendered modern IT infrastructures exceedingly complex and volatile. This complexity generates overwhelming volumes of operational data, leading to critical bottlenecks in conventional systems: inefficient information processing, poor task coordination, and loss of contextual continuity during fault diagnosis and remediation. To address these challenges, we propose AOI (AI-Oriented Operations), a novel multi-agent collaborative framework that integrates three specialized agents with an LLM-based Context Compressor. Its core innovations include: (1) a dynamic task scheduling strategy that adaptively prioritizes operations based on real-time system states, (2) a three-layer memory architecture comprising Working, Episodic, and Semantic layers that optimizes context retention and retrieval. Extensive experiments on synthetic and real-world benchmarks show that AOI achieves 72.4\\% context compression while preserving 92.8\\% critical information, improves task success to 94.2\\%, and reduces MTTR by 34.4\\% over the best baseline. This work presents a paradigm shift towards scalable, adaptive, and context-aware autonomous operations, enabling robust management of next-generation IT infrastructures with minimal human intervention.",
+    "authors": [
+      "Zishan Bai",
+      "Hanxuan Chen",
+      "Jing Luo",
+      "Ziyi Ni",
+      "Enze Ge",
+      "Jiacheng Shi",
+      "Yichao Zhang",
+      "Jiayi Gu",
+      "Zhimo Han",
+      "Riyang Bao",
+      "Junfeng Hao"
+    ],
+    "categories": [
+      "cs.MA",
+      "cs.AI"
+    ],
+    "id": "2512.13956v3",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, compression, context` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：The proliferation of cloud-native architectures, characterized by microservices and dynamic orchestration, has rendered modern IT infrastructures exceedingly complex and volatile.\n\n进一步看，论文的核心做法或实验重点可以概括为：This complexity generates overwhelming volumes of operational data, leading to critical bottlenecks in conventional systems: inefficient information processing, poor task coordination, and loss of contextual...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory compression"
+    ],
+    "one_liner": "The proliferation of cloud-native architectures, characterized by microservices and dynamic orchestration, has rendered modern IT infrastructures exceedingly complex and volatile.",
+    "published": "2025-12-15",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, compression, context, episodic, retrieval\n- 检索关键词命中：memory compression\n- 来源分类信息：cs.MA, cs.AI",
+    "slug": "aoi-context-aware-multi-agent-operations-via-dynamic-scheduling-and-hierarchical",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2512.13956v3",
+    "tags": [
+      "agent",
+      "benchmark",
+      "compression",
+      "context",
+      "episodic",
+      "retrieval"
+    ],
+    "title": "AOI: Context-Aware Multi-Agent Operations via Dynamic Scheduling and Hierarchical Memory Compression",
+    "updated": "2026-04-28",
+    "url": "http://arxiv.org/abs/2512.13956v3",
+    "venue": ""
   },
   {
     "abstract": "AI coding tools are widely adopted, but most teams plateau at prompt-and-review without a framework for systematic progression. This paper presents the AI Codebase Maturity Model (ACMM), a 6-level framework describing how codebases evolve from basic AI-assisted coding to fully autonomous systems. Inspired by CMMI, each level is defined by its feedback loop topology - the specific mechanisms that must exist before the next level becomes possible. I validate the model through a 100-day experience report maintaining KubeStellar Console, a CNCF Kubernetes dashboard built from scratch with Claude Code (Opus) and GitHub Copilot, and through the initial production deployment of Hive - an open-source multi-agent orchestration system that realizes Level 6: full autonomy. The system currently operates with 74 CI/CD workflows, 32 nightly test suites, 91% code coverage, and achieves bug-to-fix times under 30 minutes - 24 hours a day. The central finding: the intelligence of an AI-driven development system resides not in the AI model itself, but in the infrastructure of instructions, tests, metrics, and feedback loops that surround it. You cannot skip levels, and at each level, the thing that unlocks the next one is another feedback mechanism. Testing - the volume of test cases, the coverage thresholds, and the reliability of test execution - proved to be the single most important investment in the entire journey. v2 extends the model from 5 to 6 levels, adding Level 6 (Fully Autonomous) with Hive as reference implementation and Beads for cross-agent memory continuity, plus throughput acceleration data showing 5x PR throughput and 37x issue throughput from Level 2 to Level 6.",
@@ -132,6 +213,36 @@
     "title": "Poster: ClawdGo: Endogenous Security Awareness Training for Autonomous AI Agents",
     "updated": "2026-04-27",
     "url": "http://arxiv.org/abs/2604.24020v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Decision-making under changing conditions remains a fundamental challenge in many real-world systems. Existing approaches often fail to generalize across shifting regimes and exhibit unstable behavior under uncertainty. This raises the research question: can retrieval-augmented LLM coordination improve the robustness of modular decision pipelines? We propose MultiHedge, a hybrid architecture where an LLM produces structured allocation decisions conditioned on retrieved historical precedents, and execution is grounded in canonical option strategies. In a controlled evaluation using U.S. equities, we compare MultiHedge to rule-based and learning-based baselines. The key result is that memory-augmented retrieval confers greater robustness and stability than increasing model scale alone. Our paper contributes a controlled computational study showing that memory and architectural design play a central role in robustness in modular decision systems.",
+    "authors": [
+      "Feliks Bańka",
+      "Jarosław A. Chudziak"
+    ],
+    "categories": [
+      "cs.MA",
+      "cs.AI"
+    ],
+    "id": "2604.24905v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Decision-making under changing conditions remains a fundamental challenge in many real-world systems.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing approaches often fail to generalize across shifting regimes and exhibit unstable behavior under uncertainty.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory augmented",
+      "memory-augmented"
+    ],
+    "one_liner": "Decision-making under changing conditions remains a fundamental challenge in many real-world systems.",
+    "published": "2026-04-27",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：retrieval\n- 检索关键词命中：memory augmented, memory-augmented\n- 来源分类信息：cs.MA, cs.AI",
+    "slug": "multihedge-adaptive-coordination-via-retrieval-augmented-control",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2604.24905v1",
+    "tags": [
+      "retrieval"
+    ],
+    "title": "MultiHedge: Adaptive Coordination via Retrieval-Augmented Control",
+    "updated": "2026-04-27",
+    "url": "http://arxiv.org/abs/2604.24905v1",
     "venue": ""
   },
   {
