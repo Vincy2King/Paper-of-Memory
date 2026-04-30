@@ -1,5 +1,181 @@
 [
   {
+    "abstract": "Achieving realistic human-like conversation for virtual characters requires not only a simple memorization and recall of past events, but also the strategic utilization of memory to meet factual needs and social engagement. Current memory utilization relevant (e.g., memory-augmented generation, long-term dialogue, and etc.) benchmarks overlook this nuance, treating memory primarily as a static repository of facts rather than a dynamic resource to be strategically deployed in dialogues. To address this gap, we design StratMem-Bench, a new benchmark to evaluate strategic memory use in character-centric dialogues. This dataset comprises 657 instances where virtual characters must navigate heterogeneous memory pools containing required, supportive, and irrelevant memories. We also propose a framework with different evaluation metrics including Strict Memory Compliance, Memory Integration Quality, Proactive Enrichment Score and Conditional Irrelevance Rate, to evaluate strategic memory use capabilities of virtual characters. Experiments on StratMem-Bench which leverage the state-of-the-art large language models as virtual characters show that all models perform well at distinguishing between required and irrelevant memories, but struggle once supportive memories are introduced into the decision process.",
+    "authors": [
+      "Yerong Wu",
+      "Tianxing Wu",
+      "Minghao Zhu",
+      "Hangyu Sha",
+      "Haofen Wang"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "id": "2604.26243v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `benchmark, conversation, long-term` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Achieving realistic human-like conversation for virtual characters requires not only a simple memorization and recall of past events, but also the strategic utilization of memory to meet factual needs and social...\n\n进一步看，论文的核心做法或实验重点可以概括为：Current memory utilization relevant (e.g., memory-augmented generation, long-term dialogue, and etc.) benchmarks overlook this nuance, treating memory primarily as a static repository of facts rather than a dynamic...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory augmented",
+      "memory-augmented"
+    ],
+    "one_liner": "Achieving realistic human-like conversation for virtual characters requires not only a simple memorization and recall of past events, but also the strategic utilization of...",
+    "published": "2026-04-29",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：benchmark, conversation, long-term\n- 检索关键词命中：memory augmented, memory-augmented\n- 来源分类信息：cs.CL, cs.AI",
+    "slug": "stratmem-bench-evaluating-strategic-memory-use-in-virtual-character-conversation",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2604.26243v1",
+    "tags": [
+      "benchmark",
+      "conversation",
+      "long-term"
+    ],
+    "title": "StratMem-Bench: Evaluating Strategic Memory Use in Virtual Character Conversation Beyond Factual Recall",
+    "updated": "2026-04-29",
+    "url": "http://arxiv.org/abs/2604.26243v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Autonomous LLM agents increasingly operate in long-horizon, interactive settings where success depends on reusing experience accumulated over extended histories. However, existing agent memory systems are fundamentally constrained by text-context budgets: storing or revisiting raw trajectories is prohibitively token-expensive, while summarization and text-only retrieval trade token savings for information loss and fragmented evidence. To address this limitation, we propose Optical Context Retrieval Memory (OCR-Memory), a memory framework that leverages the visual modality as a high-density representation of agent experience, enabling retention of arbitrarily long histories with minimal prompt overhead at retrieval time. Specifically, OCR-Memory renders historical trajectories into images annotated with unique visual identifiers. OCR-Memory retrieves stored experience via a \\emph{locate-and-transcribe} paradigm that selects relevant regions through visual anchors and retrieves the corresponding verbatim text, avoiding free-form generation and reducing hallucination. Experiments on long-horizon agent benchmarks show consistent gains under strict context limits, demonstrating that optical encoding increases effective memory capacity while preserving faithful evidence recovery.",
+    "authors": [
+      "Jinze Li",
+      "Yang Zhang",
+      "Xin Yang",
+      "Jiayi Qu",
+      "Jinfeng Xu",
+      "Shuo Yang",
+      "Junhua Ding",
+      "Edith Cheuk-Han Ngai"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "id": "2604.26622v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Autonomous LLM agents increasingly operate in long-horizon, interactive settings where success depends on reusing experience accumulated over extended histories.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, existing agent memory systems are fundamentally constrained by text-context budgets: storing or revisiting raw trajectories is prohibitively token-expensive, while summarization and text-only retrieval trade...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory",
+      "memory retrieval",
+      "retrieval memory"
+    ],
+    "one_liner": "Autonomous LLM agents increasingly operate in long-horizon, interactive settings where success depends on reusing experience accumulated over extended histories.",
+    "published": "2026-04-29",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context, retrieval\n- 检索关键词命中：agent memory, memory retrieval, retrieval memory\n- 来源分类信息：cs.CL",
+    "slug": "ocr-memory-optical-context-retrieval-for-long-horizon-agent-memory",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2604.26622v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "retrieval"
+    ],
+    "title": "OCR-Memory: Optical Context Retrieval for Long-Horizon Agent Memory",
+    "updated": "2026-04-29",
+    "url": "http://arxiv.org/abs/2604.26622v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Open-vocabulary change detection aims to identify semantic changes in bi-temporal remote sensing images without predefined categories. Recent methods combine foundation models such as SAM, DINO and CLIP, but typically process each timestamp independently or interact only at the final comparison stage. Such paradigms suffer from insufficient temporal coupling during semantic reasoning, which limits their ability to distinguish genuine semantic changes from non-semantic appearance discrepancies. In addition, patch-dominant inference on high-resolution images often weakens global semantic continuity and produces fragmented change regions. To address these issues, we propose MemOVCD, a training-free open-vocabulary change detection framework based on cross-temporal memory reasoning and global-local adaptive rectification. Specifically, we reformulate bi-temporal change detection as a two-frame tracking problem and introduce weighted bidirectional propagation to aggregate semantic evidence from both temporal directions. To stabilize memory propagation across large temporal gaps, we construct histogram-aligned transition frames to smooth abrupt appearance changes. Moreover, a global-local adaptive rectification strategy adaptively fuses local and global-view predictions, improving spatial consistency while preserving fine-grained details. Experiments on five benchmarks demonstrate that MemOVCD achieves favorable performance on two change detection tasks, validating its effectiveness and generalization under diverse open-vocabulary settings.",
+    "authors": [
+      "Zuzheng Kuang",
+      "Honghao Chang",
+      "Boqiang Liang",
+      "Haoqian Wang",
+      "Lijun He",
+      "Fan Li",
+      "Haixia Bi"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "id": "2604.26774v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `benchmark` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Open-vocabulary change detection aims to identify semantic changes in bi-temporal remote sensing images without predefined categories.\n\n进一步看，论文的核心做法或实验重点可以概括为：Recent methods combine foundation models such as SAM, DINO and CLIP, but typically process each timestamp independently or interact only at the final comparison stage.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory reasoning"
+    ],
+    "one_liner": "Open-vocabulary change detection aims to identify semantic changes in bi-temporal remote sensing images without predefined categories.",
+    "published": "2026-04-29",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：benchmark\n- 检索关键词命中：memory reasoning\n- 来源分类信息：cs.CV, cs.AI",
+    "slug": "memovcd-training-free-open-vocabulary-change-detection-via-cross-temporal-memory",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2604.26774v1",
+    "tags": [
+      "benchmark"
+    ],
+    "title": "MemOVCD: Training-Free Open-Vocabulary Change Detection via Cross-Temporal Memory Reasoning and Global-Local Adaptive Rectification",
+    "updated": "2026-04-29",
+    "url": "http://arxiv.org/abs/2604.26774v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Large Language Model (LLM) agents are increasingly used in real-world products, where personalized and context-aware user interactions are essential. A central enabler of such capabilities is the agent's long-term semantic memory system, which extracts implicit and explicit signals from noisy longitudinal behavioral data, stores them in a structured form, and supports low-latency retrieval. Building industrial-grade long-term memory for LLM agents raises five challenges: scalability, low-latency retrieval, privacy constraints, cross-domain generalizability, and observability. We introduce the Hierarchical Long-Term Semantic Memory (HLTM) framework, which organizes textual data into a schema-aligned memory tree that captures semantic knowledge at multiple levels of granularity, enabling scalable ingestion, privacy-aware storage, low-latency retrieval, and transparent provenance; HLTM further incorporates an adaptation mechanism to generalize across diverse use cases. Extensive evaluations on LinkedIn's Hiring Assistant show that HLTM improves answer correctness and retrieval F1 significantly by more than 10%, while significantly advancing the Pareto frontier between query and indexing latency. HLTM has been deployed in LinkedIn's Hiring Assistant to power core personalization features in production hiring workflows.",
+    "authors": [
+      "Zhentao Xu",
+      "Shangjing Zhang",
+      "Emir Poyraz",
+      "Yvonne Li",
+      "Ye Jin",
+      "Xie Lu",
+      "Xiaoyang Gu",
+      "Karthik Ramgopal",
+      "Praveen Kumar Bodigutla",
+      "Xiaofeng Wang"
+    ],
+    "categories": [
+      "cs.IR",
+      "cs.LG"
+    ],
+    "id": "2604.26197v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, context, long-term, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Large Language Model (LLM) agents are increasingly used in real-world products, where personalized and context-aware user interactions are essential.\n\n进一步看，论文的核心做法或实验重点可以概括为：A central enabler of such capabilities is the agent's long-term semantic memory system, which extracts implicit and explicit signals from noisy longitudinal behavioral data, stores them in a structured form, and...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "long-term memory"
+    ],
+    "one_liner": "Large Language Model (LLM) agents are increasingly used in real-world products, where personalized and context-aware user interactions are essential.",
+    "published": "2026-04-29",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, context, long-term, retrieval\n- 检索关键词命中：long-term memory\n- 来源分类信息：cs.IR, cs.LG",
+    "slug": "hierarchical-long-term-semantic-memory-for-linkedin-s-hiring-agent",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2604.26197v1",
+    "tags": [
+      "agent",
+      "context",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "Hierarchical Long-Term Semantic Memory for LinkedIn's Hiring Agent",
+    "updated": "2026-04-29",
+    "url": "http://arxiv.org/abs/2604.26197v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Language models (LMs) behave more like humans when their cognitive resources are restricted, particularly in predicting sentence processing costs such as reading times. However, it remains unclear whether such constraints similarly affect sentence comprehension strategies. Besides, existing methods do not directly target the balance between memory storage and sentence processing, which is central to human working memory. To address this issue, we propose a dual-task paradigm that combines an arithmetic computation task with a sentence comprehension task, such as \"The 2 cocktail + blended 3 =...\" Our experiments show that under dual-task conditions, GPT-4o, o3-mini, and o4-mini shift toward plausibility-based comprehension, mirroring humans' rational inference. Specifically, these models show a greater accuracy gap between plausible sentences (e.g., \"The cocktail was blended by the bartender\") and implausible sentences (e.g., \"The bartender was blended by the cocktail\") in the dual-task condition compared to the single-task conditions. These findings suggest that constraints on the balance between memory and processing resources promote rational inference in LMs. More broadly, they support the view that human-like sentence comprehension fundamentally arises from the allocation of limited cognitive resources.",
+    "authors": [
+      "Rei Emura",
+      "Saku Sugawara"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "id": "2604.26351v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `working memory` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Language models (LMs) behave more like humans when their cognitive resources are restricted, particularly in predicting sentence processing costs such as reading times.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, it remains unclear whether such constraints similarly affect sentence comprehension strategies.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "working memory"
+    ],
+    "one_liner": "Language models (LMs) behave more like humans when their cognitive resources are restricted, particularly in predicting sentence processing costs such as reading times.",
+    "published": "2026-04-29",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：working memory\n- 检索关键词命中：working memory\n- 来源分类信息：cs.CL",
+    "slug": "a-dual-task-paradigm-to-investigate-sentence-comprehension-strategies-in-languag",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2604.26351v1",
+    "tags": [
+      "working memory"
+    ],
+    "title": "A Dual-Task Paradigm to Investigate Sentence Comprehension Strategies in Language Models",
+    "updated": "2026-04-29",
+    "url": "http://arxiv.org/abs/2604.26351v1",
+    "venue": ""
+  },
+  {
     "abstract": "Existing methods for AI psychological counselors predominantly rely on supervised fine-tuning using static dialogue datasets. However, this contrasts with human experts, who continuously refine their proficiency through clinical practice and accumulated experience. To bridge this gap, we propose an Experience-Driven Lifelong Learning Agent (\\texttt{PsychAgent}) for psychological counseling. First, we establish a Memory-Augmented Planning Engine tailored for longitudinal multi-session interactions, which ensures therapeutic continuity through persistent memory and strategic planning. Second, to support self-evolution, we design a Skill Evolution Engine that extracts new practice-grounded skills from historical counseling trajectories. Finally, we introduce a Reinforced Internalization Engine that integrates the evolved skills into the model via rejection fine-tuning, aiming to improve performance across diverse scenarios. Comparative analysis shows that our approach achieves higher scores than strong general LLMs (e.g., GPT-5.4, Gemini-3) and domain-specific baselines across all reported evaluation dimensions. These results suggest that lifelong learning can improve the consistency and overall quality of multi-session counseling responses.",
     "authors": [
       "Yutao Yang",
