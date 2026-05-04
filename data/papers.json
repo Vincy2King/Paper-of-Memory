@@ -1,5 +1,161 @@
 [
   {
+    "abstract": "Large Language Models (LLMs) have recently been widely adopted in conversational agents. However, the increasingly long interactions between users and agents accumulate extensive dialogue records, making it difficult for LLMs with limited context windows to maintain a coherent long-term dialogue memory and deliver personalized responses. While retrieval-augmented memory systems have emerged to address this issue, existing methods often depend on single-granularity memory segmentation and retrieval. This approach falls short in capturing deep memory connections, leading to partial retrieval of useful information or substantial noise, resulting in suboptimal performance. To tackle these limits, we propose MemGAS, a framework that enhances memory consolidation by constructing multi-granularity association, adaptive selection, and retrieval. MemGAS is based on multi-granularity memory units and employs Gaussian Mixture Models to cluster and associate new memories with historical ones. An entropy-based router adaptively selects optimal granularity by evaluating query relevance distributions and balancing information completeness and noise. Retrieved memories are further refined via LLM-based filtering. Experiments on four long-term memory benchmarks demonstrate that MemGAS outperforms state-of-the-art methods on both question answer and retrieval tasks, achieving superior performance across different query types and top-K settings\\footnote{https://github.com/Applied-Machine-Learning-Lab/ICLR2026\\_MemGAS}.",
+    "authors": [
+      "Derong Xu",
+      "Yi Wen",
+      "Pengyue Jia",
+      "Yingyi Zhang",
+      "Wenlin Zhang",
+      "Yichao Wang",
+      "Huifeng Guo",
+      "Ruiming Tang",
+      "Xiangyu Zhao",
+      "Enhong Chen",
+      "Tong Xu"
+    ],
+    "categories": [
+      "ICLR.cc/2026/Conference/-/Submission"
+    ],
+    "id": "openreview:i2yIvZARnG",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, conversation` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ICLR 2026 Poster` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Large Language Models (LLMs) have recently been widely adopted in conversational agents.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, the increasingly long interactions between users and agents accumulate extensive dialogue records, making it difficult for LLMs with limited context windows to maintain a coherent long-term dialogue memory...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "long-term memory",
+      "memory benchmark",
+      "memory benchmarks"
+    ],
+    "one_liner": "Large Language Models (LLMs) have recently been widely adopted in conversational agents.",
+    "published": "2026-01-26",
+    "relevance": "- 来源：OpenReview\n- Venue：ICLR 2026 Poster\n- 高亮主题命中：agent, benchmark, context, conversation, long-term, retrieval\n- 检索关键词命中：long-term memory, memory benchmark, memory benchmarks\n- 来源分类信息：ICLR.cc/2026/Conference/-/Submission",
+    "slug": "from-single-to-multi-granularity-toward-long-term-memory-association-and-selecti",
+    "source": "OpenReview",
+    "source_key": "i2yIvZARnG",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "conversation",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "From Single to Multi-Granularity: Toward Long-Term Memory Association and Selection of Conversational Agents",
+    "updated": "2026-05-03",
+    "url": "https://openreview.net/forum?id=i2yIvZARnG",
+    "venue": "ICLR 2026 Poster"
+  },
+  {
+    "abstract": "Large language model (LLM) agents require long-term user memory for consistent personalization, but limited context windows hinder tracking evolving preferences over long interactions. Existing memory systems mainly rely on static, hand-crafted update rules; although reinforcement learning (RL)-based agents learn memory updates, sparse outcome rewards provide weak supervision, resulting in unstable long-horizon optimization. Drawing on memory schema theory and the functional division between prefrontal regions and hippocampus regions, we introduce MemCoE, a cognition-inspired two-stage optimization framework that learns how memory should be organized and what information to update. In the first stage, we propose Memory Guideline Induction to optimize a global guideline via contrastive feedback interpreted as textual gradients; in the second stage, Guideline-Aligned Memory Policy Optimization uses the induced guideline to define structured process rewards and performs multi-turn RL to learn a guideline-following memory evolution policy. We evaluate on three personalization memory benchmarks, covering explicit/implicit preference and different sizes and noise, and observe consistent improvements over strong baselines with favorable robustness, transferability, and efficiency.",
+    "authors": [
+      "Derong Xu",
+      "Shuochen Liu",
+      "Pengfei Luo",
+      "Pengyue Jia",
+      "Yingyi Zhang",
+      "Yi Wen",
+      "Yimin Deng",
+      "Wenlin Zhang",
+      "Enhong Chen",
+      "Xiangyu Zhao",
+      "Tong Xu"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "id": "2605.00702v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, long-term` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Large language model (LLM) agents require long-term user memory for consistent personalization, but limited context windows hinder tracking evolving preferences over long interactions.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing memory systems mainly rely on static, hand-crafted update rules; although reinforcement learning (RL)-based agents learn memory updates, sparse outcome rewards provide weak supervision, resulting in unstable...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory benchmark",
+      "memory benchmarks"
+    ],
+    "one_liner": "Large language model (LLM) agents require long-term user memory for consistent personalization, but limited context windows hinder tracking evolving preferences over long...",
+    "published": "2026-05-01",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context, long-term\n- 检索关键词命中：memory benchmark, memory benchmarks\n- 来源分类信息：cs.CL",
+    "slug": "learning-how-and-what-to-memorize-cognition-inspired-two-stage-optimization-for-",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2605.00702v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "long-term"
+    ],
+    "title": "Learning How and What to Memorize: Cognition-Inspired Two-Stage Optimization for Evolving Memory",
+    "updated": "2026-05-01",
+    "url": "http://arxiv.org/abs/2605.00702v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Large language model (LLM) agents demonstrate strong performance in short-text contexts but often underperform in extended dialogues due to inefficient memory management. Existing approaches face a fundamental trade-off between efficiency and effectiveness: memory compression risks losing critical details required for complex reasoning, while retaining raw text introduces unnecessary computational overhead for simple queries. The crux lies in the limitations of monolithic memory representations and static retrieval mechanisms, which fail to emulate the flexible and proactive memory scheduling capabilities observed in humans, thus struggling to adapt to diverse problem scenarios. Inspired by the principle of cognitive economy, we propose HyMem, a hybrid memory architecture that enables dynamic on-demand scheduling through multi-granular memory representations. HyMem adopts a dual-granular storage scheme paired with a dynamic two-tier retrieval system: a lightweight module constructs summary-level context for efficient response generation, while an LLM-based deep module is selectively activated only for complex queries, augmented by a reflection mechanism for iterative reasoning refinement. Experiments show that HyMem achieves strong performance on both the LOCOMO and LongMemEval benchmarks, outperforming full-context while reducing computational cost by 92.6\\%, establishing a state-of-the-art balance between efficiency and performance in long-term memory management.",
+    "authors": [
+      "Xiaochen Zhao",
+      "Kaikai Wang",
+      "Xiaowen Zhang",
+      "Chen Yao",
+      "Aili Wang"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2602.13933v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, compression, context` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Large language model (LLM) agents demonstrate strong performance in short-text contexts but often underperform in extended dialogues due to inefficient memory management.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing approaches face a fundamental trade-off between efficiency and effectiveness: memory compression risks losing critical details required for complex reasoning, while retaining raw text introduces unnecessary...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory compression"
+    ],
+    "one_liner": "Large language model (LLM) agents demonstrate strong performance in short-text contexts but often underperform in extended dialogues due to inefficient memory management.",
+    "published": "2026-02-15",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, compression, context, long-term, retrieval\n- 检索关键词命中：memory compression\n- 来源分类信息：cs.AI",
+    "slug": "hymem-hybrid-memory-architecture-with-dynamic-retrieval-scheduling",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2602.13933v2",
+    "tags": [
+      "agent",
+      "benchmark",
+      "compression",
+      "context",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "HyMem: Hybrid Memory Architecture with Dynamic Retrieval Scheduling",
+    "updated": "2026-05-01",
+    "url": "http://arxiv.org/abs/2602.13933v2",
+    "venue": ""
+  },
+  {
+    "abstract": "Persistent AI memory is often reduced to a retrieval problem: store prior interactions as text, embed them, and ask the model to recover relevant context later. This design is useful for thematic recall, but it is mismatched to the kinds of memory that agents need in production: exact facts, current state, updates and deletions, aggregation, relations, negative queries, and explicit unknowns. These operations require memory to behave less like search and more like a system of record. This paper argues that reliable external AI memory must be schema-grounded. Schemas define what must be remembered, what may be ignored, and which values must never be inferred. We present an iterative, schema-aware write path that decomposes memory ingestion into object detection, field detection, and field-value extraction, with validation gates, local retries, and stateful prompt control. The result shifts interpretation from the read path to the write path: reads become constrained queries over verified records rather than repeated inference over retrieved prose. We evaluate this design on structured extraction and end-to-end memory benchmarks. On the extraction benchmark, the judge-in-the-loop configuration reaches 90.42% object-level accuracy and 62.67% output accuracy, above all tested frontier structured-output baselines. On our end-to-end memory benchmark, xmemory reaches 97.10% F1, compared with 80.16%-87.24% across the third-party baselines. On the application-level task, xmemory reaches 95.2% accuracy, outperforming specialised memory systems, code-generated Markdown harnesses, and customer-facing frontier-model application harnesses. The results show that, for memory workloads requiring stable facts and stateful computation, architecture matters more than retrieval scale or model strength alone.",
+    "authors": [
+      "Alex Petrov",
+      "Alexander Gusak",
+      "Denis Mukha",
+      "Dima Korolev"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.CL"
+    ],
+    "id": "2604.27906v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Persistent AI memory is often reduced to a retrieval problem: store prior interactions as text, embed them, and ask the model to recover relevant context later.\n\n进一步看，论文的核心做法或实验重点可以概括为：This design is useful for thematic recall, but it is mismatched to the kinds of memory that agents need in production: exact facts, current state, updates and deletions, aggregation, relations, negative queries, and...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory benchmark",
+      "memory benchmarks"
+    ],
+    "one_liner": "Persistent AI memory is often reduced to a retrieval problem: store prior interactions as text, embed them, and ask the model to recover relevant context later.",
+    "published": "2026-04-30",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context, retrieval\n- 检索关键词命中：memory benchmark, memory benchmarks\n- 来源分类信息：cs.AI, cs.CL",
+    "slug": "from-unstructured-recall-to-schema-grounded-memory-reliable-ai-memory-via-iterat",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2604.27906v2",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "retrieval"
+    ],
+    "title": "From Unstructured Recall to Schema-Grounded Memory: Reliable AI Memory via Iterative, Schema-Aware Extraction",
+    "updated": "2026-05-01",
+    "url": "http://arxiv.org/abs/2604.27906v2",
+    "venue": ""
+  },
+  {
     "abstract": "Large language model (LLM)-based coding agents increasingly rely on external memory to reuse prior debugging experience, repair traces, and repository-local operational knowledge. However, retrieved memory is useful only when the current failure is genuinely compatible with a previous one; superficial similarity in stack traces, terminal errors, paths, or configuration symptoms can lead to unsafe memory injection. This paper reframes issue-memory use as a selective, risk-sensitive control problem rather than a pure top-k retrieval problem. We introduce RSCB-MC, a risk-sensitive contextual bandit memory controller that decides whether an agent should use no memory, inject the top resolution, summarize multiple candidates, perform high-precision or high-recall retrieval, abstain, or ask for feedback. The system stores reusable issue knowledge through a pattern-variant-episode schema and converts retrieval evidence into a fixed 16-feature contextual state capturing relevance, uncertainty, structural compatibility, feedback history, false-positive risk, latency, and token cost. Its reward design penalizes false-positive memory injection more strongly than missed reuse, making non-injection and abstention first-class safety actions. In deterministic smoke-scale artifacts, RSCB-MC obtains the strongest non-oracle offline replay success rate, 62.5%, while maintaining a 0.0% false-positive rate. In a bounded 200-case hot-path validation, it reaches 60.5% proxy success with 0.0% false positives and a 331.466 microseconds p95 decision latency. The results show that, for coding-agent memory, the key question is not only which memory is most similar, but whether any retrieved memory is safe enough to influence the debugging trajectory.",
     "authors": [
       "Mehmet Iscan"
@@ -3344,50 +3500,6 @@
     "title": "MRAD: Zero-Shot Anomaly Detection with Memory-Driven Retrieval",
     "updated": "2026-04-11",
     "url": "https://openreview.net/forum?id=TQkFiW3AEX",
-    "venue": "ICLR 2026 Poster"
-  },
-  {
-    "abstract": "Large Language Models (LLMs) have recently been widely adopted in conversational agents. However, the increasingly long interactions between users and agents accumulate extensive dialogue records, making it difficult for LLMs with limited context windows to maintain a coherent long-term dialogue memory and deliver personalized responses. While retrieval-augmented memory systems have emerged to address this issue, existing methods often depend on single-granularity memory segmentation and retrieval. This approach falls short in capturing deep memory connections, leading to partial retrieval of useful information or substantial noise, resulting in suboptimal performance. To tackle these limits, we propose MemGAS, a framework that enhances memory consolidation by constructing multi-granularity association, adaptive selection, and retrieval. MemGAS is based on multi-granularity memory units and employs Gaussian Mixture Models to cluster and associate new memories with historical ones. An entropy-based router adaptively selects optimal granularity by evaluating query relevance distributions and balancing information completeness and noise. Retrieved memories are further refined via LLM-based filtering. Experiments on four long-term memory benchmarks demonstrate that MemGAS outperforms state-of-the-art methods on both question answer and retrieval tasks, achieving superior performance across different query types and top-K settings\\footnote{https://github.com/Applied-Machine-Learning-Lab/ICLR2026\\_MemGAS}.",
-    "authors": [
-      "Derong Xu",
-      "Yi Wen",
-      "Pengyue Jia",
-      "Yingyi Zhang",
-      "Wenlin Zhang",
-      "Yichao Wang",
-      "Huifeng Guo",
-      "Ruiming Tang",
-      "Xiangyu Zhao",
-      "Enhong Chen",
-      "Tong Xu"
-    ],
-    "categories": [
-      "ICLR.cc/2026/Conference/-/Submission"
-    ],
-    "id": "openreview:i2yIvZARnG",
-    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, conversation` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ICLR 2026 Poster` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Large Language Models (LLMs) have recently been widely adopted in conversational agents.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, the increasingly long interactions between users and agents accumulate extensive dialogue records, making it difficult for LLMs with limited context windows to maintain a coherent long-term dialogue memory...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
-    "matched_keywords": [
-      "long-term memory",
-      "memory benchmark",
-      "memory benchmarks"
-    ],
-    "one_liner": "Large Language Models (LLMs) have recently been widely adopted in conversational agents.",
-    "published": "2026-01-26",
-    "relevance": "- 来源：OpenReview\n- Venue：ICLR 2026 Poster\n- 高亮主题命中：agent, benchmark, context, conversation, long-term, retrieval\n- 检索关键词命中：long-term memory, memory benchmark, memory benchmarks\n- 来源分类信息：ICLR.cc/2026/Conference/-/Submission",
-    "slug": "from-single-to-multi-granularity-toward-long-term-memory-association-and-selecti",
-    "source": "OpenReview",
-    "source_key": "i2yIvZARnG",
-    "tags": [
-      "agent",
-      "benchmark",
-      "context",
-      "conversation",
-      "long-term",
-      "retrieval"
-    ],
-    "title": "From Single to Multi-Granularity: Toward Long-Term Memory Association and Selection of Conversational Agents",
-    "updated": "2026-04-11",
-    "url": "https://openreview.net/forum?id=i2yIvZARnG",
     "venue": "ICLR 2026 Poster"
   },
   {

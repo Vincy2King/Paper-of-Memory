@@ -39,19 +39,23 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **105**
-- Last generated: **2026-05-03**
+- Total tracked papers: **108**
+- Last generated: **2026-05-04**
 
 ## Papers by Source
 
 - ACL Anthology: **1**
-- arXiv: **73**
+- arXiv: **76**
 - OpenReview: **31**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-05-03 | OpenReview | [From Single to Multi-Granularity: Toward Long-Term Memory Association and Selection of Conversational Agents](content/papers/from-single-to-multi-granularity-toward-long-term-memory-association-and-selecti.md) | agent, benchmark, context |
+| 2026-05-01 | arXiv | [Learning How and What to Memorize: Cognition-Inspired Two-Stage Optimization for Evolving Memory](content/papers/learning-how-and-what-to-memorize-cognition-inspired-two-stage-optimization-for-.md) | agent, benchmark, context |
+| 2026-05-01 | arXiv | [HyMem: Hybrid Memory Architecture with Dynamic Retrieval Scheduling](content/papers/hymem-hybrid-memory-architecture-with-dynamic-retrieval-scheduling.md) | agent, benchmark, compression |
+| 2026-05-01 | arXiv | [From Unstructured Recall to Schema-Grounded Memory: Reliable AI Memory via Iterative, Schema-Aware Extraction](content/papers/from-unstructured-recall-to-schema-grounded-memory-reliable-ai-memory-via-iterat.md) | agent, benchmark, context |
 | 2026-04-30 | arXiv | [Learning When to Remember: Risk-Sensitive Contextual Bandits for Abstention-Aware Memory Retrieval in LLM-Based Coding Agents](content/papers/learning-when-to-remember-risk-sensitive-contextual-bandits-for-abstention-aware.md) | agent, context, retrieval |
 | 2026-04-30 | arXiv | [From Unstructured Recall to Schema-Grounded Memory: Reliable AI Memory via Iterative, Schema-Aware Extraction](content/papers/from-unstructured-recall-to-schema-grounded-memory-reliable-ai-memory-via-iterat.md) | agent, benchmark, context |
 | 2026-04-30 | arXiv | [Exploring Interaction Paradigms for LLM Agents in Scientific Visualization](content/papers/exploring-interaction-paradigms-for-llm-agents-in-scientific-visualization.md) | agent, benchmark, context |
@@ -68,10 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-04-29 | arXiv | [A Dual-Task Paradigm to Investigate Sentence Comprehension Strategies in Language Models](content/papers/a-dual-task-paradigm-to-investigate-sentence-comprehension-strategies-in-languag.md) | working memory |
 | 2026-04-28 | arXiv | [PsychAgent: An Experience-Driven Lifelong Learning Agent for Self-Evolving Psychological Counselor](content/papers/psychagent-an-experience-driven-lifelong-learning-agent-for-self-evolving-psycho.md) | agent |
 | 2026-04-28 | OpenReview | [PlugMem: A Task-Agnostic Plugin Memory Module for LLM Agents](content/papers/plugmem-a-task-agnostic-plugin-memory-module-for-llm-agents.md) | agent, benchmark, context |
-| 2026-04-28 | arXiv | [AOI: Context-Aware Multi-Agent Operations via Dynamic Scheduling and Hierarchical Memory Compression](content/papers/aoi-context-aware-multi-agent-operations-via-dynamic-scheduling-and-hierarchical.md) | agent, benchmark, compression |
-| 2026-04-27 | arXiv | [The AI Codebase Maturity Model: From Assisted Coding to Fully Autonomous Systems](content/papers/the-ai-codebase-maturity-model-from-assisted-coding-to-fully-autonomous-systems.md) | agent |
-| 2026-04-27 | arXiv | [TSAssistant: A Human-in-the-Loop Agentic Framework for Automated Target Safety Assessment](content/papers/tsassistant-a-human-in-the-loop-agentic-framework-for-automated-target-safety-as.md) | agent, conversation |
-| 2026-04-27 | arXiv | [Poster: ClawdGo: Endogenous Security Awareness Training for Autonomous AI Agents](content/papers/poster-clawdgo-endogenous-security-awareness-training-for-autonomous-ai-agents.md) | agent |
 
 ## Suggested GitHub Setup
 

@@ -4,7 +4,7 @@
 - Venue: ICLR 2026 Poster
 - Paper ID: openreview:i2yIvZARnG
 - Published: 2026-01-26
-- Updated: 2026-04-11
+- Updated: 2026-05-03
 - Authors: Derong Xu, Yi Wen, Pengyue Jia, Yingyi Zhang, Wenlin Zhang, Yichao Wang, Huifeng Guo, Ruiming Tang, Xiangyu Zhao, Enhong Chen, Tong Xu
 - Tags: agent, benchmark, context, conversation, long-term, retrieval
 - Categories: ICLR.cc/2026/Conference/-/Submission
