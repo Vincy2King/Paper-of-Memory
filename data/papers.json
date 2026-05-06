@@ -1,5 +1,162 @@
 [
   {
+    "abstract": "Agent memory failures are silent: an LLM-based agent can produce a fluent response even when it fails to extract, retain, or retrieve the information needed across sessions. The write-manage-read loop describes the external pipeline of these systems but leaves open which internal computations implement each stage. Tracing internal feature circuits across the Qwen-3 family (0.6B--14B) and two memory frameworks (mem0 and A-MEM), we report three findings. First, control is detectable before content: routing circuitry is causally active at 0.6B, while content circuitry produces no detectable signal until 4B under our tracing setup, creating a deployment regime where small models route with apparent competence but silently fail at extraction and grounding. Second, within the content group, Write and Read share a late-layer hub that operates as a context-grounding substrate already present in the base model; only memory framing recruits a functional grounding direction on this substrate, and the hub transfers across both frameworks. Third, emergence does not imply steerability: although the content circuit becomes detectable at 4B, it becomes reliably steerable only at 8B, indicating that detection and intervention have distinct scale thresholds. As a practical implication, the feature-space separation between the two circuit groups enables per-operation failure localization at 76.2% accuracy without supervision, providing a stage-level diagnostic for otherwise silent agent-memory failures.",
+    "authors": [
+      "Xutao Mao",
+      "Jinman Zhao",
+      "Gerald Penn",
+      "Cong Wang"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2605.03354v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, context` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Agent memory failures are silent: an LLM-based agent can produce a fluent response even when it fails to extract, retain, or retrieve the information needed across sessions.\n\n进一步看，论文的核心做法或实验重点可以概括为：The write-manage-read loop describes the external pipeline of these systems but leaves open which internal computations implement each stage.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "Agent memory failures are silent: an LLM-based agent can produce a fluent response even when it fails to extract, retain, or retrieve the information needed across sessions.",
+    "published": "2026-05-05",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, context\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.AI",
+    "slug": "what-happens-inside-agent-memory-circuit-analysis-from-emergence-to-diagnosis",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2605.03354v1",
+    "tags": [
+      "agent",
+      "context"
+    ],
+    "title": "What Happens Inside Agent Memory? Circuit Analysis from Emergence to Diagnosis",
+    "updated": "2026-05-05",
+    "url": "http://arxiv.org/abs/2605.03354v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Memory systems enable otherwise-stateless LLM agents to persist user information across sessions, but also introduce a new attack surface. We characterize the Trojan Hippo attack, a class of persistent memory attacks that operates in a more realistic threat model than prior memory poisoning work: the attacker plants a dormant payload into an agent's long-term memory via a single untrusted tool call (e.g., a crafted email), which activates only when the user later discusses sensitive topics such as finance, health, or identity, and exfiltrates high-value personal data to the attacker. While anecdotal demonstrations of such attacks have appeared against deployed systems, no prior work systematically evaluates them across heterogeneous memory architectures and defenses. We introduce a dynamic evaluation framework comprising two components: (1) an OpenEvolve-based adaptive red-teaming benchmark that stress-tests defenses and memory backends against continuously refined attacks, and (2) the first capability-aware security/utility analysis for persistent memory systems, enabling principled reasoning about defense deployment across different usage profiles. Instantiated on an email assistant across four memory backends (explicit tool memory, agentic memory, RAG, and sliding-window context), Trojan Hippo achieves up to 85-100% ASR against current frontier models from OpenAI and Google, with planted memories successfully activating even after 100 benign sessions. We evaluate four memory-system defenses inspired by basic security principles, finding they substantially reduce attack success rates (to as low as 0-5%), though at utility costs that vary widely with task requirements. Because of this substantial security-utility tradeoff, the effective real-world deployment of defenses remains an open challenge, which our evaluation framework is specifically designed to address.",
+    "authors": [
+      "Debeshee Das",
+      "Julien Piet",
+      "Darya Kaviani",
+      "Luca Beurer-Kellner",
+      "Florian Tramèr",
+      "David Wagner"
+    ],
+    "categories": [
+      "cs.CR",
+      "cs.AI"
+    ],
+    "id": "2605.01970v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, long-term` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Memory systems enable otherwise-stateless LLM agents to persist user information across sessions, but also introduce a new attack surface.\n\n进一步看，论文的核心做法或实验重点可以概括为：We characterize the Trojan Hippo attack, a class of persistent memory attacks that operates in a more realistic threat model than prior memory poisoning work: the attacker plants a dormant payload into an agent's...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory",
+      "persistent memory"
+    ],
+    "one_liner": "Memory systems enable otherwise-stateless LLM agents to persist user information across sessions, but also introduce a new attack surface.",
+    "published": "2026-05-03",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context, long-term\n- 检索关键词命中：agent memory, persistent memory\n- 来源分类信息：cs.CR, cs.AI",
+    "slug": "trojan-hippo-weaponizing-agent-memory-for-data-exfiltration",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2605.01970v2",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "long-term"
+    ],
+    "title": "Trojan Hippo: Weaponizing Agent Memory for Data Exfiltration",
+    "updated": "2026-05-05",
+    "url": "http://arxiv.org/abs/2605.01970v2",
+    "venue": ""
+  },
+  {
+    "abstract": "Long-term personalized memory for LLM agents is challenging on resource-limited edge devices due to high storage costs and multimodal complexity. To address this, we propose ScrapMem, a framework that integrates multimodal data into \"Scrapbook Page.\" ScrapMem introduces Optical Forgetting, an optical compression mechanism that progressively reduces the resolution of older memories, lowering storage cost while suppressing low-value details. To maintain semantic consistency, we construct an Episodic Memory Graph (EM-Graph) that organizes key events into a causal-temporal structure. Extensive experiments on the multimodal ATM-Bench showcase that ScrapMem provides three main benefits: (1) strong performance, achieving a new state-of-the-art with a 51.0% Joint@10 score; (2) high storage efficiency, reducing memory usage by up to 93% via optical forgetting; and (3) improved recall, increasing Recall@10 to 70.3% through structured aggregation. ScrapMem offers an effective and storage-efficient solution for on-device long-term memory in multimodal LLM agents.",
+    "authors": [
+      "Jiale Chang",
+      "Yuxiang Ren"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2605.03804v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, compression, episodic, long-term` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Long-term personalized memory for LLM agents is challenging on resource-limited edge devices due to high storage costs and multimodal complexity.\n\n进一步看，论文的核心做法或实验重点可以概括为：To address this, we propose ScrapMem, a framework that integrates multimodal data into \"Scrapbook Page.\" ScrapMem introduces Optical Forgetting, an optical compression mechanism that progressively reduces the...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "Long-term personalized memory for LLM agents is challenging on resource-limited edge devices due to high storage costs and multimodal complexity.",
+    "published": "2026-05-05",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, compression, episodic, long-term\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.AI",
+    "slug": "scrapmem-a-bio-inspired-framework-for-on-device-personalized-agent-memory-via-op",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2605.03804v1",
+    "tags": [
+      "agent",
+      "compression",
+      "episodic",
+      "long-term"
+    ],
+    "title": "ScrapMem: A Bio-inspired Framework for On-device Personalized Agent Memory via Optical Forgetting",
+    "updated": "2026-05-05",
+    "url": "http://arxiv.org/abs/2605.03804v1",
+    "venue": ""
+  },
+  {
+    "abstract": "We present a machine-checked formalization of structurally governed AI workflow architectures and prove that effect-level governance can be imposed without reducing internal computational expressivity. Using Interaction Trees in Rocq 8.19, we define a governance operator G that mediates all effectful directives, including memory access, external calls, and oracle (LLM) queries. Our development compiles with 0 admitted lemmas and consists of 36 modules, ~12,000 lines of Rocq, and 454 theorems. We establishseven properties: (P1) governed Turing completeness, (P2) governed oracle expressivity, (P3) a decidability boundary in which governance predicates are total and closed under Boolean composition while semantic program properties remain non-trivial and undecidable by governance, (P4) goal preservation for permitted executions, (P5) expressive minimality of primitive capabilities (compute, memory, reasoning, external call, observability), (P6) subsumption asymmetry showing structural governance strictly subsumes content-level filtering, and (P7) semantic transparency: on all executions where governance permits, the governed interpretation is observationally equivalent (modulo governance-only events) to the ungoverned interpretation. Together, these results show that governance and computational expressivity are orthogonal dimensions: governance constrains the effect boundary of programs while remaining semantically transparent to internal computation.",
+    "authors": [
+      "Alan L. McCann"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.LO",
+      "cs.PL"
+    ],
+    "id": "2605.01030v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `memory research` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：We present a machine-checked formalization of structurally governed AI workflow architectures and prove that effect-level governance can be imposed without reducing internal computational expressivity.\n\n进一步看，论文的核心做法或实验重点可以概括为：Using Interaction Trees in Rocq 8.19, we define a governance operator G that mediates all effectful directives, including memory access, external calls, and oracle (LLM) queries.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory reasoning"
+    ],
+    "one_liner": "We present a machine-checked formalization of structurally governed AI workflow architectures and prove that effect-level governance can be imposed without reducing internal...",
+    "published": "2026-05-01",
+    "relevance": "- 来源：arXiv\n- 检索关键词命中：memory reasoning\n- 来源分类信息：cs.AI, cs.LO, cs.PL",
+    "slug": "effect-transparent-governance-for-ai-workflow-architectures-semantic-preservatio",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2605.01030v2",
+    "tags": [],
+    "title": "Effect-Transparent Governance for AI Workflow Architectures: Semantic Preservation, Expressive Minimality, and Decidability Boundaries",
+    "updated": "2026-05-05",
+    "url": "http://arxiv.org/abs/2605.01030v2",
+    "venue": ""
+  },
+  {
+    "abstract": "Agentic AI systems, specifically LLM-driven agents that plan, invoke tools, maintain persistent memory, and delegate tasks to peer agents via protocols such as MCP and A2A, introduce a threat surface that differs materially from standalone model inference. Agents accumulate sensitive context, hold credentials, and operate across pipelines no single party fully controls, enabling prompt injection, context exfiltration, credential theft, and inter-agent message poisoning. Current defenses operate entirely within the software stack and can be silently bypassed by a sufficiently privileged adversary such as a compromised cloud operator. Confidential computing (CC) offers a hardware-rooted alternative: Trusted Execution Environments (TEEs) isolate agent code and data from privileged system software, while remote attestation enables verifiable trust across distributed deployments. This survey synthesizes the design space in four parts: (i) a unified taxonomy of six TEE platforms (Intel SGX, Intel TDX, AMD SEV-SNP, ARM TrustZone, ARM CCA, and NVIDIA H100 CC) covering deployment roles and performance tradeoffs; (ii) an agent-centric threat model spanning perception, planning, memory, action, and coordination layers mapped to nine security goals; (iii) a comparative survey of CC-based defenses distinguishing findings that transfer from single-call inference versus what requires new agentic designs; and (iv) six open challenges including compound attestation for multi-hop agent chains and GPU-TEE performance at LLM scale. While several hardware trust primitives appear mature enough for targeted deployments, no broadly established end-to-end framework yet binds them into a coherent security substrate for production agentic AI.",
+    "authors": [
+      "Javad Forough",
+      "Marios Kogias",
+      "Hamed Haddadi"
+    ],
+    "categories": [
+      "cs.CR",
+      "cs.AI"
+    ],
+    "id": "2605.03213v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, context` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Agentic AI systems, specifically LLM-driven agents that plan, invoke tools, maintain persistent memory, and delegate tasks to peer agents via protocols such as MCP and A2A, introduce a threat surface that differs...\n\n进一步看，论文的核心做法或实验重点可以概括为：Agents accumulate sensitive context, hold credentials, and operate across pipelines no single party fully controls, enabling prompt injection, context exfiltration, credential theft, and inter-agent message poisoning.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "persistent memory"
+    ],
+    "one_liner": "Agentic AI systems, specifically LLM-driven agents that plan, invoke tools, maintain persistent memory, and delegate tasks to peer agents via protocols such as MCP and A2A,...",
+    "published": "2026-05-04",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, context\n- 检索关键词命中：persistent memory\n- 来源分类信息：cs.CR, cs.AI",
+    "slug": "when-agents-handle-secrets-a-survey-of-confidential-computing-for-agentic-ai",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2605.03213v1",
+    "tags": [
+      "agent",
+      "context"
+    ],
+    "title": "When Agents Handle Secrets: A Survey of Confidential Computing for Agentic AI",
+    "updated": "2026-05-04",
+    "url": "http://arxiv.org/abs/2605.03213v1",
+    "venue": ""
+  },
+  {
     "abstract": "Contemporary artificial intelligence systems achieve strong performance through large-scale parameterization, retrieval augmentation, and training on extensive static corpora. Despite these advances, they continue to face limitations in persistent memory, temporal grounding, provenance, and interpretability. These challenges are especially pronounced in large language models, where experience is encoded implicitly in fixed parameters, limiting the ability to preserve, inspect, and reinterpret past interactions over time. This paper establishes a memory-centric architectural foundation for artificial intelligence in which experience is represented explicitly and persistently to support temporal grounding, provenance, and interpretability. It proposes an alternative to parameter-centric approaches by treating memory as a first-class, structured substrate for reasoning. We introduce the Dynamic Gist-Based Memory Model (DGMM), an architecture in which experience is represented as an evolving, graph-structured episodic-semantic memory. DGMM encodes experience as interconnected conceptual structures grounded in time, source, and interaction context, and defines selective, cue-conditioned recall as the mechanism for constructing working memory. A formal schema and architectural invariants are provided based on additive memory growth and recall-conditioned interpretation. The results specify properties of DGMM, including episodic persistence, locality of cue-conditioned surprise, and contextual variability without structural modification of stored memory. DGMM provides a coherent architectural theory in which memory is explicit and persistent, supporting evolving interpretation without retraining and enabling interpretable, context-aware, and temporally grounded AI systems.",
     "authors": [
       "Terry Dorsey",
@@ -92,6 +249,40 @@
     "title": "MEMAUDIT: An Exact Package-Oracle Evaluation Protocol for Budgeted Long-Term LLM Memory Writing",
     "updated": "2026-05-04",
     "url": "http://arxiv.org/abs/2605.02199v1",
+    "venue": ""
+  },
+  {
+    "abstract": "As large language model (LLM)-powered agents are increasingly deployed to perform complex, real-world tasks, they face a growing class of attacks that exploit extended user-agent-environment interactions to pursue malicious objectives improbable in single-turn settings. Such long-horizon threats pose significant risks to the safe deployment of LLM agents in critical domains. In this paper, we present MAGE (Memory As Guardrail Enforcement), a novel defensive framework designed to counter a wide range of long-horizon threats. Inspired by the \"shadow stack\" abstraction in systems security, MAGE maintains a dedicated, safety-focused agentic memory that distills and retains safety-critical context across the agent's full execution trajectory, leveraging this shadow memory to proactively assess the risk of pending actions prior to their execution. Extensive evaluation demonstrates that MAGE substantially outperforms existing defenses across diverse long-horizon threats in detection accuracy, achieves early-stage detection for the majority of attacks, and introduces only negligible overhead to agent utility. To our best knowledge, MAGE represents the first framework to detect and mitigate long-horizon threats using an agentic memory approach, establishing a new paradigm for this critical challenge and opening promising directions for future research.",
+    "authors": [
+      "Yuhui Wang",
+      "Tanqiu Jiang",
+      "Jiacheng Liang",
+      "Charles Fleming",
+      "Ting Wang"
+    ],
+    "categories": [
+      "cs.CR",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "id": "2605.03228v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, context` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：As large language model (LLM)-powered agents are increasingly deployed to perform complex, real-world tasks, they face a growing class of attacks that exploit extended user-agent-environment interactions to pursue...\n\n进一步看，论文的核心做法或实验重点可以概括为：Such long-horizon threats pose significant risks to the safe deployment of LLM agents in critical domains.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "As large language model (LLM)-powered agents are increasingly deployed to perform complex, real-world tasks, they face a growing class of attacks that exploit extended user-...",
+    "published": "2026-05-04",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, context\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.CR, cs.AI, cs.CL",
+    "slug": "mage-safeguarding-llm-agents-against-long-horizon-threats-via-shadow-memory",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2605.03228v1",
+    "tags": [
+      "agent",
+      "context"
+    ],
+    "title": "MAGE: Safeguarding LLM Agents against Long-Horizon Threats via Shadow Memory",
+    "updated": "2026-05-04",
+    "url": "http://arxiv.org/abs/2605.03228v1",
     "venue": ""
   },
   {

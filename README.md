@@ -39,22 +39,28 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **117**
-- Last generated: **2026-05-05**
+- Total tracked papers: **123**
+- Last generated: **2026-05-06**
 
 ## Papers by Source
 
 - ACL Anthology: **1**
-- arXiv: **85**
+- arXiv: **91**
 - OpenReview: **31**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-05-05 | arXiv | [What Happens Inside Agent Memory? Circuit Analysis from Emergence to Diagnosis](content/papers/what-happens-inside-agent-memory-circuit-analysis-from-emergence-to-diagnosis.md) | agent, context |
+| 2026-05-05 | arXiv | [Trojan Hippo: Weaponizing Agent Memory for Data Exfiltration](content/papers/trojan-hippo-weaponizing-agent-memory-for-data-exfiltration.md) | agent, benchmark, context |
+| 2026-05-05 | arXiv | [ScrapMem: A Bio-inspired Framework for On-device Personalized Agent Memory via Optical Forgetting](content/papers/scrapmem-a-bio-inspired-framework-for-on-device-personalized-agent-memory-via-op.md) | agent, compression, episodic |
+| 2026-05-05 | arXiv | [Effect-Transparent Governance for AI Workflow Architectures: Semantic Preservation, Expressive Minimality, and Decidability Boundaries](content/papers/effect-transparent-governance-for-ai-workflow-architectures-semantic-preservatio.md) | memory |
+| 2026-05-04 | arXiv | [When Agents Handle Secrets: A Survey of Confidential Computing for Agentic AI](content/papers/when-agents-handle-secrets-a-survey-of-confidential-computing-for-agentic-ai.md) | agent, context |
 | 2026-05-04 | arXiv | [The Dynamic Gist-Based Memory Model (DGMM): A Memory-Centric Architecture for Artificial Intelligence](content/papers/the-dynamic-gist-based-memory-model-dgmm-a-memory-centric-architecture-for-artif.md) | context, episodic, retrieval |
 | 2026-05-04 | arXiv | [Recurrent Deep Reinforcement Learning for Chemotherapy Control under Partial Observability](content/papers/recurrent-deep-reinforcement-learning-for-chemotherapy-control-under-partial-obs.md) | benchmark |
 | 2026-05-04 | arXiv | [MEMAUDIT: An Exact Package-Oracle Evaluation Protocol for Budgeted Long-Term LLM Memory Writing](content/papers/memaudit-an-exact-package-oracle-evaluation-protocol-for-budgeted-long-term-llm-.md) | agent, long-term, retrieval |
+| 2026-05-04 | arXiv | [MAGE: Safeguarding LLM Agents against Long-Horizon Threats via Shadow Memory](content/papers/mage-safeguarding-llm-agents-against-long-horizon-threats-via-shadow-memory.md) | agent, context |
 | 2026-05-03 | arXiv | [WMF-AM: Probing LLM Working Memory via Depth-Parameterized Cumulative State Tracking](content/papers/wmf-am-probing-llm-working-memory-via-depth-parameterized-cumulative-state-track.md) | agent, benchmark |
 | 2026-05-03 | arXiv | [Trojan Hippo: Weaponizing Agent Memory for Data Exfiltration](content/papers/trojan-hippo-weaponizing-agent-memory-for-data-exfiltration.md) | agent, benchmark, context |
 | 2026-05-03 | arXiv | [GRAVITY: Architecture-Agnostic Structured Anchoring for Long-Horizon Conversational Memory](content/papers/gravity-architecture-agnostic-structured-anchoring-for-long-horizon-conversation.md) | agent, benchmark, context |
@@ -66,12 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-05-01 | arXiv | [From Unstructured Recall to Schema-Grounded Memory: Reliable AI Memory via Iterative, Schema-Aware Extraction](content/papers/from-unstructured-recall-to-schema-grounded-memory-reliable-ai-memory-via-iterat.md) | agent, benchmark, context |
 | 2026-05-01 | arXiv | [Effect-Transparent Governance for AI Workflow Architectures: Semantic Preservation, Expressive Minimality, and Decidability Boundaries](content/papers/effect-transparent-governance-for-ai-workflow-architectures-semantic-preservatio.md) | memory |
 | 2026-04-30 | arXiv | [Learning When to Remember: Risk-Sensitive Contextual Bandits for Abstention-Aware Memory Retrieval in LLM-Based Coding Agents](content/papers/learning-when-to-remember-risk-sensitive-contextual-bandits-for-abstention-aware.md) | agent, context, retrieval |
-| 2026-04-30 | arXiv | [From Unstructured Recall to Schema-Grounded Memory: Reliable AI Memory via Iterative, Schema-Aware Extraction](content/papers/from-unstructured-recall-to-schema-grounded-memory-reliable-ai-memory-via-iterat.md) | agent, benchmark, context |
-| 2026-04-30 | arXiv | [Exploring Interaction Paradigms for LLM Agents in Scientific Visualization](content/papers/exploring-interaction-paradigms-for-llm-agents-in-scientific-visualization.md) | agent, benchmark, context |
-| 2026-04-30 | arXiv | [EviMem: Evidence-Gap-Driven Iterative Retrieval for Long-Term Conversational Memory](content/papers/evimem-evidence-gap-driven-iterative-retrieval-for-long-term-conversational-memo.md) | conversation, long-term, retrieval |
-| 2026-04-30 | arXiv | [Event-Centric World Modeling with Memory-Augmented Retrieval for Embodied Decision-Making](content/papers/event-centric-world-modeling-with-memory-augmented-retrieval-for-embodied-decisi.md) | agent, retrieval |
-| 2026-04-30 | arXiv | [Contextual Agentic Memory is a Memo, Not True Memory](content/papers/contextual-agentic-memory-is-a-memo-not-true-memory.md) | agent, benchmark, context |
-| 2026-04-30 | arXiv | [Agentic Harness Engineering: Observability-Driven Automatic Evolution of Coding-Agent Harnesses](content/papers/agentic-harness-engineering-observability-driven-automatic-evolution-of-coding-a.md) | agent, benchmark, long-term |
 
 ## Suggested GitHub Setup
 
