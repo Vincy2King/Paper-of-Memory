@@ -39,19 +39,21 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **129**
+- Total tracked papers: **131**
 - Last generated: **2026-05-07**
 
 ## Papers by Source
 
 - ACL Anthology: **1**
 - arXiv: **97**
-- OpenReview: **31**
+- OpenReview: **33**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-05-07 | OpenReview | [GAAMA: Graph Augmented Associative Memory for Agents](content/papers/gaama-graph-augmented-associative-memory-for-agents.md) | agent, benchmark, compression |
+| 2026-05-07 | OpenReview | [A Brain System for Auditory Working Memory](content/papers/a-brain-system-for-auditory-working-memory.md) | retrieval |
 | 2026-05-06 | arXiv | [Storage Is Not Memory: A Retrieval-Centered Architecture for Agent Recall](content/papers/storage-is-not-memory-a-retrieval-centered-architecture-for-agent-recall.md) | agent, conversation, retrieval |
 | 2026-05-06 | arXiv | [RLDX-1 Technical Report](content/papers/rldx-1-technical-report.md) | benchmark, long-term |
 | 2026-05-06 | arXiv | [LongSeeker: Elastic Context Orchestration for Long-Horizon Search Agents](content/papers/longseeker-elastic-context-orchestration-for-long-horizon-search-agents.md) | agent, benchmark, context |
@@ -70,8 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-05-03 | arXiv | [WMF-AM: Probing LLM Working Memory via Depth-Parameterized Cumulative State Tracking](content/papers/wmf-am-probing-llm-working-memory-via-depth-parameterized-cumulative-state-track.md) | agent, benchmark |
 | 2026-05-03 | arXiv | [Trojan Hippo: Weaponizing Agent Memory for Data Exfiltration](content/papers/trojan-hippo-weaponizing-agent-memory-for-data-exfiltration.md) | agent, benchmark, context |
 | 2026-05-03 | arXiv | [GRAVITY: Architecture-Agnostic Structured Anchoring for Long-Horizon Conversational Memory](content/papers/gravity-architecture-agnostic-structured-anchoring-for-long-horizon-conversation.md) | agent, benchmark, context |
-| 2026-05-03 | OpenReview | [From Single to Multi-Granularity: Toward Long-Term Memory Association and Selection of Conversational Agents](content/papers/from-single-to-multi-granularity-toward-long-term-memory-association-and-selecti.md) | agent, benchmark, context |
-| 2026-05-02 | arXiv | [MemORAI: Memory Organization and Retrieval via Adaptive Graph Intelligence for LLM Conversational Agents](content/papers/memorai-memory-organization-and-retrieval-via-adaptive-graph-intelligence-for-ll.md) | agent, benchmark, compression |
 
 ## Suggested GitHub Setup
 

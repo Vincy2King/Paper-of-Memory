@@ -1,5 +1,72 @@
 [
   {
+    "abstract": "AI agents that interact with users across multiple sessions require persistent long-term memory to maintain coherent, personalized behavior. Current approaches either rely on flat retrieval-augmented generation (RAG), which loses structural relationships between memories, or use memory compression and vector retrieval that cannot capture the associative structure of multi-session conversations. There are few graph based techniques proposed in the literature, however they still suffer from hub dominated retrieval and poor hierarchical reasoning over evolving memory. We propose GAAMA, a graph-augmented associative memory system that constructs a concept-mediated hierarchical knowledge graph through a three-step pipeline: (1)~verbatim episode preservation from raw conversations, (2)~LLM-based extraction of atomic facts and topic-level concept nodes, and (3)~synthesis of higher-order reflections. The resulting graph uses four node types (episode, fact, reflection, concept) connected by five structural edge types, with concept nodes providing cross-cutting traversal paths that complement semantic similarity. Retrieval combines cosine-similarity-based $k$-nearest neighbor search with edge-type-aware Personalized PageRank (PPR) through an additive scoring function. On the LoCoMo-10 benchmark (1,540 questions across 10 multi-session conversations), GAAMA achieves 78.9\\% mean reward, outperforming a tuned RAG baseline (75.0\\%), HippoRAG (69.9\\%), A-Mem (47.2\\%), and Nemori (52.1\\%). Ablation analysis shows that augmenting graph-traversal-based ranking (Personalized PageRank) with semantic search consistently improves over pure semantic search on graph nodes (+1.0 percentage point overall).",
+    "authors": [
+      "{'fullname': 'Swarna Kamal Paul', 'username': '~Swarna_Kamal_Paul2'}",
+      "{'fullname': 'Shubhendu Sharma', 'username': ''}",
+      "{'fullname': 'Nitin Sareen', 'username': ''}"
+    ],
+    "categories": [
+      "OpenReview.net/Public_Article/DBLP.org/-/Record"
+    ],
+    "id": "openreview:EQtyfL5f2j",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, compression, conversation` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `CoRR 2026` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：AI agents that interact with users across multiple sessions require persistent long-term memory to maintain coherent, personalized behavior.\n\n进一步看，论文的核心做法或实验重点可以概括为：Current approaches either rely on flat retrieval-augmented generation (RAG), which loses structural relationships between memories, or use memory compression and vector retrieval that cannot capture the associative...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "long-term memory",
+      "memory compression"
+    ],
+    "one_liner": "AI agents that interact with users across multiple sessions require persistent long-term memory to maintain coherent, personalized behavior.",
+    "published": "2026-12-31",
+    "relevance": "- 来源：OpenReview\n- Venue：CoRR 2026\n- 高亮主题命中：agent, benchmark, compression, conversation, long-term, retrieval\n- 检索关键词命中：long-term memory, memory compression\n- 来源分类信息：OpenReview.net/Public_Article/DBLP.org/-/Record",
+    "slug": "gaama-graph-augmented-associative-memory-for-agents",
+    "source": "OpenReview",
+    "source_key": "EQtyfL5f2j",
+    "tags": [
+      "agent",
+      "benchmark",
+      "compression",
+      "conversation",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "GAAMA: Graph Augmented Associative Memory for Agents",
+    "updated": "2026-05-07",
+    "url": "https://openreview.net/forum?id=EQtyfL5f2j",
+    "venue": "CoRR 2026"
+  },
+  {
+    "abstract": "p>The brain basis for auditory working memory, the process of actively maintaining sounds in memory over short periods of time, is controversial. Using functional magnetic resonance imaging in human participants, we demonstrate that the maintenance of single tones in memory is associated with activation in auditory cortex. In addition, sustained activation was observed in hippocampus and inferior frontal gyrus. Multivoxel pattern analysis showed that patterns of activity in auditory cortex and left inferior frontal gyrus distinguished the tone that was maintained in memory. Functional connectivity during maintenance was demonstrated between auditory cortex and both the hippocampus and inferior frontal cortex. The data support a system for auditory working memory based on the maintenance of sound-specific representations in auditory cortex by projections from higher-order areas, including the hippocampus and frontal cortex.</p><p><b>SIGNIFICANCE STATEMENT</b> In this work, we demonstrate a system for maintaining sound in working memory based on activity in auditory cortex, hippocampus, and frontal cortex, and functional connectivity among them. Specifically, our work makes three advances from the previous work. First, we robustly demonstrate hippocampal involvement in all phases of auditory working memory (encoding, maintenance, and retrieval): the role of hippocampus in working memory is controversial. Second, using a pattern classification technique, we show that activity in the auditory cortex and inferior frontal gyrus is specific to the maintained tones in working memory. Third, we show long-range connectivity of auditory cortex to hippocampus and frontal cortex, which may be responsible for keeping such representations active during working memory maintenance.</p>",
+    "authors": [
+      "{'fullname': 'Sukhbinder Kumar', 'username': 'https://orcid.org/orcid-search/search?searchQuery=Sukhbinder%20Kumar'}",
+      "{'fullname': 'Sabine Joseph', 'username': 'https://orcid.org/orcid-search/search?searchQuery=Sabine%20Joseph'}",
+      "{'fullname': 'Phillip E. Gander', 'username': 'https://orcid.org/orcid-search/search?searchQuery=Phillip%20E.%20Gander'}",
+      "{'fullname': 'Nicolas Barascud', 'username': '~Nicolas_Barascud1'}",
+      "{'fullname': 'Andrea R. Halpern', 'username': 'https://orcid.org/orcid-search/search?searchQuery=Andrea%20R.%20Halpern'}",
+      "{'fullname': 'Timothy D. Griffiths', 'username': 'https://orcid.org/orcid-search/search?searchQuery=Timothy%20D.%20Griffiths'}"
+    ],
+    "categories": [
+      "OpenReview.net/Public_Article/ORCID.org/-/Record"
+    ],
+    "id": "openreview:Z3FBY2v94A",
+    "intro": "这篇论文被纳入仓库，是因为它和 `retrieval` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `The Journal of Neuroscience` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：p>The brain basis for auditory working memory, the process of actively maintaining sounds in memory over short periods of time, is controversial.\n\n进一步看，论文的核心做法或实验重点可以概括为：Using functional magnetic resonance imaging in human participants, we demonstrate that the maintenance of single tones in memory is associated with activation in auditory cortex.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "working memory"
+    ],
+    "one_liner": "p>The brain basis for auditory working memory, the process of actively maintaining sounds in memory over short periods of time, is controversial.",
+    "published": "2016-04-20",
+    "relevance": "- 来源：OpenReview\n- Venue：The Journal of Neuroscience\n- 高亮主题命中：retrieval\n- 检索关键词命中：working memory\n- 来源分类信息：OpenReview.net/Public_Article/ORCID.org/-/Record",
+    "slug": "a-brain-system-for-auditory-working-memory",
+    "source": "OpenReview",
+    "source_key": "Z3FBY2v94A",
+    "tags": [
+      "retrieval"
+    ],
+    "title": "A Brain System for Auditory Working Memory",
+    "updated": "2026-05-07",
+    "url": "https://openreview.net/forum?id=Z3FBY2v94A",
+    "venue": "The Journal of Neuroscience"
+  },
+  {
     "abstract": "Extraction at ingestion is the wrong primitive for agent memory: content discarded before the query is known cannot be recovered at retrieval time. We propose True Memory, a six-layer architecture that shifts the center of the system from a storage schema to a multi-stage retrieval pipeline operating over events preserved verbatim. The full system runs as a single SQLite file on commodity CPU with no external database, vector index, graph store, or GPU. On LoCoMo (1,540 questions across 10 multi-session conversations), True Memory Pro reaches 93.0% accuracy (3-run mean) against 61.4% for Mem0, 65.4% for Supermemory, approximately 71% for Zep, and 94.5% for EverMemOS under a matched gpt-4.1-mini answer model. On LongMemEval (500 questions), True Memory Pro reaches 87.8% (3-run mean). On BEAM-1M (700 questions at the 1-million-token scale), True Memory Pro reaches 76.6% (3-run mean), above the prior published result of 73.9% for Hindsight. A 56-configuration ablation shows a 1.3-percentage-point spread within the top-performing configuration family.",
     "authors": [
       "Joshua Adler",
