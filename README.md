@@ -39,22 +39,28 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **123**
-- Last generated: **2026-05-06**
+- Total tracked papers: **129**
+- Last generated: **2026-05-07**
 
 ## Papers by Source
 
 - ACL Anthology: **1**
-- arXiv: **91**
+- arXiv: **97**
 - OpenReview: **31**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-05-06 | arXiv | [Storage Is Not Memory: A Retrieval-Centered Architecture for Agent Recall](content/papers/storage-is-not-memory-a-retrieval-centered-architecture-for-agent-recall.md) | agent, conversation, retrieval |
+| 2026-05-06 | arXiv | [RLDX-1 Technical Report](content/papers/rldx-1-technical-report.md) | benchmark, long-term |
+| 2026-05-06 | arXiv | [LongSeeker: Elastic Context Orchestration for Long-Horizon Search Agents](content/papers/longseeker-elastic-context-orchestration-for-long-horizon-search-agents.md) | agent, benchmark, context |
+| 2026-05-06 | arXiv | [Contextual Memory-Enhanced Source Coding for Low-SNR Communications](content/papers/contextual-memory-enhanced-source-coding-for-low-snr-communications.md) | context |
+| 2026-05-06 | arXiv | [A Systematic Survey of Security Threats and Defenses in LLM-Based AI Agents: A Layered Attack Surface Framework](content/papers/a-systematic-survey-of-security-threats-and-defenses-in-llm-based-ai-agents-a-la.md) | agent, benchmark |
 | 2026-05-05 | arXiv | [What Happens Inside Agent Memory? Circuit Analysis from Emergence to Diagnosis](content/papers/what-happens-inside-agent-memory-circuit-analysis-from-emergence-to-diagnosis.md) | agent, context |
 | 2026-05-05 | arXiv | [Trojan Hippo: Weaponizing Agent Memory for Data Exfiltration](content/papers/trojan-hippo-weaponizing-agent-memory-for-data-exfiltration.md) | agent, benchmark, context |
 | 2026-05-05 | arXiv | [ScrapMem: A Bio-inspired Framework for On-device Personalized Agent Memory via Optical Forgetting](content/papers/scrapmem-a-bio-inspired-framework-for-on-device-personalized-agent-memory-via-op.md) | agent, compression, episodic |
+| 2026-05-05 | arXiv | [Learning to Forget -- Hierarchical Episodic Memory for Lifelong Robot Deployment](content/papers/learning-to-forget-hierarchical-episodic-memory-for-lifelong-robot-deployment.md) | episodic, long-term |
 | 2026-05-05 | arXiv | [Effect-Transparent Governance for AI Workflow Architectures: Semantic Preservation, Expressive Minimality, and Decidability Boundaries](content/papers/effect-transparent-governance-for-ai-workflow-architectures-semantic-preservatio.md) | memory |
 | 2026-05-04 | arXiv | [When Agents Handle Secrets: A Survey of Confidential Computing for Agentic AI](content/papers/when-agents-handle-secrets-a-survey-of-confidential-computing-for-agentic-ai.md) | agent, context |
 | 2026-05-04 | arXiv | [The Dynamic Gist-Based Memory Model (DGMM): A Memory-Centric Architecture for Artificial Intelligence](content/papers/the-dynamic-gist-based-memory-model-dgmm-a-memory-centric-architecture-for-artif.md) | context, episodic, retrieval |
@@ -66,12 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-05-03 | arXiv | [GRAVITY: Architecture-Agnostic Structured Anchoring for Long-Horizon Conversational Memory](content/papers/gravity-architecture-agnostic-structured-anchoring-for-long-horizon-conversation.md) | agent, benchmark, context |
 | 2026-05-03 | OpenReview | [From Single to Multi-Granularity: Toward Long-Term Memory Association and Selection of Conversational Agents](content/papers/from-single-to-multi-granularity-toward-long-term-memory-association-and-selecti.md) | agent, benchmark, context |
 | 2026-05-02 | arXiv | [MemORAI: Memory Organization and Retrieval via Adaptive Graph Intelligence for LLM Conversational Agents](content/papers/memorai-memory-organization-and-retrieval-via-adaptive-graph-intelligence-for-ll.md) | agent, benchmark, compression |
-| 2026-05-02 | arXiv | [Feedback-Normalized Developer Memory for Reinforcement-Learning Coding Agents: A Safety-Gated MCP Architecture](content/papers/feedback-normalized-developer-memory-for-reinforcement-learning-coding-agents-a-.md) | agent, benchmark, context |
-| 2026-05-01 | arXiv | [Learning How and What to Memorize: Cognition-Inspired Two-Stage Optimization for Evolving Memory](content/papers/learning-how-and-what-to-memorize-cognition-inspired-two-stage-optimization-for-.md) | agent, benchmark, context |
-| 2026-05-01 | arXiv | [HyMem: Hybrid Memory Architecture with Dynamic Retrieval Scheduling](content/papers/hymem-hybrid-memory-architecture-with-dynamic-retrieval-scheduling.md) | agent, benchmark, compression |
-| 2026-05-01 | arXiv | [From Unstructured Recall to Schema-Grounded Memory: Reliable AI Memory via Iterative, Schema-Aware Extraction](content/papers/from-unstructured-recall-to-schema-grounded-memory-reliable-ai-memory-via-iterat.md) | agent, benchmark, context |
-| 2026-05-01 | arXiv | [Effect-Transparent Governance for AI Workflow Architectures: Semantic Preservation, Expressive Minimality, and Decidability Boundaries](content/papers/effect-transparent-governance-for-ai-workflow-architectures-semantic-preservatio.md) | memory |
-| 2026-04-30 | arXiv | [Learning When to Remember: Risk-Sensitive Contextual Bandits for Abstention-Aware Memory Retrieval in LLM-Based Coding Agents](content/papers/learning-when-to-remember-risk-sensitive-contextual-bandits-for-abstention-aware.md) | agent, context, retrieval |
 
 ## Suggested GitHub Setup
 

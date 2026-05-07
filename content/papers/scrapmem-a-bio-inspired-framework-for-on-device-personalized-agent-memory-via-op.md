@@ -27,7 +27,7 @@ Long-term personalized memory for LLM agents is challenging on resource-limited 
 ## Why It Was Included
 - 来源：arXiv
 - 高亮主题命中：agent, compression, episodic, long-term
-- 检索关键词命中：agent memory
+- 检索关键词命中：agent memory, episodic memory, long-term memory
 - 来源分类信息：cs.AI
 
 ## Abstract Snapshot
