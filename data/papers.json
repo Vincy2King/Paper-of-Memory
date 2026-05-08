@@ -1,5 +1,239 @@
 [
   {
+    "abstract": "KV-cache quantization is framed as a quality--latency trade-off. We show it is \\emph{inverted} on Apple Silicon's unified memory: a single fused Metal kernel (sign-randomized FFT $+$ per-channel $λ$ $+$ per-group abs-max $+$ int4 nibble pack), exposed as a HuggingFace \\texttt{Cache} subclass, runs \\emph{faster than fp16} across $256$--$4096$-token prefixes on Gemma-3 1B ($-3$ to $-8\\%$ ms/tok) and at short context on Qwen2.5-1.5B ($-0.7$ to $-2.6\\%$ through $1$K), with $3\\times$ persistent memory compression and quality preserved ($\\dPPL = 0.000$ Qwen short-prompt; $+3.6$ hook $\\dPPL$ Gemma). The kernel's $\\sim\\!25$\\,ns/vec overhead is below the bandwidth savings from $3\\times$ compression. The fused kernel also closes Qwen's 4-bit per-token catastrophe ($\\dPPL = +7975 \\to +638.6$, $12.5\\times$ reduction) at $182$\\,GFLOPS / $D{=}128$. Supporting findings: $\\SRFT$ and $\\SRHT$ are statistically indistinguishable for KV quality (we pick $\\SRFT$ for mixed-radix and matrix-multiply alignment); a learned-rotation ablation surfaces a regularization role for the fixed random SRFT base (learning $R+λ$ without SRFT lowers calibration MSE $84.9\\%$ vs $50.3\\%$ but yields worse PPL); Householder rotations at $k{=}d/2$ reflectors are effectively lossless at $d{=}256$.",
+    "authors": [
+      "Mohamed Amine Bergach"
+    ],
+    "categories": [
+      "cs.PF",
+      "cs.AI"
+    ],
+    "id": "2605.05699v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `compression, context` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：KV-cache quantization is framed as a quality--latency trade-off.\n\n进一步看，论文的核心做法或实验重点可以概括为：We show it is \\emph{inverted} on Apple Silicon's unified memory: a single fused Metal kernel (sign-randomized FFT $+$ per-channel $λ$ $+$ per-group abs-max $+$ int4 nibble pack), exposed as a HuggingFace...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory compression",
+      "persistent memory"
+    ],
+    "one_liner": "KV-cache quantization is framed as a quality--latency trade-off.",
+    "published": "2026-05-07",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：compression, context\n- 检索关键词命中：memory compression, persistent memory\n- 来源分类信息：cs.PF, cs.AI",
+    "slug": "when-quantization-is-free-an-int4-kv-cache-that-outruns-fp16-on-apple-silicon",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2605.05699v1",
+    "tags": [
+      "compression",
+      "context"
+    ],
+    "title": "When Quantization Is Free: An int4 KV Cache That Outruns fp16 on Apple Silicon",
+    "updated": "2026-05-07",
+    "url": "http://arxiv.org/abs/2605.05699v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Agentic AI systems, specifically LLM-driven agents that plan, invoke tools, maintain persistent memory, and delegate tasks to peer agents via protocols such as MCP and A2A, introduce a threat surface that differs materially from standalone model inference. Agents accumulate sensitive context, hold credentials, and operate across pipelines no single party fully controls, enabling prompt injection, context exfiltration, credential theft, and inter-agent message poisoning. Current defenses operate entirely within the software stack and can be silently bypassed by a sufficiently privileged adversary such as a compromised cloud operator. Confidential computing (CC) offers a hardware-rooted alternative: Trusted Execution Environments (TEEs) isolate agent code and data from privileged system software, while remote attestation enables verifiable trust across distributed deployments. This survey synthesizes the design space in four parts: (i) a unified taxonomy of six TEE platforms (Intel SGX, Intel TDX, AMD SEV-SNP, ARM TrustZone, ARM CCA, and NVIDIA H100 CC) covering deployment roles and performance tradeoffs; (ii) an agent-centric threat model spanning perception, planning, memory, action, and coordination layers mapped to nine security goals; (iii) a comparative survey of CC-based defenses distinguishing findings that transfer from single-call inference versus what requires new agentic designs; and (iv) six open challenges including compound attestation for multi-hop agent chains and GPU-TEE performance at LLM scale. While several hardware trust primitives appear mature enough for targeted deployments, no broadly established end-to-end framework yet binds them into a coherent security substrate for production agentic AI.",
+    "authors": [
+      "Javad Forough",
+      "Marios Kogias",
+      "Hamed Haddadi"
+    ],
+    "categories": [
+      "cs.CR",
+      "cs.AI"
+    ],
+    "id": "2605.03213v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, context` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Agentic AI systems, specifically LLM-driven agents that plan, invoke tools, maintain persistent memory, and delegate tasks to peer agents via protocols such as MCP and A2A, introduce a threat surface that differs...\n\n进一步看，论文的核心做法或实验重点可以概括为：Agents accumulate sensitive context, hold credentials, and operate across pipelines no single party fully controls, enabling prompt injection, context exfiltration, credential theft, and inter-agent message poisoning.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "persistent memory"
+    ],
+    "one_liner": "Agentic AI systems, specifically LLM-driven agents that plan, invoke tools, maintain persistent memory, and delegate tasks to peer agents via protocols such as MCP and A2A,...",
+    "published": "2026-05-04",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, context\n- 检索关键词命中：persistent memory\n- 来源分类信息：cs.CR, cs.AI",
+    "slug": "when-agents-handle-secrets-a-survey-of-confidential-computing-for-agentic-ai",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2605.03213v2",
+    "tags": [
+      "agent",
+      "context"
+    ],
+    "title": "When Agents Handle Secrets: A Survey of Confidential Computing for Agentic AI",
+    "updated": "2026-05-07",
+    "url": "http://arxiv.org/abs/2605.03213v2",
+    "venue": ""
+  },
+  {
+    "abstract": "Agent memory failures are silent: an LLM-based agent can produce a fluent response even when it fails to extract, retain, or retrieve the information needed across sessions. The write-manage-read loop describes the external pipeline of these systems but leaves open which internal computations implement each stage. Tracing feature circuits across the Qwen-3 family (0.6B--14B) and two memory frameworks (mem0 and A-MEM), we report two mechanistic findings and one deliverable. First, control is detectable before content: routing circuitry is causally active at 0.6B, while content circuitry produces no detectable signal until 4B, exposing a deployment regime where small models route memory decisions before they can reliably extract or ground the underlying facts. Second, the shared hub is recruited, not created: Write and Read converge on a late-layer hub that already exists in the base model as a context-grounding substrate, and memory framing recruits a memory-specific functional direction on this substrate rather than building one of its own. Both findings transfer across mem0 and A-MEM, indicating that the underlying computations are properties of the base model rather than of any particular interface. Building on this circuit structure, we develop an unsupervised stage-level diagnostic that localizes silent failures to the responsible operation up to 76.2% accuracy, outperforming the strongest supervised baseline by 13 points. Together, these results point to circuit-level signatures as a practical handle for monitoring and structurally-guided design of agent memory.",
+    "authors": [
+      "Xutao Mao",
+      "Jinman Zhao",
+      "Gerald Penn",
+      "Cong Wang"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2605.03354v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, context` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Agent memory failures are silent: an LLM-based agent can produce a fluent response even when it fails to extract, retain, or retrieve the information needed across sessions.\n\n进一步看，论文的核心做法或实验重点可以概括为：The write-manage-read loop describes the external pipeline of these systems but leaves open which internal computations implement each stage.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "Agent memory failures are silent: an LLM-based agent can produce a fluent response even when it fails to extract, retain, or retrieve the information needed across sessions.",
+    "published": "2026-05-05",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, context\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.AI",
+    "slug": "what-happens-inside-agent-memory-circuit-analysis-from-emergence-to-diagnosis",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2605.03354v2",
+    "tags": [
+      "agent",
+      "context"
+    ],
+    "title": "What Happens Inside Agent Memory? Circuit Analysis from Emergence to Diagnosis",
+    "updated": "2026-05-07",
+    "url": "http://arxiv.org/abs/2605.03354v2",
+    "venue": ""
+  },
+  {
+    "abstract": "With the rapid evolution of foundation models, Large Language Model (LLM) agents have demonstrated increasingly powerful tool-use capabilities. However, this proficiency introduces significant security risks, as malicious actors can manipulate agents into executing tools to generate harmful content. While existing defensive mechanisms are effective, they frequently suffer from the over-refusal problem, where increased safety strictness compromises the agent's utility on benign tasks. To mitigate this trade-off, we propose \\textsc{SafeHarbor}, a novel framework designed to establish precise decision boundaries for LLM agents. Unlike static guidelines, \\textsc{SafeHarbor} extracts context-aware defense rules through enhanced adversarial generation. We design a local hierarchical memory system for dynamic rule injection, offering a training-free, efficient, and plug-and-play solution. Furthermore, we introduce an information entropy-based self-evolution mechanism that continuously optimizes the memory structure through dynamic node splitting and merging. Extensive experiments demonstrate that \\textsc{SafeHarbor} achieves state-of-the-art performance on both ambiguous benign tasks and explicit malicious attacks, notably attaining a peak benign utility of 63.6\\% on GPT-4o while maintaining a robust refusal rate exceeding 93\\% against harmful requests. The source code is publicly available at https://github.com/ljj-cyber/SafeHarbor.",
+    "authors": [
+      "Zhe Liu",
+      "Zonghao Ying",
+      "Wenxin Zhang",
+      "Quanchen Zou",
+      "Deyue Zhang",
+      "Dongdong Yang",
+      "Xiangzheng Zhang",
+      "Hao Peng"
+    ],
+    "categories": [
+      "cs.CR",
+      "cs.AI"
+    ],
+    "id": "2605.05704v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, context` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：With the rapid evolution of foundation models, Large Language Model (LLM) agents have demonstrated increasingly powerful tool-use capabilities.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, this proficiency introduces significant security risks, as malicious actors can manipulate agents into executing tools to generate harmful content.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory augmented",
+      "memory-augmented"
+    ],
+    "one_liner": "With the rapid evolution of foundation models, Large Language Model (LLM) agents have demonstrated increasingly powerful tool-use capabilities.",
+    "published": "2026-05-07",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, context\n- 检索关键词命中：memory augmented, memory-augmented\n- 来源分类信息：cs.CR, cs.AI",
+    "slug": "safeharbor-hierarchical-memory-augmented-guardrail-for-llm-agent-safety",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2605.05704v1",
+    "tags": [
+      "agent",
+      "context"
+    ],
+    "title": "SafeHarbor: Hierarchical Memory-Augmented Guardrail for LLM Agent Safety",
+    "updated": "2026-05-07",
+    "url": "http://arxiv.org/abs/2605.05704v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Large Language Model (LLM) agents are increasingly expected to maintain coherent, long-term personalized memory, yet current benchmarks primarily measure static fact retrieval, overlooking the ability to revise stored beliefs when new evidence emerges. We identify a critical and underexplored failure mode, Implicit Conflict: a later observation invalidates an earlier memory without explicit negation, requiring contextual inference and commonsense reasoning to detect. To rigorously evaluate this capability, we introduce STALE, a benchmark of 400 expert-validated conflict scenarios (1,200 evaluation queries across three probing dimensions) spanning over 100 everyday topics with contexts up to 150K tokens. We propose a three-dimensional probing framework that tests State Resolution (detecting that a prior belief is outdated), Premise Resistance (rejecting queries that falsely presuppose a stale state), and Implicit Policy Adaptation (proactively applying updated states in downstream behavior). A systematic evaluation of frontier LLMs and specialized memory frameworks reveals a pervasive gap between retrieving updated evidence and acting on it, with even the best evaluated model achieving only 55.2% overall accuracy. Models often accept outdated assumptions embedded in a user's query, and they struggle to recognize when a change in one aspect of the user's state should invalidate related memories. To establish an initial baseline for state-aware memory, we further present CUPMem, a prototype that strengthens write-time revision through structured state consolidation and propagation-aware search, suggesting that explicit state adjudication is a promising direction for robust agentic memory.",
+    "authors": [
+      "Hanxiang Chao",
+      "Yihan Bai",
+      "Rui Sheng",
+      "Tianle Li",
+      "Yushi Sun"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "id": "2605.06527v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, long-term` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Large Language Model (LLM) agents are increasingly expected to maintain coherent, long-term personalized memory, yet current benchmarks primarily measure static fact retrieval, overlooking the ability to revise stored...\n\n进一步看，论文的核心做法或实验重点可以概括为：We identify a critical and underexplored failure mode, Implicit Conflict: a later observation invalidates an earlier memory without explicit negation, requiring contextual inference and commonsense reasoning to detect.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "Large Language Model (LLM) agents are increasingly expected to maintain coherent, long-term personalized memory, yet current benchmarks primarily measure static fact retrieval,...",
+    "published": "2026-05-07",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context, long-term, retrieval\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.CL",
+    "slug": "stale-can-llm-agents-know-when-their-memories-are-no-longer-valid",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2605.06527v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "STALE: Can LLM Agents Know When Their Memories Are No Longer Valid?",
+    "updated": "2026-05-07",
+    "url": "http://arxiv.org/abs/2605.06527v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Many operations on sensory data -- comparison, memory, retrieval, and reasoning -- are naturally expressed over discrete symbolic structures. In language this interface is given by tokens; in audio, it must be learned. Existing audio tokenizers rely on quantization, clustering, or codec reconstruction, assigning tokens locally, so sequence consistency, compactness, length control, termination, and edit similarity are rarely optimized directly. We introduce PairAlign, a framework for compact audio tokenization through sequence-level self-alignment. PairAlign treats tokenization as conditional sequence generation: an encoder maps speech to a continuous condition, and an autoregressive decoder generates tokens from BOS, learning token identity, order, length, and EOS placement. Given two content-preserving views, each view's sequence is trained to be likely under the other's representation, while unrelated examples provide competing sequences. This gives a scalable surrogate for edit-distance preservation while discouraging many-to-one collapse. PairAlign starts from VQ-style tokenization and refines it with EMA-teacher targets, cross-paired teacher forcing, prefix corruption, likelihood contrast, and length control. On 3-second speech, PairAlign learns compact, non-degenerate sequences with broad vocabulary usage and strong cross-view consistency. On TIMIT retrieval, it preserves edit-distance search while reducing archive token count by 55%. A continuous-sweep probe shows lower local overlap than a dense geometric tokenizer, but stronger length control and bounded edit trajectories under 100 ms shifts. PairAlign is a sequence-symbolic predictive learner: like JEPA-style objectives, it predicts an abstract target from another view as a learned variable-length symbolic sequence, not a continuous latent.",
+    "authors": [
+      "Adhiraj Banerjee",
+      "Vipul Arora"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.CL",
+      "cs.SD"
+    ],
+    "id": "2605.06582v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Many operations on sensory data -- comparison, memory, retrieval, and reasoning -- are naturally expressed over discrete symbolic structures.\n\n进一步看，论文的核心做法或实验重点可以概括为：In language this interface is given by tokens; in audio, it must be learned.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory retrieval"
+    ],
+    "one_liner": "Many operations on sensory data -- comparison, memory, retrieval, and reasoning -- are naturally expressed over discrete symbolic structures.",
+    "published": "2026-05-07",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：retrieval\n- 检索关键词命中：memory retrieval\n- 来源分类信息：cs.LG, cs.CL, cs.SD",
+    "slug": "pairalign-a-framework-for-sequence-tokenization-via-self-alignment-with-applicat",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2605.06582v1",
+    "tags": [
+      "retrieval"
+    ],
+    "title": "PairAlign: A Framework for Sequence Tokenization via Self-Alignment with Applications to Audio Tokenization",
+    "updated": "2026-05-07",
+    "url": "http://arxiv.org/abs/2605.06582v1",
+    "venue": ""
+  },
+  {
+    "abstract": "In agent memory systems, the reranking model serves as the critical bridge connecting user queries with long-term memory. Most systems adopt the \"retrieve-then-rerank\" two-stage paradigm, but generic reranking models rely on semantic similarity matching and lack genuine reasoning capabilities, leading to a problem where recalled results are semantically highly relevant yet do not contain the key information needed to answer the question. This deficiency manifests in memory scenarios as three specific problems. First, relevance scores are miscalibrated, making threshold-based filtering difficult. Second, ranking degrades when facing temporal constraints, causal reasoning, and other complex queries. Third, the model cannot leverage dialogue context for semantic disambiguation. This report introduces MemReranker, a reranking model family (0.6B/4B) built on Qwen3-Reranker through multi-stage LLM knowledge distillation. Multi-teacher pairwise comparisons generate calibrated soft labels, BCE pointwise distillation establishes well-distributed scores, and InfoNCE contrastive learning enhances hard-sample discrimination. Training data combines general corpora with memory-specific multi-turn dialogue data covering temporal constraints, causal reasoning, and coreference resolution. On the memory retrieval benchmark, MemReranker-0.6B substantially outperforms BGE-Reranker and matches open-source 4B/8B models as well as GPT-4o-mini on key metrics. MemReranker-4B further achieves 0.737 MAP, with several metrics on par with Gemini-3-Flash, while maintaining inference latency at only 10--20\\% of large models. On finance and healthcare vertical-domain benchmarks, the models preserve generalization capabilities on par with mainstream large-parameter rerankers.",
+    "authors": [
+      "Chunyu Li",
+      "Jingyi Kang",
+      "Ding Chen",
+      "Mengyuan Zhang",
+      "Jiajun Shen",
+      "Bo Tang",
+      "Xuanhe Zhou",
+      "Feiyu Xiong",
+      "Zhiyu Li"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "id": "2605.06132v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, long-term` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：In agent memory systems, the reranking model serves as the critical bridge connecting user queries with long-term memory.\n\n进一步看，论文的核心做法或实验重点可以概括为：Most systems adopt the \"retrieve-then-rerank\" two-stage paradigm, but generic reranking models rely on semantic similarity matching and lack genuine reasoning capabilities, leading to a problem where recalled results...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory",
+      "memory retrieval"
+    ],
+    "one_liner": "In agent memory systems, the reranking model serves as the critical bridge connecting user queries with long-term memory.",
+    "published": "2026-05-07",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context, long-term, retrieval\n- 检索关键词命中：agent memory, memory retrieval\n- 来源分类信息：cs.CL",
+    "slug": "memreranker-reasoning-aware-reranking-for-agent-memory-retrieval",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2605.06132v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "MemReranker: Reasoning-Aware Reranking for Agent Memory Retrieval",
+    "updated": "2026-05-07",
+    "url": "http://arxiv.org/abs/2605.06132v1",
+    "venue": ""
+  },
+  {
     "abstract": "AI agents that interact with users across multiple sessions require persistent long-term memory to maintain coherent, personalized behavior. Current approaches either rely on flat retrieval-augmented generation (RAG), which loses structural relationships between memories, or use memory compression and vector retrieval that cannot capture the associative structure of multi-session conversations. There are few graph based techniques proposed in the literature, however they still suffer from hub dominated retrieval and poor hierarchical reasoning over evolving memory. We propose GAAMA, a graph-augmented associative memory system that constructs a concept-mediated hierarchical knowledge graph through a three-step pipeline: (1)~verbatim episode preservation from raw conversations, (2)~LLM-based extraction of atomic facts and topic-level concept nodes, and (3)~synthesis of higher-order reflections. The resulting graph uses four node types (episode, fact, reflection, concept) connected by five structural edge types, with concept nodes providing cross-cutting traversal paths that complement semantic similarity. Retrieval combines cosine-similarity-based $k$-nearest neighbor search with edge-type-aware Personalized PageRank (PPR) through an additive scoring function. On the LoCoMo-10 benchmark (1,540 questions across 10 multi-session conversations), GAAMA achieves 78.9\\% mean reward, outperforming a tuned RAG baseline (75.0\\%), HippoRAG (69.9\\%), A-Mem (47.2\\%), and Nemori (52.1\\%). Ablation analysis shows that augmenting graph-traversal-based ranking (Personalized PageRank) with semantic search consistently improves over pure semantic search on graph nodes (+1.0 percentage point overall).",
     "authors": [
       "{'fullname': 'Swarna Kamal Paul', 'username': '~Swarna_Kamal_Paul2'}",
@@ -33,6 +267,72 @@
     "updated": "2026-05-07",
     "url": "https://openreview.net/forum?id=EQtyfL5f2j",
     "venue": "CoRR 2026"
+  },
+  {
+    "abstract": "While Separate Source-Channel Coding (SSCC) retains the practical benefits of modular system design, its effectiveness in noisy text transmission is fundamentally constrained by the fragility of autoregressive source decoding. In low-SNR regimes, even a small number of residual bit errors after channel decoding may derail the subsequent lossless reconstruction process, especially when Arithmetic Coding (AC) relies on Large Language Model (LLM)-based probability estimation. Existing remedies either strengthen channel decoding based solely on channel observations or introduce contextual information only at the receiver for post-hoc correction, yet neither fully addresses the fragility of source probability modeling under residual channel errors. To this end, this paper proposes a Memory-Augmented Source Coding (MASC) scheme for robust SSCC-based transmission. Rather than treating context as external side information, MASC internalizes contextual patterns into a source model shared by both the transmitter-side source encoder and the receiver-side source decoder. Specifically, MASC employs a shared Parameterized Contextual Memory (PCM) to encode multi-order $n$-gram patterns, and further introduces a Mixture-of-Memory-Experts Router (MMER) to perform sparse, hidden-state-dependent routing over memory experts during autoregressive source modeling. By adaptively activating only the most relevant memories at each coding step, MASC refines source probability estimation, shortens average codelength, and mitigates the sensitivity of source decoding to residual channel errors. Extensive experiments over Rayleigh fading and AWGN channels demonstrate the effectiveness of the proposed scheme compared with state-of-the-art methods.",
+    "authors": [
+      "Ziqiong Wang",
+      "Rongpeng Li"
+    ],
+    "categories": [
+      "cs.IT",
+      "cs.LG"
+    ],
+    "id": "2605.04400v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `context` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：While Separate Source-Channel Coding (SSCC) retains the practical benefits of modular system design, its effectiveness in noisy text transmission is fundamentally constrained by the fragility of autoregressive source...\n\n进一步看，论文的核心做法或实验重点可以概括为：In low-SNR regimes, even a small number of residual bit errors after channel decoding may derail the subsequent lossless reconstruction process, especially when Arithmetic Coding (AC) relies on Large Language Model...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory augmented",
+      "memory-augmented"
+    ],
+    "one_liner": "While Separate Source-Channel Coding (SSCC) retains the practical benefits of modular system design, its effectiveness in noisy text transmission is fundamentally constrained by...",
+    "published": "2026-05-06",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：context\n- 检索关键词命中：memory augmented, memory-augmented\n- 来源分类信息：cs.IT, cs.LG",
+    "slug": "contextual-memory-enhanced-source-coding-for-low-snr-communications",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2605.04400v2",
+    "tags": [
+      "context"
+    ],
+    "title": "Contextual Memory-Enhanced Source Coding for Low-SNR Communications",
+    "updated": "2026-05-07",
+    "url": "http://arxiv.org/abs/2605.04400v2",
+    "venue": ""
+  },
+  {
+    "abstract": "LLM agents that operate over long context depend on external memory to accumulate knowledge over time. However, existing methods typically store each observation as a single deterministic conclusion (e.g., inferring \"API~X failed\" from temporary errors), even though such observations are inherently partial and potentially ambiguous. By committing to one conclusion and discarding uncertainty, these methods introduce self-reinforcing error: the agent acts on the stored conclusion, never revisits alternatives, and reinforces the conclusion over time. To address this issue, we propose BeliefMem, which shifts the memory paradigm from committing to a single conclusion per observation to retaining multiple candidate conclusions with their probabilities. Concretely, BeliefMem stores the candidate conclusions as separate memory entries, each carrying a probability that is updated via Noisy-OR rules as new observations arrive. At retrieval, all candidates surface together with their probabilities, keeping alternatives visible to the agent. Since each conclusion in memory retains its probability, BeliefMem preserves the uncertainty that the deterministic paradigm discards, enabling the agent to act with high confidence on well-evidenced knowledge while retaining the capacity to update its confidence when new evidence arrives. Empirical evaluations on LoCoMo and ALFWorld benchmarks show that, even with limited data, BeliefMem achieves the best average performance, remarkably outperforming well-known baselines. More broadly, such probabilistic memory produces substantial gains and explores a new direction for agent memory in partially observable environments.",
+    "authors": [
+      "Junfeng Liao",
+      "Qizhou Wang",
+      "Jianing Zhu",
+      "Bo Du",
+      "Rui Yan",
+      "Xiuying Chen"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.CL"
+    ],
+    "id": "2605.05583v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：LLM agents that operate over long context depend on external memory to accumulate knowledge over time.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, existing methods typically store each observation as a single deterministic conclusion (e.g., inferring \"API~X failed\" from temporary errors), even though such observations are inherently partial and...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "LLM agents that operate over long context depend on external memory to accumulate knowledge over time.",
+    "published": "2026-05-07",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context, retrieval\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.AI, cs.CL",
+    "slug": "belief-memory-agent-memory-under-partial-observability",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2605.05583v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "retrieval"
+    ],
+    "title": "Belief Memory: Agent Memory Under Partial Observability",
+    "updated": "2026-05-07",
+    "url": "http://arxiv.org/abs/2605.05583v1",
+    "venue": ""
   },
   {
     "abstract": "p>The brain basis for auditory working memory, the process of actively maintaining sounds in memory over short periods of time, is controversial. Using functional magnetic resonance imaging in human participants, we demonstrate that the maintenance of single tones in memory is associated with activation in auditory cortex. In addition, sustained activation was observed in hippocampus and inferior frontal gyrus. Multivoxel pattern analysis showed that patterns of activity in auditory cortex and left inferior frontal gyrus distinguished the tone that was maintained in memory. Functional connectivity during maintenance was demonstrated between auditory cortex and both the hippocampus and inferior frontal cortex. The data support a system for auditory working memory based on the maintenance of sound-specific representations in auditory cortex by projections from higher-order areas, including the hippocampus and frontal cortex.</p><p><b>SIGNIFICANCE STATEMENT</b> In this work, we demonstrate a system for maintaining sound in working memory based on activity in auditory cortex, hippocampus, and frontal cortex, and functional connectivity among them. Specifically, our work makes three advances from the previous work. First, we robustly demonstrate hippocampal involvement in all phases of auditory working memory (encoding, maintenance, and retrieval): the role of hippocampus in working memory is controversial. Second, using a pattern classification technique, we show that activity in the auditory cortex and inferior frontal gyrus is specific to the maintained tones in working memory. Third, we show long-range connectivity of auditory cortex to hippocampus and frontal cortex, which may be responsible for keeping such representations active during working memory maintenance.</p>",
