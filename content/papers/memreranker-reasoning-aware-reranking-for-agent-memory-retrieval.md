@@ -27,7 +27,7 @@ In agent memory systems, the reranking model serves as the critical bridge conne
 ## Why It Was Included
 - 来源：arXiv
 - 高亮主题命中：agent, benchmark, context, long-term, retrieval
-- 检索关键词命中：agent memory, memory retrieval
+- 检索关键词命中：agent memory, long-term memory, memory retrieval
 - 来源分类信息：cs.CL
 
 ## Abstract Snapshot
