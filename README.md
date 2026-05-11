@@ -39,39 +39,39 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **144**
-- Last generated: **2026-05-10**
+- Total tracked papers: **160**
+- Last generated: **2026-05-11**
 
 ## Papers by Source
 
 - ACL Anthology: **1**
-- arXiv: **110**
+- arXiv: **126**
 - OpenReview: **33**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-05-08 | arXiv | [When Stored Evidence Stops Being Usable: Scale-Conditioned Evaluation of Agent Memory](content/papers/when-stored-evidence-stops-being-usable-scale-conditioned-evaluation-of-agent-me.md) | agent, retrieval |
+| 2026-05-08 | arXiv | [TSAssistant: A Human-in-the-Loop Agentic Framework for Automated Target Safety Assessment](content/papers/tsassistant-a-human-in-the-loop-agentic-framework-for-automated-target-safety-as.md) | agent, conversation |
+| 2026-05-08 | arXiv | [Semantic-Aware Adaptive Visual Memory for Streaming Video Understanding](content/papers/semantic-aware-adaptive-visual-memory-for-streaming-video-understanding.md) | compression, long-term, retrieval |
+| 2026-05-08 | arXiv | [MEMOREPAIR: Barrier-First Cascade Repair in Agentic Memory](content/papers/memorepair-barrier-first-cascade-repair-in-agentic-memory.md) | agent |
+| 2026-05-08 | arXiv | [Graph-Structured Hyperdimensional Computing for Data-Efficient and Explainable Process-Structure-Property Prediction](content/papers/graph-structured-hyperdimensional-computing-for-data-efficient-and-explainable-p.md) | retrieval |
+| 2026-05-08 | arXiv | [GASim: A Graph-Accelerated Hybrid Framework for Social Simulation](content/papers/gasim-a-graph-accelerated-hybrid-framework-for-social-simulation.md) | agent, retrieval |
+| 2026-05-08 | arXiv | [From Standalone LLMs to Integrated Intelligence: A Survey of Compound Al Systems](content/papers/from-standalone-llms-to-integrated-intelligence-a-survey-of-compound-al-systems.md) | agent, benchmark, context |
+| 2026-05-08 | arXiv | [Belief Memory: Agent Memory Under Partial Observability](content/papers/belief-memory-agent-memory-under-partial-observability.md) | agent, benchmark, context |
+| 2026-05-08 | arXiv | [A Multi-Memory Segment System for Generating High-Quality Long-Term Memory Content in Agents](content/papers/a-multi-memory-segment-system-for-generating-high-quality-long-term-memory-conte.md) | agent, context, long-term |
 | 2026-05-07 | arXiv | [When Quantization Is Free: An int4 KV Cache That Outruns fp16 on Apple Silicon](content/papers/when-quantization-is-free-an-int4-kv-cache-that-outruns-fp16-on-apple-silicon.md) | compression, context |
 | 2026-05-07 | arXiv | [When Agents Handle Secrets: A Survey of Confidential Computing for Agentic AI](content/papers/when-agents-handle-secrets-a-survey-of-confidential-computing-for-agentic-ai.md) | agent, context |
 | 2026-05-07 | arXiv | [What Happens Inside Agent Memory? Circuit Analysis from Emergence to Diagnosis](content/papers/what-happens-inside-agent-memory-circuit-analysis-from-emergence-to-diagnosis.md) | agent, context |
+| 2026-05-07 | arXiv | [Uneven Evolution of Cognition Across Generations of Generative AI Models](content/papers/uneven-evolution-of-cognition-across-generations-of-generative-ai-models.md) | benchmark |
+| 2026-05-07 | arXiv | [Towards Security-Auditable LLM Agents: A Unified Graph Representation](content/papers/towards-security-auditable-llm-agents-a-unified-graph-representation.md) | agent, long-term |
+| 2026-05-07 | arXiv | [The Context Gathering Decision Process: A POMDP Framework for Agentic Search](content/papers/the-context-gathering-decision-process-a-pomdp-framework-for-agentic-search.md) | agent, context, conversation |
 | 2026-05-07 | arXiv | [SafeHarbor: Hierarchical Memory-Augmented Guardrail for LLM Agent Safety](content/papers/safeharbor-hierarchical-memory-augmented-guardrail-for-llm-agent-safety.md) | agent, context |
 | 2026-05-07 | arXiv | [STALE: Can LLM Agents Know When Their Memories Are No Longer Valid?](content/papers/stale-can-llm-agents-know-when-their-memories-are-no-longer-valid.md) | agent, benchmark, context |
 | 2026-05-07 | arXiv | [PairAlign: A Framework for Sequence Tokenization via Self-Alignment with Applications to Audio Tokenization](content/papers/pairalign-a-framework-for-sequence-tokenization-via-self-alignment-with-applicat.md) | retrieval |
 | 2026-05-07 | arXiv | [PEPA: a Persistently Autonomous Embodied Agent with Personalities](content/papers/pepa-a-persistently-autonomous-embodied-agent-with-personalities.md) | agent, episodic, long-term |
 | 2026-05-07 | arXiv | [MiA-Signature: Approximating Global Activation for Long-Context Understanding](content/papers/mia-signature-approximating-global-activation-for-long-context-understanding.md) | agent, context |
-| 2026-05-07 | arXiv | [MemReranker: Reasoning-Aware Reranking for Agent Memory Retrieval](content/papers/memreranker-reasoning-aware-reranking-for-agent-memory-retrieval.md) | agent, benchmark, context |
-| 2026-05-07 | arXiv | [I see artifacts: ICA-based EEG artifact removal does not improve deep network decoding across three BCI tasks](content/papers/i-see-artifacts-ica-based-eeg-artifact-removal-does-not-improve-deep-network-dec.md) | long-term |
-| 2026-05-07 | OpenReview | [GAAMA: Graph Augmented Associative Memory for Agents](content/papers/gaama-graph-augmented-associative-memory-for-agents.md) | agent, benchmark, compression |
-| 2026-05-07 | arXiv | [Contextual Memory-Enhanced Source Coding for Low-SNR Communications](content/papers/contextual-memory-enhanced-source-coding-for-low-snr-communications.md) | context |
-| 2026-05-07 | arXiv | [Belief Memory: Agent Memory Under Partial Observability](content/papers/belief-memory-agent-memory-under-partial-observability.md) | agent, benchmark, context |
-| 2026-05-07 | arXiv | [Attractor Geometry of Transformer Memory: From Conflict Arbitration to Confident Hallucination](content/papers/attractor-geometry-of-transformer-memory-from-conflict-arbitration-to-confident-.md) | context |
-| 2026-05-07 | OpenReview | [A Brain System for Auditory Working Memory](content/papers/a-brain-system-for-auditory-working-memory.md) | retrieval |
-| 2026-05-06 | arXiv | [Storage Is Not Memory: A Retrieval-Centered Architecture for Agent Recall](content/papers/storage-is-not-memory-a-retrieval-centered-architecture-for-agent-recall.md) | agent, conversation, retrieval |
-| 2026-05-06 | arXiv | [RLDX-1 Technical Report](content/papers/rldx-1-technical-report.md) | benchmark, long-term |
-| 2026-05-06 | arXiv | [LongSeeker: Elastic Context Orchestration for Long-Horizon Search Agents](content/papers/longseeker-elastic-context-orchestration-for-long-horizon-search-agents.md) | agent, benchmark, context |
-| 2026-05-06 | arXiv | [Contextual Memory-Enhanced Source Coding for Low-SNR Communications](content/papers/contextual-memory-enhanced-source-coding-for-low-snr-communications.md) | context |
-| 2026-05-06 | arXiv | [A Systematic Survey of Security Threats and Defenses in LLM-Based AI Agents: A Layered Attack Surface Framework](content/papers/a-systematic-survey-of-security-threats-and-defenses-in-llm-based-ai-agents-a-la.md) | agent, benchmark |
 
 ## Suggested GitHub Setup
 
