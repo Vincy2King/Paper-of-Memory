@@ -39,19 +39,20 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **160**
+- Total tracked papers: **161**
 - Last generated: **2026-05-11**
 
 ## Papers by Source
 
 - ACL Anthology: **1**
 - arXiv: **126**
-- OpenReview: **33**
+- OpenReview: **34**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-05-11 | OpenReview | [ESSENTIAL: Episodic and Semantic Memory Integration for Video Class-Incremental Learning](content/papers/essential-episodic-and-semantic-memory-integration-for-video-class-incremental-l.md) | benchmark, episodic, retrieval |
 | 2026-05-08 | arXiv | [When Stored Evidence Stops Being Usable: Scale-Conditioned Evaluation of Agent Memory](content/papers/when-stored-evidence-stops-being-usable-scale-conditioned-evaluation-of-agent-me.md) | agent, retrieval |
 | 2026-05-08 | arXiv | [TSAssistant: A Human-in-the-Loop Agentic Framework for Automated Target Safety Assessment](content/papers/tsassistant-a-human-in-the-loop-agentic-framework-for-automated-target-safety-as.md) | agent, conversation |
 | 2026-05-08 | arXiv | [Semantic-Aware Adaptive Visual Memory for Streaming Video Understanding](content/papers/semantic-aware-adaptive-visual-memory-for-streaming-video-understanding.md) | compression, long-term, retrieval |
@@ -71,7 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-05-07 | arXiv | [STALE: Can LLM Agents Know When Their Memories Are No Longer Valid?](content/papers/stale-can-llm-agents-know-when-their-memories-are-no-longer-valid.md) | agent, benchmark, context |
 | 2026-05-07 | arXiv | [PairAlign: A Framework for Sequence Tokenization via Self-Alignment with Applications to Audio Tokenization](content/papers/pairalign-a-framework-for-sequence-tokenization-via-self-alignment-with-applicat.md) | retrieval |
 | 2026-05-07 | arXiv | [PEPA: a Persistently Autonomous Embodied Agent with Personalities](content/papers/pepa-a-persistently-autonomous-embodied-agent-with-personalities.md) | agent, episodic, long-term |
-| 2026-05-07 | arXiv | [MiA-Signature: Approximating Global Activation for Long-Context Understanding](content/papers/mia-signature-approximating-global-activation-for-long-context-understanding.md) | agent, context |
 
 ## Suggested GitHub Setup
 

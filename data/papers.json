@@ -1,5 +1,39 @@
 [
   {
+    "abstract": "In this work, we tackle the problem of video classincremental learning (VCIL). Many existing VCIL methods mitigate catastrophic forgetting by rehearsal training with a few temporally dense samples stored in episodic memory, which is memory-inefficient. Alternatively, some methods store temporally sparse samples, sacrificing essential temporal information and thereby resulting in inferior performance. To address this trade-off between memory-efficiency and performance, we propose EpiSodic and SEmaNTIc memory integrAtion for video class-incremental Learning (ESSENTIAL). ESSENTIAL consists of episodic memory for storing temporally sparse features and semantic memory for storing general knowledge represented by learnable prompts. We introduce a novel memory retrieval (MR) module that integrates episodic memory and semantic prompts through cross-attention, enabling the retrieval of temporally dense features from temporally sparse features. We rigorously validate ESSENTIAL on diverse datasets: UCF-101, HMDB51, and Something-Something-V2 from the TCD benchmark and UCF-101, ActivityNet, and Kinetics-400 from the vCLIMB benchmark. Remarkably, with significantly reduced memory, ESSENTIAL achieves favorable performance on the benchmarks.",
+    "authors": [
+      "Jongseo Lee",
+      "Kyungho Bae",
+      "Kyle Min",
+      "Gyeong-Moon Park",
+      "Jinwoo Choi"
+    ],
+    "categories": [
+      "DBLP.org/-/Record"
+    ],
+    "id": "openreview:qOghLkWng3",
+    "intro": "这篇论文被纳入仓库，是因为它和 `benchmark, episodic, retrieval` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `CoRR 2025` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：In this work, we tackle the problem of video classincremental learning (VCIL).\n\n进一步看，论文的核心做法或实验重点可以概括为：Many existing VCIL methods mitigate catastrophic forgetting by rehearsal training with a few temporally dense samples stored in episodic memory, which is memory-inefficient.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "episodic memory",
+      "memory retrieval"
+    ],
+    "one_liner": "In this work, we tackle the problem of video classincremental learning (VCIL).",
+    "published": "2025-12-31",
+    "relevance": "- 来源：OpenReview\n- Venue：CoRR 2025\n- 高亮主题命中：benchmark, episodic, retrieval\n- 检索关键词命中：episodic memory, memory retrieval\n- 来源分类信息：DBLP.org/-/Record",
+    "slug": "essential-episodic-and-semantic-memory-integration-for-video-class-incremental-l",
+    "source": "OpenReview",
+    "source_key": "qOghLkWng3",
+    "tags": [
+      "benchmark",
+      "episodic",
+      "retrieval"
+    ],
+    "title": "ESSENTIAL: Episodic and Semantic Memory Integration for Video Class-Incremental Learning",
+    "updated": "2026-05-11",
+    "url": "https://openreview.net/forum?id=qOghLkWng3",
+    "venue": "CoRR 2025"
+  },
+  {
     "abstract": "Memory-agent evaluations report fixed-snapshot accuracy or retrieval quality, but these scores do not show whether evidence remains usable as irrelevant sessions (sessions not annotated as task-relevant evidence for the query) accumulate. We present a scale-conditioned evaluation protocol for agent memory under evidence-preserving growth: for each query, task evidence is held fixed while irrelevant sessions are added. The protocol logs agent--memory trajectories and reports four diagnostics: budget-compliant reliability, tail memory-call burden, failure-regime decomposition, and the usable-scale boundary where reliability falls below the target. Applied to LongMemEval and LoCoMo across flat, planar, and hierarchical memory interfaces, the protocol shows reliability loss is not a single phenomenon. On LongMemEval, HippoRAG stays within the two-call budget but loses 16--20 percentage points in budget-compliant reliability as irrelevant sessions are added; LiCoMemory's observed failures depend strongly on the agent, with Qwen3-8B exceeding the budget while Qwen3-32B and Qwen3-235B remain reliable in the tested range. The result supports a framework for making scalable-memory claims conditional on agent, interface, scale range, and interaction budget.",
     "authors": [
       "Jiaqi Shao",
