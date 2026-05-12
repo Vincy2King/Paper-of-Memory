@@ -39,22 +39,25 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **186**
+- Total tracked papers: **189**
 - Last generated: **2026-05-12**
 
 ## Papers by Source
 
 - ACL Anthology: **1**
-- arXiv: **151**
+- arXiv: **154**
 - OpenReview: **34**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-05-11 | arXiv | [RubricEM: Meta-RL with Rubric-guided Policy Decomposition beyond Verifiable Rewards](content/papers/rubricem-meta-rl-with-rubric-guided-policy-decomposition-beyond-verifiable-rewar.md) | agent, benchmark |
 | 2026-05-11 | arXiv | [Retrieve-then-Steer: Online Success Memory for Test-Time Adaptation of Generative VLAs](content/papers/retrieve-then-steer-online-success-memory-for-test-time-adaptation-of-generative.md) | long-term, retrieval |
+| 2026-05-11 | arXiv | [Remember the Decision, Not the Description: A Rate-Distortion Framework for Agent Memory](content/papers/remember-the-decision-not-the-description-a-rate-distortion-framework-for-agent-.md) | agent, benchmark, compression |
 | 2026-05-11 | arXiv | [Nautilus Compass: Black-box Persona Drift Detection for Production LLM Agents](content/papers/nautilus-compass-black-box-persona-drift-detection-for-production-llm-agents.md) | agent, conversation, retrieval |
 | 2026-05-11 | arXiv | [MemReread: Enhancing Agentic Long-Context Reasoning via Memory-Guided Rereading](content/papers/memreread-enhancing-agentic-long-context-reasoning-via-memory-guided-rereading.md) | agent, context, retrieval |
+| 2026-05-11 | arXiv | [Mela: Test-Time Memory Consolidation based on Transformation Hypothesis](content/papers/mela-test-time-memory-consolidation-based-on-transformation-hypothesis.md) | context, episodic, retrieval |
 | 2026-05-11 | arXiv | [MAGE: Multi-Agent Self-Evolution with Co-Evolutionary Knowledge Graphs](content/papers/mage-multi-agent-self-evolution-with-co-evolutionary-knowledge-graphs.md) | agent, benchmark, episodic |
 | 2026-05-11 | arXiv | [Key-Value Means](content/papers/key-value-means.md) | context |
 | 2026-05-11 | arXiv | [HAGE: Harnessing Agentic Memory via RL-Driven Weighted Graph Evolution](content/papers/hage-harnessing-agentic-memory-via-rl-driven-weighted-graph-evolution.md) | agent, retrieval |
@@ -69,9 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-05-10 | arXiv | [Architecture Matters More Than Scale: A Comparative Study of Retrieval and Memory Augmentation for Financial QA Under SME Compute Constraints](content/papers/architecture-matters-more-than-scale-a-comparative-study-of-retrieval-and-memory.md) | benchmark, conversation, long-term |
 | 2026-05-10 | arXiv | [A Cognitively Grounded Bayesian Framework for Misinformation Susceptibility](content/papers/a-cognitively-grounded-bayesian-framework-for-misinformation-susceptibility.md) | benchmark, compression |
 | 2026-05-09 | arXiv | [The Echo Amplifies the Knowledge: Somatic Marker Analogues in Language Models via Emotion Vector Re-Injection](content/papers/the-echo-amplifies-the-knowledge-somatic-marker-analogues-in-language-models-via.md) | context, episodic |
-| 2026-05-09 | arXiv | [ShadowMerge: A Novel Poisoning Attack on Graph-Based Agent Memory via Relation-Channel Conflicts](content/papers/shadowmerge-a-novel-poisoning-attack-on-graph-based-agent-memory-via-relation-ch.md) | agent, long-term |
-| 2026-05-09 | arXiv | [GRC: Unifying Reasoning-Driven Generation, Retrieval and Compression](content/papers/grc-unifying-reasoning-driven-generation-retrieval-and-compression.md) | agent, benchmark, compression |
-| 2026-05-09 | arXiv | [Bias by Necessity: Impossibility Theorems for Sequential Processing with Convergent AI and Human Validation](content/papers/bias-by-necessity-impossibility-theorems-for-sequential-processing-with-converge.md) | working memory |
 
 ## Suggested GitHub Setup
 

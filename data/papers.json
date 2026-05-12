@@ -1,5 +1,45 @@
 [
   {
+    "abstract": "Training deep research agents, namely systems that plan, search, evaluate evidence, and synthesize long-form reports, pushes reinforcement learning beyond the regime of verifiable rewards. Their outputs lack ground-truth answers, their trajectories span many tool-augmented decisions, and standard post-training offers little mechanism for turning past attempts into reusable experience. In this work, we argue that rubrics should serve not merely as final-answer evaluators, but as the shared interface that structures policy execution, judge feedback, and agent memory. Based on this view, we introduce RubricEM, a rubric-guided reinforcement learning framework that combines stagewise policy decomposition with reflection-based meta-policy evolution. RubricEM first makes research trajectories stage-aware by conditioning planning, evidence gathering, review, and synthesis on self-generated rubrics. It then assigns credit with Stage-Structured GRPO, which uses stagewise rubric judgments to provide denser semantic feedback for long-horizon optimization. In parallel, RubricEM trains a shared-backbone reflection meta-policy that distills judged trajectories into reusable rubric-grounded guidance for future attempts. The resulting RubricEM-8B achieves strong performance across four long-form research benchmarks, outperforming comparable open models and approaching proprietary deep-research systems. Beyond final performance, we perform thorough analyses to understand the key ingredients of RubricEM.",
+    "authors": [
+      "Gaotang Li",
+      "Bhavana Dalvi Mishra",
+      "Zifeng Wang",
+      "Jun Yan",
+      "Yanfei Chen",
+      "Chun-Liang Li",
+      "Long T. Le",
+      "Rujun Han",
+      "George Lee",
+      "Hanghang Tong",
+      "Chen-Yu Lee",
+      "Tomas Pfister"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.LG"
+    ],
+    "id": "2605.10899v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Training deep research agents, namely systems that plan, search, evaluate evidence, and synthesize long-form reports, pushes reinforcement learning beyond the regime of verifiable rewards.\n\n进一步看，论文的核心做法或实验重点可以概括为：Their outputs lack ground-truth answers, their trajectories span many tool-augmented decisions, and standard post-training offers little mechanism for turning past attempts into reusable experience.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "Training deep research agents, namely systems that plan, search, evaluate evidence, and synthesize long-form reports, pushes reinforcement learning beyond the regime of...",
+    "published": "2026-05-11",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.CL, cs.LG",
+    "slug": "rubricem-meta-rl-with-rubric-guided-policy-decomposition-beyond-verifiable-rewar",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2605.10899v1",
+    "tags": [
+      "agent",
+      "benchmark"
+    ],
+    "title": "RubricEM: Meta-RL with Rubric-guided Policy Decomposition beyond Verifiable Rewards",
+    "updated": "2026-05-11",
+    "url": "http://arxiv.org/abs/2605.10899v1",
+    "venue": ""
+  },
+  {
     "abstract": "Vision-Language-Action (VLA) models show strong potential for general-purpose robotic manipulation, yet their closed-loop reliability often degrades under local deployment conditions. Existing evaluations typically treat test episodes as independent zero-shot trials. However, real robots often operate repeatedly in the same or slowly changing environments, where successful executions provide environment-verified evidence of reliable behavior patterns. We study this persistent-deployment setting, asking whether a partially competent frozen VLA can improve its reliability by reusing its successful test-time experience. We propose an online success-memory guided test-time adaptation framework for generative VLAs. During deployment, the robot stores progress-calibrated successful observation-action segments in a long-term memory. At inference, it retrieves state-relevant action chunks, filters inconsistent candidates via trajectory-level consistency, and aggregates them into an elite action prior. To incorporate this prior into action generation, we introduce confidence-adaptive prior guidance, which injects the elite prior into an intermediate state of the flow-matching action sampler and adjusts the guidance strength based on retrieval confidence. This design allows the frozen VLA to exploit environment-specific successful experience while preserving observation-conditioned generative refinement. This retrieve-then-steer mechanism enables lightweight, non-parametric test-time adaptation without requiring parameter updates. Simulation and real-world experiments show improved task success and closed-loop stability, especially in long-horizon and multi-stage tasks.",
     "authors": [
       "Jianchao Zhao",
@@ -34,6 +74,44 @@
     "title": "Retrieve-then-Steer: Online Success Memory for Test-Time Adaptation of Generative VLAs",
     "updated": "2026-05-11",
     "url": "http://arxiv.org/abs/2605.10094v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Long-horizon language agents must operate under limited runtime memory, yet existing memory mechanisms often organize experience around descriptive criteria such as relevance, salience, or summary quality. For an agent, however, memory is valuable not because it faithfully describes the past, but because it preserves the distinctions between histories that must remain separated under a fixed budget to support good decisions. We cast this as a decision-centric rate-distortion problem, measuring memory quality by the loss in achievable decision quality induced by compression. This yields an exact forgetting boundary for what can be safely forgotten, and a memory-distortion frontier characterizing the optimal tradeoff between memory budget and decision quality. Motivated by this decision-centric view of memory, we propose DeMem, an online memory learner that refines its partition only when data certify that a shared state would induce decision conflict, and prove near-minimax regret guarantees. On both controlled synthetic diagnostics and long-horizon conversational benchmarks, DeMem yields consistent gains under the same runtime budget, supporting the principle that memory should preserve the distinctions that matter for decisions, not descriptions.",
+    "authors": [
+      "Mingxi Zou",
+      "Zhihan Guo",
+      "Langzhang Liang",
+      "Zhuo Wang",
+      "Qifan Wang",
+      "Qingsong Wen",
+      "Irwin King",
+      "Lizhen Qu",
+      "Zenglin Xu"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2605.10870v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, compression, conversation` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Long-horizon language agents must operate under limited runtime memory, yet existing memory mechanisms often organize experience around descriptive criteria such as relevance, salience, or summary quality.\n\n进一步看，论文的核心做法或实验重点可以概括为：For an agent, however, memory is valuable not because it faithfully describes the past, but because it preserves the distinctions between histories that must remain separated under a fixed budget to support good...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "Long-horizon language agents must operate under limited runtime memory, yet existing memory mechanisms often organize experience around descriptive criteria such as relevance,...",
+    "published": "2026-05-11",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, compression, conversation\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.AI",
+    "slug": "remember-the-decision-not-the-description-a-rate-distortion-framework-for-agent-",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2605.10870v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "compression",
+      "conversation"
+    ],
+    "title": "Remember the Decision, Not the Description: A Rate-Distortion Framework for Agent Memory",
+    "updated": "2026-05-11",
+    "url": "http://arxiv.org/abs/2605.10870v1",
     "venue": ""
   },
   {
@@ -102,6 +180,37 @@
     "title": "MemReread: Enhancing Agentic Long-Context Reasoning via Memory-Guided Rereading",
     "updated": "2026-05-11",
     "url": "http://arxiv.org/abs/2605.10268v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Memory consolidation, the process by which transient experiences are transformed into stable, structured representations, is a foundational organizing principle in the human brain, yet it remains largely unexplored as a design principle for modern sequence models. In this work, we leverage established neuroscientific theories of memory consolidation and cross-frequency coupling to propose the Hierarchical Memory Module (HMM), a neural memory architecture composed of two functionally distinct sub-modules that operate at different update frequencies. Inspired by the transformation hypothesis, the low-frequency sub-module produces high-level representations that capture abstract, gist-level knowledge, while the high-frequency sub-module produces fine-grained representations that preserve richer episodic detail. The final memory output is dynamically reconstructed as a context-dependent combination of both representations, analogous to the reconstructive nature of human memory retrieval. We integrate HMM into a Transformer-based language decoder to form Mela, a family of memory-augmented language models that perform online memory consolidation at test time. To further exploit the multi-granularity memory representations produced by HMM, we introduce MemStack, a method that distributes different levels of memory features across the early layers of the decoder without introducing additional tokens. Experiments on language modeling demonstrate that Mela outperforms Transformer baselines across all the model sizes. Moreover, with the pretrained context length fixed at 4K, Mela maintains performance on significantly longer contexts, whereas Transformer baselines degrade rapidly beyond their training length. Extensive ablation studies validate the contribution of each component and provide guidance for practical configuration.",
+    "authors": [
+      "Lungchuan Chen"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "id": "2605.10537v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `context, episodic, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Memory consolidation, the process by which transient experiences are transformed into stable, structured representations, is a foundational organizing principle in the human brain, yet it remains largely unexplored as...\n\n进一步看，论文的核心做法或实验重点可以概括为：In this work, we leverage established neuroscientific theories of memory consolidation and cross-frequency coupling to propose the Hierarchical Memory Module (HMM), a neural memory architecture composed of two...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory augmented",
+      "memory retrieval",
+      "memory-augmented"
+    ],
+    "one_liner": "Memory consolidation, the process by which transient experiences are transformed into stable, structured representations, is a foundational organizing principle in the human...",
+    "published": "2026-05-11",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：context, episodic, retrieval\n- 检索关键词命中：memory augmented, memory retrieval, memory-augmented\n- 来源分类信息：cs.CL",
+    "slug": "mela-test-time-memory-consolidation-based-on-transformation-hypothesis",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2605.10537v1",
+    "tags": [
+      "context",
+      "episodic",
+      "retrieval"
+    ],
+    "title": "Mela: Test-Time Memory Consolidation based on Transformation Hypothesis",
+    "updated": "2026-05-11",
+    "url": "http://arxiv.org/abs/2605.10537v1",
     "venue": ""
   },
   {
