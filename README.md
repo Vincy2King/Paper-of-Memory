@@ -39,19 +39,31 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **189**
-- Last generated: **2026-05-12**
+- Total tracked papers: **203**
+- Last generated: **2026-05-13**
 
 ## Papers by Source
 
 - ACL Anthology: **1**
-- arXiv: **154**
+- arXiv: **168**
 - OpenReview: **34**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-05-12 | arXiv | [SkillGraph: Skill-Augmented Reinforcement Learning for Agents via Evolving Skill Graphs](content/papers/skillgraph-skill-augmented-reinforcement-learning-for-agents-via-evolving-skill-.md) | agent |
+| 2026-05-12 | arXiv | [SAGE: A Self-Evolving Agentic Graph-Memory Engine for Structure-Aware Associative Memory](content/papers/sage-a-self-evolving-agentic-graph-memory-engine-for-structure-aware-associative.md) | agent, benchmark, long-term |
+| 2026-05-12 | arXiv | [Retrieve-then-Steer: Online Success Memory for Test-Time Adaptation of Generative VLAs](content/papers/retrieve-then-steer-online-success-memory-for-test-time-adaptation-of-generative.md) | long-term, retrieval |
+| 2026-05-12 | arXiv | [Mitigating Context-Memory Conflicts in LLMs through Dynamic Cognitive Reconciliation Decoding](content/papers/mitigating-context-memory-conflicts-in-llms-through-dynamic-cognitive-reconcilia.md) | benchmark, context |
+| 2026-05-12 | arXiv | [MemQ: Integrating Q-Learning into Self-Evolving Memory Agents over Provenance DAGs](content/papers/memq-integrating-q-learning-into-self-evolving-memory-agents-over-provenance-dag.md) | agent, benchmark, context |
+| 2026-05-12 | arXiv | [MedMemoryBench: Benchmarking Agent Memory in Personalized Healthcare](content/papers/medmemorybench-benchmarking-agent-memory-in-personalized-healthcare.md) | agent, benchmark, conversation |
+| 2026-05-12 | arXiv | [LongMemEval-V2: Evaluating Long-Term Agent Memory Toward Experienced Colleagues](content/papers/longmemeval-v2-evaluating-long-term-agent-memory-toward-experienced-colleagues.md) | agent, benchmark, context |
+| 2026-05-12 | arXiv | [Improving the Performance and Learning Stability of Parallelizable RNNs Designed for Ultra-Low Power Applications](content/papers/improving-the-performance-and-learning-stability-of-parallelizable-rnns-designed.md) | benchmark, long-term |
+| 2026-05-12 | arXiv | [Goal-Oriented Reasoning for RAG-based Memory in Conversational Agentic LLM Systems](content/papers/goal-oriented-reasoning-for-rag-based-memory-in-conversational-agentic-llm-syste.md) | agent, context, conversation |
+| 2026-05-12 | arXiv | [GRC: Unifying Reasoning-Driven Generation, Retrieval and Compression](content/papers/grc-unifying-reasoning-driven-generation-retrieval-and-compression.md) | agent, benchmark, compression |
+| 2026-05-12 | arXiv | [Executable Agentic Memory for GUI Agent](content/papers/executable-agentic-memory-for-gui-agent.md) | agent, retrieval |
+| 2026-05-12 | arXiv | [Automated Reformulation of Robust Optimization via Memory-Augmented Large Language Models](content/papers/automated-reformulation-of-robust-optimization-via-memory-augmented-large-langua.md) | benchmark |
 | 2026-05-11 | arXiv | [RubricEM: Meta-RL with Rubric-guided Policy Decomposition beyond Verifiable Rewards](content/papers/rubricem-meta-rl-with-rubric-guided-policy-decomposition-beyond-verifiable-rewar.md) | agent, benchmark |
 | 2026-05-11 | arXiv | [Retrieve-then-Steer: Online Success Memory for Test-Time Adaptation of Generative VLAs](content/papers/retrieve-then-steer-online-success-memory-for-test-time-adaptation-of-generative.md) | long-term, retrieval |
 | 2026-05-11 | arXiv | [Remember the Decision, Not the Description: A Rate-Distortion Framework for Agent Memory](content/papers/remember-the-decision-not-the-description-a-rate-distortion-framework-for-agent-.md) | agent, benchmark, compression |
@@ -59,19 +71,7 @@ python3 scripts/update_papers.py --build-only
 | 2026-05-11 | arXiv | [MemReread: Enhancing Agentic Long-Context Reasoning via Memory-Guided Rereading](content/papers/memreread-enhancing-agentic-long-context-reasoning-via-memory-guided-rereading.md) | agent, context, retrieval |
 | 2026-05-11 | arXiv | [Mela: Test-Time Memory Consolidation based on Transformation Hypothesis](content/papers/mela-test-time-memory-consolidation-based-on-transformation-hypothesis.md) | context, episodic, retrieval |
 | 2026-05-11 | arXiv | [MAGE: Multi-Agent Self-Evolution with Co-Evolutionary Knowledge Graphs](content/papers/mage-multi-agent-self-evolution-with-co-evolutionary-knowledge-graphs.md) | agent, benchmark, episodic |
-| 2026-05-11 | arXiv | [Key-Value Means](content/papers/key-value-means.md) | context |
-| 2026-05-11 | arXiv | [HAGE: Harnessing Agentic Memory via RL-Driven Weighted Graph Evolution](content/papers/hage-harnessing-agentic-memory-via-rl-driven-weighted-graph-evolution.md) | agent, retrieval |
-| 2026-05-11 | arXiv | [H-MAPS: Hierarchical Memory-Augmented Proactive Search Assistant for Scientific Literature](content/papers/h-maps-hierarchical-memory-augmented-proactive-search-assistant-for-scientific-l.md) | context, retrieval |
-| 2026-05-11 | arXiv | [EgoMemReason: A Memory-Driven Reasoning Benchmark for Long-Horizon Egocentric Video Understanding](content/papers/egomemreason-a-memory-driven-reasoning-benchmark-for-long-horizon-egocentric-vid.md) | agent, benchmark, context |
-| 2026-05-11 | OpenReview | [ESSENTIAL: Episodic and Semantic Memory Integration for Video Class-Incremental Learning](content/papers/essential-episodic-and-semantic-memory-integration-for-video-class-incremental-l.md) | benchmark, episodic, retrieval |
-| 2026-05-11 | arXiv | [Continual Harness: Online Adaptation for Self-Improving Foundation Agents](content/papers/continual-harness-online-adaptation-for-self-improving-foundation-agents.md) | agent, context |
-| 2026-05-10 | arXiv | [The Trap of Trajectory: Towards Understanding and Mitigating Spurious Correlations in Agentic Memory](content/papers/the-trap-of-trajectory-towards-understanding-and-mitigating-spurious-correlation.md) | agent, benchmark, context |
-| 2026-05-10 | arXiv | [Mem-W: Latent Memory-Native GUI Agents](content/papers/mem-w-latent-memory-native-gui-agents.md) | agent, benchmark, context |
-| 2026-05-10 | arXiv | [EquiMem: Calibrating Shared Memory in Multi-Agent Debate via Game-Theoretic Equilibrium](content/papers/equimem-calibrating-shared-memory-in-multi-agent-debate-via-game-theoretic-equil.md) | agent, benchmark, retrieval |
-| 2026-05-10 | arXiv | [Do Self-Evolving Agents Forget? Capability Degradation and Preservation in Lifelong LLM Agent Adaptation](content/papers/do-self-evolving-agents-forget-capability-degradation-and-preservation-in-lifelo.md) | agent |
-| 2026-05-10 | arXiv | [Architecture Matters More Than Scale: A Comparative Study of Retrieval and Memory Augmentation for Financial QA Under SME Compute Constraints](content/papers/architecture-matters-more-than-scale-a-comparative-study-of-retrieval-and-memory.md) | benchmark, conversation, long-term |
-| 2026-05-10 | arXiv | [A Cognitively Grounded Bayesian Framework for Misinformation Susceptibility](content/papers/a-cognitively-grounded-bayesian-framework-for-misinformation-susceptibility.md) | benchmark, compression |
-| 2026-05-09 | arXiv | [The Echo Amplifies the Knowledge: Somatic Marker Analogues in Language Models via Emotion Vector Re-Injection](content/papers/the-echo-amplifies-the-knowledge-somatic-marker-analogues-in-language-models-via.md) | context, episodic |
+| 2026-05-11 | arXiv | [Layered Mutability: Continuity and Governance in Persistent Self-Modifying Agents](content/papers/layered-mutability-continuity-and-governance-in-persistent-self-modifying-agents.md) | agent |
 
 ## Suggested GitHub Setup
 
