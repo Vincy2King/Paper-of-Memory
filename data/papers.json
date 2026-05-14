@@ -1,5 +1,353 @@
 [
   {
+    "abstract": "Learning from past experience benefits from two complementary forms of memory: episodic traces -- raw trajectories of what happened -- and consolidated abstractions distilled across many episodes into reusable, schema-like lessons. Recent agentic-memory systems pursue the consolidated form: an LLM rewrites past trajectories into a textual memory bank that it continuously updates with new interactions, promising self-improving agents without parameter updates. Yet we find that such consolidated memories produced by today's LLMs are often faulty even when derived from useful experiences. As consolidation proceeds, memory utility first rises, then degrades, and can fall below the no-memory baseline. More surprisingly, even when consolidating from ground-truth solutions, GPT-5.4 fails on 54% of a set of ARC-AGI problems it had previously solved without memory. We trace the regression to the consolidation step rather than the underlying experience: the same trajectories yield qualitatively different memories under different update schedules, and an episodic-only control that simply retains those trajectories remains competitive with the consolidators we test. In a controlled ARC-AGI Stream environment that exposes Retain, Delete, and Consolidate actions, agents preserve raw episodes by default and double the accuracy of their forced-consolidation counterparts; disabling consolidation entirely (episodic management only) matches this auto regime. Practically, robust agent memory should treat raw episodes as first-class evidence and gate consolidation explicitly rather than firing it after every interaction. Looking forward, reliable agentic memory will require LLMs that can consolidate without overwriting the evidence they depend on.",
+    "authors": [
+      "Dylan Zhang",
+      "Yanshan Lin",
+      "Zhengkun Wu",
+      "Yihang Sun",
+      "Bingxuan Li",
+      "Dianqi Li",
+      "Hao Peng"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2605.12978v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, episodic` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Learning from past experience benefits from two complementary forms of memory: episodic traces -- raw trajectories of what happened -- and consolidated abstractions distilled across many episodes into reusable,...\n\n进一步看，论文的核心做法或实验重点可以概括为：Recent agentic-memory systems pursue the consolidated form: an LLM rewrites past trajectories into a textual memory bank that it continuously updates with new interactions, promising self-improving agents without...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "Learning from past experience benefits from two complementary forms of memory: episodic traces -- raw trajectories of what happened -- and consolidated abstractions distilled...",
+    "published": "2026-05-13",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, episodic\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.AI",
+    "slug": "useful-memories-become-faulty-when-continuously-updated-by-llms",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2605.12978v1",
+    "tags": [
+      "agent",
+      "episodic"
+    ],
+    "title": "Useful Memories Become Faulty When Continuously Updated by LLMs",
+    "updated": "2026-05-13",
+    "url": "http://arxiv.org/abs/2605.12978v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Intensive care units (ICU) generate long, dense and evolving streams of clinical information, where physicians must repeatedly reassess patient states under time pressure, underscoring a clear need for reliable AI decision support. Existing ICU benchmarks typically treat historical clinician actions as ground truth. However, these actions are made under incomplete information and limited temporal context of the underlying patient state, and may therefore be suboptimal, making it difficult to assess the true reasoning capabilities of AI systems. We introduce RealICU, a hindsight-annotated benchmark for evaluating large language models (LLMs) under realistic ICU conditions, where labels are created after senior physicians review the full patient trajectory. We formulate four physician-motivated tasks: assess Patient Status, Acute Problems, Recommended Actions, and Red Flag actions that risk unsafe outcomes. We partition each trajectory with 30-min windows and release two datasets: RealICU-Gold with 930-window annotations from 94 MIMIC-IV patients, and RealICU-Scale with 11,862 windows extended by Oracle, a physician-validated LLM hindsight labeler. Existing LLMs including memory-augmented ones performed poorly on RealICU, exposing two failure modes: a recall-safety tradeoff for clinical recommendations, and an anchoring bias to early interpretations of the patient. We further introduce ICU-Evo to study structured-memory agents that improves long-horizon reasoning but does not fully eliminate safety failures. Together, RealICU provides a clinically grounded testbed for measuring and improving AI sequential decision-support in high-stakes care. Project page: https://chengzhi-leo.github.io/RealICU-Bench/",
+    "authors": [
+      "Chengzhi Shen",
+      "Weixiang Shen",
+      "Tobias Susetzky",
+      "Chen",
+      "Chen",
+      "Jun Li",
+      "Yuyuan Liu",
+      "Xuepeng Zhang",
+      "Zhenyu Gong",
+      "Daniel Rueckert",
+      "Jiazhen Pan"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.CL",
+      "cs.LG",
+      "cs.MA"
+    ],
+    "id": "2605.13542v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Intensive care units (ICU) generate long, dense and evolving streams of clinical information, where physicians must repeatedly reassess patient states under time pressure, underscoring a clear need for reliable AI...\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing ICU benchmarks typically treat historical clinician actions as ground truth.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory augmented",
+      "memory-augmented"
+    ],
+    "one_liner": "Intensive care units (ICU) generate long, dense and evolving streams of clinical information, where physicians must repeatedly reassess patient states under time pressure,...",
+    "published": "2026-05-13",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context\n- 检索关键词命中：memory augmented, memory-augmented\n- 来源分类信息：cs.AI, cs.CL, cs.LG, cs.MA",
+    "slug": "realicu-do-llm-agents-understand-long-context-icu-data-a-benchmark-beyond-behavi",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2605.13542v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context"
+    ],
+    "title": "RealICU: Do LLM Agents Understand Long-Context ICU Data? A Benchmark Beyond Behavior Imitation",
+    "updated": "2026-05-13",
+    "url": "http://arxiv.org/abs/2605.13542v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Video understanding requires active evidence seeking, motivating tool-augmented video agents for temporal reasoning, cross-modal understanding, and complex question answering. Existing video agents have improved video reasoning with retrieval, memory, frame inspection, and verifier tools, but they still face two limitations: (1) a coarse tool space that lacks fine-grained operations for compositional reasoning; and (2) a flat action space that forces high-level video intents into primitive executable tool calls. In this paper, we address these challenges with two complementary designs. First, we construct a MetaAug-Video Tool Library (MVTL), an extensible tool library with 134 registered tools, including 26 base tools for general multimodal signal processing and 108 meta tools for filtering, aggregation, reranking, formatting, and other intermediate-result operations. MVTL supports dual-level access to both structured video information and raw modal evidence, enabling diverse video reasoning scenarios. Second, we propose ReTool-Video, a recursive tool-using method that grounds high-level video intents into executable tool chains. In ReTool-Video, matched actions are executed directly, while unmatched intents are delegated to a resolver for parameter repair, tool substitution, or decomposition. This allows abstract actions such as temporal merging, cross-modal verification, or repeated-event aggregation to be progressively translated into concrete multimodal operations at runtime. Experiments on MVBench, MLVU, and Video-MME w/o sub. show that ReTool-Video consistently outperforms strong baselines. Further analysis demonstrates that recursive grounding and fine-grained meta tools improve the stability and effectiveness of complex video understanding.",
+    "authors": [
+      "Xiao Liu",
+      "Nayu Liu",
+      "Junnan Zhu",
+      "Ruirui Chen",
+      "Guohui Xiang",
+      "Changjian Wang",
+      "Kaiwen Wei",
+      "Rongzhen Li",
+      "Jiang Zhong"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "id": "2605.13228v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Video understanding requires active evidence seeking, motivating tool-augmented video agents for temporal reasoning, cross-modal understanding, and complex question answering.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing video agents have improved video reasoning with retrieval, memory, frame inspection, and verifier tools, but they still face two limitations: (1) a coarse tool space that lacks fine-grained operations for...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "retrieval memory"
+    ],
+    "one_liner": "Video understanding requires active evidence seeking, motivating tool-augmented video agents for temporal reasoning, cross-modal understanding, and complex question answering.",
+    "published": "2026-05-13",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, retrieval\n- 检索关键词命中：retrieval memory\n- 来源分类信息：cs.CV, cs.AI",
+    "slug": "retool-video-recursive-tool-using-video-agents-with-meta-augmented-tool-groundin",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2605.13228v1",
+    "tags": [
+      "agent",
+      "retrieval"
+    ],
+    "title": "ReTool-Video: Recursive Tool-Using Video Agents with Meta-Augmented Tool Grounding",
+    "updated": "2026-05-13",
+    "url": "http://arxiv.org/abs/2605.13228v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Audio provides critical situational cues, yet current Audio Language Models (ALMs) face an attention bottleneck in long-form recordings where dominant background patterns can dilute rare, salient events. We introduce NAACA, a training-free NeuroAuditory Attentive Cognitive Architecture that reframes attention allocation as an auditory salience filtering problem. At its core is OWM, a neuro-inspired Oscillatory Working Memory that maintains stable attractor-like states and triggers higher-cognition ALM processing only when adaptive energy fluctuations signal perceptual salience, triggering higher-level reasoning. On XD-Violence, NAACA improves AudioQwen's average precision (AP) from 53.50% to 70.60% while reducing unnecessary ALM invocations. Furthermore, qualitative case studies on the Urban Soundscapes of the World (USoW) dataset show that OWM captures novel events and subcategory shifts while remaining robust to transient pauses and ambient urban noise.",
+    "authors": [
+      "Zhongju Yuan",
+      "Geraint Wiggins",
+      "Dick Botteldooren"
+    ],
+    "categories": [
+      "cs.SD",
+      "cs.AI"
+    ],
+    "id": "2605.13651v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `working memory` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Audio provides critical situational cues, yet current Audio Language Models (ALMs) face an attention bottleneck in long-form recordings where dominant background patterns can dilute rare, salient events.\n\n进一步看，论文的核心做法或实验重点可以概括为：We introduce NAACA, a training-free NeuroAuditory Attentive Cognitive Architecture that reframes attention allocation as an auditory salience filtering problem.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "working memory"
+    ],
+    "one_liner": "Audio provides critical situational cues, yet current Audio Language Models (ALMs) face an attention bottleneck in long-form recordings where dominant background patterns can...",
+    "published": "2026-05-13",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：working memory\n- 检索关键词命中：working memory\n- 来源分类信息：cs.SD, cs.AI",
+    "slug": "naaca-training-free-neuroauditory-attentive-cognitive-architecture-with-oscillat",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2605.13651v1",
+    "tags": [
+      "working memory"
+    ],
+    "title": "NAACA: Training-Free NeuroAuditory Attentive Cognitive Architecture with Oscillatory Working Memory for Salience-Driven Attention Gating",
+    "updated": "2026-05-13",
+    "url": "http://arxiv.org/abs/2605.13651v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Large language models remain vulnerable to adversarial prompts that elicit harmful outputs. Existing safety paradigms typically couple red-teaming and post-training in a closed, policy-centric loop, causing attack discovery to suffer from rapid saturation and limiting the exposure of novel failure modes, while leaving defenses inefficient, rigid, and difficult to transfer across victim models. To this end, we propose EvoSafety, an LLM safety framework built around persistent, inspectable, and reusable external structures. For red teaming, EvoSafety equips the attack policy with an adversarial skill library, enabling continued vulnerability probing through simple library expansion after saturation, while supporting the evolution of adversarial vectors. For defense learning, EvoSafety replaces model-specific safety fine-tuning with a lightweight auxiliary defense model augmented with memory retrieval. This enables efficient, transferable, and model-agnostic safety improvements, while allowing robustness to be enhanced solely through memory updates. With a single training procedure, the defense policy can operate in both Steer and Guard modes: the former activates the victim model's intrinsic defense mechanisms, while the latter directly filters harmful inputs. Extensive experiments demonstrate the superiority of EvoSafety: in Guard mode, it achieves a 99.61% defense success rate, outperforming Qwen3Guard-8B by 14.13% with only 37.5% of its parameters, while preserving reasoning performance on benign queries. Warning: This paper contains potentially harmful text.",
+    "authors": [
+      "Xiaozhe Zhang",
+      "Chaozhuo Li",
+      "Hui Liu",
+      "Shaocheng Yan",
+      "Bingyu Yan",
+      "Qiwei Ye",
+      "Haoliang Li"
+    ],
+    "categories": [
+      "cs.CR",
+      "cs.CL"
+    ],
+    "id": "2605.13411v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Large language models remain vulnerable to adversarial prompts that elicit harmful outputs.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing safety paradigms typically couple red-teaming and post-training in a closed, policy-centric loop, causing attack discovery to suffer from rapid saturation and limiting the exposure of novel failure modes,...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory retrieval"
+    ],
+    "one_liner": "Large language models remain vulnerable to adversarial prompts that elicit harmful outputs.",
+    "published": "2026-05-13",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：retrieval\n- 检索关键词命中：memory retrieval\n- 来源分类信息：cs.CR, cs.CL",
+    "slug": "model-agnostic-lifelong-llm-safety-via-externalized-attack-defense-co-evolution",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2605.13411v1",
+    "tags": [
+      "retrieval"
+    ],
+    "title": "Model-Agnostic Lifelong LLM Safety via Externalized Attack-Defense Co-Evolution",
+    "updated": "2026-05-13",
+    "url": "http://arxiv.org/abs/2605.13411v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Existing precipitation nowcasting methods typically adopt an autoregressive formulation, where future states are predicted from previous outputs. However, such an approach accumulates errors over long rollouts, causing forecasts to drift away from physically plausible evolution trajectories. Although various studies have attempted to alleviate this problem by improving step-wise prediction accuracy, they largely neglect the global temporal evolution of meteorological systems and lack mechanisms to actively correct drift during rollouts. To address this issue, we propose McCast, a memory-guided latent drift correction method for precipitation nowcasting. Rather than treating memory as an unordered dictionary of latent states for passive conditioning, McCast leverages temporally organized memory to actively correct autoregressive latent evolution. Specifically, McCast introduces a Drift-Corrective Memory Bank (DCBank) that explicitly estimates the temporally consistent drift corrections to calibrate the divergent trajectory. DCBank performs drift correction in two stages: a Corrective Latent Extractor first predicts an initial correction from the current prediction and a reference latent state, and a Correction-Aware Memory Retrieval module then refines the initial correction using temporally organized historical memory. By explicitly correcting latent evolution, instead of improving step-wise prediction accuracy only, McCast produces more temporally coherent and reliable long-horizon forecasts. Experiments on two widely used benchmarks, SEVIR and MeteoNet, show that McCast achieves state-of-the-art performance, particularly in challenging long-horizon forecasting scenarios.",
+    "authors": [
+      "Penghui Wen",
+      "Yu Luo",
+      "Lintao Wang",
+      "Mengwei He",
+      "Patrick Filippi",
+      "Thomas Francis Bishop",
+      "Zhiyong Wang"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "id": "2605.13197v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `benchmark, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Existing precipitation nowcasting methods typically adopt an autoregressive formulation, where future states are predicted from previous outputs.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, such an approach accumulates errors over long rollouts, causing forecasts to drift away from physically plausible evolution trajectories.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory retrieval"
+    ],
+    "one_liner": "Existing precipitation nowcasting methods typically adopt an autoregressive formulation, where future states are predicted from previous outputs.",
+    "published": "2026-05-13",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：benchmark, retrieval\n- 检索关键词命中：memory retrieval\n- 来源分类信息：cs.LG, cs.AI",
+    "slug": "mccast-memory-guided-latent-drift-correction-for-long-horizon-precipitation-nowc",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2605.13197v1",
+    "tags": [
+      "benchmark",
+      "retrieval"
+    ],
+    "title": "McCast: Memory-Guided Latent Drift Correction for Long-Horizon Precipitation Nowcasting",
+    "updated": "2026-05-13",
+    "url": "http://arxiv.org/abs/2605.13197v1",
+    "venue": ""
+  },
+  {
+    "abstract": "We present Key-Value Means (\"KVM\"), a novel block-recurrence for attention that can accommodate either fixed-size or growing state. Equipping a strong transformer baseline with fixed-size KVM attention layers yields a strong $O(N)$ chunked RNN, while adding only an insignificant number of new parameters. We train a transformer with a growable KVM cache and show it performs competitively on long-context tests with only subquadratic prefill time and sublinear state growth. KVM is implementable with standard operations and without custom kernels, and supports chunk-wise parallelizable training and prefill. It provides many of the benefits of both traditional transformers (expandable context memory, chunk-wise parallelizable training and prefill) and linear RNNs in a single unified package. It can be used on every layer, saving KV-cache memory, and allowing a continuous range of choices of prefill time complexity between $O(N)$ and $O(N^2)$. It can also be implemented in a hybrid solution in tandem with LRNN layers in place of traditional attention, to supplement the LRNN with improved sublinear memory growth context length usage and long context decoding. We release our code at https://github.com/recursal/KVM-paper and trained models at https://huggingface.co/collections/recursal/key-value-means under the Apache 2.0 license.",
+    "authors": [
+      "Daniel Goldstein",
+      "Eugene Cheah"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "id": "2605.09877v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `context` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：We present Key-Value Means (\"KVM\"), a novel block-recurrence for attention that can accommodate either fixed-size or growing state.\n\n进一步看，论文的核心做法或实验重点可以概括为：Equipping a strong transformer baseline with fixed-size KVM attention layers yields a strong $O(N)$ chunked RNN, while adding only an insignificant number of new parameters.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "context memory"
+    ],
+    "one_liner": "We present Key-Value Means (\"KVM\"), a novel block-recurrence for attention that can accommodate either fixed-size or growing state.",
+    "published": "2026-05-11",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：context\n- 检索关键词命中：context memory\n- 来源分类信息：cs.LG, cs.AI, cs.CL",
+    "slug": "key-value-means-transformers-with-expandable-block-recurrent-compressed-memory",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2605.09877v2",
+    "tags": [
+      "context"
+    ],
+    "title": "Key-Value Means: Transformers with Expandable Block-Recurrent Compressed Memory",
+    "updated": "2026-05-13",
+    "url": "http://arxiv.org/abs/2605.09877v2",
+    "venue": ""
+  },
+  {
+    "abstract": "This paper examines how different types of large language model (LLM) agents perform on scientific visualization (SciVis) tasks, where users generate visualization workflows from natural-language instructions. We compare three primary interaction paradigms, including domain-specific agents with structured tool use, computer-use agents, and general-purpose coding agents, by evaluating eight representative agents across 15 benchmark tasks and measuring visualization quality, efficiency, robustness, and computational cost. We further analyze interaction modalities, including code scripts and model context protocol (MCP) or API calls for structured tool use, as well as command-line interfaces (CLI) and graphical user interfaces (GUI) for more general interaction, while additionally studying the effect of persistent memory in selected agents. The results reveal clear tradeoffs across paradigms and modalities. General-purpose coding agents achieve the highest task success rates but are computationally expensive, while domain-specific agents are more efficient and stable but less flexible. Computer-use agents perform well on individual steps but struggle with longer multi-step workflows, indicating that long-horizon planning is their primary limitation. Across both CLI- and GUI-based settings, persistent memory improves performance over repeated trials, although its benefits depend on the underlying interaction mode and the quality of feedback. These findings suggest that no single approach is sufficient, and future SciVis systems should combine structured tool use, interactive capabilities, and adaptive memory mechanisms to balance performance, robustness, and flexibility.",
+    "authors": [
+      "Jackson Vonderhorst",
+      "Kuangshi Ai",
+      "Haichao Miao",
+      "Shusen Liu",
+      "Chaoli Wang"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.GR",
+      "cs.HC"
+    ],
+    "id": "2604.27996v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：This paper examines how different types of large language model (LLM) agents perform on scientific visualization (SciVis) tasks, where users generate visualization workflows from natural-language instructions.\n\n进一步看，论文的核心做法或实验重点可以概括为：We compare three primary interaction paradigms, including domain-specific agents with structured tool use, computer-use agents, and general-purpose coding agents, by evaluating eight representative agents across 15...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "persistent memory"
+    ],
+    "one_liner": "This paper examines how different types of large language model (LLM) agents perform on scientific visualization (SciVis) tasks, where users generate visualization workflows...",
+    "published": "2026-04-30",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context\n- 检索关键词命中：persistent memory\n- 来源分类信息：cs.AI, cs.GR, cs.HC",
+    "slug": "exploring-interaction-paradigms-for-llm-agents-in-scientific-visualization",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2604.27996v2",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context"
+    ],
+    "title": "Exploring Interaction Paradigms for LLM Agents in Scientific Visualization",
+    "updated": "2026-05-13",
+    "url": "http://arxiv.org/abs/2604.27996v2",
+    "venue": ""
+  },
+  {
+    "abstract": "Existing agent memory remains predominantly reactive and retrieval-based, lacking the capacity to autonomously organize experience into persistent cognitive structure. Toward genuinely autonomous agents, we introduce Cognifold, a brain-inspired \"always-on\" agent memory designed for the next generation of proactive assistants. CogniFold continuously folds fragmented event streams into self-emerging cognitive structures, bootstrapping progressively higher-level cognition from incoming events and accumulated knowledge. We ground this by extending Complementary Learning Systems (CLS) theory from two layers (hippocampus, neocortex) to three, adding a prefrontal intent layer. Emulating the prefrontal cortex as the locus of intentional control and decision-making, CogniFold achieves this through graph-topology self-organization: cognitive structures proactively assemble under the stream, merge when semantically similar, decay when stale, relink through associative recall, and surface intents when concept-cluster density crosses a threshold. We evaluate structural formation using CogEval-Bench, demonstrating that CogniFold uniquely produces memory structures that match cognitive expectations and concept emergence. Furthermore, across 7 broad-coverage benchmarks spanning five cognitive domains, we validate that CogniFold simultaneously performs robustly on conventional memory benchmarks.",
+    "authors": [
+      "Suli Wang",
+      "Yiqun Duan",
+      "Yu Deng",
+      "Rundong Zhao",
+      "Dai Shi",
+      "Xinliang Zhou"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.CL"
+    ],
+    "id": "2605.13438v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Existing agent memory remains predominantly reactive and retrieval-based, lacking the capacity to autonomously organize experience into persistent cognitive structure.\n\n进一步看，论文的核心做法或实验重点可以概括为：Toward genuinely autonomous agents, we introduce Cognifold, a brain-inspired \"always-on\" agent memory designed for the next generation of proactive assistants.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory",
+      "memory benchmark",
+      "memory benchmarks"
+    ],
+    "one_liner": "Existing agent memory remains predominantly reactive and retrieval-based, lacking the capacity to autonomously organize experience into persistent cognitive structure.",
+    "published": "2026-05-13",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, retrieval\n- 检索关键词命中：agent memory, memory benchmark, memory benchmarks\n- 来源分类信息：cs.AI, cs.CL",
+    "slug": "cognifold-always-on-proactive-memory-via-cognitive-folding",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2605.13438v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "retrieval"
+    ],
+    "title": "Cognifold: Always-On Proactive Memory via Cognitive Folding",
+    "updated": "2026-05-13",
+    "url": "http://arxiv.org/abs/2605.13438v1",
+    "venue": ""
+  },
+  {
+    "abstract": "We introduce a family of synthetic languages with hierarchical structure -- generated by a broadcast process on trees -- for which the role of context length and reasoning in autoregressive generation can be analyzed precisely. At the heart of our analytic approach is an \\emph{exact $k$-gram ansatz} in place of transformers with context length $k$, a substitution we then validate empirically. Using this ansatz we derive explicit asymptotic predictions for distributional statistics of the sequences produced by a trained model, instantiated in two settings. For the \\emph{Ising broadcast process} (a soft-constrained language), we prove that the variance of the generated sum scales log-linearly in the context depth and its kurtosis converges to that of a Gaussian -- both deviating from the true language for any sublinear context. For the \\emph{coloring broadcast process} (a hard-constrained language) in the freezing regime, bounded-context autoregression produces sequences that, with high probability, are inconsistent with \\emph{any} valid coloring of the underlying tree. Together these results imply an $Ω(n)$ lower bound on the context length required to faithfully sample length-$n$ sequences. In contrast, we prove that an autoregressive \\emph{reasoning} model with only $Θ(\\log n)$ working memory can sample exactly from the true language -- an exponential improvement. We confirm both the lower-bound predictions and the reasoning-based upper bound empirically with transformers trained on the synthetic language; the trained models track our asymptotic predictions quantitatively across a wide range of context sizes.",
+    "authors": [
+      "Jason Gaitonde",
+      "Frederic Koehler",
+      "Elchanan Mossel",
+      "Joonhyung Shin",
+      "Allan Sly"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "stat.ML"
+    ],
+    "id": "2605.13687v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `context` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：We introduce a family of synthetic languages with hierarchical structure -- generated by a broadcast process on trees -- for which the role of context length and reasoning in autoregressive generation can be analyzed...\n\n进一步看，论文的核心做法或实验重点可以概括为：At the heart of our analytic approach is an \\emph{exact $k$-gram ansatz} in place of transformers with context length $k$, a substitution we then validate empirically.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "working memory"
+    ],
+    "one_liner": "We introduce a family of synthetic languages with hierarchical structure -- generated by a broadcast process on trees -- for which the role of context length and reasoning in...",
+    "published": "2026-05-13",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：context\n- 检索关键词命中：working memory\n- 来源分类信息：cs.LG, cs.AI, stat.ML",
+    "slug": "a-hierarchical-language-model-with-predictable-scaling-laws-and-provable-benefit",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2605.13687v1",
+    "tags": [
+      "context"
+    ],
+    "title": "A Hierarchical Language Model with Predictable Scaling Laws and Provable Benefits of Reasoning",
+    "updated": "2026-05-13",
+    "url": "http://arxiv.org/abs/2605.13687v1",
+    "venue": ""
+  },
+  {
     "abstract": "Skill libraries enable large language model agents to reuse experience from past interactions, but most existing libraries store skills as isolated entries and retrieve them only by semantic similarity. This leads to two key challenges for compositional tasks. Firstly, an agent must identify not only relevant skills but also how they depend on and build upon each other. Secondly, it also makes library maintenance difficult, since the system lacks structural cues for deciding when skills should be merged, split, or removed. We propose SKILLGRAPH, a framework that represents reusable skills as nodes in a directed graph, with typed edges encoding prerequisite, enhancement, and co-occurrence relations. Given a new task, SKILLGRAPH retrieves not just individual skills, but an ordered skill subgraph that can guide multi-step decision making. The graph is continuously updated from agent trajectories and reinforcement learning feedback, allowing both the skill library and the agent policy to improve together. Experiments on ALFWorld, WebShop, and seven search-augmented QA tasks show that SKILLGRAPH achieves state-of-the-art performance against memory-augmented RL methods, with especially large gains on complex tasks that require composing multiple skills.",
     "authors": [
       "Xiaoyuan Li",

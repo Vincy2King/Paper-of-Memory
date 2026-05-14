@@ -39,19 +39,29 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **203**
-- Last generated: **2026-05-13**
+- Total tracked papers: **213**
+- Last generated: **2026-05-14**
 
 ## Papers by Source
 
 - ACL Anthology: **1**
-- arXiv: **168**
+- arXiv: **178**
 - OpenReview: **34**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-05-13 | arXiv | [Useful Memories Become Faulty When Continuously Updated by LLMs](content/papers/useful-memories-become-faulty-when-continuously-updated-by-llms.md) | agent, episodic |
+| 2026-05-13 | arXiv | [RealICU: Do LLM Agents Understand Long-Context ICU Data? A Benchmark Beyond Behavior Imitation](content/papers/realicu-do-llm-agents-understand-long-context-icu-data-a-benchmark-beyond-behavi.md) | agent, benchmark, context |
+| 2026-05-13 | arXiv | [ReTool-Video: Recursive Tool-Using Video Agents with Meta-Augmented Tool Grounding](content/papers/retool-video-recursive-tool-using-video-agents-with-meta-augmented-tool-groundin.md) | agent, retrieval |
+| 2026-05-13 | arXiv | [NAACA: Training-Free NeuroAuditory Attentive Cognitive Architecture with Oscillatory Working Memory for Salience-Driven Attention Gating](content/papers/naaca-training-free-neuroauditory-attentive-cognitive-architecture-with-oscillat.md) | working memory |
+| 2026-05-13 | arXiv | [Model-Agnostic Lifelong LLM Safety via Externalized Attack-Defense Co-Evolution](content/papers/model-agnostic-lifelong-llm-safety-via-externalized-attack-defense-co-evolution.md) | retrieval |
+| 2026-05-13 | arXiv | [McCast: Memory-Guided Latent Drift Correction for Long-Horizon Precipitation Nowcasting](content/papers/mccast-memory-guided-latent-drift-correction-for-long-horizon-precipitation-nowc.md) | benchmark, retrieval |
+| 2026-05-13 | arXiv | [Key-Value Means: Transformers with Expandable Block-Recurrent Compressed Memory](content/papers/key-value-means-transformers-with-expandable-block-recurrent-compressed-memory.md) | context |
+| 2026-05-13 | arXiv | [Exploring Interaction Paradigms for LLM Agents in Scientific Visualization](content/papers/exploring-interaction-paradigms-for-llm-agents-in-scientific-visualization.md) | agent, benchmark, context |
+| 2026-05-13 | arXiv | [Cognifold: Always-On Proactive Memory via Cognitive Folding](content/papers/cognifold-always-on-proactive-memory-via-cognitive-folding.md) | agent, benchmark, retrieval |
+| 2026-05-13 | arXiv | [A Hierarchical Language Model with Predictable Scaling Laws and Provable Benefits of Reasoning](content/papers/a-hierarchical-language-model-with-predictable-scaling-laws-and-provable-benefit.md) | context |
 | 2026-05-12 | arXiv | [SkillGraph: Skill-Augmented Reinforcement Learning for Agents via Evolving Skill Graphs](content/papers/skillgraph-skill-augmented-reinforcement-learning-for-agents-via-evolving-skill-.md) | agent |
 | 2026-05-12 | arXiv | [SAGE: A Self-Evolving Agentic Graph-Memory Engine for Structure-Aware Associative Memory](content/papers/sage-a-self-evolving-agentic-graph-memory-engine-for-structure-aware-associative.md) | agent, benchmark, long-term |
 | 2026-05-12 | arXiv | [Retrieve-then-Steer: Online Success Memory for Test-Time Adaptation of Generative VLAs](content/papers/retrieve-then-steer-online-success-memory-for-test-time-adaptation-of-generative.md) | long-term, retrieval |
@@ -62,16 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-05-12 | arXiv | [Improving the Performance and Learning Stability of Parallelizable RNNs Designed for Ultra-Low Power Applications](content/papers/improving-the-performance-and-learning-stability-of-parallelizable-rnns-designed.md) | benchmark, long-term |
 | 2026-05-12 | arXiv | [Goal-Oriented Reasoning for RAG-based Memory in Conversational Agentic LLM Systems](content/papers/goal-oriented-reasoning-for-rag-based-memory-in-conversational-agentic-llm-syste.md) | agent, context, conversation |
 | 2026-05-12 | arXiv | [GRC: Unifying Reasoning-Driven Generation, Retrieval and Compression](content/papers/grc-unifying-reasoning-driven-generation-retrieval-and-compression.md) | agent, benchmark, compression |
-| 2026-05-12 | arXiv | [Executable Agentic Memory for GUI Agent](content/papers/executable-agentic-memory-for-gui-agent.md) | agent, retrieval |
-| 2026-05-12 | arXiv | [Automated Reformulation of Robust Optimization via Memory-Augmented Large Language Models](content/papers/automated-reformulation-of-robust-optimization-via-memory-augmented-large-langua.md) | benchmark |
-| 2026-05-11 | arXiv | [RubricEM: Meta-RL with Rubric-guided Policy Decomposition beyond Verifiable Rewards](content/papers/rubricem-meta-rl-with-rubric-guided-policy-decomposition-beyond-verifiable-rewar.md) | agent, benchmark |
-| 2026-05-11 | arXiv | [Retrieve-then-Steer: Online Success Memory for Test-Time Adaptation of Generative VLAs](content/papers/retrieve-then-steer-online-success-memory-for-test-time-adaptation-of-generative.md) | long-term, retrieval |
-| 2026-05-11 | arXiv | [Remember the Decision, Not the Description: A Rate-Distortion Framework for Agent Memory](content/papers/remember-the-decision-not-the-description-a-rate-distortion-framework-for-agent-.md) | agent, benchmark, compression |
-| 2026-05-11 | arXiv | [Nautilus Compass: Black-box Persona Drift Detection for Production LLM Agents](content/papers/nautilus-compass-black-box-persona-drift-detection-for-production-llm-agents.md) | agent, conversation, retrieval |
-| 2026-05-11 | arXiv | [MemReread: Enhancing Agentic Long-Context Reasoning via Memory-Guided Rereading](content/papers/memreread-enhancing-agentic-long-context-reasoning-via-memory-guided-rereading.md) | agent, context, retrieval |
-| 2026-05-11 | arXiv | [Mela: Test-Time Memory Consolidation based on Transformation Hypothesis](content/papers/mela-test-time-memory-consolidation-based-on-transformation-hypothesis.md) | context, episodic, retrieval |
-| 2026-05-11 | arXiv | [MAGE: Multi-Agent Self-Evolution with Co-Evolutionary Knowledge Graphs](content/papers/mage-multi-agent-self-evolution-with-co-evolutionary-knowledge-graphs.md) | agent, benchmark, episodic |
-| 2026-05-11 | arXiv | [Layered Mutability: Continuity and Governance in Persistent Self-Modifying Agents](content/papers/layered-mutability-continuity-and-governance-in-persistent-self-modifying-agents.md) | agent |
 
 ## Suggested GitHub Setup
 
