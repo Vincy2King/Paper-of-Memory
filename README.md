@@ -39,19 +39,32 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **213**
-- Last generated: **2026-05-14**
+- Total tracked papers: **228**
+- Last generated: **2026-05-15**
 
 ## Papers by Source
 
 - ACL Anthology: **1**
-- arXiv: **178**
+- arXiv: **193**
 - OpenReview: **34**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-05-14 | arXiv | [When Robots Do the Chores: A Benchmark and Agent for Long-Horizon Household Task Execution](content/papers/when-robots-do-the-chores-a-benchmark-and-agent-for-long-horizon-household-task-.md) | agent, benchmark, episodic |
+| 2026-05-14 | arXiv | [Spontaneous symmetry breaking and Goldstone modes for deep information propagation](content/papers/spontaneous-symmetry-breaking-and-goldstone-modes-for-deep-information-propagati.md) | long-term |
+| 2026-05-14 | arXiv | [ShadowMerge: A Novel Poisoning Attack on Graph-Based Agent Memory via Relation-Channel Conflicts](content/papers/shadowmerge-a-novel-poisoning-attack-on-graph-based-agent-memory-via-relation-ch.md) | agent, long-term |
+| 2026-05-14 | arXiv | [MemReranker: Reasoning-Aware Reranking for Agent Memory Retrieval](content/papers/memreranker-reasoning-aware-reranking-for-agent-memory-retrieval.md) | agent, benchmark, context |
+| 2026-05-14 | arXiv | [MemQ: Integrating Q-Learning into Self-Evolving Memory Agents over Provenance DAGs](content/papers/memq-integrating-q-learning-into-self-evolving-memory-agents-over-provenance-dag.md) | agent, benchmark, context |
+| 2026-05-14 | arXiv | [MemLineage: Lineage-Guided Enforcement for LLM Agent Memory](content/papers/memlineage-lineage-guided-enforcement-for-llm-agent-memory.md) | agent |
+| 2026-05-14 | arXiv | [MemEye: A Visual-Centric Evaluation Framework for Multimodal Agent Memory](content/papers/memeye-a-visual-centric-evaluation-framework-for-multimodal-agent-memory.md) | agent, benchmark, long-term |
+| 2026-05-14 | arXiv | [GroupMemBench: Benchmarking LLM Agent Memory in Multi-Party Conversations](content/papers/groupmembench-benchmarking-llm-agent-memory-in-multi-party-conversations.md) | agent, benchmark, conversation |
+| 2026-05-14 | arXiv | [EverAnimate: Minute-Scale Human Animation via Latent Flow Restoration](content/papers/everanimate-minute-scale-human-animation-via-latent-flow-restoration.md) | context |
+| 2026-05-14 | arXiv | [EntityBench: Towards Entity-Consistent Long-Range Multi-Shot Video Generation](content/papers/entitybench-towards-entity-consistent-long-range-multi-shot-video-generation.md) | benchmark |
+| 2026-05-14 | arXiv | [Attractor Geometry of Transformer Memory: From Conflict Arbitration to Confident Hallucination](content/papers/attractor-geometry-of-transformer-memory-from-conflict-arbitration-to-confident-.md) | context |
+| 2026-05-14 | arXiv | [Agentic Recommender System with Hierarchical Belief-State Memory](content/papers/agentic-recommender-system-with-hierarchical-belief-state-memory.md) | agent, benchmark |
+| 2026-05-14 | arXiv | [ASH: Agents that Self-Hone via Embodied Learning](content/papers/ash-agents-that-self-hone-via-embodied-learning.md) | agent, long-term, retrieval |
 | 2026-05-13 | arXiv | [Useful Memories Become Faulty When Continuously Updated by LLMs](content/papers/useful-memories-become-faulty-when-continuously-updated-by-llms.md) | agent, episodic |
 | 2026-05-13 | arXiv | [RealICU: Do LLM Agents Understand Long-Context ICU Data? A Benchmark Beyond Behavior Imitation](content/papers/realicu-do-llm-agents-understand-long-context-icu-data-a-benchmark-beyond-behavi.md) | agent, benchmark, context |
 | 2026-05-13 | arXiv | [ReTool-Video: Recursive Tool-Using Video Agents with Meta-Augmented Tool Grounding](content/papers/retool-video-recursive-tool-using-video-agents-with-meta-augmented-tool-groundin.md) | agent, retrieval |
@@ -59,19 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-05-13 | arXiv | [Model-Agnostic Lifelong LLM Safety via Externalized Attack-Defense Co-Evolution](content/papers/model-agnostic-lifelong-llm-safety-via-externalized-attack-defense-co-evolution.md) | retrieval |
 | 2026-05-13 | arXiv | [McCast: Memory-Guided Latent Drift Correction for Long-Horizon Precipitation Nowcasting](content/papers/mccast-memory-guided-latent-drift-correction-for-long-horizon-precipitation-nowc.md) | benchmark, retrieval |
 | 2026-05-13 | arXiv | [Key-Value Means: Transformers with Expandable Block-Recurrent Compressed Memory](content/papers/key-value-means-transformers-with-expandable-block-recurrent-compressed-memory.md) | context |
-| 2026-05-13 | arXiv | [Exploring Interaction Paradigms for LLM Agents in Scientific Visualization](content/papers/exploring-interaction-paradigms-for-llm-agents-in-scientific-visualization.md) | agent, benchmark, context |
-| 2026-05-13 | arXiv | [Cognifold: Always-On Proactive Memory via Cognitive Folding](content/papers/cognifold-always-on-proactive-memory-via-cognitive-folding.md) | agent, benchmark, retrieval |
-| 2026-05-13 | arXiv | [A Hierarchical Language Model with Predictable Scaling Laws and Provable Benefits of Reasoning](content/papers/a-hierarchical-language-model-with-predictable-scaling-laws-and-provable-benefit.md) | context |
-| 2026-05-12 | arXiv | [SkillGraph: Skill-Augmented Reinforcement Learning for Agents via Evolving Skill Graphs](content/papers/skillgraph-skill-augmented-reinforcement-learning-for-agents-via-evolving-skill-.md) | agent |
-| 2026-05-12 | arXiv | [SAGE: A Self-Evolving Agentic Graph-Memory Engine for Structure-Aware Associative Memory](content/papers/sage-a-self-evolving-agentic-graph-memory-engine-for-structure-aware-associative.md) | agent, benchmark, long-term |
-| 2026-05-12 | arXiv | [Retrieve-then-Steer: Online Success Memory for Test-Time Adaptation of Generative VLAs](content/papers/retrieve-then-steer-online-success-memory-for-test-time-adaptation-of-generative.md) | long-term, retrieval |
-| 2026-05-12 | arXiv | [Mitigating Context-Memory Conflicts in LLMs through Dynamic Cognitive Reconciliation Decoding](content/papers/mitigating-context-memory-conflicts-in-llms-through-dynamic-cognitive-reconcilia.md) | benchmark, context |
-| 2026-05-12 | arXiv | [MemQ: Integrating Q-Learning into Self-Evolving Memory Agents over Provenance DAGs](content/papers/memq-integrating-q-learning-into-self-evolving-memory-agents-over-provenance-dag.md) | agent, benchmark, context |
-| 2026-05-12 | arXiv | [MedMemoryBench: Benchmarking Agent Memory in Personalized Healthcare](content/papers/medmemorybench-benchmarking-agent-memory-in-personalized-healthcare.md) | agent, benchmark, conversation |
-| 2026-05-12 | arXiv | [LongMemEval-V2: Evaluating Long-Term Agent Memory Toward Experienced Colleagues](content/papers/longmemeval-v2-evaluating-long-term-agent-memory-toward-experienced-colleagues.md) | agent, benchmark, context |
-| 2026-05-12 | arXiv | [Improving the Performance and Learning Stability of Parallelizable RNNs Designed for Ultra-Low Power Applications](content/papers/improving-the-performance-and-learning-stability-of-parallelizable-rnns-designed.md) | benchmark, long-term |
-| 2026-05-12 | arXiv | [Goal-Oriented Reasoning for RAG-based Memory in Conversational Agentic LLM Systems](content/papers/goal-oriented-reasoning-for-rag-based-memory-in-conversational-agentic-llm-syste.md) | agent, context, conversation |
-| 2026-05-12 | arXiv | [GRC: Unifying Reasoning-Driven Generation, Retrieval and Compression](content/papers/grc-unifying-reasoning-driven-generation-retrieval-and-compression.md) | agent, benchmark, compression |
 
 ## Suggested GitHub Setup
 
