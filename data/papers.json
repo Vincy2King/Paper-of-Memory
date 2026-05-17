@@ -1,5 +1,37 @@
 [
   {
+    "abstract": "Agent memory shapes how Large Language Model (LLM)-powered agents, akin to the human brain, progressively refine themselves through environment interactions. Existing paradigms remain constrained: parametric memory forcibly adjusts model parameters, and retrieval-based memory externalizes experience into structured databases, yet neither captures the fluid interweaving of reasoning and memory that underlies human cognition. To address this gap, we propose MemGen, a dynamic generative memory framework that equips agents with a human-esque cognitive faculty. It consists of a \\textit{memory trigger}, which monitors the agent’s reasoning state to decide explicit memory invocation, and a \\textit{memory weaver}, which takes the agent's current state as stimulus to construct a latent token sequence as machine-native memory to enrich its reasoning. In this way, MemGen enables agents to recall and augment latent memory throughout reasoning, producing a tightly interwoven cycle of memory and cognition. Extensive experiments across eight benchmarks show that MemGen surpasses leading external memory systems such as ExpeL and AWM by up to $38.22\\\\%$, exceeds GRPO by up to $13.44\\\\%$, and exhibits strong cross-domain generalization ability. More importantly, we find that without explicit supervision, MemGen spontaneously evolves distinct human-like memory faculties, including planning memory, procedural memory, and working memory, suggesting an emergent trajectory toward more naturalistic forms of machine cognition.",
+    "authors": [
+      "Guibin Zhang",
+      "Muxin Fu",
+      "Shuicheng YAN"
+    ],
+    "categories": [
+      "ICLR.cc/2026/Conference/-/Submission"
+    ],
+    "id": "openreview:vI56m4Iu4e",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, retrieval` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ICLR 2026 Poster` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Agent memory shapes how Large Language Model (LLM)-powered agents, akin to the human brain, progressively refine themselves through environment interactions.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing paradigms remain constrained: parametric memory forcibly adjusts model parameters, and retrieval-based memory externalizes experience into structured databases, yet neither captures the fluid interweaving of...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory",
+      "working memory"
+    ],
+    "one_liner": "Agent memory shapes how Large Language Model (LLM)-powered agents, akin to the human brain, progressively refine themselves through environment interactions.",
+    "published": "2026-01-26",
+    "relevance": "- 来源：OpenReview\n- Venue：ICLR 2026 Poster\n- 高亮主题命中：agent, benchmark, retrieval\n- 检索关键词命中：agent memory, working memory\n- 来源分类信息：ICLR.cc/2026/Conference/-/Submission",
+    "slug": "memgen-weaving-generative-latent-memory-for-self-evolving-agents",
+    "source": "OpenReview",
+    "source_key": "vI56m4Iu4e",
+    "tags": [
+      "agent",
+      "benchmark",
+      "retrieval"
+    ],
+    "title": "MemGen: Weaving Generative Latent Memory for Self-Evolving Agents",
+    "updated": "2026-05-17",
+    "url": "https://openreview.net/forum?id=vI56m4Iu4e",
+    "venue": "ICLR 2026 Poster"
+  },
+  {
     "abstract": "Long-horizon household tasks demand robust high-level planning and sustained reasoning capabilities, which are largely overlooked by existing embodied AI benchmarks that emphasize short-horizon navigation or manipulation and rely on fixed task categories. We introduce LongAct, a benchmark designed to evaluate planning-level autonomy in long-horizon household tasks specified through free-form instructions. By abstracting away embodiment-specific low-level control, LongAct isolates high-level cognitive capabilities such as instruction understanding, dependency management, memory maintenance, and adaptive planning. We further propose HoloMind, a VLM-driven agent with a DAG-based long-horizon hierarchical planner, a Multimodal Spatial Memory for persistent world modeling, an Episodic Memory for experience reuse, and a global Critic for reflective supervision. Experiments with GPT-5 and Qwen3-VL models show that HoloMind substantially improves long-horizon performance while reducing reliance on model scale. Even top models achieve only 59% goal completion and 16% full-task success, underscoring the difficulty of LongAct and the need for stronger long-horizon planning in embodied agents.",
     "authors": [
       "Zilin Zhu",
@@ -7602,38 +7634,6 @@
     "title": "REMem: Reasoning with Episodic Memory in Language Agent",
     "updated": "2026-04-11",
     "url": "https://openreview.net/forum?id=fugnQxbvMm",
-    "venue": "ICLR 2026 Poster"
-  },
-  {
-    "abstract": "Agent memory shapes how Large Language Model (LLM)-powered agents, akin to the human brain, progressively refine themselves through environment interactions. Existing paradigms remain constrained: parametric memory forcibly adjusts model parameters, and retrieval-based memory externalizes experience into structured databases, yet neither captures the fluid interweaving of reasoning and memory that underlies human cognition. To address this gap, we propose MemGen, a dynamic generative memory framework that equips agents with a human-esque cognitive faculty. It consists of a \\textit{memory trigger}, which monitors the agent’s reasoning state to decide explicit memory invocation, and a \\textit{memory weaver}, which takes the agent's current state as stimulus to construct a latent token sequence as machine-native memory to enrich its reasoning. In this way, MemGen enables agents to recall and augment latent memory throughout reasoning, producing a tightly interwoven cycle of memory and cognition. Extensive experiments across eight benchmarks show that MemGen surpasses leading external memory systems such as ExpeL and AWM by up to $38.22\\\\%$, exceeds GRPO by up to $13.44\\\\%$, and exhibits strong cross-domain generalization ability. More importantly, we find that without explicit supervision, MemGen spontaneously evolves distinct human-like memory faculties, including planning memory, procedural memory, and working memory, suggesting an emergent trajectory toward more naturalistic forms of machine cognition.",
-    "authors": [
-      "Guibin Zhang",
-      "Muxin Fu",
-      "Shuicheng YAN"
-    ],
-    "categories": [
-      "ICLR.cc/2026/Conference/-/Submission"
-    ],
-    "id": "openreview:vI56m4Iu4e",
-    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, retrieval` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ICLR 2026 Poster` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Agent memory shapes how Large Language Model (LLM)-powered agents, akin to the human brain, progressively refine themselves through environment interactions.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing paradigms remain constrained: parametric memory forcibly adjusts model parameters, and retrieval-based memory externalizes experience into structured databases, yet neither captures the fluid interweaving of...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
-    "matched_keywords": [
-      "agent memory",
-      "working memory"
-    ],
-    "one_liner": "Agent memory shapes how Large Language Model (LLM)-powered agents, akin to the human brain, progressively refine themselves through environment interactions.",
-    "published": "2026-01-26",
-    "relevance": "- 来源：OpenReview\n- Venue：ICLR 2026 Poster\n- 高亮主题命中：agent, benchmark, retrieval\n- 检索关键词命中：agent memory, working memory\n- 来源分类信息：ICLR.cc/2026/Conference/-/Submission",
-    "slug": "memgen-weaving-generative-latent-memory-for-self-evolving-agents",
-    "source": "OpenReview",
-    "source_key": "vI56m4Iu4e",
-    "tags": [
-      "agent",
-      "benchmark",
-      "retrieval"
-    ],
-    "title": "MemGen: Weaving Generative Latent Memory for Self-Evolving Agents",
-    "updated": "2026-04-11",
-    "url": "https://openreview.net/forum?id=vI56m4Iu4e",
     "venue": "ICLR 2026 Poster"
   },
   {

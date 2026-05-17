@@ -52,6 +52,7 @@ python3 scripts/update_papers.py --build-only
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-05-17 | OpenReview | [MemGen: Weaving Generative Latent Memory for Self-Evolving Agents](content/papers/memgen-weaving-generative-latent-memory-for-self-evolving-agents.md) | agent, benchmark, retrieval |
 | 2026-05-14 | arXiv | [When Robots Do the Chores: A Benchmark and Agent for Long-Horizon Household Task Execution](content/papers/when-robots-do-the-chores-a-benchmark-and-agent-for-long-horizon-household-task-.md) | agent, benchmark, episodic |
 | 2026-05-14 | arXiv | [Spontaneous symmetry breaking and Goldstone modes for deep information propagation](content/papers/spontaneous-symmetry-breaking-and-goldstone-modes-for-deep-information-propagati.md) | long-term |
 | 2026-05-14 | arXiv | [ShadowMerge: A Novel Poisoning Attack on Graph-Based Agent Memory via Relation-Channel Conflicts](content/papers/shadowmerge-a-novel-poisoning-attack-on-graph-based-agent-memory-via-relation-ch.md) | agent, long-term |
@@ -71,7 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-05-13 | arXiv | [NAACA: Training-Free NeuroAuditory Attentive Cognitive Architecture with Oscillatory Working Memory for Salience-Driven Attention Gating](content/papers/naaca-training-free-neuroauditory-attentive-cognitive-architecture-with-oscillat.md) | working memory |
 | 2026-05-13 | arXiv | [Model-Agnostic Lifelong LLM Safety via Externalized Attack-Defense Co-Evolution](content/papers/model-agnostic-lifelong-llm-safety-via-externalized-attack-defense-co-evolution.md) | retrieval |
 | 2026-05-13 | arXiv | [McCast: Memory-Guided Latent Drift Correction for Long-Horizon Precipitation Nowcasting](content/papers/mccast-memory-guided-latent-drift-correction-for-long-horizon-precipitation-nowc.md) | benchmark, retrieval |
-| 2026-05-13 | arXiv | [Key-Value Means: Transformers with Expandable Block-Recurrent Compressed Memory](content/papers/key-value-means-transformers-with-expandable-block-recurrent-compressed-memory.md) | context |
 
 ## Suggested GitHub Setup
 

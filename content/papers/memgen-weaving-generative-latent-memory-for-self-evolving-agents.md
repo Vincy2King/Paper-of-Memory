@@ -4,7 +4,7 @@
 - Venue: ICLR 2026 Poster
 - Paper ID: openreview:vI56m4Iu4e
 - Published: 2026-01-26
-- Updated: 2026-04-11
+- Updated: 2026-05-17
 - Authors: Guibin Zhang, Muxin Fu, Shuicheng YAN
 - Tags: agent, benchmark, retrieval
 - Categories: ICLR.cc/2026/Conference/-/Submission
