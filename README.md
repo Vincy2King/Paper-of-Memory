@@ -39,13 +39,13 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **228**
-- Last generated: **2026-05-17**
+- Total tracked papers: **233**
+- Last generated: **2026-05-18**
 
 ## Papers by Source
 
 - ACL Anthology: **1**
-- arXiv: **193**
+- arXiv: **198**
 - OpenReview: **34**
 
 ## Latest Papers
@@ -53,6 +53,11 @@ python3 scripts/update_papers.py --build-only
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
 | 2026-05-17 | OpenReview | [MemGen: Weaving Generative Latent Memory for Self-Evolving Agents](content/papers/memgen-weaving-generative-latent-memory-for-self-evolving-agents.md) | agent, benchmark, retrieval |
+| 2026-05-15 | arXiv | [ShadowMerge: A Novel Poisoning Attack on Graph-Based Agent Memory via Relation-Channel Conflicts](content/papers/shadowmerge-a-novel-poisoning-attack-on-graph-based-agent-memory-via-relation-ch.md) | agent, long-term |
+| 2026-05-15 | arXiv | [SMMBench: A Benchmark for Source-Distributed Multimodal Agent Memory](content/papers/smmbench-a-benchmark-for-source-distributed-multimodal-agent-memory.md) | agent, benchmark, context |
+| 2026-05-15 | arXiv | [H-Mem: A Novel Memory Mechanism for Evolving and Retrieving Agent Memory via a Hybrid Structure](content/papers/h-mem-a-novel-memory-mechanism-for-evolving-and-retrieving-agent-memory-via-a-hy.md) | agent, benchmark, long-term |
+| 2026-05-15 | arXiv | [FORGE: Self-Evolving Agent Memory With No Weight Updates via Population Broadcast](content/papers/forge-self-evolving-agent-memory-with-no-weight-updates-via-population-broadcast.md) | agent |
+| 2026-05-15 | arXiv | [DimMem: Dimensional Structuring for Efficient Long-Term Agent Memory](content/papers/dimmem-dimensional-structuring-for-efficient-long-term-agent-memory.md) | agent, benchmark, context |
 | 2026-05-14 | arXiv | [When Robots Do the Chores: A Benchmark and Agent for Long-Horizon Household Task Execution](content/papers/when-robots-do-the-chores-a-benchmark-and-agent-for-long-horizon-household-task-.md) | agent, benchmark, episodic |
 | 2026-05-14 | arXiv | [Spontaneous symmetry breaking and Goldstone modes for deep information propagation](content/papers/spontaneous-symmetry-breaking-and-goldstone-modes-for-deep-information-propagati.md) | long-term |
 | 2026-05-14 | arXiv | [ShadowMerge: A Novel Poisoning Attack on Graph-Based Agent Memory via Relation-Channel Conflicts](content/papers/shadowmerge-a-novel-poisoning-attack-on-graph-based-agent-memory-via-relation-ch.md) | agent, long-term |
@@ -67,11 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-05-14 | arXiv | [Agentic Recommender System with Hierarchical Belief-State Memory](content/papers/agentic-recommender-system-with-hierarchical-belief-state-memory.md) | agent, benchmark |
 | 2026-05-14 | arXiv | [ASH: Agents that Self-Hone via Embodied Learning](content/papers/ash-agents-that-self-hone-via-embodied-learning.md) | agent, long-term, retrieval |
 | 2026-05-13 | arXiv | [Useful Memories Become Faulty When Continuously Updated by LLMs](content/papers/useful-memories-become-faulty-when-continuously-updated-by-llms.md) | agent, episodic |
-| 2026-05-13 | arXiv | [RealICU: Do LLM Agents Understand Long-Context ICU Data? A Benchmark Beyond Behavior Imitation](content/papers/realicu-do-llm-agents-understand-long-context-icu-data-a-benchmark-beyond-behavi.md) | agent, benchmark, context |
-| 2026-05-13 | arXiv | [ReTool-Video: Recursive Tool-Using Video Agents with Meta-Augmented Tool Grounding](content/papers/retool-video-recursive-tool-using-video-agents-with-meta-augmented-tool-groundin.md) | agent, retrieval |
-| 2026-05-13 | arXiv | [NAACA: Training-Free NeuroAuditory Attentive Cognitive Architecture with Oscillatory Working Memory for Salience-Driven Attention Gating](content/papers/naaca-training-free-neuroauditory-attentive-cognitive-architecture-with-oscillat.md) | working memory |
-| 2026-05-13 | arXiv | [Model-Agnostic Lifelong LLM Safety via Externalized Attack-Defense Co-Evolution](content/papers/model-agnostic-lifelong-llm-safety-via-externalized-attack-defense-co-evolution.md) | retrieval |
-| 2026-05-13 | arXiv | [McCast: Memory-Guided Latent Drift Correction for Long-Horizon Precipitation Nowcasting](content/papers/mccast-memory-guided-latent-drift-correction-for-long-horizon-precipitation-nowc.md) | benchmark, retrieval |
 
 ## Suggested GitHub Setup
 
