@@ -27,7 +27,7 @@ Large language model (LLM) agents require long-term memory to leverage informati
 ## Why It Was Included
 - 来源：arXiv
 - 高亮主题命中：agent, benchmark, context, long-term, retrieval
-- 检索关键词命中：agent memory
+- 检索关键词命中：agent memory, long-term memory, retrieval memory
 - 来源分类信息：cs.CL
 
 ## Abstract Snapshot

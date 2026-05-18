@@ -39,13 +39,13 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **233**
+- Total tracked papers: **237**
 - Last generated: **2026-05-18**
 
 ## Papers by Source
 
 - ACL Anthology: **1**
-- arXiv: **198**
+- arXiv: **202**
 - OpenReview: **34**
 
 ## Latest Papers
@@ -53,11 +53,14 @@ python3 scripts/update_papers.py --build-only
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
 | 2026-05-17 | OpenReview | [MemGen: Weaving Generative Latent Memory for Self-Evolving Agents](content/papers/memgen-weaving-generative-latent-memory-for-self-evolving-agents.md) | agent, benchmark, retrieval |
+| 2026-05-15 | arXiv | [Trojan Hippo: Weaponizing Agent Memory for Data Exfiltration](content/papers/trojan-hippo-weaponizing-agent-memory-for-data-exfiltration.md) | agent, benchmark, context |
 | 2026-05-15 | arXiv | [ShadowMerge: A Novel Poisoning Attack on Graph-Based Agent Memory via Relation-Channel Conflicts](content/papers/shadowmerge-a-novel-poisoning-attack-on-graph-based-agent-memory-via-relation-ch.md) | agent, long-term |
 | 2026-05-15 | arXiv | [SMMBench: A Benchmark for Source-Distributed Multimodal Agent Memory](content/papers/smmbench-a-benchmark-for-source-distributed-multimodal-agent-memory.md) | agent, benchmark, context |
+| 2026-05-15 | arXiv | [Key-Value Means: Transformers with Expandable Block-Recurrent Compressed Memory](content/papers/key-value-means-transformers-with-expandable-block-recurrent-compressed-memory.md) | context |
 | 2026-05-15 | arXiv | [H-Mem: A Novel Memory Mechanism for Evolving and Retrieving Agent Memory via a Hybrid Structure](content/papers/h-mem-a-novel-memory-mechanism-for-evolving-and-retrieving-agent-memory-via-a-hy.md) | agent, benchmark, long-term |
 | 2026-05-15 | arXiv | [FORGE: Self-Evolving Agent Memory With No Weight Updates via Population Broadcast](content/papers/forge-self-evolving-agent-memory-with-no-weight-updates-via-population-broadcast.md) | agent |
 | 2026-05-15 | arXiv | [DimMem: Dimensional Structuring for Efficient Long-Term Agent Memory](content/papers/dimmem-dimensional-structuring-for-efficient-long-term-agent-memory.md) | agent, benchmark, context |
+| 2026-05-15 | arXiv | [Agentic Recommender System with Hierarchical Belief-State Memory](content/papers/agentic-recommender-system-with-hierarchical-belief-state-memory.md) | agent, benchmark |
 | 2026-05-14 | arXiv | [When Robots Do the Chores: A Benchmark and Agent for Long-Horizon Household Task Execution](content/papers/when-robots-do-the-chores-a-benchmark-and-agent-for-long-horizon-household-task-.md) | agent, benchmark, episodic |
 | 2026-05-14 | arXiv | [Spontaneous symmetry breaking and Goldstone modes for deep information propagation](content/papers/spontaneous-symmetry-breaking-and-goldstone-modes-for-deep-information-propagati.md) | long-term |
 | 2026-05-14 | arXiv | [ShadowMerge: A Novel Poisoning Attack on Graph-Based Agent Memory via Relation-Channel Conflicts](content/papers/shadowmerge-a-novel-poisoning-attack-on-graph-based-agent-memory-via-relation-ch.md) | agent, long-term |
@@ -65,13 +68,10 @@ python3 scripts/update_papers.py --build-only
 | 2026-05-14 | arXiv | [MemQ: Integrating Q-Learning into Self-Evolving Memory Agents over Provenance DAGs](content/papers/memq-integrating-q-learning-into-self-evolving-memory-agents-over-provenance-dag.md) | agent, benchmark, context |
 | 2026-05-14 | arXiv | [MemLineage: Lineage-Guided Enforcement for LLM Agent Memory](content/papers/memlineage-lineage-guided-enforcement-for-llm-agent-memory.md) | agent |
 | 2026-05-14 | arXiv | [MemEye: A Visual-Centric Evaluation Framework for Multimodal Agent Memory](content/papers/memeye-a-visual-centric-evaluation-framework-for-multimodal-agent-memory.md) | agent, benchmark, long-term |
+| 2026-05-14 | arXiv | [Hidden in Memory: Sleeper Memory Poisoning in LLM Agents](content/papers/hidden-in-memory-sleeper-memory-poisoning-in-llm-agents.md) | agent, context, conversation |
 | 2026-05-14 | arXiv | [GroupMemBench: Benchmarking LLM Agent Memory in Multi-Party Conversations](content/papers/groupmembench-benchmarking-llm-agent-memory-in-multi-party-conversations.md) | agent, benchmark, conversation |
 | 2026-05-14 | arXiv | [EverAnimate: Minute-Scale Human Animation via Latent Flow Restoration](content/papers/everanimate-minute-scale-human-animation-via-latent-flow-restoration.md) | context |
 | 2026-05-14 | arXiv | [EntityBench: Towards Entity-Consistent Long-Range Multi-Shot Video Generation](content/papers/entitybench-towards-entity-consistent-long-range-multi-shot-video-generation.md) | benchmark |
-| 2026-05-14 | arXiv | [Attractor Geometry of Transformer Memory: From Conflict Arbitration to Confident Hallucination](content/papers/attractor-geometry-of-transformer-memory-from-conflict-arbitration-to-confident-.md) | context |
-| 2026-05-14 | arXiv | [Agentic Recommender System with Hierarchical Belief-State Memory](content/papers/agentic-recommender-system-with-hierarchical-belief-state-memory.md) | agent, benchmark |
-| 2026-05-14 | arXiv | [ASH: Agents that Self-Hone via Embodied Learning](content/papers/ash-agents-that-self-hone-via-embodied-learning.md) | agent, long-term, retrieval |
-| 2026-05-13 | arXiv | [Useful Memories Become Faulty When Continuously Updated by LLMs](content/papers/useful-memories-become-faulty-when-continuously-updated-by-llms.md) | agent, episodic |
 
 ## Suggested GitHub Setup
 

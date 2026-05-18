@@ -32,6 +32,43 @@
     "venue": "ICLR 2026 Poster"
   },
   {
+    "abstract": "Memory systems enable otherwise-stateless LLM agents to persist user information across sessions, but also introduce a new attack surface. We characterize the Trojan Hippo attack, a class of persistent memory attacks that operates in a more realistic threat model than prior memory poisoning work: the attacker plants a dormant payload into an agent's long-term memory via a single untrusted tool call (e.g., a crafted email), which activates only when the user later discusses sensitive topics such as finance, health, or identity, and exfiltrates high-value personal data to the attacker. While anecdotal demonstrations of such attacks have appeared against deployed systems, no prior work systematically evaluates them across heterogeneous memory architectures and defenses. We introduce a dynamic evaluation framework comprising two components: (1) an OpenEvolve-based adaptive red-teaming benchmark that stress-tests defenses and memory backends against continuously refined attacks, and (2) the first capability-aware security/utility analysis for persistent memory systems, enabling principled reasoning about defense deployment across different usage profiles. Instantiated on an email assistant across four memory backends (explicit tool memory, agentic memory, RAG, and sliding-window context), Trojan Hippo achieves up to 85-100% ASR against current frontier models from OpenAI and Google, with planted memories successfully activating even after 100 benign sessions. We evaluate four memory-system defenses inspired by basic security principles, finding they substantially reduce attack success rates (to as low as 0-5%), though at utility costs that vary widely with task requirements. Because of this substantial security-utility tradeoff, the effective real-world deployment of defenses remains an open challenge, which our evaluation framework is specifically designed to address.",
+    "authors": [
+      "Debeshee Das",
+      "Julien Piet",
+      "Darya Kaviani",
+      "Luca Beurer-Kellner",
+      "Florian Tramèr",
+      "David Wagner"
+    ],
+    "categories": [
+      "cs.CR",
+      "cs.AI"
+    ],
+    "id": "2605.01970v3",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, long-term` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Memory systems enable otherwise-stateless LLM agents to persist user information across sessions, but also introduce a new attack surface.\n\n进一步看，论文的核心做法或实验重点可以概括为：We characterize the Trojan Hippo attack, a class of persistent memory attacks that operates in a more realistic threat model than prior memory poisoning work: the attacker plants a dormant payload into an agent's...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "long-term memory",
+      "persistent memory"
+    ],
+    "one_liner": "Memory systems enable otherwise-stateless LLM agents to persist user information across sessions, but also introduce a new attack surface.",
+    "published": "2026-05-03",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context, long-term\n- 检索关键词命中：long-term memory, persistent memory\n- 来源分类信息：cs.CR, cs.AI",
+    "slug": "trojan-hippo-weaponizing-agent-memory-for-data-exfiltration",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2605.01970v3",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "long-term"
+    ],
+    "title": "Trojan Hippo: Weaponizing Agent Memory for Data Exfiltration",
+    "updated": "2026-05-15",
+    "url": "http://arxiv.org/abs/2605.01970v3",
+    "venue": ""
+  },
+  {
     "abstract": "Graph-based agent memory is increasingly used in LLM agents to support structured long-term recall and multi-hop reasoning, but it also creates a new poisoning surface: an attacker can inject a crafted relation into graph memory so that it is later retrieved and influences agent behavior. Existing agent-memory poisoning attacks mainly target flat textual records and are ineffective in graph-based memory because malicious relations often fail to be extracted, merged into the target anchor neighborhood, or retrieved for the victim query. We present SHADOWMERGE, a poisoning attack against graph-based agent memory that exploits relation-channel conflicts. Its key insight is that a poisoned relation can share the same query-activated anchor and canonicalized relation channel as benign evidence while carrying a conflicting value. To realize this, we design AIR, a pipeline that converts the conflict into an ordinary interaction that can be extracted, merged, and retrieved by the graph-memory system. We evaluate SHADOWMERGE on Mem0 and three public real-world datasets: PubMedQA, WebShop, and ToolEmu. SHADOWMERGE achieves 93.8% average attack success rate, improving the best baseline by 50.3 absolute points, while having negligible impact on unrelated benign tasks. Mechanism studies show that SHADOWMERGE overcomes the three key limitations of existing agent-memory poisoning attacks, and defense analysis shows that representative input-side defenses are insufficient to mitigate it. We have responsibly disclosed our findings to affected graph-memory vendors and open sourced SHADOWMERGE.",
     "authors": [
       "Yang Luo",
@@ -86,11 +123,14 @@
     "id": "2605.15710v1",
     "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, conversation` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Existing benchmarks for multimodal memory reasoning largely evaluate systems within pre-assembled contexts, but under-evaluate whether agents can use evidence distributed across independently originated sources.\n\n进一步看，论文的核心做法或实验重点可以概括为：We argue that source-distributed memory composition is an important and under-examined bottleneck in multimodal agent memory, especially when relevant evidence is fragmented across heterogeneous artifacts such as...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
     "matched_keywords": [
-      "agent memory"
+      "agent memory",
+      "memory benchmark",
+      "memory benchmarks",
+      "memory reasoning"
     ],
     "one_liner": "Existing benchmarks for multimodal memory reasoning largely evaluate systems within pre-assembled contexts, but under-evaluate whether agents can use evidence distributed across...",
     "published": "2026-05-15",
-    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context, conversation, retrieval\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.CL",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context, conversation, retrieval\n- 检索关键词命中：agent memory, memory benchmark, memory benchmarks, memory reasoning\n- 来源分类信息：cs.CL",
     "slug": "smmbench-a-benchmark-for-source-distributed-multimodal-agent-memory",
     "source": "arXiv",
     "source_key": "http://arxiv.org/abs/2605.15710v1",
@@ -104,6 +144,36 @@
     "title": "SMMBench: A Benchmark for Source-Distributed Multimodal Agent Memory",
     "updated": "2026-05-15",
     "url": "http://arxiv.org/abs/2605.15710v1",
+    "venue": ""
+  },
+  {
+    "abstract": "We present Key-Value Means (\"KVM\"), a novel block-recurrence for attention that can accommodate either fixed-size or growing state. Equipping a strong transformer baseline with fixed-size KVM attention layers yields a strong $O(N)$ chunked RNN, while adding only an insignificant number of new parameters. We train a transformer with a growable KVM cache and show it performs competitively on long-context tests with only subquadratic prefill time and sublinear state growth. KVM is implementable with standard operations and without custom kernels, and supports chunk-wise parallelizable training and prefill. It provides many of the benefits of both traditional transformers (expandable context memory, chunk-wise parallelizable training and prefill) and linear RNNs in a single unified package. It can be used on every layer, saving KV-cache memory, and allowing a continuous range of choices of prefill time complexity between $O(N)$ and $O(N^2)$. It can also be implemented in a hybrid solution in tandem with LRNN layers in place of traditional attention, to supplement the LRNN with improved sublinear memory growth context length usage and long context decoding. We release our code at https://github.com/featherless-ai/KVM-paper and trained models at https://huggingface.co/collections/featherless-ai/kvm-paper under the Apache 2.0 license.",
+    "authors": [
+      "Daniel Goldstein",
+      "Eugene Cheah"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "id": "2605.09877v3",
+    "intro": "这篇论文被纳入仓库，是因为它和 `context` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：We present Key-Value Means (\"KVM\"), a novel block-recurrence for attention that can accommodate either fixed-size or growing state.\n\n进一步看，论文的核心做法或实验重点可以概括为：Equipping a strong transformer baseline with fixed-size KVM attention layers yields a strong $O(N)$ chunked RNN, while adding only an insignificant number of new parameters.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "context memory"
+    ],
+    "one_liner": "We present Key-Value Means (\"KVM\"), a novel block-recurrence for attention that can accommodate either fixed-size or growing state.",
+    "published": "2026-05-11",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：context\n- 检索关键词命中：context memory\n- 来源分类信息：cs.LG, cs.AI, cs.CL",
+    "slug": "key-value-means-transformers-with-expandable-block-recurrent-compressed-memory",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2605.09877v3",
+    "tags": [
+      "context"
+    ],
+    "title": "Key-Value Means: Transformers with Expandable Block-Recurrent Compressed Memory",
+    "updated": "2026-05-15",
+    "url": "http://arxiv.org/abs/2605.09877v3",
     "venue": ""
   },
   {
@@ -121,11 +191,16 @@
     "id": "2605.15701v1",
     "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, long-term, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Memory data are ubiquitous in Large Language Model (LLM)-based agents (e.g., OpenClaw and Manus).\n\n进一步看，论文的核心做法或实验重点可以概括为：A few recent works have attempted to exploit agents'memory for improving their performance on the question-answering (QA) task, but they lack a principled mechanism for effectively modeling how memory data evolves...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
     "matched_keywords": [
-      "agent memory"
+      "agent memory",
+      "long-term memory",
+      "memory benchmark",
+      "memory benchmarks",
+      "memory retrieval",
+      "retrieval memory"
     ],
     "one_liner": "Memory data are ubiquitous in Large Language Model (LLM)-based agents (e.g., OpenClaw and Manus).",
     "published": "2026-05-15",
-    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, long-term, retrieval\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.CL, cs.AI",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, long-term, retrieval\n- 检索关键词命中：agent memory, long-term memory, memory benchmark, memory benchmarks, memory retrieval, retrieval memory\n- 来源分类信息：cs.CL, cs.AI",
     "slug": "h-mem-a-novel-memory-mechanism-for-evolving-and-retrieving-agent-memory-via-a-hy",
     "source": "arXiv",
     "source_key": "http://arxiv.org/abs/2605.15701v1",
@@ -191,11 +266,13 @@
     "id": "2605.15759v1",
     "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, long-term` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Large language model (LLM) agents require long-term memory to leverage information from past interactions.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, existing memory systems often face a fidelity--efficiency trade-off: raw dialogue histories are expensive, while flat facts or summaries may discard the structure needed for precise recall.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
     "matched_keywords": [
-      "agent memory"
+      "agent memory",
+      "long-term memory",
+      "retrieval memory"
     ],
     "one_liner": "Large language model (LLM) agents require long-term memory to leverage information from past interactions.",
     "published": "2026-05-15",
-    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context, long-term, retrieval\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.CL",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context, long-term, retrieval\n- 检索关键词命中：agent memory, long-term memory, retrieval memory\n- 来源分类信息：cs.CL",
     "slug": "dimmem-dimensional-structuring-for-efficient-long-term-agent-memory",
     "source": "arXiv",
     "source_key": "http://arxiv.org/abs/2605.15759v1",
@@ -209,6 +286,46 @@
     "title": "DimMem: Dimensional Structuring for Efficient Long-Term Agent Memory",
     "updated": "2026-05-15",
     "url": "http://arxiv.org/abs/2605.15759v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Memory-augmented LLM agents have advanced personalized recommendation, yet existing approaches universally adopt flat memory representations that conflate ephemeral signals with stable preferences, and none provides a complete lifecycle governing how memory should evolve. We propose MARS (Memory-Augmented Agentic Recommender System), a framework that treats recommendation as a partially observable problem and maintains a structured belief state that progressively abstracts noisy behavioral observations into a compact estimate of user preferences. MARS organizes this belief state into three tiers: event memory buffers raw signals, preference memory maintains fine-grained mutable chunks with explicit strength and evidence tracking, and profile memory distills all preferences into a coherent natural language narrative. A complete lifecycle of six operations -- extraction, reinforcement, weakening, consolidation, forgetting, and resynthesis -- is adaptively scheduled by an LLM-based planner rather than fixed-interval heuristics. Experiments on four InstructRec benchmark domains show that MARS achieves state-of-the-art performance with average improvements of 26.4% in HR@1 and 10.3% in NDCG@10 over the strongest baselines with further gains from agentic scheduling in evolving settings.",
+    "authors": [
+      "Xiang Shen",
+      "Yuhang Zhou",
+      "Yifan Wu",
+      "Zhuokai Zhao",
+      "Siyu Lin",
+      "Lei Huang",
+      "Qianqian Zhong",
+      "Lizhu Zhang",
+      "Benyu Zhang",
+      "Xiangjun Fan",
+      "Hong Yan"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "id": "2605.14401v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Memory-augmented LLM agents have advanced personalized recommendation, yet existing approaches universally adopt flat memory representations that conflate ephemeral signals with stable preferences, and none provides a...\n\n进一步看，论文的核心做法或实验重点可以概括为：We propose MARS (Memory-Augmented Agentic Recommender System), a framework that treats recommendation as a partially observable problem and maintains a structured belief state that progressively abstracts noisy...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory augmented",
+      "memory-augmented"
+    ],
+    "one_liner": "Memory-augmented LLM agents have advanced personalized recommendation, yet existing approaches universally adopt flat memory representations that conflate ephemeral signals with...",
+    "published": "2026-05-14",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark\n- 检索关键词命中：memory augmented, memory-augmented\n- 来源分类信息：cs.CL, cs.AI",
+    "slug": "agentic-recommender-system-with-hierarchical-belief-state-memory",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2605.14401v2",
+    "tags": [
+      "agent",
+      "benchmark"
+    ],
+    "title": "Agentic Recommender System with Hierarchical Belief-State Memory",
+    "updated": "2026-05-15",
+    "url": "http://arxiv.org/abs/2605.14401v2",
     "venue": ""
   },
   {
@@ -472,6 +589,44 @@
     "title": "MemEye: A Visual-Centric Evaluation Framework for Multimodal Agent Memory",
     "updated": "2026-05-14",
     "url": "http://arxiv.org/abs/2605.15128v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Large language models are increasingly augmented with persistent memory, allowing assistants to store user-specific information across sessions for personalization and continuity. This statefulness introduces a new security risk: adversarial content can corrupt what an assistant remembers and thereby influence future interactions. We propose and study sleeper memory poisoning, a delayed attack in which an adversary manipulates external context, such as a document, webpage, or repository, to cause the assistant to store a fabricated memory about the user. Unlike conventional prompt injection, the attack can remain dormant and re-emerge across multiple later conversations. We evaluate the full attack pipeline: whether poisoned memories are written, later retrieved, and ultimately used to steer the following conversations. Across stateful LLM assistants, poisoned memories were added up to 99.8% on GPT-5.5 and 95% on Kimi-K2.6. Crucially, among successful retrievals, poisoned memories cause attacker-intended agentic actions in 60-89% of evaluations across models. These results show that persistent memory can act as a long-term attack surface across multiple future conversations.",
+    "authors": [
+      "Sidharth Pulipaka",
+      "Stanislau Hlebik",
+      "Leonidas Raghav",
+      "Sahar Abdelnabi",
+      "Vyas Raina",
+      "Ivaxi Sheth",
+      "Mario Fritz"
+    ],
+    "categories": [
+      "cs.CR",
+      "cs.AI"
+    ],
+    "id": "2605.15338v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, context, conversation, long-term` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Large language models are increasingly augmented with persistent memory, allowing assistants to store user-specific information across sessions for personalization and continuity.\n\n进一步看，论文的核心做法或实验重点可以概括为：This statefulness introduces a new security risk: adversarial content can corrupt what an assistant remembers and thereby influence future interactions.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "persistent memory"
+    ],
+    "one_liner": "Large language models are increasingly augmented with persistent memory, allowing assistants to store user-specific information across sessions for personalization and continuity.",
+    "published": "2026-05-14",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, context, conversation, long-term, retrieval\n- 检索关键词命中：persistent memory\n- 来源分类信息：cs.CR, cs.AI",
+    "slug": "hidden-in-memory-sleeper-memory-poisoning-in-llm-agents",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2605.15338v1",
+    "tags": [
+      "agent",
+      "context",
+      "conversation",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "Hidden in Memory: Sleeper Memory Poisoning in LLM Agents",
+    "updated": "2026-05-14",
+    "url": "http://arxiv.org/abs/2605.15338v1",
     "venue": ""
   },
   {

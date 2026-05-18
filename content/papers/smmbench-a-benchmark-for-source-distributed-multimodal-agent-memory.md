@@ -27,7 +27,7 @@ Existing benchmarks for multimodal memory reasoning largely evaluate systems wit
 ## Why It Was Included
 - 来源：arXiv
 - 高亮主题命中：agent, benchmark, context, conversation, retrieval
-- 检索关键词命中：agent memory
+- 检索关键词命中：agent memory, memory benchmark, memory benchmarks, memory reasoning
 - 来源分类信息：cs.CL
 
 ## Abstract Snapshot

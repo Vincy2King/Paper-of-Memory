@@ -27,7 +27,7 @@ Memory data are ubiquitous in Large Language Model (LLM)-based agents (e.g., Ope
 ## Why It Was Included
 - 来源：arXiv
 - 高亮主题命中：agent, benchmark, long-term, retrieval
-- 检索关键词命中：agent memory
+- 检索关键词命中：agent memory, long-term memory, memory benchmark, memory benchmarks, memory retrieval, retrieval memory
 - 来源分类信息：cs.CL, cs.AI
 
 ## Abstract Snapshot
