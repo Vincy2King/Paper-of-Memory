@@ -39,39 +39,39 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **237**
+- Total tracked papers: **261**
 - Last generated: **2026-05-19**
 
 ## Papers by Source
 
 - ACL Anthology: **1**
-- arXiv: **202**
+- arXiv: **226**
 - OpenReview: **34**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-05-18 | arXiv | [TinySAM 2: Extreme Memory Compression for Efficient Track Anything Model](content/papers/tinysam-2-extreme-memory-compression-for-efficient-track-anything-model.md) | compression |
+| 2026-05-18 | arXiv | [SocialMemBench: Are AI Memory Systems Ready for Social Group Settings?](content/papers/socialmembench-are-ai-memory-systems-ready-for-social-group-settings.md) | agent, benchmark, context |
+| 2026-05-18 | arXiv | [LongMINT: Evaluating Memory under Multi-Target Interference in Long-Horizon Agent Systems](content/papers/longmint-evaluating-memory-under-multi-target-interference-in-long-horizon-agent.md) | agent, benchmark, context |
+| 2026-05-18 | arXiv | [Hidden in Memory: Sleeper Memory Poisoning in LLM Agents](content/papers/hidden-in-memory-sleeper-memory-poisoning-in-llm-agents.md) | agent, context, conversation |
+| 2026-05-18 | arXiv | [EvoMemBench: Benchmarking Agent Memory from a Self-Evolving Perspective](content/papers/evomembench-benchmarking-agent-memory-from-a-self-evolving-perspective.md) | agent, benchmark, context |
+| 2026-05-18 | arXiv | [DimMem: Dimensional Structuring for Efficient Long-Term Agent Memory](content/papers/dimmem-dimensional-structuring-for-efficient-long-term-agent-memory.md) | agent, benchmark, context |
+| 2026-05-18 | arXiv | [CommitDistill: A Lightweight Knowledge-Centric Memory Layer for Software Repositories](content/papers/commitdistill-a-lightweight-knowledge-centric-memory-layer-for-software-reposito.md) | agent, benchmark, retrieval |
+| 2026-05-18 | arXiv | [Agentic Harness Engineering: Observability-Driven Automatic Evolution of Coding-Agent Harnesses](content/papers/agentic-harness-engineering-observability-driven-automatic-evolution-of-coding-a.md) | agent, benchmark, long-term |
+| 2026-05-18 | arXiv | [AMARIS: A Memory-Augmented Rubric Improvement System for Rubric-Based Reinforcement Learning](content/papers/amaris-a-memory-augmented-rubric-improvement-system-for-rubric-based-reinforceme.md) | context, long-term, retrieval |
+| 2026-05-17 | arXiv | [Taming "Zombie'' Agents: A Markov State-Aware Framework for Resilient Multi-Agent Evolution](content/papers/taming-zombie-agents-a-markov-state-aware-framework-for-resilient-multi-agent-ev.md) | agent |
+| 2026-05-17 | arXiv | [OProver: A Unified Framework for Agentic Formal Theorem Proving](content/papers/oprover-a-unified-framework-for-agentic-formal-theorem-proving.md) | agent, benchmark, context |
+| 2026-05-17 | arXiv | [NeuSymMS: A Hybrid Neuro-Symbolic Memory System for Persistent, Self-Curating LLM Agents](content/papers/neusymms-a-hybrid-neuro-symbolic-memory-system-for-persistent-self-curating-llm-.md) | agent, context, long-term |
+| 2026-05-17 | arXiv | [MemRepair: Hierarchical Memory for Agentic Repository-Level Vulnerability Repair](content/papers/memrepair-hierarchical-memory-for-agentic-repository-level-vulnerability-repair.md) | agent, benchmark, context |
 | 2026-05-17 | OpenReview | [MemGen: Weaving Generative Latent Memory for Self-Evolving Agents](content/papers/memgen-weaving-generative-latent-memory-for-self-evolving-agents.md) | agent, benchmark, retrieval |
-| 2026-05-15 | arXiv | [Trojan Hippo: Weaponizing Agent Memory for Data Exfiltration](content/papers/trojan-hippo-weaponizing-agent-memory-for-data-exfiltration.md) | agent, benchmark, context |
-| 2026-05-15 | arXiv | [ShadowMerge: A Novel Poisoning Attack on Graph-Based Agent Memory via Relation-Channel Conflicts](content/papers/shadowmerge-a-novel-poisoning-attack-on-graph-based-agent-memory-via-relation-ch.md) | agent, long-term |
-| 2026-05-15 | arXiv | [SMMBench: A Benchmark for Source-Distributed Multimodal Agent Memory](content/papers/smmbench-a-benchmark-for-source-distributed-multimodal-agent-memory.md) | agent, benchmark, context |
-| 2026-05-15 | arXiv | [Key-Value Means: Transformers with Expandable Block-Recurrent Compressed Memory](content/papers/key-value-means-transformers-with-expandable-block-recurrent-compressed-memory.md) | context |
-| 2026-05-15 | arXiv | [H-Mem: A Novel Memory Mechanism for Evolving and Retrieving Agent Memory via a Hybrid Structure](content/papers/h-mem-a-novel-memory-mechanism-for-evolving-and-retrieving-agent-memory-via-a-hy.md) | agent, benchmark, long-term |
-| 2026-05-15 | arXiv | [FORGE: Self-Evolving Agent Memory With No Weight Updates via Population Broadcast](content/papers/forge-self-evolving-agent-memory-with-no-weight-updates-via-population-broadcast.md) | agent |
-| 2026-05-15 | arXiv | [DimMem: Dimensional Structuring for Efficient Long-Term Agent Memory](content/papers/dimmem-dimensional-structuring-for-efficient-long-term-agent-memory.md) | agent, benchmark, context |
-| 2026-05-15 | arXiv | [Agentic Recommender System with Hierarchical Belief-State Memory](content/papers/agentic-recommender-system-with-hierarchical-belief-state-memory.md) | agent, benchmark |
-| 2026-05-14 | arXiv | [When Robots Do the Chores: A Benchmark and Agent for Long-Horizon Household Task Execution](content/papers/when-robots-do-the-chores-a-benchmark-and-agent-for-long-horizon-household-task-.md) | agent, benchmark, episodic |
-| 2026-05-14 | arXiv | [Spontaneous symmetry breaking and Goldstone modes for deep information propagation](content/papers/spontaneous-symmetry-breaking-and-goldstone-modes-for-deep-information-propagati.md) | long-term |
-| 2026-05-14 | arXiv | [ShadowMerge: A Novel Poisoning Attack on Graph-Based Agent Memory via Relation-Channel Conflicts](content/papers/shadowmerge-a-novel-poisoning-attack-on-graph-based-agent-memory-via-relation-ch.md) | agent, long-term |
-| 2026-05-14 | arXiv | [MemReranker: Reasoning-Aware Reranking for Agent Memory Retrieval](content/papers/memreranker-reasoning-aware-reranking-for-agent-memory-retrieval.md) | agent, benchmark, context |
-| 2026-05-14 | arXiv | [MemQ: Integrating Q-Learning into Self-Evolving Memory Agents over Provenance DAGs](content/papers/memq-integrating-q-learning-into-self-evolving-memory-agents-over-provenance-dag.md) | agent, benchmark, context |
-| 2026-05-14 | arXiv | [MemLineage: Lineage-Guided Enforcement for LLM Agent Memory](content/papers/memlineage-lineage-guided-enforcement-for-llm-agent-memory.md) | agent |
-| 2026-05-14 | arXiv | [MemEye: A Visual-Centric Evaluation Framework for Multimodal Agent Memory](content/papers/memeye-a-visual-centric-evaluation-framework-for-multimodal-agent-memory.md) | agent, benchmark, long-term |
-| 2026-05-14 | arXiv | [Hidden in Memory: Sleeper Memory Poisoning in LLM Agents](content/papers/hidden-in-memory-sleeper-memory-poisoning-in-llm-agents.md) | agent, context, conversation |
-| 2026-05-14 | arXiv | [GroupMemBench: Benchmarking LLM Agent Memory in Multi-Party Conversations](content/papers/groupmembench-benchmarking-llm-agent-memory-in-multi-party-conversations.md) | agent, benchmark, conversation |
-| 2026-05-14 | arXiv | [EverAnimate: Minute-Scale Human Animation via Latent Flow Restoration](content/papers/everanimate-minute-scale-human-animation-via-latent-flow-restoration.md) | context |
-| 2026-05-14 | arXiv | [EntityBench: Towards Entity-Consistent Long-Range Multi-Shot Video Generation](content/papers/entitybench-towards-entity-consistent-long-range-multi-shot-video-generation.md) | benchmark |
+| 2026-05-17 | arXiv | [Episodic-Semantic Memory Architecture for Long-Horizon Scientific Agents](content/papers/episodic-semantic-memory-architecture-for-long-horizon-scientific-agents.md) | agent, context, episodic |
+| 2026-05-17 | arXiv | [Causal Intervention-Based Memory Selection for Long-Horizon LLM Agents](content/papers/causal-intervention-based-memory-selection-for-long-horizon-llm-agents.md) | agent, benchmark, context |
+| 2026-05-16 | arXiv | [When Robots Do the Chores: A Benchmark and Agent for Long-Horizon Household Task Execution](content/papers/when-robots-do-the-chores-a-benchmark-and-agent-for-long-horizon-household-task-.md) | agent, benchmark, episodic |
+| 2026-05-16 | arXiv | [State Contamination in Memory-Augmented LLM Agents](content/papers/state-contamination-in-memory-augmented-llm-agents.md) | agent, context |
+| 2026-05-16 | arXiv | [SE-GA: Memory-Augmented Self-Evolution for GUI Agents](content/papers/se-ga-memory-augmented-self-evolution-for-gui-agents.md) | agent, benchmark, context |
+| 2026-05-16 | arXiv | [Pedestrian-Aware LLM-Driven Behavioral Planning for Autonomous Vehicles](content/papers/pedestrian-aware-llm-driven-behavioral-planning-for-autonomous-vehicles.md) | agent, episodic |
 
 ## Suggested GitHub Setup
 
