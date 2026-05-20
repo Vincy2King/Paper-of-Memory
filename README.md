@@ -39,13 +39,13 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **262**
+- Total tracked papers: **269**
 - Last generated: **2026-05-20**
 
 ## Papers by Source
 
 - ACL Anthology: **1**
-- arXiv: **226**
+- arXiv: **233**
 - OpenReview: **35**
 
 ## Latest Papers
@@ -53,8 +53,14 @@ python3 scripts/update_papers.py --build-only
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
 | 2026-05-20 | OpenReview | [Ontology-Guided Long-Term Agent Memory for Conversational RAG](content/papers/ontology-guided-long-term-agent-memory-for-conversational-rag.md) | agent, benchmark, context |
+| 2026-05-19 | arXiv | [SimGym: A Framework for A/B Test Simulation in E-Commerce with Traffic-Grounded VLM Agents](content/papers/simgym-a-framework-for-a-b-test-simulation-in-e-commerce-with-traffic-grounded-v.md) | agent, episodic |
+| 2026-05-19 | arXiv | [Rethinking How to Remember: Beyond Atomic Facts in Lifelong LLM Agent Memory](content/papers/rethinking-how-to-remember-beyond-atomic-facts-in-lifelong-llm-agent-memory.md) | agent, long-term, retrieval |
+| 2026-05-19 | arXiv | [Memory-Augmented Reinforcement Learning Agent for CAD Generation](content/papers/memory-augmented-reinforcement-learning-agent-for-cad-generation.md) | agent, retrieval |
+| 2026-05-19 | arXiv | [MINTEval: Evaluating Memory under Multi-Target Interference in Long-Horizon Agent Systems](content/papers/minteval-evaluating-memory-under-multi-target-interference-in-long-horizon-agent.md) | agent, benchmark, context |
+| 2026-05-19 | arXiv | [EngiAI: A Multi-Agent Framework and Benchmark Suite for LLM-Driven Engineering Design](content/papers/engiai-a-multi-agent-framework-and-benchmark-suite-for-llm-driven-engineering-de.md) | agent, benchmark, retrieval |
 | 2026-05-18 | arXiv | [TinySAM 2: Extreme Memory Compression for Efficient Track Anything Model](content/papers/tinysam-2-extreme-memory-compression-for-efficient-track-anything-model.md) | compression |
 | 2026-05-18 | arXiv | [SocialMemBench: Are AI Memory Systems Ready for Social Group Settings?](content/papers/socialmembench-are-ai-memory-systems-ready-for-social-group-settings.md) | agent, benchmark, context |
+| 2026-05-18 | arXiv | [OEP: Poisoning Self-Evolving LLM Agents via Locally Correct but Non-Transferable Experiences](content/papers/oep-poisoning-self-evolving-llm-agents-via-locally-correct-but-non-transferable-.md) | agent |
 | 2026-05-18 | arXiv | [LongMINT: Evaluating Memory under Multi-Target Interference in Long-Horizon Agent Systems](content/papers/longmint-evaluating-memory-under-multi-target-interference-in-long-horizon-agent.md) | agent, benchmark, context |
 | 2026-05-18 | arXiv | [Hidden in Memory: Sleeper Memory Poisoning in LLM Agents](content/papers/hidden-in-memory-sleeper-memory-poisoning-in-llm-agents.md) | agent, context, conversation |
 | 2026-05-18 | arXiv | [EvoMemBench: Benchmarking Agent Memory from a Self-Evolving Perspective](content/papers/evomembench-benchmarking-agent-memory-from-a-self-evolving-perspective.md) | agent, benchmark, context |
@@ -66,12 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-05-17 | arXiv | [OProver: A Unified Framework for Agentic Formal Theorem Proving](content/papers/oprover-a-unified-framework-for-agentic-formal-theorem-proving.md) | agent, benchmark, context |
 | 2026-05-17 | arXiv | [NeuSymMS: A Hybrid Neuro-Symbolic Memory System for Persistent, Self-Curating LLM Agents](content/papers/neusymms-a-hybrid-neuro-symbolic-memory-system-for-persistent-self-curating-llm-.md) | agent, context, long-term |
 | 2026-05-17 | arXiv | [MemRepair: Hierarchical Memory for Agentic Repository-Level Vulnerability Repair](content/papers/memrepair-hierarchical-memory-for-agentic-repository-level-vulnerability-repair.md) | agent, benchmark, context |
-| 2026-05-17 | OpenReview | [MemGen: Weaving Generative Latent Memory for Self-Evolving Agents](content/papers/memgen-weaving-generative-latent-memory-for-self-evolving-agents.md) | agent, benchmark, retrieval |
-| 2026-05-17 | arXiv | [Episodic-Semantic Memory Architecture for Long-Horizon Scientific Agents](content/papers/episodic-semantic-memory-architecture-for-long-horizon-scientific-agents.md) | agent, context, episodic |
-| 2026-05-17 | arXiv | [Causal Intervention-Based Memory Selection for Long-Horizon LLM Agents](content/papers/causal-intervention-based-memory-selection-for-long-horizon-llm-agents.md) | agent, benchmark, context |
-| 2026-05-16 | arXiv | [When Robots Do the Chores: A Benchmark and Agent for Long-Horizon Household Task Execution](content/papers/when-robots-do-the-chores-a-benchmark-and-agent-for-long-horizon-household-task-.md) | agent, benchmark, episodic |
-| 2026-05-16 | arXiv | [State Contamination in Memory-Augmented LLM Agents](content/papers/state-contamination-in-memory-augmented-llm-agents.md) | agent, context |
-| 2026-05-16 | arXiv | [SE-GA: Memory-Augmented Self-Evolution for GUI Agents](content/papers/se-ga-memory-augmented-self-evolution-for-gui-agents.md) | agent, benchmark, context |
 
 ## Suggested GitHub Setup
 

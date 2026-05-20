@@ -33,6 +33,194 @@
     "venue": "MLSys 2026"
   },
   {
+    "abstract": "A/B testing remains the gold standard for evaluating modifications to e-commerce storefronts, yet it diverts traffic, requires weeks to reach statistical significance, and risks degrading user experience. We present SimGym, a framework for simulating A/B tests on e-commerce storefronts using vision-language model (VLM) agents operating in a live browser. The framework comprises three key components: (a) a traffic-grounded persona generation pipeline that derives per-shop buyer archetypes and intents from production clickstream data; (b) a live-browser agent architecture that combines multimodal perception over visual and browser-structured observations with episodic memory and guardrails to conduct coherent shopping sessions across control and treatment storefronts; and (c) an evaluation protocol that compares simulated outcome shifts with observed shifts in real buyer behavior. We validate SimGym on A/B tests of visually driven UI theme changes from a major e-commerce platform across diverse storefronts and product categories. Empirical results show that SimGym agents achieve strong agreement with observed outcome shifts, attaining 77% directional alignment with add-to-cart shifts observed across interface variants in real-buyer traffic. It reduces experimental cycles from weeks to under an hour, enabling rapid experimentation without exposing real buyers to candidate variants.",
+    "authors": [
+      "Han Li",
+      "Vibhor Malik",
+      "Zahra Zanjani Foumani",
+      "Alberto Castelo",
+      "Shuang Xie",
+      "Ailin Fan",
+      "Keat Yang Koay",
+      "Yuanzheng Zhu",
+      "Meysam Feghhi",
+      "Ronie Uliana",
+      "Zhaoyu Zhang",
+      "Angelo Ocana Martins",
+      "Mingyu Zhao",
+      "Francis Pelland",
+      "Jonathan Faerman",
+      "Nikolas LeBlanc",
+      "Aaron Glazer",
+      "Andrew McNamara",
+      "Zhong Wu",
+      "Lingyun Wang"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2605.19219v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, episodic` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：A/B testing remains the gold standard for evaluating modifications to e-commerce storefronts, yet it diverts traffic, requires weeks to reach statistical significance, and risks degrading user experience.\n\n进一步看，论文的核心做法或实验重点可以概括为：We present SimGym, a framework for simulating A/B tests on e-commerce storefronts using vision-language model (VLM) agents operating in a live browser.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "episodic memory"
+    ],
+    "one_liner": "A/B testing remains the gold standard for evaluating modifications to e-commerce storefronts, yet it diverts traffic, requires weeks to reach statistical significance, and risks...",
+    "published": "2026-05-19",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, episodic\n- 检索关键词命中：episodic memory\n- 来源分类信息：cs.AI",
+    "slug": "simgym-a-framework-for-a-b-test-simulation-in-e-commerce-with-traffic-grounded-v",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2605.19219v1",
+    "tags": [
+      "agent",
+      "episodic"
+    ],
+    "title": "SimGym: A Framework for A/B Test Simulation in E-Commerce with Traffic-Grounded VLM Agents",
+    "updated": "2026-05-19",
+    "url": "http://arxiv.org/abs/2605.19219v1",
+    "venue": ""
+  },
+  {
+    "abstract": "To enable reliable long-term interaction, LLM agents require a memory system that can faithfully store, efficiently retrieve, and deeply reason over accumulated dialogue history. Most existing methods adopt an extracted fact based paradigm: handcrafted static prompts compress raw dialogues into atomic facts, which are then stored, matched, and injected into downstream reasoning. Nevertheless, such fact-centric designs inevitably discard fine-grained details in original dialogues and fail to support deep reasoning over scattered isolated facts. Moreover, static prompts cannot maintain consistent extraction granularity across diverse dialogue styles. To address these limitations, we propose TriMem, which maintains three coexisting representation granularities, including raw dialogue segments anchored by source identifiers for storage fidelity, extracted atomic facts for efficient memory retrieval, synthesized profiles that aggregate dispersed facts into holistic semantic understanding for deep reasoning. We further adopt TextGrad-based prompt optimization, which iteratively refines extraction and profiling prompts via response quality feedback, achieving lifelong evolution without any parameter updating. Extensive experiments on LoCoMo and PerLTQA across multiple LLM backbones demonstrate that TriMem consistently outperforms strong memory baselines. The code is available at https://TMLR-TriMem.github.io .",
+    "authors": [
+      "Jingwei Sun",
+      "Jianing Zhu",
+      "Jiangchao Yao",
+      "Tongliang Liu",
+      "Bo Han"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "id": "2605.19952v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, long-term, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：To enable reliable long-term interaction, LLM agents require a memory system that can faithfully store, efficiently retrieve, and deeply reason over accumulated dialogue history.\n\n进一步看，论文的核心做法或实验重点可以概括为：Most existing methods adopt an extracted fact based paradigm: handcrafted static prompts compress raw dialogues into atomic facts, which are then stored, matched, and injected into downstream reasoning.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory",
+      "memory retrieval"
+    ],
+    "one_liner": "To enable reliable long-term interaction, LLM agents require a memory system that can faithfully store, efficiently retrieve, and deeply reason over accumulated dialogue history.",
+    "published": "2026-05-19",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, long-term, retrieval\n- 检索关键词命中：agent memory, memory retrieval\n- 来源分类信息：cs.CL",
+    "slug": "rethinking-how-to-remember-beyond-atomic-facts-in-lifelong-llm-agent-memory",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2605.19952v1",
+    "tags": [
+      "agent",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "Rethinking How to Remember: Beyond Atomic Facts in Lifelong LLM Agent Memory",
+    "updated": "2026-05-19",
+    "url": "http://arxiv.org/abs/2605.19952v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Automatic generation of computer-aided design (CAD) models is a core technology for enabling intelligence in advanced manufacturing. Existing generation methods based on large language models (LLMs) often fall short when handling complex CAD models characterized by long operation sequences, diverse operation types, and strong geometric constraints, primarily because reasoning chains break and effective error-correction mechanisms are lacking. To address this problem, this paper proposes a memory-augmented reinforcement learning framework for CAD generation agents. The framework encapsulates the underlying geometric kernel into a structured toolchain callable by the agent and builds a closed-loop mechanism of design intent understanding, global planning, execution, and multi-dimensional verification. It also designs a dual-track memory module consisting of a case library and a skill library, and proposes a dynamic utility retrieval algorithm. By introducing reinforcement learning into retrieval and policy optimization, the agent can effectively avoid retrieval traps in which examples are semantically similar but geometrically infeasible, enabling online self-correction and continual evolution without additional large-scale annotated data. Experiments show that the proposed method significantly improves both the success rate and geometric consistency on complex CAD model generation tasks.",
+    "authors": [
+      "Yin Xiaolong",
+      "Liu Yu",
+      "Shen Jiahang",
+      "Lu Xingyu",
+      "Ni Jingzhe",
+      "Fan Fengxiao",
+      "Sang Fan"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.MA"
+    ],
+    "id": "2605.19748v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Automatic generation of computer-aided design (CAD) models is a core technology for enabling intelligence in advanced manufacturing.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing generation methods based on large language models (LLMs) often fall short when handling complex CAD models characterized by long operation sequences, diverse operation types, and strong geometric constraints,...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory augmented",
+      "memory-augmented"
+    ],
+    "one_liner": "Automatic generation of computer-aided design (CAD) models is a core technology for enabling intelligence in advanced manufacturing.",
+    "published": "2026-05-19",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, retrieval\n- 检索关键词命中：memory augmented, memory-augmented\n- 来源分类信息：cs.AI, cs.MA",
+    "slug": "memory-augmented-reinforcement-learning-agent-for-cad-generation",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2605.19748v1",
+    "tags": [
+      "agent",
+      "retrieval"
+    ],
+    "title": "Memory-Augmented Reinforcement Learning Agent for CAD Generation",
+    "updated": "2026-05-19",
+    "url": "http://arxiv.org/abs/2605.19748v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Real-world agents operate over long and evolving horizons, where information is repeatedly updated and may interfere across memories, requiring accurate recall and aggregated reasoning over multiple pieces of information. However, existing benchmarks focus on static, independent recall and fail to capture these dynamic interactions between evolving memories. In this paper, we study how current memory-augmented agents perform in realistic, interference-heavy, long-horizon settings across diverse domains and question types. We introduce MINTEval (Long-Horizon Memory under INTerference Evaluation), a benchmark featuring (1) long, highly interconnected contexts with frequently updated information that induces substantial interference, (2) diverse domains (state tracking, multi-turn dialogue, Wikipedia revisions, and GitHub commits), enabling evaluation of domain generalization, and (3) diverse question types that assess robustness to interference, including (i) single-target recall tasks requiring retrieval of a specific target from long contexts, and (ii) multi-target aggregation tasks requiring reasoning over multiple relevant pieces of information. Overall, MINTEval has 15.6k question-answering pairs over long-horizon contexts averaging 138.8k tokens and extending up to 1.8M tokens per instance. We evaluate 7 representative systems, including vanilla long-context LLMs, RAG, and memory-augmented agent frameworks. Across all systems, we observe consistently low performance (avg. 27.9% accuracy), especially on questions requiring aggregated reasoning over multiple pieces of evidence. Our analysis shows that performance is primarily limited by retrieval and memory construction. Furthermore, current memory systems struggle to recall and reason over earlier facts that are revised or interfered with by subsequent context, with accuracy degrading as the number of intervening updates increases.",
+    "authors": [
+      "Hyunji Lee",
+      "Justin Chih-Yao Chen",
+      "Joykirat Singh",
+      "Zaid Khan",
+      "Elias Stengel-Eskin",
+      "Mohit Bansal"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "id": "2605.18565v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Real-world agents operate over long and evolving horizons, where information is repeatedly updated and may interfere across memories, requiring accurate recall and aggregated reasoning over multiple pieces of...\n\n进一步看，论文的核心做法或实验重点可以概括为：However, existing benchmarks focus on static, independent recall and fail to capture these dynamic interactions between evolving memories.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory augmented",
+      "memory-augmented"
+    ],
+    "one_liner": "Real-world agents operate over long and evolving horizons, where information is repeatedly updated and may interfere across memories, requiring accurate recall and aggregated...",
+    "published": "2026-05-18",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context, retrieval\n- 检索关键词命中：memory augmented, memory-augmented\n- 来源分类信息：cs.CL, cs.AI",
+    "slug": "minteval-evaluating-memory-under-multi-target-interference-in-long-horizon-agent",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2605.18565v2",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "retrieval"
+    ],
+    "title": "MINTEval: Evaluating Memory under Multi-Target Interference in Long-Horizon Agent Systems",
+    "updated": "2026-05-19",
+    "url": "http://arxiv.org/abs/2605.18565v2",
+    "venue": ""
+  },
+  {
+    "abstract": "Large Language Model (LLM) agents are increasingly applied to engineering design tasks, yet existing evaluation frameworks do not adequately address multi-agent systems that combine simulation, retrieval, and manufacturing preparation. We introduce a benchmark suite with three evaluation dimensions: (1) a workflow benchmark with seven prompt styles targeting distinct cognitive demands-including direct tool use, semantic disambiguation, conditional branching, and working-memory tasks; (2) a Retrieval-Augmented Generation (RAG) benchmark with gated scoring isolating retrieval contributions to parameter selection; and (3) an High Performance Computing (HPC) benchmark evaluating end-to-end ML training orchestration on a SLURM cluster. Alongside the benchmark we present EngiAI, a Multi-Agent System (MAS) reference implementation built on LangGraph that operationalizes the benchmark by coordinating seven specialized agents through a supervisor architecture, unifying topology optimization, document retrieval, HPC job orchestration, and 3D printer control. Across four LLM backends and two EngiBench problems, proprietary models achieve 96-97% average task completion on Beams2D, while open-source 4B-parameter models reach 55-78%, with clear generational improvement. Conditional branching proves most challenging, with task completion dropping to 20-53% for the conditional style on Photonics2D. RAG gating confirms near-perfect retrieval-augmented scores ($\\approx 1.0$) versus near-zero without retrieval, validating the evaluation design. On HPC orchestration, one model completes all pipeline steps in 100% of runs while another drops to 50%, revealing that multi-step instruction following degrades over long-running workflows.",
+    "authors": [
+      "Gioele Molinari",
+      "Florian Felten",
+      "Soheyl Massoudi",
+      "Mark Fuge"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.LG",
+      "cs.MA"
+    ],
+    "id": "2605.19743v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Large Language Model (LLM) agents are increasingly applied to engineering design tasks, yet existing evaluation frameworks do not adequately address multi-agent systems that combine simulation, retrieval, and...\n\n进一步看，论文的核心做法或实验重点可以概括为：We introduce a benchmark suite with three evaluation dimensions: (1) a workflow benchmark with seven prompt styles targeting distinct cognitive demands-including direct tool use, semantic disambiguation, conditional...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "working memory"
+    ],
+    "one_liner": "Large Language Model (LLM) agents are increasingly applied to engineering design tasks, yet existing evaluation frameworks do not adequately address multi-agent systems that...",
+    "published": "2026-05-19",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, retrieval\n- 检索关键词命中：working memory\n- 来源分类信息：cs.AI, cs.LG, cs.MA",
+    "slug": "engiai-a-multi-agent-framework-and-benchmark-suite-for-llm-driven-engineering-de",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2605.19743v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "retrieval"
+    ],
+    "title": "EngiAI: A Multi-Agent Framework and Benchmark Suite for LLM-Driven Engineering Design",
+    "updated": "2026-05-19",
+    "url": "http://arxiv.org/abs/2605.19743v1",
+    "venue": ""
+  },
+  {
     "abstract": "Segment Anything Model 2 (SAM 2) serves as a core foundation model in the field of video segmentation. Building upon the original SAM model, it introduces a memory bank mechanism and demonstrates outstanding performance in tasks such as semi-supervised video object segmentation and tracking anything. However, the complex computational characteristics of SAM 2's multi-stage image encoder and memory module have raised the barrier to the model's deployment in practical applications. To address this issue, we propose TinySAM 2, a lightweight video segmentation model that balances performance and efficiency. First, a memory quality management mechanism is introduced to select and retain high-informative historical frames as the memory. In addition, a joint-spatial-temporal token compression is proposed that reduces the memory storage and computational cost. Specifically, average pooling is employed to first compress redundancy tokens in the spatial domain. In the temporal domain, informative tokens are selected across frames in the memory bank based on token-level similarity measurement. Besides, we take RepViT as the lightweight image encoder, which further reduces the model parameters. Extensive experiments on challenging datasets such as DAVIS and SA-V demonstrate that TinySAM 2 achieves 90% of the performance of SAM 2.1, with only 7% memory tokens and 3% training data. This study effectively alleviates the bottlenecks in parameter count, computational load, and deployment costs associated with SAM 2, providing a resource-efficient solution for the widespread application of video segmentation models on devices.",
     "authors": [
       "Zhaoyuan Ding",
@@ -94,6 +282,40 @@
     "title": "SocialMemBench: Are AI Memory Systems Ready for Social Group Settings?",
     "updated": "2026-05-18",
     "url": "http://arxiv.org/abs/2605.17789v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Memory-augmented large language model (LLM) agents use iterative reflection and self-evolution to solve complex tasks, but these mechanisms introduce security risks. Existing agentic memory attacks require privileged access or explicit malicious content, making them detectable by advanced safety filters. This leaves a subtler attack surface underexplored: whether adversaries can induce agent to generate experiences that appear locally correct and semantically plausible yet induce harmful generalization during reflection. We find that reflective agents are vulnerable to such clean experiences, especially when paired with severe but plausible hypothetical consequences. Based on this observation, we introduce Obsessive Experience Poisoning (OEP), a low-privilege black-box attack requiring no direct control over the system prompt or memory database. OEP constructs adversarial clean edge-cases that combine locally correct solutions, non-transferable methods, and severe consequences, biasing reflection toward risk-averse rule formation. During memory consolidation, agents may over-trust self-generated reflections and distill localized experiences into high-priority but over-generalized rules, causing downstream failures. Evaluations across three domains show that OEP achieves ASR above 50\\% with GPT-4o agents, and outperforms existing attacks under LLM auditing defense.",
+    "authors": [
+      "Kaixiang Wang",
+      "Jiong Lou",
+      "Zhaojiacheng Zhou",
+      "Jie Li"
+    ],
+    "categories": [
+      "cs.CR",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "id": "2605.18930v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Memory-augmented large language model (LLM) agents use iterative reflection and self-evolution to solve complex tasks, but these mechanisms introduce security risks.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing agentic memory attacks require privileged access or explicit malicious content, making them detectable by advanced safety filters.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory",
+      "memory augmented",
+      "memory-augmented"
+    ],
+    "one_liner": "Memory-augmented large language model (LLM) agents use iterative reflection and self-evolution to solve complex tasks, but these mechanisms introduce security risks.",
+    "published": "2026-05-18",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent\n- 检索关键词命中：agent memory, memory augmented, memory-augmented\n- 来源分类信息：cs.CR, cs.AI, cs.LG",
+    "slug": "oep-poisoning-self-evolving-llm-agents-via-locally-correct-but-non-transferable-",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2605.18930v1",
+    "tags": [
+      "agent"
+    ],
+    "title": "OEP: Poisoning Self-Evolving LLM Agents via Locally Correct but Non-Transferable Experiences",
+    "updated": "2026-05-18",
+    "url": "http://arxiv.org/abs/2605.18930v1",
     "venue": ""
   },
   {
@@ -838,6 +1060,38 @@
     "title": "GroupMemBench: Benchmarking LLM Agent Memory in Multi-Party Conversations",
     "updated": "2026-05-16",
     "url": "http://arxiv.org/abs/2605.14498v2",
+    "venue": ""
+  },
+  {
+    "abstract": "In dynamic flow fields, various animals exhibit remarkable odor search capabilities despite relying on stochastic detections. Interestingly, there exists an optimal time window for integrating these detections that maximizes search efficiency. To understand the underlying mechanism, we investigate the navigation performance of Reinforcement Learning (RL) agents in unsteady flows under varying memory lengths and flow conditions. Without any predefined models, the agents develop a flow-assisted casting strategy and adaptively adjust both the geometry of their search trajectories and the concentration threshold for initiating casting to maximize the success rate. The agent's average speed toward the odor source exhibits a non-monotonic dependence on memory length, which can be explained by the \"sector-search\" model.",
+    "authors": [
+      "Changxu Zhao",
+      "Dongxiao Zhao",
+      "Xin Bian",
+      "Gaojin Li"
+    ],
+    "categories": [
+      "cs.LG",
+      "physics.flu-dyn"
+    ],
+    "id": "2605.18881v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：In dynamic flow fields, various animals exhibit remarkable odor search capabilities despite relying on stochastic detections.\n\n进一步看，论文的核心做法或实验重点可以概括为：Interestingly, there exists an optimal time window for integrating these detections that maximizes search efficiency.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory augmented",
+      "memory-augmented"
+    ],
+    "one_liner": "In dynamic flow fields, various animals exhibit remarkable odor search capabilities despite relying on stochastic detections.",
+    "published": "2026-05-16",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent\n- 检索关键词命中：memory augmented, memory-augmented\n- 来源分类信息：cs.LG, physics.flu-dyn",
+    "slug": "emergence-of-a-flow-assisted-casting-strategy-for-olfactory-navigation-via-memor",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2605.18881v1",
+    "tags": [
+      "agent"
+    ],
+    "title": "Emergence of a Flow-Assisted Casting Strategy for Olfactory Navigation via Memory-Augmented Reinforcement Learning",
+    "updated": "2026-05-16",
+    "url": "http://arxiv.org/abs/2605.18881v1",
     "venue": ""
   },
   {
