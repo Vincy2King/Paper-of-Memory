@@ -39,19 +39,20 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **261**
-- Last generated: **2026-05-19**
+- Total tracked papers: **262**
+- Last generated: **2026-05-20**
 
 ## Papers by Source
 
 - ACL Anthology: **1**
 - arXiv: **226**
-- OpenReview: **34**
+- OpenReview: **35**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-05-20 | OpenReview | [Ontology-Guided Long-Term Agent Memory for Conversational RAG](content/papers/ontology-guided-long-term-agent-memory-for-conversational-rag.md) | agent, benchmark, context |
 | 2026-05-18 | arXiv | [TinySAM 2: Extreme Memory Compression for Efficient Track Anything Model](content/papers/tinysam-2-extreme-memory-compression-for-efficient-track-anything-model.md) | compression |
 | 2026-05-18 | arXiv | [SocialMemBench: Are AI Memory Systems Ready for Social Group Settings?](content/papers/socialmembench-are-ai-memory-systems-ready-for-social-group-settings.md) | agent, benchmark, context |
 | 2026-05-18 | arXiv | [LongMINT: Evaluating Memory under Multi-Target Interference in Long-Horizon Agent Systems](content/papers/longmint-evaluating-memory-under-multi-target-interference-in-long-horizon-agent.md) | agent, benchmark, context |
@@ -71,7 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-05-16 | arXiv | [When Robots Do the Chores: A Benchmark and Agent for Long-Horizon Household Task Execution](content/papers/when-robots-do-the-chores-a-benchmark-and-agent-for-long-horizon-household-task-.md) | agent, benchmark, episodic |
 | 2026-05-16 | arXiv | [State Contamination in Memory-Augmented LLM Agents](content/papers/state-contamination-in-memory-augmented-llm-agents.md) | agent, context |
 | 2026-05-16 | arXiv | [SE-GA: Memory-Augmented Self-Evolution for GUI Agents](content/papers/se-ga-memory-augmented-self-evolution-for-gui-agents.md) | agent, benchmark, context |
-| 2026-05-16 | arXiv | [Pedestrian-Aware LLM-Driven Behavioral Planning for Autonomous Vehicles](content/papers/pedestrian-aware-llm-driven-behavioral-planning-for-autonomous-vehicles.md) | agent, episodic |
 
 ## Suggested GitHub Setup
 
