@@ -33,6 +33,237 @@
     "venue": "MLSys 2026"
   },
   {
+    "abstract": "Scaling conditional memory offers a promising way to increase language-model capacity, but existing methods such as Engram learn large memory tables from scratch during pre-training, making memory scaling expensive and sometimes ineffective. We propose Memory Grafting, a conditional memory scaling method that utilizes frozen hidden states from a grafting model as conditional n-gram memory. Given frequent local n-grams, we run the grafting model offline, store final-token hidden representations as memory values, and let the recipient model retrieve them through exact longest-match suffix lookup. Retrieved memories are adapted by lightweight projections and gates, while a hash-based Engram fallback preserves coverage for unmatched contexts. Since the grafting model is only run offline and exact lookup has expected O(1) complexity with respect to memory-bank size, Memory Grafting expands external latent capacity with limited training and inference overhead. Experiments under matched recipient architectures and pre-training budgets show that Memory Grafting improves over both MoE and vanilla Engram baselines. In the 2.8B-scale setting, it improves the average benchmark score from 51.95 for MoE and 52.43 for vanilla Engram to 53.86. In the 0.92B-scale setting, all grafting-model variants improve over the baselines, with Qwen3.5-35B-A3B giving the strongest gains. These results suggest that pretrained models can serve as reusable constructors of external latent memory, providing a practical step toward scaling future language models beyond trainable parameters alone.",
+    "authors": [
+      "Runxi Cheng",
+      "Yuchen Guan",
+      "Yongxian Wei",
+      "Qianpu Sun",
+      "Qixiu Li",
+      "Sinan Du",
+      "Feng Xiong",
+      "Chun Yuan",
+      "Yan Lu",
+      "Yeyun Gong"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "id": "2605.20948v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `benchmark, context` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Scaling conditional memory offers a promising way to increase language-model capacity, but existing methods such as Engram learn large memory tables from scratch during pre-training, making memory scaling expensive...\n\n进一步看，论文的核心做法或实验重点可以概括为：We propose Memory Grafting, a conditional memory scaling method that utilizes frozen hidden states from a grafting model as conditional n-gram memory.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "retrieval memory"
+    ],
+    "one_liner": "Scaling conditional memory offers a promising way to increase language-model capacity, but existing methods such as Engram learn large memory tables from scratch during pre-...",
+    "published": "2026-05-20",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：benchmark, context\n- 检索关键词命中：retrieval memory\n- 来源分类信息：cs.CL",
+    "slug": "memory-grafting-scaling-language-model-pre-training-via-offline-conditional-memo",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2605.20948v1",
+    "tags": [
+      "benchmark",
+      "context"
+    ],
+    "title": "Memory Grafting: Scaling Language Model Pre-training via Offline Conditional Memory",
+    "updated": "2026-05-20",
+    "url": "http://arxiv.org/abs/2605.20948v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Memory is a central capability for LLM agents operating across long-horizon tasks. Existing memory benchmarks predominantly evaluate retention of personalized information in multi-turn chat scenarios, overlooking the dynamic memory formation that occurs during extended agent execution. Consequently, the memory systems they produce transfer poorly to realistic agentic environments, such as coding and web navigation. We present MemGym, a benchmark for agentic memory that unifies existing agent gyms and in-house memory-grounded pipelines behind one memory-reasoning interface. MemGym spans five evaluation tracks grouped into four agentic regimes: tool-use dialogue (tau2-bench), multi-turn deep-research search (MEMGYM-DR), coding (SWE-Gym and MEMGYM-CODEQA), and computer use (WebArena-Infinity). MemGym reports memory-isolated scores that decouple memory performance from reasoning, retrieval, and tool-use ability, so memory strategies can be ranked without those confounders. Our synthetic pipelines for MEMGYM-CODEQA and MEMGYM-DR are length-controllable, ablation-verified at every stage, and tightly aligned with downstream scenarios. To make evaluation on coding environments academically tractable, we train MemRM, a lightweight reward model (Qwen3-1.7B fine-tuned with QLoRA) that scores compression quality as a fast scalar read in place of full Docker rollouts.",
+    "authors": [
+      "Wujiang Xu",
+      "Yu Wang",
+      "Kai Mei",
+      "Kaiqu Liang",
+      "Zhenting Wang",
+      "Mingyu Jin",
+      "Han Zhang",
+      "Shi-Xiong Zhang",
+      "Wenyue Hua",
+      "Sambit Sahu",
+      "Dimitris N. Metaxas"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "id": "2605.20833v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, compression, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Memory is a central capability for LLM agents operating across long-horizon tasks.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing memory benchmarks predominantly evaluate retention of personalized information in multi-turn chat scenarios, overlooking the dynamic memory formation that occurs during extended agent execution.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory",
+      "memory benchmark",
+      "memory benchmarks",
+      "memory reasoning"
+    ],
+    "one_liner": "Memory is a central capability for LLM agents operating across long-horizon tasks.",
+    "published": "2026-05-20",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, compression, retrieval\n- 检索关键词命中：agent memory, memory benchmark, memory benchmarks, memory reasoning\n- 来源分类信息：cs.CL",
+    "slug": "memgym-a-long-horizon-memory-environment-for-llm-agents",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2605.20833v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "compression",
+      "retrieval"
+    ],
+    "title": "MemGym: a Long-Horizon Memory Environment for LLM Agents",
+    "updated": "2026-05-20",
+    "url": "http://arxiv.org/abs/2605.20833v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Long-term memory systems enable conversational agents based on large language models (LLMs) to retain, retrieve, and apply user-specific information across multi-session interactions. However, existing evaluations mainly assess outcome-level performance or temporal updating, providing limited insight into how systems retrieve and rank temporally valid, factually correct, and contextually applicable memory evidence under conflicting alternatives. To address this gap, we propose MemConflict, a diagnostic framework that treats memory validity as a query-conditioned fitness-for-use problem. MemConflict formalizes dynamic, static, and conditional conflicts over temporal validity, factual correctness, and contextual applicability. It simulates controlled long-horizon histories from structured user profiles, introduces cross-session conflicts, and injects semantically similar distractors to create competition among memory candidates. The resulting multi-session dialogue benchmark supports black-box evaluation of final answers and white-box analysis of supporting-memory retrieval and ranking. Experiments on six representative long-term memory systems show uneven strengths across conflict types, with answer correctness often diverging from memory retrieval and ranking. Sensitivity analyses reveal that longer histories, distractors, implicit queries, and larger conflict distances degrade performance. Diagnostics show failures from missing supporting memories and ineffective use of retrieved memories. Collectively, MemConflict advances principled long-term memory governance through retrieval-aware, conflict-aware reliability assessment.",
+    "authors": [
+      "Zhen Tao",
+      "Jinxiang Zhao",
+      "Peng Liu",
+      "Dinghao Xi",
+      "Yanfang Chen",
+      "Wei Xu",
+      "Zhiyu Li"
+    ],
+    "categories": [
+      "cs.IR"
+    ],
+    "id": "2605.20926v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, conversation` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Long-term memory systems enable conversational agents based on large language models (LLMs) to retain, retrieve, and apply user-specific information across multi-session interactions.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, existing evaluations mainly assess outcome-level performance or temporal updating, providing limited insight into how systems retrieve and rank temporally valid, factually correct, and contextually applicable...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "long-term memory",
+      "memory retrieval",
+      "retrieval memory"
+    ],
+    "one_liner": "Long-term memory systems enable conversational agents based on large language models (LLMs) to retain, retrieve, and apply user-specific information across multi-session...",
+    "published": "2026-05-20",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context, conversation, long-term, retrieval\n- 检索关键词命中：long-term memory, memory retrieval, retrieval memory\n- 来源分类信息：cs.IR",
+    "slug": "memconflict-evaluating-long-term-memory-systems-under-memory-conflicts",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2605.20926v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "conversation",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "MemConflict: Evaluating Long-Term Memory Systems Under Memory Conflicts",
+    "updated": "2026-05-20",
+    "url": "http://arxiv.org/abs/2605.20926v1",
+    "venue": ""
+  },
+  {
+    "abstract": "We present Mem-$π$, a framework for adaptive memory in large language model (LLM) agents, where useful guidance is generated on demand rather than retrieved from external memory stores. Existing memory-augmented agents typically rely on similarity-based retrieval from episodic memory banks or skill libraries, returning static entries that often misalign with the current context. In contrast, Mem-$π$ uses a dedicated language or vision-language model with its own parameters, separate from the downstream agent, to generate context-specific guidance for complex tasks. Conditioned on the current agent context, the model jointly decides when to produce guidance and what guidance to produce. We train it with a decision-content decoupled reinforcement learning (RL) objective, enabling it to abstain when generation would not help and otherwise produce concise, useful guidance. Across diverse agentic benchmarks spanning web navigation, terminal-based tool use, and text-based embodied interaction, Mem-$π$ consistently outperforms retrieval-based and prior RL-optimized memory baselines, achieving over 30% relative improvement on web navigation tasks.",
+    "authors": [
+      "Xiaoqiang Wang",
+      "Chao Wang",
+      "Hadi Nekoei",
+      "Christopher Pal",
+      "Alexandre Lacoste",
+      "Spandana Gella",
+      "Bang Liu",
+      "Perouz Taslakian"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "id": "2605.21463v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, episodic` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：We present Mem-$π$, a framework for adaptive memory in large language model (LLM) agents, where useful guidance is generated on demand rather than retrieved from external memory stores.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing memory-augmented agents typically rely on similarity-based retrieval from episodic memory banks or skill libraries, returning static entries that often misalign with the current context.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "episodic memory",
+      "memory augmented",
+      "memory-augmented"
+    ],
+    "one_liner": "We present Mem-$π$, a framework for adaptive memory in large language model (LLM) agents, where useful guidance is generated on demand rather than retrieved from external memory...",
+    "published": "2026-05-20",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context, episodic, retrieval\n- 检索关键词命中：episodic memory, memory augmented, memory-augmented\n- 来源分类信息：cs.CL, cs.AI",
+    "slug": "mem-adaptive-memory-through-learning-when-and-what-to-generate",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2605.21463v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "episodic",
+      "retrieval"
+    ],
+    "title": "Mem-$π$: Adaptive Memory through Learning When and What to Generate",
+    "updated": "2026-05-20",
+    "url": "http://arxiv.org/abs/2605.21463v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Large language models (LLMs) operate within fixed context windows that fundamentally limit conversational continuity. When context fills, compaction discards history irreversibly; when sessions end, all memory resets to zero. Existing solutions-larger context windows, retrieval-augmented generation for knowledge bases, and memory-augmented architectures such as MemGPT-either require model modification, impose provider lock-in, or do not address the compaction continuity problem. We present CALMem (Conversational Application-Layer Memory), an application-layer dual memory architecture that gives LLM-based conversational assistants virtually unbounded effective context without any modification to the underlying model. CALMem combines two complementary memory subsystems: an episodic memory layer built on sliding-window vector embeddings of conversation history, and a semantic memory layer of agent-writable structured facts. A token-budget-adaptive injection mechanism, called the MOIM (Message of Injected Memory), automatically retrieves and injects relevant past context each turn, scaling injection depth inversely with context pressure. A key contribution is intra-session retrieval: compacted away turns from the current session remain searchable, closing a gap unaddressed by prior work. The system is implemented as a pure application layer in a production Rust codebase, is provider-agnostic, and degrades to original LLM behaviour with zero overhead when disabled. We describe the architecture, design decisions, and performance characteristics, and analyse the trade-offs that guided each implementation choice.",
+    "authors": [
+      "Rajendra Narayan Jena",
+      "Rajan Padmanabhan",
+      "Sankar Arumugam"
+    ],
+    "categories": [
+      "cs.IR"
+    ],
+    "id": "2605.20724v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, context, conversation, episodic` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Large language models (LLMs) operate within fixed context windows that fundamentally limit conversational continuity.\n\n进一步看，论文的核心做法或实验重点可以概括为：When context fills, compaction discards history irreversibly; when sessions end, all memory resets to zero.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "episodic memory",
+      "memory augmented",
+      "memory-augmented"
+    ],
+    "one_liner": "Large language models (LLMs) operate within fixed context windows that fundamentally limit conversational continuity.",
+    "published": "2026-05-20",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, context, conversation, episodic, retrieval\n- 检索关键词命中：episodic memory, memory augmented, memory-augmented\n- 来源分类信息：cs.IR",
+    "slug": "calmem-application-layer-dual-memory-for-conversational-ai",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2605.20724v1",
+    "tags": [
+      "agent",
+      "context",
+      "conversation",
+      "episodic",
+      "retrieval"
+    ],
+    "title": "CALMem : Application-Layer Dual Memory for Conversational AI",
+    "updated": "2026-05-20",
+    "url": "http://arxiv.org/abs/2605.20724v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Language agents increasingly operate over streams of related tasks, yet existing memory systems struggle to convert accumulated experience into reusable knowledge. Retrieval-augmented and structured memory methods record per-session observations effectively, but often couple acquisition and consolidation into a single online process, leaving the agent without a global view across sessions to discover recurring patterns, abstract shared procedures, or prune redundant entries. Inspired by complementary learning systems theory, we propose Auto-Dreamer, a learned offline consolidator for language-agent memory. Auto-Dreamer decouples fast per-session memory acquisition from slow cross-session consolidation. Given a selected working region of a typed memory bank, the consolidator treats the region as read-only evidence, performs bounded tool-use to inspect entries and provenance-linked source trajectories, and synthesizes a fresh compact replacement set that abstracts across sessions and supersedes the original region. We train Auto-Dreamer via GRPO, using end-to-end agent performance as the reward signal to learn how to consolidate memories acquired through fast online experience. Trained on ScienceWorld trajectories alone, Auto-Dreamer outperforms fixed, RL-trained, and prompted memory baselines on ScienceWorld by 7 points while using an active memory bank 12$\\times$ smaller than the strongest baseline, and continues to lead on held-out ALFWorld and WebArena without retraining -- using 6$\\times$ less memory than the strongest baseline on ALFWorld.",
+    "authors": [
+      "Chongrui Ye",
+      "Yuxiang Liu",
+      "Yu Wang",
+      "Haofei Yu",
+      "Yining Zhao",
+      "Ge Liu",
+      "Julian McAuley",
+      "Jiaxuan You"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "id": "2605.20616v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Language agents increasingly operate over streams of related tasks, yet existing memory systems struggle to convert accumulated experience into reusable knowledge.\n\n进一步看，论文的核心做法或实验重点可以概括为：Retrieval-augmented and structured memory methods record per-session observations effectively, but often couple acquisition and consolidation into a single online process, leaving the agent without a global view...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "Language agents increasingly operate over streams of related tasks, yet existing memory systems struggle to convert accumulated experience into reusable knowledge.",
+    "published": "2026-05-20",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, retrieval\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.CL",
+    "slug": "auto-dreamer-learning-offline-memory-consolidation-for-language-agents",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2605.20616v1",
+    "tags": [
+      "agent",
+      "retrieval"
+    ],
+    "title": "Auto-Dreamer: Learning Offline Memory Consolidation for Language Agents",
+    "updated": "2026-05-20",
+    "url": "http://arxiv.org/abs/2605.20616v1",
+    "venue": ""
+  },
+  {
     "abstract": "A/B testing remains the gold standard for evaluating modifications to e-commerce storefronts, yet it diverts traffic, requires weeks to reach statistical significance, and risks degrading user experience. We present SimGym, a framework for simulating A/B tests on e-commerce storefronts using vision-language model (VLM) agents operating in a live browser. The framework comprises three key components: (a) a traffic-grounded persona generation pipeline that derives per-shop buyer archetypes and intents from production clickstream data; (b) a live-browser agent architecture that combines multimodal perception over visual and browser-structured observations with episodic memory and guardrails to conduct coherent shopping sessions across control and treatment storefronts; and (c) an evaluation protocol that compares simulated outcome shifts with observed shifts in real buyer behavior. We validate SimGym on A/B tests of visually driven UI theme changes from a major e-commerce platform across diverse storefronts and product categories. Empirical results show that SimGym agents achieve strong agreement with observed outcome shifts, attaining 77% directional alignment with add-to-cart shifts observed across interface variants in real-buyer traffic. It reduces experimental cycles from weeks to under an hour, enabling rapid experimentation without exposing real buyers to candidate variants.",
     "authors": [
       "Han Li",
@@ -111,6 +342,40 @@
     "title": "Rethinking How to Remember: Beyond Atomic Facts in Lifelong LLM Agent Memory",
     "updated": "2026-05-19",
     "url": "http://arxiv.org/abs/2605.19952v1",
+    "venue": ""
+  },
+  {
+    "abstract": "LLM agents have recently emerged as a powerful paradigm for solving complex tasks through planning, tool use, memory retrieval, and multi-step interaction. However, these agentic workflows often introduce substantial input-side overhead, making the compute-intensive prefilling stage a key bottleneck in long-context, multi-turn inference. In this work, we propose Mix-Quant, a simple and effective phase-aware quantization framework for fast agentic inference. We first investigate FP4 quantization in agentic LLM workflows and observe that quantizing the entire inference process can incur significant performance degradation. In contrast, the prefilling stage exhibits substantial quantization redundancy and can therefore be quantized with minimal accuracy loss, despite being the dominant source of computation. Based on this insight, we apply high-throughput NVFP4 quantization to the prefilling phase while preserving BF16 precision for decoding. By decoupling prefilling acceleration from decoding quality, Mix-Quant combines phase-aware algorithmic quantization with hardware-efficient NVFP4 execution to alleviate the inference bottleneck in LLM agents. Extensive experiments across long-context and agentic benchmarks demonstrate that Mix-Quant largely preserves task performance while delivering significant efficiency improvements, achieving up to a 3x speedup during prefilling.",
+    "authors": [
+      "Haiquan Lu",
+      "Zigeng Chen",
+      "Gongfan Fang",
+      "Xinyin Ma",
+      "Xinchao Wang"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "id": "2605.20315v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：LLM agents have recently emerged as a powerful paradigm for solving complex tasks through planning, tool use, memory retrieval, and multi-step interaction.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, these agentic workflows often introduce substantial input-side overhead, making the compute-intensive prefilling stage a key bottleneck in long-context, multi-turn inference.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory retrieval"
+    ],
+    "one_liner": "LLM agents have recently emerged as a powerful paradigm for solving complex tasks through planning, tool use, memory retrieval, and multi-step interaction.",
+    "published": "2026-05-19",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context, retrieval\n- 检索关键词命中：memory retrieval\n- 来源分类信息：cs.CL",
+    "slug": "mix-quant-quantized-prefilling-precise-decoding-for-agentic-llms",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2605.20315v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "retrieval"
+    ],
+    "title": "Mix-Quant: Quantized Prefilling, Precise Decoding for Agentic LLMs",
+    "updated": "2026-05-19",
+    "url": "http://arxiv.org/abs/2605.20315v1",
     "venue": ""
   },
   {

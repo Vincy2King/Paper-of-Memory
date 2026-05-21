@@ -39,13 +39,13 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **269**
-- Last generated: **2026-05-20**
+- Total tracked papers: **276**
+- Last generated: **2026-05-21**
 
 ## Papers by Source
 
 - ACL Anthology: **1**
-- arXiv: **233**
+- arXiv: **240**
 - OpenReview: **35**
 
 ## Latest Papers
@@ -53,8 +53,15 @@ python3 scripts/update_papers.py --build-only
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
 | 2026-05-20 | OpenReview | [Ontology-Guided Long-Term Agent Memory for Conversational RAG](content/papers/ontology-guided-long-term-agent-memory-for-conversational-rag.md) | agent, benchmark, context |
+| 2026-05-20 | arXiv | [Memory Grafting: Scaling Language Model Pre-training via Offline Conditional Memory](content/papers/memory-grafting-scaling-language-model-pre-training-via-offline-conditional-memo.md) | benchmark, context |
+| 2026-05-20 | arXiv | [MemGym: a Long-Horizon Memory Environment for LLM Agents](content/papers/memgym-a-long-horizon-memory-environment-for-llm-agents.md) | agent, benchmark, compression |
+| 2026-05-20 | arXiv | [MemConflict: Evaluating Long-Term Memory Systems Under Memory Conflicts](content/papers/memconflict-evaluating-long-term-memory-systems-under-memory-conflicts.md) | agent, benchmark, context |
+| 2026-05-20 | arXiv | [Mem-$π$: Adaptive Memory through Learning When and What to Generate](content/papers/mem-adaptive-memory-through-learning-when-and-what-to-generate.md) | agent, benchmark, context |
+| 2026-05-20 | arXiv | [CALMem : Application-Layer Dual Memory for Conversational AI](content/papers/calmem-application-layer-dual-memory-for-conversational-ai.md) | agent, context, conversation |
+| 2026-05-20 | arXiv | [Auto-Dreamer: Learning Offline Memory Consolidation for Language Agents](content/papers/auto-dreamer-learning-offline-memory-consolidation-for-language-agents.md) | agent, retrieval |
 | 2026-05-19 | arXiv | [SimGym: A Framework for A/B Test Simulation in E-Commerce with Traffic-Grounded VLM Agents](content/papers/simgym-a-framework-for-a-b-test-simulation-in-e-commerce-with-traffic-grounded-v.md) | agent, episodic |
 | 2026-05-19 | arXiv | [Rethinking How to Remember: Beyond Atomic Facts in Lifelong LLM Agent Memory](content/papers/rethinking-how-to-remember-beyond-atomic-facts-in-lifelong-llm-agent-memory.md) | agent, long-term, retrieval |
+| 2026-05-19 | arXiv | [Mix-Quant: Quantized Prefilling, Precise Decoding for Agentic LLMs](content/papers/mix-quant-quantized-prefilling-precise-decoding-for-agentic-llms.md) | agent, benchmark, context |
 | 2026-05-19 | arXiv | [Memory-Augmented Reinforcement Learning Agent for CAD Generation](content/papers/memory-augmented-reinforcement-learning-agent-for-cad-generation.md) | agent, retrieval |
 | 2026-05-19 | arXiv | [MINTEval: Evaluating Memory under Multi-Target Interference in Long-Horizon Agent Systems](content/papers/minteval-evaluating-memory-under-multi-target-interference-in-long-horizon-agent.md) | agent, benchmark, context |
 | 2026-05-19 | arXiv | [EngiAI: A Multi-Agent Framework and Benchmark Suite for LLM-Driven Engineering Design](content/papers/engiai-a-multi-agent-framework-and-benchmark-suite-for-llm-driven-engineering-de.md) | agent, benchmark, retrieval |
@@ -65,13 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-05-18 | arXiv | [Hidden in Memory: Sleeper Memory Poisoning in LLM Agents](content/papers/hidden-in-memory-sleeper-memory-poisoning-in-llm-agents.md) | agent, context, conversation |
 | 2026-05-18 | arXiv | [EvoMemBench: Benchmarking Agent Memory from a Self-Evolving Perspective](content/papers/evomembench-benchmarking-agent-memory-from-a-self-evolving-perspective.md) | agent, benchmark, context |
 | 2026-05-18 | arXiv | [DimMem: Dimensional Structuring for Efficient Long-Term Agent Memory](content/papers/dimmem-dimensional-structuring-for-efficient-long-term-agent-memory.md) | agent, benchmark, context |
-| 2026-05-18 | arXiv | [CommitDistill: A Lightweight Knowledge-Centric Memory Layer for Software Repositories](content/papers/commitdistill-a-lightweight-knowledge-centric-memory-layer-for-software-reposito.md) | agent, benchmark, retrieval |
-| 2026-05-18 | arXiv | [Agentic Harness Engineering: Observability-Driven Automatic Evolution of Coding-Agent Harnesses](content/papers/agentic-harness-engineering-observability-driven-automatic-evolution-of-coding-a.md) | agent, benchmark, long-term |
-| 2026-05-18 | arXiv | [AMARIS: A Memory-Augmented Rubric Improvement System for Rubric-Based Reinforcement Learning](content/papers/amaris-a-memory-augmented-rubric-improvement-system-for-rubric-based-reinforceme.md) | context, long-term, retrieval |
-| 2026-05-17 | arXiv | [Taming "Zombie'' Agents: A Markov State-Aware Framework for Resilient Multi-Agent Evolution](content/papers/taming-zombie-agents-a-markov-state-aware-framework-for-resilient-multi-agent-ev.md) | agent |
-| 2026-05-17 | arXiv | [OProver: A Unified Framework for Agentic Formal Theorem Proving](content/papers/oprover-a-unified-framework-for-agentic-formal-theorem-proving.md) | agent, benchmark, context |
-| 2026-05-17 | arXiv | [NeuSymMS: A Hybrid Neuro-Symbolic Memory System for Persistent, Self-Curating LLM Agents](content/papers/neusymms-a-hybrid-neuro-symbolic-memory-system-for-persistent-self-curating-llm-.md) | agent, context, long-term |
-| 2026-05-17 | arXiv | [MemRepair: Hierarchical Memory for Agentic Repository-Level Vulnerability Repair](content/papers/memrepair-hierarchical-memory-for-agentic-repository-level-vulnerability-repair.md) | agent, benchmark, context |
 
 ## Suggested GitHub Setup
 
