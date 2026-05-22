@@ -27,7 +27,7 @@ Memory-augmented LLM agents enable interactions that extend beyond finite contex
 ## Why It Was Included
 - 来源：arXiv
 - 高亮主题命中：agent, context
-- 检索关键词命中：memory-augmented
+- 检索关键词命中：memory augmented, memory-augmented
 - 来源分类信息：cs.LG, cs.MA
 
 ## Abstract Snapshot

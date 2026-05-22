@@ -39,21 +39,26 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **278**
+- Total tracked papers: **283**
 - Last generated: **2026-05-22**
 
 ## Papers by Source
 
 - ACL Anthology: **1**
-- arXiv: **242**
+- arXiv: **247**
 - OpenReview: **35**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-05-21 | arXiv | [The Log is the Agent: Event-Sourced Reactive Graphs for Auditable, Forkable Agentic Systems](content/papers/the-log-is-the-agent-event-sourced-reactive-graphs-for-auditable-forkable-agenti.md) | agent, conversation, retrieval |
+| 2026-05-21 | arXiv | [Short-Term-to-Long-Term Memory Transfer for Knowledge Graphs under Partial Observability](content/papers/short-term-to-long-term-memory-transfer-for-knowledge-graphs-under-partial-obser.md) | agent, benchmark, long-term |
+| 2026-05-21 | arXiv | [LCGuard: Latent Communication Guard for Safe KV Sharing in Multi-Agent Systems](content/papers/lcguard-latent-communication-guard-for-safe-kv-sharing-in-multi-agent-systems.md) | agent, benchmark, context |
+| 2026-05-21 | arXiv | [DeferMem: Query-Time Evidence Distillation via Reinforcement Learning for Long-Term Memory QA](content/papers/defermem-query-time-evidence-distillation-via-reinforcement-learning-for-long-te.md) | agent, conversation, long-term |
 | 2026-05-21 | arXiv | [AtelierEval: Agentic Evaluation of Humans & LLMs as Text-to-Image Prompters](content/papers/ateliereval-agentic-evaluation-of-humans-llms-as-text-to-image-prompters.md) | agent, benchmark |
 | 2026-05-20 | OpenReview | [Ontology-Guided Long-Term Agent Memory for Conversational RAG](content/papers/ontology-guided-long-term-agent-memory-for-conversational-rag.md) | agent, benchmark, context |
+| 2026-05-20 | arXiv | [NeuSymMS: A Hybrid Neuro-Symbolic Memory System for Persistent, Self-Curating LLM Agents](content/papers/neusymms-a-hybrid-neuro-symbolic-memory-system-for-persistent-self-curating-llm-.md) | agent, context, long-term |
 | 2026-05-20 | arXiv | [Memory-R2: Fair Credit Assignment for Long-Horizon Memory-Augmented LLM Agents](content/papers/memory-r2-fair-credit-assignment-for-long-horizon-memory-augmented-llm-agents.md) | agent, context |
 | 2026-05-20 | arXiv | [Memory Grafting: Scaling Language Model Pre-training via Offline Conditional Memory](content/papers/memory-grafting-scaling-language-model-pre-training-via-offline-conditional-memo.md) | benchmark, context |
 | 2026-05-20 | arXiv | [MemGym: a Long-Horizon Memory Environment for LLM Agents](content/papers/memgym-a-long-horizon-memory-environment-for-llm-agents.md) | agent, benchmark, compression |
@@ -67,11 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-05-19 | arXiv | [Memory-Augmented Reinforcement Learning Agent for CAD Generation](content/papers/memory-augmented-reinforcement-learning-agent-for-cad-generation.md) | agent, retrieval |
 | 2026-05-19 | arXiv | [MINTEval: Evaluating Memory under Multi-Target Interference in Long-Horizon Agent Systems](content/papers/minteval-evaluating-memory-under-multi-target-interference-in-long-horizon-agent.md) | agent, benchmark, context |
 | 2026-05-19 | arXiv | [EngiAI: A Multi-Agent Framework and Benchmark Suite for LLM-Driven Engineering Design](content/papers/engiai-a-multi-agent-framework-and-benchmark-suite-for-llm-driven-engineering-de.md) | agent, benchmark, retrieval |
-| 2026-05-18 | arXiv | [TinySAM 2: Extreme Memory Compression for Efficient Track Anything Model](content/papers/tinysam-2-extreme-memory-compression-for-efficient-track-anything-model.md) | compression |
-| 2026-05-18 | arXiv | [SocialMemBench: Are AI Memory Systems Ready for Social Group Settings?](content/papers/socialmembench-are-ai-memory-systems-ready-for-social-group-settings.md) | agent, benchmark, context |
-| 2026-05-18 | arXiv | [OEP: Poisoning Self-Evolving LLM Agents via Locally Correct but Non-Transferable Experiences](content/papers/oep-poisoning-self-evolving-llm-agents-via-locally-correct-but-non-transferable-.md) | agent |
-| 2026-05-18 | arXiv | [LongMINT: Evaluating Memory under Multi-Target Interference in Long-Horizon Agent Systems](content/papers/longmint-evaluating-memory-under-multi-target-interference-in-long-horizon-agent.md) | agent, benchmark, context |
-| 2026-05-18 | arXiv | [Hidden in Memory: Sleeper Memory Poisoning in LLM Agents](content/papers/hidden-in-memory-sleeper-memory-poisoning-in-llm-agents.md) | agent, context, conversation |
 
 ## Suggested GitHub Setup
 

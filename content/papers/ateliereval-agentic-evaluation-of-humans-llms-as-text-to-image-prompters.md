@@ -27,7 +27,7 @@ Text-to-image (T2I) systems increasingly rely on upstream prompters, either huma
 ## Why It Was Included
 - 来源：arXiv
 - 高亮主题命中：agent, benchmark
-- 检索关键词命中：memory-augmented
+- 检索关键词命中：memory augmented, memory-augmented
 - 来源分类信息：cs.AI
 
 ## Abstract Snapshot
