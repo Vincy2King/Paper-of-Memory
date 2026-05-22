@@ -39,20 +39,22 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **276**
-- Last generated: **2026-05-21**
+- Total tracked papers: **278**
+- Last generated: **2026-05-22**
 
 ## Papers by Source
 
 - ACL Anthology: **1**
-- arXiv: **240**
+- arXiv: **242**
 - OpenReview: **35**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-05-21 | arXiv | [AtelierEval: Agentic Evaluation of Humans & LLMs as Text-to-Image Prompters](content/papers/ateliereval-agentic-evaluation-of-humans-llms-as-text-to-image-prompters.md) | agent, benchmark |
 | 2026-05-20 | OpenReview | [Ontology-Guided Long-Term Agent Memory for Conversational RAG](content/papers/ontology-guided-long-term-agent-memory-for-conversational-rag.md) | agent, benchmark, context |
+| 2026-05-20 | arXiv | [Memory-R2: Fair Credit Assignment for Long-Horizon Memory-Augmented LLM Agents](content/papers/memory-r2-fair-credit-assignment-for-long-horizon-memory-augmented-llm-agents.md) | agent, context |
 | 2026-05-20 | arXiv | [Memory Grafting: Scaling Language Model Pre-training via Offline Conditional Memory](content/papers/memory-grafting-scaling-language-model-pre-training-via-offline-conditional-memo.md) | benchmark, context |
 | 2026-05-20 | arXiv | [MemGym: a Long-Horizon Memory Environment for LLM Agents](content/papers/memgym-a-long-horizon-memory-environment-for-llm-agents.md) | agent, benchmark, compression |
 | 2026-05-20 | arXiv | [MemConflict: Evaluating Long-Term Memory Systems Under Memory Conflicts](content/papers/memconflict-evaluating-long-term-memory-systems-under-memory-conflicts.md) | agent, benchmark, context |
@@ -70,8 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-05-18 | arXiv | [OEP: Poisoning Self-Evolving LLM Agents via Locally Correct but Non-Transferable Experiences](content/papers/oep-poisoning-self-evolving-llm-agents-via-locally-correct-but-non-transferable-.md) | agent |
 | 2026-05-18 | arXiv | [LongMINT: Evaluating Memory under Multi-Target Interference in Long-Horizon Agent Systems](content/papers/longmint-evaluating-memory-under-multi-target-interference-in-long-horizon-agent.md) | agent, benchmark, context |
 | 2026-05-18 | arXiv | [Hidden in Memory: Sleeper Memory Poisoning in LLM Agents](content/papers/hidden-in-memory-sleeper-memory-poisoning-in-llm-agents.md) | agent, context, conversation |
-| 2026-05-18 | arXiv | [EvoMemBench: Benchmarking Agent Memory from a Self-Evolving Perspective](content/papers/evomembench-benchmarking-agent-memory-from-a-self-evolving-perspective.md) | agent, benchmark, context |
-| 2026-05-18 | arXiv | [DimMem: Dimensional Structuring for Efficient Long-Term Agent Memory](content/papers/dimmem-dimensional-structuring-for-efficient-long-term-agent-memory.md) | agent, benchmark, context |
 
 ## Suggested GitHub Setup
 
