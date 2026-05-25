@@ -39,19 +39,20 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **287**
+- Total tracked papers: **288**
 - Last generated: **2026-05-25**
 
 ## Papers by Source
 
 - ACL Anthology: **1**
 - arXiv: **251**
-- OpenReview: **35**
+- OpenReview: **36**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-05-25 | OpenReview | [LatentMem: Customizing Latent Memory for Multi-Agent Systems](content/papers/latentmem-customizing-latent-memory-for-multi-agent-systems.md) | agent, benchmark, context |
 | 2026-05-22 | arXiv | [Preisach Attention: A Hysteretic Model of Sequential Memory](content/papers/preisach-attention-a-hysteretic-model-of-sequential-memory.md) | episodic, retrieval |
 | 2026-05-22 | arXiv | [MemAudit: Post-hoc Auditing of Poisoned Agent Memory via Causal Attribution and Structural Anomaly Detection](content/papers/memaudit-post-hoc-auditing-of-poisoned-agent-memory-via-causal-attribution-and-s.md) | agent |
 | 2026-05-21 | arXiv | [What Training Data Teaches RL Memory Agents: An Empirical Study of Curriculum Effects in Memory-Augmented QA](content/papers/what-training-data-teaches-rl-memory-agents-an-empirical-study-of-curriculum-eff.md) | agent, benchmark |
@@ -71,7 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-05-20 | arXiv | [CALMem : Application-Layer Dual Memory for Conversational AI](content/papers/calmem-application-layer-dual-memory-for-conversational-ai.md) | agent, context, conversation |
 | 2026-05-20 | arXiv | [Auto-Dreamer: Learning Offline Memory Consolidation for Language Agents](content/papers/auto-dreamer-learning-offline-memory-consolidation-for-language-agents.md) | agent, retrieval |
 | 2026-05-19 | arXiv | [SimGym: A Framework for A/B Test Simulation in E-Commerce with Traffic-Grounded VLM Agents](content/papers/simgym-a-framework-for-a-b-test-simulation-in-e-commerce-with-traffic-grounded-v.md) | agent, episodic |
-| 2026-05-19 | arXiv | [Rethinking How to Remember: Beyond Atomic Facts in Lifelong LLM Agent Memory](content/papers/rethinking-how-to-remember-beyond-atomic-facts-in-lifelong-llm-agent-memory.md) | agent, long-term, retrieval |
 
 ## Suggested GitHub Setup
 
