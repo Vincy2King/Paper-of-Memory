@@ -39,20 +39,24 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **283**
-- Last generated: **2026-05-24**
+- Total tracked papers: **287**
+- Last generated: **2026-05-25**
 
 ## Papers by Source
 
 - ACL Anthology: **1**
-- arXiv: **247**
+- arXiv: **251**
 - OpenReview: **35**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-05-22 | arXiv | [Preisach Attention: A Hysteretic Model of Sequential Memory](content/papers/preisach-attention-a-hysteretic-model-of-sequential-memory.md) | episodic, retrieval |
+| 2026-05-22 | arXiv | [MemAudit: Post-hoc Auditing of Poisoned Agent Memory via Causal Attribution and Structural Anomaly Detection](content/papers/memaudit-post-hoc-auditing-of-poisoned-agent-memory-via-causal-attribution-and-s.md) | agent |
+| 2026-05-21 | arXiv | [What Training Data Teaches RL Memory Agents: An Empirical Study of Curriculum Effects in Memory-Augmented QA](content/papers/what-training-data-teaches-rl-memory-agents-an-empirical-study-of-curriculum-eff.md) | agent, benchmark |
 | 2026-05-21 | arXiv | [The Log is the Agent: Event-Sourced Reactive Graphs for Auditable, Forkable Agentic Systems](content/papers/the-log-is-the-agent-event-sourced-reactive-graphs-for-auditable-forkable-agenti.md) | agent, conversation, retrieval |
+| 2026-05-21 | arXiv | [The Efficiency Frontier: A Unified Framework for Cost-Performance Optimization in LLM Context Management](content/papers/the-efficiency-frontier-a-unified-framework-for-cost-performance-optimization-in.md) | compression, context, retrieval |
 | 2026-05-21 | arXiv | [Short-Term-to-Long-Term Memory Transfer for Knowledge Graphs under Partial Observability](content/papers/short-term-to-long-term-memory-transfer-for-knowledge-graphs-under-partial-obser.md) | agent, benchmark, long-term |
 | 2026-05-21 | arXiv | [LCGuard: Latent Communication Guard for Safe KV Sharing in Multi-Agent Systems](content/papers/lcguard-latent-communication-guard-for-safe-kv-sharing-in-multi-agent-systems.md) | agent, benchmark, context |
 | 2026-05-21 | arXiv | [DeferMem: Query-Time Evidence Distillation via Reinforcement Learning for Long-Term Memory QA](content/papers/defermem-query-time-evidence-distillation-via-reinforcement-learning-for-long-te.md) | agent, conversation, long-term |
@@ -68,10 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-05-20 | arXiv | [Auto-Dreamer: Learning Offline Memory Consolidation for Language Agents](content/papers/auto-dreamer-learning-offline-memory-consolidation-for-language-agents.md) | agent, retrieval |
 | 2026-05-19 | arXiv | [SimGym: A Framework for A/B Test Simulation in E-Commerce with Traffic-Grounded VLM Agents](content/papers/simgym-a-framework-for-a-b-test-simulation-in-e-commerce-with-traffic-grounded-v.md) | agent, episodic |
 | 2026-05-19 | arXiv | [Rethinking How to Remember: Beyond Atomic Facts in Lifelong LLM Agent Memory](content/papers/rethinking-how-to-remember-beyond-atomic-facts-in-lifelong-llm-agent-memory.md) | agent, long-term, retrieval |
-| 2026-05-19 | arXiv | [Mix-Quant: Quantized Prefilling, Precise Decoding for Agentic LLMs](content/papers/mix-quant-quantized-prefilling-precise-decoding-for-agentic-llms.md) | agent, benchmark, context |
-| 2026-05-19 | arXiv | [Memory-Augmented Reinforcement Learning Agent for CAD Generation](content/papers/memory-augmented-reinforcement-learning-agent-for-cad-generation.md) | agent, retrieval |
-| 2026-05-19 | arXiv | [MINTEval: Evaluating Memory under Multi-Target Interference in Long-Horizon Agent Systems](content/papers/minteval-evaluating-memory-under-multi-target-interference-in-long-horizon-agent.md) | agent, benchmark, context |
-| 2026-05-19 | arXiv | [EngiAI: A Multi-Agent Framework and Benchmark Suite for LLM-Driven Engineering Design](content/papers/engiai-a-multi-agent-framework-and-benchmark-suite-for-llm-driven-engineering-de.md) | agent, benchmark, retrieval |
 
 ## Suggested GitHub Setup
 

@@ -1,0 +1,39 @@
+# Preisach Attention: A Hysteretic Model of Sequential Memory
+
+- Source: arXiv
+- Venue: N/A
+- Paper ID: 2605.23603v1
+- Published: 2026-05-22
+- Updated: 2026-05-22
+- Authors: Piotr Frydrych
+- Tags: episodic, retrieval
+- Categories: cs.LG, cond-mat.dis-nn, cs.AI, cs.NE
+- URL: http://arxiv.org/abs/2605.23603v1
+
+## One-Sentence Summary
+We introduce the Preisach Attention Layer (PAL), a novel sequence modelling architecture grounded in the classical Preisach hysteresis operator from mathematical physics.
+
+## Introduction
+这篇论文被纳入仓库，是因为它和 `episodic, retrieval` 这些主题直接相关。
+
+它当前来自 `arXiv`。
+
+从摘要来看，作者主要关注的是：We introduce the Preisach Attention Layer (PAL), a novel sequence modelling architecture grounded in the classical Preisach hysteresis operator from mathematical physics.
+
+进一步看，论文的核心做法或实验重点可以概括为：PAL replaces the softmax attention mechanism with a binary relay operator parameterised by learned activation and deactivation thresholds, maintaining a stack of local extrema as its internal state.
+
+如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。
+
+## Why It Was Included
+- 来源：arXiv
+- 高亮主题命中：episodic, retrieval
+- 检索关键词命中：episodic memory
+- 来源分类信息：cs.LG, cond-mat.dis-nn, cs.AI, cs.NE
+
+## Abstract Snapshot
+We introduce the Preisach Attention Layer (PAL), a novel sequence modelling architecture grounded in the classical Preisach hysteresis operator from mathematical physics. PAL replaces the softmax attention mechanism with a binary relay operator parameterised by learned activation and deactivation thresholds, maintaining a stack of local extrema as its internal state. A single-layer PAL-Transformer with O(1) depth is Turing-complete under arbitrary precision arithmetic, achievable through simulation of a two-stack pushdown automaton -- in contrast to the O(log n) depth required by standard hard-attention transformers. Second, we prove that the function classes computable by PAL and by the transformer are incomparable: PAL computes historical range statistics in O(1) layers that require O(log n) layers for transformers, while transformers support random-access retrieval that PAL cannot perform without auxiliary state. The separating property is rate-independence -- PAL responds only to the sequence of local extrema, not to absolute token positions or temporal spacing. Third, we show that the extremum stack constitutes a minimal sufficient statistic of the input history for all rate-independent functionals, providing a formal analogue of the wiping property in classical hysteresis theory. PAL is thus an efficient architecture for tasks with long episodic memory and weak positional dependence, with O(n log n) total inference cost versus O(n^2) for standard attention.
+
+## Manual Notes
+<!-- MANUAL_NOTES_START -->
+在这里补充你的人工解读、和其他工作的关系、复现记录，或你认为最值得读的段落。
+<!-- MANUAL_NOTES_END -->

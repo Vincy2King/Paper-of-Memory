@@ -1,5 +1,112 @@
 [
   {
+    "abstract": "We introduce the Preisach Attention Layer (PAL), a novel sequence modelling architecture grounded in the classical Preisach hysteresis operator from mathematical physics. PAL replaces the softmax attention mechanism with a binary relay operator parameterised by learned activation and deactivation thresholds, maintaining a stack of local extrema as its internal state. A single-layer PAL-Transformer with O(1) depth is Turing-complete under arbitrary precision arithmetic, achievable through simulation of a two-stack pushdown automaton -- in contrast to the O(log n) depth required by standard hard-attention transformers. Second, we prove that the function classes computable by PAL and by the transformer are incomparable: PAL computes historical range statistics in O(1) layers that require O(log n) layers for transformers, while transformers support random-access retrieval that PAL cannot perform without auxiliary state. The separating property is rate-independence -- PAL responds only to the sequence of local extrema, not to absolute token positions or temporal spacing. Third, we show that the extremum stack constitutes a minimal sufficient statistic of the input history for all rate-independent functionals, providing a formal analogue of the wiping property in classical hysteresis theory. PAL is thus an efficient architecture for tasks with long episodic memory and weak positional dependence, with O(n log n) total inference cost versus O(n^2) for standard attention.",
+    "authors": [
+      "Piotr Frydrych"
+    ],
+    "categories": [
+      "cs.LG",
+      "cond-mat.dis-nn",
+      "cs.AI",
+      "cs.NE"
+    ],
+    "id": "2605.23603v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `episodic, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：We introduce the Preisach Attention Layer (PAL), a novel sequence modelling architecture grounded in the classical Preisach hysteresis operator from mathematical physics.\n\n进一步看，论文的核心做法或实验重点可以概括为：PAL replaces the softmax attention mechanism with a binary relay operator parameterised by learned activation and deactivation thresholds, maintaining a stack of local extrema as its internal state.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "episodic memory"
+    ],
+    "one_liner": "We introduce the Preisach Attention Layer (PAL), a novel sequence modelling architecture grounded in the classical Preisach hysteresis operator from mathematical physics.",
+    "published": "2026-05-22",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：episodic, retrieval\n- 检索关键词命中：episodic memory\n- 来源分类信息：cs.LG, cond-mat.dis-nn, cs.AI, cs.NE",
+    "slug": "preisach-attention-a-hysteretic-model-of-sequential-memory",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2605.23603v1",
+    "tags": [
+      "episodic",
+      "retrieval"
+    ],
+    "title": "Preisach Attention: A Hysteretic Model of Sequential Memory",
+    "updated": "2026-05-22",
+    "url": "http://arxiv.org/abs/2605.23603v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Large language model agents increasingly rely on persistent memory to store past interactions, retrieve relevant demonstrations, and improve long-horizon task execution. However, this memory mechanism also creates a practical security vulnerability: an adversarial user may inject malicious records into the agent's memory through ordinary interaction, and these records can later be retrieved to steer the agent's reasoning and actions. Existing defenses primarily focus on online intervention, such as prompt filtering or output blocking, but they do not address the post-hoc question of which stored memories are responsible after harmful behavior has already been observed. We propose \\textbf{MemAudit}, a post-hoc causal memory auditing framework for memory-augmented LLM agents. The framework combines two complementary signals: (1) a counterfactual memory influence score that measures each memory's causal contribution to harmful outputs, and (2) a memory consistency graph that identifies structurally anomalous memories within the broader memory store. We evaluate MemAudit against MINJA, a query-only memory injection attack in which malicious records are generated and stored through normal agent interactions rather than direct memory-bank modification. Across both QA and reasoning-agent settings, MemAudit substantially reduces attack success rates under realistic post-hoc auditing scenarios. The results show that QA attack success is reduced from $70\\%$ to $0\\%$, while RAP attack success drops from $83.3\\%$ to $0\\%$.",
+    "authors": [
+      "Zhewen Tan",
+      "Yilun Yao",
+      "Huiyan Jin",
+      "Wenhan Yu",
+      "Guoan Wang",
+      "Mengyuan Fan",
+      "liang lu",
+      "Feng Liu",
+      "Xiangzheng Zhang",
+      "Duohe Ma",
+      "Tong Yang",
+      "Lin Sun"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2605.23723v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Large language model agents increasingly rely on persistent memory to store past interactions, retrieve relevant demonstrations, and improve long-horizon task execution.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, this memory mechanism also creates a practical security vulnerability: an adversarial user may inject malicious records into the agent's memory through ordinary interaction, and these records can later be...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory",
+      "memory augmented",
+      "memory-augmented",
+      "persistent memory"
+    ],
+    "one_liner": "Large language model agents increasingly rely on persistent memory to store past interactions, retrieve relevant demonstrations, and improve long-horizon task execution.",
+    "published": "2026-05-22",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent\n- 检索关键词命中：agent memory, memory augmented, memory-augmented, persistent memory\n- 来源分类信息：cs.AI",
+    "slug": "memaudit-post-hoc-auditing-of-poisoned-agent-memory-via-causal-attribution-and-s",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2605.23723v1",
+    "tags": [
+      "agent"
+    ],
+    "title": "MemAudit: Post-hoc Auditing of Poisoned Agent Memory via Causal Attribution and Structural Anomaly Detection",
+    "updated": "2026-05-22",
+    "url": "http://arxiv.org/abs/2605.23723v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Reinforcement learning (RL) has emerged as a viable recipe for training LLM agents to reason over external memory banks in multi-session dialogue. Existing work trains exclusively on a single benchmark, leaving open how the composition of training data shapes the skills a memory agent acquires. We present a controlled empirical study that holds architecture, RL algorithm, and all hyperparameters fixed and varies only the training curriculum across three conditions: in-domain (LoCoMo), mixed-benchmark (LoCoMo + LongMemEval), and out-of-domain (LongMemEval only). Across two benchmarks and ten question types, curriculum composition acts as a fine-grained lever on specialization rather than a uniform scaling factor on performance. The mixed curriculum yields the strongest overall F1 on both evaluation sets. Training on a narrow out-of-domain set transfers a targeted skill - temporal reasoning - despite weak aggregate performance. Per-type differences substantially exceed aggregate differences, indicating that single-number benchmark comparisons systematically underreport curriculum effects. We further report two practical lessons from adapting GRPO to a single-GPU regime: cross-benchmark mixing requires filtering format-specific noise from memory banks to preserve training signal, and binary exact-match reward produces no learning signal at the small group sizes (G = 4) required on one GPU, motivating continuous reward functions in this regime.",
+    "authors": [
+      "Xinjie He",
+      "Zhiyuan Lin",
+      "Su Liu",
+      "Jialun Wu",
+      "Qiyang Xie",
+      "Weikai Zhou",
+      "Shuai Xiao"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "id": "2605.23067v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Reinforcement learning (RL) has emerged as a viable recipe for training LLM agents to reason over external memory banks in multi-session dialogue.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing work trains exclusively on a single benchmark, leaving open how the composition of training data shapes the skills a memory agent acquires.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory augmented",
+      "memory-augmented"
+    ],
+    "one_liner": "Reinforcement learning (RL) has emerged as a viable recipe for training LLM agents to reason over external memory banks in multi-session dialogue.",
+    "published": "2026-05-21",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark\n- 检索关键词命中：memory augmented, memory-augmented\n- 来源分类信息：cs.CL",
+    "slug": "what-training-data-teaches-rl-memory-agents-an-empirical-study-of-curriculum-eff",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2605.23067v1",
+    "tags": [
+      "agent",
+      "benchmark"
+    ],
+    "title": "What Training Data Teaches RL Memory Agents: An Empirical Study of Curriculum Effects in Memory-Augmented QA",
+    "updated": "2026-05-21",
+    "url": "http://arxiv.org/abs/2605.23067v1",
+    "venue": ""
+  },
+  {
     "abstract": "Most agent frameworks are built around the language model: a conversation loop comes first, then tools, then rules, and finally a logging layer bolted on for observability, with state persisted as retrievable \"memory.\" We describe ActiveGraph, a runtime that inverts this arrangement. The append-only event log is the source of truth; the working graph is a deterministic projection of that log; and behaviors--ordinary functions, classes, LLM-backed routines, or logic attached to typed edges--react to changes in the graph and emit new events. No component instructs another; coordination happens entirely through the shared graph. This single design decision yields three properties that retrieval-and-summarization memory systems do not provide: deterministic replay of any run from its log, cheap forking that branches a run at any event without re-executing the shared prefix, and end-to-end lineage from a high-level goal down to the individual model call that produced each artifact. We present the architecture, a determinism contract that makes replay sound, and a worked diligence example whose full causal structure is reconstructable from the log alone. We discuss--without claiming to demonstrate--why this substrate is unusually well suited to self-improving agents, and how it extends the BabyAGI lineage and prior graph-memory research.",
     "authors": [
       "Yohei Nakajima"
@@ -27,6 +134,39 @@
     "title": "The Log is the Agent: Event-Sourced Reactive Graphs for Auditable, Forkable Agentic Systems",
     "updated": "2026-05-21",
     "url": "http://arxiv.org/abs/2605.21997v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Large language models (LLMs) increasingly rely on long-context processing, but expanding context windows introduces substantial computational and financial costs. Existing context reduction approaches, including retrieval and memory compression methods, are typically evaluated using performance and efficiency metrics independently, limiting systematic comparison and deployment-aware decision-making. This paper introduces The Efficiency Frontier, a unified framework for cost-performance optimization in LLM context management. The framework models context strategy selection as a deployment-aware optimization problem that jointly accounts for task performance, token cost, and preprocessing reuse through amortized cost modeling. Unlike existing evaluations that compare methods in isolation, the proposed framework enables decision-oriented analysis of when different context management strategies become preferable under varying operational conditions. Evaluated on 5,000 HotpotQA instances, the framework reveals distinct operational regimes and transition boundaries between retrieval-based and preprocessing-based strategies. Results show that deployment-aware optimization reduces effective token usage by approximately 25% at comparable performance ($F1 \\approx 0.78$), while amortized memory compression achieves over 50% lower token cost relative to full-context prompting in higher-performance settings. Overall, the proposed framework provides a principled and practical foundation for evaluating and deploying scalable, efficient, and sustainable LLM systems.",
+    "authors": [
+      "Binqi Shen",
+      "Lier Jin",
+      "Hanyu Cai",
+      "Lan Hu",
+      "Yuting Xin"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "id": "2605.23071v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `compression, context, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Large language models (LLMs) increasingly rely on long-context processing, but expanding context windows introduces substantial computational and financial costs.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing context reduction approaches, including retrieval and memory compression methods, are typically evaluated using performance and efficiency metrics independently, limiting systematic comparison and deployment-...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory compression"
+    ],
+    "one_liner": "Large language models (LLMs) increasingly rely on long-context processing, but expanding context windows introduces substantial computational and financial costs.",
+    "published": "2026-05-21",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：compression, context, retrieval\n- 检索关键词命中：memory compression\n- 来源分类信息：cs.CL",
+    "slug": "the-efficiency-frontier-a-unified-framework-for-cost-performance-optimization-in",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2605.23071v1",
+    "tags": [
+      "compression",
+      "context",
+      "retrieval"
+    ],
+    "title": "The Efficiency Frontier: A Unified Framework for Cost-Performance Optimization in LLM Context Management",
+    "updated": "2026-05-21",
+    "url": "http://arxiv.org/abs/2605.23071v1",
     "venue": ""
   },
   {
