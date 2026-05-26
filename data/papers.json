@@ -1,5 +1,39 @@
 [
   {
+    "abstract": "Block-level data deduplication is prevalent in various-scaled storage systems for saving storage space and improving I/O performance by reducing write operations. However, data deduplication induces additional metadata of blocks, leading to I/O amplification. Furthermore, to ensure the correctness of deduplicated user data, data deduplication systems need to guarantee crash consistency. In this paper, we propose CADedup, to achieve high performance while ensuring crash consistency by using persistent memory. By taking advantage of the byte-addressability and near-DRAM latency of persistent memory, we design an efficient journaling mechanism to manage the deduplication metadata of CADedup. Additionally, we adopt a hybrid storage architecture of DRAM and persistent memory to minimize space costs. We implement CADedup through the device-mapper interface in the Linux kernel. We conduct extensive experiments on Intel Optane PMEM to evaluate CAD-edup with widely-used benchmarks. Experimental results show that compared with the no-deduplication system, CADedup can achieve up to 1×-3× improvement in many workloads of server storage and has negligible throughput drop in the worst case.",
+    "authors": [
+      "Chunlin Song",
+      "Xianzhang Chen",
+      "Duo Liu",
+      "Xiaoliu Feng",
+      "Xi Yu",
+      "Jiali Li",
+      "Yujuan Tan",
+      "Ao Ren"
+    ],
+    "categories": [
+      "DBLP.org/-/Record"
+    ],
+    "id": "openreview:skNEA2npnO",
+    "intro": "这篇论文被纳入仓库，是因为它和 `benchmark` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ICCD 2022` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Block-level data deduplication is prevalent in various-scaled storage systems for saving storage space and improving I/O performance by reducing write operations.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, data deduplication induces additional metadata of blocks, leading to I/O amplification.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "persistent memory"
+    ],
+    "one_liner": "Block-level data deduplication is prevalent in various-scaled storage systems for saving storage space and improving I/O performance by reducing write operations.",
+    "published": "2022-01-01",
+    "relevance": "- 来源：OpenReview\n- Venue：ICCD 2022\n- 高亮主题命中：benchmark\n- 检索关键词命中：persistent memory\n- 来源分类信息：DBLP.org/-/Record",
+    "slug": "cadedup-high-performance-consistency-aware-deduplication-based-on-persistent-mem",
+    "source": "OpenReview",
+    "source_key": "skNEA2npnO",
+    "tags": [
+      "benchmark"
+    ],
+    "title": "CADedup: High-performance Consistency-aware Deduplication Based on Persistent Memory",
+    "updated": "2026-05-26",
+    "url": "https://openreview.net/forum?id=skNEA2npnO",
+    "venue": "ICCD 2022"
+  },
+  {
     "abstract": "Large language model (LLM)-powered multi-agent systems (MAS) demonstrate remarkable collective intelligence, wherein multi-agent memory serves as a pivotal mechanism for continual adaptation. However, existing multi-agent memory designs remain constrained by two fundamental bottlenecks: (i) memory homogenization arising from the absence of role-aware customization, and (ii) information overload induced by excessively fine-grained memory entries. To address these limitations, we propose LatentMem, a learnable multi-agent memory framework designed to customize agent-specific memories in a token-efficient manner. Specifically, LatentMem comprises an experience bank that stores raw interaction trajectories in a lightweight form, and a memory composer that synthesizes compact latent memories conditioned on retrieved experience and agent-specific contexts. Further, we introduce Latent Memory Policy Optimization (LMPO), which propagates task-level optimization signals through latent memories to the composer, encouraging it to produce compact and high-utility representations. Extensive experiments across diverse benchmarks and mainstream MAS frameworks show that LatentMem achieves a performance gain of up to $19.36$% over vanilla settings and consistently outperforms existing memory architectures, without requiring any modifications to the underlying frameworks.",
     "authors": [
       "{'fullname': 'Muxin Fu', 'username': ''}",
