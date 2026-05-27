@@ -39,39 +39,39 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **290**
+- Total tracked papers: **318**
 - Last generated: **2026-05-27**
 
 ## Papers by Source
 
 - ACL Anthology: **1**
-- arXiv: **251**
+- arXiv: **279**
 - OpenReview: **38**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-05-27 | OpenReview | [LatentMem: Customizing Latent Memory for Multi-Agent Systems](content/papers/latentmem-customizing-latent-memory-for-multi-agent-systems.md) | agent, benchmark, context |
+| 2026-05-26 | arXiv | [Modeling Agentic Technical Debt and Stochastic Tax: A Standalone Framework for Measurement, Simulation, and Dashboarding](content/papers/modeling-agentic-technical-debt-and-stochastic-tax-a-standalone-framework-for-me.md) | agent, context |
+| 2026-05-26 | arXiv | [MUSE-Autoskill: Self-Evolving Agents via Skill Creation, Memory, Management, and Evaluation](content/papers/muse-autoskill-self-evolving-agents-via-skill-creation-memory-management-and-eva.md) | agent, long-term |
+| 2026-05-26 | arXiv | [Effect-Transparent Governance for AI Workflow Architectures: Semantic Preservation, Expressive Minimality, and Decidability Boundaries](content/papers/effect-transparent-governance-for-ai-workflow-architectures-semantic-preservatio.md) | memory |
+| 2026-05-26 | arXiv | [ENPMR-Bench: Benchmarking Proactive Memory Retrieval for Emotional Support Agents](content/papers/enpmr-bench-benchmarking-proactive-memory-retrieval-for-emotional-support-agents.md) | agent, benchmark, retrieval |
 | 2026-05-26 | OpenReview | [CADedup: High-performance Consistency-aware Deduplication Based on Persistent Memory](content/papers/cadedup-high-performance-consistency-aware-deduplication-based-on-persistent-mem.md) | benchmark |
+| 2026-05-26 | arXiv | [AuthTrace: Diagnosing Evidence Construction in Thematically Dense Single-Author Corpora](content/papers/authtrace-diagnosing-evidence-construction-in-thematically-dense-single-author-c.md) | benchmark, retrieval |
+| 2026-05-26 | arXiv | [Anticipate and Learn: Unleashing Idle-Time Compute in Proactive Agents](content/papers/anticipate-and-learn-unleashing-idle-time-compute-in-proactive-agents.md) | agent, benchmark |
 | 2026-05-26 | OpenReview | [APEX-MEM: Agentic Semi-Structured Memory with Temporal Reasoning for Long-Term Conversational AI](content/papers/apex-mem-agentic-semi-structured-memory-with-temporal-reasoning-for-long-term-co.md) | agent, context, conversation |
-| 2026-05-25 | OpenReview | [LatentMem: Customizing Latent Memory for Multi-Agent Systems](content/papers/latentmem-customizing-latent-memory-for-multi-agent-systems.md) | agent, benchmark, context |
-| 2026-05-22 | arXiv | [Preisach Attention: A Hysteretic Model of Sequential Memory](content/papers/preisach-attention-a-hysteretic-model-of-sequential-memory.md) | episodic, retrieval |
-| 2026-05-22 | arXiv | [MemAudit: Post-hoc Auditing of Poisoned Agent Memory via Causal Attribution and Structural Anomaly Detection](content/papers/memaudit-post-hoc-auditing-of-poisoned-agent-memory-via-causal-attribution-and-s.md) | agent |
-| 2026-05-21 | arXiv | [What Training Data Teaches RL Memory Agents: An Empirical Study of Curriculum Effects in Memory-Augmented QA](content/papers/what-training-data-teaches-rl-memory-agents-an-empirical-study-of-curriculum-eff.md) | agent, benchmark |
-| 2026-05-21 | arXiv | [The Log is the Agent: Event-Sourced Reactive Graphs for Auditable, Forkable Agentic Systems](content/papers/the-log-is-the-agent-event-sourced-reactive-graphs-for-auditable-forkable-agenti.md) | agent, conversation, retrieval |
-| 2026-05-21 | arXiv | [The Efficiency Frontier: A Unified Framework for Cost-Performance Optimization in LLM Context Management](content/papers/the-efficiency-frontier-a-unified-framework-for-cost-performance-optimization-in.md) | compression, context, retrieval |
-| 2026-05-21 | arXiv | [Short-Term-to-Long-Term Memory Transfer for Knowledge Graphs under Partial Observability](content/papers/short-term-to-long-term-memory-transfer-for-knowledge-graphs-under-partial-obser.md) | agent, benchmark, long-term |
-| 2026-05-21 | arXiv | [LCGuard: Latent Communication Guard for Safe KV Sharing in Multi-Agent Systems](content/papers/lcguard-latent-communication-guard-for-safe-kv-sharing-in-multi-agent-systems.md) | agent, benchmark, context |
-| 2026-05-21 | arXiv | [DeferMem: Query-Time Evidence Distillation via Reinforcement Learning for Long-Term Memory QA](content/papers/defermem-query-time-evidence-distillation-via-reinforcement-learning-for-long-te.md) | agent, conversation, long-term |
-| 2026-05-21 | arXiv | [AtelierEval: Agentic Evaluation of Humans & LLMs as Text-to-Image Prompters](content/papers/ateliereval-agentic-evaluation-of-humans-llms-as-text-to-image-prompters.md) | agent, benchmark |
-| 2026-05-20 | OpenReview | [Ontology-Guided Long-Term Agent Memory for Conversational RAG](content/papers/ontology-guided-long-term-agent-memory-for-conversational-rag.md) | agent, benchmark, context |
-| 2026-05-20 | arXiv | [NeuSymMS: A Hybrid Neuro-Symbolic Memory System for Persistent, Self-Curating LLM Agents](content/papers/neusymms-a-hybrid-neuro-symbolic-memory-system-for-persistent-self-curating-llm-.md) | agent, context, long-term |
-| 2026-05-20 | arXiv | [Memory-R2: Fair Credit Assignment for Long-Horizon Memory-Augmented LLM Agents](content/papers/memory-r2-fair-credit-assignment-for-long-horizon-memory-augmented-llm-agents.md) | agent, context |
-| 2026-05-20 | arXiv | [Memory Grafting: Scaling Language Model Pre-training via Offline Conditional Memory](content/papers/memory-grafting-scaling-language-model-pre-training-via-offline-conditional-memo.md) | benchmark, context |
-| 2026-05-20 | arXiv | [MemGym: a Long-Horizon Memory Environment for LLM Agents](content/papers/memgym-a-long-horizon-memory-environment-for-llm-agents.md) | agent, benchmark, compression |
-| 2026-05-20 | arXiv | [MemConflict: Evaluating Long-Term Memory Systems Under Memory Conflicts](content/papers/memconflict-evaluating-long-term-memory-systems-under-memory-conflicts.md) | agent, benchmark, context |
-| 2026-05-20 | arXiv | [Mem-$π$: Adaptive Memory through Learning When and What to Generate](content/papers/mem-adaptive-memory-through-learning-when-and-what-to-generate.md) | agent, benchmark, context |
-| 2026-05-20 | arXiv | [CALMem : Application-Layer Dual Memory for Conversational AI](content/papers/calmem-application-layer-dual-memory-for-conversational-ai.md) | agent, context, conversation |
+| 2026-05-26 | arXiv | [AMARIS: A Memory-Augmented Rubric Improvement System for Rubric-Based Reinforcement Learning](content/papers/amaris-a-memory-augmented-rubric-improvement-system-for-rubric-based-reinforceme.md) | memory-augmented |
+| 2026-05-25 | arXiv | [Security of OpenClaw Agents: Fundamentals, Attacks, and Countermeasures](content/papers/security-of-openclaw-agents-fundamentals-attacks-and-countermeasures.md) | agent |
+| 2026-05-25 | arXiv | [ScrapMem: A Bio-inspired Framework for On-device Personalized Agent Memory via Optical Forgetting](content/papers/scrapmem-a-bio-inspired-framework-for-on-device-personalized-agent-memory-via-op.md) | agent, compression, episodic |
+| 2026-05-25 | arXiv | [SPEAR: Code-Augmented Agentic Prompt Optimization](content/papers/spear-code-augmented-agentic-prompt-optimization.md) | agent, context, conversation |
+| 2026-05-25 | arXiv | [Personalizing Embodied Multimodal Large Language Model Agents over Long-term User Interactions](content/papers/personalizing-embodied-multimodal-large-language-model-agents-over-long-term-use.md) | agent, context, episodic |
+| 2026-05-25 | arXiv | [Mitigating Provenance-Role Collapse in Long-Term Agents via Typed Memory Representation](content/papers/mitigating-provenance-role-collapse-in-long-term-agents-via-typed-memory-represe.md) | agent, long-term, retrieval |
+| 2026-05-25 | arXiv | [Memory Architectures for Multi-Turn Text-to-SQL: A Benchmark and Empirical Study](content/papers/memory-architectures-for-multi-turn-text-to-sql-a-benchmark-and-empirical-study.md) | agent, benchmark, episodic |
+| 2026-05-25 | arXiv | [Is Agent Memory a Database? Rethinking Data Foundations for Long-Term AI Agent Memory](content/papers/is-agent-memory-a-database-rethinking-data-foundations-for-long-term-ai-agent-me.md) | agent, context, long-term |
+| 2026-05-25 | arXiv | [How do Humans Process AI-generated Hallucination Contents: a Neuroimaging Study](content/papers/how-do-humans-process-ai-generated-hallucination-contents-a-neuroimaging-study.md) | retrieval |
+| 2026-05-25 | arXiv | [From Model Scaling to System Scaling: Scaling the Harness in Agentic AI](content/papers/from-model-scaling-to-system-scaling-scaling-the-harness-in-agentic-ai.md) | agent, benchmark, context |
+| 2026-05-25 | arXiv | [Evo-Attacker: Memory-Augmented Reinforcement Learning for Long-Horizon Tool Attacks on LLM-MAS](content/papers/evo-attacker-memory-augmented-reinforcement-learning-for-long-horizon-tool-attac.md) | agent |
 
 ## Suggested GitHub Setup
 

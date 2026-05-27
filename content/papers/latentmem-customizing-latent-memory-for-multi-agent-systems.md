@@ -4,7 +4,7 @@
 - Venue: CoRR 2026
 - Paper ID: openreview:n5GFzuQpA3
 - Published: 2026-12-31
-- Updated: 2026-05-25
+- Updated: 2026-05-27
 - Authors: {'fullname': 'Muxin Fu', 'username': ''}, {'fullname': 'Guibin Zhang', 'username': ''}, {'fullname': 'Xiangyuan Xue', 'username': '~Xiangyuan_Xue1'}, {'fullname': 'Yafu Li', 'username': ''}, {'fullname': 'Zefeng He', 'username': ''}, {'fullname': 'Siyuan Huang', 'username': ''}, {'fullname': 'Xiaoye Qu', 'username': ''}, {'fullname': 'Yu Cheng', 'username': ''}, {'fullname': 'Yang Yang', 'username': ''}
 - Tags: agent, benchmark, context
 - Categories: OpenReview.net/Public_Article/DBLP.org/-/Record
