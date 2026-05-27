@@ -34,6 +34,41 @@
     "venue": "ICCD 2022"
   },
   {
+    "abstract": "Large language models still struggle with reliable long-term conversational memory: simply enlarging context windows or applying naive retrieval often introduces noise and destabilizes responses. We present APEX-MEM, a conversational memory system that combines three key innovations: (1) a property graph which uses domain-agnostic ontology to structure conversations as temporally grounded events in an entity-centric framework, (2) append-only storage that preserves the full temporal evolution of information, and (3) a multi-tool retrieval agent that understands and resolves conflicting or evolving information at query time, producing a compact and contextually relevant memory summary. This retrieval-time resolution preserves the full interaction history while suppressing irrelevant details. APEX-MEM achieves 88.88% accuracy on LOCOMO's Question Answering task and 86.2% on LongMemEval, outperforming state-of-the-art session-aware approaches and demonstrating that structured property graphs enable more temporally coherent long-term conversational reasoning.",
+    "authors": [
+      "Pratyay Banerjee",
+      "Masud Moshtaghi",
+      "Amita Misra",
+      "Shivashankar Subramanian",
+      "Ankit Chadha"
+    ],
+    "categories": [
+      "OpenReview.net/Archive/-/Direct_Upload"
+    ],
+    "id": "openreview:Rub55frimD",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, context, conversation, long-term` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL 2026` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Large language models still struggle with reliable long-term conversational memory: simply enlarging context windows or applying naive retrieval often introduces noise and destabilizes responses.\n\n进一步看，论文的核心做法或实验重点可以概括为：We present APEX-MEM, a conversational memory system that combines three key innovations: (1) a property graph which uses domain-agnostic ontology to structure conversations as temporally grounded events in an entity-...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "conversational memory"
+    ],
+    "one_liner": "Large language models still struggle with reliable long-term conversational memory: simply enlarging context windows or applying naive retrieval often introduces noise and...",
+    "published": "2026-05-01",
+    "relevance": "- 来源：OpenReview\n- Venue：ACL 2026\n- 高亮主题命中：agent, context, conversation, long-term, retrieval\n- 检索关键词命中：conversational memory\n- 来源分类信息：OpenReview.net/Archive/-/Direct_Upload",
+    "slug": "apex-mem-agentic-semi-structured-memory-with-temporal-reasoning-for-long-term-co",
+    "source": "OpenReview",
+    "source_key": "Rub55frimD",
+    "tags": [
+      "agent",
+      "context",
+      "conversation",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "APEX-MEM: Agentic Semi-Structured Memory with Temporal Reasoning for Long-Term Conversational AI",
+    "updated": "2026-05-26",
+    "url": "https://openreview.net/forum?id=Rub55frimD",
+    "venue": "ACL 2026"
+  },
+  {
     "abstract": "Large language model (LLM)-powered multi-agent systems (MAS) demonstrate remarkable collective intelligence, wherein multi-agent memory serves as a pivotal mechanism for continual adaptation. However, existing multi-agent memory designs remain constrained by two fundamental bottlenecks: (i) memory homogenization arising from the absence of role-aware customization, and (ii) information overload induced by excessively fine-grained memory entries. To address these limitations, we propose LatentMem, a learnable multi-agent memory framework designed to customize agent-specific memories in a token-efficient manner. Specifically, LatentMem comprises an experience bank that stores raw interaction trajectories in a lightweight form, and a memory composer that synthesizes compact latent memories conditioned on retrieved experience and agent-specific contexts. Further, we introduce Latent Memory Policy Optimization (LMPO), which propagates task-level optimization signals through latent memories to the composer, encouraging it to produce compact and high-utility representations. Extensive experiments across diverse benchmarks and mainstream MAS frameworks show that LatentMem achieves a performance gain of up to $19.36$% over vanilla settings and consistently outperforms existing memory architectures, without requiring any modifications to the underlying frameworks.",
     "authors": [
       "{'fullname': 'Muxin Fu', 'username': ''}",
