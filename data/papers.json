@@ -1,5 +1,40 @@
 [
   {
+    "abstract": "Open-domain dialogue systems have seen remarkable advancements with the development of large language models (LLMs). Nonetheless, most existing dialogue systems predominantly focus on brief single-session interactions, neglecting the real-world demands for long-term companionship and personalized interactions with chatbots. Crucial to addressing this real-world need are event summary and persona management, which enable reasoning for appropriate long-term dialogue responses. Recent progress in the human-like cognitive and reasoning capabilities of LLMs suggests that LLM-based agents could significantly enhance automated perception, decision-making, and problem-solving. In response to this potential, we introduce a model-agnostic framework, the Long-term Dialogue Agent (LD-Agent), which incorporates three independently tunable modules dedicated to event perception, persona extraction, and response generation. For the event memory module, long and short-term memory banks are employed to separately focus on historical and ongoing sessions, while a topic-based retrieval mechanism is introduced to enhance the accuracy of memory retrieval. Furthermore, the persona module conducts dynamic persona modeling for both users and agents. The integration of retrieved memories and extracted personas is subsequently fed into the generator to induce appropriate responses. The effectiveness, generality, and cross-domain capabilities of LD-Agent are empirically demonstrated across various illustrative benchmarks, models, and tasks. The code is released at https://github.com/leolee99/LD-Agent.",
+    "authors": [
+      "Hao Li",
+      "Chenghao Yang",
+      "An Zhang",
+      "Yang Deng",
+      "Xiang Wang",
+      "Tat-Seng Chua"
+    ],
+    "categories": [
+      "DBLP.org/-/Record"
+    ],
+    "id": "openreview:LeE9lXiGUC",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, long-term, retrieval` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `NAACL (Long Papers) 2025` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Open-domain dialogue systems have seen remarkable advancements with the development of large language models (LLMs).\n\n进一步看，论文的核心做法或实验重点可以概括为：Nonetheless, most existing dialogue systems predominantly focus on brief single-session interactions, neglecting the real-world demands for long-term companionship and personalized interactions with chatbots.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory retrieval"
+    ],
+    "one_liner": "Open-domain dialogue systems have seen remarkable advancements with the development of large language models (LLMs).",
+    "published": "2025-01-01",
+    "relevance": "- 来源：OpenReview\n- Venue：NAACL (Long Papers) 2025\n- 高亮主题命中：agent, benchmark, long-term, retrieval\n- 检索关键词命中：memory retrieval\n- 来源分类信息：DBLP.org/-/Record",
+    "slug": "hello-again-llm-powered-personalized-agent-for-long-term-dialogue",
+    "source": "OpenReview",
+    "source_key": "LeE9lXiGUC",
+    "tags": [
+      "agent",
+      "benchmark",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "Hello Again! LLM-powered Personalized Agent for Long-term Dialogue",
+    "updated": "2026-05-30",
+    "url": "https://openreview.net/forum?id=LeE9lXiGUC",
+    "venue": "NAACL (Long Papers) 2025"
+  },
+  {
     "abstract": "Multimodal large language models are increasingly deployed as long-horizon agents, where memory must do more than recall: it must track an evolving world, revise what has gone stale, and surface the right evidence at decision time. Existing benchmarks measure recall over static dialogue, collapse memory into a single end-of-task accuracy, and reduce visual observations to captions, leaving us unable to localize failures to writing, maintenance, retrieval, or use. The rise of agent harnesses that author their own memory sharpens this gap, since we have no principled way to compare hand-designed pipelines with self-managing alternatives. To close these gaps, we formulate multimodal agent memory as an Action-World Interaction Loop with an observable four-stage lifecycle, and instantiate it in WorldMemArena: 400 multi-session multimodal tasks spanning Lifelong Evolution (evolving personal and task states) and Agentic Execution (memory from real observations, actions, and feedback), annotated with gold memory points, updates, distractors, and evidence chains for stage-level diagnosis. This enables the first head-to-head comparison of long-context, manually designed (RAG and external memory systems), and harness-based memory agents. Results show that: (1) better memory writing and storage do not guarantee better performance; (2) multimodal memory still struggles to fully use visual evidence; (3) systems are unstable across domains and degrade on realistic agentic trajectories; and (4) harness memory is more flexible but remains costly and less reliable.",
     "authors": [
       "Chengzhi Liu",
