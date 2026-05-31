@@ -39,19 +39,20 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **347**
+- Total tracked papers: **348**
 - Last generated: **2026-05-31**
 
 ## Papers by Source
 
 - ACL Anthology: **1**
 - arXiv: **306**
-- OpenReview: **40**
+- OpenReview: **41**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-05-31 | OpenReview | [REMem: Reasoning with Episodic Memory in Language Agent](content/papers/remem-reasoning-with-episodic-memory-in-language-agent.md) | agent, benchmark, context |
 | 2026-05-30 | OpenReview | [Hello Again! LLM-powered Personalized Agent for Long-term Dialogue](content/papers/hello-again-llm-powered-personalized-agent-for-long-term-dialogue.md) | agent, benchmark, long-term |
 | 2026-05-30 | OpenReview | [ER-MIA: Black-Box Adversarial Memory Injection Attacks on Long-Term Memory-Augmented Large Language Models](content/papers/er-mia-black-box-adversarial-memory-injection-attacks-on-long-term-memory-augmen.md) | context, long-term, retrieval |
 | 2026-05-28 | arXiv | [WorldMemArena: Evaluating Multimodal Agent Memory Through Action-World Interaction](content/papers/worldmemarena-evaluating-multimodal-agent-memory-through-action-world-interactio.md) | agent, benchmark, context |
@@ -71,7 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-05-27 | arXiv | [Plant, Persist, Trigger: Sleeper Attack on Large Language Model Agents](content/papers/plant-persist-trigger-sleeper-attack-on-large-language-model-agents.md) | agent, benchmark, context |
 | 2026-05-27 | arXiv | [Personal Visual Memory from Explicit and Implicit Evidence](content/papers/personal-visual-memory-from-explicit-and-implicit-evidence.md) | agent, benchmark, context |
 | 2026-05-27 | arXiv | [MemGuard: Preventing Memory Contamination in Long-Term Memory-Augmented Large Language Models](content/papers/memguard-preventing-memory-contamination-in-long-term-memory-augmented-large-lan.md) | benchmark, context, conversation |
-| 2026-05-27 | arXiv | [MemCog: From Memory-as-Tool to Memory-as-Cognition in Conversational Agents](content/papers/memcog-from-memory-as-tool-to-memory-as-cognition-in-conversational-agents.md) | agent, benchmark, context |
 
 ## Suggested GitHub Setup
 
