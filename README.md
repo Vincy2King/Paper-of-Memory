@@ -39,20 +39,21 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **346**
-- Last generated: **2026-05-30**
+- Total tracked papers: **347**
+- Last generated: **2026-05-31**
 
 ## Papers by Source
 
 - ACL Anthology: **1**
 - arXiv: **306**
-- OpenReview: **39**
+- OpenReview: **40**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
 | 2026-05-30 | OpenReview | [Hello Again! LLM-powered Personalized Agent for Long-term Dialogue](content/papers/hello-again-llm-powered-personalized-agent-for-long-term-dialogue.md) | agent, benchmark, long-term |
+| 2026-05-30 | OpenReview | [ER-MIA: Black-Box Adversarial Memory Injection Attacks on Long-Term Memory-Augmented Large Language Models](content/papers/er-mia-black-box-adversarial-memory-injection-attacks-on-long-term-memory-augmen.md) | context, long-term, retrieval |
 | 2026-05-28 | arXiv | [WorldMemArena: Evaluating Multimodal Agent Memory Through Action-World Interaction](content/papers/worldmemarena-evaluating-multimodal-agent-memory-through-action-world-interactio.md) | agent, benchmark, context |
 | 2026-05-28 | arXiv | [VikingMem: A Memory Base Management System for Stateful LLM-based Applications](content/papers/vikingmem-a-memory-base-management-system-for-stateful-llm-based-applications.md) | agent, benchmark, compression |
 | 2026-05-28 | arXiv | [VLA-Pro: Cross-Task Procedural Memory Transfer for Vision-Language-Action Models](content/papers/vla-pro-cross-task-procedural-memory-transfer-for-vision-language-action-models.md) | context, retrieval |
@@ -71,7 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-05-27 | arXiv | [Personal Visual Memory from Explicit and Implicit Evidence](content/papers/personal-visual-memory-from-explicit-and-implicit-evidence.md) | agent, benchmark, context |
 | 2026-05-27 | arXiv | [MemGuard: Preventing Memory Contamination in Long-Term Memory-Augmented Large Language Models](content/papers/memguard-preventing-memory-contamination-in-long-term-memory-augmented-large-lan.md) | benchmark, context, conversation |
 | 2026-05-27 | arXiv | [MemCog: From Memory-as-Tool to Memory-as-Cognition in Conversational Agents](content/papers/memcog-from-memory-as-tool-to-memory-as-cognition-in-conversational-agents.md) | agent, benchmark, context |
-| 2026-05-27 | arXiv | [MRMMIA: Membership Inference Attacks on Memory in Chat Agents](content/papers/mrmmia-membership-inference-attacks-on-memory-in-chat-agents.md) | agent, retrieval |
 
 ## Suggested GitHub Setup
 

@@ -35,6 +35,40 @@
     "venue": "NAACL (Long Papers) 2025"
   },
   {
+    "abstract": "Large language models (LLMs) are increasingly augmented with long-term memory systems to overcome finite context windows and enable persistent reasoning across interactions. However, recent research finds that LLMs become more vulnerable because memory provides extra attack surfaces. In this paper, we present the first systematic study of black-box adversarial memory injection attacks that target the similarity-based retrieval mechanism in long-term memory-augmented LLMs. We introduce ER-MIA, a unified framework that exposes this vulnerability and formalizes two realistic attack settings: content-based attacks and question-targeted attacks. In these settings, ER-MIA includes an arsenal of composable attack primitives and ensemble attacks that achieve high success rates under minimal attacker assumptions. Extensive experiments across multiple LLMs and long-term memory systems demonstrate that similarity-based retrieval constitutes a fundamental and system-level vulnerability, revealing security risks that persist across memory designs and application scenarios.",
+    "authors": [
+      "{'fullname': 'Mitchell Piehl', 'username': ''}",
+      "{'fullname': 'Zhaohan Xi', 'username': ''}",
+      "{'fullname': 'Zuobin Xiong', 'username': ''}",
+      "{'fullname': 'Pan He', 'username': '~Pan_He1'}",
+      "{'fullname': 'Muchao Ye', 'username': ''}"
+    ],
+    "categories": [
+      "OpenReview.net/Public_Article/DBLP.org/-/Record"
+    ],
+    "id": "openreview:dvHe2slkTV",
+    "intro": "这篇论文被纳入仓库，是因为它和 `context, long-term, retrieval` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `CoRR 2026` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Large language models (LLMs) are increasingly augmented with long-term memory systems to overcome finite context windows and enable persistent reasoning across interactions.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, recent research finds that LLMs become more vulnerable because memory provides extra attack surfaces.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "long-term memory",
+      "memory-augmented"
+    ],
+    "one_liner": "Large language models (LLMs) are increasingly augmented with long-term memory systems to overcome finite context windows and enable persistent reasoning across interactions.",
+    "published": "2026-12-31",
+    "relevance": "- 来源：OpenReview\n- Venue：CoRR 2026\n- 高亮主题命中：context, long-term, retrieval\n- 检索关键词命中：long-term memory, memory-augmented\n- 来源分类信息：OpenReview.net/Public_Article/DBLP.org/-/Record",
+    "slug": "er-mia-black-box-adversarial-memory-injection-attacks-on-long-term-memory-augmen",
+    "source": "OpenReview",
+    "source_key": "dvHe2slkTV",
+    "tags": [
+      "context",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "ER-MIA: Black-Box Adversarial Memory Injection Attacks on Long-Term Memory-Augmented Large Language Models",
+    "updated": "2026-05-30",
+    "url": "https://openreview.net/forum?id=dvHe2slkTV",
+    "venue": "CoRR 2026"
+  },
+  {
     "abstract": "Multimodal large language models are increasingly deployed as long-horizon agents, where memory must do more than recall: it must track an evolving world, revise what has gone stale, and surface the right evidence at decision time. Existing benchmarks measure recall over static dialogue, collapse memory into a single end-of-task accuracy, and reduce visual observations to captions, leaving us unable to localize failures to writing, maintenance, retrieval, or use. The rise of agent harnesses that author their own memory sharpens this gap, since we have no principled way to compare hand-designed pipelines with self-managing alternatives. To close these gaps, we formulate multimodal agent memory as an Action-World Interaction Loop with an observable four-stage lifecycle, and instantiate it in WorldMemArena: 400 multi-session multimodal tasks spanning Lifelong Evolution (evolving personal and task states) and Agentic Execution (memory from real observations, actions, and feedback), annotated with gold memory points, updates, distractors, and evidence chains for stage-level diagnosis. This enables the first head-to-head comparison of long-context, manually designed (RAG and external memory systems), and harness-based memory agents. Results show that: (1) better memory writing and storage do not guarantee better performance; (2) multimodal memory still struggles to fully use visual evidence; (3) systems are unstable across domains and degrade on realistic agentic trajectories; and (4) harness memory is more flexible but remains costly and less reliable.",
     "authors": [
       "Chengzhi Liu",
