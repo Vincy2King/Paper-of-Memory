@@ -2464,6 +2464,36 @@
     "venue": ""
   },
   {
+    "abstract": "Electroencephalography (EEG) has been widely used to study the relationship between naps and working memory, yet the effects of naps on distinct working memory tasks remain unclear. Here, participants performed word-pair and visuospatial working memory tasks pre- and post-nap sessions. We found marked differences in accuracy and reaction time between tasks performed pre- and post-nap. In order to identify the impact of naps on performance in each working memory task, we employed clustering to classify participants as high-or low-performers. Analysis of sleep architecture revealed significant variations in sleep onset latency and rapid eye movement (REM) proportion. In addition, the two groups exhibited prominent differences, especially in the delta power of the Non-REM 3 stage linked to memory. Our results emphasize the interplay between nap-related neural activity and working memory, underlining specific EEG markers associated with cognitive performance.",
+    "authors": [
+      "{'fullname': 'Gi-Hwan Shin', 'username': ''}",
+      "{'fullname': 'Young-Seok Kweon', 'username': ''}",
+      "{'fullname': 'Heon-Gyu Kwak', 'username': '~Heon-Gyu_Kwak2'}",
+      "{'fullname': 'Ha-Na Jo', 'username': ''}"
+    ],
+    "categories": [
+      "OpenReview.net/Public_Article/DBLP.org/-/Record"
+    ],
+    "id": "openreview:zG8fkxoHkD",
+    "intro": "这篇论文被纳入仓库，是因为它和 `working memory` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `BCI 2024` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Electroencephalography (EEG) has been widely used to study the relationship between naps and working memory, yet the effects of naps on distinct working memory tasks remain unclear.\n\n进一步看，论文的核心做法或实验重点可以概括为：Here, participants performed word-pair and visuospatial working memory tasks pre- and post-nap sessions.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "working memory"
+    ],
+    "one_liner": "Electroencephalography (EEG) has been widely used to study the relationship between naps and working memory, yet the effects of naps on distinct working memory tasks remain...",
+    "published": "2024-12-31",
+    "relevance": "- 来源：OpenReview\n- Venue：BCI 2024\n- 高亮主题命中：working memory\n- 检索关键词命中：working memory\n- 来源分类信息：OpenReview.net/Public_Article/DBLP.org/-/Record",
+    "slug": "impact-of-nap-on-performance-in-different-working-memory-tasks-using-eeg",
+    "source": "OpenReview",
+    "source_key": "zG8fkxoHkD",
+    "tags": [
+      "working memory"
+    ],
+    "title": "Impact of Nap on Performance in Different Working Memory Tasks Using EEG",
+    "updated": "2026-05-28",
+    "url": "https://openreview.net/forum?id=zG8fkxoHkD",
+    "venue": "BCI 2024"
+  },
+  {
     "abstract": "Large language model (LLM) agents increasingly leverage long term memory to support persistent and autonomous task execution. However, this capability also introduces a new attack surface: memory poisoning, where adversaries can inject malicious information to influence future behavior. Existing memory poisoning attacks often assume that injected content can be stored directly in memory, overlooking the selective extraction and rewriting stages in modern memory pipelines. This makes prior methods ineffective under realistic settings. In this paper, we propose MemPoison, a novel memory poisoning attack that bypasses selective memory mechanisms in LLM agents, where an attacker can inject triggerable backdoors into the agent's long-term memory through dialogue interactions, thereby misleading its subsequent responses. MemPoison introduces three key components: (i) a semantic relational bridge that binds the trigger and payload into a coherent statement to ensure they are extracted into memory together; (ii) entity masquerading that optimizes triggers to mimic named entities, resisting rewriting; and (iii) joint embedding optimization that shapes trigger-injected texts into a tight cluster in the embedding space while maintaining isolation from benign embeddings for stealth. Evaluations across different agent domains and memory mechanisms show MemPoison achieves attack success rates up to 0.95, outperforming existing baselines. Mechanistic analysis indicates that the attack exploits embedding-space anisotropy and shifts attention patterns, highlighting core vulnerabilities in selective memory systems. We evaluate multiple defense strategies and demonstrate their fundamental limitations in mitigating the attack.",
     "authors": [
       "Hongtao Wang",
