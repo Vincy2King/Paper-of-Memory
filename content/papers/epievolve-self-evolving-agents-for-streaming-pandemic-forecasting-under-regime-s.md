@@ -1,0 +1,39 @@
+# EpiEvolve: Self-Evolving Agents for Streaming Pandemic Forecasting under Regime Shifts
+
+- Source: arXiv
+- Venue: N/A
+- Paper ID: 2606.05513v1
+- Published: 2026-06-03
+- Updated: 2026-06-03
+- Authors: Yiming Lu, Sihang Zeng, Zhengxu Tang, Max Lau, Fei Liu, Wei Jin
+- Tags: agent, context, episodic, retrieval
+- Categories: cs.AI, cs.CL
+- URL: http://arxiv.org/abs/2606.05513v1
+
+## One-Sentence Summary
+Epidemic LLM forecasters are usually trained and evaluated as static supervised models, whereas operational pandemic forecasting is a streaming process in which labels arrive...
+
+## Introduction
+这篇论文被纳入仓库，是因为它和 `agent, context, episodic, retrieval` 这些主题直接相关。
+
+它当前来自 `arXiv`。
+
+从摘要来看，作者主要关注的是：Epidemic LLM forecasters are usually trained and evaluated as static supervised models, whereas operational pandemic forecasting is a streaming process in which labels arrive after predictions and disease regimes...
+
+进一步看，论文的核心做法或实验重点可以概括为：We study this mismatch in weekly COVID-19 hospitalization trend forecasting across five variant regimes.
+
+如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。
+
+## Why It Was Included
+- 来源：arXiv
+- 高亮主题命中：agent, context, episodic, retrieval
+- 检索关键词命中：episodic memory
+- 来源分类信息：cs.AI, cs.CL
+
+## Abstract Snapshot
+Epidemic LLM forecasters are usually trained and evaluated as static supervised models, whereas operational pandemic forecasting is a streaming process in which labels arrive after predictions and disease regimes shift over time. We study this mismatch in weekly COVID-19 hospitalization trend forecasting across five variant regimes. We introduce EpiEvolve, a self-evolving agent that wraps an LLM forecaster trained on the warm-start period and keeps its weights fixed during streaming. EpiEvolve adapts by storing forecast outcomes in a hierarchical episodic memory, reflecting on delayed labels, retrieving cases relevant to the current regime, and distilling recurring errors into strategic rules. The resulting context lets the forecaster reuse its own past predictions and outcomes in later weeks while following a chronological protocol that prevents future leakage. On the streaming dataset, EpiEvolve reaches $0.629$ average accuracy, compared with $0.561$ for the static backbone and $0.325$ for the external CDC ensemble, and reduces recovery lag after regime shifts from $5$ to $2$ weeks. Ablations show that reflection, strategic memory, and regime-aware retrieval each contribute to the gains.
+
+## Manual Notes
+<!-- MANUAL_NOTES_START -->
+在这里补充你的人工解读、和其他工作的关系、复现记录，或你认为最值得读的段落。
+<!-- MANUAL_NOTES_END -->

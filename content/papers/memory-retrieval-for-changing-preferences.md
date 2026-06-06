@@ -27,7 +27,7 @@ Long-context dialogue systems must decide both when to access memory and which p
 ## Why It Was Included
 - 来源：arXiv
 - 高亮主题命中：benchmark, context, retrieval
-- 检索关键词命中：memory benchmarks, memory retrieval
+- 检索关键词命中：memory benchmark, memory benchmarks, memory retrieval
 - 来源分类信息：cs.CL
 
 ## Abstract Snapshot
