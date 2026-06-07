@@ -39,19 +39,30 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **446**
+- Total tracked papers: **457**
 - Last generated: **2026-06-07**
 
 ## Papers by Source
 
 - ACL Anthology: **1**
 - arXiv: **377**
-- OpenReview: **68**
+- OpenReview: **79**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-06-07 | OpenReview | [OP-Bench: Benchmarking Over-Personalization for Memory-Augmented Personalized Conversational Agents](content/papers/op-bench-benchmarking-over-personalization-for-memory-augmented-personalized-con.md) | agent, benchmark, conversation |
+| 2026-06-07 | OpenReview | [MemMA: Coordinating the Memory Cycle through Multi-Agent Reasoning and In-Situ Self-Evolution](content/papers/memma-coordinating-the-memory-cycle-through-multi-agent-reasoning-and-in-situ-se.md) | agent, retrieval |
+| 2026-06-07 | OpenReview | [LiCoMemory: Lightweight and Cognitive Agentic Memory for Efficient Long-Term Reasoning](content/papers/licomemory-lightweight-and-cognitive-agentic-memory-for-efficient-long-term-reas.md) | agent, benchmark, context |
+| 2026-06-07 | OpenReview | [Knowledge Graph Enhanced Memory-Augmented Retrieval for Long Context Modeling](content/papers/knowledge-graph-enhanced-memory-augmented-retrieval-for-long-context-modeling.md) | context, retrieval |
+| 2026-06-07 | OpenReview | [Knowledge Graph Enhanced Memory-Augmented Retrieval for Long Context Modeling](content/papers/knowledge-graph-enhanced-memory-augmented-retrieval-for-long-context-modeling.md) | context, retrieval |
+| 2026-06-07 | OpenReview | [Injecting Context via Situation Working Memory for Logical Reasoning with LLMs](content/papers/injecting-context-via-situation-working-memory-for-logical-reasoning-with-llms.md) | context |
+| 2026-06-07 | OpenReview | [From Retrieval to Reconstruction: Constructing Evolvable Cognitive Memory for Long-term Dialogue](content/papers/from-retrieval-to-reconstruction-constructing-evolvable-cognitive-memory-for-lon.md) | context, long-term, retrieval |
+| 2026-06-07 | OpenReview | [EMemBench: Interactive Benchmarking of Episodic Memory for VLM Agents](content/papers/emembench-interactive-benchmarking-of-episodic-memory-for-vlm-agents.md) | agent, benchmark, context |
+| 2026-06-07 | OpenReview | [EMemBench: Interactive Benchmarking of Episodic Memory for VLM Agents](content/papers/emembench-interactive-benchmarking-of-episodic-memory-for-vlm-agents.md) | agent, benchmark, context |
+| 2026-06-07 | OpenReview | [AutoViewMem: Self-Configuring Orthogonal Views for Conversational Long-Term Memory](content/papers/autoviewmem-self-configuring-orthogonal-views-for-conversational-long-term-memor.md) | agent, benchmark, conversation |
+| 2026-06-07 | OpenReview | [AtomMem : Learnable Dynamic Agentic Memory with Atomic Memory Operation](content/papers/atommem-learnable-dynamic-agentic-memory-with-atomic-memory-operation.md) | agent, benchmark, context |
 | 2026-06-04 | arXiv | [When Should Memory Stay Silent: Measuring Memory-Use Boundaries in Memory-Augmented Conversational Agents](content/papers/when-should-memory-stay-silent-measuring-memory-use-boundaries-in-memory-augment.md) | agent, context, conversation |
 | 2026-06-04 | arXiv | [Trace2Skill: Distill Trajectory-Local Lessons into Transferable Agent Skills](content/papers/trace2skill-distill-trajectory-local-lessons-into-transferable-agent-skills.md) | agent, retrieval |
 | 2026-06-04 | arXiv | [TOKI: A Bitemporal Operator Algebra for Contradiction Resolution in LLM-Agent Persistent Memory](content/papers/toki-a-bitemporal-operator-algebra-for-contradiction-resolution-in-llm-agent-per.md) | agent |
@@ -61,17 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-06-04 | arXiv | [Memory is Reconstructed, Not Retrieved: Graph Memory for LLM Agents](content/papers/memory-is-reconstructed-not-retrieved-graph-memory-for-llm-agents.md) | agent, benchmark, context |
 | 2026-06-04 | arXiv | [FIDES: Faithful Inference via Deep Evidence Signals for Retrieval-Memory Conflict in RAG](content/papers/fides-faithful-inference-via-deep-evidence-signals-for-retrieval-memory-conflict.md) | benchmark, context, retrieval |
 | 2026-06-04 | arXiv | [Enhancing Software Engineering Through Closed-Loop Memory Optimization](content/papers/enhancing-software-engineering-through-closed-loop-memory-optimization.md) | agent, benchmark, context |
-| 2026-06-04 | arXiv | [Computational Modeling of Human Adaptation in Urban Infrastructure Management under Extreme Conditions: A Case Study of Subway Flood Scenarios](content/papers/computational-modeling-of-human-adaptation-in-urban-infrastructure-management-un.md) | retrieval |
-| 2026-06-04 | arXiv | [Beyond Similarity: Trustworthy Memory Search for Personal AI Agents](content/papers/beyond-similarity-trustworthy-memory-search-for-personal-ai-agents.md) | agent, context, long-term |
-| 2026-06-04 | arXiv | [Beyond Semantic Organization: Memory as Execution State Management for Long-Horizon Agents](content/papers/beyond-semantic-organization-memory-as-execution-state-management-for-long-horiz.md) | agent, context |
-| 2026-06-04 | arXiv | [Ask Only When Needed: Proactive Retrieval from Memory and Skills for Experience-Driven Lifelong Agents](content/papers/ask-only-when-needed-proactive-retrieval-from-memory-and-skills-for-experience-d.md) | agent, episodic, retrieval |
-| 2026-06-04 | arXiv | [Agent Memory: Characterization and System Implications of Stateful Long-Horizon Workloads](content/papers/agent-memory-characterization-and-system-implications-of-stateful-long-horizon-w.md) | agent, benchmark, retrieval |
-| 2026-06-04 | arXiv | [AdaMEM: Test-Time Adaptive Memory for Language Agents](content/papers/adamem-test-time-adaptive-memory-for-language-agents.md) | agent, long-term, retrieval |
-| 2026-06-04 | arXiv | [AIS-Based Vessel Trajectory Prediction Using Memory-Augmented Neural Networks](content/papers/ais-based-vessel-trajectory-prediction-using-memory-augmented-neural-networks.md) | memory-augmented |
-| 2026-06-03 | arXiv | [memorywire: A Vendor-Neutral Wire Format for Agent Memory Operations](content/papers/memorywire-a-vendor-neutral-wire-format-for-agent-memory-operations.md) | agent, benchmark, context |
-| 2026-06-03 | arXiv | [Towards Verifiable Multimodal Deep Research: A Multi-Agent Harness for Interleaved Report Generation](content/papers/towards-verifiable-multimodal-deep-research-a-multi-agent-harness-for-interleave.md) | agent, benchmark |
-| 2026-06-03 | arXiv | [Temporal Order Matters for Agentic Memory: Segment Trees for Long-Horizon Agents](content/papers/temporal-order-matters-for-agentic-memory-segment-trees-for-long-horizon-agents.md) | agent, benchmark, context |
-| 2026-06-03 | arXiv | [Scaling Self-Evolving Agents via Parametric Memory](content/papers/scaling-self-evolving-agents-via-parametric-memory.md) | agent, context, retrieval |
 
 ## Suggested GitHub Setup
 

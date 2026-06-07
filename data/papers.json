@@ -1,5 +1,311 @@
 [
   {
+    "abstract": "Memory-augmented conversational agents enable personalized interactions using long-term user memory and have gained substantial traction. However, existing benchmarks primarily focus on whether agents can recall and apply user information, while overlooking whether such personalization is used appropriately. In fact, agents may overuse personal information, producing responses that feel forced, intrusive, or socially inappropriate to users. We refer to this issue as **over-personalization**. In this work, we formalize over-personalization into three types: Irrelevance, Repetition, and Sycophancy, and introduce **OP-Bench**, a benchmark of 1,700 verified instances constructed from long-horizon dialogue histories. Using OP-Bench, we evaluate multiple large language models and memory-augmentation methods, and find that over-personalization is widespread when memory is introduced. Further analysis reveals that agents tend to retrieve and over-attend to user memories even when unnecessary. We further evaluate existing post-processing strategies for mitigating this issue, but find that they provide only limited improvements and often reduce personalization performance. Our results highlight over-personalization as a challenging and largely unresolved problem in memory-augmented dialogue systems.",
+    "authors": [],
+    "categories": [
+      "aclweb.org/ACL/ARR/2026/March/-/Submission"
+    ],
+    "id": "openreview:qRtPIkjN7P",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, conversation, long-term` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 March Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Memory-augmented conversational agents enable personalized interactions using long-term user memory and have gained substantial traction.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, existing benchmarks primarily focus on whether agents can recall and apply user information, while overlooking whether such personalization is used appropriately.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory-augmented"
+    ],
+    "one_liner": "Memory-augmented conversational agents enable personalized interactions using long-term user memory and have gained substantial traction.",
+    "published": "2026-06-07",
+    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 March Submission\n- 高亮主题命中：agent, benchmark, conversation, long-term\n- 检索关键词命中：memory-augmented\n- 来源分类信息：aclweb.org/ACL/ARR/2026/March/-/Submission",
+    "slug": "op-bench-benchmarking-over-personalization-for-memory-augmented-personalized-con",
+    "source": "OpenReview",
+    "source_key": "qRtPIkjN7P",
+    "tags": [
+      "agent",
+      "benchmark",
+      "conversation",
+      "long-term"
+    ],
+    "title": "OP-Bench: Benchmarking Over-Personalization for Memory-Augmented Personalized Conversational Agents",
+    "updated": "2026-06-07",
+    "url": "https://openreview.net/forum?id=qRtPIkjN7P",
+    "venue": "ACL ARR 2026 March Submission"
+  },
+  {
+    "abstract": "Memory-augmented LLM agents maintain external memory banks to support long-horizon interaction, yet most existing systems treat construction, retrieval, and utilization as isolated subroutines. This creates two coupled challenges: strategic blindness on the forward path of the memory cycle, where construction and retrieval are driven by local heuristics rather than explicit strategic reasoning, and sparse, delayed supervision on the backward path, where downstream failures rarely translate into direct repairs of the memory bank. To address these challenges, we propose MemMA, a plug-and-play multi-agent framework that coordinates the memory cycle along both the forward and backward paths. On the forward path, a Meta-Thinker produces structured guidance that steers a Memory Manager during construction and directs a Query Reasoner during iterative retrieval. On the backward path, MemMA introduces in-situ self-evolving memory construction, which synthesizes probe QA pairs, verifies the current memory, and converts failures into repair actions before the memory is finalized. Extensive experiments on LoCoMo show that MemMA consistently outperforms existing baselines across multiple LLM backbones and improves three different storage backends in a plug-and-play manner. Our code is publicly available at https://anonymous.4open.science/r/memma-588C.",
+    "authors": [],
+    "categories": [
+      "aclweb.org/ACL/ARR/2026/March/-/Submission"
+    ],
+    "id": "openreview:yG3Xv083je",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, retrieval` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 March Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Memory-augmented LLM agents maintain external memory banks to support long-horizon interaction, yet most existing systems treat construction, retrieval, and utilization as isolated subroutines.\n\n进一步看，论文的核心做法或实验重点可以概括为：This creates two coupled challenges: strategic blindness on the forward path of the memory cycle, where construction and retrieval are driven by local heuristics rather than explicit strategic reasoning, and sparse,...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory-augmented"
+    ],
+    "one_liner": "Memory-augmented LLM agents maintain external memory banks to support long-horizon interaction, yet most existing systems treat construction, retrieval, and utilization as...",
+    "published": "2026-06-07",
+    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 March Submission\n- 高亮主题命中：agent, retrieval\n- 检索关键词命中：memory-augmented\n- 来源分类信息：aclweb.org/ACL/ARR/2026/March/-/Submission",
+    "slug": "memma-coordinating-the-memory-cycle-through-multi-agent-reasoning-and-in-situ-se",
+    "source": "OpenReview",
+    "source_key": "yG3Xv083je",
+    "tags": [
+      "agent",
+      "retrieval"
+    ],
+    "title": "MemMA: Coordinating the Memory Cycle through Multi-Agent Reasoning and In-Situ Self-Evolution",
+    "updated": "2026-06-07",
+    "url": "https://openreview.net/forum?id=yG3Xv083je",
+    "venue": "ACL ARR 2026 March Submission"
+  },
+  {
+    "abstract": "Large Language Model (LLM) agents exhibit remarkable conversational and reasoning capabilities but remain constrained by limited context windows and the lack of persistent memory. Recent efforts address these limitations via external memory architectures, often employing graph-based representations, yet most adopt flat, entangled structures that intertwine semantics with topology, leading to redundant representations, unstructured retrieval, and degraded efficiency and accuracy. To resolve these issues, we propose LiCoMemory, an end-to-end agentic memory framework for real-time updating and retrieval, which introduces CogniGraph, a lightweight hierarchical graph that utilizes entities and relations as semantic indexing layers, and employs temporal and hierarchy-aware search with integrated reranking for adaptive and coherent knowledge retrieval. Experiments on long-term dialogue benchmarks, LoCoMo and LongMemEval, show that LiCoMemory not only outperforms established baselines in temporal reasoning, multi-session consistency, and retrieval efficiency, but also notably reduces update latency.",
+    "authors": [],
+    "categories": [
+      "aclweb.org/ACL/ARR/2026/January/-/Submission"
+    ],
+    "id": "openreview:r5h2um8UsH",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, conversation` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 January Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Large Language Model (LLM) agents exhibit remarkable conversational and reasoning capabilities but remain constrained by limited context windows and the lack of persistent memory.\n\n进一步看，论文的核心做法或实验重点可以概括为：Recent efforts address these limitations via external memory architectures, often employing graph-based representations, yet most adopt flat, entangled structures that intertwine semantics with topology, leading to...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "persistent memory"
+    ],
+    "one_liner": "Large Language Model (LLM) agents exhibit remarkable conversational and reasoning capabilities but remain constrained by limited context windows and the lack of persistent memory.",
+    "published": "2026-03-20",
+    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 January Submission\n- 高亮主题命中：agent, benchmark, context, conversation, long-term, retrieval\n- 检索关键词命中：persistent memory\n- 来源分类信息：aclweb.org/ACL/ARR/2026/January/-/Submission",
+    "slug": "licomemory-lightweight-and-cognitive-agentic-memory-for-efficient-long-term-reas",
+    "source": "OpenReview",
+    "source_key": "r5h2um8UsH",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "conversation",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "LiCoMemory: Lightweight and Cognitive Agentic Memory for Efficient Long-Term Reasoning",
+    "updated": "2026-06-07",
+    "url": "https://openreview.net/forum?id=r5h2um8UsH",
+    "venue": "ACL ARR 2026 January Submission"
+  },
+  {
+    "abstract": "Memory-augmented retrieval systems excel at semantic matching but fail to capture structural relationships between entities in long-form text—relationships critical for knowledge-intensive applications. KG-ERMAR addresses this limitation by constructing dynamic, context-specific knowledge graphs from input text during inference, enabling domain-adaptive retrieval that leverages both semantic similarity and explicit entity relationships. The framework performs real-time entity and relation extraction to build contextual knowledge graphs, then integrates graph-structural embeddings with textual semantics through a specialized multi-component memory architecture. Three memory banks—contextual, semantic, and structural—are maintained with retrieval signals fused via learned weights to capture both surface-level semantics and deeper relational patterns. Evaluated on SlimPajama (84.7K training examples), WikiText-103 (4,358 examples), PG-19 (100 examples), and Proof-Pile (46.3K examples), KG-ERMAR achieves up to 8.5\\% lower perplexity and 2--2.5$\\times$ better memory efficiency than strong baselines across context lengths from 1K to 32K tokens. The dynamic knowledge graph construction approach advances memory-augmented language modeling by enabling domain-specific knowledge representation that adapts to input contexts rather than relying on fixed knowledge bases.",
+    "authors": [],
+    "categories": [
+      "aclweb.org/ACL/ARR/2026/January/-/Submission"
+    ],
+    "id": "openreview:jWGfFyBwmQ",
+    "intro": "这篇论文被纳入仓库，是因为它和 `context, retrieval` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 January Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Memory-augmented retrieval systems excel at semantic matching but fail to capture structural relationships between entities in long-form text—relationships critical for knowledge-intensive applications.\n\n进一步看，论文的核心做法或实验重点可以概括为：KG-ERMAR addresses this limitation by constructing dynamic, context-specific knowledge graphs from input text during inference, enabling domain-adaptive retrieval that leverages both semantic similarity and explicit...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory-augmented"
+    ],
+    "one_liner": "Memory-augmented retrieval systems excel at semantic matching but fail to capture structural relationships between entities in long-form text—relationships critical for...",
+    "published": "2026-03-20",
+    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 January Submission\n- 高亮主题命中：context, retrieval\n- 检索关键词命中：memory-augmented\n- 来源分类信息：aclweb.org/ACL/ARR/2026/January/-/Submission",
+    "slug": "knowledge-graph-enhanced-memory-augmented-retrieval-for-long-context-modeling",
+    "source": "OpenReview",
+    "source_key": "jWGfFyBwmQ",
+    "tags": [
+      "context",
+      "retrieval"
+    ],
+    "title": "Knowledge Graph Enhanced Memory-Augmented Retrieval for Long Context Modeling",
+    "updated": "2026-06-07",
+    "url": "https://openreview.net/forum?id=jWGfFyBwmQ",
+    "venue": "ACL ARR 2026 January Submission"
+  },
+  {
+    "abstract": "Long-context language modeling requires not only extending context windows but maintaining coherent understanding of entity states and relationships across thousands of tokens---a challenge that semantic similarity alone cannot address. KGERMAR addresses this by constructing dynamic, context-specific knowledge graphs from input text during inference, enabling domain-adaptive retrieval that leverages both semantic similarity and explicit entity relationships. The framework performs real-time entity and relation extraction to build contextual knowledge graphs, then integrates graph-structural embeddings with textual semantics through a multi-component memory architecture. Three memory banks---contextual, semantic, and structural---are maintained with retrieval signals fused via learned weights to capture both surface-level semantics and deeper relational patterns. Evaluated on SlimPajama (84.7K training examples), WikiText-103 (4,358 examples), PG-19 (100 examples), and Proof-pile (46.3K examples), KGERMAR achieves up to 8.5\\% lower perplexity and 2--2.5x better memory efficiency than memory-augmented baselines across context lengths from 1K to 32K tokens, with superior in-context learning performance across five NLU tasks. The dynamic knowledge graph construction approach advances memory-augmented language modeling by enabling domain-specific knowledge representation that adapts to input contexts rather than relying on fixed knowledge bases.",
+    "authors": [],
+    "categories": [
+      "aclweb.org/ACL/ARR/2026/March/-/Submission"
+    ],
+    "id": "openreview:qCI2vlnLSI",
+    "intro": "这篇论文被纳入仓库，是因为它和 `context, retrieval` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 March Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Long-context language modeling requires not only extending context windows but maintaining coherent understanding of entity states and relationships across thousands of tokens---a challenge that semantic similarity...\n\n进一步看，论文的核心做法或实验重点可以概括为：KGERMAR addresses this by constructing dynamic, context-specific knowledge graphs from input text during inference, enabling domain-adaptive retrieval that leverages both semantic similarity and explicit entity...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory-augmented"
+    ],
+    "one_liner": "Long-context language modeling requires not only extending context windows but maintaining coherent understanding of entity states and relationships across thousands of tokens...",
+    "published": "2026-06-07",
+    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 March Submission\n- 高亮主题命中：context, retrieval\n- 检索关键词命中：memory-augmented\n- 来源分类信息：aclweb.org/ACL/ARR/2026/March/-/Submission",
+    "slug": "knowledge-graph-enhanced-memory-augmented-retrieval-for-long-context-modeling",
+    "source": "OpenReview",
+    "source_key": "qCI2vlnLSI",
+    "tags": [
+      "context",
+      "retrieval"
+    ],
+    "title": "Knowledge Graph Enhanced Memory-Augmented Retrieval for Long Context Modeling",
+    "updated": "2026-06-07",
+    "url": "https://openreview.net/forum?id=qCI2vlnLSI",
+    "venue": "ACL ARR 2026 March Submission"
+  },
+  {
+    "abstract": "Recent advances in large language models (LLMs) have improved logical reasoning by injecting formal logic or explicit structured representations. However, such methods often lose track of \\textit{what is true now} in multi-step reasoning, failing to maintain a coherent global state and its logical consequences. Motivated by Situation Model Theory in cognitive psychology, which views comprehension as constructing and updating a mental model of events along key dimensions (time, space, causality, intention, protagonist), we propose Situation Working Memory (SituW), a cognitively inspired method for contextual reasoning in LLMs. SituW first builds a situation representation by decomposing text along these five dimensions, then guides LLM inference with this evolving state. Keeping an explicit, dynamically updated situation memory instead of a static logical form encourages globally consistent reasoning over the situation model rather than raw text. Evaluated in both supervised and unsupervised settings, SituW improves accuracy by 23.3%p and 15.93%p while reducing “uncertain” predictions, suggesting that explicit situation modeling supports more globally consistent LLM reasoning.",
+    "authors": [],
+    "categories": [
+      "aclweb.org/ACL/ARR/2026/January/-/Submission"
+    ],
+    "id": "openreview:fADr5Hv8v0",
+    "intro": "这篇论文被纳入仓库，是因为它和 `context` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 January Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Recent advances in large language models (LLMs) have improved logical reasoning by injecting formal logic or explicit structured representations.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, such methods often lose track of \\textit{what is true now} in multi-step reasoning, failing to maintain a coherent global state and its logical consequences.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "working memory"
+    ],
+    "one_liner": "Recent advances in large language models (LLMs) have improved logical reasoning by injecting formal logic or explicit structured representations.",
+    "published": "2026-03-20",
+    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 January Submission\n- 高亮主题命中：context\n- 检索关键词命中：working memory\n- 来源分类信息：aclweb.org/ACL/ARR/2026/January/-/Submission",
+    "slug": "injecting-context-via-situation-working-memory-for-logical-reasoning-with-llms",
+    "source": "OpenReview",
+    "source_key": "fADr5Hv8v0",
+    "tags": [
+      "context"
+    ],
+    "title": "Injecting Context via Situation Working Memory for Logical Reasoning with LLMs",
+    "updated": "2026-06-07",
+    "url": "https://openreview.net/forum?id=fADr5Hv8v0",
+    "venue": "ACL ARR 2026 January Submission"
+  },
+  {
+    "abstract": "Large Language Models (LLMs) serving as long-term personal companions require memory systems that support complex reasoning over extended dialogues. However, existing Retrieval-Augmented Generation (RAG) frameworks treat memory as passive storage, suffering from semantic collapse—where subjective beliefs and objective facts become indistinguishable—and rigid navigation that fails to connect dispersed information. We introduce CogMem, a cognitive memory architecture that reconstructs dialogue context through explicit structure. CogMem organizes memory via the PEC$^2$F (Person-Event-Concept-Claim-Fact) schema, using dedicated Claim nodes to separate subjective attributions from objective records and prevent information contamination. Rather than static retrieval, CogMem employs a deterministic controller with four cognitive operators (anchoring, traversal, intersection, evidence grounding) that dynamically navigate the graph based on query intent. Comprehensive evaluation on LoCoMo and LongMemEval shows that CogMem achieves state-of-the-art performance across all task categories, surpassing neural memory systems and graph retrieval methods.These results demonstrate that structured cognitive modeling significantly improves long-term memory accuracy and robustness compared to passive vector retrieval.",
+    "authors": [],
+    "categories": [
+      "aclweb.org/ACL/ARR/2026/March/-/Submission"
+    ],
+    "id": "openreview:DAfO4dwkEw",
+    "intro": "这篇论文被纳入仓库，是因为它和 `context, long-term, retrieval` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 March Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Large Language Models (LLMs) serving as long-term personal companions require memory systems that support complex reasoning over extended dialogues.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, existing Retrieval-Augmented Generation (RAG) frameworks treat memory as passive storage, suffering from semantic collapse—where subjective beliefs and objective facts become indistinguishable—and rigid...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "long-term memory"
+    ],
+    "one_liner": "Large Language Models (LLMs) serving as long-term personal companions require memory systems that support complex reasoning over extended dialogues.",
+    "published": "2026-06-07",
+    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 March Submission\n- 高亮主题命中：context, long-term, retrieval\n- 检索关键词命中：long-term memory\n- 来源分类信息：aclweb.org/ACL/ARR/2026/March/-/Submission",
+    "slug": "from-retrieval-to-reconstruction-constructing-evolvable-cognitive-memory-for-lon",
+    "source": "OpenReview",
+    "source_key": "DAfO4dwkEw",
+    "tags": [
+      "context",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "From Retrieval to Reconstruction: Constructing Evolvable Cognitive Memory for Long-term Dialogue",
+    "updated": "2026-06-07",
+    "url": "https://openreview.net/forum?id=DAfO4dwkEw",
+    "venue": "ACL ARR 2026 March Submission"
+  },
+  {
+    "abstract": "We introduce EMemBench, a programmatic benchmark generator for evaluating long-term episodic memory of agents through interactive games. Rather than using a fixed set of questions, EMemBench generates questions from environment-grounded trajectories, covering both text-only and visual game environments. Each template computes verifiable ground truth from underlying game signals, with controlled answerability and balanced coverage over memory skills: single/multi-hop recall, induction, temporal, spatial, logical, and adversarial. We evaluate memory agents with strong LMs/VLMs as backbones, using in-context prompting as baselines. Across 15 text games and multiple visual seeds, results are far from saturated: induction and spatial reasoning are persistent bottlenecks, especially in visual settings. Persistent memory yields clear gains for open backbones on text games, but improvements are less consistent for VLM agents, suggesting that visually grounded episodic memory remains an open challenge. A human study further contextualizes the difficulty and interpretability of EMemBench.",
+    "authors": [],
+    "categories": [
+      "aclweb.org/ACL/ARR/2026/March/-/Submission"
+    ],
+    "id": "openreview:zzndQeR4Ay",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, episodic` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 March Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：We introduce EMemBench, a programmatic benchmark generator for evaluating long-term episodic memory of agents through interactive games.\n\n进一步看，论文的核心做法或实验重点可以概括为：Rather than using a fixed set of questions, EMemBench generates questions from environment-grounded trajectories, covering both text-only and visual game environments.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "episodic memory",
+      "persistent memory"
+    ],
+    "one_liner": "We introduce EMemBench, a programmatic benchmark generator for evaluating long-term episodic memory of agents through interactive games.",
+    "published": "2026-06-07",
+    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 March Submission\n- 高亮主题命中：agent, benchmark, context, episodic, long-term\n- 检索关键词命中：episodic memory, persistent memory\n- 来源分类信息：aclweb.org/ACL/ARR/2026/March/-/Submission",
+    "slug": "emembench-interactive-benchmarking-of-episodic-memory-for-vlm-agents",
+    "source": "OpenReview",
+    "source_key": "zzndQeR4Ay",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "episodic",
+      "long-term"
+    ],
+    "title": "EMemBench: Interactive Benchmarking of Episodic Memory for VLM Agents",
+    "updated": "2026-06-07",
+    "url": "https://openreview.net/forum?id=zzndQeR4Ay",
+    "venue": "ACL ARR 2026 March Submission"
+  },
+  {
+    "abstract": "We introduce EMemBench, a programmatic benchmark for evaluating long-term memory of agents through interactive games. Rather than using a fixed set of questions, EMemBench generates questions from each agent’s own trajectory, covering both text and visual game environments. Each template computes verifiable ground truth from underlying game signals, with controlled answerability and balanced coverage over memory skills: single/multi-hop recall, induction, temporal, spatial, logical, and adversarial. We evaluate memory agents with strong LMs/VLMs as backbones, using in-context prompting as baselines. Across 15 text games and multiple visual seeds, results are far from saturated: induction and spatial reasoning are persistent bottlenecks, especially in visual setting. Persistent memory yields clear gains for open backbones on text games, but improvements are less consistent for VLM agents, suggesting that visually grounded episodic memory remains an open challenge. A human study further confirms the difficulty of EMemBench.",
+    "authors": [],
+    "categories": [
+      "aclweb.org/ACL/ARR/2026/January/-/Submission"
+    ],
+    "id": "openreview:dFQLfagXEK",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, episodic` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 January Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：We introduce EMemBench, a programmatic benchmark for evaluating long-term memory of agents through interactive games.\n\n进一步看，论文的核心做法或实验重点可以概括为：Rather than using a fixed set of questions, EMemBench generates questions from each agent’s own trajectory, covering both text and visual game environments.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "episodic memory",
+      "long-term memory",
+      "persistent memory"
+    ],
+    "one_liner": "We introduce EMemBench, a programmatic benchmark for evaluating long-term memory of agents through interactive games.",
+    "published": "2026-03-20",
+    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 January Submission\n- 高亮主题命中：agent, benchmark, context, episodic, long-term\n- 检索关键词命中：episodic memory, long-term memory, persistent memory\n- 来源分类信息：aclweb.org/ACL/ARR/2026/January/-/Submission",
+    "slug": "emembench-interactive-benchmarking-of-episodic-memory-for-vlm-agents",
+    "source": "OpenReview",
+    "source_key": "dFQLfagXEK",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "episodic",
+      "long-term"
+    ],
+    "title": "EMemBench: Interactive Benchmarking of Episodic Memory for VLM Agents",
+    "updated": "2026-06-07",
+    "url": "https://openreview.net/forum?id=dFQLfagXEK",
+    "venue": "ACL ARR 2026 January Submission"
+  },
+  {
+    "abstract": "Long-term memory is essential for large language model (LLM) agents to maintain consistency and personalization over extended interactions. Existing memory systems typically rely on fixed granularities or static schemas, but these designs struggle when heterogeneous information---such as preferences, events, constraints, and temporal updates---is entangled in a single representation, leading to semantic interference and unstable top-$K$ retrieval. We present AutoViewMem, a data-driven framework that organizes long-term conversational memory into self-configuring, low-overlap semantic views. AutoViewMem discovers candidate views from interaction traces, selects a compact complementary view set, and uses these views to guide write-time structured extraction of provenance-grounded memories. This representation-first design reduces semantic entanglement within each memory space, enabling simple top-$K$ similarity search to retrieve precise evidence without explicit routing or iterative retrieval. We further apply offline consolidation to improve memory compactness and consistency. Experiments on the LoCoMo benchmark show that AutoViewMem achieves competitive or improved performance over strong baselines on long-horizon question answering and reasoning, while maintaining an efficient and deployable inference pipeline.",
+    "authors": [],
+    "categories": [
+      "aclweb.org/ACL/ARR/2026/March/-/Submission"
+    ],
+    "id": "openreview:iWTQYgHSiH",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, conversation, long-term` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 March Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Long-term memory is essential for large language model (LLM) agents to maintain consistency and personalization over extended interactions.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing memory systems typically rely on fixed granularities or static schemas, but these designs struggle when heterogeneous information---such as preferences, events, constraints, and temporal updates---is...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "conversational memory",
+      "long-term memory"
+    ],
+    "one_liner": "Long-term memory is essential for large language model (LLM) agents to maintain consistency and personalization over extended interactions.",
+    "published": "2026-06-07",
+    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 March Submission\n- 高亮主题命中：agent, benchmark, conversation, long-term, retrieval\n- 检索关键词命中：conversational memory, long-term memory\n- 来源分类信息：aclweb.org/ACL/ARR/2026/March/-/Submission",
+    "slug": "autoviewmem-self-configuring-orthogonal-views-for-conversational-long-term-memor",
+    "source": "OpenReview",
+    "source_key": "iWTQYgHSiH",
+    "tags": [
+      "agent",
+      "benchmark",
+      "conversation",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "AutoViewMem: Self-Configuring Orthogonal Views for Conversational Long-Term Memory",
+    "updated": "2026-06-07",
+    "url": "https://openreview.net/forum?id=iWTQYgHSiH",
+    "venue": "ACL ARR 2026 March Submission"
+  },
+  {
+    "abstract": "Equipping agents with memory is essential for solving real-world long-horizon problems. However, most existing agent memory mechanisms rely on static and hand-crafted workflows. This limits the performance and generalization ability of these memory designs, which highlights the need for a more flexible, learning-based memory framework. In this paper, we propose \\ourwork, which reframes memory management as a dynamic decision-making problem. We deconstruct high-level memory processes into \\textbf{fundamental atomic CRUD} (Create, Read, Update, Delete) operations, transforming the memory workflow into a learnable decision process. Through widely used reinforcement learning~(GRPO), \\ourwork learns an autonomous, task-aligned policy to orchestrate memory behaviors tailored to specific task demands. Experimental results across 3 long-context QA benchmarks and 2 web benchmarks demonstrate that the trained model consistently outperforms prior static-workflow memory methods. Further analysis of training dynamics shows that our learning-based formulation enables the agent to discover structured, task-aligned memory management strategies, highlighting a key advantage over predefined workflows. The project can be accessed at \\url{https://anonymous.4open.science/r/AtomMem-86F8}.",
+    "authors": [],
+    "categories": [
+      "aclweb.org/ACL/ARR/2026/March/-/Submission"
+    ],
+    "id": "openreview:dfWiKLx6fs",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 March Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Equipping agents with memory is essential for solving real-world long-horizon problems.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, most existing agent memory mechanisms rely on static and hand-crafted workflows.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "Equipping agents with memory is essential for solving real-world long-horizon problems.",
+    "published": "2026-06-07",
+    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 March Submission\n- 高亮主题命中：agent, benchmark, context\n- 检索关键词命中：agent memory\n- 来源分类信息：aclweb.org/ACL/ARR/2026/March/-/Submission",
+    "slug": "atommem-learnable-dynamic-agentic-memory-with-atomic-memory-operation",
+    "source": "OpenReview",
+    "source_key": "dfWiKLx6fs",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context"
+    ],
+    "title": "AtomMem : Learnable Dynamic Agentic Memory with Atomic Memory Operation",
+    "updated": "2026-06-07",
+    "url": "https://openreview.net/forum?id=dfWiKLx6fs",
+    "venue": "ACL ARR 2026 March Submission"
+  },
+  {
     "abstract": "Long-term memory enables language model agents to support personalized interactions, but it remains unclear when available memories warrant integration into responses. Existing memory evaluations emphasize retrieval accuracy and downstream task utility, while overlooking whether retrieved sensitive memory content is warranted in the current turn. We introduce RBI-Eval, a controlled measurement study built around a probe set that compares model behavior with and without access to sensitive memory under identical benign prompts. We evaluate four base LLMs against a matched no-memory reference across four memory-access settings: full-context exposure and three retrieval systems. Our results reveal substantial behavioral divergence. With memory available, the separation score for sensitive-memory integration decreases by 8.9\\%--26.6\\% relative to the matched no-memory reference for GPT-5.4-mini, but by 51.1\\%--82.9\\% for Claude-Sonnet-4.6, DeepSeek-V4-Flash, and Qwen3.5-9B. Control experiments on DeepSeek and GPT-5.4-mini show this effect is specific to sensitive content, rather than general personalization. Retrieval systems reduce exposure but do not eliminate integration once sensitive memory reaches the generator. These findings suggest safe personalization requires memory-aware decisions at both retrieval and generation time.",
     "authors": [
       "Lingxiang Xu",
