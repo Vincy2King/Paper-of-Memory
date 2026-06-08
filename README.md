@@ -39,13 +39,13 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **457**
-- Last generated: **2026-06-07**
+- Total tracked papers: **462**
+- Last generated: **2026-06-08**
 
 ## Papers by Source
 
 - ACL Anthology: **1**
-- arXiv: **377**
+- arXiv: **382**
 - OpenReview: **79**
 
 ## Latest Papers
@@ -63,15 +63,15 @@ python3 scripts/update_papers.py --build-only
 | 2026-06-07 | OpenReview | [EMemBench: Interactive Benchmarking of Episodic Memory for VLM Agents](content/papers/emembench-interactive-benchmarking-of-episodic-memory-for-vlm-agents.md) | agent, benchmark, context |
 | 2026-06-07 | OpenReview | [AutoViewMem: Self-Configuring Orthogonal Views for Conversational Long-Term Memory](content/papers/autoviewmem-self-configuring-orthogonal-views-for-conversational-long-term-memor.md) | agent, benchmark, conversation |
 | 2026-06-07 | OpenReview | [AtomMem : Learnable Dynamic Agentic Memory with Atomic Memory Operation](content/papers/atommem-learnable-dynamic-agentic-memory-with-atomic-memory-operation.md) | agent, benchmark, context |
+| 2026-06-05 | arXiv | [SubtleMemory: A Benchmark for Fine-Grained Relational Memory Discrimination in Long-Horizon AI Agents](content/papers/subtlememory-a-benchmark-for-fine-grained-relational-memory-discrimination-in-lo.md) | agent, benchmark, context |
+| 2026-06-05 | arXiv | [Planning-aligned Token Compression for Long-Context Autonomous Driving](content/papers/planning-aligned-token-compression-for-long-context-autonomous-driving.md) | compression, context |
+| 2026-06-05 | arXiv | [M$^3$Exam: Benchmarking Multimodal Memory for Realistic User-Agent Interactions](content/papers/m-3-exam-benchmarking-multimodal-memory-for-realistic-user-agent-interactions.md) | agent, benchmark, context |
+| 2026-06-05 | arXiv | [AdMem: Advanced Memory for Task-solving Agents](content/papers/admem-advanced-memory-for-task-solving-agents.md) | agent, episodic, long-term |
 | 2026-06-04 | arXiv | [When Should Memory Stay Silent: Measuring Memory-Use Boundaries in Memory-Augmented Conversational Agents](content/papers/when-should-memory-stay-silent-measuring-memory-use-boundaries-in-memory-augment.md) | agent, context, conversation |
 | 2026-06-04 | arXiv | [Trace2Skill: Distill Trajectory-Local Lessons into Transferable Agent Skills](content/papers/trace2skill-distill-trajectory-local-lessons-into-transferable-agent-skills.md) | agent, retrieval |
 | 2026-06-04 | arXiv | [TOKI: A Bitemporal Operator Algebra for Contradiction Resolution in LLM-Agent Persistent Memory](content/papers/toki-a-bitemporal-operator-algebra-for-contradiction-resolution-in-llm-agent-per.md) | agent |
 | 2026-06-04 | arXiv | [SubtleMemory: A Benchmark for Fine-Grained Relational Memory Discrimination in Long-Horizon AI Agents](content/papers/subtlememory-a-benchmark-for-fine-grained-relational-memory-discrimination-in-lo.md) | agent, benchmark, context |
 | 2026-06-04 | arXiv | [Statistical Priors for Implicit Preferences: Decoupling Skill Selection as a Local Harness in Personal Agents](content/papers/statistical-priors-for-implicit-preferences-decoupling-skill-selection-as-a-loca.md) | agent |
-| 2026-06-04 | arXiv | [QueryAgent-R1: Bridging Query Generation and Product Retrieval for E-Commerce Query Recommendation](content/papers/queryagent-r1-bridging-query-generation-and-product-retrieval-for-e-commerce-que.md) | agent, retrieval |
-| 2026-06-04 | arXiv | [Memory is Reconstructed, Not Retrieved: Graph Memory for LLM Agents](content/papers/memory-is-reconstructed-not-retrieved-graph-memory-for-llm-agents.md) | agent, benchmark, context |
-| 2026-06-04 | arXiv | [FIDES: Faithful Inference via Deep Evidence Signals for Retrieval-Memory Conflict in RAG](content/papers/fides-faithful-inference-via-deep-evidence-signals-for-retrieval-memory-conflict.md) | benchmark, context, retrieval |
-| 2026-06-04 | arXiv | [Enhancing Software Engineering Through Closed-Loop Memory Optimization](content/papers/enhancing-software-engineering-through-closed-loop-memory-optimization.md) | agent, benchmark, context |
 
 ## Suggested GitHub Setup
 

@@ -306,6 +306,164 @@
     "venue": "ACL ARR 2026 March Submission"
   },
   {
+    "abstract": "Persistent AI assistants, such as OpenClaw, accumulate large collections of related memories over long-term interactions. As these memories grow, they may reinforce one another, diverge across contexts, or directly conflict, making correct assistance depend on memory relations rather than isolated recall. Existing long-term memory benchmarks rarely probe how agents preserve and utilize such relations during downstream tasks. To address this gap, we introduce SubtleMemory, a benchmark for fine-grained relational memory discrimination in long-running AI agents. SubtleMemory constructs relation-controlled latent semantic artifacts whose variants instantiate complementary, nuanced, or contradictory relations, and embeds them into realistic user-agent histories, requiring agents to recover distributed relational structures during later queries and instructions. The benchmark contains 1,522 evaluation instances over 10 long histories, grounded in 1,090 relation-controlled memory-variant sets and spanning user-related and non-user-related queries. Evaluating six standalone memory systems, two Claw-style agents with native memory modules, and three Claw-style agents with plugin memory modules, we find that current systems remain weak on fine-grained relational memory discrimination. We further introduce diagnostic protocols that reveal distinct capability profiles across memory preservation, retrieval, and downstream reasoning stages.",
+    "authors": [
+      "Wenxuan Wang",
+      "Haoyu Sun",
+      "Fukuan Hou",
+      "Mingyang Song",
+      "Weinan Zhang",
+      "Yu Cheng",
+      "Yang Yang"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.CL"
+    ],
+    "id": "2606.05761v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, long-term` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Persistent AI assistants, such as OpenClaw, accumulate large collections of related memories over long-term interactions.\n\n进一步看，论文的核心做法或实验重点可以概括为：As these memories grow, they may reinforce one another, diverge across contexts, or directly conflict, making correct assistance depend on memory relations rather than isolated recall.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "long-term memory",
+      "memory benchmark",
+      "memory benchmarks"
+    ],
+    "one_liner": "Persistent AI assistants, such as OpenClaw, accumulate large collections of related memories over long-term interactions.",
+    "published": "2026-06-04",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context, long-term, retrieval\n- 检索关键词命中：long-term memory, memory benchmark, memory benchmarks\n- 来源分类信息：cs.AI, cs.CL",
+    "slug": "subtlememory-a-benchmark-for-fine-grained-relational-memory-discrimination-in-lo",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2606.05761v2",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "SubtleMemory: A Benchmark for Fine-Grained Relational Memory Discrimination in Long-Horizon AI Agents",
+    "updated": "2026-06-05",
+    "url": "http://arxiv.org/abs/2606.05761v2",
+    "venue": ""
+  },
+  {
+    "abstract": "Monolithic vision-action models represent an emerging paradigm in autonomous driving. However, this architecture produces token sequences that quickly exceed real-time computational budgets when encoding extended temporal context for complex interactions. While approaches like linear transformers and external memory try to make the context lightweight, token compression is most compatible with the architecture as it requires no backbone modifications. Yet existing compression adopts rule-based heuristics like temporal decay, decoupled from planning, risking loss of decision-critical information. We propose COMPACT-VA, a planning-aligned working memory framework built on conditional VQ-VAE, compressing extended context into bounded representations. Compression is conditioned on both historical trajectory and a learned planning intent that the posterior encoder distills from future trajectories during training, while the prior encoder learns to predict it from compressed observations. The compressed memory, concatenated with the predicted latent, feeds the policy for end-to-end optimization, planning with retained decision-critical information. We evaluate on high-signal dynamic scenarios where historical context is most critical for behavior correctness (e.g., stop, yield, or proceed), and accordingly design behavioral metrics. Under comparable token budgets, we achieve $>$6% improvement (68.3%) on success rates with consistent gains across metrics. Ablations validate planning-aligned coupling effectiveness. Closed-loop evaluation confirms that COMPACT-VA maintained general driving performance with 3.3* speedup and 2.7* memory reduction over uncompressed processing.",
+    "authors": [
+      "Zhixuan Liang",
+      "Yuxiao Chen",
+      "Yurong You",
+      "Peter Karkus",
+      "Wenhao Ding",
+      "Boyi Li",
+      "Alexander Popov",
+      "Yan Wang",
+      "Maximilian Igl",
+      "Yiming Li",
+      "Danfei Xu",
+      "Nikolai Smolyanskiy",
+      "Boris Ivanovic",
+      "Ping Luo",
+      "Marco Pavone"
+    ],
+    "categories": [
+      "cs.RO",
+      "cs.AI",
+      "cs.CV"
+    ],
+    "id": "2606.07464v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `compression, context` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Monolithic vision-action models represent an emerging paradigm in autonomous driving.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, this architecture produces token sequences that quickly exceed real-time computational budgets when encoding extended temporal context for complex interactions.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "working memory"
+    ],
+    "one_liner": "Monolithic vision-action models represent an emerging paradigm in autonomous driving.",
+    "published": "2026-06-05",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：compression, context\n- 检索关键词命中：working memory\n- 来源分类信息：cs.RO, cs.AI, cs.CV",
+    "slug": "planning-aligned-token-compression-for-long-context-autonomous-driving",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2606.07464v1",
+    "tags": [
+      "compression",
+      "context"
+    ],
+    "title": "Planning-aligned Token Compression for Long-Context Autonomous Driving",
+    "updated": "2026-06-05",
+    "url": "http://arxiv.org/abs/2606.07464v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Language agents are increasingly deployed over accumulating multimodal information, yet existing benchmarks assume a human-human form with sparse visuals and straightforward content, evaluating neither reasoning over authentic multimodal file interaction nor the interpretation of concealed user information. We therefore introduce M$^3$Exam, a query-centric multimodal conversational memory benchmark built on realistic user-agent interaction, with multi-dimensional evaluation spanning cross-modal grounding and implicit information inference. Benchmarking MLLMs and memory systems reveals persistent gaps in cross-modal grounding, cross session reasoning, and the efficiency cost of accumulating multimodal context. We further propose M$^3$Proctor, a multimodal memory method that detects query modality bias and consumes raw visual sources only on demand, improving accuracy by 13% while cutting index-construction time and retrieved tokens by over 70%.",
+    "authors": [
+      "Zhengjun Huang",
+      "Wenxuan Liu",
+      "Zhoujin Tian",
+      "Wei Chen",
+      "Junle Chen",
+      "Yuqian Wu",
+      "Fangyuan Zhang",
+      "Qintian Guo",
+      "Xiaofang Zhou"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "id": "2606.07402v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, conversation` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Language agents are increasingly deployed over accumulating multimodal information, yet existing benchmarks assume a human-human form with sparse visuals and straightforward content, evaluating neither reasoning over...\n\n进一步看，论文的核心做法或实验重点可以概括为：We therefore introduce M$^3$Exam, a query-centric multimodal conversational memory benchmark built on realistic user-agent interaction, with multi-dimensional evaluation spanning cross-modal grounding and implicit...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "conversational memory",
+      "memory benchmark",
+      "memory benchmarks"
+    ],
+    "one_liner": "Language agents are increasingly deployed over accumulating multimodal information, yet existing benchmarks assume a human-human form with sparse visuals and straightforward...",
+    "published": "2026-06-05",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context, conversation\n- 检索关键词命中：conversational memory, memory benchmark, memory benchmarks\n- 来源分类信息：cs.CL",
+    "slug": "m-3-exam-benchmarking-multimodal-memory-for-realistic-user-agent-interactions",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2606.07402v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "conversation"
+    ],
+    "title": "M$^3$Exam: Benchmarking Multimodal Memory for Realistic User-Agent Interactions",
+    "updated": "2026-06-05",
+    "url": "http://arxiv.org/abs/2606.07402v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Large Language Models (LLMs) show promise as tool-using agents but remain limited in long-horizon tasks that require remembering, organizing, and reusing knowledge. Prior memory approaches aim to resolve the situation, but mainly focus on storing factual information. Recent work on procedural memory improves task reuse, yet often reduces to replaying past successes without addressing failure cases or online scalability. We introduce a unified and automatic memory framework that integrates semantic, episodic, and procedural memory in a bi-level design combining short-term and long-term stores. A multi-agent architecture with actor, memory, and critic agents enables automatic memory generation, reward annotation, and adaptive retrieval. Long-term memory is managed through reward-based evaluation, merging, and pruning, ensuring scalability and continual improvement. Experiments across various environments show that our approach improves robustness and success on long multi-turn tasks compared to existing baselines. This work highlights the importance of comprehensive, adaptive memory for advancing LLM-based agents.",
+    "authors": [
+      "Runzhe Wang",
+      "Huilin Lu",
+      "Shengjie Liu",
+      "Li Dong",
+      "Jason Zhu"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2606.06787v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, episodic, long-term, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Large Language Models (LLMs) show promise as tool-using agents but remain limited in long-horizon tasks that require remembering, organizing, and reusing knowledge.\n\n进一步看，论文的核心做法或实验重点可以概括为：Prior memory approaches aim to resolve the situation, but mainly focus on storing factual information.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "long-term memory"
+    ],
+    "one_liner": "Large Language Models (LLMs) show promise as tool-using agents but remain limited in long-horizon tasks that require remembering, organizing, and reusing knowledge.",
+    "published": "2026-06-05",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, episodic, long-term, retrieval\n- 检索关键词命中：long-term memory\n- 来源分类信息：cs.AI",
+    "slug": "admem-advanced-memory-for-task-solving-agents",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2606.06787v1",
+    "tags": [
+      "agent",
+      "episodic",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "AdMem: Advanced Memory for Task-solving Agents",
+    "updated": "2026-06-05",
+    "url": "http://arxiv.org/abs/2606.06787v1",
+    "venue": ""
+  },
+  {
     "abstract": "Long-term memory enables language model agents to support personalized interactions, but it remains unclear when available memories warrant integration into responses. Existing memory evaluations emphasize retrieval accuracy and downstream task utility, while overlooking whether retrieved sensitive memory content is warranted in the current turn. We introduce RBI-Eval, a controlled measurement study built around a probe set that compares model behavior with and without access to sensitive memory under identical benign prompts. We evaluate four base LLMs against a matched no-memory reference across four memory-access settings: full-context exposure and three retrieval systems. Our results reveal substantial behavioral divergence. With memory available, the separation score for sensitive-memory integration decreases by 8.9\\%--26.6\\% relative to the matched no-memory reference for GPT-5.4-mini, but by 51.1\\%--82.9\\% for Claude-Sonnet-4.6, DeepSeek-V4-Flash, and Qwen3.5-9B. Control experiments on DeepSeek and GPT-5.4-mini show this effect is specific to sensitive content, rather than general personalization. Retrieval systems reduce exposure but do not eliminate integration once sensitive memory reaches the generator. These findings suggest safe personalization requires memory-aware decisions at both retrieval and generation time.",
     "authors": [
       "Lingxiang Xu",
@@ -1359,6 +1517,40 @@
     "title": "EpiEvolve: Self-Evolving Agents for Streaming Pandemic Forecasting under Regime Shifts",
     "updated": "2026-06-03",
     "url": "http://arxiv.org/abs/2606.05513v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Theoretical heterogeneous catalysis promises rapid catalyst discovery, yet computational and machine-learning predictions often deviate from experiment and stay confined to narrow material families, for want of a faithful, condition-aware catalytic simulator. We present CatDT (Catalysis Digital Twin), a self-evolving multi-agent system that builds an autonomous digital twin of a working catalyst, unifying gas-solid and liquid-solid modeling. From only a bulk crystal and a natural-language reaction description, eight specialized agents and 27 scientific tools predict stable facets, reconstruct working surfaces, enumerate and rank reaction pathways, locate transition states, and compute kinetics in 5-30 min on a single GPU. Two innovations address the hardest steps: UniMech finds dominant pathways for novel materials at over $10^3\\times$ lower cost than exhaustive enumeration by fusing agent-guided proposals with energy-cached graph search, and a memory-augmented reinforcement loop raises barrier-calculation success from 41\\% to 84\\% across 600 catalytic surfaces. Across seven gas-solid benchmarks -- stepped metals, single-atom catalysts, ordered intermetallics, vacancy-rich 2D sulfides and carbides, and a strong-metal--support-interaction (SMSI) interface -- every CatDT prediction lies within 0.5-2 times experiment over four orders of magnitude. For propane dehydrogenation, CatDT independently discovers non-precious candidates rivaling the Pt-based industrial benchmark, with a proposed Ni@ZrO$_2$ SMSI overlayer reaching a simulated TOF of $1.63~\\text{s}^{-1}$ at $\\sim$100\\% selectivity. More broadly, the decisive factor for a faithful catalyst digital twin -- or any multi-stage scientific simulator -- is not raw LLM capability but the engineered harness around it: deterministic tools, persistent memory, and verified self-improvement that compound across models, tools, and runs.",
+    "authors": [
+      "Zhilong Song",
+      "Zongmin Zhang",
+      "Lixue Cheng"
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cs.AI",
+      "physics.chem-ph"
+    ],
+    "id": "2606.05050v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Theoretical heterogeneous catalysis promises rapid catalyst discovery, yet computational and machine-learning predictions often deviate from experiment and stay confined to narrow material families, for want of a...\n\n进一步看，论文的核心做法或实验重点可以概括为：We present CatDT (Catalysis Digital Twin), a self-evolving multi-agent system that builds an autonomous digital twin of a working catalyst, unifying gas-solid and liquid-solid modeling.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory augmented",
+      "memory-augmented",
+      "persistent memory"
+    ],
+    "one_liner": "Theoretical heterogeneous catalysis promises rapid catalyst discovery, yet computational and machine-learning predictions often deviate from experiment and stay confined to...",
+    "published": "2026-06-03",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark\n- 检索关键词命中：memory augmented, memory-augmented, persistent memory\n- 来源分类信息：cond-mat.mtrl-sci, cs.AI, physics.chem-ph",
+    "slug": "autonomous-heterogeneous-catalyst-discovery-with-a-self-evolving-multi-agent-dig",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2606.05050v1",
+    "tags": [
+      "agent",
+      "benchmark"
+    ],
+    "title": "Autonomous heterogeneous catalyst discovery with a self-evolving multi-agent digital twin",
+    "updated": "2026-06-03",
+    "url": "http://arxiv.org/abs/2606.05050v1",
     "venue": ""
   },
   {
