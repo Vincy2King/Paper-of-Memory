@@ -27,7 +27,7 @@ Large Language Models (LLMs) are increasingly expected to interact with users ov
 ## Why It Was Included
 - 来源：arXiv
 - 高亮主题命中：context, conversation, long-term, retrieval
-- 检索关键词命中：long-term memory
+- 检索关键词命中：conversational memory, long-term memory
 - 来源分类信息：cs.CL
 
 ## Abstract Snapshot

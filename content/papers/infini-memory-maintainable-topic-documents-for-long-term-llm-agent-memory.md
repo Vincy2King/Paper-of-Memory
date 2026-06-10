@@ -27,7 +27,7 @@ Long-term LLM agents need persistent memory that can track changing facts and pr
 ## Why It Was Included
 - 来源：arXiv
 - 高亮主题命中：agent, context, long-term, retrieval
-- 检索关键词命中：agent memory, long-term memory
+- 检索关键词命中：agent memory, long-term memory, persistent memory
 - 来源分类信息：cs.AI, cs.CL
 
 ## Abstract Snapshot

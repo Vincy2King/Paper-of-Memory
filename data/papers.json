@@ -30,6 +30,35 @@
     "venue": ""
   },
   {
+    "abstract": "Autonomous web navigation remains challenging for LLM agents, and the strongest generalist systems rely on proprietary reasoning models whose inference cost is prohibitive for the repetitive tasks where such agents would be most useful. We argue this gap stems not from insufficient model capability but from agent architectures that fail to replicate three human cognitive advantages: selective attention to relevant page regions, persistent memory of website structure, and procedural fluency with common interaction patterns. We introduce WebChallenger, a web agent framework that addresses each gap through architecture design rather than model scale, built around PageMem: a structured page representation deterministically constructed from the DOM that exposes each page as a hierarchy of semantic sections with short summaries. On this shared substrate we build three mechanisms that mirror the three cognitive advantages: a divide-and-conquer observation pipeline that lets the agent skim section summaries and extract details only from task-relevant regions; a lightweight exploration and memory system that traverses each website once to build a reusable map of pages and element behaviors; and compound action workflows that collapse common multi-step interactions into single agent actions, handling partial state changes automatically. Because all three operate over PageMem, the framework generalizes across websites without site-specific adapters. Using off-the-shelf open-weight models without fine-tuning, our system achieves 56.3% on WebArena, 48.7% on VisualWebArena, 51.0% on Online-Mind2Web, and 70.9% on WorkArena, approaching frontier proprietary systems at a fraction of the cost. Our code is released at https://github.com/jayoohwang1/webchallenger",
+    "authors": [
+      "Jayoo Hwang",
+      "Xiaowen Zhang",
+      "Vedant Padwal"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "id": "2606.10423v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Autonomous web navigation remains challenging for LLM agents, and the strongest generalist systems rely on proprietary reasoning models whose inference cost is prohibitive for the repetitive tasks where such agents...\n\n进一步看，论文的核心做法或实验重点可以概括为：We argue this gap stems not from insufficient model capability but from agent architectures that fail to replicate three human cognitive advantages: selective attention to relevant page regions, persistent memory of...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "persistent memory"
+    ],
+    "one_liner": "Autonomous web navigation remains challenging for LLM agents, and the strongest generalist systems rely on proprietary reasoning models whose inference cost is prohibitive for...",
+    "published": "2026-06-09",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent\n- 检索关键词命中：persistent memory\n- 来源分类信息：cs.CL",
+    "slug": "webchallenger-a-reliable-and-efficient-generalist-web-agent",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2606.10423v1",
+    "tags": [
+      "agent"
+    ],
+    "title": "WebChallenger: A Reliable and Efficient Generalist Web Agent",
+    "updated": "2026-06-09",
+    "url": "http://arxiv.org/abs/2606.10423v1",
+    "venue": ""
+  },
+  {
     "abstract": "Long-document question answering (QA) requires large language models (LLMs) to reason over evidence scattered across lengthy documents, where answers often depend on event order, section-level context, and cross-part evidence connections. Although retrieval-augmented generation (RAG) reduces the input context by retrieving relevant evidence, existing structured RAG methods still face three limitations: costly query-agnostic knowledge organization, insufficient use of original document structure, and no reuse of historical reasoning experience. To address these limitations, we propose DocTrace, a multi-agent RAG framework for long-document QA that supports query-triggered knowledge organization, document-structure-aware and experience-guided reasoning. DocTrace preserves document hierarchy with a lightweight document structural tree index, constructs agent-shared hypergraph-structured working memory on demand during reasoning, and stores successful reasoning plans in graph-structured experience memory for future reuse, enabling adaptive exploration across related long-document questions. Experiments on four long-document QA datasets show that DocTrace achieves the best performance on three datasets, surpassing the strongest baseline, ComoRAG, by up to 8.85% in F1 and 4.40% in EM, while reducing the overall computational cost by 53.32%",
     "authors": [
       "Xiangjun Zai",
@@ -108,11 +137,12 @@
     "intro": "这篇论文被纳入仓库，是因为它和 `benchmark, compression, context, conversation` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Persistent memory systems promise to make LLMs more helpful by storing user beliefs over time.\n\n进一步看，论文的核心做法或实验重点可以概括为：We show they also make models less correct by systematically amplifying sycophancy, wherein models prioritize agreement with users over accuracy.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
     "matched_keywords": [
       "memory augmented",
-      "memory-augmented"
+      "memory-augmented",
+      "persistent memory"
     ],
     "one_liner": "Persistent memory systems promise to make LLMs more helpful by storing user beliefs over time.",
     "published": "2026-06-09",
-    "relevance": "- 来源：arXiv\n- 高亮主题命中：benchmark, compression, context, conversation\n- 检索关键词命中：memory augmented, memory-augmented\n- 来源分类信息：cs.AI",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：benchmark, compression, context, conversation\n- 检索关键词命中：memory augmented, memory-augmented, persistent memory\n- 来源分类信息：cs.AI",
     "slug": "recalling-too-well-sycophancy-evaluation-and-mitigation-in-memory-augmented-mode",
     "source": "arXiv",
     "source_key": "http://arxiv.org/abs/2606.10949v1",
@@ -143,11 +173,12 @@
     "id": "2606.10694v1",
     "intro": "这篇论文被纳入仓库，是因为它和 `context, conversation, long-term, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Large Language Models (LLMs) are increasingly expected to interact with users over long time horizons.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, due to their finite context window, LLMs cannot retain all past interactions, making long-term memory management essential for storing, updating, and retrieving historical information beyond the context limit.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
     "matched_keywords": [
+      "conversational memory",
       "long-term memory"
     ],
     "one_liner": "Large Language Models (LLMs) are increasingly expected to interact with users over long time horizons.",
     "published": "2026-06-09",
-    "relevance": "- 来源：arXiv\n- 高亮主题命中：context, conversation, long-term, retrieval\n- 检索关键词命中：long-term memory\n- 来源分类信息：cs.CL",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：context, conversation, long-term, retrieval\n- 检索关键词命中：conversational memory, long-term memory\n- 来源分类信息：cs.CL",
     "slug": "real-a-reasoning-enhanced-graph-framework-for-long-term-memory-management-of-llm",
     "source": "arXiv",
     "source_key": "http://arxiv.org/abs/2606.10694v1",
@@ -185,11 +216,12 @@
     "intro": "这篇论文被纳入仓库，是因为它和 `agent, context, long-term, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Long-term LLM agents need persistent memory that can track changing facts and provide relevant evidence across sessions.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing memory systems often store observations as isolated records, summaries, or indexed fragments, which makes evidence aggregation, fact revision, and memory maintenance difficult.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
     "matched_keywords": [
       "agent memory",
-      "long-term memory"
+      "long-term memory",
+      "persistent memory"
     ],
     "one_liner": "Long-term LLM agents need persistent memory that can track changing facts and provide relevant evidence across sessions.",
     "published": "2026-06-09",
-    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, context, long-term, retrieval\n- 检索关键词命中：agent memory, long-term memory\n- 来源分类信息：cs.AI, cs.CL",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, context, long-term, retrieval\n- 检索关键词命中：agent memory, long-term memory, persistent memory\n- 来源分类信息：cs.AI, cs.CL",
     "slug": "infini-memory-maintainable-topic-documents-for-long-term-llm-agent-memory",
     "source": "arXiv",
     "source_key": "http://arxiv.org/abs/2606.10677v1",
@@ -216,12 +248,14 @@
     "id": "2606.10842v1",
     "intro": "这篇论文被纳入仓库，是因为它和 `benchmark, conversation, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：We describe ConvMemory v2, an opt-in token-evidence reranker that sits after the lightweight ConvMemory v1 reranker and reorders only v1's protected top-10 candidate set. v2 is a fine-tuned ms-marco-MiniLM-L-6-v2...\n\n进一步看，论文的核心做法或实验重点可以概括为：On the LoCoMo conversational memory benchmark (5 seeds, n = 4955 test rows), v2 raises FULL MRR from v1's 0.5824 to 0.6560 (paired bootstrap +0.0734, 95% CI [+0.0645, +0.0827]) and H@1 from 0.4440 to 0.5474. v2 closes...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
     "matched_keywords": [
+      "conversational memory",
       "memory benchmark",
-      "memory benchmarks"
+      "memory benchmarks",
+      "memory retrieval"
     ],
     "one_liner": "We describe ConvMemory v2, an opt-in token-evidence reranker that sits after the lightweight ConvMemory v1 reranker and reorders only v1's protected top-10 candidate set. v2 is...",
     "published": "2026-06-09",
-    "relevance": "- 来源：arXiv\n- 高亮主题命中：benchmark, conversation, retrieval\n- 检索关键词命中：memory benchmark, memory benchmarks\n- 来源分类信息：cs.CL, cs.IR",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：benchmark, conversation, retrieval\n- 检索关键词命中：conversational memory, memory benchmark, memory benchmarks, memory retrieval\n- 来源分类信息：cs.CL, cs.IR",
     "slug": "convmemory-v2-a-recall-preserving-top-10-evidence-reranker-for-conversational-me",
     "source": "arXiv",
     "source_key": "http://arxiv.org/abs/2606.10842v1",
@@ -1815,6 +1849,37 @@
     "title": "Temporal Order Matters for Agentic Memory: Segment Trees for Long-Horizon Agents",
     "updated": "2026-06-03",
     "url": "http://arxiv.org/abs/2606.04555v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Linear attention provides an efficient backbone for long-sequence recommendation by avoiding the quadratic cost of standard Transformers, but its compressed recurrent state can be dominated by repetitive behavior patterns. We identify this phenomenon as semantic state sink, where recurring semantics over-occupy the recurrent state and bias subsequent readouts. To mitigate semantic state sink, we propose SinkRec, a hybrid memory-transition looped architecture that decouples collaborative behavioral pattern storage from dynamic transition modeling. SinkRec externalizes recurring local patterns into a learnable conditional memory through residual vector quantization, reinjects the retrieved codes, and exposes memory key-value pairs to the attention block. It further introduces Temporal-Aware State-Relation Differential Gated DeltaNet (TDGD), which uses memory to purify recurrent writing and reading by suppressing memory-covered updates and removing memory-aligned readout responses. This design turns recurring semantics from state-competing signals into memory-retrievable patterns, allowing the recurrent state to focus on dynamic transitions and alleviating semantic state sink with linear-time efficiency. Experiments on public and industrial datasets demonstrate the effectiveness and efficiency of SinkRec.",
+    "authors": [
+      "Zhuang Zhuang",
+      "Zhipeng Wei",
+      "Ji Dai",
+      "Jie Chen",
+      "Fei Pan",
+      "Peng Jiang",
+      "Kun Gai"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "id": "2606.09888v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `memory research` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Linear attention provides an efficient backbone for long-sequence recommendation by avoiding the quadratic cost of standard Transformers, but its compressed recurrent state can be dominated by repetitive behavior...\n\n进一步看，论文的核心做法或实验重点可以概括为：We identify this phenomenon as semantic state sink, where recurring semantics over-occupy the recurrent state and bias subsequent readouts.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory retrieval"
+    ],
+    "one_liner": "Linear attention provides an efficient backbone for long-sequence recommendation by avoiding the quadratic cost of standard Transformers, but its compressed recurrent state can...",
+    "published": "2026-06-03",
+    "relevance": "- 来源：arXiv\n- 检索关键词命中：memory retrieval\n- 来源分类信息：cs.LG",
+    "slug": "sinkrec-mitigating-semantic-state-sink-in-long-sequence-recommendation-with-memo",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2606.09888v1",
+    "tags": [],
+    "title": "SinkRec: Mitigating Semantic State Sink in Long Sequence Recommendation with Memory-Conditioned Gated Delta Networks",
+    "updated": "2026-06-03",
+    "url": "http://arxiv.org/abs/2606.09888v1",
     "venue": ""
   },
   {

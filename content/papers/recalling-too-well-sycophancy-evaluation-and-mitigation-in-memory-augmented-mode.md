@@ -27,7 +27,7 @@ Persistent memory systems promise to make LLMs more helpful by storing user beli
 ## Why It Was Included
 - 来源：arXiv
 - 高亮主题命中：benchmark, compression, context, conversation
-- 检索关键词命中：memory augmented, memory-augmented
+- 检索关键词命中：memory augmented, memory-augmented, persistent memory
 - 来源分类信息：cs.AI
 
 ## Abstract Snapshot

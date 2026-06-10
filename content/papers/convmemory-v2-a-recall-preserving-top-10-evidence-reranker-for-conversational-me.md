@@ -27,7 +27,7 @@ We describe ConvMemory v2, an opt-in token-evidence reranker that sits after the
 ## Why It Was Included
 - 来源：arXiv
 - 高亮主题命中：benchmark, conversation, retrieval
-- 检索关键词命中：memory benchmark, memory benchmarks
+- 检索关键词命中：conversational memory, memory benchmark, memory benchmarks, memory retrieval
 - 来源分类信息：cs.CL, cs.IR
 
 ## Abstract Snapshot
