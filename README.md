@@ -39,22 +39,31 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **472**
-- Last generated: **2026-06-09**
+- Total tracked papers: **482**
+- Last generated: **2026-06-10**
 
 ## Papers by Source
 
 - ACL Anthology: **1**
-- arXiv: **392**
+- arXiv: **402**
 - OpenReview: **79**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-06-09 | arXiv | [What Spatial Memory Must Store: Occlusion as the Test for Language-Agent Memory](content/papers/what-spatial-memory-must-store-occlusion-as-the-test-for-language-agent-memory.md) | agent |
+| 2026-06-09 | arXiv | [Trace Only What You Need: Structure-Aware On-Demand Hypergraph Memory for Long-Document Question Answering](content/papers/trace-only-what-you-need-structure-aware-on-demand-hypergraph-memory-for-long-do.md) | agent, context, retrieval |
+| 2026-06-09 | arXiv | [Soul Computing: A Theoretical Framework and Technical Architecture for Intelligent Agents with Independent Consciousness](content/papers/soul-computing-a-theoretical-framework-and-technical-architecture-for-intelligen.md) | agent, long-term |
+| 2026-06-09 | arXiv | [Recalling Too Well: Sycophancy Evaluation and Mitigation in Memory-Augmented Models](content/papers/recalling-too-well-sycophancy-evaluation-and-mitigation-in-memory-augmented-mode.md) | benchmark, compression, context |
+| 2026-06-09 | arXiv | [REAL: A Reasoning-Enhanced Graph Framework for Long-Term Memory Management of LLMs](content/papers/real-a-reasoning-enhanced-graph-framework-for-long-term-memory-management-of-llm.md) | context, conversation, long-term |
+| 2026-06-09 | arXiv | [Infini Memory: Maintainable Topic Documents for Long-Term LLM Agent Memory](content/papers/infini-memory-maintainable-topic-documents-for-long-term-llm-agent-memory.md) | agent, context, long-term |
+| 2026-06-09 | arXiv | [ConvMemory v2: A Recall-Preserving Top-10 Evidence Reranker for Conversational Memory Retrieval](content/papers/convmemory-v2-a-recall-preserving-top-10-evidence-reranker-for-conversational-me.md) | benchmark, conversation, retrieval |
+| 2026-06-09 | arXiv | [ActiveMem: Distributed Active Memory for Long-Horizon LLM Reasoning](content/papers/activemem-distributed-active-memory-for-long-horizon-llm-reasoning.md) | agent, context |
 | 2026-06-08 | arXiv | [Memory Beyond Recall: A Dual-Process Cognitive Memory System for Self-Evolving LLM Agents](content/papers/memory-beyond-recall-a-dual-process-cognitive-memory-system-for-self-evolving-ll.md) | agent, benchmark, long-term |
 | 2026-06-08 | arXiv | [MASS: Deep Research for Social Sciences with Memory-Augmented Social Simulation](content/papers/mass-deep-research-for-social-sciences-with-memory-augmented-social-simulation.md) | agent, retrieval |
 | 2026-06-08 | arXiv | [H2HMem: A Multimodal Memory Benchmark for Agents in Human-Human Interactions](content/papers/h2hmem-a-multimodal-memory-benchmark-for-agents-in-human-human-interactions.md) | agent, benchmark, conversation |
+| 2026-06-08 | arXiv | [Deployment-Time Memorization in Foundation-Model Agents](content/papers/deployment-time-memorization-in-foundation-model-agents.md) | agent, compression, retrieval |
 | 2026-06-08 | arXiv | [A Survey on Large Language Model-Based Game Agents](content/papers/a-survey-on-large-language-model-based-game-agents.md) | agent, context |
 | 2026-06-07 | OpenReview | [OP-Bench: Benchmarking Over-Personalization for Memory-Augmented Personalized Conversational Agents](content/papers/op-bench-benchmarking-over-personalization-for-memory-augmented-personalized-con.md) | agent, benchmark, conversation |
 | 2026-06-07 | OpenReview | [MemMA: Coordinating the Memory Cycle through Multi-Agent Reasoning and In-Situ Self-Evolution](content/papers/memma-coordinating-the-memory-cycle-through-multi-agent-reasoning-and-in-situ-se.md) | agent, retrieval |
@@ -63,15 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-06-07 | OpenReview | [Knowledge Graph Enhanced Memory-Augmented Retrieval for Long Context Modeling](content/papers/knowledge-graph-enhanced-memory-augmented-retrieval-for-long-context-modeling.md) | context, retrieval |
 | 2026-06-07 | OpenReview | [Injecting Context via Situation Working Memory for Logical Reasoning with LLMs](content/papers/injecting-context-via-situation-working-memory-for-logical-reasoning-with-llms.md) | context |
 | 2026-06-07 | arXiv | [Harnessing Streaming Video in the Wild](content/papers/harnessing-streaming-video-in-the-wild.md) | benchmark, context, long-term |
-| 2026-06-07 | arXiv | [Goal-Oriented Reasoning for RAG-based Memory in Conversational Agentic LLM Systems](content/papers/goal-oriented-reasoning-for-rag-based-memory-in-conversational-agentic-llm-syste.md) | agent, context, conversation |
-| 2026-06-07 | OpenReview | [From Retrieval to Reconstruction: Constructing Evolvable Cognitive Memory for Long-term Dialogue](content/papers/from-retrieval-to-reconstruction-constructing-evolvable-cognitive-memory-for-lon.md) | context, long-term, retrieval |
-| 2026-06-07 | OpenReview | [EMemBench: Interactive Benchmarking of Episodic Memory for VLM Agents](content/papers/emembench-interactive-benchmarking-of-episodic-memory-for-vlm-agents.md) | agent, benchmark, context |
-| 2026-06-07 | OpenReview | [EMemBench: Interactive Benchmarking of Episodic Memory for VLM Agents](content/papers/emembench-interactive-benchmarking-of-episodic-memory-for-vlm-agents.md) | agent, benchmark, context |
-| 2026-06-07 | OpenReview | [AutoViewMem: Self-Configuring Orthogonal Views for Conversational Long-Term Memory](content/papers/autoviewmem-self-configuring-orthogonal-views-for-conversational-long-term-memor.md) | agent, benchmark, conversation |
-| 2026-06-07 | OpenReview | [AtomMem : Learnable Dynamic Agentic Memory with Atomic Memory Operation](content/papers/atommem-learnable-dynamic-agentic-memory-with-atomic-memory-operation.md) | agent, benchmark, context |
-| 2026-06-06 | arXiv | [Light Interaction: Training-Free Inference Acceleration for Interactive Video World Models](content/papers/light-interaction-training-free-inference-acceleration-for-interactive-video-wor.md) | context |
-| 2026-06-06 | arXiv | [Improving the Performance and Learning Stability of Parallelizable RNNs Designed for Ultra-Low Power Applications](content/papers/improving-the-performance-and-learning-stability-of-parallelizable-rnns-designed.md) | benchmark, long-term |
-| 2026-06-06 | arXiv | [Emergence World: A Platform for Evaluating Long-Horizon Multi-Agent Autonomy](content/papers/emergence-world-a-platform-for-evaluating-long-horizon-multi-agent-autonomy.md) | agent, context |
 
 ## Suggested GitHub Setup
 
