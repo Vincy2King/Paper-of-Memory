@@ -39,19 +39,22 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **484**
+- Total tracked papers: **486**
 - Last generated: **2026-06-11**
 
 ## Papers by Source
 
 - ACL Anthology: **1**
-- arXiv: **404**
+- arXiv: **406**
 - OpenReview: **79**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-06-11 | OpenReview | [HMARS: A Hierarchical Multi-Agent Memory System for Long-Context Reasoning](content/papers/hmars-a-hierarchical-multi-agent-memory-system-for-long-context-reasoning.md) | agent, benchmark, context |
+| 2026-06-10 | arXiv | [Task-Aware Structured Memory for Dynamic Multi-modal In-Context Learning](content/papers/task-aware-structured-memory-for-dynamic-multi-modal-in-context-learning.md) | compression, context, retrieval |
+| 2026-06-10 | arXiv | [Organize then Retrieve: Hierarchical Memory Navigation for Efficient Agents](content/papers/organize-then-retrieve-hierarchical-memory-navigation-for-efficient-agents.md) | agent, compression, context |
 | 2026-06-09 | arXiv | [What Spatial Memory Must Store: Occlusion as the Test for Language-Agent Memory](content/papers/what-spatial-memory-must-store-occlusion-as-the-test-for-language-agent-memory.md) | agent |
 | 2026-06-09 | arXiv | [WebChallenger: A Reliable and Efficient Generalist Web Agent](content/papers/webchallenger-a-reliable-and-efficient-generalist-web-agent.md) | agent |
 | 2026-06-09 | arXiv | [Trace Only What You Need: Structure-Aware On-Demand Hypergraph Memory for Long-Document Question Answering](content/papers/trace-only-what-you-need-structure-aware-on-demand-hypergraph-memory-for-long-do.md) | agent, context, retrieval |
@@ -69,9 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-06-07 | OpenReview | [OP-Bench: Benchmarking Over-Personalization for Memory-Augmented Personalized Conversational Agents](content/papers/op-bench-benchmarking-over-personalization-for-memory-augmented-personalized-con.md) | agent, benchmark, conversation |
 | 2026-06-07 | OpenReview | [MemMA: Coordinating the Memory Cycle through Multi-Agent Reasoning and In-Situ Self-Evolution](content/papers/memma-coordinating-the-memory-cycle-through-multi-agent-reasoning-and-in-situ-se.md) | agent, retrieval |
 | 2026-06-07 | OpenReview | [LiCoMemory: Lightweight and Cognitive Agentic Memory for Efficient Long-Term Reasoning](content/papers/licomemory-lightweight-and-cognitive-agentic-memory-for-efficient-long-term-reas.md) | agent, benchmark, context |
-| 2026-06-07 | OpenReview | [Knowledge Graph Enhanced Memory-Augmented Retrieval for Long Context Modeling](content/papers/knowledge-graph-enhanced-memory-augmented-retrieval-for-long-context-modeling.md) | context, retrieval |
-| 2026-06-07 | OpenReview | [Knowledge Graph Enhanced Memory-Augmented Retrieval for Long Context Modeling](content/papers/knowledge-graph-enhanced-memory-augmented-retrieval-for-long-context-modeling.md) | context, retrieval |
-| 2026-06-07 | OpenReview | [Injecting Context via Situation Working Memory for Logical Reasoning with LLMs](content/papers/injecting-context-via-situation-working-memory-for-logical-reasoning-with-llms.md) | context |
 
 ## Suggested GitHub Setup
 

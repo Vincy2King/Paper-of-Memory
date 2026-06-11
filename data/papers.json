@@ -1,5 +1,103 @@
 [
   {
+    "abstract": "Long-context reasoning requires models to access, retrieve, and integrate evidence scattered across documents, dialogues, and accumulated interaction histories. Standard retrieval-augmented generation reduces this problem to top-$K$ chunk retrieval, but such passive access can discard relevant evidence before reasoning begins, especially when relevance depends on broader context. We propose HMARS, a hierarchical multi-agent memory system that treats long contexts as managed memory rather than a flat retrieval corpus. Sub-agents maintain grounded access to bounded memory regions, mid-agents manage regional context and provide query-specific coordination, and a frontier model performs final reasoning over retrieved evidence pages. To evaluate this view, we construct two diagnostic benchmarks targeting evidence breadth and context-dependent relevance. Across long-document and multi-turn memory tasks, HMARS achieves the best overall performance against retrieval, reranking, full-context, graph-based, and agentic long-context baselines. Evidence coverage analysis further shows that its gains come from retrieving the required supporting evidence more completely, rather than merely changing the final answer prompt.",
+    "authors": [],
+    "categories": [
+      "aclweb.org/ACL/ARR/2026/May/-/Submission"
+    ],
+    "id": "openreview:4CDX6PQRVs",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, retrieval` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 May Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Long-context reasoning requires models to access, retrieve, and integrate evidence scattered across documents, dialogues, and accumulated interaction histories.\n\n进一步看，论文的核心做法或实验重点可以概括为：Standard retrieval-augmented generation reduces this problem to top-$K$ chunk retrieval, but such passive access can discard relevant evidence before reasoning begins, especially when relevance depends on broader...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "Long-context reasoning requires models to access, retrieve, and integrate evidence scattered across documents, dialogues, and accumulated interaction histories.",
+    "published": "2026-06-02",
+    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 May Submission\n- 高亮主题命中：agent, benchmark, context, retrieval\n- 检索关键词命中：agent memory\n- 来源分类信息：aclweb.org/ACL/ARR/2026/May/-/Submission",
+    "slug": "hmars-a-hierarchical-multi-agent-memory-system-for-long-context-reasoning",
+    "source": "OpenReview",
+    "source_key": "4CDX6PQRVs",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "retrieval"
+    ],
+    "title": "HMARS: A Hierarchical Multi-Agent Memory System for Long-Context Reasoning",
+    "updated": "2026-06-11",
+    "url": "https://openreview.net/forum?id=4CDX6PQRVs",
+    "venue": "ACL ARR 2026 May Submission"
+  },
+  {
+    "abstract": "Multi-modal large language models (MLLMs) depend on in-context learning (ICL) for rapid task adaptation, but their scalability is severely limited by finite context windows and the growing cost of key-value (KV) caches in long multi-modal sequences. Existing memory compression approaches typically rely on rigid token removal or sample-dependent importance estimation, which introduces bias, disrupts semantic structure, particularly for visual representations, and yields static memories that cannot adapt to new queries. We introduce TASM (Task-Aware Structured Memory), a training-free framework that addresses these limitations through task-aware, structure-preserving, and dynamically accessible memory construction. TASM employs task-vector guided compression to replace sample-specific signals with a task-level direction that captures shared relevance across demonstrations. To preserve the underlying manifold, it applies semantics-aware token merging via bipartite graph matching, aggregating tokens without destructive pruning. Finally, TASM structures memory into a hierarchy comprising a compact Core Memory and a Latent Bank, facilitating query-adaptive dynamic retrieval. Evaluations confirm TASM maintains high performance under heavy compression, effectively balancing efficiency with adaptability.",
+    "authors": [
+      "Zhirui Chen",
+      "Ziwei Chen",
+      "Ling Shao"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "id": "2606.11853v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `compression, context, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Multi-modal large language models (MLLMs) depend on in-context learning (ICL) for rapid task adaptation, but their scalability is severely limited by finite context windows and the growing cost of key-value (KV)...\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing memory compression approaches typically rely on rigid token removal or sample-dependent importance estimation, which introduces bias, disrupts semantic structure, particularly for visual representations, and...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory compression"
+    ],
+    "one_liner": "Multi-modal large language models (MLLMs) depend on in-context learning (ICL) for rapid task adaptation, but their scalability is severely limited by finite context windows and...",
+    "published": "2026-06-10",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：compression, context, retrieval\n- 检索关键词命中：memory compression\n- 来源分类信息：cs.CV, cs.AI",
+    "slug": "task-aware-structured-memory-for-dynamic-multi-modal-in-context-learning",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2606.11853v1",
+    "tags": [
+      "compression",
+      "context",
+      "retrieval"
+    ],
+    "title": "Task-Aware Structured Memory for Dynamic Multi-modal In-Context Learning",
+    "updated": "2026-06-10",
+    "url": "http://arxiv.org/abs/2606.11853v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Large language model (LLM) agents struggle with long-horizon tasks due to their inherent statelessness, requiring all task-relevant information to be encoded in growing input contexts. The resulting degraded reasoning quality, increased inference cost, and higher latency necessitate efficient working memory mechanisms. However, existing approaches either rely on lossy compression or similarity-based retrieval, which often fail to capture temporal structure and causal dependencies required for multi-step agentic tasks. In this work, we present HORMA, a Hierarchical Organize-and-Retrieve Memory Agent that organizes experience into a file-system-like hierarchical structure, where summarized entities are linked to the corresponding raw trajectories, enabling efficient access without losing detailed information. HORMA decomposes working memory into two stages: structured memory construction and navigation-based retrieval. The construction module iteratively refines how experiences are structured by distinguishing between failures caused by missing information and those caused by misleading or overloaded context. The navigation module retrieves task-relevant context by traversing the hierarchy using a lightweight agent trained with reinforcement learning to select minimal yet sufficient context, thereby reducing latency along the critical execution path. Across ALFWorld, LoCoMo, and LongMemEval, HORMA improves task performance under constrained context budgets while requiring at most 22.17% of the baseline token usage in long conversation tasks. Compared to existing methods, it consistently achieves better efficiency-performance trade-offs and generalizes effectively to unseen tasks.",
+    "authors": [
+      "Hao-Lun Hsu",
+      "Nikki Lijing Kuang",
+      "Boyi Liu",
+      "Zhewei Yao",
+      "Yuxiong He"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.CL",
+      "cs.LG"
+    ],
+    "id": "2606.11680v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, compression, context, conversation` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Large language model (LLM) agents struggle with long-horizon tasks due to their inherent statelessness, requiring all task-relevant information to be encoded in growing input contexts.\n\n进一步看，论文的核心做法或实验重点可以概括为：The resulting degraded reasoning quality, increased inference cost, and higher latency necessitate efficient working memory mechanisms.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "retrieval memory",
+      "working memory"
+    ],
+    "one_liner": "Large language model (LLM) agents struggle with long-horizon tasks due to their inherent statelessness, requiring all task-relevant information to be encoded in growing input...",
+    "published": "2026-06-10",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, compression, context, conversation, retrieval\n- 检索关键词命中：retrieval memory, working memory\n- 来源分类信息：cs.AI, cs.CL, cs.LG",
+    "slug": "organize-then-retrieve-hierarchical-memory-navigation-for-efficient-agents",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2606.11680v1",
+    "tags": [
+      "agent",
+      "compression",
+      "context",
+      "conversation",
+      "retrieval"
+    ],
+    "title": "Organize then Retrieve: Hierarchical Memory Navigation for Efficient Agents",
+    "updated": "2026-06-10",
+    "url": "http://arxiv.org/abs/2606.11680v1",
+    "venue": ""
+  },
+  {
     "abstract": "Language-agent \"memory palace\" systems anchor each memory to a world coordinate, on the intuition that geometry adds something text cannot. We make that intuition testable and report three results. First, the memory-palace default of folding spatial proximity into a linear blend beside recency and importance does not help and can hurt: in a pre-registered recall experiment the shipped blend fails its own frozen test (mean Delta-Hit@5 -0.0375, Wilcoxon p=0.306), sitting at a position-blind baseline, while a geometry-led weighting wins decisively (+0.3208, p<10^-15): geometry must lead recall when the query regime is spatial. Second, memory recall and visibility must be separated: recall is occlusion-blind by design (you correctly remember the next room behind a wall), while visibility is a perception predicate over stored geometry that the live system never computed. A one-line ray-versus-voxel digital differential analyzer (DDA), re-pointed from the gaze ray the agent already casts, supplies it: text and the live FoV cone both score 0.000 on 849 behind-wall targets while cone-plus-DDA reaches 0.982 (exact McNemar p<10^-6); coordinate recall separately resolves near-duplicate locations a cosine null cannot (1.000 vs 0.533, n=150). Third, the visibility predicate is confirmed live under a git-committed pre-registration (SPMEM-OCC-LIVE-v1: eight scripted worlds, automated oracle scoring, 96 behind-wall targets, false-visible 1.000->0.000, pooled exact McNemar p=2.5x10^-29), a run that surfaced and fixed a real relay anchor defect. We concede that occlusion-needs-geometry is near-tautological; the contribution is the measurement and isolation, separating what spatial memory must store from how it is read. These pilots power a frozen confirmatory study (SPMEM-ZERO-REAL-PREREG-v1); the full human-authored multi-world study with blind raters remains future work.",
     "authors": [
       "Doeon Kwon",
@@ -3046,34 +3144,6 @@
     "updated": "2026-06-02",
     "url": "http://arxiv.org/abs/2606.04126v1",
     "venue": ""
-  },
-  {
-    "abstract": "Long-context reasoning requires models to access, retrieve, and integrate evidence scattered across documents, dialogues, and accumulated interaction histories. Standard retrieval-augmented generation reduces this problem to top-$K$ chunk retrieval, but such passive access can discard relevant evidence before reasoning begins, especially when relevance depends on broader context. We propose HMARS, a hierarchical multi-agent memory system that treats long contexts as managed memory rather than a flat retrieval corpus. Sub-agents maintain grounded access to bounded memory regions, mid-agents manage regional context and provide query-specific coordination, and a frontier model performs final reasoning over retrieved evidence pages. To evaluate this view, we construct two diagnostic benchmarks targeting evidence breadth and context-dependent relevance. Across long-document and multi-turn memory tasks, HMARS achieves the best overall performance against retrieval, reranking, full-context, graph-based, and agentic long-context baselines. Evidence coverage analysis further shows that its gains come from retrieving the required supporting evidence more completely, rather than merely changing the final answer prompt.",
-    "authors": [],
-    "categories": [
-      "aclweb.org/ACL/ARR/2026/May/-/Submission"
-    ],
-    "id": "openreview:4CDX6PQRVs",
-    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, retrieval` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 May Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Long-context reasoning requires models to access, retrieve, and integrate evidence scattered across documents, dialogues, and accumulated interaction histories.\n\n进一步看，论文的核心做法或实验重点可以概括为：Standard retrieval-augmented generation reduces this problem to top-$K$ chunk retrieval, but such passive access can discard relevant evidence before reasoning begins, especially when relevance depends on broader...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
-    "matched_keywords": [
-      "agent memory"
-    ],
-    "one_liner": "Long-context reasoning requires models to access, retrieve, and integrate evidence scattered across documents, dialogues, and accumulated interaction histories.",
-    "published": "2026-06-02",
-    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 May Submission\n- 高亮主题命中：agent, benchmark, context, retrieval\n- 检索关键词命中：agent memory\n- 来源分类信息：aclweb.org/ACL/ARR/2026/May/-/Submission",
-    "slug": "hmars-a-hierarchical-multi-agent-memory-system-for-long-context-reasoning",
-    "source": "OpenReview",
-    "source_key": "4CDX6PQRVs",
-    "tags": [
-      "agent",
-      "benchmark",
-      "context",
-      "retrieval"
-    ],
-    "title": "HMARS: A Hierarchical Multi-Agent Memory System for Long-Context Reasoning",
-    "updated": "2026-06-02",
-    "url": "https://openreview.net/forum?id=4CDX6PQRVs",
-    "venue": "ACL ARR 2026 May Submission"
   },
   {
     "abstract": "LLM-based agents face challenges in personalized interactive tasks due to heterogeneous, multi-typed, and implicitly constrained long-term traces. Existing memory mechanisms struggle with accurate routing and retrieval, especially on-device where personalization is critical. Most methods use single-vector representations, blurring type distinctions and relational structure. We propose HGP, a hybrid graph memory framework. HGP employs a lightweight self-enhancement classifier for personalized memory routing and constructs episodic, semantic, and procedural memories as graphs. It also extracts working memory as a state trajectory to capture current state and implicit constraints, ensuring reliable decision- making. The classifier reduces large-model calls, enabling on-device deployment, while graph storage enables accurate retrieval and incremental user profile refinement. Experiments on two benchmarks show that on PAL-Set solution selection, HGP achieves an S-score of 35.58, nearly 7 points above the strongest baseline.",
