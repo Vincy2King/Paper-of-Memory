@@ -39,39 +39,39 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **486**
-- Last generated: **2026-06-11**
+- Total tracked papers: **498**
+- Last generated: **2026-06-12**
 
 ## Papers by Source
 
 - ACL Anthology: **1**
-- arXiv: **406**
+- arXiv: **418**
 - OpenReview: **79**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-06-11 | arXiv | [WISE: A Long-Horizon Agent in Minecraft with Why-Which Reasoning](content/papers/wise-a-long-horizon-agent-in-minecraft-with-why-which-reasoning.md) | agent, episodic, retrieval |
+| 2026-06-11 | arXiv | [The Containment Gap: How Deployed Agentic AI Frameworks Fail Public-Facing Safety Requirements](content/papers/the-containment-gap-how-deployed-agentic-ai-frameworks-fail-public-facing-safety.md) | agent |
+| 2026-06-11 | arXiv | [Ontology Memory-Augmented ASR Correction for Long Text-Speech Interleaved Conversations](content/papers/ontology-memory-augmented-asr-correction-for-long-text-speech-interleaved-conver.md) | context, conversation |
+| 2026-06-11 | arXiv | [Multi-Turn Reasoning When Context Arrives in Pieces: Scalable Sharding and Memory-Augmented RL](content/papers/multi-turn-reasoning-when-context-arrives-in-pieces-scalable-sharding-and-memory.md) | context, conversation |
+| 2026-06-11 | arXiv | [MiniMax Sparse Attention](content/papers/minimax-sparse-attention.md) | agent, context, retrieval |
+| 2026-06-11 | arXiv | [MemRefine: LLM-Guided Compression for Long-Term Agent Memory](content/papers/memrefine-llm-guided-compression-for-long-term-agent-memory.md) | agent, benchmark, compression |
+| 2026-06-11 | arXiv | [Learning What to Remember: A Cognitively Grounded Multi-Factor Value Model for Agentic Memory](content/papers/learning-what-to-remember-a-cognitively-grounded-multi-factor-value-model-for-ag.md) | agent, context, retrieval |
+| 2026-06-11 | arXiv | [How Much Memory Do We Need? Adaptive Memory Gate for Neural Operators](content/papers/how-much-memory-do-we-need-adaptive-memory-gate-for-neural-operators.md) | memory-augmented |
 | 2026-06-11 | OpenReview | [HMARS: A Hierarchical Multi-Agent Memory System for Long-Context Reasoning](content/papers/hmars-a-hierarchical-multi-agent-memory-system-for-long-context-reasoning.md) | agent, benchmark, context |
+| 2026-06-11 | arXiv | [G-Long: Graph-Enhanced Memory Management for Efficient Long-Term Dialogue Agents](content/papers/g-long-graph-enhanced-memory-management-for-efficient-long-term-dialogue-agents.md) | agent, benchmark, context |
 | 2026-06-10 | arXiv | [Task-Aware Structured Memory for Dynamic Multi-modal In-Context Learning](content/papers/task-aware-structured-memory-for-dynamic-multi-modal-in-context-learning.md) | compression, context, retrieval |
+| 2026-06-10 | arXiv | [SMSR: Certified Defence Against Runtime Memory Poisoning in Persistent LLM Agent Systems](content/papers/smsr-certified-defence-against-runtime-memory-poisoning-in-persistent-llm-agent-.md) | agent, retrieval |
 | 2026-06-10 | arXiv | [Organize then Retrieve: Hierarchical Memory Navigation for Efficient Agents](content/papers/organize-then-retrieve-hierarchical-memory-navigation-for-efficient-agents.md) | agent, compression, context |
+| 2026-06-10 | arXiv | [Arbor: Tree Search as a Cognition Layer for Autonomous Agents](content/papers/arbor-tree-search-as-a-cognition-layer-for-autonomous-agents.md) | agent |
+| 2026-06-10 | arXiv | [$μ$VLA: On Recurrent Memory for Partially Observable Manipulation in VLA Models](content/papers/vla-on-recurrent-memory-for-partially-observable-manipulation-in-vla-models.md) | compression, retrieval |
 | 2026-06-09 | arXiv | [What Spatial Memory Must Store: Occlusion as the Test for Language-Agent Memory](content/papers/what-spatial-memory-must-store-occlusion-as-the-test-for-language-agent-memory.md) | agent |
 | 2026-06-09 | arXiv | [WebChallenger: A Reliable and Efficient Generalist Web Agent](content/papers/webchallenger-a-reliable-and-efficient-generalist-web-agent.md) | agent |
 | 2026-06-09 | arXiv | [Trace Only What You Need: Structure-Aware On-Demand Hypergraph Memory for Long-Document Question Answering](content/papers/trace-only-what-you-need-structure-aware-on-demand-hypergraph-memory-for-long-do.md) | agent, context, retrieval |
 | 2026-06-09 | arXiv | [Soul Computing: A Theoretical Framework and Technical Architecture for Intelligent Agents with Independent Consciousness](content/papers/soul-computing-a-theoretical-framework-and-technical-architecture-for-intelligen.md) | agent, long-term |
 | 2026-06-09 | arXiv | [Recalling Too Well: Sycophancy Evaluation and Mitigation in Memory-Augmented Models](content/papers/recalling-too-well-sycophancy-evaluation-and-mitigation-in-memory-augmented-mode.md) | benchmark, compression, context |
-| 2026-06-09 | arXiv | [REAL: A Reasoning-Enhanced Graph Framework for Long-Term Memory Management of LLMs](content/papers/real-a-reasoning-enhanced-graph-framework-for-long-term-memory-management-of-llm.md) | context, conversation, long-term |
-| 2026-06-09 | arXiv | [Infini Memory: Maintainable Topic Documents for Long-Term LLM Agent Memory](content/papers/infini-memory-maintainable-topic-documents-for-long-term-llm-agent-memory.md) | agent, context, long-term |
-| 2026-06-09 | arXiv | [ConvMemory v2: A Recall-Preserving Top-10 Evidence Reranker for Conversational Memory Retrieval](content/papers/convmemory-v2-a-recall-preserving-top-10-evidence-reranker-for-conversational-me.md) | benchmark, conversation, retrieval |
-| 2026-06-09 | arXiv | [ActiveMem: Distributed Active Memory for Long-Horizon LLM Reasoning](content/papers/activemem-distributed-active-memory-for-long-horizon-llm-reasoning.md) | agent, context |
-| 2026-06-08 | arXiv | [Memory Beyond Recall: A Dual-Process Cognitive Memory System for Self-Evolving LLM Agents](content/papers/memory-beyond-recall-a-dual-process-cognitive-memory-system-for-self-evolving-ll.md) | agent, benchmark, long-term |
-| 2026-06-08 | arXiv | [MASS: Deep Research for Social Sciences with Memory-Augmented Social Simulation](content/papers/mass-deep-research-for-social-sciences-with-memory-augmented-social-simulation.md) | agent, retrieval |
-| 2026-06-08 | arXiv | [H2HMem: A Multimodal Memory Benchmark for Agents in Human-Human Interactions](content/papers/h2hmem-a-multimodal-memory-benchmark-for-agents-in-human-human-interactions.md) | agent, benchmark, conversation |
-| 2026-06-08 | arXiv | [Deployment-Time Memorization in Foundation-Model Agents](content/papers/deployment-time-memorization-in-foundation-model-agents.md) | agent, compression, retrieval |
-| 2026-06-08 | arXiv | [A Survey on Large Language Model-Based Game Agents](content/papers/a-survey-on-large-language-model-based-game-agents.md) | agent, context |
-| 2026-06-07 | OpenReview | [OP-Bench: Benchmarking Over-Personalization for Memory-Augmented Personalized Conversational Agents](content/papers/op-bench-benchmarking-over-personalization-for-memory-augmented-personalized-con.md) | agent, benchmark, conversation |
-| 2026-06-07 | OpenReview | [MemMA: Coordinating the Memory Cycle through Multi-Agent Reasoning and In-Situ Self-Evolution](content/papers/memma-coordinating-the-memory-cycle-through-multi-agent-reasoning-and-in-situ-se.md) | agent, retrieval |
-| 2026-06-07 | OpenReview | [LiCoMemory: Lightweight and Cognitive Agentic Memory for Efficient Long-Term Reasoning](content/papers/licomemory-lightweight-and-cognitive-agentic-memory-for-efficient-long-term-reas.md) | agent, benchmark, context |
 
 ## Suggested GitHub Setup
 
