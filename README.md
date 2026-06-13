@@ -40,7 +40,7 @@ python3 scripts/update_papers.py --build-only
 ## Repository Snapshot
 
 - Total tracked papers: **498**
-- Last generated: **2026-06-12**
+- Last generated: **2026-06-13**
 
 ## Papers by Source
 
@@ -52,6 +52,9 @@ python3 scripts/update_papers.py --build-only
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-06-13 | OpenReview | [PersonaTree: Structured Lifecycle Memory for Person Understanding in LLM Agents](content/papers/personatree-structured-lifecycle-memory-for-person-understanding-in-llm-agents.md) | agent, benchmark, context |
+| 2026-06-12 | OpenReview | [Reconstructing the Right Episode: Evaluating Interleaved Conversational Memory Beyond Long Context](content/papers/reconstructing-the-right-episode-evaluating-interleaved-conversational-memory-be.md) | benchmark, context, conversation |
+| 2026-06-12 | OpenReview | [AIM: Constructing Adaptive Structured Memory via Agentic Information Management](content/papers/aim-constructing-adaptive-structured-memory-via-agentic-information-management.md) | agent, benchmark, long-term |
 | 2026-06-11 | arXiv | [WISE: A Long-Horizon Agent in Minecraft with Why-Which Reasoning](content/papers/wise-a-long-horizon-agent-in-minecraft-with-why-which-reasoning.md) | agent, episodic, retrieval |
 | 2026-06-11 | arXiv | [The Containment Gap: How Deployed Agentic AI Frameworks Fail Public-Facing Safety Requirements](content/papers/the-containment-gap-how-deployed-agentic-ai-frameworks-fail-public-facing-safety.md) | agent |
 | 2026-06-11 | arXiv | [Ontology Memory-Augmented ASR Correction for Long Text-Speech Interleaved Conversations](content/papers/ontology-memory-augmented-asr-correction-for-long-text-speech-interleaved-conver.md) | context, conversation |
@@ -69,9 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-06-10 | arXiv | [$μ$VLA: On Recurrent Memory for Partially Observable Manipulation in VLA Models](content/papers/vla-on-recurrent-memory-for-partially-observable-manipulation-in-vla-models.md) | compression, retrieval |
 | 2026-06-09 | arXiv | [What Spatial Memory Must Store: Occlusion as the Test for Language-Agent Memory](content/papers/what-spatial-memory-must-store-occlusion-as-the-test-for-language-agent-memory.md) | agent |
 | 2026-06-09 | arXiv | [WebChallenger: A Reliable and Efficient Generalist Web Agent](content/papers/webchallenger-a-reliable-and-efficient-generalist-web-agent.md) | agent |
-| 2026-06-09 | arXiv | [Trace Only What You Need: Structure-Aware On-Demand Hypergraph Memory for Long-Document Question Answering](content/papers/trace-only-what-you-need-structure-aware-on-demand-hypergraph-memory-for-long-do.md) | agent, context, retrieval |
-| 2026-06-09 | arXiv | [Soul Computing: A Theoretical Framework and Technical Architecture for Intelligent Agents with Independent Consciousness](content/papers/soul-computing-a-theoretical-framework-and-technical-architecture-for-intelligen.md) | agent, long-term |
-| 2026-06-09 | arXiv | [Recalling Too Well: Sycophancy Evaluation and Mitigation in Memory-Augmented Models](content/papers/recalling-too-well-sycophancy-evaluation-and-mitigation-in-memory-augmented-mode.md) | benchmark, compression, context |
 
 ## Suggested GitHub Setup
 
