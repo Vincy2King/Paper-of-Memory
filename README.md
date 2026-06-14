@@ -39,19 +39,21 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **498**
+- Total tracked papers: **499**
 - Last generated: **2026-06-14**
 
 ## Papers by Source
 
 - ACL Anthology: **1**
 - arXiv: **418**
-- OpenReview: **79**
+- OpenReview: **80**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-06-14 | OpenReview | [Renormalization Phenomenology in LLM Agent Memory Compression: Scaling Laws, Fixed Points, and Anomalous Summarization](content/papers/renormalization-phenomenology-in-llm-agent-memory-compression-scaling-laws-fixed.md) | agent, benchmark, compression |
+| 2026-06-14 | OpenReview | [Memory Beyond Recall: A Dual-Process Cognitive Memory System for Self-Evolving Agent Memory](content/papers/memory-beyond-recall-a-dual-process-cognitive-memory-system-for-self-evolving-ag.md) | agent, benchmark, long-term |
 | 2026-06-13 | OpenReview | [Schema-Mem: Structured and Evolving Memory for Long-term Conversational Knowledge](content/papers/schema-mem-structured-and-evolving-memory-for-long-term-conversational-knowledge.md) | agent, context, conversation |
 | 2026-06-13 | OpenReview | [PersonaTree: Structured Lifecycle Memory for Person Understanding in LLM Agents](content/papers/personatree-structured-lifecycle-memory-for-person-understanding-in-llm-agents.md) | agent, benchmark, context |
 | 2026-06-12 | OpenReview | [Reconstructing the Right Episode: Evaluating Interleaved Conversational Memory Beyond Long Context](content/papers/reconstructing-the-right-episode-evaluating-interleaved-conversational-memory-be.md) | benchmark, context, conversation |
@@ -70,8 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-06-10 | arXiv | [SMSR: Certified Defence Against Runtime Memory Poisoning in Persistent LLM Agent Systems](content/papers/smsr-certified-defence-against-runtime-memory-poisoning-in-persistent-llm-agent-.md) | agent, retrieval |
 | 2026-06-10 | arXiv | [Organize then Retrieve: Hierarchical Memory Navigation for Efficient Agents](content/papers/organize-then-retrieve-hierarchical-memory-navigation-for-efficient-agents.md) | agent, compression, context |
 | 2026-06-10 | arXiv | [Arbor: Tree Search as a Cognition Layer for Autonomous Agents](content/papers/arbor-tree-search-as-a-cognition-layer-for-autonomous-agents.md) | agent |
-| 2026-06-10 | arXiv | [$μ$VLA: On Recurrent Memory for Partially Observable Manipulation in VLA Models](content/papers/vla-on-recurrent-memory-for-partially-observable-manipulation-in-vla-models.md) | compression, retrieval |
-| 2026-06-09 | arXiv | [What Spatial Memory Must Store: Occlusion as the Test for Language-Agent Memory](content/papers/what-spatial-memory-must-store-occlusion-as-the-test-for-language-agent-memory.md) | agent |
 
 ## Suggested GitHub Setup
 
