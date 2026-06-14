@@ -40,7 +40,7 @@ python3 scripts/update_papers.py --build-only
 ## Repository Snapshot
 
 - Total tracked papers: **498**
-- Last generated: **2026-06-13**
+- Last generated: **2026-06-14**
 
 ## Papers by Source
 
@@ -52,6 +52,7 @@ python3 scripts/update_papers.py --build-only
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-06-13 | OpenReview | [Schema-Mem: Structured and Evolving Memory for Long-term Conversational Knowledge](content/papers/schema-mem-structured-and-evolving-memory-for-long-term-conversational-knowledge.md) | agent, context, conversation |
 | 2026-06-13 | OpenReview | [PersonaTree: Structured Lifecycle Memory for Person Understanding in LLM Agents](content/papers/personatree-structured-lifecycle-memory-for-person-understanding-in-llm-agents.md) | agent, benchmark, context |
 | 2026-06-12 | OpenReview | [Reconstructing the Right Episode: Evaluating Interleaved Conversational Memory Beyond Long Context](content/papers/reconstructing-the-right-episode-evaluating-interleaved-conversational-memory-be.md) | benchmark, context, conversation |
 | 2026-06-12 | OpenReview | [AIM: Constructing Adaptive Structured Memory via Agentic Information Management](content/papers/aim-constructing-adaptive-structured-memory-via-agentic-information-management.md) | agent, benchmark, long-term |
@@ -71,7 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-06-10 | arXiv | [Arbor: Tree Search as a Cognition Layer for Autonomous Agents](content/papers/arbor-tree-search-as-a-cognition-layer-for-autonomous-agents.md) | agent |
 | 2026-06-10 | arXiv | [$μ$VLA: On Recurrent Memory for Partially Observable Manipulation in VLA Models](content/papers/vla-on-recurrent-memory-for-partially-observable-manipulation-in-vla-models.md) | compression, retrieval |
 | 2026-06-09 | arXiv | [What Spatial Memory Must Store: Occlusion as the Test for Language-Agent Memory](content/papers/what-spatial-memory-must-store-occlusion-as-the-test-for-language-agent-memory.md) | agent |
-| 2026-06-09 | arXiv | [WebChallenger: A Reliable and Efficient Generalist Web Agent](content/papers/webchallenger-a-reliable-and-efficient-generalist-web-agent.md) | agent |
 
 ## Suggested GitHub Setup
 
