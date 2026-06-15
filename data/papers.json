@@ -26,6 +26,36 @@
     "venue": "ACL ARR 2026 May Submission"
   },
   {
+    "abstract": "Long-horizon LLM agents must maintain, update, and revise task state over time. Yet current memory benchmarks mostly test passive retrieval, asking whether a model can find information in a fixed context. Active memory remains undermeasured, especially how models use changing task state across multi-step interactions. We introduce GAMBIT, a benchmark that uses deterministic game episodes to test active memory in LLM agents. It tests online updating, ordered recall, interference resistance, visuospatial tracking, episodic binding, and hypothesis revision. GAMBIT reveals that the passive-to-active memory gap persists across model families and scales. Models with near-perfect scores on passive retrieval benchmarks such as Needle-in-a-Haystack still fail when they must update state, resist interference, reconstruct episodic routes, or maintain hypotheses across feedback. These results show that reliable long-horizon agents require more than retrieval and need active control over changing state.",
+    "authors": [],
+    "categories": [
+      "aclweb.org/ACL/ARR/2026/May/-/Submission"
+    ],
+    "id": "openreview:qGMh6l7hRw",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, episodic` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 May Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Long-horizon LLM agents must maintain, update, and revise task state over time.\n\n进一步看，论文的核心做法或实验重点可以概括为：Yet current memory benchmarks mostly test passive retrieval, asking whether a model can find information in a fixed context.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory benchmark",
+      "memory benchmarks"
+    ],
+    "one_liner": "Long-horizon LLM agents must maintain, update, and revise task state over time.",
+    "published": "2026-06-02",
+    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 May Submission\n- 高亮主题命中：agent, benchmark, context, episodic, retrieval\n- 检索关键词命中：memory benchmark, memory benchmarks\n- 来源分类信息：aclweb.org/ACL/ARR/2026/May/-/Submission",
+    "slug": "gambit-a-benchmark-for-active-memory-in-long-horizon-llm-agents",
+    "source": "OpenReview",
+    "source_key": "qGMh6l7hRw",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "episodic",
+      "retrieval"
+    ],
+    "title": "GAMBIT: A Benchmark for Active Memory in Long-Horizon LLM Agents",
+    "updated": "2026-06-15",
+    "url": "https://openreview.net/forum?id=qGMh6l7hRw",
+    "venue": "ACL ARR 2026 May Submission"
+  },
+  {
     "abstract": "Long-term conversational AI requires two distinct capabilities: remembering what was discussed and adapting to how a user's preferences evolve over time. We argue these operate on different timescales and require separate but interoperable architectures. AgenticLOCI is a five-agent framework built on this premise: session retrieval fuses a semantic LLM ranker (Engram, STM) with a keyword-lobe scorer (Hippo, LTM) via Reciprocal Rank Fusion, while personalization is maintained through a versioned deliberation-state memory that accumulates empirically grounded decision-episode snapshots across interactions. We evaluate on three benchmarks using Qwen 2.5-7B-Instruct. On LoCoMo, the AgenticLOCI Backbone achieves F1 = 0.342 versus BM25 = 0.285 while consuming 7.3× fewer input tokens per item. On LongMemEval-S, item-level analysis confirms that Engram and Hippo solve architecturally distinct sub-problems; at 7B scale Hippo's keyword precision leads, a reversal expected to resolve at larger model sizes where LLM ranking is more reliable. On PersonaMem, all configurations perform within a narrow band, establishing that memory benefit is conditional on context-budget pressure. The longitudinal personalization layer is evaluated on a synthetic mobility benchmark with known user trajectories, achieving restraint of 0.976 and move-precision of 0.583 against an ablation baseline. We demonstrate the full framework as a personalized urban mobility assistant for an anonymized German city.",
     "authors": [],
     "categories": [
@@ -4091,36 +4121,6 @@
     "title": "GATEMEM: Benchmarking Memory Governance in Multi-Principal Shared-Memory Agents",
     "updated": "2026-06-02",
     "url": "https://openreview.net/forum?id=i8zzVWLDX2",
-    "venue": "ACL ARR 2026 May Submission"
-  },
-  {
-    "abstract": "Long-horizon LLM agents must maintain, update, and revise task state over time. Yet current memory benchmarks mostly test passive retrieval, asking whether a model can find information in a fixed context. Active memory remains undermeasured, especially how models use changing task state across multi-step interactions. We introduce GAMBIT, a benchmark that uses deterministic game episodes to test active memory in LLM agents. It tests online updating, ordered recall, interference resistance, visuospatial tracking, episodic binding, and hypothesis revision. GAMBIT reveals that the passive-to-active memory gap persists across model families and scales. Models with near-perfect scores on passive retrieval benchmarks such as Needle-in-a-Haystack still fail when they must update state, resist interference, reconstruct episodic routes, or maintain hypotheses across feedback. These results show that reliable long-horizon agents require more than retrieval and need active control over changing state.",
-    "authors": [],
-    "categories": [
-      "aclweb.org/ACL/ARR/2026/May/-/Submission"
-    ],
-    "id": "openreview:qGMh6l7hRw",
-    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, episodic` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 May Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Long-horizon LLM agents must maintain, update, and revise task state over time.\n\n进一步看，论文的核心做法或实验重点可以概括为：Yet current memory benchmarks mostly test passive retrieval, asking whether a model can find information in a fixed context.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
-    "matched_keywords": [
-      "memory benchmark",
-      "memory benchmarks"
-    ],
-    "one_liner": "Long-horizon LLM agents must maintain, update, and revise task state over time.",
-    "published": "2026-06-02",
-    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 May Submission\n- 高亮主题命中：agent, benchmark, context, episodic, retrieval\n- 检索关键词命中：memory benchmark, memory benchmarks\n- 来源分类信息：aclweb.org/ACL/ARR/2026/May/-/Submission",
-    "slug": "gambit-a-benchmark-for-active-memory-in-long-horizon-llm-agents",
-    "source": "OpenReview",
-    "source_key": "qGMh6l7hRw",
-    "tags": [
-      "agent",
-      "benchmark",
-      "context",
-      "episodic",
-      "retrieval"
-    ],
-    "title": "GAMBIT: A Benchmark for Active Memory in Long-Horizon LLM Agents",
-    "updated": "2026-06-02",
-    "url": "https://openreview.net/forum?id=qGMh6l7hRw",
     "venue": "ACL ARR 2026 May Submission"
   },
   {
