@@ -27,7 +27,7 @@ Traffic state prediction is a fundamental task in intelligent transportation sys
 ## Why It Was Included
 - 来源：arXiv
 - 高亮主题命中：memory-augmented
-- 检索关键词命中：memory-augmented
+- 检索关键词命中：memory augmented, memory-augmented
 - 来源分类信息：cs.LG, cs.AI
 
 ## Abstract Snapshot
