@@ -56,6 +56,36 @@
     "venue": "ACL ARR 2026 May Submission"
   },
   {
+    "abstract": "LLM agents that persist across sessions accumulate stored memories whose validity varies enormously by content type, yet existing memory architectures treat all memories as equally persistent and systematically contaminate retrieved context with outdated facts. We show that per-memory, type-conditioned temporal decay, a property of western scrub jay episodic memory, can be operationalized as an auto-classified coefficient $\\pi_i$ in an external LLM-agent memory store, yielding ScrubJay-MEM: each memory is encoded as a jointly-bound What--Where--When tuple with an estimated perishability $\\pi_i$ and utility horizon $\\tau_i$, retrieved by query-adaptive scoring, and revised retroactively at $O(1)$ LLM calls per update. We introduce the Temporal Generalization Test (TGT), a benchmark with held-out retention intervals and a Generalization Gap (GenGap) metric. On TGT, ScrubJay-MEM is the only retrieval-based system with substantially positive GenGap ($+0.108$); on MemoryAgentBench EventQA-64k it improves F1 by $+2.66$ over Mem0 and $+3.09$ over Qwen3-Embedding-4B under a llm backbone. A decay ablation collapses GenGap by $5.7\\times$, establishing type-conditioned decay as necessary for the result. Gains narrow under stronger backbones and reverse on fact-consolidation tasks, scoping the contribution to temporal reasoning over perishable facts.",
+    "authors": [],
+    "categories": [
+      "aclweb.org/ACL/ARR/2026/May/-/Submission"
+    ],
+    "id": "openreview:HXNJkclmb9",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, episodic` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 May Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：LLM agents that persist across sessions accumulate stored memories whose validity varies enormously by content type, yet existing memory architectures treat all memories as equally persistent and systematically...\n\n进一步看，论文的核心做法或实验重点可以概括为：We show that per-memory, type-conditioned temporal decay, a property of western scrub jay episodic memory, can be operationalized as an auto-classified coefficient $\\pi_i$ in an external LLM-agent memory store,...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory",
+      "episodic memory"
+    ],
+    "one_liner": "LLM agents that persist across sessions accumulate stored memories whose validity varies enormously by content type, yet existing memory architectures treat all memories as...",
+    "published": "2026-06-02",
+    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 May Submission\n- 高亮主题命中：agent, benchmark, context, episodic, retrieval\n- 检索关键词命中：agent memory, episodic memory\n- 来源分类信息：aclweb.org/ACL/ARR/2026/May/-/Submission",
+    "slug": "caching-for-the-future-scrub-jay-episodic-memory-principles-for-agent-memory-sys",
+    "source": "OpenReview",
+    "source_key": "HXNJkclmb9",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "episodic",
+      "retrieval"
+    ],
+    "title": "Caching for the Future: Scrub Jay Episodic Memory Principles for Agent Memory Systems",
+    "updated": "2026-06-15",
+    "url": "https://openreview.net/forum?id=HXNJkclmb9",
+    "venue": "ACL ARR 2026 May Submission"
+  },
+  {
     "abstract": "Long-term conversational AI requires two distinct capabilities: remembering what was discussed and adapting to how a user's preferences evolve over time. We argue these operate on different timescales and require separate but interoperable architectures. AgenticLOCI is a five-agent framework built on this premise: session retrieval fuses a semantic LLM ranker (Engram, STM) with a keyword-lobe scorer (Hippo, LTM) via Reciprocal Rank Fusion, while personalization is maintained through a versioned deliberation-state memory that accumulates empirically grounded decision-episode snapshots across interactions. We evaluate on three benchmarks using Qwen 2.5-7B-Instruct. On LoCoMo, the AgenticLOCI Backbone achieves F1 = 0.342 versus BM25 = 0.285 while consuming 7.3× fewer input tokens per item. On LongMemEval-S, item-level analysis confirms that Engram and Hippo solve architecturally distinct sub-problems; at 7B scale Hippo's keyword precision leads, a reversal expected to resolve at larger model sizes where LLM ranking is more reliable. On PersonaMem, all configurations perform within a narrow band, establishing that memory benefit is conditional on context-budget pressure. The longitudinal personalization layer is evaluated on a synthetic mobility benchmark with known user trajectories, achieving restraint of 0.976 and move-precision of 0.583 against an ablation baseline. We demonstrate the full framework as a personalized urban mobility assistant for an anonymized German city.",
     "authors": [],
     "categories": [
@@ -142,6 +172,35 @@
     "updated": "2026-06-14",
     "url": "https://openreview.net/forum?id=ywl53zPXu0",
     "venue": "ACL ARR 2026 May Submission"
+  },
+  {
+    "abstract": "Traffic state prediction is a fundamental task in intelligent transportation systems. In practical applications, some regions suffer from limited traffic observations due to insufficient sensing infrastructure, making cross-domain knowledge transfer an important solution for data-scarce traffic prediction. However, existing cross-domain traffic prediction methods still face several limitations, including coarse-grained source-target adaptation, limited capability in handling unseen target-domain patterns, and insufficient modeling of continuous traffic dynamics under irregular or heterogeneous temporal conditions. To address these issues, this paper proposes a continuous cross-domain traffic prediction framework, termed Memory-Augmented Graph Liquid Time-Constant Network (MA-GLTC). Specifically, we first construct spatio-temporal units (STUs) to decompose traffic networks into transferable local units, enabling fine-grained knowledge alignment across domains. Then, a graph liquid time-constant network (GLTC) is developed to model graph-coupled traffic evolution in continuous time. Different from generic graph neural ODE-based models, GLTC introduces graph-coupled recurrent conductance into liquid time-constant dynamics, allowing node states to evolve with leakage, adaptive time constants, and neighborhood-aware feedback. Furthermore, a Memory-based Transfer Storage (MTS) mechanism is designed to preserve source-domain knowledge, retrieve matched traffic patterns, and update reliable target-domain patterns when unseen states emerge. Experiments on five public traffic datasets demonstrate that MA-GLTC consistently outperforms representative innerdomain and cross-domain baselines in both short-term and longterm prediction tasks. Compared with the second-best method, MA-GLTC reduces the average prediction errors by 3.02%, 0.33%, 8.92%, 10.09%, and 2.11%, respectively.",
+    "authors": [
+      "Jinrong Xiang",
+      "Ming Xu"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "id": "2606.15807v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `memory-augmented` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Traffic state prediction is a fundamental task in intelligent transportation systems.\n\n进一步看，论文的核心做法或实验重点可以概括为：In practical applications, some regions suffer from limited traffic observations due to insufficient sensing infrastructure, making cross-domain knowledge transfer an important solution for data-scarce traffic...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory-augmented"
+    ],
+    "one_liner": "Traffic state prediction is a fundamental task in intelligent transportation systems.",
+    "published": "2026-06-14",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：memory-augmented\n- 检索关键词命中：memory-augmented\n- 来源分类信息：cs.LG, cs.AI",
+    "slug": "continuous-cross-domain-traffic-state-prediction-via-memory-augmented-graph-liqu",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2606.15807v1",
+    "tags": [
+      "memory-augmented"
+    ],
+    "title": "Continuous Cross-Domain Traffic State Prediction via Memory-Augmented Graph Liquid Time-Constant Networks",
+    "updated": "2026-06-14",
+    "url": "http://arxiv.org/abs/2606.15807v1",
+    "venue": ""
   },
   {
     "abstract": "Long-term conversational agents require memory systems that continuously acquire and maintain user-specific knowledge from unstructured dialogue histories. Existing LLM memory solutions often rely on flat text storage or coarse summaries, which suffer from redundancy and weak factual grounding, making it difficult to reason over evolving information in long-term interactions. To address this, we propose \\textit{Schema-Mem}, a structured and evolving memory framework that represents conversational knowledge as fact-level schema units. Schema-Mem incrementally builds a connected memory graph by extracting key facts from each dialogue turn, linking related historical units through hybrid lexical–semantic search, and refining memory via LLM-based verification to resolve conflicts and incorporate new details. For question answering, it performs multi-source retrieval over schema units, linked contexts, and similar raw dialogues to provide grounded evidence for accurate responses. Extensive experiments on LoCoMo and LongMemEval show that Schema-Mem consistently outperforms strong baselines for long-term conversational memory and question answering.",
@@ -4247,36 +4306,6 @@
     "updated": "2026-06-02",
     "url": "http://arxiv.org/abs/2606.03083v1",
     "venue": ""
-  },
-  {
-    "abstract": "LLM agents that persist across sessions accumulate stored memories whose validity varies enormously by content type, yet existing memory architectures treat all memories as equally persistent and systematically contaminate retrieved context with outdated facts. We show that per-memory, type-conditioned temporal decay, a property of western scrub jay episodic memory, can be operationalized as an auto-classified coefficient $\\pi_i$ in an external LLM-agent memory store, yielding ScrubJay-MEM: each memory is encoded as a jointly-bound What--Where--When tuple with an estimated perishability $\\pi_i$ and utility horizon $\\tau_i$, retrieved by query-adaptive scoring, and revised retroactively at $O(1)$ LLM calls per update. We introduce the Temporal Generalization Test (TGT), a benchmark with held-out retention intervals and a Generalization Gap (GenGap) metric. On TGT, ScrubJay-MEM is the only retrieval-based system with substantially positive GenGap ($+0.108$); on MemoryAgentBench EventQA-64k it improves F1 by $+2.66$ over Mem0 and $+3.09$ over Qwen3-Embedding-4B under a llm backbone. A decay ablation collapses GenGap by $5.7\\times$, establishing type-conditioned decay as necessary for the result. Gains narrow under stronger backbones and reverse on fact-consolidation tasks, scoping the contribution to temporal reasoning over perishable facts.",
-    "authors": [],
-    "categories": [
-      "aclweb.org/ACL/ARR/2026/May/-/Submission"
-    ],
-    "id": "openreview:HXNJkclmb9",
-    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, episodic` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 May Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：LLM agents that persist across sessions accumulate stored memories whose validity varies enormously by content type, yet existing memory architectures treat all memories as equally persistent and systematically...\n\n进一步看，论文的核心做法或实验重点可以概括为：We show that per-memory, type-conditioned temporal decay, a property of western scrub jay episodic memory, can be operationalized as an auto-classified coefficient $\\pi_i$ in an external LLM-agent memory store,...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
-    "matched_keywords": [
-      "agent memory",
-      "episodic memory"
-    ],
-    "one_liner": "LLM agents that persist across sessions accumulate stored memories whose validity varies enormously by content type, yet existing memory architectures treat all memories as...",
-    "published": "2026-06-02",
-    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 May Submission\n- 高亮主题命中：agent, benchmark, context, episodic, retrieval\n- 检索关键词命中：agent memory, episodic memory\n- 来源分类信息：aclweb.org/ACL/ARR/2026/May/-/Submission",
-    "slug": "caching-for-the-future-scrub-jay-episodic-memory-principles-for-agent-memory-sys",
-    "source": "OpenReview",
-    "source_key": "HXNJkclmb9",
-    "tags": [
-      "agent",
-      "benchmark",
-      "context",
-      "episodic",
-      "retrieval"
-    ],
-    "title": "Caching for the Future: Scrub Jay Episodic Memory Principles for Agent Memory Systems",
-    "updated": "2026-06-02",
-    "url": "https://openreview.net/forum?id=HXNJkclmb9",
-    "venue": "ACL ARR 2026 May Submission"
   },
   {
     "abstract": "Large language models (LLMs) increasingly store user preferences in persistent memory to support personalization across interactions. However, in third-party communication settings governed by social and institutional norms, some user preferences may be inappropriate to apply. We introduce BenchPreS, which evaluates whether memory-based user preferences are appropriately applied or suppressed across communication contexts. Using two complementary metrics, Misapplication Rate (MR) and Appropriate Application Rate (AAR), we find even frontier LLMs struggle to apply preferences in a context-sensitive manner. Models with stronger preference adherence exhibit higher rates of over-application, and neither reasoning capability nor selectivity-oriented prompting fully resolve this issue. These results suggest that current LLMs treat preferences as globally enforceable rules rather than as context-dependent normative signals.",

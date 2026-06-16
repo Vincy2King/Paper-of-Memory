@@ -39,13 +39,13 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **508**
-- Last generated: **2026-06-15**
+- Total tracked papers: **509**
+- Last generated: **2026-06-16**
 
 ## Papers by Source
 
 - ACL Anthology: **1**
-- arXiv: **427**
+- arXiv: **428**
 - OpenReview: **80**
 
 ## Latest Papers
@@ -54,9 +54,11 @@ python3 scripts/update_papers.py --build-only
 | --- | --- | --- | --- |
 | 2026-06-15 | OpenReview | [MEMPLANNER: Governing Long-Horizon Agency via Dynamic Memory Management and Planning](content/papers/memplanner-governing-long-horizon-agency-via-dynamic-memory-management-and-plann.md) | agent, context |
 | 2026-06-15 | OpenReview | [GAMBIT: A Benchmark for Active Memory in Long-Horizon LLM Agents](content/papers/gambit-a-benchmark-for-active-memory-in-long-horizon-llm-agents.md) | agent, benchmark, context |
+| 2026-06-15 | OpenReview | [Caching for the Future: Scrub Jay Episodic Memory Principles for Agent Memory Systems](content/papers/caching-for-the-future-scrub-jay-episodic-memory-principles-for-agent-memory-sys.md) | agent, benchmark, context |
 | 2026-06-15 | OpenReview | [AgenticLOCI: A Multi-Agent Memory Framework for Conversational AI with Longitudinal Personalization](content/papers/agenticloci-a-multi-agent-memory-framework-for-conversational-ai-with-longitudin.md) | agent, benchmark, context |
 | 2026-06-14 | OpenReview | [Renormalization Phenomenology in LLM Agent Memory Compression: Scaling Laws, Fixed Points, and Anomalous Summarization](content/papers/renormalization-phenomenology-in-llm-agent-memory-compression-scaling-laws-fixed.md) | agent, benchmark, compression |
 | 2026-06-14 | OpenReview | [Memory Beyond Recall: A Dual-Process Cognitive Memory System for Self-Evolving Agent Memory](content/papers/memory-beyond-recall-a-dual-process-cognitive-memory-system-for-self-evolving-ag.md) | agent, benchmark, long-term |
+| 2026-06-14 | arXiv | [Continuous Cross-Domain Traffic State Prediction via Memory-Augmented Graph Liquid Time-Constant Networks](content/papers/continuous-cross-domain-traffic-state-prediction-via-memory-augmented-graph-liqu.md) | memory-augmented |
 | 2026-06-13 | OpenReview | [Schema-Mem: Structured and Evolving Memory for Long-term Conversational Knowledge](content/papers/schema-mem-structured-and-evolving-memory-for-long-term-conversational-knowledge.md) | agent, context, conversation |
 | 2026-06-13 | OpenReview | [PersonaTree: Structured Lifecycle Memory for Person Understanding in LLM Agents](content/papers/personatree-structured-lifecycle-memory-for-person-understanding-in-llm-agents.md) | agent, benchmark, context |
 | 2026-06-12 | arXiv | [VikingMem: A Memory Base Management System for Stateful LLM-based Applications](content/papers/vikingmem-a-memory-base-management-system-for-stateful-llm-based-applications.md) | agent, benchmark, compression |
@@ -70,8 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-06-12 | arXiv | [AgentSpec: Understanding Embodied Agent Scaffolds Through Controlled Composition](content/papers/agentspec-understanding-embodied-agent-scaffolds-through-controlled-composition.md) | agent |
 | 2026-06-12 | OpenReview | [AIM: Constructing Adaptive Structured Memory via Agentic Information Management](content/papers/aim-constructing-adaptive-structured-memory-via-agentic-information-management.md) | agent, benchmark, long-term |
 | 2026-06-11 | arXiv | [WISE: A Long-Horizon Agent in Minecraft with Why-Which Reasoning](content/papers/wise-a-long-horizon-agent-in-minecraft-with-why-which-reasoning.md) | agent, episodic, retrieval |
-| 2026-06-11 | arXiv | [The Containment Gap: How Deployed Agentic AI Frameworks Fail Public-Facing Safety Requirements](content/papers/the-containment-gap-how-deployed-agentic-ai-frameworks-fail-public-facing-safety.md) | agent |
-| 2026-06-11 | arXiv | [Poker Arena: Multi-Axis Profiling of Strategic Reasoning and Memory in LLMs](content/papers/poker-arena-multi-axis-profiling-of-strategic-reasoning-and-memory-in-llms.md) | benchmark |
 
 ## Suggested GitHub Setup
 
