@@ -40,7 +40,7 @@ python3 scripts/update_papers.py --build-only
 ## Repository Snapshot
 
 - Total tracked papers: **516**
-- Last generated: **2026-06-16**
+- Last generated: **2026-06-17**
 
 ## Papers by Source
 
@@ -57,6 +57,7 @@ python3 scripts/update_papers.py --build-only
 | 2026-06-16 | OpenReview | [MemRefine: LLM-Guided Compression for Long-Term Agent Memory](content/papers/memrefine-llm-guided-compression-for-long-term-agent-memory.md) | agent, benchmark, compression |
 | 2026-06-16 | OpenReview | [HMARS: A Hierarchical Multi-Agent Memory System for Long-Context Reasoning](content/papers/hmars-a-hierarchical-multi-agent-memory-system-for-long-context-reasoning.md) | agent, benchmark, context |
 | 2026-06-16 | OpenReview | [Episodic Memory from Compression Boundaries in Latent Representation Space](content/papers/episodic-memory-from-compression-boundaries-in-latent-representation-space.md) | agent, compression, context |
+| 2026-06-16 | OpenReview | [BenchPreS: A Benchmark for Context-Aware Personalized Preference Selectivity of Persistent-Memory LLMs](content/papers/benchpres-a-benchmark-for-context-aware-personalized-preference-selectivity-of-p.md) | benchmark, context |
 | 2026-06-16 | OpenReview | [AIM: Constructing Adaptive Structured Memory via Agentic Information Management](content/papers/aim-constructing-adaptive-structured-memory-via-agentic-information-management.md) | agent, benchmark, long-term |
 | 2026-06-15 | arXiv | [VisualClaw: A Real-Time, Personalized Agent for the Physical World](content/papers/visualclaw-a-real-time-personalized-agent-for-the-physical-world.md) | agent, benchmark, context |
 | 2026-06-15 | OpenReview | [MEMPLANNER: Governing Long-Horizon Agency via Dynamic Memory Management and Planning](content/papers/memplanner-governing-long-horizon-agency-via-dynamic-memory-management-and-plann.md) | agent, context |
@@ -71,7 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-06-14 | arXiv | [DYNA : Dynamic Episodic Memory Networks for Augmenting Large Language Models with Temporal Knowledge Graphs in Continuous Learning](content/papers/dyna-dynamic-episodic-memory-networks-for-augmenting-large-language-models-with-.md) | episodic, retrieval |
 | 2026-06-14 | arXiv | [Control-Plane Placement Shapes Forgetting: An Architectural Study of Agent Memory Across Thirteen System Configurations](content/papers/control-plane-placement-shapes-forgetting-an-architectural-study-of-agent-memory.md) | agent, benchmark |
 | 2026-06-14 | arXiv | [Continuous Cross-Domain Traffic State Prediction via Memory-Augmented Graph Liquid Time-Constant Networks](content/papers/continuous-cross-domain-traffic-state-prediction-via-memory-augmented-graph-liqu.md) | memory-augmented |
-| 2026-06-13 | arXiv | [T-Mem: Memory That Anticipates, Not Archives](content/papers/t-mem-memory-that-anticipates-not-archives.md) | agent, context, conversation |
 
 ## Suggested GitHub Setup
 

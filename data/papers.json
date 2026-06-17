@@ -146,6 +146,32 @@
     "venue": "ACL ARR 2026 May Submission"
   },
   {
+    "abstract": "Large language models (LLMs) increasingly store user preferences in persistent memory to support personalization across interactions. However, in third-party communication settings governed by social and institutional norms, some user preferences may be inappropriate to apply. We introduce BenchPreS, which evaluates whether memory-based user preferences are appropriately applied or suppressed across communication contexts. Using two complementary metrics, Misapplication Rate (MR) and Appropriate Application Rate (AAR), we find even frontier LLMs struggle to apply preferences in a context-sensitive manner. Models with stronger preference adherence exhibit higher rates of over-application, and neither reasoning capability nor selectivity-oriented prompting fully resolve this issue. These results suggest that current LLMs treat preferences as globally enforceable rules rather than as context-dependent normative signals.",
+    "authors": [],
+    "categories": [
+      "aclweb.org/ACL/ARR/2026/May/-/Submission"
+    ],
+    "id": "openreview:cn9Bn4mXv6",
+    "intro": "这篇论文被纳入仓库，是因为它和 `benchmark, context` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 May Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Large language models (LLMs) increasingly store user preferences in persistent memory to support personalization across interactions.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, in third-party communication settings governed by social and institutional norms, some user preferences may be inappropriate to apply.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "persistent memory"
+    ],
+    "one_liner": "Large language models (LLMs) increasingly store user preferences in persistent memory to support personalization across interactions.",
+    "published": "2026-06-02",
+    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 May Submission\n- 高亮主题命中：benchmark, context\n- 检索关键词命中：persistent memory\n- 来源分类信息：aclweb.org/ACL/ARR/2026/May/-/Submission",
+    "slug": "benchpres-a-benchmark-for-context-aware-personalized-preference-selectivity-of-p",
+    "source": "OpenReview",
+    "source_key": "cn9Bn4mXv6",
+    "tags": [
+      "benchmark",
+      "context"
+    ],
+    "title": "BenchPreS: A Benchmark for Context-Aware Personalized Preference Selectivity of Persistent-Memory LLMs",
+    "updated": "2026-06-16",
+    "url": "https://openreview.net/forum?id=cn9Bn4mXv6",
+    "venue": "ACL ARR 2026 May Submission"
+  },
+  {
     "abstract": "Long-term memory remains a critical bottleneck for LLM agents in managing historical user interactions and task-related resources. Existing approaches typically rely on flat, predefined memory structures that lack adaptability and sophisticated reasoning capabilities. To address this, we propose \\textbf{Agentic Information Management (AIM)}, a novel framework that leverages the LLM's inherent code generation and reasoning abilities to dynamically construct and manage structured memory. Unlike existing summarize-then-retrieve paradigms, AIM regards agent memory as an information management problem. AIM employs an agent to dynamically organize heterogeneous sources into well-defined structured representations. Furthermore, recognizing the limitations of existing memory benchmarks, which often use non-agentic, LLM-generated dialogues, we introduce VibeCodeMem, a high-quality, human-annotated long-horizon QA dataset. It spans realistic working sessions with a coding agent across four software applications and 16 diverse features. Experiments using both open-source and proprietary LLMs demonstrate that AIM consistently outperforms strong baselines, achieving a 10.53\\% absolute improvement on LoCoMo and 2.07\\% on VibeCodeMem with the Claude-4.5-haiku model. Our results highlight the promise of agentic, self-structured memory for long-term agent capabilities. Our code and data will be released upon acceptance.",
     "authors": [],
     "categories": [
@@ -4562,32 +4588,6 @@
     "updated": "2026-06-02",
     "url": "http://arxiv.org/abs/2606.03083v1",
     "venue": ""
-  },
-  {
-    "abstract": "Large language models (LLMs) increasingly store user preferences in persistent memory to support personalization across interactions. However, in third-party communication settings governed by social and institutional norms, some user preferences may be inappropriate to apply. We introduce BenchPreS, which evaluates whether memory-based user preferences are appropriately applied or suppressed across communication contexts. Using two complementary metrics, Misapplication Rate (MR) and Appropriate Application Rate (AAR), we find even frontier LLMs struggle to apply preferences in a context-sensitive manner. Models with stronger preference adherence exhibit higher rates of over-application, and neither reasoning capability nor selectivity-oriented prompting fully resolve this issue. These results suggest that current LLMs treat preferences as globally enforceable rules rather than as context-dependent normative signals.",
-    "authors": [],
-    "categories": [
-      "aclweb.org/ACL/ARR/2026/May/-/Submission"
-    ],
-    "id": "openreview:cn9Bn4mXv6",
-    "intro": "这篇论文被纳入仓库，是因为它和 `benchmark, context` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 May Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Large language models (LLMs) increasingly store user preferences in persistent memory to support personalization across interactions.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, in third-party communication settings governed by social and institutional norms, some user preferences may be inappropriate to apply.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
-    "matched_keywords": [
-      "persistent memory"
-    ],
-    "one_liner": "Large language models (LLMs) increasingly store user preferences in persistent memory to support personalization across interactions.",
-    "published": "2026-06-02",
-    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 May Submission\n- 高亮主题命中：benchmark, context\n- 检索关键词命中：persistent memory\n- 来源分类信息：aclweb.org/ACL/ARR/2026/May/-/Submission",
-    "slug": "benchpres-a-benchmark-for-context-aware-personalized-preference-selectivity-of-p",
-    "source": "OpenReview",
-    "source_key": "cn9Bn4mXv6",
-    "tags": [
-      "benchmark",
-      "context"
-    ],
-    "title": "BenchPreS: A Benchmark for Context-Aware Personalized Preference Selectivity of Persistent-Memory LLMs",
-    "updated": "2026-06-02",
-    "url": "https://openreview.net/forum?id=cn9Bn4mXv6",
-    "venue": "ACL ARR 2026 May Submission"
   },
   {
     "abstract": "Large language model (LLM)-based agents increasingly face tasks that require reasoning over extremely long range. A key bottleneck is memory design: most prior approaches treat memory as a static, human-designed component, limiting adaptability. Inspired by biological memory evolution, we propose AtomMem, a framework that exposes a set of atomic memory operations—including summarization and CRUD primitives—as tool-like actions. The agent learns a policy over these operations purely via reinforcement learning, using only the task reward. AtomMem allows the agent to dynamically interleave summarization and CRUD to retain important information while managing memory efficiently. We evaluate AtomMem on streaming long-context understanding and web-navigation benchmarks, demonstrating an average improvement of 8.5 points over static memory workflows and 2.1 points over the current learnable-memory baseline. Ablation studies show that both summarization and CRUD are essential to train agent memory. The project can be accessed at \\url{https://anonymous.4open.science/r/AtomMem-86F8}.",
