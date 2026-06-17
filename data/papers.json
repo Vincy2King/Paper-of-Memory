@@ -58,6 +58,41 @@
     "venue": "ACL ARR 2026 May Submission"
   },
   {
+    "abstract": "Memory has become a standard substrate for self-evolving agents, yet retaining experience is not the same as learning how to evolve through it. Existing memory agents can store trajectories, retrieve reflections, or accumulate skills, but often lack the holistic competence to select useful experience, act on it, write reusable knowledge, and maintain a growing repository. We introduce OPD-Evolver, a slow-fast co-evolution framework that cultivates such an agent evolver through on-policy self-distillation. In the fast loop, OPD-Evolver interacts with a four-level memory hierarchy to read, use, write, and maintain experience for rapid test-time evolution. In the slow loop, outcome-calibrated memory attribution and privileged hindsight distill these four abilities into the deployable policy. Across multi-domain benchmarks, OPD-Evolver surpasses memory systems such as ReasoningBank by up to 11.5%, and training-based methods such as Skill0 by ~5.8%. Further analysis shows that OPD-Evolver internalizes high-value experience and memory management, enabling OPD-Evolver-9B to challenge giant counterparts such as Qwen3.5-397B-A17B and Step-3.5-Flash, pointing beyond memory-augmented agents toward genuinely qualified agent evolvers.",
+    "authors": [
+      "Guibin Zhang",
+      "Xun Xu",
+      "Yanwei Yue",
+      "Zikun Su",
+      "Wangchunshu Zhou",
+      "Xiaobin Hu",
+      "Shuicheng Yan"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "id": "2606.17628v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Memory has become a standard substrate for self-evolving agents, yet retaining experience is not the same as learning how to evolve through it.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing memory agents can store trajectories, retrieve reflections, or accumulate skills, but often lack the holistic competence to select useful experience, act on it, write reusable knowledge, and maintain a...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory augmented",
+      "memory-augmented"
+    ],
+    "one_liner": "Memory has become a standard substrate for self-evolving agents, yet retaining experience is not the same as learning how to evolve through it.",
+    "published": "2026-06-16",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark\n- 检索关键词命中：memory augmented, memory-augmented\n- 来源分类信息：cs.CL",
+    "slug": "opd-evolver-cultivating-holistic-agent-evolver-via-on-policy-distillation",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2606.17628v1",
+    "tags": [
+      "agent",
+      "benchmark"
+    ],
+    "title": "OPD-Evolver: Cultivating Holistic Agent Evolver via On-Policy Distillation",
+    "updated": "2026-06-16",
+    "url": "http://arxiv.org/abs/2606.17628v1",
+    "venue": ""
+  },
+  {
     "abstract": "Large language model (LLM) agents are increasingly expected to operate over long-term interactions, where information from past dialogues must be preserved and recalled to support future tasks. However, as interactions accumulate, the memory store grows without bound and fills with redundant entries that inflate storage cost and degrade retrieval by crowding out the most useful evidence. Furthermore, this is especially limiting on resource-constrained platforms with hard memory budgets, motivating us to formulate storage-budgeted memory management, the task of keeping an already constructed memory store within a fixed budget while preserving information useful for future interactions. To this end, we then propose MEMREFINE, an LLM-guided framework that, since surface similarity poorly reflects factual value, uses similarity only to propose candidate pairs and defers delete, merge, and preserve decisions to an LLM judge based on factual content, iterating until the budget is met. Across multiple memory frameworks and long-term conversation benchmarks, MEMREFINE consistently meets target budgets while preserving downstream performance and outperforming rule-based baselines under tight budgets.",
     "authors": [],
     "categories": [
@@ -116,6 +151,78 @@
     "venue": "ACL ARR 2026 May Submission"
   },
   {
+    "abstract": "Large language model (LLM)-based agents are evolving from passive text generators into autonomous systems capable of planning, tool use, retrieval, memory access, environmental interaction, and multi-agent collaboration. These capabilities expand agent autonomy, but also make agent behavior harder to verify, debug, and audit. Final-answer accuracy alone cannot explain how an output was produced, which evidence supported each claim, whether tool calls were justified, how memory influenced later decisions, or where failures originated. This survey examines evidence tracing and execution provenance as foundations for process-level accountability in trustworthy LLM agents. We define execution provenance as the typed graph of an agent execution and evidence tracing as its projection onto evidence-support relations. This perspective connects retrieval grounding, claim support, tool-use safety, memory lineage, observability, debugging, audit, and recovery within a unified framework. We introduce a taxonomy covering trace sources, evidence and execution units, provenance relations, tracing granularity and timing, representation forms, and trust functions. We then review key methodological directions, including provenance representation, evidence attribution, tool-use provenance, runtime guardrails, provenance-bearing memory, observability, and failure diagnosis. Finally, we discuss benchmarks, datasets, metrics, and open challenges for building provenance-aware, auditable, and recoverable agent systems.",
+    "authors": [
+      "Yiqi Wang",
+      "Jiaqi Zhang",
+      "Taotao Cai",
+      "Zirui Liu",
+      "Qingqiang Sun",
+      "Zequn Sun",
+      "Zhangkai Wu",
+      "Manqing Dong",
+      "Mingkai Zhang",
+      "Xuefei Yin",
+      "Yanming Zhu"
+    ],
+    "categories": [
+      "cs.CR",
+      "cs.AI"
+    ],
+    "id": "2606.04990v3",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Large language model (LLM)-based agents are evolving from passive text generators into autonomous systems capable of planning, tool use, retrieval, memory access, environmental interaction, and multi-agent collaboration.\n\n进一步看，论文的核心做法或实验重点可以概括为：These capabilities expand agent autonomy, but also make agent behavior harder to verify, debug, and audit.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "retrieval memory"
+    ],
+    "one_liner": "Large language model (LLM)-based agents are evolving from passive text generators into autonomous systems capable of planning, tool use, retrieval, memory access, environmental...",
+    "published": "2026-06-03",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, retrieval\n- 检索关键词命中：retrieval memory\n- 来源分类信息：cs.CR, cs.AI",
+    "slug": "from-agent-traces-to-trust-a-survey-of-evidence-tracing-and-execution-provenance",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2606.04990v3",
+    "tags": [
+      "agent",
+      "benchmark",
+      "retrieval"
+    ],
+    "title": "From Agent Traces to Trust: A Survey of Evidence Tracing and Execution Provenance in LLM Agents",
+    "updated": "2026-06-16",
+    "url": "http://arxiv.org/abs/2606.04990v3",
+    "venue": ""
+  },
+  {
+    "abstract": "Financial multimodal reasoning requires agents to coordinate numerical computation, retrieval, visual interpretation, and temporal grounding across heterogeneous evidence sources. Existing tool-augmented agents improve execution fidelity, yet remain largely stateless across episodes, repeatedly rediscovering reasoning strategies and failure patterns. In high-stakes financial settings, this leads to unreliable tool routing, noisy retrieval, and hallucination-prone reasoning. We present FinAcumen, a financial reasoning agent framework centered on selective experience memory for tool-augmented multimodal reasoning. FinAcumen accumulates financially grounded reasoning experience from prior trajectories, distilling successful strategies and failure-derived cautionary rules into a persistent memory bank. During inference, retrieved experiences condition reasoning only when semantic relevance exceeds a calibrated threshold, while irrelevant memory is explicitly suppressed through a fallback mechanism. A deterministic financial tool environment further grounds numerical computation, retrieval, visual decoding, and answer verification.Across four financial multimodal reasoning benchmarks, FinAcumen consistently improves a frozen 8B vision-language model over finance-specialized models and approaches leading proprietary general-purpose models. Further analysis shows that selective experience activation improves reasoning reliability under retrieval uncertainty. Our code is anonymously available at https://anonymous.4open.science/r/FinAcumen",
+    "authors": [
+      "Pianran Guo",
+      "Pengcheng Zhou",
+      "Yucheng Jian",
+      "Shuhua Chen"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2606.17642v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Financial multimodal reasoning requires agents to coordinate numerical computation, retrieval, visual interpretation, and temporal grounding across heterogeneous evidence sources.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing tool-augmented agents improve execution fidelity, yet remain largely stateless across episodes, repeatedly rediscovering reasoning strategies and failure patterns.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "persistent memory"
+    ],
+    "one_liner": "Financial multimodal reasoning requires agents to coordinate numerical computation, retrieval, visual interpretation, and temporal grounding across heterogeneous evidence sources.",
+    "published": "2026-06-16",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, retrieval\n- 检索关键词命中：persistent memory\n- 来源分类信息：cs.AI",
+    "slug": "finacumen-financial-multimodal-reasoning-via-self-evolving-experience-memory-har",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2606.17642v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "retrieval"
+    ],
+    "title": "FinAcumen: Financial Multimodal Reasoning via Self-Evolving Experience Memory Harness",
+    "updated": "2026-06-16",
+    "url": "http://arxiv.org/abs/2606.17642v1",
+    "venue": ""
+  },
+  {
     "abstract": "Long-term memory in Large Language Model (LLM) agents requires selective persistence: only a subset of interactions should be consolidated beyond the current context window. Existing memory systems rely on heuristic importance rules or similarity-based novelty, which remain external to the model’s internal computation. We propose a geometric principle for memory formation: episodic memory can emerge from compression failure in latent representation space. We approximate the manifold of routine LLM activations using Sparse Autoencoders (SAEs) and define \\emph{representational surprise} as reconstruction error relative to this learned manifold. Deviations from routine structure yield elevated residuals, providing an unsupervised, model-internal signal for memory writing. We demonstrate this principle through ReSuME, a surprise-gated memory mechanism that commits turns to memory only when normalized reconstruction error exceeds a calibrated threshold. In long-horizon multi-turn dialogue settings, representational surprise separates routine, critical, and out-of-distribution states, and achieves a superior performance–memory trade-off against established memory-agent systems (MemGPT, EM-LLM) and unsupervised anomaly detectors, while operating without labels and at substantially lower inference cost than LLM-judge controllers. Covariance-aware normalization further enables robust cross-domain calibration. These results suggest that episodic memory gating in neural agents can be grounded in intrinsic latent geometry rather than externally engineered rules.",
     "authors": [],
     "categories": [
@@ -144,6 +251,35 @@
     "updated": "2026-06-16",
     "url": "https://openreview.net/forum?id=Oul2AgHzvF",
     "venue": "ACL ARR 2026 May Submission"
+  },
+  {
+    "abstract": "Where an LLM sits in an agent memory pipeline -- between the recall plane that retrieves stored facts (extensively benchmarked) and the control plane that mutates them via supersede, release, purge (largely untested) -- shapes which forgetting failure modes the system recovers. Comparing thirteen system configurations on a 385-case adversarial surface, we observe three placement regimes with partly complementary coverage: deterministic primitives suffice for lexical/temporal categories but fail canonicalization (5% on identifier-obfuscation, 0% on cross-lingual); inscribe-time LLM recovers canonicalization (100%) but cannot help intent-aware deletion (0% on prefix-collision and compound-fact); a mutation-time hook recovers intent-aware deletion (78-85%) and brightens nearly all categories simultaneously (91.7-93.2% overall, $0.17 per 385-case run, 2.3s/case mutation latency vs. 64-191ms/case deterministic, recall path unchanged). We expose the trade-off via ForgetEval, a 1000-case templated suite plus a 385-case adversarial layer (132 hand-crafted + 253 LLM-drafted oracle-validated) scored by deterministic substring match, paired with a six-method Adapter Protocol with honest N/A scoring that lets heterogeneous memory stores enter in 130 lines. Admission is corroborated by 10-annotator IAA (Fleiss' kappa = 0.958) and a 77-case external-authored subset (four blind contributors) that replicates the canonicalization asymmetry and amplifies the joint-placement lift (+27.8 pt). Production failures are predominantly forgetting failures rather than recall failures, yet existing benchmarks measure only recall. ForgetEval and all adapters are released under MIT.",
+    "authors": [
+      "Dongxu Yang"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "id": "2606.15903v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Where an LLM sits in an agent memory pipeline -- between the recall plane that retrieves stored facts (extensively benchmarked) and the control plane that mutates them via supersede, release, purge (largely untested)...\n\n进一步看，论文的核心做法或实验重点可以概括为：Comparing thirteen system configurations on a 385-case adversarial surface, we observe three placement regimes with partly complementary coverage: deterministic primitives suffice for lexical/temporal categories but...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "Where an LLM sits in an agent memory pipeline -- between the recall plane that retrieves stored facts (extensively benchmarked) and the control plane that mutates them via...",
+    "published": "2026-06-14",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.CL, cs.AI",
+    "slug": "control-plane-placement-shapes-forgetting-an-architectural-study-of-agent-memory",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2606.15903v2",
+    "tags": [
+      "agent",
+      "benchmark"
+    ],
+    "title": "Control-Plane Placement Shapes Forgetting: An Architectural Study of Agent Memory Across Thirteen System Configurations",
+    "updated": "2026-06-16",
+    "url": "http://arxiv.org/abs/2606.15903v2",
+    "venue": ""
   },
   {
     "abstract": "Large language models (LLMs) increasingly store user preferences in persistent memory to support personalization across interactions. However, in third-party communication settings governed by social and institutional norms, some user preferences may be inappropriate to apply. We introduce BenchPreS, which evaluates whether memory-based user preferences are appropriately applied or suppressed across communication contexts. Using two complementary metrics, Misapplication Rate (MR) and Appropriate Application Rate (AAR), we find even frontier LLMs struggle to apply preferences in a context-sensitive manner. Models with stronger preference adherence exhibit higher rates of over-application, and neither reasoning capability nor selectivity-oriented prompting fully resolve this issue. These results suggest that current LLMs treat preferences as globally enforceable rules rather than as context-dependent normative signals.",
@@ -245,6 +381,75 @@
     "title": "VisualClaw: A Real-Time, Personalized Agent for the Physical World",
     "updated": "2026-06-15",
     "url": "http://arxiv.org/abs/2606.16295v1",
+    "venue": ""
+  },
+  {
+    "abstract": "LLM agents increasingly maintain long-term memory of user facts across sessions. Yet such memory is usually evaluated by aggregating accuracy over question rows or episodes. Because this approach scores question rows independently, even when several questions probe the same fact, it cannot show how that fact behaves as conditions change. We introduce MemTrace, a benchmark whose unit of measurement is the knowledge point: a single typed fact about the user, rather than an individual question. MemTrace probes each fact along three controlled dimensions: memory age, defined by how many sessions ago the fact appeared in the history; question type, covering current state, earlier state, and trajectory of change; and evidence condition, covering present, missing, and contradicted-by-false-premise settings. Evaluating 13 memory-system configurations across four paradigms, we find that similar pooled accuracy hides different failures: recovering a fact's current and earlier states does not imply tracking how it changed, and safe abstention does not imply correcting a false premise. The dominant bottleneck is evidence use, not retrieval: when systems fail, the evidence was retrievable 10 times more often than it was missing. These results suggest that improving long-term memory requires better use of reachable evidence, not simply more storage or retrieval.",
+    "authors": [
+      "Xianxuan Long",
+      "Zhikai Chen",
+      "Shenglai Zeng",
+      "Shouren Wang",
+      "Kai Guo",
+      "Jiliang Tang"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2606.17328v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, long-term, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：LLM agents increasingly maintain long-term memory of user facts across sessions.\n\n进一步看，论文的核心做法或实验重点可以概括为：Yet such memory is usually evaluated by aggregating accuracy over question rows or episodes.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "long-term memory"
+    ],
+    "one_liner": "LLM agents increasingly maintain long-term memory of user facts across sessions.",
+    "published": "2026-06-15",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, long-term, retrieval\n- 检索关键词命中：long-term memory\n- 来源分类信息：cs.AI",
+    "slug": "memtrace-probing-what-final-accuracy-misses-in-long-term-memory",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2606.17328v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "MemTrace: Probing What Final Accuracy Misses in Long-Term Memory",
+    "updated": "2026-06-15",
+    "url": "http://arxiv.org/abs/2606.17328v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Personalized presentation generation requires more than conditioning on a current prompt or template: agents must preserve stable user preferences across tasks, retain newly introduced preferences and constraints during multi-turn revision, and carry out local edits reliably. We propose MemSlides, a hierarchical memory framework for personalized presentation agents that separates long-term memory from working memory and further divides long-term memory into user profile memory and tool memory. User profile memory stores intent-conditioned profiles for round-0 personalization, working memory carries active preferences and session constraints across revision rounds, and tool memory stores reusable execution experience for reliable localized editing. MemSlides pairs this memory design with scoped slide-local revision, so targeted updates act on the smallest affected region instead of repeatedly regenerating the full deck. In controlled experiments, user profile memory improves persona-alignment judgments on a multi-persona, multi-intent profile bank, tool-memory injection improves closed-loop modify behavior in diagnostic matched-pair settings, and qualitative cases illustrate working memory's ability to carryover preferences. Taken together, these results suggest that effective personalization in presentation authoring depends on separating persistent user profiles, session-level working memory, and reusable execution experience across generation and localized revision.",
+    "authors": [
+      "Ye Jin",
+      "Yangyang Xu",
+      "Jun Zhu",
+      "Yibo Yang"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.HC",
+      "cs.MA"
+    ],
+    "id": "2606.17162v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, long-term` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Personalized presentation generation requires more than conditioning on a current prompt or template: agents must preserve stable user preferences across tasks, retain newly introduced preferences and constraints...\n\n进一步看，论文的核心做法或实验重点可以概括为：We propose MemSlides, a hierarchical memory framework for personalized presentation agents that separates long-term memory from working memory and further divides long-term memory into user profile memory and tool...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "long-term memory",
+      "working memory"
+    ],
+    "one_liner": "Personalized presentation generation requires more than conditioning on a current prompt or template: agents must preserve stable user preferences across tasks, retain newly...",
+    "published": "2026-06-15",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, long-term\n- 检索关键词命中：long-term memory, working memory\n- 来源分类信息：cs.CL, cs.HC, cs.MA",
+    "slug": "memslides-a-hierarchical-memory-driven-agent-framework-for-personalized-slide-ge",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2606.17162v1",
+    "tags": [
+      "agent",
+      "long-term"
+    ],
+    "title": "MemSlides: A Hierarchical Memory Driven Agent Framework for Personalized Slide Generation with Multi-turn Local Revision",
+    "updated": "2026-06-15",
+    "url": "http://arxiv.org/abs/2606.17162v1",
     "venue": ""
   },
   {
@@ -394,6 +599,39 @@
     "updated": "2026-06-15",
     "url": "https://openreview.net/forum?id=iUinLcItGF",
     "venue": "ACL ARR 2026 May Submission"
+  },
+  {
+    "abstract": "Working Memory Capacity (WMC) reflects an individual’s ability to maintain and process information simultaneously and is considered a key factor in reading comprehension efficiency (Daneman & Carpenter, 1980; Just & Carpenter, 1992). Prior research suggests that limited WMC leads to processing difficulties, which may manifest in eye movement behavior such as increased regressions (backward eye movements) (Just & Carpenter, 1992; Rayner, 1998). The present preliminary analysis aims to investigate whether lower WMC scores are associated with a higher frequency of regressions in the Slovenian language in native speakers during reading tasks, focusing on trials where readers demonstrated at least basic text comprehension. The preliminary analysis is based on eye-tracking data collected in Slovenia as part of the MultiplEYE project. Regressions were extracted from EyeLink saccade events and defined as leftward saccades exceeding 50 pixels within the same text line, with vertical deviation < 30 pixels, then normalized per minute to control for reading time. WMC was operationalized as a composite z-score derived from memory updating, operation span, sentence span, and spatial short-term memory tasks using partial-credit unit scoring. Text understanding was assessed with six comprehension questions after each trial and used both as a control variable and a filtering criterion. The final preliminary dataset included 32 participants and 10 texts from different categories (literary, instructional, popular science, and argumentative), yielding 200 participant–text observations with comprehension above 60%. Preliminary results suggest a positive association between WMC and regression rate, Spearman r = 0.318 (Figure 1), meaning higher WMC may be associated with more regressions. This pattern remained stable across tested text categories. Additionally, we tested whether comprehension was predicted by regressions per minute, WMC, and their interaction, while controlling for text category and accounting for repeated measurements within participants. The results showed no significant effects of regressions per minute, WMC, or their interaction, while text category emerged as the strongest predictor. The observed positive association of our preliminary analysis between WMC and regression rate does not align with the initial assumption that regressions primarily reflect processing difficulty. Some eye movement research suggests that regressions are not exclusively indicators of failure of text understanding but can also reflect adaptive rereading strategies that support integration and comprehension (Staub & Benatar, 2013). In this context, the present findings may indicate that higher-capacity readers may use rereading strategies more frequently. Further analyses on the full dataset are needed to confirm these preliminary findings. To better understand how WMC relates to eye-movement behavior, the analysis should also test whether the effect is moderated by individual differences in reading skill, examine each WMC component separately, assess whether the effect varies with text difficulty and distinguish between different types of regressions, such as short corrective regressions and long-distance rereading. Daneman, M., & Carpenter, P. A. (1980). Individual differences in working memory and reading. Journal of Verbal Learning and Verbal Behavior, 19(4), 450–466. Just, M. A., & Carpenter, P. A. (1992). A capacity theory of comprehension: Individual differences in working memory. Psychological Review, 99(1), 122–149. Rayner, K. (1998). Eye movements in reading and information processing: 20 years of research. Psychological Bulletin, 124(3), 372–422. Staub, A., & Benatar, A. (2013). Individual differences in fixation duration distributions in reading. Attention, Perception, & Psychophysics, 75(6), 1304–1315",
+    "authors": [
+      "Lamija Zahirović",
+      "Lea Popović",
+      "Anastasija Žarevac",
+      "Eva Viktorija Zajc",
+      "Katarina Lasković",
+      "Kristian Elersič",
+      "Anja Podlesek"
+    ],
+    "categories": [
+      "multipleye.eu/MultiplEYE/2026/Conference/-/Submission"
+    ],
+    "id": "openreview:QEUIiCEVVn",
+    "intro": "这篇论文被纳入仓库，是因为它和 `context` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `MultiplEYE 2026 Poster` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Working Memory Capacity (WMC) reflects an individual’s ability to maintain and process information simultaneously and is considered a key factor in reading comprehension efficiency (Daneman & Carpenter, 1980; Just &...\n\n进一步看，论文的核心做法或实验重点可以概括为：Prior research suggests that limited WMC leads to processing difficulties, which may manifest in eye movement behavior such as increased regressions (backward eye movements) (Just & Carpenter, 1992; Rayner, 1998).\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "working memory"
+    ],
+    "one_liner": "Working Memory Capacity (WMC) reflects an individual’s ability to maintain and process information simultaneously and is considered a key factor in reading comprehension...",
+    "published": "2026-06-14",
+    "relevance": "- 来源：OpenReview\n- Venue：MultiplEYE 2026 Poster\n- 高亮主题命中：context\n- 检索关键词命中：working memory\n- 来源分类信息：multipleye.eu/MultiplEYE/2026/Conference/-/Submission",
+    "slug": "working-memory-capacity-and-eye-movement-patterns-in-reading-a-correlational-ana",
+    "source": "OpenReview",
+    "source_key": "QEUIiCEVVn",
+    "tags": [
+      "context"
+    ],
+    "title": "Working Memory Capacity and Eye Movement Patterns in Reading: A Correlational Analysis of Regressions in the Slovenian MultiplEYE Dataset",
+    "updated": "2026-06-14",
+    "url": "https://openreview.net/forum?id=QEUIiCEVVn",
+    "venue": "MultiplEYE 2026 Poster"
   },
   {
     "abstract": "Agent memory compression is typically treated as a heuristic problem: truncate, drop, or summarize. We instead ask whether agent memory exhibits the phenomenology of a statistical physical system under coarse-graining—scaling laws, fixed points, and universality classes. Motivated by the proven equivalence between Information Bottleneck and the Renormalization Group, we measure the compression-retention trade-off for three families of compression operators on the LoCoMo long-term dialogue benchmark. We find: (i) geometric truncation exhibits a clean monotonic decline consistent with a power-law scaling form; (ii) LLM-based summarization exhibits anomalous, non-monotonic behavior, violating naive scaling expectations; and (iii) iterated summarization converges to semantic fixed points within approximately 5 iterations, with representations stabilizing at approximately 40 words independent of initial length. These results suggest that principled, information-theoretically grounded compression operators—rather than the ad-hoc LLM summarization dominant in current agent memory systems—are needed to obtain the clean renormalization behavior that physical theories predict.",
