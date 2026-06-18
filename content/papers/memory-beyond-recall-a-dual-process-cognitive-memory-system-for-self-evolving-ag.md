@@ -4,7 +4,7 @@
 - Venue: ACL ARR 2026 May Submission
 - Paper ID: openreview:ywl53zPXu0
 - Published: 2026-06-02
-- Updated: 2026-06-14
+- Updated: 2026-06-18
 - Authors: Unknown
 - Tags: agent, benchmark, long-term, retrieval
 - Categories: aclweb.org/ACL/ARR/2026/May/-/Submission
