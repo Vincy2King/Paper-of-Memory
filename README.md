@@ -39,21 +39,24 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **532**
-- Last generated: **2026-06-18**
+- Total tracked papers: **534**
+- Last generated: **2026-06-19**
 
 ## Papers by Source
 
 - ACL Anthology: **1**
 - arXiv: **450**
-- OpenReview: **81**
+- OpenReview: **83**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-06-19 | OpenReview | [SHM-GATE: Structured Hierarchical Memory with Gated Admission for Multi-Agent LLM Hallucination Containment](content/papers/shm-gate-structured-hierarchical-memory-with-gated-admission-for-multi-agent-llm.md) | agent, benchmark, conversation |
+| 2026-06-19 | OpenReview | [MemoNav: Working Memory Model for Visual Navigation](content/papers/memonav-working-memory-model-for-visual-navigation.md) | agent, long-term |
+| 2026-06-19 | OpenReview | [MemoNav: Working Memory Model for Visual Navigation](content/papers/memonav-working-memory-model-for-visual-navigation.md) | agent, long-term |
+| 2026-06-19 | OpenReview | [H2G-Mem: Heterogeneous HyperGraphs for Fine-Grained Long-term Conversational Agent Memory](content/papers/h2g-mem-heterogeneous-hypergraphs-for-fine-grained-long-term-conversational-agen.md) | agent, benchmark, context |
 | 2026-06-18 | OpenReview | [The Override Cliff: How Agent Memory Hijacks LLM Reasoning](content/papers/the-override-cliff-how-agent-memory-hijacks-llm-reasoning.md) | agent, benchmark, retrieval |
-| 2026-06-18 | OpenReview | [SHM-GATE: Structured Hierarchical Memory with Gated Admission for Multi-Agent LLM Hallucination Containment](content/papers/shm-gate-structured-hierarchical-memory-with-gated-admission-for-multi-agent-llm.md) | agent, benchmark, conversation |
 | 2026-06-18 | OpenReview | [Memory Beyond Recall: A Dual-Process Cognitive Memory System for Self-Evolving Agent Memory](content/papers/memory-beyond-recall-a-dual-process-cognitive-memory-system-for-self-evolving-ag.md) | agent, benchmark, long-term |
 | 2026-06-18 | OpenReview | [GAMBIT: A Benchmark for Active Memory in Long-Horizon LLM Agents](content/papers/gambit-a-benchmark-for-active-memory-in-long-horizon-llm-agents.md) | agent, benchmark, context |
 | 2026-06-18 | OpenReview | [AtomMem: Learnable Dynamic Agentic Memory with Atomic Memory Operation](content/papers/atommem-learnable-dynamic-agentic-memory-with-atomic-memory-operation.md) | agent, benchmark, context |
@@ -66,12 +69,9 @@ python3 scripts/update_papers.py --build-only
 | 2026-06-17 | arXiv | [Improving Human-Robot Teamwork in Urban Search and Rescue Through Episodic Memory of Prior Collaboration](content/papers/improving-human-robot-teamwork-in-urban-search-and-rescue-through-episodic-memor.md) | episodic |
 | 2026-06-17 | arXiv | [Human-AI Coevolution Dynamics: A Formal Theory of Social Intelligence Emergence Through Long-Term Interaction](content/papers/human-ai-coevolution-dynamics-a-formal-theory-of-social-intelligence-emergence-t.md) | context, conversation, long-term |
 | 2026-06-17 | OpenReview | [HGP: An on-device personalized agent memory via hybrid graph storage](content/papers/hgp-an-on-device-personalized-agent-memory-via-hybrid-graph-storage.md) | agent, benchmark, episodic |
-| 2026-06-17 | OpenReview | [H2G-Mem: Heterogeneous HyperGraphs for Fine-Grained Long-term Conversational Agent Memory](content/papers/h2g-mem-heterogeneous-hypergraphs-for-fine-grained-long-term-conversational-agen.md) | agent, benchmark, context |
 | 2026-06-17 | arXiv | [GateMem: Benchmarking Memory Governance in Multi-Principal Shared-Memory Agents](content/papers/gatemem-benchmarking-memory-governance-in-multi-principal-shared-memory-agents.md) | agent, benchmark, context |
 | 2026-06-17 | OpenReview | [GATEMEM: Benchmarking Memory Governance in Multi-Principal Shared-Memory Agents](content/papers/gatemem-benchmarking-memory-governance-in-multi-principal-shared-memory-agents.md) | agent, benchmark, context |
 | 2026-06-17 | arXiv | [EffiNav: Fusing Depth and Vision-Language for Efficient Object Goal Navigation](content/papers/effinav-fusing-depth-and-vision-language-for-efficient-object-goal-navigation.md) | agent, benchmark |
-| 2026-06-17 | OpenReview | [Caching for the Future: Scrub Jay Episodic Memory Principles for Agent Memory Systems](content/papers/caching-for-the-future-scrub-jay-episodic-memory-principles-for-agent-memory-sys.md) | agent, benchmark, context |
-| 2026-06-17 | OpenReview | [BenchPreS: A Benchmark for Context-Aware Personalized Preference Selectivity of Persistent-Memory LLMs](content/papers/benchpres-a-benchmark-for-context-aware-personalized-preference-selectivity-of-p.md) | benchmark, context |
 
 ## Suggested GitHub Setup
 

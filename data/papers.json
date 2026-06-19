@@ -1,32 +1,5 @@
 [
   {
-    "abstract": "When instruction-tuned LLMs store past experience in retrieval-augmented memory, much of memory's measured influence in our evaluation flows through verbatim answer copying rather than higher-level reasoning. Across $1{,}866$ controlled experiments spanning three model families, multi-episode agent tasks, and three external conflict benchmarks, removing concrete answer bindings sharply reduces override on the strongest-conflict tasks and attenuates it on more naturalistic benchmarks. Override strength changes at a concentrated boundary we term the *override cliff*: between answer-level and paraphrase-level memory content, override drops $4.5\\times$ on average in a single specificity step. On NQ-Swap, removing the swapped entity reduces override to zero on both tested models, and the cliff replicates on two frontier API models with full closed-book filtering (GPT-4o-mini $1.6\\times$; Claude Haiku 4.5 $1.8\\times$), with attenuated but persistent effect. On $\\tau$-bench, a real agent benchmark with deterministic evaluation, verbatim tool-call memories cause $20.6\\%$ stale parameter copying vs. $6.3\\%$ for strategy-only memories ($p{=}0.017$, cliff ratio $3.3\\times$), even when the agent performs fresh tool lookups. Logit probes are consistent with a ${\\sim}5\\times$ token-level amplification at this boundary, and paraphrased or summarized memories often avoid the strongest override failures.",
-    "authors": [],
-    "categories": [
-      "aclweb.org/ACL/ARR/2026/May/-/Submission"
-    ],
-    "id": "openreview:mNtrAwNwyD",
-    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, retrieval` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 May Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：When instruction-tuned LLMs store past experience in retrieval-augmented memory, much of memory's measured influence in our evaluation flows through verbatim answer copying rather than higher-level reasoning.\n\n进一步看，论文的核心做法或实验重点可以概括为：Across $1{,}866$ controlled experiments spanning three model families, multi-episode agent tasks, and three external conflict benchmarks, removing concrete answer bindings sharply reduces override on the strongest-...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
-    "matched_keywords": [
-      "agent memory"
-    ],
-    "one_liner": "When instruction-tuned LLMs store past experience in retrieval-augmented memory, much of memory's measured influence in our evaluation flows through verbatim answer copying...",
-    "published": "2026-06-02",
-    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 May Submission\n- 高亮主题命中：agent, benchmark, retrieval\n- 检索关键词命中：agent memory\n- 来源分类信息：aclweb.org/ACL/ARR/2026/May/-/Submission",
-    "slug": "the-override-cliff-how-agent-memory-hijacks-llm-reasoning",
-    "source": "OpenReview",
-    "source_key": "mNtrAwNwyD",
-    "tags": [
-      "agent",
-      "benchmark",
-      "retrieval"
-    ],
-    "title": "The Override Cliff: How Agent Memory Hijacks LLM Reasoning",
-    "updated": "2026-06-18",
-    "url": "https://openreview.net/forum?id=mNtrAwNwyD",
-    "venue": "ACL ARR 2026 May Submission"
-  },
-  {
     "abstract": "Multi-agent LLM systems increasingly share a long-term memory, yet most designs commit every candidate write to a single flat store. We show that this design choice drives hallucination propagation: a speculative, stale, or private statement entered by one agent can be retrieved by another, restated with confidence, and laundered into the shared substrate that downstream agents treat as fact. We propose SHM-GATE, a training-free framework that combines three primitives: atomic-claim structurisation of every candidate write, an explicit admission gate that rejects speculation and shadows contradicted facts, and a three-tier hierarchical memory consisting of private episodic memory, a shared semantic graph, and frozen invariants read in trust order. A lightweight evidence-driven correction loop verifies answer claims, counterfactually edits retrieved evidence, and rolls back unsupported claims. We evaluate SHM-GATE on MA-MEMCONFLICT, a 250-sample multi-agent benchmark covering five labelled conflict types, together with scale-stress extensions, LoCoMo long-conversation transfer, a simulated user study, and a gpt-4o backbone-sensitivity run. SHM-GATE is statistically tied with the best-accuracy answerers, including Flat-RAG, while improving Memory Consistency Score by 14 absolute points over Flat-RAG. Under scale stress, baselines degrade substantially at high distractor density, while SHM-GATE retains perfect accuracy across all configurations.",
     "authors": [],
     "categories": [
@@ -52,8 +25,134 @@
       "long-term"
     ],
     "title": "SHM-GATE: Structured Hierarchical Memory with Gated Admission for Multi-Agent LLM Hallucination Containment",
-    "updated": "2026-06-18",
+    "updated": "2026-06-19",
     "url": "https://openreview.net/forum?id=B4JBE7ZfwQ",
+    "venue": "ACL ARR 2026 May Submission"
+  },
+  {
+    "abstract": "Image-goal navigation is a challenging task that requires an agent to navigate to a goal indicated by an image in unfamiliar environments. Existing methods utilizing diverse scene memories suffer from inefficient exploration since they use all historical observations for decision-making without considering the goal-relevant fraction. To address this limitation, we present MemoNav, a novel memory model for image-goal navigation, which utilizes a working memory-inspired pipeline to improve navigation performance. Specifically, we employ three types of navigation memory. The node features on a map are stored in the short-term memory (STM), as these features are dynamically updated. A forgetting module then retains the informative STM fraction to increase efficiency. We also introduce long-term memory (LTM) to learn global scene representations by progressively aggregating STM features. Subsequently, a graph attention module encodes the retained STM and the LTM to generate working memory (WM) which contains the scene features essential for efficient navigation. The synergy among these three memory types boosts navigation performance by enabling the agent to learn and leverage goal-relevant scene features within a topological map. Our evaluation on multi-goal tasks demonstrates that MemoNav significantly outperforms previous methods across all difficulty levels in both Gibson and Matterport3D scenes. Qualitative results further illustrate that MemoNav plans more efficient routes.",
+    "authors": [
+      "Hongxin Li",
+      "Zeyu Wang",
+      "Xu Yang",
+      "Yuran Yang",
+      "Shuqi Mei",
+      "Zhaoxiang Zhang"
+    ],
+    "categories": [
+      "DBLP.org/-/Record"
+    ],
+    "id": "openreview:LbCVIvmMSf",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, long-term` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `CoRR 2024` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Image-goal navigation is a challenging task that requires an agent to navigate to a goal indicated by an image in unfamiliar environments.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing methods utilizing diverse scene memories suffer from inefficient exploration since they use all historical observations for decision-making without considering the goal-relevant fraction.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "long-term memory",
+      "working memory"
+    ],
+    "one_liner": "Image-goal navigation is a challenging task that requires an agent to navigate to a goal indicated by an image in unfamiliar environments.",
+    "published": "2024-01-01",
+    "relevance": "- 来源：OpenReview\n- Venue：CoRR 2024\n- 高亮主题命中：agent, long-term\n- 检索关键词命中：long-term memory, working memory\n- 来源分类信息：DBLP.org/-/Record",
+    "slug": "memonav-working-memory-model-for-visual-navigation",
+    "source": "OpenReview",
+    "source_key": "LbCVIvmMSf",
+    "tags": [
+      "agent",
+      "long-term"
+    ],
+    "title": "MemoNav: Working Memory Model for Visual Navigation",
+    "updated": "2026-06-19",
+    "url": "https://openreview.net/forum?id=LbCVIvmMSf",
+    "venue": "CoRR 2024"
+  },
+  {
+    "abstract": "Image-goal navigation is a challenging task that requires an agent to navigate to a goal indicated by an image in unfamiliar environments. Existing methods utilizing diverse scene memories suffer from inefficient exploration since they use all historical observations for decision-making without considering the goal-relevant fraction. To address this limitation, we present MemoNav, a novel memory model for image-goal navigation, which utilizes a working memory-inspired pipeline to improve navigation performance. Specifically, we employ three types of navigation memory. The node features on a map are stored in the short-term memory (STM), as these features are dynamically updated. A forgetting module then retains the informative STM fraction to increase efficiency. We also introduce long-term memory (LTM) to learn global scene representations by progressively aggregating STM features. Subsequently, a graph attention module encodes the retained STM and the LTM to generate working memory (WM) which contains the scene features essential for efficient navigation. The synergy among these three memory types boosts navigation performance by enabling the agent to learn and leverage goal-relevant scene features within a topological map. Our evaluation on multi-goal tasks demonstrates that MemoNav significantly outperforms previous methods across all difficulty levels in both Gibson and Matterport3D scenes. Qualitative results further illustrate that MemoNav plans more efficient routes.",
+    "authors": [
+      "Hongxin Li",
+      "Zeyu Wang",
+      "Xu Yang",
+      "Yuran Yang",
+      "Shuqi Mei",
+      "Zhaoxiang Zhang"
+    ],
+    "categories": [
+      "DBLP.org/-/Record"
+    ],
+    "id": "openreview:SSYG5cri9Y",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, long-term` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `CVPR 2024` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Image-goal navigation is a challenging task that requires an agent to navigate to a goal indicated by an image in unfamiliar environments.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing methods utilizing diverse scene memories suffer from inefficient exploration since they use all historical observations for decision-making without considering the goal-relevant fraction.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "long-term memory",
+      "working memory"
+    ],
+    "one_liner": "Image-goal navigation is a challenging task that requires an agent to navigate to a goal indicated by an image in unfamiliar environments.",
+    "published": "2024-01-01",
+    "relevance": "- 来源：OpenReview\n- Venue：CVPR 2024\n- 高亮主题命中：agent, long-term\n- 检索关键词命中：long-term memory, working memory\n- 来源分类信息：DBLP.org/-/Record",
+    "slug": "memonav-working-memory-model-for-visual-navigation",
+    "source": "OpenReview",
+    "source_key": "SSYG5cri9Y",
+    "tags": [
+      "agent",
+      "long-term"
+    ],
+    "title": "MemoNav: Working Memory Model for Visual Navigation",
+    "updated": "2026-06-19",
+    "url": "https://openreview.net/forum?id=SSYG5cri9Y",
+    "venue": "CVPR 2024"
+  },
+  {
+    "abstract": "Large language models (LLMs) remain limited in long-horizon conversational settings due to their inability to reliably preserve and retrieve historical information. Existing agentic memory systems address this through a two-stage paradigm: structural memory database construction and memory database retrieval. However, most existing methods suffer from two key limitations: (1) they rely on oversimplified data structures, such as plain text chunks in a vector database, failing to capture the relational complexity of multi-session conversations; (2) they adopt coarse-grained information units, such as conversation periods or chunks of conversation indexed solely by semantic embeddings, which hinders fine-grained action matching and complex reasoning during retrieval. To address these issues, we propose a hierarchical heterogeneous hypergraph memory framework for long-term conversational agents. For memory construction, we design a hypergraph-based structure that organizes person- and activity-centric information into a unified hierarchy, where events act as hyperedge-like nodes connecting globally sharable entity anchors while maintaining activities and semantic facts as event-level attributes. For memory retrieval, we introduce a multi-granularity search strategy combining entity-based hypernode-cooccurrence matching for fine-grained event alignment with event-based semantic matching for coarse-grained contextual relevance. Experiments on the widely used benchmarks LoCoMo and LongMemEval demonstrate that our method achieves around 8\\% performance improvements over state-of-the-art baselines.",
+    "authors": [],
+    "categories": [
+      "aclweb.org/ACL/ARR/2026/May/-/Submission"
+    ],
+    "id": "openreview:h8EITsueME",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, conversation` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 May Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Large language models (LLMs) remain limited in long-horizon conversational settings due to their inability to reliably preserve and retrieve historical information.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing agentic memory systems address this through a two-stage paradigm: structural memory database construction and memory database retrieval.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory",
+      "memory retrieval"
+    ],
+    "one_liner": "Large language models (LLMs) remain limited in long-horizon conversational settings due to their inability to reliably preserve and retrieve historical information.",
+    "published": "2026-06-02",
+    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 May Submission\n- 高亮主题命中：agent, benchmark, context, conversation, long-term, retrieval\n- 检索关键词命中：agent memory, memory retrieval\n- 来源分类信息：aclweb.org/ACL/ARR/2026/May/-/Submission",
+    "slug": "h2g-mem-heterogeneous-hypergraphs-for-fine-grained-long-term-conversational-agen",
+    "source": "OpenReview",
+    "source_key": "h8EITsueME",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "conversation",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "H2G-Mem: Heterogeneous HyperGraphs for Fine-Grained Long-term Conversational Agent Memory",
+    "updated": "2026-06-19",
+    "url": "https://openreview.net/forum?id=h8EITsueME",
+    "venue": "ACL ARR 2026 May Submission"
+  },
+  {
+    "abstract": "When instruction-tuned LLMs store past experience in retrieval-augmented memory, much of memory's measured influence in our evaluation flows through verbatim answer copying rather than higher-level reasoning. Across $1{,}866$ controlled experiments spanning three model families, multi-episode agent tasks, and three external conflict benchmarks, removing concrete answer bindings sharply reduces override on the strongest-conflict tasks and attenuates it on more naturalistic benchmarks. Override strength changes at a concentrated boundary we term the *override cliff*: between answer-level and paraphrase-level memory content, override drops $4.5\\times$ on average in a single specificity step. On NQ-Swap, removing the swapped entity reduces override to zero on both tested models, and the cliff replicates on two frontier API models with full closed-book filtering (GPT-4o-mini $1.6\\times$; Claude Haiku 4.5 $1.8\\times$), with attenuated but persistent effect. On $\\tau$-bench, a real agent benchmark with deterministic evaluation, verbatim tool-call memories cause $20.6\\%$ stale parameter copying vs. $6.3\\%$ for strategy-only memories ($p{=}0.017$, cliff ratio $3.3\\times$), even when the agent performs fresh tool lookups. Logit probes are consistent with a ${\\sim}5\\times$ token-level amplification at this boundary, and paraphrased or summarized memories often avoid the strongest override failures.",
+    "authors": [],
+    "categories": [
+      "aclweb.org/ACL/ARR/2026/May/-/Submission"
+    ],
+    "id": "openreview:mNtrAwNwyD",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, retrieval` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 May Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：When instruction-tuned LLMs store past experience in retrieval-augmented memory, much of memory's measured influence in our evaluation flows through verbatim answer copying rather than higher-level reasoning.\n\n进一步看，论文的核心做法或实验重点可以概括为：Across $1{,}866$ controlled experiments spanning three model families, multi-episode agent tasks, and three external conflict benchmarks, removing concrete answer bindings sharply reduces override on the strongest-...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "When instruction-tuned LLMs store past experience in retrieval-augmented memory, much of memory's measured influence in our evaluation flows through verbatim answer copying...",
+    "published": "2026-06-02",
+    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 May Submission\n- 高亮主题命中：agent, benchmark, retrieval\n- 检索关键词命中：agent memory\n- 来源分类信息：aclweb.org/ACL/ARR/2026/May/-/Submission",
+    "slug": "the-override-cliff-how-agent-memory-hijacks-llm-reasoning",
+    "source": "OpenReview",
+    "source_key": "mNtrAwNwyD",
+    "tags": [
+      "agent",
+      "benchmark",
+      "retrieval"
+    ],
+    "title": "The Override Cliff: How Agent Memory Hijacks LLM Reasoning",
+    "updated": "2026-06-18",
+    "url": "https://openreview.net/forum?id=mNtrAwNwyD",
     "venue": "ACL ARR 2026 May Submission"
   },
   {
@@ -423,37 +522,6 @@
     "title": "HGP: An on-device personalized agent memory via hybrid graph storage",
     "updated": "2026-06-17",
     "url": "https://openreview.net/forum?id=cNvYC1doge",
-    "venue": "ACL ARR 2026 May Submission"
-  },
-  {
-    "abstract": "Large language models (LLMs) remain limited in long-horizon conversational settings due to their inability to reliably preserve and retrieve historical information. Existing agentic memory systems address this through a two-stage paradigm: structural memory database construction and memory database retrieval. However, most existing methods suffer from two key limitations: (1) they rely on oversimplified data structures, such as plain text chunks in a vector database, failing to capture the relational complexity of multi-session conversations; (2) they adopt coarse-grained information units, such as conversation periods or chunks of conversation indexed solely by semantic embeddings, which hinders fine-grained action matching and complex reasoning during retrieval. To address these issues, we propose a hierarchical heterogeneous hypergraph memory framework for long-term conversational agents. For memory construction, we design a hypergraph-based structure that organizes person- and activity-centric information into a unified hierarchy, where events act as hyperedge-like nodes connecting globally sharable entity anchors while maintaining activities and semantic facts as event-level attributes. For memory retrieval, we introduce a multi-granularity search strategy combining entity-based hypernode-cooccurrence matching for fine-grained event alignment with event-based semantic matching for coarse-grained contextual relevance. Experiments on the widely used benchmarks LoCoMo and LongMemEval demonstrate that our method achieves around 8\\% performance improvements over state-of-the-art baselines.",
-    "authors": [],
-    "categories": [
-      "aclweb.org/ACL/ARR/2026/May/-/Submission"
-    ],
-    "id": "openreview:h8EITsueME",
-    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, conversation` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 May Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Large language models (LLMs) remain limited in long-horizon conversational settings due to their inability to reliably preserve and retrieve historical information.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing agentic memory systems address this through a two-stage paradigm: structural memory database construction and memory database retrieval.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
-    "matched_keywords": [
-      "agent memory",
-      "memory retrieval"
-    ],
-    "one_liner": "Large language models (LLMs) remain limited in long-horizon conversational settings due to their inability to reliably preserve and retrieve historical information.",
-    "published": "2026-06-02",
-    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 May Submission\n- 高亮主题命中：agent, benchmark, context, conversation, long-term, retrieval\n- 检索关键词命中：agent memory, memory retrieval\n- 来源分类信息：aclweb.org/ACL/ARR/2026/May/-/Submission",
-    "slug": "h2g-mem-heterogeneous-hypergraphs-for-fine-grained-long-term-conversational-agen",
-    "source": "OpenReview",
-    "source_key": "h8EITsueME",
-    "tags": [
-      "agent",
-      "benchmark",
-      "context",
-      "conversation",
-      "long-term",
-      "retrieval"
-    ],
-    "title": "H2G-Mem: Heterogeneous HyperGraphs for Fine-Grained Long-term Conversational Agent Memory",
-    "updated": "2026-06-17",
-    "url": "https://openreview.net/forum?id=h8EITsueME",
     "venue": "ACL ARR 2026 May Submission"
   },
   {
