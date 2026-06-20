@@ -52,6 +52,7 @@ python3 scripts/update_papers.py --build-only
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-06-20 | OpenReview | [TAME: A Trustworthy Test-Time Evolution of Agent Memory with Systematic Benchmarking](content/papers/tame-a-trustworthy-test-time-evolution-of-agent-memory-with-systematic-benchmark.md) | agent, benchmark |
 | 2026-06-19 | OpenReview | [SHM-GATE: Structured Hierarchical Memory with Gated Admission for Multi-Agent LLM Hallucination Containment](content/papers/shm-gate-structured-hierarchical-memory-with-gated-admission-for-multi-agent-llm.md) | agent, benchmark, conversation |
 | 2026-06-19 | OpenReview | [MemoNav: Working Memory Model for Visual Navigation](content/papers/memonav-working-memory-model-for-visual-navigation.md) | agent, long-term |
 | 2026-06-19 | OpenReview | [MemoNav: Working Memory Model for Visual Navigation](content/papers/memonav-working-memory-model-for-visual-navigation.md) | agent, long-term |
@@ -71,7 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-06-18 | arXiv | [AtomMem: Building Simple and Effective Memory System for LLM Agents via Atomic Facts](content/papers/atommem-building-simple-and-effective-memory-system-for-llm-agents-via-atomic-fa.md) | agent, benchmark, context |
 | 2026-06-17 | arXiv | [WorldLines: Benchmarking and Modeling Long-Horizon Stateful Embodied Agents](content/papers/worldlines-benchmarking-and-modeling-long-horizon-stateful-embodied-agents.md) | agent, benchmark, long-term |
 | 2026-06-17 | arXiv | [What Must Generalist Agents Remember?](content/papers/what-must-generalist-agents-remember.md) | agent |
-| 2026-06-17 | OpenReview | [TAME: A Trustworthy Test-Time Evolution of Agent Memory with Systematic Benchmarking](content/papers/tame-a-trustworthy-test-time-evolution-of-agent-memory-with-systematic-benchmark.md) | agent, benchmark |
 
 ## Suggested GitHub Setup
 
