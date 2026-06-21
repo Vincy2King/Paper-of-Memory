@@ -4,7 +4,7 @@
 - Venue: ACL ARR 2026 May Submission
 - Paper ID: openreview:B4JBE7ZfwQ
 - Published: 2026-06-02
-- Updated: 2026-06-19
+- Updated: 2026-06-20
 - Authors: Unknown
 - Tags: agent, benchmark, conversation, episodic, long-term
 - Categories: aclweb.org/ACL/ARR/2026/May/-/Submission

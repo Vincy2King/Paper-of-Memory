@@ -40,7 +40,7 @@ python3 scripts/update_papers.py --build-only
 ## Repository Snapshot
 
 - Total tracked papers: **542**
-- Last generated: **2026-06-20**
+- Last generated: **2026-06-21**
 
 ## Papers by Source
 
@@ -53,7 +53,9 @@ python3 scripts/update_papers.py --build-only
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
 | 2026-06-20 | OpenReview | [TAME: A Trustworthy Test-Time Evolution of Agent Memory with Systematic Benchmarking](content/papers/tame-a-trustworthy-test-time-evolution-of-agent-memory-with-systematic-benchmark.md) | agent, benchmark |
-| 2026-06-19 | OpenReview | [SHM-GATE: Structured Hierarchical Memory with Gated Admission for Multi-Agent LLM Hallucination Containment](content/papers/shm-gate-structured-hierarchical-memory-with-gated-admission-for-multi-agent-llm.md) | agent, benchmark, conversation |
+| 2026-06-20 | OpenReview | [Same Ranking, Different Winner: How Scoring Targets Shape LLM Memory Benchmarks](content/papers/same-ranking-different-winner-how-scoring-targets-shape-llm-memory-benchmarks.md) | benchmark, conversation, retrieval |
+| 2026-06-20 | OpenReview | [SHM-GATE: Structured Hierarchical Memory with Gated Admission for Multi-Agent LLM Hallucination Containment](content/papers/shm-gate-structured-hierarchical-memory-with-gated-admission-for-multi-agent-llm.md) | agent, benchmark, conversation |
+| 2026-06-20 | OpenReview | [GATEMEM: Benchmarking Memory Governance in Multi-Principal Shared-Memory Agents](content/papers/gatemem-benchmarking-memory-governance-in-multi-principal-shared-memory-agents.md) | agent, benchmark, context |
 | 2026-06-19 | OpenReview | [MemoNav: Working Memory Model for Visual Navigation](content/papers/memonav-working-memory-model-for-visual-navigation.md) | agent, long-term |
 | 2026-06-19 | OpenReview | [MemoNav: Working Memory Model for Visual Navigation](content/papers/memonav-working-memory-model-for-visual-navigation.md) | agent, long-term |
 | 2026-06-19 | OpenReview | [HGP: An on-device personalized agent memory via hybrid graph storage](content/papers/hgp-an-on-device-personalized-agent-memory-via-hybrid-graph-storage.md) | agent, benchmark, episodic |
@@ -70,8 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-06-18 | arXiv | [FlowEdit: Associative Memory for Lifelong Pronunciation Adaptation in Flow-Matching TTS](content/papers/flowedit-associative-memory-for-lifelong-pronunciation-adaptation-in-flow-matchi.md) | benchmark, episodic |
 | 2026-06-18 | OpenReview | [AtomMem: Learnable Dynamic Agentic Memory with Atomic Memory Operation](content/papers/atommem-learnable-dynamic-agentic-memory-with-atomic-memory-operation.md) | agent, benchmark, context |
 | 2026-06-18 | arXiv | [AtomMem: Building Simple and Effective Memory System for LLM Agents via Atomic Facts](content/papers/atommem-building-simple-and-effective-memory-system-for-llm-agents-via-atomic-fa.md) | agent, benchmark, context |
-| 2026-06-17 | arXiv | [WorldLines: Benchmarking and Modeling Long-Horizon Stateful Embodied Agents](content/papers/worldlines-benchmarking-and-modeling-long-horizon-stateful-embodied-agents.md) | agent, benchmark, long-term |
-| 2026-06-17 | arXiv | [What Must Generalist Agents Remember?](content/papers/what-must-generalist-agents-remember.md) | agent |
 
 ## Suggested GitHub Setup
 

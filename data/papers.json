@@ -26,6 +26,34 @@
     "venue": "ACL ARR 2026 May Submission"
   },
   {
+    "abstract": "Conversational-memory systems increasingly transform dialogue history into facts, sum- maries, timelines, and other source-linked de- scendants, so a single source turn can co- exist with several derived memories in the same retrieval index. This raises an under- specified evaluation question: which stored form should receive retrieval credit? We show that this scoring-target choice is often left implicit and can materially change bench- mark conclusions. We present TIAP, a fixed- output audit that rescores saved ranked out- puts under three targets—Raw, Source, and Canonical—without rerunning retrieval. On LoCoMo and LongMemEval-S, switching only the credited target changes nDCG on 83.4%– 94.0% of shared queries, flips target orderings on Mem0 and MemoryOS transfer runs, and reverses parser-density recommendations. A 1,902-case semantic audit further shows that re- laxed source-linked credit is fully justified only 29.2% of the time, despite high rubric reliabil- ity in a validation subset. These results reveal target noninvariance: conclusions about mem- ory architectures can silently flip with a sin- gle benchmark-design choice. Conversational- memory papers should therefore define and re- port the scoring target explicitly",
+    "authors": [],
+    "categories": [
+      "aclweb.org/ACL/ARR/2026/May/-/Submission"
+    ],
+    "id": "openreview:Fb0qGX9FM0",
+    "intro": "这篇论文被纳入仓库，是因为它和 `benchmark, conversation, retrieval` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 May Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Conversational-memory systems increasingly transform dialogue history into facts, sum- maries, timelines, and other source-linked de- scendants, so a single source turn can co- exist with several derived memories in...\n\n进一步看，论文的核心做法或实验重点可以概括为：This raises an under- specified evaluation question: which stored form should receive retrieval credit?\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory benchmark",
+      "memory benchmarks"
+    ],
+    "one_liner": "Conversational-memory systems increasingly transform dialogue history into facts, sum- maries, timelines, and other source-linked de- scendants, so a single source turn can co-...",
+    "published": "2026-06-02",
+    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 May Submission\n- 高亮主题命中：benchmark, conversation, retrieval\n- 检索关键词命中：memory benchmark, memory benchmarks\n- 来源分类信息：aclweb.org/ACL/ARR/2026/May/-/Submission",
+    "slug": "same-ranking-different-winner-how-scoring-targets-shape-llm-memory-benchmarks",
+    "source": "OpenReview",
+    "source_key": "Fb0qGX9FM0",
+    "tags": [
+      "benchmark",
+      "conversation",
+      "retrieval"
+    ],
+    "title": "Same Ranking, Different Winner: How Scoring Targets Shape LLM Memory Benchmarks",
+    "updated": "2026-06-20",
+    "url": "https://openreview.net/forum?id=Fb0qGX9FM0",
+    "venue": "ACL ARR 2026 May Submission"
+  },
+  {
     "abstract": "Multi-agent LLM systems increasingly share a long-term memory, yet most designs commit every candidate write to a single flat store. We show that this design choice drives hallucination propagation: a speculative, stale, or private statement entered by one agent can be retrieved by another, restated with confidence, and laundered into the shared substrate that downstream agents treat as fact. We propose SHM-GATE, a training-free framework that combines three primitives: atomic-claim structurisation of every candidate write, an explicit admission gate that rejects speculation and shadows contradicted facts, and a three-tier hierarchical memory consisting of private episodic memory, a shared semantic graph, and frozen invariants read in trust order. A lightweight evidence-driven correction loop verifies answer claims, counterfactually edits retrieved evidence, and rolls back unsupported claims. We evaluate SHM-GATE on MA-MEMCONFLICT, a 250-sample multi-agent benchmark covering five labelled conflict types, together with scale-stress extensions, LoCoMo long-conversation transfer, a simulated user study, and a gpt-4o backbone-sensitivity run. SHM-GATE is statistically tied with the best-accuracy answerers, including Flat-RAG, while improving Memory Consistency Score by 14 absolute points over Flat-RAG. Under scale stress, baselines degrade substantially at high distractor density, while SHM-GATE retains perfect accuracy across all configurations.",
     "authors": [],
     "categories": [
@@ -51,8 +79,37 @@
       "long-term"
     ],
     "title": "SHM-GATE: Structured Hierarchical Memory with Gated Admission for Multi-Agent LLM Hallucination Containment",
-    "updated": "2026-06-19",
+    "updated": "2026-06-20",
     "url": "https://openreview.net/forum?id=B4JBE7ZfwQ",
+    "venue": "ACL ARR 2026 May Submission"
+  },
+  {
+    "abstract": "Memory benchmarks for LLM agents largely assume single-user settings, leaving shared assistants for hospitals, workplaces, campuses, and households understudied. In these deployments, multiple principals write to a common memory pool and query it under different roles, scopes, and relationships, so memory quality requires governance as well as recall. We introduce GATEMEM, a benchmark for multi-principal shared-memory agents. GATEMEM jointly evaluates utility for legitimate long-horizon requests with state updates, access control across contextual authorization boundaries, and agent-facing active forgetting after explicit deletion requests. It spans medical, office, education, and household domains, with long-form multi-party episodes, incremental memory injection, hidden checkpoints, structured judging, and leak-target annotations. Across diverse baselines and backbone models, no method simultaneously achieves strong utility, robust access control, and reliable forgetting. Long-context prompting often yields the best governance score at high token cost, while retrieval-based and external-memory methods reduce cost yet still leak unauthorized or deleted information. These results show current memory agents remain far from reliable shared institutional deployment.",
+    "authors": [],
+    "categories": [
+      "aclweb.org/ACL/ARR/2026/May/-/Submission"
+    ],
+    "id": "openreview:i8zzVWLDX2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, retrieval` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 May Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Memory benchmarks for LLM agents largely assume single-user settings, leaving shared assistants for hospitals, workplaces, campuses, and households understudied.\n\n进一步看，论文的核心做法或实验重点可以概括为：In these deployments, multiple principals write to a common memory pool and query it under different roles, scopes, and relationships, so memory quality requires governance as well as recall.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory benchmark",
+      "memory benchmarks"
+    ],
+    "one_liner": "Memory benchmarks for LLM agents largely assume single-user settings, leaving shared assistants for hospitals, workplaces, campuses, and households understudied.",
+    "published": "2026-06-02",
+    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 May Submission\n- 高亮主题命中：agent, benchmark, context, retrieval\n- 检索关键词命中：memory benchmark, memory benchmarks\n- 来源分类信息：aclweb.org/ACL/ARR/2026/May/-/Submission",
+    "slug": "gatemem-benchmarking-memory-governance-in-multi-principal-shared-memory-agents",
+    "source": "OpenReview",
+    "source_key": "i8zzVWLDX2",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "retrieval"
+    ],
+    "title": "GATEMEM: Benchmarking Memory Governance in Multi-Principal Shared-Memory Agents",
+    "updated": "2026-06-20",
+    "url": "https://openreview.net/forum?id=i8zzVWLDX2",
     "venue": "ACL ARR 2026 May Submission"
   },
   {
@@ -632,34 +689,6 @@
     "venue": ""
   },
   {
-    "abstract": "Conversational-memory systems increasingly transform dialogue history into facts, sum- maries, timelines, and other source-linked de- scendants, so a single source turn can co- exist with several derived memories in the same retrieval index. This raises an under- specified evaluation question: which stored form should receive retrieval credit? We show that this scoring-target choice is often left implicit and can materially change bench- mark conclusions. We present TIAP, a fixed- output audit that rescores saved ranked out- puts under three targets—Raw, Source, and Canonical—without rerunning retrieval. On LoCoMo and LongMemEval-S, switching only the credited target changes nDCG on 83.4%– 94.0% of shared queries, flips target orderings on Mem0 and MemoryOS transfer runs, and reverses parser-density recommendations. A 1,902-case semantic audit further shows that re- laxed source-linked credit is fully justified only 29.2% of the time, despite high rubric reliabil- ity in a validation subset. These results reveal target noninvariance: conclusions about mem- ory architectures can silently flip with a sin- gle benchmark-design choice. Conversational- memory papers should therefore define and re- port the scoring target explicitly",
-    "authors": [],
-    "categories": [
-      "aclweb.org/ACL/ARR/2026/May/-/Submission"
-    ],
-    "id": "openreview:Fb0qGX9FM0",
-    "intro": "这篇论文被纳入仓库，是因为它和 `benchmark, conversation, retrieval` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 May Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Conversational-memory systems increasingly transform dialogue history into facts, sum- maries, timelines, and other source-linked de- scendants, so a single source turn can co- exist with several derived memories in...\n\n进一步看，论文的核心做法或实验重点可以概括为：This raises an under- specified evaluation question: which stored form should receive retrieval credit?\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
-    "matched_keywords": [
-      "memory benchmark",
-      "memory benchmarks"
-    ],
-    "one_liner": "Conversational-memory systems increasingly transform dialogue history into facts, sum- maries, timelines, and other source-linked de- scendants, so a single source turn can co-...",
-    "published": "2026-06-02",
-    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 May Submission\n- 高亮主题命中：benchmark, conversation, retrieval\n- 检索关键词命中：memory benchmark, memory benchmarks\n- 来源分类信息：aclweb.org/ACL/ARR/2026/May/-/Submission",
-    "slug": "same-ranking-different-winner-how-scoring-targets-shape-llm-memory-benchmarks",
-    "source": "OpenReview",
-    "source_key": "Fb0qGX9FM0",
-    "tags": [
-      "benchmark",
-      "conversation",
-      "retrieval"
-    ],
-    "title": "Same Ranking, Different Winner: How Scoring Targets Shape LLM Memory Benchmarks",
-    "updated": "2026-06-17",
-    "url": "https://openreview.net/forum?id=Fb0qGX9FM0",
-    "venue": "ACL ARR 2026 May Submission"
-  },
-  {
     "abstract": "Modern Vision-Language Models (VLMs) often struggle with strategic reasoning, i.e., anticipating and influencing other agents' actions, under uncertainty in competitive and cooperative settings. Real-time strategy (RTS) games can be a natural testbed for diagnosing this limitation, as they demand coordination with allies, adaptation to opponents' strategy, and long-horizon planning under partial observability. However, existing RTS benchmarks offer limited evaluation scope, lack systematic competency diagnosis, and remain fixed in the pre-designed scenario coverage. To address these limitations, we present RTSGameBench, which is built on Beyond All Reason, a large-scale RTS game with an expanded battlefield that demands broader strategy diversity than the existing testbeds. The proposed benchmark provides evaluations through diverse gameplay across various matchup structures, diagnostic assessment via mini-games, each targeting an individual strategic competency, and extensible coverage via a self-evolving generation framework that converts free-form queries into new mini-games, improving over successive cycles. Additionally, for VLMs to operate in large-scale RTS games, we provide RTSGameAgent that manages units by an FSM with agentic memory. We empirically validate that multiple state-of-the-art VLMs do not perform well when matchups demand tighter coordination, multiagent coordination and when task scale increases.",
     "authors": [
       "San Kim",
@@ -825,35 +854,6 @@
     "updated": "2026-06-17",
     "url": "http://arxiv.org/abs/2606.18829v1",
     "venue": ""
-  },
-  {
-    "abstract": "Memory benchmarks for LLM agents largely assume single-user settings, leaving shared assistants for hospitals, workplaces, campuses, and households understudied. In these deployments, multiple principals write to a common memory pool and query it under different roles, scopes, and relationships, so memory quality requires governance as well as recall. We introduce GATEMEM, a benchmark for multi-principal shared-memory agents. GATEMEM jointly evaluates utility for legitimate long-horizon requests with state updates, access control across contextual authorization boundaries, and agent-facing active forgetting after explicit deletion requests. It spans medical, office, education, and household domains, with long-form multi-party episodes, incremental memory injection, hidden checkpoints, structured judging, and leak-target annotations. Across diverse baselines and backbone models, no method simultaneously achieves strong utility, robust access control, and reliable forgetting. Long-context prompting often yields the best governance score at high token cost, while retrieval-based and external-memory methods reduce cost yet still leak unauthorized or deleted information. These results show current memory agents remain far from reliable shared institutional deployment.",
-    "authors": [],
-    "categories": [
-      "aclweb.org/ACL/ARR/2026/May/-/Submission"
-    ],
-    "id": "openreview:i8zzVWLDX2",
-    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, retrieval` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 May Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Memory benchmarks for LLM agents largely assume single-user settings, leaving shared assistants for hospitals, workplaces, campuses, and households understudied.\n\n进一步看，论文的核心做法或实验重点可以概括为：In these deployments, multiple principals write to a common memory pool and query it under different roles, scopes, and relationships, so memory quality requires governance as well as recall.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
-    "matched_keywords": [
-      "memory benchmark",
-      "memory benchmarks"
-    ],
-    "one_liner": "Memory benchmarks for LLM agents largely assume single-user settings, leaving shared assistants for hospitals, workplaces, campuses, and households understudied.",
-    "published": "2026-06-02",
-    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 May Submission\n- 高亮主题命中：agent, benchmark, context, retrieval\n- 检索关键词命中：memory benchmark, memory benchmarks\n- 来源分类信息：aclweb.org/ACL/ARR/2026/May/-/Submission",
-    "slug": "gatemem-benchmarking-memory-governance-in-multi-principal-shared-memory-agents",
-    "source": "OpenReview",
-    "source_key": "i8zzVWLDX2",
-    "tags": [
-      "agent",
-      "benchmark",
-      "context",
-      "retrieval"
-    ],
-    "title": "GATEMEM: Benchmarking Memory Governance in Multi-Principal Shared-Memory Agents",
-    "updated": "2026-06-17",
-    "url": "https://openreview.net/forum?id=i8zzVWLDX2",
-    "venue": "ACL ARR 2026 May Submission"
   },
   {
     "abstract": "To locate a target object while exploring the unknown environment is a fundamental capability for autonomous agents, with applications ranging from search-and-rescue to field robots. A simplified version of such task is Object Goal Navigation (ObjNav). In ObjNav, successful arrival at the target object provides a basic measure of performance; however, the efficiency of the navigation trajectory is equally important, as it indicates how intelligently the agent explores and how much time remains for subsequent tasks. In unknown environments, the key to efficient navigation lies in deciding where to explore next. While many prior works aim to address this core challenge and achieved promising performance in certain settings, recent training-based models and non-training frameworks still suffer from generalization and efficiency issues respectively, which in the worst cases can lead to excessive exploration of already-visited areas or redundant back-and-forth motion. We evaluate EffiNav on two widely used simulation benchmarks Habitat Matterport 3D (HM3D) and Open-Vocabulary Object goal Navigation (OVON), and further validate its effectiveness on physical robots in real-world settings. We conduct failure analysis on massive simulation episodes. With minimal modification, we also extend EffiNav to a memory-augmented ObjNav task on the GOAT-BENCH dataset, demonstrating its adaptability beyond standard ObjNav settings. Across two standard metrics--Success Rate (SR) and Success weighted by Path Length (SPL), EffiNav matches or outperforms recent baselines, reflecting its efficiency, robustness, and practical applicability. Recognizing the different emphases of the two datasets, the performances reveals this framework is more balanced and generalizable for efficient ObjNav.",
