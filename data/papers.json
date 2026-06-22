@@ -1,5 +1,61 @@
 [
   {
+    "abstract": "Memory benchmarks for LLM agents largely assume single-user settings, leaving shared assistants for hospitals, workplaces, campuses, and households understudied. In these deployments, multiple principals write to a common memory pool and query it under different roles, scopes, and relationships, so memory quality requires governance as well as recall. We introduce GATEMEM, a benchmark for multi-principal shared-memory agents. GATEMEM jointly evaluates utility for legitimate long-horizon requests with state updates, access control across contextual authorization boundaries, and agent-facing active forgetting after explicit deletion requests. It spans medical, office, education, and household domains, with long-form multi-party episodes, incremental memory injection, hidden checkpoints, structured judging, and leak-target annotations. Across diverse baselines and backbone models, no method simultaneously achieves strong utility, robust access control, and reliable forgetting. Long-context prompting often yields the best governance score at high token cost, while retrieval-based and external-memory methods reduce cost yet still leak unauthorized or deleted information. These results show current memory agents remain far from reliable shared institutional deployment.",
+    "authors": [],
+    "categories": [
+      "aclweb.org/ACL/ARR/2026/May/-/Submission"
+    ],
+    "id": "openreview:i8zzVWLDX2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, retrieval` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 May Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Memory benchmarks for LLM agents largely assume single-user settings, leaving shared assistants for hospitals, workplaces, campuses, and households understudied.\n\n进一步看，论文的核心做法或实验重点可以概括为：In these deployments, multiple principals write to a common memory pool and query it under different roles, scopes, and relationships, so memory quality requires governance as well as recall.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory benchmark",
+      "memory benchmarks"
+    ],
+    "one_liner": "Memory benchmarks for LLM agents largely assume single-user settings, leaving shared assistants for hospitals, workplaces, campuses, and households understudied.",
+    "published": "2026-06-02",
+    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 May Submission\n- 高亮主题命中：agent, benchmark, context, retrieval\n- 检索关键词命中：memory benchmark, memory benchmarks\n- 来源分类信息：aclweb.org/ACL/ARR/2026/May/-/Submission",
+    "slug": "gatemem-benchmarking-memory-governance-in-multi-principal-shared-memory-agents",
+    "source": "OpenReview",
+    "source_key": "i8zzVWLDX2",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "retrieval"
+    ],
+    "title": "GATEMEM: Benchmarking Memory Governance in Multi-Principal Shared-Memory Agents",
+    "updated": "2026-06-22",
+    "url": "https://openreview.net/forum?id=i8zzVWLDX2",
+    "venue": "ACL ARR 2026 May Submission"
+  },
+  {
+    "abstract": "Large language model (LLM)-based agents increasingly face tasks that require reasoning over extremely long range. A key bottleneck is memory design: most prior approaches treat memory as a static, human-designed component, limiting adaptability. Inspired by biological memory evolution, we propose AtomMem, a framework that exposes a set of atomic memory operations—including summarization and CRUD primitives—as tool-like actions. The agent learns a policy over these operations purely via reinforcement learning, using only the task reward. AtomMem allows the agent to dynamically interleave summarization and CRUD to retain important information while managing memory efficiently. We evaluate AtomMem on streaming long-context understanding and web-navigation benchmarks, demonstrating an average improvement of 8.5 points over static memory workflows and 2.1 points over the current learnable-memory baseline. Ablation studies show that both summarization and CRUD are essential to train agent memory. The project can be accessed at \\url{https://anonymous.4open.science/r/AtomMem-86F8}.",
+    "authors": [],
+    "categories": [
+      "aclweb.org/ACL/ARR/2026/May/-/Submission"
+    ],
+    "id": "openreview:d27yl4lBKS",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 May Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Large language model (LLM)-based agents increasingly face tasks that require reasoning over extremely long range.\n\n进一步看，论文的核心做法或实验重点可以概括为：A key bottleneck is memory design: most prior approaches treat memory as a static, human-designed component, limiting adaptability.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "Large language model (LLM)-based agents increasingly face tasks that require reasoning over extremely long range.",
+    "published": "2026-06-02",
+    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 May Submission\n- 高亮主题命中：agent, benchmark, context\n- 检索关键词命中：agent memory\n- 来源分类信息：aclweb.org/ACL/ARR/2026/May/-/Submission",
+    "slug": "atommem-learnable-dynamic-agentic-memory-with-atomic-memory-operation",
+    "source": "OpenReview",
+    "source_key": "d27yl4lBKS",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context"
+    ],
+    "title": "AtomMem: Learnable Dynamic Agentic Memory with Atomic Memory Operation",
+    "updated": "2026-06-22",
+    "url": "https://openreview.net/forum?id=d27yl4lBKS",
+    "venue": "ACL ARR 2026 May Submission"
+  },
+  {
     "abstract": "Large language model assistants are increasingly expected to retain and reason over information accumulated across many sessions. We introduce EngramaBench, a benchmark for long-term conversational memory built around five personas, one hundred multi-session conversations, and one hundred fifty queries spanning factual recall, cross-space integration, temporal reasoning, adversarial abstention, and emergent synthesis. We evaluate Engrama, a graph-structured memory system, against GPT-4o full-context prompting and Mem0, an open-source vector-retrieval memory system. All three use the same answering model (GPT-4o), isolating the effect of memory architecture. GPT-4o full-context achieves the highest composite score (0.6186), while Engrama scores 0.5367 globally but is the only system to score higher than full-context prompting on cross_space reasoning (0.6532 vs. 0.6291, n=30). Mem0 is cheapest but substantially weaker (0.4809). Ablations reveal that the components driving Engrama's cross-space advantage trade off against global composite score, exposing a systems-level tension between structured memory specialization and aggregate optimization.",
     "authors": [],
     "categories": [
@@ -141,35 +197,6 @@
     "title": "SHM-GATE: Structured Hierarchical Memory with Gated Admission for Multi-Agent LLM Hallucination Containment",
     "updated": "2026-06-20",
     "url": "https://openreview.net/forum?id=B4JBE7ZfwQ",
-    "venue": "ACL ARR 2026 May Submission"
-  },
-  {
-    "abstract": "Memory benchmarks for LLM agents largely assume single-user settings, leaving shared assistants for hospitals, workplaces, campuses, and households understudied. In these deployments, multiple principals write to a common memory pool and query it under different roles, scopes, and relationships, so memory quality requires governance as well as recall. We introduce GATEMEM, a benchmark for multi-principal shared-memory agents. GATEMEM jointly evaluates utility for legitimate long-horizon requests with state updates, access control across contextual authorization boundaries, and agent-facing active forgetting after explicit deletion requests. It spans medical, office, education, and household domains, with long-form multi-party episodes, incremental memory injection, hidden checkpoints, structured judging, and leak-target annotations. Across diverse baselines and backbone models, no method simultaneously achieves strong utility, robust access control, and reliable forgetting. Long-context prompting often yields the best governance score at high token cost, while retrieval-based and external-memory methods reduce cost yet still leak unauthorized or deleted information. These results show current memory agents remain far from reliable shared institutional deployment.",
-    "authors": [],
-    "categories": [
-      "aclweb.org/ACL/ARR/2026/May/-/Submission"
-    ],
-    "id": "openreview:i8zzVWLDX2",
-    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, retrieval` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 May Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Memory benchmarks for LLM agents largely assume single-user settings, leaving shared assistants for hospitals, workplaces, campuses, and households understudied.\n\n进一步看，论文的核心做法或实验重点可以概括为：In these deployments, multiple principals write to a common memory pool and query it under different roles, scopes, and relationships, so memory quality requires governance as well as recall.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
-    "matched_keywords": [
-      "memory benchmark",
-      "memory benchmarks"
-    ],
-    "one_liner": "Memory benchmarks for LLM agents largely assume single-user settings, leaving shared assistants for hospitals, workplaces, campuses, and households understudied.",
-    "published": "2026-06-02",
-    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 May Submission\n- 高亮主题命中：agent, benchmark, context, retrieval\n- 检索关键词命中：memory benchmark, memory benchmarks\n- 来源分类信息：aclweb.org/ACL/ARR/2026/May/-/Submission",
-    "slug": "gatemem-benchmarking-memory-governance-in-multi-principal-shared-memory-agents",
-    "source": "OpenReview",
-    "source_key": "i8zzVWLDX2",
-    "tags": [
-      "agent",
-      "benchmark",
-      "context",
-      "retrieval"
-    ],
-    "title": "GATEMEM: Benchmarking Memory Governance in Multi-Principal Shared-Memory Agents",
-    "updated": "2026-06-20",
-    "url": "https://openreview.net/forum?id=i8zzVWLDX2",
     "venue": "ACL ARR 2026 May Submission"
   },
   {
@@ -607,33 +634,6 @@
     "updated": "2026-06-18",
     "url": "http://arxiv.org/abs/2606.20518v1",
     "venue": ""
-  },
-  {
-    "abstract": "Large language model (LLM)-based agents increasingly face tasks that require reasoning over extremely long range. A key bottleneck is memory design: most prior approaches treat memory as a static, human-designed component, limiting adaptability. Inspired by biological memory evolution, we propose AtomMem, a framework that exposes a set of atomic memory operations—including summarization and CRUD primitives—as tool-like actions. The agent learns a policy over these operations purely via reinforcement learning, using only the task reward. AtomMem allows the agent to dynamically interleave summarization and CRUD to retain important information while managing memory efficiently. We evaluate AtomMem on streaming long-context understanding and web-navigation benchmarks, demonstrating an average improvement of 8.5 points over static memory workflows and 2.1 points over the current learnable-memory baseline. Ablation studies show that both summarization and CRUD are essential to train agent memory. The project can be accessed at \\url{https://anonymous.4open.science/r/AtomMem-86F8}.",
-    "authors": [],
-    "categories": [
-      "aclweb.org/ACL/ARR/2026/May/-/Submission"
-    ],
-    "id": "openreview:d27yl4lBKS",
-    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 May Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Large language model (LLM)-based agents increasingly face tasks that require reasoning over extremely long range.\n\n进一步看，论文的核心做法或实验重点可以概括为：A key bottleneck is memory design: most prior approaches treat memory as a static, human-designed component, limiting adaptability.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
-    "matched_keywords": [
-      "agent memory"
-    ],
-    "one_liner": "Large language model (LLM)-based agents increasingly face tasks that require reasoning over extremely long range.",
-    "published": "2026-06-02",
-    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 May Submission\n- 高亮主题命中：agent, benchmark, context\n- 检索关键词命中：agent memory\n- 来源分类信息：aclweb.org/ACL/ARR/2026/May/-/Submission",
-    "slug": "atommem-learnable-dynamic-agentic-memory-with-atomic-memory-operation",
-    "source": "OpenReview",
-    "source_key": "d27yl4lBKS",
-    "tags": [
-      "agent",
-      "benchmark",
-      "context"
-    ],
-    "title": "AtomMem: Learnable Dynamic Agentic Memory with Atomic Memory Operation",
-    "updated": "2026-06-18",
-    "url": "https://openreview.net/forum?id=d27yl4lBKS",
-    "venue": "ACL ARR 2026 May Submission"
   },
   {
     "abstract": "Large language models (LLMs) demonstrate strong reasoning and generation abilities, but their fixed context windows limit long-term information accumulation and reuse across multi-session interactions. Existing memory-augmented systems often construct memory in a coarse and unstable manner, relying on inefficient memory representations or unstable unconstrained updates. To address these challenges, we propose AtomMem, a long-term memory system designed for value-dense storage and stable memory evolution. AtomMem introduces a Fact Executor, which selectively extracts high value atomic facts from long form interactions to serve as highly efficient memory representations. Subsequently, AtomMem organizes these facts into hierarchical event structures and temporal profiles, capturing coherent episodic contexts and tracking dynamically evolving user attributes over time. During retrieval, the system activates an associative memory graph to connect fragmented memories. Experiments on the LoCoMo benchmark confirm that AtomMem achieves state-of-the-art performance across various reasoning tasks, offering a scalable and economically viable solution for deploying intelligent personalized agents.",
