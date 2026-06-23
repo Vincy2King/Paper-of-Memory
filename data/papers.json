@@ -1,5 +1,35 @@
 [
   {
+    "abstract": "Long-term conversational AI requires two distinct capabilities: remembering what was discussed and adapting to how a user's preferences evolve over time. We argue these operate on different timescales and require separate but interoperable architectures. AgenticLOCI is a five-agent framework built on this premise: session retrieval fuses a semantic LLM ranker (Engram, STM) with a keyword-lobe scorer (Hippo, LTM) via Reciprocal Rank Fusion, while personalization is maintained through a versioned deliberation-state memory that accumulates empirically grounded decision-episode snapshots across interactions. We evaluate on three benchmarks using Qwen 2.5-7B-Instruct. On LoCoMo, the AgenticLOCI Backbone achieves F1 = 0.342 versus BM25 = 0.285 while consuming 7.3× fewer input tokens per item. On LongMemEval-S, item-level analysis confirms that Engram and Hippo solve architecturally distinct sub-problems; at 7B scale Hippo's keyword precision leads, a reversal expected to resolve at larger model sizes where LLM ranking is more reliable. On PersonaMem, all configurations perform within a narrow band, establishing that memory benefit is conditional on context-budget pressure. The longitudinal personalization layer is evaluated on a synthetic mobility benchmark with known user trajectories, achieving restraint of 0.976 and move-precision of 0.583 against an ablation baseline. We demonstrate the full framework as a personalized urban mobility assistant for an anonymized German city.",
+    "authors": [],
+    "categories": [
+      "aclweb.org/ACL/ARR/2026/May/-/Submission"
+    ],
+    "id": "openreview:iUinLcItGF",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, conversation` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 May Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Long-term conversational AI requires two distinct capabilities: remembering what was discussed and adapting to how a user's preferences evolve over time.\n\n进一步看，论文的核心做法或实验重点可以概括为：We argue these operate on different timescales and require separate but interoperable architectures.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "Long-term conversational AI requires two distinct capabilities: remembering what was discussed and adapting to how a user's preferences evolve over time.",
+    "published": "2026-06-02",
+    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 May Submission\n- 高亮主题命中：agent, benchmark, context, conversation, long-term, retrieval\n- 检索关键词命中：agent memory\n- 来源分类信息：aclweb.org/ACL/ARR/2026/May/-/Submission",
+    "slug": "agenticloci-a-multi-agent-memory-framework-for-conversational-ai-with-longitudin",
+    "source": "OpenReview",
+    "source_key": "iUinLcItGF",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "conversation",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "AgenticLOCI: A Multi-Agent Memory Framework for Conversational AI with Longitudinal Personalization",
+    "updated": "2026-06-23",
+    "url": "https://openreview.net/forum?id=iUinLcItGF",
+    "venue": "ACL ARR 2026 May Submission"
+  },
+  {
     "abstract": "Memory benchmarks for LLM agents largely assume single-user settings, leaving shared assistants for hospitals, workplaces, campuses, and households understudied. In these deployments, multiple principals write to a common memory pool and query it under different roles, scopes, and relationships, so memory quality requires governance as well as recall. We introduce GATEMEM, a benchmark for multi-principal shared-memory agents. GATEMEM jointly evaluates utility for legitimate long-horizon requests with state updates, access control across contextual authorization boundaries, and agent-facing active forgetting after explicit deletion requests. It spans medical, office, education, and household domains, with long-form multi-party episodes, incremental memory injection, hidden checkpoints, structured judging, and leak-target annotations. Across diverse baselines and backbone models, no method simultaneously achieves strong utility, robust access control, and reliable forgetting. Long-context prompting often yields the best governance score at high token cost, while retrieval-based and external-memory methods reduce cost yet still leak unauthorized or deleted information. These results show current memory agents remain far from reliable shared institutional deployment.",
     "authors": [],
     "categories": [
@@ -27,6 +57,107 @@
     "updated": "2026-06-22",
     "url": "https://openreview.net/forum?id=i8zzVWLDX2",
     "venue": "ACL ARR 2026 May Submission"
+  },
+  {
+    "abstract": "",
+    "authors": [
+      "Sen Hu",
+      "Zhiyu Zhang",
+      "Yuxiang Wei",
+      "Xueran Han",
+      "Zhenheng Tang",
+      "Ronghao Chen",
+      "Huacan Wang",
+      "Maria Liakata",
+      "Viviane Moreira",
+      "Jiajun Zhang",
+      "David Jurgens"
+    ],
+    "categories": [],
+    "id": "acl:2026.acl-long.1549",
+    "intro": "这篇论文被纳入仓库，是因为它和 `benchmark, long-term` 这些主题直接相关。\n\n它当前来自 `ACL Anthology`，并与 `Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：The abstract is not available yet.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "long-term memory"
+    ],
+    "one_liner": "This paper is tracked as a memory-related work and awaits a fuller summary.",
+    "published": "2026-07",
+    "relevance": "- 来源：ACL Anthology\n- Venue：Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)\n- 高亮主题命中：benchmark, long-term\n- 检索关键词命中：long-term memory",
+    "slug": "clonemem-benchmarking-long-term-memory-for-ai-clones",
+    "source": "ACL Anthology",
+    "source_key": "2026.acl-long.1549",
+    "tags": [
+      "benchmark",
+      "long-term"
+    ],
+    "title": "CloneMem: Benchmarking Long-Term Memory for AI Clones",
+    "updated": "2026-06-22",
+    "url": "https://aclanthology.org/2026.acl-long.1549",
+    "venue": "Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)"
+  },
+  {
+    "abstract": "",
+    "authors": [
+      "Dohyeon Lee",
+      "Yeonseok Jeong",
+      "Seung-won Hwang",
+      "Maria Liakata",
+      "Viviane Moreira",
+      "Jiajun Zhang",
+      "David Jurgens"
+    ],
+    "categories": [],
+    "id": "acl:2026.acl-long.1728",
+    "intro": "这篇论文被纳入仓库，是因为它和 `episodic, retrieval` 这些主题直接相关。\n\n它当前来自 `ACL Anthology`，并与 `Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：The abstract is not available yet.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "episodic memory"
+    ],
+    "one_liner": "This paper is tracked as a memory-related work and awaits a fuller summary.",
+    "published": "2026-07",
+    "relevance": "- 来源：ACL Anthology\n- Venue：Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)\n- 高亮主题命中：episodic, retrieval\n- 检索关键词命中：episodic memory",
+    "slug": "beyond-markovian-forgetfulness-episodic-memory-for-reasoning-intensive-retrieval",
+    "source": "ACL Anthology",
+    "source_key": "2026.acl-long.1728",
+    "tags": [
+      "episodic",
+      "retrieval"
+    ],
+    "title": "Beyond Markovian Forgetfulness: Episodic Memory for Reasoning-Intensive Retrieval",
+    "updated": "2026-06-22",
+    "url": "https://aclanthology.org/2026.acl-long.1728",
+    "venue": "Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)"
+  },
+  {
+    "abstract": "",
+    "authors": [
+      "Yang Li",
+      "Jiaxiang Liu",
+      "Yusong Wang",
+      "Yujie Wu",
+      "Mingkun Xu",
+      "Maria Liakata",
+      "Viviane Moreira",
+      "Jiajun Zhang",
+      "David Jurgens"
+    ],
+    "categories": [],
+    "id": "acl:2026.findings-acl.1973",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent` 这些主题直接相关。\n\n它当前来自 `ACL Anthology`，并与 `Findings of the Association for Computational Linguistics: ACL 2026` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：The abstract is not available yet.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "This paper is tracked as a memory-related work and awaits a fuller summary.",
+    "published": "2026-07",
+    "relevance": "- 来源：ACL Anthology\n- Venue：Findings of the Association for Computational Linguistics: ACL 2026\n- 高亮主题命中：agent\n- 检索关键词命中：agent memory",
+    "slug": "bmam-brain-inspired-multi-agent-memory-framework",
+    "source": "ACL Anthology",
+    "source_key": "2026.findings-acl.1973",
+    "tags": [
+      "agent"
+    ],
+    "title": "BMAM: Brain-inspired Multi-Agent Memory Framework",
+    "updated": "2026-06-22",
+    "url": "https://aclanthology.org/2026.findings-acl.1973",
+    "venue": "Findings of the Association for Computational Linguistics: ACL 2026"
   },
   {
     "abstract": "Large language model (LLM)-based agents increasingly face tasks that require reasoning over extremely long range. A key bottleneck is memory design: most prior approaches treat memory as a static, human-designed component, limiting adaptability. Inspired by biological memory evolution, we propose AtomMem, a framework that exposes a set of atomic memory operations—including summarization and CRUD primitives—as tool-like actions. The agent learns a policy over these operations purely via reinforcement learning, using only the task reward. AtomMem allows the agent to dynamically interleave summarization and CRUD to retain important information while managing memory efficiently. We evaluate AtomMem on streaming long-context understanding and web-navigation benchmarks, demonstrating an average improvement of 8.5 points over static memory workflows and 2.1 points over the current learnable-memory baseline. Ablation studies show that both summarization and CRUD are essential to train agent memory. The project can be accessed at \\url{https://anonymous.4open.science/r/AtomMem-86F8}.",
@@ -1569,36 +1700,6 @@
     "updated": "2026-06-15",
     "url": "http://arxiv.org/abs/2606.16935v1",
     "venue": ""
-  },
-  {
-    "abstract": "Long-term conversational AI requires two distinct capabilities: remembering what was discussed and adapting to how a user's preferences evolve over time. We argue these operate on different timescales and require separate but interoperable architectures. AgenticLOCI is a five-agent framework built on this premise: session retrieval fuses a semantic LLM ranker (Engram, STM) with a keyword-lobe scorer (Hippo, LTM) via Reciprocal Rank Fusion, while personalization is maintained through a versioned deliberation-state memory that accumulates empirically grounded decision-episode snapshots across interactions. We evaluate on three benchmarks using Qwen 2.5-7B-Instruct. On LoCoMo, the AgenticLOCI Backbone achieves F1 = 0.342 versus BM25 = 0.285 while consuming 7.3× fewer input tokens per item. On LongMemEval-S, item-level analysis confirms that Engram and Hippo solve architecturally distinct sub-problems; at 7B scale Hippo's keyword precision leads, a reversal expected to resolve at larger model sizes where LLM ranking is more reliable. On PersonaMem, all configurations perform within a narrow band, establishing that memory benefit is conditional on context-budget pressure. The longitudinal personalization layer is evaluated on a synthetic mobility benchmark with known user trajectories, achieving restraint of 0.976 and move-precision of 0.583 against an ablation baseline. We demonstrate the full framework as a personalized urban mobility assistant for an anonymized German city.",
-    "authors": [],
-    "categories": [
-      "aclweb.org/ACL/ARR/2026/May/-/Submission"
-    ],
-    "id": "openreview:iUinLcItGF",
-    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, conversation` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 May Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Long-term conversational AI requires two distinct capabilities: remembering what was discussed and adapting to how a user's preferences evolve over time.\n\n进一步看，论文的核心做法或实验重点可以概括为：We argue these operate on different timescales and require separate but interoperable architectures.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
-    "matched_keywords": [
-      "agent memory"
-    ],
-    "one_liner": "Long-term conversational AI requires two distinct capabilities: remembering what was discussed and adapting to how a user's preferences evolve over time.",
-    "published": "2026-06-02",
-    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 May Submission\n- 高亮主题命中：agent, benchmark, context, conversation, long-term, retrieval\n- 检索关键词命中：agent memory\n- 来源分类信息：aclweb.org/ACL/ARR/2026/May/-/Submission",
-    "slug": "agenticloci-a-multi-agent-memory-framework-for-conversational-ai-with-longitudin",
-    "source": "OpenReview",
-    "source_key": "iUinLcItGF",
-    "tags": [
-      "agent",
-      "benchmark",
-      "context",
-      "conversation",
-      "long-term",
-      "retrieval"
-    ],
-    "title": "AgenticLOCI: A Multi-Agent Memory Framework for Conversational AI with Longitudinal Personalization",
-    "updated": "2026-06-15",
-    "url": "https://openreview.net/forum?id=iUinLcItGF",
-    "venue": "ACL ARR 2026 May Submission"
   },
   {
     "abstract": "Working Memory Capacity (WMC) reflects an individual’s ability to maintain and process information simultaneously and is considered a key factor in reading comprehension efficiency (Daneman & Carpenter, 1980; Just & Carpenter, 1992). Prior research suggests that limited WMC leads to processing difficulties, which may manifest in eye movement behavior such as increased regressions (backward eye movements) (Just & Carpenter, 1992; Rayner, 1998). The present preliminary analysis aims to investigate whether lower WMC scores are associated with a higher frequency of regressions in the Slovenian language in native speakers during reading tasks, focusing on trials where readers demonstrated at least basic text comprehension. The preliminary analysis is based on eye-tracking data collected in Slovenia as part of the MultiplEYE project. Regressions were extracted from EyeLink saccade events and defined as leftward saccades exceeding 50 pixels within the same text line, with vertical deviation < 30 pixels, then normalized per minute to control for reading time. WMC was operationalized as a composite z-score derived from memory updating, operation span, sentence span, and spatial short-term memory tasks using partial-credit unit scoring. Text understanding was assessed with six comprehension questions after each trial and used both as a control variable and a filtering criterion. The final preliminary dataset included 32 participants and 10 texts from different categories (literary, instructional, popular science, and argumentative), yielding 200 participant–text observations with comprehension above 60%. Preliminary results suggest a positive association between WMC and regression rate, Spearman r = 0.318 (Figure 1), meaning higher WMC may be associated with more regressions. This pattern remained stable across tested text categories. Additionally, we tested whether comprehension was predicted by regressions per minute, WMC, and their interaction, while controlling for text category and accounting for repeated measurements within participants. The results showed no significant effects of regressions per minute, WMC, or their interaction, while text category emerged as the strongest predictor. The observed positive association of our preliminary analysis between WMC and regression rate does not align with the initial assumption that regressions primarily reflect processing difficulty. Some eye movement research suggests that regressions are not exclusively indicators of failure of text understanding but can also reflect adaptive rereading strategies that support integration and comprehension (Staub & Benatar, 2013). In this context, the present findings may indicate that higher-capacity readers may use rereading strategies more frequently. Further analyses on the full dataset are needed to confirm these preliminary findings. To better understand how WMC relates to eye-movement behavior, the analysis should also test whether the effect is moderated by individual differences in reading skill, examine each WMC component separately, assess whether the effect varies with text difficulty and distinguish between different types of regressions, such as short corrective regressions and long-distance rereading. Daneman, M., & Carpenter, P. A. (1980). Individual differences in working memory and reading. Journal of Verbal Learning and Verbal Behavior, 19(4), 450–466. Just, M. A., & Carpenter, P. A. (1992). A capacity theory of comprehension: Individual differences in working memory. Psychological Review, 99(1), 122–149. Rayner, K. (1998). Eye movements in reading and information processing: 20 years of research. Psychological Bulletin, 124(3), 372–422. Staub, A., & Benatar, A. (2013). Individual differences in fixation duration distributions in reading. Attention, Perception, & Psychophysics, 75(6), 1304–1315",

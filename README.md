@@ -39,12 +39,12 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **542**
-- Last generated: **2026-06-22**
+- Total tracked papers: **545**
+- Last generated: **2026-06-23**
 
 ## Papers by Source
 
-- ACL Anthology: **1**
+- ACL Anthology: **4**
 - arXiv: **458**
 - OpenReview: **83**
 
@@ -52,7 +52,11 @@ python3 scripts/update_papers.py --build-only
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-06-23 | OpenReview | [AgenticLOCI: A Multi-Agent Memory Framework for Conversational AI with Longitudinal Personalization](content/papers/agenticloci-a-multi-agent-memory-framework-for-conversational-ai-with-longitudin.md) | agent, benchmark, context |
 | 2026-06-22 | OpenReview | [GATEMEM: Benchmarking Memory Governance in Multi-Principal Shared-Memory Agents](content/papers/gatemem-benchmarking-memory-governance-in-multi-principal-shared-memory-agents.md) | agent, benchmark, context |
+| 2026-06-22 | ACL Anthology | [CloneMem: Benchmarking Long-Term Memory for AI Clones](content/papers/clonemem-benchmarking-long-term-memory-for-ai-clones.md) | benchmark, long-term |
+| 2026-06-22 | ACL Anthology | [Beyond Markovian Forgetfulness: Episodic Memory for Reasoning-Intensive Retrieval](content/papers/beyond-markovian-forgetfulness-episodic-memory-for-reasoning-intensive-retrieval.md) | episodic, retrieval |
+| 2026-06-22 | ACL Anthology | [BMAM: Brain-inspired Multi-Agent Memory Framework](content/papers/bmam-brain-inspired-multi-agent-memory-framework.md) | agent |
 | 2026-06-22 | OpenReview | [AtomMem: Learnable Dynamic Agentic Memory with Atomic Memory Operation](content/papers/atommem-learnable-dynamic-agentic-memory-with-atomic-memory-operation.md) | agent, benchmark, context |
 | 2026-06-21 | OpenReview | [EngramaBench: Evaluating Long-Term Conversational Memory with Structured Graph Retrieval](content/papers/engramabench-evaluating-long-term-conversational-memory-with-structured-graph-re.md) | benchmark, context, conversation |
 | 2026-06-21 | OpenReview | [Caching for the Future: Scrub Jay Episodic Memory Principles for Agent Memory Systems](content/papers/caching-for-the-future-scrub-jay-episodic-memory-principles-for-agent-memory-sys.md) | agent, benchmark, context |
@@ -68,10 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-06-18 | arXiv | [RTSGameBench: An RTS Benchmark for Strategic Reasoning by Vision-Language Models](content/papers/rtsgamebench-an-rts-benchmark-for-strategic-reasoning-by-vision-language-models.md) | agent, benchmark |
 | 2026-06-18 | arXiv | [RACL: Reasoning-Agent Control Layers for Continuous Metaheuristic Learning](content/papers/racl-reasoning-agent-control-layers-for-continuous-metaheuristic-learning.md) | agent |
 | 2026-06-18 | arXiv | [PACMS: Submodular Context Selection as a Pluggable Engine for LLM Agents](content/papers/pacms-submodular-context-selection-as-a-pluggable-engine-for-llm-agents.md) | agent, compression, context |
-| 2026-06-18 | OpenReview | [Memory Beyond Recall: A Dual-Process Cognitive Memory System for Self-Evolving Agent Memory](content/papers/memory-beyond-recall-a-dual-process-cognitive-memory-system-for-self-evolving-ag.md) | agent, benchmark, long-term |
-| 2026-06-18 | arXiv | [Light Interaction: Training-Free Inference Acceleration for Interactive Video World Models](content/papers/light-interaction-training-free-inference-acceleration-for-interactive-video-wor.md) | context |
-| 2026-06-18 | arXiv | [Large Language Models Do Not Always Need Readable Language](content/papers/large-language-models-do-not-always-need-readable-language.md) | agent, context |
-| 2026-06-18 | OpenReview | [GAMBIT: A Benchmark for Active Memory in Long-Horizon LLM Agents](content/papers/gambit-a-benchmark-for-active-memory-in-long-horizon-llm-agents.md) | agent, benchmark, context |
 
 ## Suggested GitHub Setup
 
