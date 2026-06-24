@@ -4,7 +4,7 @@
 - Venue: ACL ARR 2026 May Submission
 - Paper ID: openreview:mNtrAwNwyD
 - Published: 2026-06-02
-- Updated: 2026-06-18
+- Updated: 2026-06-24
 - Authors: Unknown
 - Tags: agent, benchmark, retrieval
 - Categories: aclweb.org/ACL/ARR/2026/May/-/Submission

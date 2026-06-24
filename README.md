@@ -39,21 +39,28 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **566**
+- Total tracked papers: **571**
 - Last generated: **2026-06-24**
 
 ## Papers by Source
 
 - ACL Anthology: **4**
-- arXiv: **478**
+- arXiv: **483**
 - OpenReview: **84**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-06-24 | OpenReview | [The Override Cliff: How Agent Memory Hijacks LLM Reasoning](content/papers/the-override-cliff-how-agent-memory-hijacks-llm-reasoning.md) | agent, benchmark, retrieval |
+| 2026-06-24 | OpenReview | [MemRefine: LLM-Guided Compression for Long-Term Agent Memory](content/papers/memrefine-llm-guided-compression-for-long-term-agent-memory.md) | agent, benchmark, compression |
+| 2026-06-23 | arXiv | [Reasoning as Attractor Dynamics: Latent Memory Retrieval via Gibbs-Weighted Energy Minimization](content/papers/reasoning-as-attractor-dynamics-latent-memory-retrieval-via-gibbs-weighted-energ.md) | retrieval |
 | 2026-06-23 | arXiv | [ReMMD: Realistic Multilingual Multi-Image Agentic Verification for Multimodal Misinformation Detection](content/papers/remmd-realistic-multilingual-multi-image-agentic-verification-for-multimodal-mis.md) | agent, benchmark |
+| 2026-06-23 | arXiv | [ReM-MoA: Reasoning Memory Sustains Mixture-of-Agents Scaling](content/papers/rem-moa-reasoning-memory-sustains-mixture-of-agents-scaling.md) | agent, benchmark |
 | 2026-06-23 | OpenReview | [MemoryVLN: Memory-Augmented Vision-Language Navigation](content/papers/memoryvln-memory-augmented-vision-language-navigation.md) | agent, benchmark, context |
+| 2026-06-23 | arXiv | [MEMPROBE: Probing Long-Term Agent Memory via Hidden User-State Recovery](content/papers/memprobe-probing-long-term-agent-memory-via-hidden-user-state-recovery.md) | agent, benchmark, long-term |
+| 2026-06-23 | arXiv | [Governed Shared Memory for Multi-Agent LLM Systems](content/papers/governed-shared-memory-for-multi-agent-llm-systems.md) | agent, context, retrieval |
+| 2026-06-23 | arXiv | [Are We Ready For An Agent-Native Memory System?](content/papers/are-we-ready-for-an-agent-native-memory-system.md) | agent, benchmark, retrieval |
 | 2026-06-23 | OpenReview | [AgenticLOCI: A Multi-Agent Memory Framework for Conversational AI with Longitudinal Personalization](content/papers/agenticloci-a-multi-agent-memory-framework-for-conversational-ai-with-longitudin.md) | agent, benchmark, context |
 | 2026-06-22 | arXiv | [Unlimited OCR Works](content/papers/unlimited-ocr-works.md) | compression |
 | 2026-06-22 | arXiv | [Towards Root Memories: Benchmarking and Enhancing Implicit Logical Memory Retrieval for Personalized LLMs](content/papers/towards-root-memories-benchmarking-and-enhancing-implicit-logical-memory-retriev.md) | agent, benchmark, long-term |
@@ -65,13 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-06-22 | arXiv | [DynamicMem: A Long-Horizon Memory Benchmark in Real-World Settings](content/papers/dynamicmem-a-long-horizon-memory-benchmark-in-real-world-settings.md) | agent, benchmark, context |
 | 2026-06-22 | ACL Anthology | [CloneMem: Benchmarking Long-Term Memory for AI Clones](content/papers/clonemem-benchmarking-long-term-memory-for-ai-clones.md) | benchmark, long-term |
 | 2026-06-22 | ACL Anthology | [Beyond Markovian Forgetfulness: Episodic Memory for Reasoning-Intensive Retrieval](content/papers/beyond-markovian-forgetfulness-episodic-memory-for-reasoning-intensive-retrieval.md) | episodic, retrieval |
-| 2026-06-22 | ACL Anthology | [BMAM: Brain-inspired Multi-Agent Memory Framework](content/papers/bmam-brain-inspired-multi-agent-memory-framework.md) | agent |
-| 2026-06-22 | OpenReview | [AtomMem: Learnable Dynamic Agentic Memory with Atomic Memory Operation](content/papers/atommem-learnable-dynamic-agentic-memory-with-atomic-memory-operation.md) | agent, benchmark, context |
-| 2026-06-21 | arXiv | [PairAlign: A Framework for Sequence Tokenization via Self-Alignment with Applications to Audio Tokenization](content/papers/pairalign-a-framework-for-sequence-tokenization-via-self-alignment-with-applicat.md) | retrieval |
-| 2026-06-21 | OpenReview | [EngramaBench: Evaluating Long-Term Conversational Memory with Structured Graph Retrieval](content/papers/engramabench-evaluating-long-term-conversational-memory-with-structured-graph-re.md) | benchmark, context, conversation |
-| 2026-06-21 | OpenReview | [Caching for the Future: Scrub Jay Episodic Memory Principles for Agent Memory Systems](content/papers/caching-for-the-future-scrub-jay-episodic-memory-principles-for-agent-memory-sys.md) | agent, benchmark, context |
-| 2026-06-21 | arXiv | [Benchmarking Robot Memory Under Interference](content/papers/benchmarking-robot-memory-under-interference.md) | benchmark, context |
-| 2026-06-20 | OpenReview | [TAME: A Trustworthy Test-Time Evolution of Agent Memory with Systematic Benchmarking](content/papers/tame-a-trustworthy-test-time-evolution-of-agent-memory-with-systematic-benchmark.md) | agent, benchmark |
 
 ## Suggested GitHub Setup
 
