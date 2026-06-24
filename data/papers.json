@@ -1,5 +1,37 @@
 [
   {
+    "abstract": "Multimodal misinformation detection is increasingly important because viral posts now combine long multilingual narratives, several images, mixed provenance, and subtle text--image framing errors. Existing benchmarks and methods remain poorly matched to this setting: they usually isolate short captions, single images, binary labels, or one manipulation source, while agentic verification remains costly under realistic evidence search. We present ReMMD, a realistic multilingual multi-image agentic verification framework for multimodal misinformation detection. ReMMD includes ReMMDBench, a real-world multimodal misinformation detection benchmark with 500 samples, 2,756 images, five monolingual languages, two cross-lingual settings, three text-length tiers, multi-image posts, five-way veracity labels, eight distortion labels, evidence provenance, and rationales. It also includes ReMMD-Agent, a persistent-memory verifier that decomposes posts into atomic points, builds a reusable evidence set, and predicts structured L1/L2/L3 outputs. Across proprietary systems, open LVLMs, MMD-Agent, and T2-Agent, ReMMD-Agent obtains the best five-way veracity performance, with 41.80% accuracy and 39.12% macro-F1 using GPT-5.2, while reducing cost by 17.5% relative to MMD-Agent and 79.9% relative to T2-Agent. The project is available at https://dang-ai.github.io/ReMMD.",
+    "authors": [
+      "Chenhao Dang",
+      "Dantong Zhu",
+      "Jun Yang",
+      "Conghui He",
+      "Weijia Li"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2606.24112v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Multimodal misinformation detection is increasingly important because viral posts now combine long multilingual narratives, several images, mixed provenance, and subtle text--image framing errors.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing benchmarks and methods remain poorly matched to this setting: they usually isolate short captions, single images, binary labels, or one manipulation source, while agentic verification remains costly under...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "persistent memory"
+    ],
+    "one_liner": "Multimodal misinformation detection is increasingly important because viral posts now combine long multilingual narratives, several images, mixed provenance, and subtle text--...",
+    "published": "2026-06-23",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark\n- 检索关键词命中：persistent memory\n- 来源分类信息：cs.AI",
+    "slug": "remmd-realistic-multilingual-multi-image-agentic-verification-for-multimodal-mis",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2606.24112v1",
+    "tags": [
+      "agent",
+      "benchmark"
+    ],
+    "title": "ReMMD: Realistic Multilingual Multi-Image Agentic Verification for Multimodal Misinformation Detection",
+    "updated": "2026-06-23",
+    "url": "http://arxiv.org/abs/2606.24112v1",
+    "venue": ""
+  },
+  {
     "abstract": "Vision-Language Navigation (VLN) requires embodied agents to interpret natural language instructions and navigate through previously unseen complex environments. Despite recent progress with large-scale pretraining and multimodal foundation models, current VLN systems remain limited by shallow temporal modeling and insufficient spatial understanding, often processing only short observation sequences and lacking structured memory. Such deficiency severely hinders them from capturing critical information from earlier observations and building detailed representations with structured spatial contexts, unable to make reliable decisions. In this work, we present MemoryVLN, a memory-augmented VLN framework that explicitly models temporal, spatial, and trajectory information to enable long-horizon reasoning and comprehensive spatial understanding. It includes a temporal reasoning memory to adaptively distinguish short-term dynamics and long-term context through selective frame retention, a spatial intelligence memory to build detailed scene graphs with object entities and relationships, and a trajectory memory to visualize historical actions as top-down trajectory maps to encode holistic motion history. With information-intensive memory features, MemoryVLN demonstrates new state-of-the-art performance on R2R-CE and RxR-CE benchmarks by outperforming previous methods by 5%-10%, while simultaneously achieving high computing efficiency by consuming far fewer input tokens. It even largely outperforms previous models with panoramic observations by using RGB observations only. Moreover, experiments on cross-dataset generalization and enhanced spatial reasoning further validate the effectiveness of MemoryVLN in capturing long-term temporal dependencies and 3D scene understanding for embodied navigation.",
     "authors": [],
     "categories": [

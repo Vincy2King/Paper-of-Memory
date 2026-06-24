@@ -39,19 +39,20 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **565**
-- Last generated: **2026-06-23**
+- Total tracked papers: **566**
+- Last generated: **2026-06-24**
 
 ## Papers by Source
 
 - ACL Anthology: **4**
-- arXiv: **477**
+- arXiv: **478**
 - OpenReview: **84**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-06-23 | arXiv | [ReMMD: Realistic Multilingual Multi-Image Agentic Verification for Multimodal Misinformation Detection](content/papers/remmd-realistic-multilingual-multi-image-agentic-verification-for-multimodal-mis.md) | agent, benchmark |
 | 2026-06-23 | OpenReview | [MemoryVLN: Memory-Augmented Vision-Language Navigation](content/papers/memoryvln-memory-augmented-vision-language-navigation.md) | agent, benchmark, context |
 | 2026-06-23 | OpenReview | [AgenticLOCI: A Multi-Agent Memory Framework for Conversational AI with Longitudinal Personalization](content/papers/agenticloci-a-multi-agent-memory-framework-for-conversational-ai-with-longitudin.md) | agent, benchmark, context |
 | 2026-06-22 | arXiv | [Unlimited OCR Works](content/papers/unlimited-ocr-works.md) | compression |
@@ -71,7 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-06-21 | OpenReview | [Caching for the Future: Scrub Jay Episodic Memory Principles for Agent Memory Systems](content/papers/caching-for-the-future-scrub-jay-episodic-memory-principles-for-agent-memory-sys.md) | agent, benchmark, context |
 | 2026-06-21 | arXiv | [Benchmarking Robot Memory Under Interference](content/papers/benchmarking-robot-memory-under-interference.md) | benchmark, context |
 | 2026-06-20 | OpenReview | [TAME: A Trustworthy Test-Time Evolution of Agent Memory with Systematic Benchmarking](content/papers/tame-a-trustworthy-test-time-evolution-of-agent-memory-with-systematic-benchmark.md) | agent, benchmark |
-| 2026-06-20 | OpenReview | [Same Ranking, Different Winner: How Scoring Targets Shape LLM Memory Benchmarks](content/papers/same-ranking-different-winner-how-scoring-targets-shape-llm-memory-benchmarks.md) | benchmark, conversation, retrieval |
 
 ## Suggested GitHub Setup
 
