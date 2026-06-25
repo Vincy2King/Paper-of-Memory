@@ -39,21 +39,29 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **571**
-- Last generated: **2026-06-24**
+- Total tracked papers: **578**
+- Last generated: **2026-06-25**
 
 ## Papers by Source
 
 - ACL Anthology: **4**
 - arXiv: **483**
-- OpenReview: **84**
+- OpenReview: **91**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
 | 2026-06-24 | OpenReview | [The Override Cliff: How Agent Memory Hijacks LLM Reasoning](content/papers/the-override-cliff-how-agent-memory-hijacks-llm-reasoning.md) | agent, benchmark, retrieval |
+| 2026-06-24 | OpenReview | [Temporal Context Reinstatement Drives Episodic-Like Order Memory in Long-Context Language Models](content/papers/temporal-context-reinstatement-drives-episodic-like-order-memory-in-long-context.md) | context, episodic, long-term |
+| 2026-06-24 | OpenReview | [PersistBench: When Should Long-Term Memories Be Forgotten by LLMs?](content/papers/persistbench-when-should-long-term-memories-be-forgotten-by-llms.md) | benchmark, context, conversation |
 | 2026-06-24 | OpenReview | [MemRefine: LLM-Guided Compression for Long-Term Agent Memory](content/papers/memrefine-llm-guided-compression-for-long-term-agent-memory.md) | agent, benchmark, compression |
+| 2026-06-24 | OpenReview | [MemEvolve: Meta-Evolution of Agent Memory Systems](content/papers/memevolve-meta-evolution-of-agent-memory-systems.md) | agent, benchmark, context |
+| 2026-06-24 | OpenReview | [GAM-RAG: Gain-Adaptive Memory for Evolving Retrieval in Retrieval-Augmented Generation](content/papers/gam-rag-gain-adaptive-memory-for-evolving-retrieval-in-retrieval-augmented-gener.md) | retrieval |
+| 2026-06-24 | OpenReview | [Episodic Memory-Guided Controllable Experience Synthesis for Reinforcement Learning](content/papers/episodic-memory-guided-controllable-experience-synthesis-for-reinforcement-learn.md) | episodic |
+| 2026-06-24 | OpenReview | [EngramaBench: Evaluating Long-Term Conversational Memory with Structured Graph Retrieval](content/papers/engramabench-evaluating-long-term-conversational-memory-with-structured-graph-re.md) | benchmark, context, conversation |
+| 2026-06-24 | OpenReview | [Benchmarking Agent Memory in Interdependent Multi-Session Agentic Tasks](content/papers/benchmarking-agent-memory-in-interdependent-multi-session-agentic-tasks.md) | agent, benchmark, context |
+| 2026-06-24 | OpenReview | [AMA-Bench: Evaluating Long-Horizon Memory for Agentic Applications](content/papers/ama-bench-evaluating-long-horizon-memory-for-agentic-applications.md) | agent, benchmark, retrieval |
 | 2026-06-23 | arXiv | [Reasoning as Attractor Dynamics: Latent Memory Retrieval via Gibbs-Weighted Energy Minimization](content/papers/reasoning-as-attractor-dynamics-latent-memory-retrieval-via-gibbs-weighted-energ.md) | retrieval |
 | 2026-06-23 | arXiv | [ReMMD: Realistic Multilingual Multi-Image Agentic Verification for Multimodal Misinformation Detection](content/papers/remmd-realistic-multilingual-multi-image-agentic-verification-for-multimodal-mis.md) | agent, benchmark |
 | 2026-06-23 | arXiv | [ReM-MoA: Reasoning Memory Sustains Mixture-of-Agents Scaling](content/papers/rem-moa-reasoning-memory-sustains-mixture-of-agents-scaling.md) | agent, benchmark |
@@ -64,14 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-06-23 | OpenReview | [AgenticLOCI: A Multi-Agent Memory Framework for Conversational AI with Longitudinal Personalization](content/papers/agenticloci-a-multi-agent-memory-framework-for-conversational-ai-with-longitudin.md) | agent, benchmark, context |
 | 2026-06-22 | arXiv | [Unlimited OCR Works](content/papers/unlimited-ocr-works.md) | compression |
 | 2026-06-22 | arXiv | [Towards Root Memories: Benchmarking and Enhancing Implicit Logical Memory Retrieval for Personalized LLMs](content/papers/towards-root-memories-benchmarking-and-enhancing-implicit-logical-memory-retriev.md) | agent, benchmark, long-term |
-| 2026-06-22 | arXiv | [RaMem: Contextual Reinstatement for Long-term Agentic Memory](content/papers/ramem-contextual-reinstatement-for-long-term-agentic-memory.md) | agent, benchmark, context |
-| 2026-06-22 | arXiv | [Memory Contagion: Cross-Temporal Propagation of Evaluator Bias via Agent Memory](content/papers/memory-contagion-cross-temporal-propagation-of-evaluator-bias-via-agent-memory.md) | agent, long-term |
-| 2026-06-22 | arXiv | [GitOfThoughts: Version-Controlled Reasoning and Agent Memory You Can Replay, Diff, and Merge](content/papers/gitofthoughts-version-controlled-reasoning-and-agent-memory-you-can-replay-diff-.md) | agent, benchmark, context |
-| 2026-06-22 | OpenReview | [GATEMEM: Benchmarking Memory Governance in Multi-Principal Shared-Memory Agents](content/papers/gatemem-benchmarking-memory-governance-in-multi-principal-shared-memory-agents.md) | agent, benchmark, context |
-| 2026-06-22 | arXiv | [FinAcumen: Financial Multimodal Reasoning via Self-Evolving Experience Memory Harness](content/papers/finacumen-financial-multimodal-reasoning-via-self-evolving-experience-memory-har.md) | agent, benchmark, retrieval |
-| 2026-06-22 | arXiv | [DynamicMem: A Long-Horizon Memory Benchmark in Real-World Settings](content/papers/dynamicmem-a-long-horizon-memory-benchmark-in-real-world-settings.md) | agent, benchmark, context |
-| 2026-06-22 | ACL Anthology | [CloneMem: Benchmarking Long-Term Memory for AI Clones](content/papers/clonemem-benchmarking-long-term-memory-for-ai-clones.md) | benchmark, long-term |
-| 2026-06-22 | ACL Anthology | [Beyond Markovian Forgetfulness: Episodic Memory for Reasoning-Intensive Retrieval](content/papers/beyond-markovian-forgetfulness-episodic-memory-for-reasoning-intensive-retrieval.md) | episodic, retrieval |
 
 ## Suggested GitHub Setup
 
