@@ -26,6 +26,101 @@
     "venue": "ACL ARR 2026 May Submission"
   },
   {
+    "abstract": "Humans flexibly adapt their reasoning strategies to the requirements of a given problem. Large language models (LLMs) have performed well on many cognitive tasks, however, it is unclear whether this accuracy is a result of pattern matching from training data or flexible reasoning. Here, we introduce a novel paradigm to test this question: the riddle riddle paradigm. Riddle riddles are word problems written to mimic popular riddles, but altered so their answers only require literal interpretations. Identifying correct answers requires looking past the structure of each question and flexibly apply different reasoning strategies based on the content. If LLMs respond to surface features, such as form, a riddle-like structure should cause models to use an inventive reasoning strategy even when a literal interpretation suffices. Alternatively, if LLMs reason based on content, they should flexibly switch strategies when appropriate. Across two experiments with nine state-of-the-art LLMs and 100 human participants, we show humans and LLMs fail on this paradigm in opposite directions. LLMs were far more accurate on genuine riddles than on riddle riddles (84.9% vs. 50.7%); whereas humans showed the reverse effect (50.5% vs. 80.5%). Error analysis shows that 90.8% of LLM errors on riddle riddles (the condition where they show diminished performance) were due to inappropriate use of inventive reasoning while only 57.6% of human errors on genuine riddles were due to overextending literal reasoning. Thus, while both groups make mistakes, reasoning mistakes are made more often by LLMs than by humans. Overall, LLMs' strong performance on genuine riddles may reflect memory retrieval rather than flexible strategy selection, and without stimuli designed to elicit this contrast, it becomes easy to conflate LLM-generated outputs that look like reasoning with genuine reasoning.",
+    "authors": [
+      "Bella Fascendini",
+      "Kathryn McGregor",
+      "Max D. Gupta",
+      "Thomas L. Griffiths"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "id": "2606.27103v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Humans flexibly adapt their reasoning strategies to the requirements of a given problem.\n\n进一步看，论文的核心做法或实验重点可以概括为：Large language models (LLMs) have performed well on many cognitive tasks, however, it is unclear whether this accuracy is a result of pattern matching from training data or flexible reasoning.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory retrieval"
+    ],
+    "one_liner": "Humans flexibly adapt their reasoning strategies to the requirements of a given problem.",
+    "published": "2026-06-25",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：retrieval\n- 检索关键词命中：memory retrieval\n- 来源分类信息：cs.CL",
+    "slug": "the-riddle-riddle-testing-flexible-reasoning-in-large-language-models-and-humans",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2606.27103v1",
+    "tags": [
+      "retrieval"
+    ],
+    "title": "The Riddle Riddle: Testing Flexible Reasoning in Large Language Models and Humans",
+    "updated": "2026-06-25",
+    "url": "http://arxiv.org/abs/2606.27103v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Retrieval-augmented generation (RAG) gives agents access to accumulated knowledge, but has no model of time. When a fact changes (e.g., a function is renamed or API restructured), RAG retrieves both the stale and current value with near-identical embedding similarity. The agent then either abstains or serves the superseded fact. We show this is a structural problem: on a calibrated dataset, cosine similarity distinguishes a contradicted fact from a duplicated one with AUROC 0.59 (near chance), as contradictions are often more embedding-similar to the original than rephrased duplicates. We present MemStrata, a retrieval memory maintaining temporal validity. It stores facts like RAG, preserving static recall, but when a fact's value is contradicted, a deterministic (subject, relation, object) supersession rule retires the stale value in a bi-temporal ledger - with no similarity threshold and no LLM call. Across six benchmarks run locally with a 7B model, MemStrata ties RAG on static knowledge and reaches 0.95-1.00 accuracy on evolving knowledge (where RAG reaches 0.20-0.47). The central result is the stale-fact-error rate: when required to answer, RAG serves superseded values 15-40% of the time; MemStrata drives this to ~0%, a failure class RAG cannot avoid. MemStrata achieves this at retrieval latency (~2.1s) versus ~16-18s for LLM-reranking baselines. We release the harness, datasets, and a marker-free evaluation protocol for memory under knowledge evolution.",
+    "authors": [
+      "Neeraj Yadav"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.ET",
+      "cs.LG"
+    ],
+    "id": "2606.26511v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Retrieval-augmented generation (RAG) gives agents access to accumulated knowledge, but has no model of time.\n\n进一步看，论文的核心做法或实验重点可以概括为：When a fact changes (e.g., a function is renamed or API restructured), RAG retrieves both the stale and current value with near-identical embedding similarity.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "retrieval memory"
+    ],
+    "one_liner": "Retrieval-augmented generation (RAG) gives agents access to accumulated knowledge, but has no model of time.",
+    "published": "2026-06-25",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, retrieval\n- 检索关键词命中：retrieval memory\n- 来源分类信息：cs.CL, cs.AI, cs.ET, cs.LG",
+    "slug": "temporal-validity-in-retrieval-memory-eliminating-stale-fact-errors-for-ai-agent",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2606.26511v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "retrieval"
+    ],
+    "title": "Temporal Validity in Retrieval Memory: Eliminating Stale-Fact Errors for AI Agents over Evolving Knowledge",
+    "updated": "2026-06-25",
+    "url": "http://arxiv.org/abs/2606.26511v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Existing embedding models are inherently static: they encode text segments in isolation, ignoring their surrounding context and temporal order. This paper introduces EvoEmbedding, a novel embedding model that generates evolvable representations for retrieval. It is tailored for long-context scenarios, where information is dynamic, sequential, and requires continuous state tracking. Our design is simple: EvoEmbedding maintains a continuously updated latent memory as it sequentially processes inputs, and uses it alongside the raw content to jointly generate evolvable embeddings. Consequently, for the same query, our model adapts its representation to retrieve distinct targets based on the evolving context, going beyond static semantic search. To equip the model with this capability, we construct EvoTrain-180K, a diverse dataset for the joint optimization of latent memory and retrieval. Furthermore, we introduce a memory queue to prevent representation collapse during recurrent encoding, alongside segment-batching techniques that tackle significant length variance and accelerate training by 3.8$\\times$. Extensive experiments show that our model not only outperforms larger-scale specialists (e.g., Qwen3-Embedding-8B and KaLM-Embedding-Gemma3-12B) across a range of long-context retrieval benchmarks, but also generalizes well to downstream tasks (e.g., personalization) with contexts 10$\\times$ longer than its training window. Notably, EvoEmbedding seamlessly integrates into agentic workflows to boost performance. For instance, a naive RAG pipeline equipped with our model surpasses dedicated agentic memory systems. Project Page: https://clare-nie.github.io/EvoEmbedding/.",
+    "authors": [
+      "Chang Nie",
+      "Chaoyou Fu",
+      "Junlan Feng",
+      "Caifeng Shan"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "id": "2606.21649v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Existing embedding models are inherently static: they encode text segments in isolation, ignoring their surrounding context and temporal order.\n\n进一步看，论文的核心做法或实验重点可以概括为：This paper introduces EvoEmbedding, a novel embedding model that generates evolvable representations for retrieval.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "Existing embedding models are inherently static: they encode text segments in isolation, ignoring their surrounding context and temporal order.",
+    "published": "2026-06-19",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context, retrieval\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.CL",
+    "slug": "evoembedding-evolvable-representations-for-long-context-retrieval-and-agentic-me",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2606.21649v2",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "retrieval"
+    ],
+    "title": "EvoEmbedding: Evolvable Representations for Long-Context Retrieval and Agentic Memory",
+    "updated": "2026-06-25",
+    "url": "http://arxiv.org/abs/2606.21649v2",
+    "venue": ""
+  },
+  {
     "abstract": "Large language model assistants are increasingly expected to retain and reason over information accumulated across many sessions. We introduce EngramaBench, a benchmark for long-term conversational memory built around five personas, one hundred multi-session conversations, and one hundred fifty queries spanning factual recall, cross-space integration, temporal reasoning, adversarial abstention, and emergent synthesis. We evaluate Engrama, a graph-structured memory system, against GPT-4o full-context prompting and Mem0, an open-source vector-retrieval memory system. All three use the same answering model (GPT-4o), isolating the effect of memory architecture. GPT-4o full-context achieves the highest composite score (0.6186), while Engrama scores 0.5367 globally but is the only system to score higher than full-context prompting on cross_space reasoning (0.6532 vs. 0.6291, n=30). Mem0 is cheapest but substantially weaker (0.4809). Ablations reveal that the components driving Engrama's cross-space advantage trade off against global composite score, exposing a systems-level tension between structured memory specialization and aggregate optimization.",
     "authors": [],
     "categories": [
@@ -54,6 +149,71 @@
     "updated": "2026-06-25",
     "url": "https://openreview.net/forum?id=H3YHSQxUYD",
     "venue": "ACL ARR 2026 May Submission"
+  },
+  {
+    "abstract": "Conversational memory retrieval optimizes relevance, yet a retrieved memory can be relevant and simultaneously outdated: a later turn updates, corrects, or supersedes it. ConvMemory v3 adds a validity context layer that detects and surfaces this update evidence through target-conditioned relation verification, sitting after the v1/v2 retrieval path. The core mechanism is a dual-evidence gate that conditions a relation judgment on the specific target proposition, scoring a (target, source) pair through the product of a MiniLM slot head and a DeBERTa-v3 slot head and gating it by conservative event/operation evidence. On a synthetic multi-hop validity benchmark the gate reaches 90.12% +/- 1.73 accuracy; through a real-data feedback loop that mines failure patterns but trains on synthetic pairs only, the verifier transfers to Memora role binding with zero target-side labels, reaching 98.8% +/- 0.9 group-all-correct. The deployed layer preserves retrieval by default: a context mode attaches structured validity metadata while keeping the candidate set and rank order fixed, and a query-conditioned demote mode is an explicit opt-in for dense current-state workloads, where it raises current-active H@1 from a never-demote baseline of 45.1% to 95.7% +/- 1.2 while protecting non-superseded memories at 99.4% recall. Six machine-verifiable safety contracts pin the layer's behavior. Multi-hop graph propagation is validated as a mechanism; fully automatic construction of strict prerequisite edges is characterized as a boundary, since strict necessity requires counterfactual world knowledge. This report extends ConvMemory v1 (arXiv:2605.28062) and v2 (arXiv:2606.10842).",
+    "authors": [
+      "Taiheng Pan"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.IR"
+    ],
+    "id": "2606.26753v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `benchmark, context, conversation, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Conversational memory retrieval optimizes relevance, yet a retrieved memory can be relevant and simultaneously outdated: a later turn updates, corrects, or supersedes it.\n\n进一步看，论文的核心做法或实验重点可以概括为：ConvMemory v3 adds a validity context layer that detects and surfaces this update evidence through target-conditioned relation verification, sitting after the v1/v2 retrieval path.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "conversational memory",
+      "memory retrieval",
+      "retrieval memory"
+    ],
+    "one_liner": "Conversational memory retrieval optimizes relevance, yet a retrieved memory can be relevant and simultaneously outdated: a later turn updates, corrects, or supersedes it.",
+    "published": "2026-06-25",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：benchmark, context, conversation, retrieval\n- 检索关键词命中：conversational memory, memory retrieval, retrieval memory\n- 来源分类信息：cs.CL, cs.IR",
+    "slug": "convmemory-v3-a-validity-context-layer-for-conversational-memory-via-target-cond",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2606.26753v1",
+    "tags": [
+      "benchmark",
+      "context",
+      "conversation",
+      "retrieval"
+    ],
+    "title": "ConvMemory v3: A Validity Context Layer for Conversational Memory via Target-Conditioned Relation Verification",
+    "updated": "2026-06-25",
+    "url": "http://arxiv.org/abs/2606.26753v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Large language model agents increasingly query databases, search document collections, call external APIs, remember past interactions, and act on a user's behalf. As they move from answering questions to operating over sensitive data, privacy becomes harder to enforce. An agent touches many data sources, runs multi-step workflows, keeps state across sessions, and acts with delegated permissions. Sensitive information can therefore leak not only through its final answer but through the queries it issues, the intermediate results it handles, the memory it writes, and the messages it exchanges with other agents. We survey the privacy of LLM agents from a data-centric view, organizing the field around the data an agent touches rather than by attack type, and we use data agent as shorthand for an LLM agent that works with data. Research on these risks is active but scattered across retrieval-augmented generation, text-to-SQL interfaces, agent memory, prompt injection, access control, and contextual privacy. This survey brings that work together: we taxonomize the data sources an agent touches, the privacy risks each source creates, and the governance mechanisms that address them; we map the benchmarks used to measure these risks and identify what is missing; and we set out the open problems. Two findings recur: among governance mechanisms only information-flow control covers both compositional and cross-session inference leakage, the two least-protected risks; and no benchmark drives an agent across its data surfaces under one privacy policy, the instrument the field most lacks. Our goal is a reference that situates the scattered literature and gives future work a common framing.",
+    "authors": [
+      "Nada Lahjouji",
+      "Ashwin Gerard Colaco"
+    ],
+    "categories": [
+      "cs.CR",
+      "cs.AI"
+    ],
+    "id": "2606.26627v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Large language model agents increasingly query databases, search document collections, call external APIs, remember past interactions, and act on a user's behalf.\n\n进一步看，论文的核心做法或实验重点可以概括为：As they move from answering questions to operating over sensitive data, privacy becomes harder to enforce.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "Large language model agents increasingly query databases, search document collections, call external APIs, remember past interactions, and act on a user's behalf.",
+    "published": "2026-06-25",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context, retrieval\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.CR, cs.AI",
+    "slug": "agents-that-know-too-much-a-data-centric-survey-of-privacy-in-llm-agents",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2606.26627v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "retrieval"
+    ],
+    "title": "Agents That Know Too Much: A Data-Centric Survey of Privacy in LLM Agents",
+    "updated": "2026-06-25",
+    "url": "http://arxiv.org/abs/2606.26627v1",
+    "venue": ""
   },
   {
     "abstract": "When instruction-tuned LLMs store past experience in retrieval-augmented memory, much of memory's measured influence in our evaluation flows through verbatim answer copying rather than higher-level reasoning. Across $1{,}866$ controlled experiments spanning three model families, multi-episode agent tasks, and three external conflict benchmarks, removing concrete answer bindings sharply reduces override on the strongest-conflict tasks and attenuates it on more naturalistic benchmarks. Override strength changes at a concentrated boundary we term the *override cliff*: between answer-level and paraphrase-level memory content, override drops $4.5\\times$ on average in a single specificity step. On NQ-Swap, removing the swapped entity reduces override to zero on both tested models, and the cliff replicates on two frontier API models with full closed-book filtering (GPT-4o-mini $1.6\\times$; Claude Haiku 4.5 $1.8\\times$), with attenuated but persistent effect. On $\\tau$-bench, a real agent benchmark with deterministic evaluation, verbatim tool-call memories cause $20.6\\%$ stale parameter copying vs. $6.3\\%$ for strategy-only memories ($p{=}0.017$, cliff ratio $3.3\\times$), even when the agent performs fresh tool lookups. Logit probes are consistent with a ${\\sim}5\\times$ token-level amplification at this boundary, and paraphrased or summarized memories often avoid the strongest override failures.",
@@ -440,6 +600,42 @@
     "updated": "2026-06-24",
     "url": "https://openreview.net/forum?id=JHYmxqS9Jv",
     "venue": "ICML 2026 regular"
+  },
+  {
+    "abstract": "RGB-Event tracking improves localization robustness by fusing RGB appearance textures and dense temporal motion cues from event sensors. While this multi-modal scheme broadens tracking applicability, real-world scenes suffer diverse structured signal degradations that hinder traditional multi-modal fusion. In harsh environments, either modality can lose reliability drastically, and targets frequently appear incomplete due to occlusion, edge truncation and foreground clutter.To tackle the above challenges, we present a hierarchical perturbation and retrieval framework tailored for RGB-Event tracking with robustness against partial target missing and modal degradation, termed APRTrack. To mimic real-world signal corruption, APRTrack constructs structured degradation via two adversarial perturbation branches at the modality and spatial levels, which separately simulate full-modal failure and localized target region absence. A hierarchical routing mechanism is designed to disentangle the training pipelines of the two perturbation types, effectively eliminating feature collapse induced by superimposed degradation constraints. Furthermore, we devise Footprint-guided Channel-calibrated Hopfield Retrieval (FCHR) for reliable historical information compensation. This module evaluates retrieval confidence based on association footprints between queries and memory banks, and calibrates the retrieval metric space prior to Hopfield matching, realizing controllable historical feature compensation bounded to target regions. Extensive experiments on FE108, COESOT, VisEvent, and FELT datasets demonstrate the effectiveness of our proposed strategies for the RGB-Event visual object tracking. The source code and pre-trained models will be released on https://github.com/Event-AHU/OpenEvTracking",
+    "authors": [
+      "Xiao Wang",
+      "Xufeng Lou",
+      "Zikang Yan",
+      "Lan Chen",
+      "Sibao Chen",
+      "Yaowei Wang",
+      "Yonghong Tian",
+      "Jin Tang"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "id": "2606.26455v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：RGB-Event tracking improves localization robustness by fusing RGB appearance textures and dense temporal motion cues from event sensors.\n\n进一步看，论文的核心做法或实验重点可以概括为：While this multi-modal scheme broadens tracking applicability, real-world scenes suffer diverse structured signal degradations that hinder traditional multi-modal fusion.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory retrieval"
+    ],
+    "one_liner": "RGB-Event tracking improves localization robustness by fusing RGB appearance textures and dense temporal motion cues from event sensors.",
+    "published": "2026-06-24",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：retrieval\n- 检索关键词命中：memory retrieval\n- 来源分类信息：cs.CV, cs.AI, cs.LG",
+    "slug": "active-adversarial-perturbation-driven-associative-memory-retrieval-for-rgb-even",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2606.26455v1",
+    "tags": [
+      "retrieval"
+    ],
+    "title": "Active Adversarial Perturbation-driven Associative Memory Retrieval for RGB-Event Visual Object Tracking",
+    "updated": "2026-06-24",
+    "url": "http://arxiv.org/abs/2606.26455v1",
+    "venue": ""
   },
   {
     "abstract": "Large Language Models (LLMs) are increasingly used as autonomous agents in complex, long-horizon applications, where effective memory is critical for sustained performance. Yet existing memory benchmarks are largely dialogue-centric, while real agent memory consists of continuous agent-environment interaction trajectories composed of states, actions, observations, and tool outputs. To address this gap, we introduce **AMA-Bench** (**A**gent **M**emory with **A**ny length), a benchmark for evaluating long-horizon memory in realistic agentic settings. AMA-Bench combines real-world agent trajectories from representative applications with expert-curated QA, as well as synthetic trajectories that scale to arbitrary horizons with rule-based QA. Our study shows that existing memory systems underperform because they fail to capture causal and objective information and rely heavily on lossy similarity-based retrieval. We further propose **AMA-Agent**, a memory system based on causality-graph construction and tool-augmented retrieval. AMA-Agent achieves **57.22%** accuracy on AMA-Bench, outperforming the strongest baseline by **11.16%**. Resources are available at: [https://ama-bench.github.io/](https://ama-bench.github.io/).",
