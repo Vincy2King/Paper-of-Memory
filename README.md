@@ -40,7 +40,7 @@ python3 scripts/update_papers.py --build-only
 ## Repository Snapshot
 
 - Total tracked papers: **585**
-- Last generated: **2026-06-25**
+- Last generated: **2026-06-26**
 
 ## Papers by Source
 
@@ -52,6 +52,7 @@ python3 scripts/update_papers.py --build-only
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-06-26 | OpenReview | [TAME: A Trustworthy Test-Time Evolution of Agent Memory with Systematic Benchmarking](content/papers/tame-a-trustworthy-test-time-evolution-of-agent-memory-with-systematic-benchmark.md) | agent, benchmark |
 | 2026-06-25 | OpenReview | [EngramaBench: Evaluating Long-Term Conversational Memory with Structured Graph Retrieval](content/papers/engramabench-evaluating-long-term-conversational-memory-with-structured-graph-re.md) | benchmark, context, conversation |
 | 2026-06-24 | OpenReview | [The Override Cliff: How Agent Memory Hijacks LLM Reasoning](content/papers/the-override-cliff-how-agent-memory-hijacks-llm-reasoning.md) | agent, benchmark, retrieval |
 | 2026-06-24 | OpenReview | [Temporal Context Reinstatement Drives Episodic-Like Order Memory in Long-Context Language Models](content/papers/temporal-context-reinstatement-drives-episodic-like-order-memory-in-long-context.md) | context, episodic, long-term |
@@ -71,7 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-06-23 | arXiv | [ReM-MoA: Reasoning Memory Sustains Mixture-of-Agents Scaling](content/papers/rem-moa-reasoning-memory-sustains-mixture-of-agents-scaling.md) | agent, benchmark |
 | 2026-06-23 | arXiv | [RAVEN: Long-Horizon Reasoning & Navigation with a Visuo-Spatio-Temporal Memory](content/papers/raven-long-horizon-reasoning-navigation-with-a-visuo-spatio-temporal-memory.md) | agent, benchmark, long-term |
 | 2026-06-23 | OpenReview | [MemoryVLN: Memory-Augmented Vision-Language Navigation](content/papers/memoryvln-memory-augmented-vision-language-navigation.md) | agent, benchmark, context |
-| 2026-06-23 | arXiv | [MEMPROBE: Probing Long-Term Agent Memory via Hidden User-State Recovery](content/papers/memprobe-probing-long-term-agent-memory-via-hidden-user-state-recovery.md) | agent, benchmark, long-term |
 
 ## Suggested GitHub Setup
 

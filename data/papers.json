@@ -1,5 +1,31 @@
 [
   {
+    "abstract": "Test-time evolution of agent memory represents a pivotal paradigm for advancing AGI, as it strengthens complex reasoning through experience accumulation without requiring parameter updates. However, even during benign task evolution, agent safety alignment remains vulnerable—a phenomenon known as Agent Memory Misevolution. To evaluate this phenomenon, we construct the Trust-Memevo benchmark and find that agents exhibit an overall decline in trustworthiness across multiple tasks during benign task evolution. To address this issue, we propose TAME, a trust-aware memory evolution framework in which a shared memory bank is jointly governed by an Executor and an Evaluator. The Executor retrieves and applies transferable experiences to support task solving, while the Evaluator assesses the contribution of each utilized experience to the outcome and produces trust-aware feedback to guide subsequent memory use. This executor–evaluator loop enables memory to be selectively reinforced, cautiously reused, and continuously expanded over time. Experiments show that TAME mitigates memory misevolution while achieving strong task performance. In particular, on the GPT-5.2 AIME benchmark, TAME improves accuracy by 14.6 percentage points over the strongest existing method and maintains competitive trustworthiness.",
+    "authors": [],
+    "categories": [
+      "aclweb.org/ACL/ARR/2026/May/-/Submission"
+    ],
+    "id": "openreview:0FnWcX2SgR",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 May Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Test-time evolution of agent memory represents a pivotal paradigm for advancing AGI, as it strengthens complex reasoning through experience accumulation without requiring parameter updates.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, even during benign task evolution, agent safety alignment remains vulnerable—a phenomenon known as Agent Memory Misevolution.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "Test-time evolution of agent memory represents a pivotal paradigm for advancing AGI, as it strengthens complex reasoning through experience accumulation without requiring...",
+    "published": "2026-06-02",
+    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 May Submission\n- 高亮主题命中：agent, benchmark\n- 检索关键词命中：agent memory\n- 来源分类信息：aclweb.org/ACL/ARR/2026/May/-/Submission",
+    "slug": "tame-a-trustworthy-test-time-evolution-of-agent-memory-with-systematic-benchmark",
+    "source": "OpenReview",
+    "source_key": "0FnWcX2SgR",
+    "tags": [
+      "agent",
+      "benchmark"
+    ],
+    "title": "TAME: A Trustworthy Test-Time Evolution of Agent Memory with Systematic Benchmarking",
+    "updated": "2026-06-26",
+    "url": "https://openreview.net/forum?id=0FnWcX2SgR",
+    "venue": "ACL ARR 2026 May Submission"
+  },
+  {
     "abstract": "Large language model assistants are increasingly expected to retain and reason over information accumulated across many sessions. We introduce EngramaBench, a benchmark for long-term conversational memory built around five personas, one hundred multi-session conversations, and one hundred fifty queries spanning factual recall, cross-space integration, temporal reasoning, adversarial abstention, and emergent synthesis. We evaluate Engrama, a graph-structured memory system, against GPT-4o full-context prompting and Mem0, an open-source vector-retrieval memory system. All three use the same answering model (GPT-4o), isolating the effect of memory architecture. GPT-4o full-context achieves the highest composite score (0.6186), while Engrama scores 0.5367 globally but is the only system to score higher than full-context prompting on cross_space reasoning (0.6532 vs. 0.6291, n=30). Mem0 is cheapest but substantially weaker (0.4809). Ablations reveal that the components driving Engrama's cross-space advantage trade off against global composite score, exposing a systems-level tension between structured memory specialization and aggregate optimization.",
     "authors": [],
     "categories": [
@@ -1375,32 +1401,6 @@
     "updated": "2026-06-21",
     "url": "http://arxiv.org/abs/2606.22338v1",
     "venue": ""
-  },
-  {
-    "abstract": "Test-time evolution of agent memory represents a pivotal paradigm for advancing AGI, as it strengthens complex reasoning through experience accumulation without requiring parameter updates. However, even during benign task evolution, agent safety alignment remains vulnerable—a phenomenon known as Agent Memory Misevolution. To evaluate this phenomenon, we construct the Trust-Memevo benchmark and find that agents exhibit an overall decline in trustworthiness across multiple tasks during benign task evolution. To address this issue, we propose TAME, a trust-aware memory evolution framework in which a shared memory bank is jointly governed by an Executor and an Evaluator. The Executor retrieves and applies transferable experiences to support task solving, while the Evaluator assesses the contribution of each utilized experience to the outcome and produces trust-aware feedback to guide subsequent memory use. This executor–evaluator loop enables memory to be selectively reinforced, cautiously reused, and continuously expanded over time. Experiments show that TAME mitigates memory misevolution while achieving strong task performance. In particular, on the GPT-5.2 AIME benchmark, TAME improves accuracy by 14.6 percentage points over the strongest existing method and maintains competitive trustworthiness.",
-    "authors": [],
-    "categories": [
-      "aclweb.org/ACL/ARR/2026/May/-/Submission"
-    ],
-    "id": "openreview:0FnWcX2SgR",
-    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 May Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Test-time evolution of agent memory represents a pivotal paradigm for advancing AGI, as it strengthens complex reasoning through experience accumulation without requiring parameter updates.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, even during benign task evolution, agent safety alignment remains vulnerable—a phenomenon known as Agent Memory Misevolution.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
-    "matched_keywords": [
-      "agent memory"
-    ],
-    "one_liner": "Test-time evolution of agent memory represents a pivotal paradigm for advancing AGI, as it strengthens complex reasoning through experience accumulation without requiring...",
-    "published": "2026-06-02",
-    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 May Submission\n- 高亮主题命中：agent, benchmark\n- 检索关键词命中：agent memory\n- 来源分类信息：aclweb.org/ACL/ARR/2026/May/-/Submission",
-    "slug": "tame-a-trustworthy-test-time-evolution-of-agent-memory-with-systematic-benchmark",
-    "source": "OpenReview",
-    "source_key": "0FnWcX2SgR",
-    "tags": [
-      "agent",
-      "benchmark"
-    ],
-    "title": "TAME: A Trustworthy Test-Time Evolution of Agent Memory with Systematic Benchmarking",
-    "updated": "2026-06-20",
-    "url": "https://openreview.net/forum?id=0FnWcX2SgR",
-    "venue": "ACL ARR 2026 May Submission"
   },
   {
     "abstract": "Conversational-memory systems increasingly transform dialogue history into facts, sum- maries, timelines, and other source-linked de- scendants, so a single source turn can co- exist with several derived memories in the same retrieval index. This raises an under- specified evaluation question: which stored form should receive retrieval credit? We show that this scoring-target choice is often left implicit and can materially change bench- mark conclusions. We present TIAP, a fixed- output audit that rescores saved ranked out- puts under three targets—Raw, Source, and Canonical—without rerunning retrieval. On LoCoMo and LongMemEval-S, switching only the credited target changes nDCG on 83.4%– 94.0% of shared queries, flips target orderings on Mem0 and MemoryOS transfer runs, and reverses parser-density recommendations. A 1,902-case semantic audit further shows that re- laxed source-linked credit is fully justified only 29.2% of the time, despite high rubric reliabil- ity in a validation subset. These results reveal target noninvariance: conclusions about mem- ory architectures can silently flip with a sin- gle benchmark-design choice. Conversational- memory papers should therefore define and re- port the scoring target explicitly",
