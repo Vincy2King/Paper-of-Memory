@@ -30,6 +30,32 @@
     "venue": "ACL ARR 2026 May Submission"
   },
   {
+    "abstract": "Large Language Model (LLM) agents often struggle with long-horizon tasks, as their limited context windows are easily overwhelmed by irrelevant information. Existing memory-augmented agents typically rely on rigid, predefined workflows, which lack the flexibility to adapt to diverse task demands. To address this, we introduce MemPlanner, an autonomous, plan-driven memory agent designed for strategic information management. Unlike traditional systems, MemPlanner employs a plan-then-execute paradigm: the agent first reasons about an optimal memory strategy tailored to the current context, then autonomously orchestrates a sequence of operations. This process is grounded in a hierarchical memory architecture comprising Core Memory for global context and Topic Memory for fine-grained details. By utilizing a progressive disclosure mechanism via a \"header-as-index\" format, the agent can scan the memory landscape efficiently and retrieve information gradually, minimizing context redundancy. Optimized through reinforcement learning, MemPlanner learns adaptive policies to distill high-level insights and organize factual knowledge. Extensive experiments confirm that MemPlanner achieves substantial improvements over existing agents, demonstrating superior robustness and strategy adaptation in complex, long-horizon environments.",
+    "authors": [],
+    "categories": [
+      "aclweb.org/ACL/ARR/2026/May/-/Submission"
+    ],
+    "id": "openreview:jvZt1ZRynU",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, context` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 May Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Large Language Model (LLM) agents often struggle with long-horizon tasks, as their limited context windows are easily overwhelmed by irrelevant information.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing memory-augmented agents typically rely on rigid, predefined workflows, which lack the flexibility to adapt to diverse task demands.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory-augmented"
+    ],
+    "one_liner": "Large Language Model (LLM) agents often struggle with long-horizon tasks, as their limited context windows are easily overwhelmed by irrelevant information.",
+    "published": "2026-06-02",
+    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 May Submission\n- 高亮主题命中：agent, context\n- 检索关键词命中：memory-augmented\n- 来源分类信息：aclweb.org/ACL/ARR/2026/May/-/Submission",
+    "slug": "memplanner-governing-long-horizon-agency-via-dynamic-memory-management-and-plann",
+    "source": "OpenReview",
+    "source_key": "jvZt1ZRynU",
+    "tags": [
+      "agent",
+      "context"
+    ],
+    "title": "MEMPLANNER: Governing Long-Horizon Agency via Dynamic Memory Management and Planning",
+    "updated": "2026-06-29",
+    "url": "https://openreview.net/forum?id=jvZt1ZRynU",
+    "venue": "ACL ARR 2026 May Submission"
+  },
+  {
     "abstract": "Sequence prediction methods for linear dynamical systems with long memory, i.e. marginally stable systems, typically achieve regret that grows linearly with the hidden dimension of the underlying generative model. While many methods have been developed to address this regime with varying success, we show that simply using the second-order Vovk-Azoury-Warmuth (VAW) algorithm to learn a short autoregressive-with-inputs (ARX) model achieves astoundingly strong results: for bounded sequential data from a marginally-stable linear dynamical system with spectra in the complex disk except for angular wedge of width $δ$ around the negative real axis, this algorithm achieves dimension-free regret $O\\left( δ^{-4} \\log^2 T \\right)$. These bounds are state-of-the-art to our knowledge. The key components for our result come from 1) using the theory of ``Universal Sequence Preconditioning'' (USP) \\cite{marsdenuniversal} to prove the existence of an optimal setting of autoregressive coefficients, 2) the application of VAW which takes better advantage of the memory compression provided by USP, and 3) the analysis of Faber polynomials on circular sectors to extend these results to systems with complex spectra.",
     "authors": [
       "Annie Marsden",
@@ -3378,32 +3404,6 @@
     "updated": "2026-06-15",
     "url": "http://arxiv.org/abs/2606.17162v1",
     "venue": ""
-  },
-  {
-    "abstract": "Large Language Model (LLM) agents often struggle with long-horizon tasks, as their limited context windows are easily overwhelmed by irrelevant information. Existing memory-augmented agents typically rely on rigid, predefined workflows, which lack the flexibility to adapt to diverse task demands. To address this, we introduce MemPlanner, an autonomous, plan-driven memory agent designed for strategic information management. Unlike traditional systems, MemPlanner employs a plan-then-execute paradigm: the agent first reasons about an optimal memory strategy tailored to the current context, then autonomously orchestrates a sequence of operations. This process is grounded in a hierarchical memory architecture comprising Core Memory for global context and Topic Memory for fine-grained details. By utilizing a progressive disclosure mechanism via a \"header-as-index\" format, the agent can scan the memory landscape efficiently and retrieve information gradually, minimizing context redundancy. Optimized through reinforcement learning, MemPlanner learns adaptive policies to distill high-level insights and organize factual knowledge. Extensive experiments confirm that MemPlanner achieves substantial improvements over existing agents, demonstrating superior robustness and strategy adaptation in complex, long-horizon environments.",
-    "authors": [],
-    "categories": [
-      "aclweb.org/ACL/ARR/2026/May/-/Submission"
-    ],
-    "id": "openreview:jvZt1ZRynU",
-    "intro": "这篇论文被纳入仓库，是因为它和 `agent, context` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 May Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Large Language Model (LLM) agents often struggle with long-horizon tasks, as their limited context windows are easily overwhelmed by irrelevant information.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing memory-augmented agents typically rely on rigid, predefined workflows, which lack the flexibility to adapt to diverse task demands.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
-    "matched_keywords": [
-      "memory-augmented"
-    ],
-    "one_liner": "Large Language Model (LLM) agents often struggle with long-horizon tasks, as their limited context windows are easily overwhelmed by irrelevant information.",
-    "published": "2026-06-02",
-    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 May Submission\n- 高亮主题命中：agent, context\n- 检索关键词命中：memory-augmented\n- 来源分类信息：aclweb.org/ACL/ARR/2026/May/-/Submission",
-    "slug": "memplanner-governing-long-horizon-agency-via-dynamic-memory-management-and-plann",
-    "source": "OpenReview",
-    "source_key": "jvZt1ZRynU",
-    "tags": [
-      "agent",
-      "context"
-    ],
-    "title": "MEMPLANNER: Governing Long-Horizon Agency via Dynamic Memory Management and Planning",
-    "updated": "2026-06-15",
-    "url": "https://openreview.net/forum?id=jvZt1ZRynU",
-    "venue": "ACL ARR 2026 May Submission"
   },
   {
     "abstract": "Rovers rely on perception to maintain spatial maps that encode both objects and sensor quality (e.g., range reliability, lighting artifacts, data density), guiding data fusion, embedding updates, and navigation under partial observability. To study these coupled perception-navigation processes, we present CrossMaps, a real-time confidence-aware open-vocabulary semantic mapping pipeline that constructs language-queryable maps from RGB-D data. Building on VLMaps-style approaches, CrossMaps integrates multi-scale CLIP embeddings with confidence-aware fusion and a dual-memory architecture consisting of Short-Term Memory (STM) and Long-Term Memory (LTM). The STM aggregates noisy visual observations using geometric, semantic, and temporal confidence cues, while confident and coherent cells are promoted to the LTM as persistent semantic landmarks. Designed for deployment with a Jetson Orin-powered UGV alongside SLAM, CrossMaps runs in real time and produces semantic heatmaps that can be queried with natural language to guide rover navigation.",

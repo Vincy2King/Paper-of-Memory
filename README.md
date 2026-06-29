@@ -53,6 +53,7 @@ python3 scripts/update_papers.py --build-only
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
 | 2026-06-29 | OpenReview | [SHM-GATE: Structured Hierarchical Memory with Gated Admission for Multi-Agent LLM Hallucination Containment](content/papers/shm-gate-structured-hierarchical-memory-with-gated-admission-for-multi-agent-llm.md) | agent, benchmark, conversation |
+| 2026-06-29 | OpenReview | [MEMPLANNER: Governing Long-Horizon Agency via Dynamic Memory Management and Planning](content/papers/memplanner-governing-long-horizon-agency-via-dynamic-memory-management-and-plann.md) | agent, context |
 | 2026-06-26 | arXiv | [The Power of Second Order Methods for Sequence Preconditioning](content/papers/the-power-of-second-order-methods-for-sequence-preconditioning.md) | compression |
 | 2026-06-26 | OpenReview | [TAME: A Trustworthy Test-Time Evolution of Agent Memory with Systematic Benchmarking](content/papers/tame-a-trustworthy-test-time-evolution-of-agent-memory-with-systematic-benchmark.md) | agent, benchmark |
 | 2026-06-26 | arXiv | [Hippocampus-DETR: An Explicit Memory Object Detection Framework Based on Hippocampus Modeling](content/papers/hippocampus-detr-an-explicit-memory-object-detection-framework-based-on-hippocam.md) | retrieval |
@@ -71,7 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-06-24 | arXiv | [Memory Contagion: Cross-Temporal Propagation of Evaluator Bias via Agent Memory](content/papers/memory-contagion-cross-temporal-propagation-of-evaluator-bias-via-agent-memory.md) | agent, long-term |
 | 2026-06-24 | OpenReview | [MemRefine: LLM-Guided Compression for Long-Term Agent Memory](content/papers/memrefine-llm-guided-compression-for-long-term-agent-memory.md) | agent, benchmark, compression |
 | 2026-06-24 | OpenReview | [MemEvolve: Meta-Evolution of Agent Memory Systems](content/papers/memevolve-meta-evolution-of-agent-memory-systems.md) | agent, benchmark, context |
-| 2026-06-24 | arXiv | [Is GraphRAG Needed? From Basic RAG to Graph-/Agentic Solutions with Context Optimization](content/papers/is-graphrag-needed-from-basic-rag-to-graph-agentic-solutions-with-context-optimi.md) | agent, context, retrieval |
 
 ## Suggested GitHub Setup
 
