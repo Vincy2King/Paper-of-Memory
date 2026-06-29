@@ -39,24 +39,29 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **591**
-- Last generated: **2026-06-28**
+- Total tracked papers: **595**
+- Last generated: **2026-06-29**
 
 ## Papers by Source
 
 - ACL Anthology: **4**
-- arXiv: **496**
+- arXiv: **500**
 - OpenReview: **91**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-06-29 | OpenReview | [SHM-GATE: Structured Hierarchical Memory with Gated Admission for Multi-Agent LLM Hallucination Containment](content/papers/shm-gate-structured-hierarchical-memory-with-gated-admission-for-multi-agent-llm.md) | agent, benchmark, conversation |
+| 2026-06-26 | arXiv | [The Power of Second Order Methods for Sequence Preconditioning](content/papers/the-power-of-second-order-methods-for-sequence-preconditioning.md) | compression |
 | 2026-06-26 | OpenReview | [TAME: A Trustworthy Test-Time Evolution of Agent Memory with Systematic Benchmarking](content/papers/tame-a-trustworthy-test-time-evolution-of-agent-memory-with-systematic-benchmark.md) | agent, benchmark |
+| 2026-06-26 | arXiv | [Hippocampus-DETR: An Explicit Memory Object Detection Framework Based on Hippocampus Modeling](content/papers/hippocampus-detr-an-explicit-memory-object-detection-framework-based-on-hippocam.md) | retrieval |
+| 2026-06-26 | arXiv | [Agent-Native Immune System: Architecture, Taxonomy, and Engineering](content/papers/agent-native-immune-system-architecture-taxonomy-and-engineering.md) | agent |
 | 2026-06-25 | arXiv | [The Riddle Riddle: Testing Flexible Reasoning in Large Language Models and Humans](content/papers/the-riddle-riddle-testing-flexible-reasoning-in-large-language-models-and-humans.md) | retrieval |
 | 2026-06-25 | arXiv | [Temporal Validity in Retrieval Memory: Eliminating Stale-Fact Errors for AI Agents over Evolving Knowledge](content/papers/temporal-validity-in-retrieval-memory-eliminating-stale-fact-errors-for-ai-agent.md) | agent, benchmark, retrieval |
 | 2026-06-25 | arXiv | [EvoEmbedding: Evolvable Representations for Long-Context Retrieval and Agentic Memory](content/papers/evoembedding-evolvable-representations-for-long-context-retrieval-and-agentic-me.md) | agent, benchmark, context |
 | 2026-06-25 | OpenReview | [EngramaBench: Evaluating Long-Term Conversational Memory with Structured Graph Retrieval](content/papers/engramabench-evaluating-long-term-conversational-memory-with-structured-graph-re.md) | benchmark, context, conversation |
+| 2026-06-25 | arXiv | [DMV-Bench: Diagnosing Long-Horizon Multimodal Agents' Visual Memory with Incidental Cue Injection](content/papers/dmv-bench-diagnosing-long-horizon-multimodal-agents-visual-memory-with-incidenta.md) | agent, benchmark |
 | 2026-06-25 | arXiv | [ConvMemory v3: A Validity Context Layer for Conversational Memory via Target-Conditioned Relation Verification](content/papers/convmemory-v3-a-validity-context-layer-for-conversational-memory-via-target-cond.md) | benchmark, context, conversation |
 | 2026-06-25 | arXiv | [Agents That Know Too Much: A Data-Centric Survey of Privacy in LLM Agents](content/papers/agents-that-know-too-much-a-data-centric-survey-of-privacy-in-llm-agents.md) | agent, benchmark, context |
 | 2026-06-24 | OpenReview | [The Override Cliff: How Agent Memory Hijacks LLM Reasoning](content/papers/the-override-cliff-how-agent-memory-hijacks-llm-reasoning.md) | agent, benchmark, retrieval |
@@ -67,11 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-06-24 | OpenReview | [MemRefine: LLM-Guided Compression for Long-Term Agent Memory](content/papers/memrefine-llm-guided-compression-for-long-term-agent-memory.md) | agent, benchmark, compression |
 | 2026-06-24 | OpenReview | [MemEvolve: Meta-Evolution of Agent Memory Systems](content/papers/memevolve-meta-evolution-of-agent-memory-systems.md) | agent, benchmark, context |
 | 2026-06-24 | arXiv | [Is GraphRAG Needed? From Basic RAG to Graph-/Agentic Solutions with Context Optimization](content/papers/is-graphrag-needed-from-basic-rag-to-graph-agentic-solutions-with-context-optimi.md) | agent, context, retrieval |
-| 2026-06-24 | OpenReview | [GAM-RAG: Gain-Adaptive Memory for Evolving Retrieval in Retrieval-Augmented Generation](content/papers/gam-rag-gain-adaptive-memory-for-evolving-retrieval-in-retrieval-augmented-gener.md) | retrieval |
-| 2026-06-24 | OpenReview | [Episodic Memory-Guided Controllable Experience Synthesis for Reinforcement Learning](content/papers/episodic-memory-guided-controllable-experience-synthesis-for-reinforcement-learn.md) | episodic |
-| 2026-06-24 | OpenReview | [Benchmarking Agent Memory in Interdependent Multi-Session Agentic Tasks](content/papers/benchmarking-agent-memory-in-interdependent-multi-session-agentic-tasks.md) | agent, benchmark, context |
-| 2026-06-24 | arXiv | [Active Adversarial Perturbation-driven Associative Memory Retrieval for RGB-Event Visual Object Tracking](content/papers/active-adversarial-perturbation-driven-associative-memory-retrieval-for-rgb-even.md) | retrieval |
-| 2026-06-24 | OpenReview | [AMA-Bench: Evaluating Long-Horizon Memory for Agentic Applications](content/papers/ama-bench-evaluating-long-horizon-memory-for-agentic-applications.md) | agent, benchmark, retrieval |
 
 ## Suggested GitHub Setup
 

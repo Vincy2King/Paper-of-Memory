@@ -1,5 +1,63 @@
 [
   {
+    "abstract": "Multi-agent LLM systems increasingly share a long-term memory, yet most designs commit every candidate write to a single flat store. We show that this design choice drives hallucination propagation: a speculative, stale, or private statement entered by one agent can be retrieved by another, restated with confidence, and laundered into the shared substrate that downstream agents treat as fact. We propose SHM-GATE, a training-free framework that combines three primitives: atomic-claim structurisation of every candidate write, an explicit admission gate that rejects speculation and shadows contradicted facts, and a three-tier hierarchical memory consisting of private episodic memory, a shared semantic graph, and frozen invariants read in trust order. A lightweight evidence-driven correction loop verifies answer claims, counterfactually edits retrieved evidence, and rolls back unsupported claims. We evaluate SHM-GATE on MA-MEMCONFLICT, a 250-sample multi-agent benchmark covering five labelled conflict types, together with scale-stress extensions, LoCoMo long-conversation transfer, a simulated user study, and a gpt-4o backbone-sensitivity run. SHM-GATE is statistically tied with the best-accuracy answerers, including Flat-RAG, while improving Memory Consistency Score by 14 absolute points over Flat-RAG. Under scale stress, baselines degrade substantially at high distractor density, while SHM-GATE retains perfect accuracy across all configurations.",
+    "authors": [],
+    "categories": [
+      "aclweb.org/ACL/ARR/2026/May/-/Submission"
+    ],
+    "id": "openreview:B4JBE7ZfwQ",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, conversation, episodic` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 May Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Multi-agent LLM systems increasingly share a long-term memory, yet most designs commit every candidate write to a single flat store.\n\n进一步看，论文的核心做法或实验重点可以概括为：We show that this design choice drives hallucination propagation: a speculative, stale, or private statement entered by one agent can be retrieved by another, restated with confidence, and laundered into the shared...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "episodic memory",
+      "long-term memory"
+    ],
+    "one_liner": "Multi-agent LLM systems increasingly share a long-term memory, yet most designs commit every candidate write to a single flat store.",
+    "published": "2026-06-02",
+    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 May Submission\n- 高亮主题命中：agent, benchmark, conversation, episodic, long-term\n- 检索关键词命中：episodic memory, long-term memory\n- 来源分类信息：aclweb.org/ACL/ARR/2026/May/-/Submission",
+    "slug": "shm-gate-structured-hierarchical-memory-with-gated-admission-for-multi-agent-llm",
+    "source": "OpenReview",
+    "source_key": "B4JBE7ZfwQ",
+    "tags": [
+      "agent",
+      "benchmark",
+      "conversation",
+      "episodic",
+      "long-term"
+    ],
+    "title": "SHM-GATE: Structured Hierarchical Memory with Gated Admission for Multi-Agent LLM Hallucination Containment",
+    "updated": "2026-06-29",
+    "url": "https://openreview.net/forum?id=B4JBE7ZfwQ",
+    "venue": "ACL ARR 2026 May Submission"
+  },
+  {
+    "abstract": "Sequence prediction methods for linear dynamical systems with long memory, i.e. marginally stable systems, typically achieve regret that grows linearly with the hidden dimension of the underlying generative model. While many methods have been developed to address this regime with varying success, we show that simply using the second-order Vovk-Azoury-Warmuth (VAW) algorithm to learn a short autoregressive-with-inputs (ARX) model achieves astoundingly strong results: for bounded sequential data from a marginally-stable linear dynamical system with spectra in the complex disk except for angular wedge of width $δ$ around the negative real axis, this algorithm achieves dimension-free regret $O\\left( δ^{-4} \\log^2 T \\right)$. These bounds are state-of-the-art to our knowledge. The key components for our result come from 1) using the theory of ``Universal Sequence Preconditioning'' (USP) \\cite{marsdenuniversal} to prove the existence of an optimal setting of autoregressive coefficients, 2) the application of VAW which takes better advantage of the memory compression provided by USP, and 3) the analysis of Faber polynomials on circular sectors to extend these results to systems with complex spectra.",
+    "authors": [
+      "Annie Marsden",
+      "Elad Hazan"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "id": "2605.08390v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `compression` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Sequence prediction methods for linear dynamical systems with long memory, i.e. marginally stable systems, typically achieve regret that grows linearly with the hidden dimension of the underlying generative model.\n\n进一步看，论文的核心做法或实验重点可以概括为：While many methods have been developed to address this regime with varying success, we show that simply using the second-order Vovk-Azoury-Warmuth (VAW) algorithm to learn a short autoregressive-with-inputs (ARX)...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory compression"
+    ],
+    "one_liner": "Sequence prediction methods for linear dynamical systems with long memory, i.e. marginally stable systems, typically achieve regret that grows linearly with the hidden dimension...",
+    "published": "2026-05-08",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：compression\n- 检索关键词命中：memory compression\n- 来源分类信息：cs.LG",
+    "slug": "the-power-of-second-order-methods-for-sequence-preconditioning",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2605.08390v2",
+    "tags": [
+      "compression"
+    ],
+    "title": "The Power of Second Order Methods for Sequence Preconditioning",
+    "updated": "2026-06-26",
+    "url": "http://arxiv.org/abs/2605.08390v2",
+    "venue": ""
+  },
+  {
     "abstract": "Test-time evolution of agent memory represents a pivotal paradigm for advancing AGI, as it strengthens complex reasoning through experience accumulation without requiring parameter updates. However, even during benign task evolution, agent safety alignment remains vulnerable—a phenomenon known as Agent Memory Misevolution. To evaluate this phenomenon, we construct the Trust-Memevo benchmark and find that agents exhibit an overall decline in trustworthiness across multiple tasks during benign task evolution. To address this issue, we propose TAME, a trust-aware memory evolution framework in which a shared memory bank is jointly governed by an Executor and an Evaluator. The Executor retrieves and applies transferable experiences to support task solving, while the Evaluator assesses the contribution of each utilized experience to the outcome and produces trust-aware feedback to guide subsequent memory use. This executor–evaluator loop enables memory to be selectively reinforced, cautiously reused, and continuously expanded over time. Experiments show that TAME mitigates memory misevolution while achieving strong task performance. In particular, on the GPT-5.2 AIME benchmark, TAME improves accuracy by 14.6 percentage points over the strongest existing method and maintains competitive trustworthiness.",
     "authors": [],
     "categories": [
@@ -24,6 +82,75 @@
     "updated": "2026-06-26",
     "url": "https://openreview.net/forum?id=0FnWcX2SgR",
     "venue": "ACL ARR 2026 May Submission"
+  },
+  {
+    "abstract": "This paper addresses the lack of explicit memory mechanisms in current object detection models and proposes Hippocampus-DETR, a novel detection framework based on biological hippocampal memory modeling. This framework integrates a hippocampal memory network module, HipNet, into the DETR architecture and systematically simulates the anatomical structure and functional organization of hippocampal subregions, including the entorhinal cortex, dentate gyrus, CA3, CA1, and subiculum. Through this design, Hippocampus-DETR realizes pattern separation, pattern completion, importance filtering, and information integration of visual encoding features. During training, different memory submodules are optimized using a layer-wise training strategy, ultimately forming a memory system with memory retrieval and completion capabilities. Experimental results demonstrate that Hippocampus-DETR achieves higher detection accuracy than current mainstream models. More importantly, models equipped with this framework also exhibit excellent generalization ability and data efficiency in tasks such as few-shot image classification, multimodal feature construction, and image restoration. Subsequent experiments further validate the functional necessity and internal interpretability of each memory submodule. This study not only provides a novel object detection framework, but also offers a feasible technical pathway for integrating neurocognitive mechanisms with deep learning models, highlighting its significant value in improving model learning efficiency and task robustness. The project is available at https://github.com/2186cloud/hipnet.",
+    "authors": [
+      "Zhaoning Shi",
+      "Bo Ma",
+      "Hao Xu",
+      "Zepeng Yang",
+      "Bo Liang"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "id": "2606.27831v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：This paper addresses the lack of explicit memory mechanisms in current object detection models and proposes Hippocampus-DETR, a novel detection framework based on biological hippocampal memory modeling.\n\n进一步看，论文的核心做法或实验重点可以概括为：This framework integrates a hippocampal memory network module, HipNet, into the DETR architecture and systematically simulates the anatomical structure and functional organization of hippocampal subregions, including...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory retrieval"
+    ],
+    "one_liner": "This paper addresses the lack of explicit memory mechanisms in current object detection models and proposes Hippocampus-DETR, a novel detection framework based on biological...",
+    "published": "2026-06-26",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：retrieval\n- 检索关键词命中：memory retrieval\n- 来源分类信息：cs.CV, cs.AI",
+    "slug": "hippocampus-detr-an-explicit-memory-object-detection-framework-based-on-hippocam",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2606.27831v1",
+    "tags": [
+      "retrieval"
+    ],
+    "title": "Hippocampus-DETR: An Explicit Memory Object Detection Framework Based on Hippocampus Modeling",
+    "updated": "2026-06-26",
+    "url": "http://arxiv.org/abs/2606.27831v1",
+    "venue": ""
+  },
+  {
+    "abstract": "The transition from static chat bots to autonomous agents--equipped with persistent memory, tool-use protocols, and multi-agent collaboration--has fundamentally expanded the AI threat landscape. Current defense mechanisms, such as perimeter security and training-time alignment, remain external to the agent's active reasoning loop. Consequently, they fall short: a fully aligned agent remains highly vulnerable to runtime hijacking via memory poisoning, tool-chain manipulation, or multi-agent protocol attacks. To address this critical gap, we introduce the Agent-Native Immune System (ANIS), the first biologically inspired, endogenous defense architecture embedded directly within the agent's cognitive loop. Our framework presents four primary contributions. First, we design a six-layer Immune Tower (L0-L5), distinctly incorporating Barrier Immunity (L1) as a non-cognitive, physical-and-logical isolation layer. Second, we establish a unified taxonomy of Agent Viruses and Agent Vaccines, formalizing the critical distinction between superficial non-parametric defenses and robust parametric vaccines. Third, we conceptualize the Harness Triad--Meta, Self, and Auto--a self-monitoring, meta-cognitive automation backbone that drives Continual Immune Learning (CIL), enabling vaccines to dynamically adapt to novel threats. Finally, we establish a rigorous theoretical demarcation between model alignment and agent immunity: while alignment provides a static \"constitutional\" value foundation during training, ANIS serves as the dynamic \"law enforcement\" mechanism during runtime. We conclude by framing open challenges for the field, including immune protocol standardization, novel evaluation metrics such as the Autoimmunity Rate (false-positive intervention rate), and the co-evolutionary dynamics between pathogens and vaccines within collective intelligence ecosystems.",
+    "authors": [
+      "Bo Shen",
+      "Lifeng Chang",
+      "Tianyuan Wei",
+      "Yunpeng Li",
+      "Feng Shi",
+      "Yichen Han",
+      "Peijie Gao",
+      "Shiyi Kuang",
+      "Xin Chang",
+      "Dehui Li"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.MA"
+    ],
+    "id": "2606.28270v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：The transition from static chat bots to autonomous agents--equipped with persistent memory, tool-use protocols, and multi-agent collaboration--has fundamentally expanded the AI threat landscape.\n\n进一步看，论文的核心做法或实验重点可以概括为：Current defense mechanisms, such as perimeter security and training-time alignment, remain external to the agent's active reasoning loop.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "persistent memory"
+    ],
+    "one_liner": "The transition from static chat bots to autonomous agents--equipped with persistent memory, tool-use protocols, and multi-agent collaboration--has fundamentally expanded the AI...",
+    "published": "2026-06-26",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent\n- 检索关键词命中：persistent memory\n- 来源分类信息：cs.AI, cs.MA",
+    "slug": "agent-native-immune-system-architecture-taxonomy-and-engineering",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2606.28270v1",
+    "tags": [
+      "agent"
+    ],
+    "title": "Agent-Native Immune System: Architecture, Taxonomy, and Engineering",
+    "updated": "2026-06-26",
+    "url": "http://arxiv.org/abs/2606.28270v1",
+    "venue": ""
   },
   {
     "abstract": "Humans flexibly adapt their reasoning strategies to the requirements of a given problem. Large language models (LLMs) have performed well on many cognitive tasks, however, it is unclear whether this accuracy is a result of pattern matching from training data or flexible reasoning. Here, we introduce a novel paradigm to test this question: the riddle riddle paradigm. Riddle riddles are word problems written to mimic popular riddles, but altered so their answers only require literal interpretations. Identifying correct answers requires looking past the structure of each question and flexibly apply different reasoning strategies based on the content. If LLMs respond to surface features, such as form, a riddle-like structure should cause models to use an inventive reasoning strategy even when a literal interpretation suffices. Alternatively, if LLMs reason based on content, they should flexibly switch strategies when appropriate. Across two experiments with nine state-of-the-art LLMs and 100 human participants, we show humans and LLMs fail on this paradigm in opposite directions. LLMs were far more accurate on genuine riddles than on riddle riddles (84.9% vs. 50.7%); whereas humans showed the reverse effect (50.5% vs. 80.5%). Error analysis shows that 90.8% of LLM errors on riddle riddles (the condition where they show diminished performance) were due to inappropriate use of inventive reasoning while only 57.6% of human errors on genuine riddles were due to overextending literal reasoning. Thus, while both groups make mistakes, reasoning mistakes are made more often by LLMs than by humans. Overall, LLMs' strong performance on genuine riddles may reflect memory retrieval rather than flexible strategy selection, and without stimuli designed to elicit this contrast, it becomes easy to conflate LLM-generated outputs that look like reasoning with genuine reasoning.",
@@ -149,6 +276,39 @@
     "updated": "2026-06-25",
     "url": "https://openreview.net/forum?id=H3YHSQxUYD",
     "venue": "ACL ARR 2026 May Submission"
+  },
+  {
+    "abstract": "Research on agent memory has matured rapidly, but almost entirely on the text side: few existing benchmarks ask, in an interactive environment, when an agent genuinely needs to remember what it saw rather than what it could write down. We introduce DMV-Bench (Code: https://github.com/yyyujintang/DMV-Bench), the first interactive benchmark for multimodal-agent visual memory. DMV-Bench is built on a controlled home-furnishing e-commerce catalogue of 1,000 product variants in which a text-leakage contract keeps the discriminative signal of each task in the pixels alone. Across a chain of autonomous shopping sessions, every visited product image carries a unique, pre-rendered incidental cue, and the agent is later asked to recall a particular cued product and navigate to its URL. Inspired by dual-coding theory, we propose DualMem, a memory architecture that maintains a visual and a verbal code in parallel. On DMV-Bench, DualMem outperforms a caption baseline and three recent multimodal agent-memory systems at every chain length J in {5, 10, 15, 50} on both Gemini 2.5 Flash and Qwen2.5-VL-7B, with the lead surviving controls for memory-bank size and encoding-position bias, and an asymmetric dual-coding regime in which vision carries the cue end-to-end while the verbal channel plays a smaller query-grounding role.",
+    "authors": [
+      "Yujin Tang",
+      "Chenming Shang",
+      "Ruize Xu",
+      "Nikhil Singh"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "id": "2606.27499v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Research on agent memory has matured rapidly, but almost entirely on the text side: few existing benchmarks ask, in an interactive environment, when an agent genuinely needs to remember what it saw rather than what it...\n\n进一步看，论文的核心做法或实验重点可以概括为：We introduce DMV-Bench (Code: https://github.com/yyyujintang/DMV-Bench), the first interactive benchmark for multimodal-agent visual memory.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "Research on agent memory has matured rapidly, but almost entirely on the text side: few existing benchmarks ask, in an interactive environment, when an agent genuinely needs to...",
+    "published": "2026-06-25",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.CV, cs.AI, cs.CL",
+    "slug": "dmv-bench-diagnosing-long-horizon-multimodal-agents-visual-memory-with-incidenta",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2606.27499v1",
+    "tags": [
+      "agent",
+      "benchmark"
+    ],
+    "title": "DMV-Bench: Diagnosing Long-Horizon Multimodal Agents' Visual Memory with Incidental Cue Injection",
+    "updated": "2026-06-25",
+    "url": "http://arxiv.org/abs/2606.27499v1",
+    "venue": ""
   },
   {
     "abstract": "Conversational memory retrieval optimizes relevance, yet a retrieved memory can be relevant and simultaneously outdated: a later turn updates, corrects, or supersedes it. ConvMemory v3 adds a validity context layer that detects and surfaces this update evidence through target-conditioned relation verification, sitting after the v1/v2 retrieval path. The core mechanism is a dual-evidence gate that conditions a relation judgment on the specific target proposition, scoring a (target, source) pair through the product of a MiniLM slot head and a DeBERTa-v3 slot head and gating it by conservative event/operation evidence. On a synthetic multi-hop validity benchmark the gate reaches 90.12% +/- 1.73 accuracy; through a real-data feedback loop that mines failure patterns but trains on synthetic pairs only, the verifier transfers to Memora role binding with zero target-side labels, reaching 98.8% +/- 0.9 group-all-correct. The deployed layer preserves retrieval by default: a context mode attaches structured validity metadata while keeping the candidate set and rank order fixed, and a query-conditioned demote mode is an explicit opt-in for dense current-state workloads, where it raises current-active H@1 from a never-demote baseline of 45.1% to 95.7% +/- 1.2 while protecting non-superseded memories at 99.4% recall. Six machine-verifiable safety contracts pin the layer's behavior. Multi-hop graph propagation is validated as a mechanism; fully automatic construction of strict prerequisite edges is characterized as a boundary, since strict necessity requires counterfactual world knowledge. This report extends ConvMemory v1 (arXiv:2605.28062) and v2 (arXiv:2606.10842).",
@@ -1624,36 +1784,6 @@
     "title": "Same Ranking, Different Winner: How Scoring Targets Shape LLM Memory Benchmarks",
     "updated": "2026-06-20",
     "url": "https://openreview.net/forum?id=Fb0qGX9FM0",
-    "venue": "ACL ARR 2026 May Submission"
-  },
-  {
-    "abstract": "Multi-agent LLM systems increasingly share a long-term memory, yet most designs commit every candidate write to a single flat store. We show that this design choice drives hallucination propagation: a speculative, stale, or private statement entered by one agent can be retrieved by another, restated with confidence, and laundered into the shared substrate that downstream agents treat as fact. We propose SHM-GATE, a training-free framework that combines three primitives: atomic-claim structurisation of every candidate write, an explicit admission gate that rejects speculation and shadows contradicted facts, and a three-tier hierarchical memory consisting of private episodic memory, a shared semantic graph, and frozen invariants read in trust order. A lightweight evidence-driven correction loop verifies answer claims, counterfactually edits retrieved evidence, and rolls back unsupported claims. We evaluate SHM-GATE on MA-MEMCONFLICT, a 250-sample multi-agent benchmark covering five labelled conflict types, together with scale-stress extensions, LoCoMo long-conversation transfer, a simulated user study, and a gpt-4o backbone-sensitivity run. SHM-GATE is statistically tied with the best-accuracy answerers, including Flat-RAG, while improving Memory Consistency Score by 14 absolute points over Flat-RAG. Under scale stress, baselines degrade substantially at high distractor density, while SHM-GATE retains perfect accuracy across all configurations.",
-    "authors": [],
-    "categories": [
-      "aclweb.org/ACL/ARR/2026/May/-/Submission"
-    ],
-    "id": "openreview:B4JBE7ZfwQ",
-    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, conversation, episodic` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 May Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Multi-agent LLM systems increasingly share a long-term memory, yet most designs commit every candidate write to a single flat store.\n\n进一步看，论文的核心做法或实验重点可以概括为：We show that this design choice drives hallucination propagation: a speculative, stale, or private statement entered by one agent can be retrieved by another, restated with confidence, and laundered into the shared...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
-    "matched_keywords": [
-      "episodic memory",
-      "long-term memory"
-    ],
-    "one_liner": "Multi-agent LLM systems increasingly share a long-term memory, yet most designs commit every candidate write to a single flat store.",
-    "published": "2026-06-02",
-    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 May Submission\n- 高亮主题命中：agent, benchmark, conversation, episodic, long-term\n- 检索关键词命中：episodic memory, long-term memory\n- 来源分类信息：aclweb.org/ACL/ARR/2026/May/-/Submission",
-    "slug": "shm-gate-structured-hierarchical-memory-with-gated-admission-for-multi-agent-llm",
-    "source": "OpenReview",
-    "source_key": "B4JBE7ZfwQ",
-    "tags": [
-      "agent",
-      "benchmark",
-      "conversation",
-      "episodic",
-      "long-term"
-    ],
-    "title": "SHM-GATE: Structured Hierarchical Memory with Gated Admission for Multi-Agent LLM Hallucination Containment",
-    "updated": "2026-06-20",
-    "url": "https://openreview.net/forum?id=B4JBE7ZfwQ",
     "venue": "ACL ARR 2026 May Submission"
   },
   {
