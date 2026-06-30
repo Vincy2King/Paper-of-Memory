@@ -39,39 +39,39 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **595**
+- Total tracked papers: **612**
 - Last generated: **2026-06-30**
 
 ## Papers by Source
 
 - ACL Anthology: **4**
-- arXiv: **500**
+- arXiv: **517**
 - OpenReview: **91**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-06-29 | arXiv | [Self-Evolving World Models for LLM Agent Planning](content/papers/self-evolving-world-models-for-llm-agent-planning.md) | agent, context, episodic |
 | 2026-06-29 | OpenReview | [SHM-GATE: Structured Hierarchical Memory with Gated Admission for Multi-Agent LLM Hallucination Containment](content/papers/shm-gate-structured-hierarchical-memory-with-gated-admission-for-multi-agent-llm.md) | agent, benchmark, conversation |
+| 2026-06-29 | arXiv | [Neural Subspace Reallocation: Continual Learning as Retrieval-Based Subspace Memory Management](content/papers/neural-subspace-reallocation-continual-learning-as-retrieval-based-subspace-memo.md) | benchmark, compression, retrieval |
+| 2026-06-29 | arXiv | [Neural Procedural Memory: Empowering LLM Agents with Implicit Activation Steering](content/papers/neural-procedural-memory-empowering-llm-agents-with-implicit-activation-steering.md) | agent, benchmark, context |
+| 2026-06-29 | arXiv | [MemLeak: Diagnosing Information Leaks in Multimodal Agent Memory](content/papers/memleak-diagnosing-information-leaks-in-multimodal-agent-memory.md) | agent, benchmark |
+| 2026-06-29 | arXiv | [MemDelta: Controlled Baselines and Hidden Confounds in Agent Memory Evaluation](content/papers/memdelta-controlled-baselines-and-hidden-confounds-in-agent-memory-evaluation.md) | agent, context, retrieval |
+| 2026-06-29 | arXiv | [ManimAgent: Self-Evolving Multimodal Agents for Visual Education](content/papers/manimagent-self-evolving-multimodal-agents-for-visual-education.md) | agent, episodic, retrieval |
+| 2026-06-29 | arXiv | [Mandol: An Agglomerative Agent Memory System for Long-Term Conversations](content/papers/mandol-an-agglomerative-agent-memory-system-for-long-term-conversations.md) | agent, benchmark, context |
 | 2026-06-29 | OpenReview | [MEMPLANNER: Governing Long-Horizon Agency via Dynamic Memory Management and Planning](content/papers/memplanner-governing-long-horizon-agency-via-dynamic-memory-management-and-plann.md) | agent, context |
+| 2026-06-29 | arXiv | [LLM Agents Are Latent Context Managers: Eliciting Self-Managed Context via a Proprioceptive Dashboard](content/papers/llm-agents-are-latent-context-managers-eliciting-self-managed-context-via-a-prop.md) | agent, compression, context |
+| 2026-06-29 | arXiv | [Forensic Trajectory Signatures for Agent Memory Poisoning Detection](content/papers/forensic-trajectory-signatures-for-agent-memory-poisoning-detection.md) | agent, retrieval |
+| 2026-06-29 | arXiv | [DuoMem: Towards Capable On-Device Memory Agents via Dual-Space Distillation](content/papers/duomem-towards-capable-on-device-memory-agents-via-dual-space-distillation.md) | agent, benchmark, context |
+| 2026-06-29 | arXiv | [Always-OnAgents:A Survey of Persistent Memory, State, and Governance in LLMAgents](content/papers/always-onagents-a-survey-of-persistent-memory-state-and-governance-in-llmagents.md) | agent |
+| 2026-06-28 | arXiv | [Selective Memory Retention for Long-Horizon LLM Agents](content/papers/selective-memory-retention-for-long-horizon-llm-agents.md) | agent, benchmark |
+| 2026-06-28 | arXiv | [From Agent Traces to Trust: A Survey of Evidence Tracing and Execution Provenance in LLM Agents](content/papers/from-agent-traces-to-trust-a-survey-of-evidence-tracing-and-execution-provenance.md) | agent, benchmark, retrieval |
+| 2026-06-27 | arXiv | [The Efficiency Frontier: A Unified Framework for Cost-Performance Optimization in LLM Context Management](content/papers/the-efficiency-frontier-a-unified-framework-for-cost-performance-optimization-in.md) | compression, context, retrieval |
+| 2026-06-27 | arXiv | [Memory-Managed Long-Context Attention: A Preliminary Study of Editable Request-Local Memory](content/papers/memory-managed-long-context-attention-a-preliminary-study-of-editable-request-lo.md) | context, long-term |
+| 2026-06-27 | arXiv | [MedEvoEval: Evaluating Continual Evolution of Doctor Agents through Simulated Clinical Episodes](content/papers/medevoeval-evaluating-continual-evolution-of-doctor-agents-through-simulated-cli.md) | agent, benchmark, retrieval |
+| 2026-06-27 | arXiv | [HyphaeDB: A Living Knowledge Topology for Agent-First Memory](content/papers/hyphaedb-a-living-knowledge-topology-for-agent-first-memory.md) | agent |
 | 2026-06-26 | arXiv | [The Power of Second Order Methods for Sequence Preconditioning](content/papers/the-power-of-second-order-methods-for-sequence-preconditioning.md) | compression |
-| 2026-06-26 | OpenReview | [TAME: A Trustworthy Test-Time Evolution of Agent Memory with Systematic Benchmarking](content/papers/tame-a-trustworthy-test-time-evolution-of-agent-memory-with-systematic-benchmark.md) | agent, benchmark |
-| 2026-06-26 | arXiv | [Hippocampus-DETR: An Explicit Memory Object Detection Framework Based on Hippocampus Modeling](content/papers/hippocampus-detr-an-explicit-memory-object-detection-framework-based-on-hippocam.md) | retrieval |
-| 2026-06-26 | arXiv | [Agent-Native Immune System: Architecture, Taxonomy, and Engineering](content/papers/agent-native-immune-system-architecture-taxonomy-and-engineering.md) | agent |
-| 2026-06-25 | arXiv | [The Riddle Riddle: Testing Flexible Reasoning in Large Language Models and Humans](content/papers/the-riddle-riddle-testing-flexible-reasoning-in-large-language-models-and-humans.md) | retrieval |
-| 2026-06-25 | arXiv | [Temporal Validity in Retrieval Memory: Eliminating Stale-Fact Errors for AI Agents over Evolving Knowledge](content/papers/temporal-validity-in-retrieval-memory-eliminating-stale-fact-errors-for-ai-agent.md) | agent, benchmark, retrieval |
-| 2026-06-25 | arXiv | [EvoEmbedding: Evolvable Representations for Long-Context Retrieval and Agentic Memory](content/papers/evoembedding-evolvable-representations-for-long-context-retrieval-and-agentic-me.md) | agent, benchmark, context |
-| 2026-06-25 | OpenReview | [EngramaBench: Evaluating Long-Term Conversational Memory with Structured Graph Retrieval](content/papers/engramabench-evaluating-long-term-conversational-memory-with-structured-graph-re.md) | benchmark, context, conversation |
-| 2026-06-25 | arXiv | [DMV-Bench: Diagnosing Long-Horizon Multimodal Agents' Visual Memory with Incidental Cue Injection](content/papers/dmv-bench-diagnosing-long-horizon-multimodal-agents-visual-memory-with-incidenta.md) | agent, benchmark |
-| 2026-06-25 | arXiv | [ConvMemory v3: A Validity Context Layer for Conversational Memory via Target-Conditioned Relation Verification](content/papers/convmemory-v3-a-validity-context-layer-for-conversational-memory-via-target-cond.md) | benchmark, context, conversation |
-| 2026-06-25 | arXiv | [Agents That Know Too Much: A Data-Centric Survey of Privacy in LLM Agents](content/papers/agents-that-know-too-much-a-data-centric-survey-of-privacy-in-llm-agents.md) | agent, benchmark, context |
-| 2026-06-24 | OpenReview | [The Override Cliff: How Agent Memory Hijacks LLM Reasoning](content/papers/the-override-cliff-how-agent-memory-hijacks-llm-reasoning.md) | agent, benchmark, retrieval |
-| 2026-06-24 | OpenReview | [Temporal Context Reinstatement Drives Episodic-Like Order Memory in Long-Context Language Models](content/papers/temporal-context-reinstatement-drives-episodic-like-order-memory-in-long-context.md) | context, episodic, long-term |
-| 2026-06-24 | OpenReview | [PersistBench: When Should Long-Term Memories Be Forgotten by LLMs?](content/papers/persistbench-when-should-long-term-memories-be-forgotten-by-llms.md) | benchmark, context, conversation |
-| 2026-06-24 | arXiv | [Memory Makes the Difference: Evaluating How Different Memory Roles Shape Conversational Agents](content/papers/memory-makes-the-difference-evaluating-how-different-memory-roles-shape-conversa.md) | agent, context, conversation |
-| 2026-06-24 | arXiv | [Memory Contagion: Cross-Temporal Propagation of Evaluator Bias via Agent Memory](content/papers/memory-contagion-cross-temporal-propagation-of-evaluator-bias-via-agent-memory.md) | agent, long-term |
-| 2026-06-24 | OpenReview | [MemRefine: LLM-Guided Compression for Long-Term Agent Memory](content/papers/memrefine-llm-guided-compression-for-long-term-agent-memory.md) | agent, benchmark, compression |
-| 2026-06-24 | OpenReview | [MemEvolve: Meta-Evolution of Agent Memory Systems](content/papers/memevolve-meta-evolution-of-agent-memory-systems.md) | agent, benchmark, context |
 
 ## Suggested GitHub Setup
 
