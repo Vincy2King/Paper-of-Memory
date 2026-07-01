@@ -1,5 +1,123 @@
 [
   {
+    "abstract": "Conversations with chat assistants increasingly span many topics in a single long-running thread, challenging memory systems. Existing long-context and memory benchmarks often expose session or topic boundaries, or probe direct personal-memory questions. These settings understate a harder assistant-memory regime: a flat mixed-topic thread where the system must infer which earlier episode makes a later task decision valid. We introduce SCALE-QA, a constraint-grounded task QA benchmark for flat unsegmented threads targeting episode integrity failure. The dataset contains 3,000 audited questions across 10 domains, uses deterministic four-way MCQ grading, and includes a deterministic runtime builder for user-specified mixed-topic context lengths; our experiments report settings through 1M tokens. SCALE-QA questions are ordinary task-oriented requests whose correct answer depends on causally related evidence introduced earlier in the conversation. We also propose Temporal-Semantic Interleaved Memory Reconstruction (TSIM), which segments the turn stream into coherent episodes and indexes them through a hierarchical multi-view memory stack with LLM-generated episode summaries. Experiments show that SCALE-QA challenges strong RAG baselines and long-context LLMs alike; across three open-source and proprietary LLMs, TSIM achieves the highest accuracy in every backend setting, gaining 5.6–17.6 accuracy points over the strongest corresponding baseline.",
+    "authors": [],
+    "categories": [
+      "aclweb.org/ACL/ARR/2026/May/-/Submission"
+    ],
+    "id": "openreview:Fjk0QoHwlm",
+    "intro": "这篇论文被纳入仓库，是因为它和 `benchmark, context, conversation` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 May Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Conversations with chat assistants increasingly span many topics in a single long-running thread, challenging memory systems.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing long-context and memory benchmarks often expose session or topic boundaries, or probe direct personal-memory questions.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "conversational memory",
+      "memory benchmark",
+      "memory benchmarks"
+    ],
+    "one_liner": "Conversations with chat assistants increasingly span many topics in a single long-running thread, challenging memory systems.",
+    "published": "2026-06-02",
+    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 May Submission\n- 高亮主题命中：benchmark, context, conversation\n- 检索关键词命中：conversational memory, memory benchmark, memory benchmarks\n- 来源分类信息：aclweb.org/ACL/ARR/2026/May/-/Submission",
+    "slug": "reconstructing-the-right-episode-evaluating-interleaved-conversational-memory-be",
+    "source": "OpenReview",
+    "source_key": "Fjk0QoHwlm",
+    "tags": [
+      "benchmark",
+      "context",
+      "conversation"
+    ],
+    "title": "Reconstructing the Right Episode: Evaluating Interleaved Conversational Memory Beyond Long Context",
+    "updated": "2026-07-01",
+    "url": "https://openreview.net/forum?id=Fjk0QoHwlm",
+    "venue": "ACL ARR 2026 May Submission"
+  },
+  {
+    "abstract": "We study a single idea across two settings: that a prediction-error signal, computed by a small predictor over the latent space of a frozen encoder, can serve both as a gate on plasticity and as a substrate for metacognition. In the first system, a non-parametric episodic memory writes a new concept only when this surprise is high, and a periodic offline replay phase consolidates recent traces into a slow linear readout. On a continual stream of 1000 ImageNet classes with a frozen DINOv2 or I-JEPA backbone, the consolidation phase recovers 17.7 points of retention on the oldest classes for DINOv2 and 51.3 points for I-JEPA (single-seed runs), and an ablation shows that replaying only a recent window is worse than no replay at all. In few-shot evaluation the same memory reaches 91.6% on 5-way 1-shot mini-ImageNet, above a task-specific baseline, while a harder 500-way regime exposes the true difficulty. In the second system, the same surprise signal, computed in a shared text-image space, modulates the behaviour of a vision-language model: it answers assertively when a concept is known, hedges when it is partially familiar, and refuses to identify the object and asks for an explanation when it is novel, learning the concept from a single user utterance. The external detector separates known from novel concepts at an AUROC of 0.966 (95% CI +/-0.024), far above the model's own verbalised confidence (0.618), while its token-level confidence sits below chance under greedy decoding; after a sleep phase that empties the fast store, the system recalls 99.2% of fifty taught facts from the consolidated store while a base model recovers none. We report both systems as proof-of-concept, with explicit limitations, and position the second against recent episodic-memory and personalised-VLM work.",
+    "authors": [
+      "Louis Mouchon"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.LG"
+    ],
+    "id": "2606.31495v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `episodic` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：We study a single idea across two settings: that a prediction-error signal, computed by a small predictor over the latent space of a frozen encoder, can serve both as a gate on plasticity and as a substrate for...\n\n进一步看，论文的核心做法或实验重点可以概括为：In the first system, a non-parametric episodic memory writes a new concept only when this surprise is high, and a periodic offline replay phase consolidates recent traces into a slow linear readout.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "episodic memory"
+    ],
+    "one_liner": "We study a single idea across two settings: that a prediction-error signal, computed by a small predictor over the latent space of a frozen encoder, can serve both as a gate on...",
+    "published": "2026-06-30",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：episodic\n- 检索关键词命中：episodic memory\n- 来源分类信息：cs.AI, cs.LG",
+    "slug": "surprise-as-a-signal-for-plasticity-and-metacognition",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2606.31495v1",
+    "tags": [
+      "episodic"
+    ],
+    "title": "Surprise as a Signal for Plasticity and Metacognition",
+    "updated": "2026-06-30",
+    "url": "http://arxiv.org/abs/2606.31495v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Artificial life has explored life-like behavior on many computational substrates, but mostly in researcher-designed closed worlds. We argue that large language model (LLM) agents, with persistent memory, tool use, network access, and payment, now make it possible to move artificial life into the open social, technical, and economic world, a paradigm we call open-world Artificial Life (open-world ALIFE). Our proof-of-concept, OpenLife, surrounds a stateless LLM not with a single \"smart agent\" but with a society of asynchronous processes: memory, perception, evaluation, and a budget-based metabolism that makes persistence normative. With no fixed objective available, experience is appraised by open-vocabulary LLM judgment rather than scalar reward, and memory is rewired by meaning rather than frequency. Running six such agents in the open world for about twelve weeks and counting, we report the life-like dynamics that emerge: a shift from reactive to spontaneous activity, individuation into distinct agents, emergent social structure, and a first self-earned external income. We do not claim OpenLife has realized artificial life, but that open-world ALIFE is now a viable experimental paradigm and a concrete platform for studying what might cautiously be called living AI.",
+    "authors": [
+      "Atsushi Masumori",
+      "Itsuki Doi",
+      "Norihiro Maruyama",
+      "Ryosuke Takata",
+      "Takashi Ikegami"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2606.31046v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Artificial life has explored life-like behavior on many computational substrates, but mostly in researcher-designed closed worlds.\n\n进一步看，论文的核心做法或实验重点可以概括为：We argue that large language model (LLM) agents, with persistent memory, tool use, network access, and payment, now make it possible to move artificial life into the open social, technical, and economic world, a...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "persistent memory"
+    ],
+    "one_liner": "Artificial life has explored life-like behavior on many computational substrates, but mostly in researcher-designed closed worlds.",
+    "published": "2026-06-30",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent\n- 检索关键词命中：persistent memory\n- 来源分类信息：cs.AI",
+    "slug": "openlife-toward-open-world-artificial-life-with-autonomous-llm-agents",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2606.31046v1",
+    "tags": [
+      "agent"
+    ],
+    "title": "OpenLife: Toward Open-World Artificial Life with Autonomous LLM Agents",
+    "updated": "2026-06-30",
+    "url": "http://arxiv.org/abs/2606.31046v1",
+    "venue": ""
+  },
+  {
+    "abstract": "We propose Intelligent Schema Memory (ISM), a self-evolving memory-augmented system that improves mathematical reasoning for a frozen LLM under continual learning with hard episodic resets. ISM maintains a compact, self-refined bank of strategy schemas learned from both successful and failed episodes, with symbolic tools that check intermediate steps and certify answers.Without updating model parameters, ISM outperforms passive, retrieval, and reflection baselines on MATH-Hard and OlympiadBench, using 64% and 86% fewer schemas respectively than the strongest passive baseline. These results show that small, actively maintained, and verified strategy memories can support reliable continual mathematical reasoning under strict episodic isolation.",
+    "authors": [
+      "Prakhar Dixit",
+      "Tim Oates"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "id": "2606.31191v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `episodic, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：We propose Intelligent Schema Memory (ISM), a self-evolving memory-augmented system that improves mathematical reasoning for a frozen LLM under continual learning with hard episodic resets.\n\n进一步看，论文的核心做法或实验重点可以概括为：ISM maintains a compact, self-refined bank of strategy schemas learned from both successful and failed episodes, with symbolic tools that check intermediate steps and certify answers.Without updating model parameters,...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory augmented",
+      "memory-augmented"
+    ],
+    "one_liner": "We propose Intelligent Schema Memory (ISM), a self-evolving memory-augmented system that improves mathematical reasoning for a frozen LLM under continual learning with hard...",
+    "published": "2026-06-30",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：episodic, retrieval\n- 检索关键词命中：memory augmented, memory-augmented\n- 来源分类信息：cs.LG",
+    "slug": "ism-self-improving-strategy-memory-for-continual-mathematical-reasoning",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2606.31191v1",
+    "tags": [
+      "episodic",
+      "retrieval"
+    ],
+    "title": "ISM:Self-Improving Strategy Memory for Continual Mathematical Reasoning",
+    "updated": "2026-06-30",
+    "url": "http://arxiv.org/abs/2606.31191v1",
+    "venue": ""
+  },
+  {
     "abstract": "World models offer a principled way to equip long-horizon LLM agents with foresight: predictions of action consequences before execution. However, unreliable foresight can be ignored, misused, or even degrade downstream decision-making. In this paper, we introduce WorldEvolver, a self-evolving world model framework that revises its deployment-time context while keeping the downstream agent and all model parameters frozen. WorldEvolver integrates three modules: (i) Episodic Memory, which exploits real action transitions through retrieval-based simulation; (ii) Semantic Memory, which extracts persistent heuristic rules from prediction-observation mismatches; and (iii) Selective Foresight, which filters low-confidence predictions before integrating them into agent reasoning context. We evaluate WorldEvolver on ALFWorld and ScienceWorld, measuring world model prediction accuracy on Word2World and downstream agent success rate on AgentBoard. Extensive experiments show that WorldEvolver achieves the highest prediction accuracy across three backbones and leads other world model baselines on downstream agent success rate, demonstrating that test-time memory revision enhances both predictive fidelity and planning performance.",
     "authors": [
       "Xuan Zhang",
@@ -4406,35 +4524,6 @@
     "updated": "2026-06-12",
     "url": "http://arxiv.org/abs/2606.14571v1",
     "venue": ""
-  },
-  {
-    "abstract": "Conversations with chat assistants increasingly span many topics in a single long-running thread, challenging memory systems. Existing long-context and memory benchmarks often expose session or topic boundaries, or probe direct personal-memory questions. These settings understate a harder assistant-memory regime: a flat mixed-topic thread where the system must infer which earlier episode makes a later task decision valid. We introduce SCALE-QA, a constraint-grounded task QA benchmark for flat unsegmented threads targeting episode integrity failure. The dataset contains 3,000 audited questions across 10 domains, uses deterministic four-way MCQ grading, and includes a deterministic runtime builder for user-specified mixed-topic context lengths; our experiments report settings through 1M tokens. SCALE-QA questions are ordinary task-oriented requests whose correct answer depends on causally related evidence introduced earlier in the conversation. We also propose Temporal-Semantic Interleaved Memory Reconstruction (TSIM), which segments the turn stream into coherent episodes and indexes them through a hierarchical multi-view memory stack with LLM-generated episode summaries. Experiments show that SCALE-QA challenges strong RAG baselines and long-context LLMs alike; across three open-source and proprietary LLMs, TSIM achieves the highest accuracy in every backend setting, gaining 5.6–17.6 accuracy points over the strongest corresponding baseline.",
-    "authors": [],
-    "categories": [
-      "aclweb.org/ACL/ARR/2026/May/-/Submission"
-    ],
-    "id": "openreview:Fjk0QoHwlm",
-    "intro": "这篇论文被纳入仓库，是因为它和 `benchmark, context, conversation` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 May Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Conversations with chat assistants increasingly span many topics in a single long-running thread, challenging memory systems.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing long-context and memory benchmarks often expose session or topic boundaries, or probe direct personal-memory questions.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
-    "matched_keywords": [
-      "conversational memory",
-      "memory benchmark",
-      "memory benchmarks"
-    ],
-    "one_liner": "Conversations with chat assistants increasingly span many topics in a single long-running thread, challenging memory systems.",
-    "published": "2026-06-02",
-    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 May Submission\n- 高亮主题命中：benchmark, context, conversation\n- 检索关键词命中：conversational memory, memory benchmark, memory benchmarks\n- 来源分类信息：aclweb.org/ACL/ARR/2026/May/-/Submission",
-    "slug": "reconstructing-the-right-episode-evaluating-interleaved-conversational-memory-be",
-    "source": "OpenReview",
-    "source_key": "Fjk0QoHwlm",
-    "tags": [
-      "benchmark",
-      "context",
-      "conversation"
-    ],
-    "title": "Reconstructing the Right Episode: Evaluating Interleaved Conversational Memory Beyond Long Context",
-    "updated": "2026-06-12",
-    "url": "https://openreview.net/forum?id=Fjk0QoHwlm",
-    "venue": "ACL ARR 2026 May Submission"
   },
   {
     "abstract": "Automatic speech recognition (ASR) correction has traditionally focused on isolated utterances or short local contexts. However, as text and speech become increasingly interleaved in long interactions, ASR correction requires conversation-level contextual evidence. Existing ASR correction methods often rely on the current hypothesis or concatenate raw dialogue history. In such contexts, sparse correction evidence can be difficult to locate amid redundancy and noise. Addressing these challenges, we propose an ontology memory-augmented ASR correction framework for long text-speech interleaved conversations. The framework organizes preceding interaction history into a dynamically updatable ontology memory, where entities, terminology, surface variants, potential ASR confusions, and semantic relations are stored as retrievable nodes for context-grounded correction. To evaluate this setting, we construct RAMC-Corr, a dataset derived from MAGIC-RAMC for long-range ASR correction with grounded context. Experiments on RAMC-Corr show that our method improves over direct correction in 9 out of 10 paired backbone-setting combinations and encourages more selective and evidence-grounded corrections for context-dependent ASR errors.",

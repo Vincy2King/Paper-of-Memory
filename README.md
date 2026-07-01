@@ -39,19 +39,23 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **612**
+- Total tracked papers: **615**
 - Last generated: **2026-07-01**
 
 ## Papers by Source
 
 - ACL Anthology: **4**
-- arXiv: **517**
+- arXiv: **520**
 - OpenReview: **91**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-07-01 | OpenReview | [Reconstructing the Right Episode: Evaluating Interleaved Conversational Memory Beyond Long Context](content/papers/reconstructing-the-right-episode-evaluating-interleaved-conversational-memory-be.md) | benchmark, context, conversation |
+| 2026-06-30 | arXiv | [Surprise as a Signal for Plasticity and Metacognition](content/papers/surprise-as-a-signal-for-plasticity-and-metacognition.md) | episodic |
+| 2026-06-30 | arXiv | [OpenLife: Toward Open-World Artificial Life with Autonomous LLM Agents](content/papers/openlife-toward-open-world-artificial-life-with-autonomous-llm-agents.md) | agent |
+| 2026-06-30 | arXiv | [ISM:Self-Improving Strategy Memory for Continual Mathematical Reasoning](content/papers/ism-self-improving-strategy-memory-for-continual-mathematical-reasoning.md) | episodic, retrieval |
 | 2026-06-29 | arXiv | [Self-Evolving World Models for LLM Agent Planning](content/papers/self-evolving-world-models-for-llm-agent-planning.md) | agent, context, episodic |
 | 2026-06-29 | OpenReview | [SHM-GATE: Structured Hierarchical Memory with Gated Admission for Multi-Agent LLM Hallucination Containment](content/papers/shm-gate-structured-hierarchical-memory-with-gated-admission-for-multi-agent-llm.md) | agent, benchmark, conversation |
 | 2026-06-29 | arXiv | [Neural Subspace Reallocation: Continual Learning as Retrieval-Based Subspace Memory Management](content/papers/neural-subspace-reallocation-continual-learning-as-retrieval-based-subspace-memo.md) | benchmark, compression, retrieval |
@@ -68,10 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-06-28 | arXiv | [Selective Memory Retention for Long-Horizon LLM Agents](content/papers/selective-memory-retention-for-long-horizon-llm-agents.md) | agent, benchmark |
 | 2026-06-28 | arXiv | [From Agent Traces to Trust: A Survey of Evidence Tracing and Execution Provenance in LLM Agents](content/papers/from-agent-traces-to-trust-a-survey-of-evidence-tracing-and-execution-provenance.md) | agent, benchmark, retrieval |
 | 2026-06-27 | arXiv | [The Efficiency Frontier: A Unified Framework for Cost-Performance Optimization in LLM Context Management](content/papers/the-efficiency-frontier-a-unified-framework-for-cost-performance-optimization-in.md) | compression, context, retrieval |
-| 2026-06-27 | arXiv | [Memory-Managed Long-Context Attention: A Preliminary Study of Editable Request-Local Memory](content/papers/memory-managed-long-context-attention-a-preliminary-study-of-editable-request-lo.md) | context, long-term |
-| 2026-06-27 | arXiv | [MedEvoEval: Evaluating Continual Evolution of Doctor Agents through Simulated Clinical Episodes](content/papers/medevoeval-evaluating-continual-evolution-of-doctor-agents-through-simulated-cli.md) | agent, benchmark, retrieval |
-| 2026-06-27 | arXiv | [HyphaeDB: A Living Knowledge Topology for Agent-First Memory](content/papers/hyphaedb-a-living-knowledge-topology-for-agent-first-memory.md) | agent |
-| 2026-06-26 | arXiv | [The Power of Second Order Methods for Sequence Preconditioning](content/papers/the-power-of-second-order-methods-for-sequence-preconditioning.md) | compression |
 
 ## Suggested GitHub Setup
 
