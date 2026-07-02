@@ -29,6 +29,33 @@
     "venue": "ACL ARR 2025 February Submission"
   },
   {
+    "abstract": "When instruction-tuned LLMs store past experience in retrieval-augmented memory, much of memory's measured influence in our evaluation flows through verbatim answer copying rather than higher-level reasoning. Across $1{,}866$ controlled experiments spanning three model families, multi-episode agent tasks, and three external conflict benchmarks, removing concrete answer bindings sharply reduces override on the strongest-conflict tasks and attenuates it on more naturalistic benchmarks. Override strength changes at a concentrated boundary we term the *override cliff*: between answer-level and paraphrase-level memory content, override drops $4.5\\times$ on average in a single specificity step. On NQ-Swap, removing the swapped entity reduces override to zero on both tested models, and the cliff replicates on two frontier API models with full closed-book filtering (GPT-4o-mini $1.6\\times$; Claude Haiku 4.5 $1.8\\times$), with attenuated but persistent effect. On $\\tau$-bench, a real agent benchmark with deterministic evaluation, verbatim tool-call memories cause $20.6\\%$ stale parameter copying vs. $6.3\\%$ for strategy-only memories ($p{=}0.017$, cliff ratio $3.3\\times$), even when the agent performs fresh tool lookups. Logit probes are consistent with a ${\\sim}5\\times$ token-level amplification at this boundary, and paraphrased or summarized memories often avoid the strongest override failures.",
+    "authors": [],
+    "categories": [
+      "aclweb.org/ACL/ARR/2026/May/-/Submission"
+    ],
+    "id": "openreview:mNtrAwNwyD",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, retrieval` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 May Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：When instruction-tuned LLMs store past experience in retrieval-augmented memory, much of memory's measured influence in our evaluation flows through verbatim answer copying rather than higher-level reasoning.\n\n进一步看，论文的核心做法或实验重点可以概括为：Across $1{,}866$ controlled experiments spanning three model families, multi-episode agent tasks, and three external conflict benchmarks, removing concrete answer bindings sharply reduces override on the strongest-...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "When instruction-tuned LLMs store past experience in retrieval-augmented memory, much of memory's measured influence in our evaluation flows through verbatim answer copying...",
+    "published": "2026-06-02",
+    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 May Submission\n- 高亮主题命中：agent, benchmark, retrieval\n- 检索关键词命中：agent memory\n- 来源分类信息：aclweb.org/ACL/ARR/2026/May/-/Submission",
+    "slug": "the-override-cliff-how-agent-memory-hijacks-llm-reasoning",
+    "source": "OpenReview",
+    "source_key": "mNtrAwNwyD",
+    "tags": [
+      "agent",
+      "benchmark",
+      "retrieval"
+    ],
+    "title": "The Override Cliff: How Agent Memory Hijacks LLM Reasoning",
+    "updated": "2026-07-02",
+    "url": "https://openreview.net/forum?id=mNtrAwNwyD",
+    "venue": "ACL ARR 2026 May Submission"
+  },
+  {
     "abstract": "Long-term memory is important for chatbots and dialogue systems (DS) to create consistent and human-like conversations, evidenced by numerous developed memory-augmented DS (MADS). To evaluate the effectiveness of such MADS, existing commonly used evaluation metrics, like retrieval accuracy and perplexity (PPL), mainly focus on query-oriented factualness and language quality assessment. However, these metrics often lack practical value. Moreover, the evaluation dimensions are insufficient for human-like assessment in DS. Regarding memory-recalling paradigms, current evaluation schemes only consider passive memory retrieval while ignoring diverse memory recall with rich triggering factors, e.g., emotions and surroundings, which can be essential in emotional support scenarios. To bridge the gap, we construct a novel Memory-Augmented Dialogue Benchmark (MADail-Bench) covering various memory-recalling paradigms based on cognitive science and psychology theories. The benchmark assesses two tasks separately: memory retrieval and memory recognition with the incorporation of both passive and proactive memory recall data. We introduce new scoring criteria to the evaluation, including memory injection, emotion support (ES) proficiency, and intimacy, to comprehensively assess generated responses. Results from cutting-edge embedding models and large language models on this benchmark indicate the potential for further advancement. Extensive testing further reveals correlations between memory injection, ES proficiency, and intimacy.",
     "authors": [],
     "categories": [
@@ -313,6 +340,114 @@
     "venue": "ACL ARR 2026 May Submission"
   },
   {
+    "abstract": "Memory has emerged as a cornerstone of modern LLM-based agents, supporting their evolution from single-turn assistants to long-term collaborators. However, memory is not always beneficial: retrieved memories often induce a critical issue of sycophancy, causing agents to over-align with the user at the cost of factual accuracy or objective reasoning. Despite this emerging risk, existing memory benchmarks primarily evaluate whether memories are correctly stored, retrieved, or updated, while overlooking how retrieved memories influence downstream reasoning and decision-making. To bridge this gap, we propose MemSyco-Bench, a comprehensive benchmark for evaluating memory-induced sycophancy in agent systems. MemSyco-Bench measures when memory should influence a decision and how valid memory should be used. Specifically, it covers five tasks that assess whether agents can reject memory as factual evidence, respect its applicable scope, resolve conflicts between memory and objective evidence, track memory updates, and use valid memory for personalization. All related resources are collected for the community at https://github.com/XMUDeepLIT/MemSyco-Bench.",
+    "authors": [
+      "Zhishang Xiang",
+      "Zerui Chen",
+      "Yunbo Tang",
+      "Zhimin Wei",
+      "Ruqin Ning",
+      "Yujie Lin",
+      "Qinggang Zhang",
+      "Jinsong Su"
+    ],
+    "categories": [
+      "cs.IR",
+      "cs.AI"
+    ],
+    "id": "2607.01071v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, long-term` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Memory has emerged as a cornerstone of modern LLM-based agents, supporting their evolution from single-turn assistants to long-term collaborators.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, memory is not always beneficial: retrieved memories often induce a critical issue of sycophancy, causing agents to over-align with the user at the cost of factual accuracy or objective reasoning.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory",
+      "memory benchmark",
+      "memory benchmarks",
+      "retrieval memory"
+    ],
+    "one_liner": "Memory has emerged as a cornerstone of modern LLM-based agents, supporting their evolution from single-turn assistants to long-term collaborators.",
+    "published": "2026-07-01",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, long-term\n- 检索关键词命中：agent memory, memory benchmark, memory benchmarks, retrieval memory\n- 来源分类信息：cs.IR, cs.AI",
+    "slug": "memsyco-bench-benchmarking-sycophancy-in-agent-memory",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2607.01071v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "long-term"
+    ],
+    "title": "MemSyco-Bench: Benchmarking Sycophancy in Agent Memory",
+    "updated": "2026-07-01",
+    "url": "http://arxiv.org/abs/2607.01071v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Multi-round reflection lets agents built on large language models recover from failures within a single task, but each task remains an isolated episode: lessons learned across many reflection rounds on one task are discarded before the next begins. We study this gap on a code-generation task: from a scientific paper section, the agent writes Python in the open-source Manim library to render a mathematical animation. We present ManimAgent, a self-evolving multimodal agent that carries reflection experience across tasks through a dual-channel Episodic Memory Bank grown entirely from its own task stream, with no weight updates and no human seeds. After each animation converges, a vision-language model scores the rendered keyframes; the resulting signals populate a positive channel M+ that stores success rationales as soft Reference Examples, and a negative channel M- that stores validated failure patterns as hard Known Pitfalls. On a fixed-probe evaluation against no-memory, matched-budget retrieval-augmented generation, and shuffled-memory baselines, blind human Pass@1 rises and reflection rounds fall as memory size grows. We will release the code, frozen memory snapshots, and the task stream.",
+    "authors": [
+      "Wenjia Jiang",
+      "Zongyuan Cai",
+      "Yuanhang Shao",
+      "Chenru Wang",
+      "Boyan Han",
+      "Zhixue Song",
+      "Keyu Chen",
+      "Shengwei An",
+      "Xu Yang",
+      "Zhou Yang"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2606.30296v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, episodic, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Multi-round reflection lets agents built on large language models recover from failures within a single task, but each task remains an isolated episode: lessons learned across many reflection rounds on one task are...\n\n进一步看，论文的核心做法或实验重点可以概括为：We study this gap on a code-generation task: from a scientific paper section, the agent writes Python in the open-source Manim library to render a mathematical animation.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "episodic memory"
+    ],
+    "one_liner": "Multi-round reflection lets agents built on large language models recover from failures within a single task, but each task remains an isolated episode: lessons learned across...",
+    "published": "2026-06-29",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, episodic, retrieval\n- 检索关键词命中：episodic memory\n- 来源分类信息：cs.AI",
+    "slug": "manimagent-self-evolving-multimodal-agents-for-visual-education",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2606.30296v2",
+    "tags": [
+      "agent",
+      "episodic",
+      "retrieval"
+    ],
+    "title": "ManimAgent: Self-Evolving Multimodal Agents for Visual Education",
+    "updated": "2026-07-01",
+    "url": "http://arxiv.org/abs/2606.30296v2",
+    "venue": ""
+  },
+  {
+    "abstract": "We propose Intelligent Schema Memory (ISM), a self-evolving memory-augmented system that improves mathematical reasoning for a frozen LLM under continual learning with hard episodic resets. ISM maintains a compact, self-refined bank of strategy schemas learned from both successful and failed episodes, with symbolic tools that check intermediate steps and certify answers. Without updating model parameters, ISM outperforms passive, retrieval, and reflection baselines on MATH-Hard and OlympiadBench, using 64% and 86% fewer schemas respectively than the strongest passive baseline. These results show that small, actively maintained, and verified strategy memories can support reliable continual mathematical reasoning under strict episodic isolation.The codebase is available at https://github.com/pdx97/ISM .",
+    "authors": [
+      "Prakhar Dixit",
+      "Tim Oates"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "id": "2606.31191v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `episodic, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：We propose Intelligent Schema Memory (ISM), a self-evolving memory-augmented system that improves mathematical reasoning for a frozen LLM under continual learning with hard episodic resets.\n\n进一步看，论文的核心做法或实验重点可以概括为：ISM maintains a compact, self-refined bank of strategy schemas learned from both successful and failed episodes, with symbolic tools that check intermediate steps and certify answers.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory augmented",
+      "memory-augmented"
+    ],
+    "one_liner": "We propose Intelligent Schema Memory (ISM), a self-evolving memory-augmented system that improves mathematical reasoning for a frozen LLM under continual learning with hard...",
+    "published": "2026-06-30",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：episodic, retrieval\n- 检索关键词命中：memory augmented, memory-augmented\n- 来源分类信息：cs.LG",
+    "slug": "ism-self-improving-strategy-memory-for-continual-mathematical-reasoning",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2606.31191v2",
+    "tags": [
+      "episodic",
+      "retrieval"
+    ],
+    "title": "ISM:Self-Improving Strategy Memory for Continual Mathematical Reasoning",
+    "updated": "2026-07-01",
+    "url": "http://arxiv.org/abs/2606.31191v2",
+    "venue": ""
+  },
+  {
     "abstract": "Large language model agents are increasingly deployed in human-human interaction settings, such as meeting assistants and clinical documentation systems, where they must observe conversations and retain information for downstream queries. Unlike traditional human--assistant settings, these environments are inherently multimodal, involve complex discourse phenomena such as anaphora and deixis, and contain asynchronous or conflicting information from multiple participants. However, existing memory benchmarks largely focus on single-user, text-only interactions, failing to capture these challenges. To address this gap, we introduce H2HMem, a Human-to-Human Multimodal Memory Benchmark for evaluating memory capabilities in complex human-human interactions. H2HMem includes both dyadic and multi-party conversations with multimodal information streams, and evaluates agents along three dimensions: memory recall, reasoning, and application. Experiments with advanced agents reveal substantial limitations in constructing, retaining, and utilizing memories across modalities, participants, and sessions, highlighting substantial room for improvement in next-generation LLM agents.",
     "authors": [],
     "categories": [
@@ -369,6 +504,103 @@
     "updated": "2026-07-01",
     "url": "https://openreview.net/forum?id=Oul2AgHzvF",
     "venue": "ACL ARR 2026 May Submission"
+  },
+  {
+    "abstract": "Complexity and interpretability rarely coincide: systems rich enough for complex behaviours to emerge are usually too opaque to question, while transparent ones are too simple for anything complex to emerge. A single large language model (LLM) is a static artefact, hardly exhibiting any of the emergent properties we associate with life. This changes through interaction: populations of LLMs display emergent dynamics absent from isolated models. Furthermore, LLMs can be endowed with persistent memory, tools and shared skills, and the capacity to initiate actions unprompted, i.e., turning LLMs agentic. In this paper, we argue that such collectives of agents can serve as a computational substrate for Artificial Life (ALife) research. Critically, since the agents communicate in natural language, their collective behaviour can be directly interrogated by examining textual traces and asking the agents themselves. We outline the notion of interpretability in language-model research and extend it for collectives of agents. Lastly, we survey recent examples of agentic LLM collectives that already instantiate the idea of agentic substrates, from controlled experiments to deployments in the wild.",
+    "authors": [
+      "Elias Najarro",
+      "Ane Espeseth",
+      "Eleni Nisioti",
+      "Sebastian Risi",
+      "Stefano Nichele"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "id": "2607.01047v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Complexity and interpretability rarely coincide: systems rich enough for complex behaviours to emerge are usually too opaque to question, while transparent ones are too simple for anything complex to emerge.\n\n进一步看，论文的核心做法或实验重点可以概括为：A single large language model (LLM) is a static artefact, hardly exhibiting any of the emergent properties we associate with life.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "persistent memory"
+    ],
+    "one_liner": "Complexity and interpretability rarely coincide: systems rich enough for complex behaviours to emerge are usually too opaque to question, while transparent ones are too simple...",
+    "published": "2026-07-01",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent\n- 检索关键词命中：persistent memory\n- 来源分类信息：cs.CL",
+    "slug": "conversable-complexity-agentic-llm-collectives-as-interpretable-substrates",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2607.01047v1",
+    "tags": [
+      "agent"
+    ],
+    "title": "Conversable Complexity: Agentic LLM Collectives as Interpretable Substrates",
+    "updated": "2026-07-01",
+    "url": "http://arxiv.org/abs/2607.01047v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Agricultural advisory systems face a fundamental tension: static agronomic guidelines offer consistent, evidence-based recommendations, yet remain blind to in-season variability and dynamic uncertainties. Recent advisory systems powered by LLMs are liable for a different risk of generating recommendations that are agronomically credible but physiologically unconvincing. Agri-SAGE is a closed-loop framework designed to resolve the above two limitations by integrating retrieval-grounded multi-agent LLM reasoning with APSIM-based biophysical simulation, to generate and validate agronomic advisories. To assess this framework, we evaluate three reasoning approaches, namely Plan-and-Solve, Tree of Thoughts, and Reflexion, over a 10-year retrospective analysis. All three significantly outperform static PoP (Package-of-Practice) baselines, with Tree of Thoughts achieving impressive peak yields. At the same time, Reflexion achieves comparable agronomic outcomes at substantially lower computational cost by leveraging cross-seasonal episodic memory.",
+    "authors": [
+      "Vedant Balasubramaniam",
+      "Geetha Charan",
+      "Manojkumar Patil",
+      "Rohit P Suresh",
+      "V Priyanka",
+      "Kodur Sai Vinay Sathvik",
+      "Y. Narahari"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.MA"
+    ],
+    "id": "2607.00454v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, context, episodic, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Agricultural advisory systems face a fundamental tension: static agronomic guidelines offer consistent, evidence-based recommendations, yet remain blind to in-season variability and dynamic uncertainties.\n\n进一步看，论文的核心做法或实验重点可以概括为：Recent advisory systems powered by LLMs are liable for a different risk of generating recommendations that are agronomically credible but physiologically unconvincing.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "episodic memory"
+    ],
+    "one_liner": "Agricultural advisory systems face a fundamental tension: static agronomic guidelines offer consistent, evidence-based recommendations, yet remain blind to in-season variability...",
+    "published": "2026-07-01",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, context, episodic, retrieval\n- 检索关键词命中：episodic memory\n- 来源分类信息：cs.AI, cs.MA",
+    "slug": "agri-sage-simulation-grounded-multi-agent-llm-for-context-aware-agricultural-adv",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2607.00454v1",
+    "tags": [
+      "agent",
+      "context",
+      "episodic",
+      "retrieval"
+    ],
+    "title": "Agri-SAGE: Simulation-Grounded Multi-Agent LLM for Context-Aware Agricultural Advisory Generation",
+    "updated": "2026-07-01",
+    "url": "http://arxiv.org/abs/2607.00454v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Large language models (LLMs) are powerful pattern-completion systems, but their default operating mode - predicting the next token from a static context - does not reliably produce persistent, manipulable representations of an external world. Many tasks that look like \"reasoning\" in text become substantially harder once the environment is partially observable, stateful, and requires memory and structured hypotheses about hidden state. AGI Maze is a lightweight framework for building such environments without requiring high-dimensional sensory inputs. It provides a family of grid-based maze tasks with a clean API and multiple difficulty regimes. The goal is to create benchmarks where agents must learn and use world state representations, not just infer a local rule over readily provided observations. We provide an initial evaluation of several vanilla LLMs on simple mazes showing that they fail to represent mazes internally at LLM inference time. We also introduce a baseline agent, which is allowed to use its message history as a working memory to construct descriptions of observations at agentic runtime. Although this can improve performance, it is still insufficient for an LLM agent to reliably solve even small mazes within a step budget that is more than enough for humans.",
+    "authors": [
+      "Alexey Potapov"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2607.00627v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Large language models (LLMs) are powerful pattern-completion systems, but their default operating mode - predicting the next token from a static context - does not reliably produce persistent, manipulable...\n\n进一步看，论文的核心做法或实验重点可以概括为：Many tasks that look like \"reasoning\" in text become substantially harder once the environment is partially observable, stateful, and requires memory and structured hypotheses about hidden state.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "working memory"
+    ],
+    "one_liner": "Large language models (LLMs) are powerful pattern-completion systems, but their default operating mode - predicting the next token from a static context - does not reliably...",
+    "published": "2026-07-01",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context\n- 检索关键词命中：working memory\n- 来源分类信息：cs.AI",
+    "slug": "agi-maze-as-a-benchmark-framework-for-world-modeling-agents",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2607.00627v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context"
+    ],
+    "title": "AGI Maze as a Benchmark Framework for World-Modeling Agents",
+    "updated": "2026-07-01",
+    "url": "http://arxiv.org/abs/2607.00627v1",
+    "venue": ""
   },
   {
     "abstract": "We study a single idea across two settings: that a prediction-error signal, computed by a small predictor over the latent space of a frozen encoder, can serve both as a gate on plasticity and as a substrate for metacognition. In the first system, a non-parametric episodic memory writes a new concept only when this surprise is high, and a periodic offline replay phase consolidates recent traces into a slow linear readout. On a continual stream of 1000 ImageNet classes with a frozen DINOv2 or I-JEPA backbone, the consolidation phase recovers 17.7 points of retention on the oldest classes for DINOv2 and 51.3 points for I-JEPA (single-seed runs), and an ablation shows that replaying only a recent window is worse than no replay at all. In few-shot evaluation the same memory reaches 91.6% on 5-way 1-shot mini-ImageNet, above a task-specific baseline, while a harder 500-way regime exposes the true difficulty. In the second system, the same surprise signal, computed in a shared text-image space, modulates the behaviour of a vision-language model: it answers assertively when a concept is known, hedges when it is partially familiar, and refuses to identify the object and asks for an explanation when it is novel, learning the concept from a single user utterance. The external detector separates known from novel concepts at an AUROC of 0.966 (95% CI +/-0.024), far above the model's own verbalised confidence (0.618), while its token-level confidence sits below chance under greedy decoding; after a sleep phase that empties the fast store, the system recalls 99.2% of fifty taught facts from the consolidated store while a base model recovers none. We report both systems as proof-of-concept, with explicit limitations, and position the second against recent episodic-memory and personalised-VLM work.",
@@ -1422,33 +1654,6 @@
     "updated": "2026-06-25",
     "url": "http://arxiv.org/abs/2606.26627v1",
     "venue": ""
-  },
-  {
-    "abstract": "When instruction-tuned LLMs store past experience in retrieval-augmented memory, much of memory's measured influence in our evaluation flows through verbatim answer copying rather than higher-level reasoning. Across $1{,}866$ controlled experiments spanning three model families, multi-episode agent tasks, and three external conflict benchmarks, removing concrete answer bindings sharply reduces override on the strongest-conflict tasks and attenuates it on more naturalistic benchmarks. Override strength changes at a concentrated boundary we term the *override cliff*: between answer-level and paraphrase-level memory content, override drops $4.5\\times$ on average in a single specificity step. On NQ-Swap, removing the swapped entity reduces override to zero on both tested models, and the cliff replicates on two frontier API models with full closed-book filtering (GPT-4o-mini $1.6\\times$; Claude Haiku 4.5 $1.8\\times$), with attenuated but persistent effect. On $\\tau$-bench, a real agent benchmark with deterministic evaluation, verbatim tool-call memories cause $20.6\\%$ stale parameter copying vs. $6.3\\%$ for strategy-only memories ($p{=}0.017$, cliff ratio $3.3\\times$), even when the agent performs fresh tool lookups. Logit probes are consistent with a ${\\sim}5\\times$ token-level amplification at this boundary, and paraphrased or summarized memories often avoid the strongest override failures.",
-    "authors": [],
-    "categories": [
-      "aclweb.org/ACL/ARR/2026/May/-/Submission"
-    ],
-    "id": "openreview:mNtrAwNwyD",
-    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, retrieval` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 May Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：When instruction-tuned LLMs store past experience in retrieval-augmented memory, much of memory's measured influence in our evaluation flows through verbatim answer copying rather than higher-level reasoning.\n\n进一步看，论文的核心做法或实验重点可以概括为：Across $1{,}866$ controlled experiments spanning three model families, multi-episode agent tasks, and three external conflict benchmarks, removing concrete answer bindings sharply reduces override on the strongest-...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
-    "matched_keywords": [
-      "agent memory"
-    ],
-    "one_liner": "When instruction-tuned LLMs store past experience in retrieval-augmented memory, much of memory's measured influence in our evaluation flows through verbatim answer copying...",
-    "published": "2026-06-02",
-    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 May Submission\n- 高亮主题命中：agent, benchmark, retrieval\n- 检索关键词命中：agent memory\n- 来源分类信息：aclweb.org/ACL/ARR/2026/May/-/Submission",
-    "slug": "the-override-cliff-how-agent-memory-hijacks-llm-reasoning",
-    "source": "OpenReview",
-    "source_key": "mNtrAwNwyD",
-    "tags": [
-      "agent",
-      "benchmark",
-      "retrieval"
-    ],
-    "title": "The Override Cliff: How Agent Memory Hijacks LLM Reasoning",
-    "updated": "2026-06-24",
-    "url": "https://openreview.net/forum?id=mNtrAwNwyD",
-    "venue": "ACL ARR 2026 May Submission"
   },
   {
     "abstract": "Human episodic memory supports the retrieval of experiences that unfold over extended timescales, yet the computational mechanisms underlying this ability remain debated due to the limited mechanistic accessibility in long-term memory experiments in humans. Long-context LLMs may offer promising ways to reveal plausible computational mechanisms that drive this type of retrieval. Here, we investigate whether and how LLMs capture the core behavioral signatures of episodic memory via a temporal order memory task. Using a new dataset of human behavior based on memory of a full-length novel, we show that models exhibit the same characteristic distance effect observed in humans on this task. We next apply long-context mechanistic interpretability analyses to uncover how models solve this task, and find that model performance relies on a one-dimensional temporal code that is reinstated during retrieval by a single time-reinstatement attention head. These findings support temporal context reinstatement as an important mechanism for episodic-like temporal-order memory in LLMs, offering new insights into how temporal aspects of long-term episodic memory may be instantiated in both artificial and biological systems.",

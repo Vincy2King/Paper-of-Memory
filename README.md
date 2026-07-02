@@ -39,13 +39,13 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **625**
+- Total tracked papers: **631**
 - Last generated: **2026-07-02**
 
 ## Papers by Source
 
 - ACL Anthology: **4**
-- arXiv: **520**
+- arXiv: **526**
 - OpenReview: **101**
 
 ## Latest Papers
@@ -53,6 +53,7 @@ python3 scripts/update_papers.py --build-only
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
 | 2026-07-02 | OpenReview | [Think-in-Memory: Metacognition-Augmented LLM with Long-Term Memory](content/papers/think-in-memory-metacognition-augmented-llm-with-long-term-memory.md) | agent, context, conversation |
+| 2026-07-02 | OpenReview | [The Override Cliff: How Agent Memory Hijacks LLM Reasoning](content/papers/the-override-cliff-how-agent-memory-hijacks-llm-reasoning.md) | agent, benchmark, retrieval |
 | 2026-07-02 | OpenReview | [MADial-Bench: Towards Real-world Evaluation of Memory-Augmented Dialogue Generation](content/papers/madial-bench-towards-real-world-evaluation-of-memory-augmented-dialogue-generati.md) | benchmark, conversation, long-term |
 | 2026-07-02 | OpenReview | [Long Context Modeling with Ranked Memory-Augmented Retrieval](content/papers/long-context-modeling-with-ranked-memory-augmented-retrieval.md) | benchmark, context, long-term |
 | 2026-07-02 | OpenReview | [Long Context Modeling with Ranked Memory-Augmented Retrieval](content/papers/long-context-modeling-with-ranked-memory-augmented-retrieval.md) | benchmark, context, long-term |
@@ -63,15 +64,14 @@ python3 scripts/update_papers.py --build-only
 | 2026-07-02 | OpenReview | [Evaluating the Long-Term Memory of Large Language Models](content/papers/evaluating-the-long-term-memory-of-large-language-models.md) | conversation, long-term |
 | 2026-07-02 | OpenReview | [A Controlled Benchmark for Memory Mechanisms in Efficient-Attention Transformers](content/papers/a-controlled-benchmark-for-memory-mechanisms-in-efficient-attention-transformers.md) | benchmark, context |
 | 2026-07-01 | OpenReview | [Reconstructing the Right Episode: Evaluating Interleaved Conversational Memory Beyond Long Context](content/papers/reconstructing-the-right-episode-evaluating-interleaved-conversational-memory-be.md) | benchmark, context, conversation |
+| 2026-07-01 | arXiv | [MemSyco-Bench: Benchmarking Sycophancy in Agent Memory](content/papers/memsyco-bench-benchmarking-sycophancy-in-agent-memory.md) | agent, benchmark, long-term |
+| 2026-07-01 | arXiv | [ManimAgent: Self-Evolving Multimodal Agents for Visual Education](content/papers/manimagent-self-evolving-multimodal-agents-for-visual-education.md) | agent, episodic, retrieval |
+| 2026-07-01 | arXiv | [ISM:Self-Improving Strategy Memory for Continual Mathematical Reasoning](content/papers/ism-self-improving-strategy-memory-for-continual-mathematical-reasoning.md) | episodic, retrieval |
 | 2026-07-01 | OpenReview | [H2HMem: A Multimodal Memory Benchmark for Agents in Human-Human Interactions](content/papers/h2hmem-a-multimodal-memory-benchmark-for-agents-in-human-human-interactions.md) | agent, benchmark, conversation |
 | 2026-07-01 | OpenReview | [Episodic Memory from Compression Boundaries in Latent Representation Space](content/papers/episodic-memory-from-compression-boundaries-in-latent-representation-space.md) | agent, compression, context |
-| 2026-06-30 | arXiv | [Surprise as a Signal for Plasticity and Metacognition](content/papers/surprise-as-a-signal-for-plasticity-and-metacognition.md) | episodic |
-| 2026-06-30 | arXiv | [OpenLife: Toward Open-World Artificial Life with Autonomous LLM Agents](content/papers/openlife-toward-open-world-artificial-life-with-autonomous-llm-agents.md) | agent |
-| 2026-06-30 | arXiv | [ISM:Self-Improving Strategy Memory for Continual Mathematical Reasoning](content/papers/ism-self-improving-strategy-memory-for-continual-mathematical-reasoning.md) | episodic, retrieval |
-| 2026-06-29 | arXiv | [Self-Evolving World Models for LLM Agent Planning](content/papers/self-evolving-world-models-for-llm-agent-planning.md) | agent, context, episodic |
-| 2026-06-29 | OpenReview | [SHM-GATE: Structured Hierarchical Memory with Gated Admission for Multi-Agent LLM Hallucination Containment](content/papers/shm-gate-structured-hierarchical-memory-with-gated-admission-for-multi-agent-llm.md) | agent, benchmark, conversation |
-| 2026-06-29 | arXiv | [Neural Subspace Reallocation: Continual Learning as Retrieval-Based Subspace Memory Management](content/papers/neural-subspace-reallocation-continual-learning-as-retrieval-based-subspace-memo.md) | benchmark, compression, retrieval |
-| 2026-06-29 | arXiv | [Neural Procedural Memory: Empowering LLM Agents with Implicit Activation Steering](content/papers/neural-procedural-memory-empowering-llm-agents-with-implicit-activation-steering.md) | agent, benchmark, context |
+| 2026-07-01 | arXiv | [Conversable Complexity: Agentic LLM Collectives as Interpretable Substrates](content/papers/conversable-complexity-agentic-llm-collectives-as-interpretable-substrates.md) | agent |
+| 2026-07-01 | arXiv | [Agri-SAGE: Simulation-Grounded Multi-Agent LLM for Context-Aware Agricultural Advisory Generation](content/papers/agri-sage-simulation-grounded-multi-agent-llm-for-context-aware-agricultural-adv.md) | agent, context, episodic |
+| 2026-07-01 | arXiv | [AGI Maze as a Benchmark Framework for World-Modeling Agents](content/papers/agi-maze-as-a-benchmark-framework-for-world-modeling-agents.md) | agent, benchmark, context |
 
 ## Suggested GitHub Setup
 
