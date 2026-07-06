@@ -4,7 +4,7 @@
 - Venue: ACL ARR 2026 May Submission
 - Paper ID: openreview:2Zp5AW2HRK
 - Published: 2026-06-02
-- Updated: 2026-06-13
+- Updated: 2026-07-06
 - Authors: Unknown
 - Tags: agent, context, conversation, long-term, retrieval
 - Categories: aclweb.org/ACL/ARR/2026/May/-/Submission

@@ -52,6 +52,7 @@ python3 scripts/update_papers.py --build-only
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-07-06 | OpenReview | [Schema-Mem: Structured and Evolving Memory for Long-term Conversational Knowledge](content/papers/schema-mem-structured-and-evolving-memory-for-long-term-conversational-knowledge.md) | agent, context, conversation |
 | 2026-07-05 | OpenReview | [LongMemEval-V2: Benchmarking Agent Memory for Experienced Colleagues](content/papers/longmemeval-v2-benchmarking-agent-memory-for-experienced-colleagues.md) | agent, benchmark, context |
 | 2026-07-05 | OpenReview | [BenchPreS: A Benchmark for Context-Aware Personalized Preference Selectivity of Persistent-Memory LLMs](content/papers/benchpres-a-benchmark-for-context-aware-personalized-preference-selectivity-of-p.md) | benchmark, context |
 | 2026-07-05 | OpenReview | [Before It Persists: Write-Time Defense for Multimodal Agent Memory](content/papers/before-it-persists-write-time-defense-for-multimodal-agent-memory.md) | agent, benchmark, retrieval |
@@ -71,7 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-07-02 | OpenReview | [Evaluating the Long-Term Memory of Large Language Models](content/papers/evaluating-the-long-term-memory-of-large-language-models.md) | conversation, long-term |
 | 2026-07-02 | OpenReview | [Evaluating the Long-Term Memory of Large Language Models](content/papers/evaluating-the-long-term-memory-of-large-language-models.md) | conversation, long-term |
 | 2026-07-02 | OpenReview | [Evaluating the Long-Term Memory of Large Language Models](content/papers/evaluating-the-long-term-memory-of-large-language-models.md) | conversation, long-term |
-| 2026-07-02 | arXiv | [Episodic-to-Semantic Consolidation Without Identity Drift](content/papers/episodic-to-semantic-consolidation-without-identity-drift.md) | agent, context, episodic |
 
 ## Suggested GitHub Setup
 

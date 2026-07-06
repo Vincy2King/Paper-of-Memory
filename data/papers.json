@@ -1,5 +1,34 @@
 [
   {
+    "abstract": "Long-term conversational agents require memory systems that continuously acquire and maintain user-specific knowledge from unstructured dialogue histories. Existing LLM memory solutions often rely on flat text storage or coarse summaries, which suffer from redundancy and weak factual grounding, making it difficult to reason over evolving information in long-term interactions. To address this, we propose \\textit{Schema-Mem}, a structured and evolving memory framework that represents conversational knowledge as fact-level schema units. Schema-Mem incrementally builds a connected memory graph by extracting key facts from each dialogue turn, linking related historical units through hybrid lexical–semantic search, and refining memory via LLM-based verification to resolve conflicts and incorporate new details. For question answering, it performs multi-source retrieval over schema units, linked contexts, and similar raw dialogues to provide grounded evidence for accurate responses. Extensive experiments on LoCoMo and LongMemEval show that Schema-Mem consistently outperforms strong baselines for long-term conversational memory and question answering.",
+    "authors": [],
+    "categories": [
+      "aclweb.org/ACL/ARR/2026/May/-/Submission"
+    ],
+    "id": "openreview:2Zp5AW2HRK",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, context, conversation, long-term` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 May Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Long-term conversational agents require memory systems that continuously acquire and maintain user-specific knowledge from unstructured dialogue histories.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing LLM memory solutions often rely on flat text storage or coarse summaries, which suffer from redundancy and weak factual grounding, making it difficult to reason over evolving information in long-term...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "conversational memory"
+    ],
+    "one_liner": "Long-term conversational agents require memory systems that continuously acquire and maintain user-specific knowledge from unstructured dialogue histories.",
+    "published": "2026-06-02",
+    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 May Submission\n- 高亮主题命中：agent, context, conversation, long-term, retrieval\n- 检索关键词命中：conversational memory\n- 来源分类信息：aclweb.org/ACL/ARR/2026/May/-/Submission",
+    "slug": "schema-mem-structured-and-evolving-memory-for-long-term-conversational-knowledge",
+    "source": "OpenReview",
+    "source_key": "2Zp5AW2HRK",
+    "tags": [
+      "agent",
+      "context",
+      "conversation",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "Schema-Mem: Structured and Evolving Memory for Long-term Conversational Knowledge",
+    "updated": "2026-07-06",
+    "url": "https://openreview.net/forum?id=2Zp5AW2HRK",
+    "venue": "ACL ARR 2026 May Submission"
+  },
+  {
     "abstract": "Long-term memory is crucial for agents in specialized web environments, where success depends on recalling interface affordances, workflows, state dynamics, and recurring failure modes. We introduce LongMemEval-V2 (LME-V2), a benchmark for evaluating whether memory systems can accumulate environment-specific experience from multimodal web agent trajectories. LME-V2 contains 451 manually curated questions from customized shopping, forum, admin, and ServiceNow-style environments, with histories ranging from 25M to 115M tokens. Frontier LLMs reach at most 14.1% without trajectory evidence, confirming that LME-V2 requires learned experience beyond parametric knowledge. We evaluate memory under a context-gathering formulation and propose AgentRunbook: AgentRunbook-R is an efficient RAG pipeline over raw states, transitions, and notes, while AgentRunbook-C uses a scaffolded coding agent to gather evidence from trajectory files. AgentRunbook-C achieves the best overall accuracy, reaching 74.9% on LME-V2-Small and 70.1% on LME-V2-Medium, while improving the accuracy and latency trade-off over an off-the-shelf coding agent. We will release the benchmark and memory implementations.",
     "authors": [
       "Di Wu",
@@ -5307,35 +5336,6 @@
     "updated": "2026-06-13",
     "url": "http://arxiv.org/abs/2606.15405v1",
     "venue": ""
-  },
-  {
-    "abstract": "Long-term conversational agents require memory systems that continuously acquire and maintain user-specific knowledge from unstructured dialogue histories. Existing LLM memory solutions often rely on flat text storage or coarse summaries, which suffer from redundancy and weak factual grounding, making it difficult to reason over evolving information in long-term interactions. To address this, we propose \\textit{Schema-Mem}, a structured and evolving memory framework that represents conversational knowledge as fact-level schema units. Schema-Mem incrementally builds a connected memory graph by extracting key facts from each dialogue turn, linking related historical units through hybrid lexical–semantic search, and refining memory via LLM-based verification to resolve conflicts and incorporate new details. For question answering, it performs multi-source retrieval over schema units, linked contexts, and similar raw dialogues to provide grounded evidence for accurate responses. Extensive experiments on LoCoMo and LongMemEval show that Schema-Mem consistently outperforms strong baselines for long-term conversational memory and question answering.",
-    "authors": [],
-    "categories": [
-      "aclweb.org/ACL/ARR/2026/May/-/Submission"
-    ],
-    "id": "openreview:2Zp5AW2HRK",
-    "intro": "这篇论文被纳入仓库，是因为它和 `agent, context, conversation, long-term` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 May Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Long-term conversational agents require memory systems that continuously acquire and maintain user-specific knowledge from unstructured dialogue histories.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing LLM memory solutions often rely on flat text storage or coarse summaries, which suffer from redundancy and weak factual grounding, making it difficult to reason over evolving information in long-term...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
-    "matched_keywords": [
-      "conversational memory"
-    ],
-    "one_liner": "Long-term conversational agents require memory systems that continuously acquire and maintain user-specific knowledge from unstructured dialogue histories.",
-    "published": "2026-06-02",
-    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 May Submission\n- 高亮主题命中：agent, context, conversation, long-term, retrieval\n- 检索关键词命中：conversational memory\n- 来源分类信息：aclweb.org/ACL/ARR/2026/May/-/Submission",
-    "slug": "schema-mem-structured-and-evolving-memory-for-long-term-conversational-knowledge",
-    "source": "OpenReview",
-    "source_key": "2Zp5AW2HRK",
-    "tags": [
-      "agent",
-      "context",
-      "conversation",
-      "long-term",
-      "retrieval"
-    ],
-    "title": "Schema-Mem: Structured and Evolving Memory for Long-term Conversational Knowledge",
-    "updated": "2026-06-13",
-    "url": "https://openreview.net/forum?id=2Zp5AW2HRK",
-    "venue": "ACL ARR 2026 May Submission"
   },
   {
     "abstract": "Persistent LLM agents require memory representations that make the formation of person understanding explicit across long term interaction. Existing agent memory methods emphasize information retention and retrieval, yet give limited account of how accumulated interaction evidence is abstracted into person understanding. We view this process as schema formation, where situated evidence is abstracted into reusable patterns and stable person level claims. We introduce PersonaTree, a structured lifecycle memory framework that realizes this view as a three level persona tree with explicit support paths from evidence to claims. PersonaTree maintains the tree through conservative writing, confidence guided consolidation, and query conditioned path retrieval, returning only the evidence depth required by each query. Across six person understanding and persistent memory benchmarks with three answer backbones, PersonaTree ranks first in 12 of 18 compact scores and reaches the top two in 16 settings. Ablations show that hierarchy improves abstract person understanding on KnowMe, while support path retrieval improves RealPref alignment under a comparable context budget.",
