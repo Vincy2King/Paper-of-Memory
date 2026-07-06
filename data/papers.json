@@ -1,5 +1,137 @@
 [
   {
+    "abstract": "Long-term memory is crucial for agents in specialized web environments, where success depends on recalling interface affordances, workflows, state dynamics, and recurring failure modes. We introduce LongMemEval-V2 (LME-V2), a benchmark for evaluating whether memory systems can accumulate environment-specific experience from multimodal web agent trajectories. LME-V2 contains 451 manually curated questions from customized shopping, forum, admin, and ServiceNow-style environments, with histories ranging from 25M to 115M tokens. Frontier LLMs reach at most 14.1% without trajectory evidence, confirming that LME-V2 requires learned experience beyond parametric knowledge. We evaluate memory under a context-gathering formulation and propose AgentRunbook: AgentRunbook-R is an efficient RAG pipeline over raw states, transitions, and notes, while AgentRunbook-C uses a scaffolded coding agent to gather evidence from trajectory files. AgentRunbook-C achieves the best overall accuracy, reaching 74.9% on LME-V2-Small and 70.1% on LME-V2-Medium, while improving the accuracy and latency trade-off over an off-the-shelf coding agent. We will release the benchmark and memory implementations.",
+    "authors": [
+      "Di Wu",
+      "Zixiang Ji",
+      "Asmi Kawatkar",
+      "Bryan Kwan",
+      "Jia-Chen Gu",
+      "Nanyun Peng",
+      "Kai-Wei Chang"
+    ],
+    "categories": [
+      "ICML.cc/2026/Workshop/SCALE/-/Submission"
+    ],
+    "id": "openreview:WUU5KTwCq5",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, long-term` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `SCALE@ICML2026 Oral` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Long-term memory is crucial for agents in specialized web environments, where success depends on recalling interface affordances, workflows, state dynamics, and recurring failure modes.\n\n进一步看，论文的核心做法或实验重点可以概括为：We introduce LongMemEval-V2 (LME-V2), a benchmark for evaluating whether memory systems can accumulate environment-specific experience from multimodal web agent trajectories.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory",
+      "long-term memory"
+    ],
+    "one_liner": "Long-term memory is crucial for agents in specialized web environments, where success depends on recalling interface affordances, workflows, state dynamics, and recurring...",
+    "published": "2026-05-15",
+    "relevance": "- 来源：OpenReview\n- Venue：SCALE@ICML2026 Oral\n- 高亮主题命中：agent, benchmark, context, long-term\n- 检索关键词命中：agent memory, long-term memory\n- 来源分类信息：ICML.cc/2026/Workshop/SCALE/-/Submission",
+    "slug": "longmemeval-v2-benchmarking-agent-memory-for-experienced-colleagues",
+    "source": "OpenReview",
+    "source_key": "WUU5KTwCq5",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "long-term"
+    ],
+    "title": "LongMemEval-V2: Benchmarking Agent Memory for Experienced Colleagues",
+    "updated": "2026-07-05",
+    "url": "https://openreview.net/forum?id=WUU5KTwCq5",
+    "venue": "SCALE@ICML2026 Oral"
+  },
+  {
+    "abstract": "Large language models (LLMs) increasingly store user preferences in persistent memory to support personalization across interactions. However, in third-party communication settings governed by social and institutional norms, some user preferences may be inappropriate to apply. We introduce BenchPreS, which evaluates whether memory-based user preferences are appropriately applied or suppressed across communication contexts. Using two complementary metrics, Misapplication Rate (MR) and Appropriate Application Rate (AAR), we find even frontier LLMs struggle to apply preferences in a context-sensitive manner. Models with stronger preference adherence exhibit higher rates of over-application, and neither reasoning capability nor prompt-based defenses fully resolve this issue. These results suggest current LLMs treat personalized preferences as globally enforceable rules rather than as context-dependent normative signals.",
+    "authors": [
+      "Sangyeon Yoon",
+      "Hyesoo Hong",
+      "Wonje Jeung",
+      "Yongil Kim",
+      "Wooseok Seo",
+      "Heuiyeen Yeen",
+      "Albert No",
+      "Sunkyoung Kim"
+    ],
+    "categories": [
+      "ICML.cc/2026/Workshop/SCALE/-/Submission"
+    ],
+    "id": "openreview:2y6m2sVX4K",
+    "intro": "这篇论文被纳入仓库，是因为它和 `benchmark, context` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `SCALE@ICML2026 Oral` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Large language models (LLMs) increasingly store user preferences in persistent memory to support personalization across interactions.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, in third-party communication settings governed by social and institutional norms, some user preferences may be inappropriate to apply.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "persistent memory"
+    ],
+    "one_liner": "Large language models (LLMs) increasingly store user preferences in persistent memory to support personalization across interactions.",
+    "published": "2026-05-15",
+    "relevance": "- 来源：OpenReview\n- Venue：SCALE@ICML2026 Oral\n- 高亮主题命中：benchmark, context\n- 检索关键词命中：persistent memory\n- 来源分类信息：ICML.cc/2026/Workshop/SCALE/-/Submission",
+    "slug": "benchpres-a-benchmark-for-context-aware-personalized-preference-selectivity-of-p",
+    "source": "OpenReview",
+    "source_key": "2y6m2sVX4K",
+    "tags": [
+      "benchmark",
+      "context"
+    ],
+    "title": "BenchPreS: A Benchmark for Context-Aware Personalized Preference Selectivity of Persistent-Memory LLMs",
+    "updated": "2026-07-05",
+    "url": "https://openreview.net/forum?id=2y6m2sVX4K",
+    "venue": "SCALE@ICML2026 Oral"
+  },
+  {
+    "abstract": "Persistent memory makes multimodal agents more capable, but it also creates a new attack surface: once unsupported content is written into memory, later retrieval and consolidation can reuse it as if it were reliable state. We study write-time defense for multimodal agent memory. Our system, SAGE-Mem, separates transient evidence from durable belief : observations may be stored as evidence, but they are promoted to belief only when they are sufficiently supported, independent, and non-conflicting. This targets a gap left by retrieval-time defenses, which act only after poisoned content has already entered memory. We evaluate on LoCoMo-Adv, an adversarial multimodal extension of LoCoMo-10, and on MM-BrowseComp-Adv, a multimodal browsing benchmark covering answer-overwrite, OCR, vision-caption, and visual-prompt attacks. On LoCoMo-Adv, at a conservative operating point, SAGE-Mem eliminates observed write admission and retrieval contamination relative to a retrieval-time baseline, but reduces benign completion under attack (0.460 vs. 0.642). On the canonical browsing overwrite setting, BrowseGuard, a browsing-specific write policy built on the same principle, blocks all 388 direct and paraphrased overwrite attempts while keeping attacked utility near its clean level (0.155 vs. 0.160). On the broader five-attack browsing suite, extending the same guarded write policy across browser, OCR, and caption channels reduces Write ASR from 0.2552 to 0.0369 and Retrieval ASR from 0.5636 to 0.3694. Overall, the results suggest that for memory-bearing agents, robustness should be evaluated not only at retrieval, but also at the point where observations become persistent state.",
+    "authors": [
+      "Agam Pandey"
+    ],
+    "categories": [
+      "ICML.cc/2026/Workshop/SCALE/-/Submission"
+    ],
+    "id": "openreview:6lJ6J3dDOx",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, retrieval` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `SCALE@ICML2026 Poster` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Persistent memory makes multimodal agents more capable, but it also creates a new attack surface: once unsupported content is written into memory, later retrieval and consolidation can reuse it as if it were reliable...\n\n进一步看，论文的核心做法或实验重点可以概括为：We study write-time defense for multimodal agent memory.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory",
+      "persistent memory"
+    ],
+    "one_liner": "Persistent memory makes multimodal agents more capable, but it also creates a new attack surface: once unsupported content is written into memory, later retrieval and...",
+    "published": "2026-05-15",
+    "relevance": "- 来源：OpenReview\n- Venue：SCALE@ICML2026 Poster\n- 高亮主题命中：agent, benchmark, retrieval\n- 检索关键词命中：agent memory, persistent memory\n- 来源分类信息：ICML.cc/2026/Workshop/SCALE/-/Submission",
+    "slug": "before-it-persists-write-time-defense-for-multimodal-agent-memory",
+    "source": "OpenReview",
+    "source_key": "6lJ6J3dDOx",
+    "tags": [
+      "agent",
+      "benchmark",
+      "retrieval"
+    ],
+    "title": "Before It Persists: Write-Time Defense for Multimodal Agent Memory",
+    "updated": "2026-07-05",
+    "url": "https://openreview.net/forum?id=6lJ6J3dDOx",
+    "venue": "SCALE@ICML2026 Poster"
+  },
+  {
+    "abstract": "Long-term memory remains a critical bottleneck for LLM agents in managing historical user interactions and task-related resources. Existing approaches typically rely on flat, predefined memory structures that lack adaptability and sophisticated reasoning capabilities. To address this, we propose \\textbf{Agentic Information Management (AIM)}, a novel framework that leverages the LLM's inherent code generation and reasoning abilities to dynamically construct and manage structured memory. Unlike existing summarize-then-retrieve paradigms, AIM regards agent memory as an information management problem. AIM employs an agent to dynamically organize heterogeneous sources into well-defined structured representations. Furthermore, recognizing the limitations of existing memory benchmarks, which often use non-agentic, LLM-generated dialogues, we introduce VibeCodeMem, a high-quality, human-annotated long-horizon QA dataset. It spans realistic working sessions with a coding agent across four software applications and 16 diverse features. Experiments using both open-source and proprietary LLMs demonstrate that AIM consistently outperforms strong baselines, achieving a 10.53\\% absolute improvement on LoCoMo and 2.07\\% on VibeCodeMem with the Claude-4.5-haiku model. Our results highlight the promise of agentic, self-structured memory for long-term agent capabilities. Our code and data will be released upon acceptance.",
+    "authors": [],
+    "categories": [
+      "aclweb.org/ACL/ARR/2026/May/-/Submission"
+    ],
+    "id": "openreview:qFBAlgwkzb",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, long-term` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 May Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Long-term memory remains a critical bottleneck for LLM agents in managing historical user interactions and task-related resources.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing approaches typically rely on flat, predefined memory structures that lack adaptability and sophisticated reasoning capabilities.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory",
+      "long-term memory",
+      "memory benchmark",
+      "memory benchmarks"
+    ],
+    "one_liner": "Long-term memory remains a critical bottleneck for LLM agents in managing historical user interactions and task-related resources.",
+    "published": "2026-06-02",
+    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 May Submission\n- 高亮主题命中：agent, benchmark, long-term\n- 检索关键词命中：agent memory, long-term memory, memory benchmark, memory benchmarks\n- 来源分类信息：aclweb.org/ACL/ARR/2026/May/-/Submission",
+    "slug": "aim-constructing-adaptive-structured-memory-via-agentic-information-management",
+    "source": "OpenReview",
+    "source_key": "qFBAlgwkzb",
+    "tags": [
+      "agent",
+      "benchmark",
+      "long-term"
+    ],
+    "title": "AIM: Constructing Adaptive Structured Memory via Agentic Information Management",
+    "updated": "2026-07-05",
+    "url": "https://openreview.net/forum?id=qFBAlgwkzb",
+    "venue": "ACL ARR 2026 May Submission"
+  },
+  {
     "abstract": "Long-horizon LLM agents must maintain, update, and revise task state over time. Yet current memory benchmarks mostly test passive retrieval, asking whether a model can find information in a fixed context. Active memory remains undermeasured, especially how models use changing task state across multi-step interactions. We introduce GAMBIT, a benchmark that uses deterministic game episodes to test active memory in LLM agents. It tests online updating, ordered recall, interference resistance, visuospatial tracking, episodic binding, and hypothesis revision. GAMBIT reveals that the passive-to-active memory gap persists across model families and scales. Models with near-perfect scores on passive retrieval benchmarks such as Needle-in-a-Haystack still fail when they must update state, resist interference, reconstruct episodic routes, or maintain hypotheses across feedback. These results show that reliable long-horizon agents require more than retrieval and need active control over changing state.",
     "authors": [],
     "categories": [
@@ -4759,36 +4891,6 @@
     "updated": "2026-06-16",
     "url": "http://arxiv.org/abs/2606.15903v2",
     "venue": ""
-  },
-  {
-    "abstract": "Long-term memory remains a critical bottleneck for LLM agents in managing historical user interactions and task-related resources. Existing approaches typically rely on flat, predefined memory structures that lack adaptability and sophisticated reasoning capabilities. To address this, we propose \\textbf{Agentic Information Management (AIM)}, a novel framework that leverages the LLM's inherent code generation and reasoning abilities to dynamically construct and manage structured memory. Unlike existing summarize-then-retrieve paradigms, AIM regards agent memory as an information management problem. AIM employs an agent to dynamically organize heterogeneous sources into well-defined structured representations. Furthermore, recognizing the limitations of existing memory benchmarks, which often use non-agentic, LLM-generated dialogues, we introduce VibeCodeMem, a high-quality, human-annotated long-horizon QA dataset. It spans realistic working sessions with a coding agent across four software applications and 16 diverse features. Experiments using both open-source and proprietary LLMs demonstrate that AIM consistently outperforms strong baselines, achieving a 10.53\\% absolute improvement on LoCoMo and 2.07\\% on VibeCodeMem with the Claude-4.5-haiku model. Our results highlight the promise of agentic, self-structured memory for long-term agent capabilities. Our code and data will be released upon acceptance.",
-    "authors": [],
-    "categories": [
-      "aclweb.org/ACL/ARR/2026/May/-/Submission"
-    ],
-    "id": "openreview:qFBAlgwkzb",
-    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, long-term` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 May Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Long-term memory remains a critical bottleneck for LLM agents in managing historical user interactions and task-related resources.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing approaches typically rely on flat, predefined memory structures that lack adaptability and sophisticated reasoning capabilities.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
-    "matched_keywords": [
-      "agent memory",
-      "long-term memory",
-      "memory benchmark",
-      "memory benchmarks"
-    ],
-    "one_liner": "Long-term memory remains a critical bottleneck for LLM agents in managing historical user interactions and task-related resources.",
-    "published": "2026-06-02",
-    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 May Submission\n- 高亮主题命中：agent, benchmark, long-term\n- 检索关键词命中：agent memory, long-term memory, memory benchmark, memory benchmarks\n- 来源分类信息：aclweb.org/ACL/ARR/2026/May/-/Submission",
-    "slug": "aim-constructing-adaptive-structured-memory-via-agentic-information-management",
-    "source": "OpenReview",
-    "source_key": "qFBAlgwkzb",
-    "tags": [
-      "agent",
-      "benchmark",
-      "long-term"
-    ],
-    "title": "AIM: Constructing Adaptive Structured Memory via Agentic Information Management",
-    "updated": "2026-06-16",
-    "url": "https://openreview.net/forum?id=qFBAlgwkzb",
-    "venue": "ACL ARR 2026 May Submission"
   },
   {
     "abstract": "Vision language models are serving as general-purpose interfaces for complex multimodal tasks. However, deployment still faces three gaps: VLMs typically incur high latency and cost when processing dense video frames and long prompts, the agent scaffold remains static after deployment, and standard video-QA benchmarks do not test whether agents can use visual evidence inside tool-using workspaces. We present VisualClaw, a self-evolving multimodal agent built around two principles. First, hybrid encoding reduces deployment cost by filtering less informative streaming frames with a cascaded gate and compressing the text skill bank through hot/cold top-k injection. Second, skill evolution lets the agent learn from failures: retrieved memories condition an evolver as direct concatenated context or as guided evidence, producing skill-bank updates that help future questions. Across 4 video-QA benchmarks with 2 VLMs, VisualClaw cuts per-question API cost by an average -98% versus full-frame upload and by -25.9% over the offline uniform 8 frame baseline, while boosting accuracy in most settings, e.g., an average +3.85% and a peak +15.80% on EgoSchema with Gemini 3 Flash. To address the gap, we curate VisualClawArena, a 200-scenario multimodal agentic benchmark built through a strict five-stage pipeline; models must use video evidence, documents, dynamic updates, and executable checks inside a workspace. On VisualClawArena, the same framework with computer-use agent backends improves macro accuracy by +2.9% for Codex (GPT-5.5) and +3.2% for Claude Code (Sonnet 4.6) over no-evolution baselines, with a -9.5% cost reduction compared to the uniform-sampled baseline. These properties make VisualClaw a natural fit for edge applications, where the cascade reduces a 1-hour streaming session from ~3,600 API uploads down to only 5-20 calls and the self-evolution makes it a perfect personalized assistant.",

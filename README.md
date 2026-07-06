@@ -39,19 +39,23 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **640**
-- Last generated: **2026-07-05**
+- Total tracked papers: **643**
+- Last generated: **2026-07-06**
 
 ## Papers by Source
 
 - ACL Anthology: **4**
 - arXiv: **535**
-- OpenReview: **101**
+- OpenReview: **104**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-07-05 | OpenReview | [LongMemEval-V2: Benchmarking Agent Memory for Experienced Colleagues](content/papers/longmemeval-v2-benchmarking-agent-memory-for-experienced-colleagues.md) | agent, benchmark, context |
+| 2026-07-05 | OpenReview | [BenchPreS: A Benchmark for Context-Aware Personalized Preference Selectivity of Persistent-Memory LLMs](content/papers/benchpres-a-benchmark-for-context-aware-personalized-preference-selectivity-of-p.md) | benchmark, context |
+| 2026-07-05 | OpenReview | [Before It Persists: Write-Time Defense for Multimodal Agent Memory](content/papers/before-it-persists-write-time-defense-for-multimodal-agent-memory.md) | agent, benchmark, retrieval |
+| 2026-07-05 | OpenReview | [AIM: Constructing Adaptive Structured Memory via Agentic Information Management](content/papers/aim-constructing-adaptive-structured-memory-via-agentic-information-management.md) | agent, benchmark, long-term |
 | 2026-07-03 | OpenReview | [GAMBIT: A Benchmark for Active Memory in Long-Horizon LLM Agents](content/papers/gambit-a-benchmark-for-active-memory-in-long-horizon-llm-agents.md) | agent, benchmark, context |
 | 2026-07-02 | OpenReview | [Think-in-Memory: Metacognition-Augmented LLM with Long-Term Memory](content/papers/think-in-memory-metacognition-augmented-llm-with-long-term-memory.md) | agent, context, conversation |
 | 2026-07-02 | OpenReview | [The Override Cliff: How Agent Memory Hijacks LLM Reasoning](content/papers/the-override-cliff-how-agent-memory-hijacks-llm-reasoning.md) | agent, benchmark, retrieval |
@@ -68,10 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-07-02 | OpenReview | [Evaluating the Long-Term Memory of Large Language Models](content/papers/evaluating-the-long-term-memory-of-large-language-models.md) | conversation, long-term |
 | 2026-07-02 | OpenReview | [Evaluating the Long-Term Memory of Large Language Models](content/papers/evaluating-the-long-term-memory-of-large-language-models.md) | conversation, long-term |
 | 2026-07-02 | arXiv | [Episodic-to-Semantic Consolidation Without Identity Drift](content/papers/episodic-to-semantic-consolidation-without-identity-drift.md) | agent, context, episodic |
-| 2026-07-02 | arXiv | [ElephantAgent: Contextual State Continuity in Agentic Systems](content/papers/elephantagent-contextual-state-continuity-in-agentic-systems.md) | agent, context |
-| 2026-07-02 | arXiv | [ContextSniper: AntTrail's Token-Efficient Code Memory for Repository-Level Program Repair](content/papers/contextsniper-anttrail-s-token-efficient-code-memory-for-repository-level-progra.md) | agent, context, retrieval |
-| 2026-07-02 | arXiv | [COMFYCLAW: Self-Evolving Skill Harnesses for Image Generation Workflows](content/papers/comfyclaw-self-evolving-skill-harnesses-for-image-generation-workflows.md) | agent, benchmark |
-| 2026-07-02 | arXiv | [A-TMA: Decoupling State-Aware Memory Failures in Long-Term Agent Memory](content/papers/a-tma-decoupling-state-aware-memory-failures-in-long-term-agent-memory.md) | agent, benchmark, conversation |
 
 ## Suggested GitHub Setup
 
