@@ -39,13 +39,13 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **665**
-- Last generated: **2026-07-08**
+- Total tracked papers: **667**
+- Last generated: **2026-07-09**
 
 ## Papers by Source
 
 - ACL Anthology: **4**
-- arXiv: **557**
+- arXiv: **559**
 - OpenReview: **104**
 
 ## Latest Papers
@@ -53,12 +53,14 @@ python3 scripts/update_papers.py --build-only
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
 | 2026-07-08 | OpenReview | [PersonaTree: Structured Lifecycle Memory for Person Understanding in LLM Agents](content/papers/personatree-structured-lifecycle-memory-for-person-understanding-in-llm-agents.md) | agent, benchmark, context |
+| 2026-07-08 | arXiv | [A-TMA: Decoupling State-Aware Memory Failures in Long-Term Agent Memory](content/papers/a-tma-decoupling-state-aware-memory-failures-in-long-term-agent-memory.md) | agent, benchmark, conversation |
 | 2026-07-07 | arXiv | [Rank-Order N-of-M Codes for Sparse Distributed Memory: Disentangling Representation and Learning Effects in Noise Robustness Against Contemporary Neuromorphic Architectures](content/papers/rank-order-n-of-m-codes-for-sparse-distributed-memory-disentangling-representati.md) | episodic |
 | 2026-07-07 | arXiv | [Prompt-Adapter Context Routing for Parameter-Efficient Multi-Shot Long Video Extrapolation](content/papers/prompt-adapter-context-routing-for-parameter-efficient-multi-shot-long-video-ext.md) | benchmark, context |
 | 2026-07-07 | arXiv | [Nested Episodic State Topology (NEST): A Graph-Theoretic Architecture of Cognitive States](content/papers/nested-episodic-state-topology-nest-a-graph-theoretic-architecture-of-cognitive-.md) | context, episodic |
 | 2026-07-07 | arXiv | [MemDefrag: Latent Memory Defragmentation for Large Language Models](content/papers/memdefrag-latent-memory-defragmentation-for-large-language-models.md) | benchmark, context, long-term |
 | 2026-07-06 | arXiv | [Your Agent's Memories Are Not Its Own: Forged Reasoning Attacks on LLM Agent Memory and Defenses](content/papers/your-agent-s-memories-are-not-its-own-forged-reasoning-attacks-on-llm-agent-memo.md) | agent, context |
 | 2026-07-06 | arXiv | [When Claws Remember but Do Not Tell: Stealthy Memory Injection in Persistent Personal Agents](content/papers/when-claws-remember-but-do-not-tell-stealthy-memory-injection-in-persistent-pers.md) | agent, benchmark, conversation |
+| 2026-07-06 | arXiv | [When Agents Remember Too Much: Memory Poisoning Attacks on Large Language Model Agents](content/papers/when-agents-remember-too-much-memory-poisoning-attacks-on-large-language-model-a.md) | agent, context, conversation |
 | 2026-07-06 | arXiv | [Self-Review Reinforcement Learning (SRRL) with Cross-Episode Memory and Policy Distillation](content/papers/self-review-reinforcement-learning-srrl-with-cross-episode-memory-and-policy-dis.md) | benchmark |
 | 2026-07-06 | OpenReview | [Schema-Mem: Structured and Evolving Memory for Long-term Conversational Knowledge](content/papers/schema-mem-structured-and-evolving-memory-for-long-term-conversational-knowledge.md) | agent, context, conversation |
 | 2026-07-06 | arXiv | [Narrative World Model: Narratology-Grounded Writer Memory for Long-Form Fiction](content/papers/narrative-world-model-narratology-grounded-writer-memory-for-long-form-fiction.md) | agent, benchmark, retrieval |
@@ -70,8 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-07-05 | arXiv | [Memory-Orchestrated Semantic System (MOSS): An Auditable Agentic Memory Architecture](content/papers/memory-orchestrated-semantic-system-moss-an-auditable-agentic-memory-architectur.md) | agent, conversation, long-term |
 | 2026-07-05 | OpenReview | [LongMemEval-V2: Benchmarking Agent Memory for Experienced Colleagues](content/papers/longmemeval-v2-benchmarking-agent-memory-for-experienced-colleagues.md) | agent, benchmark, context |
 | 2026-07-05 | arXiv | [LLM Agents Are Latent Context Managers: Eliciting Self-Managed Context via a Proprioceptive Dashboard](content/papers/llm-agents-are-latent-context-managers-eliciting-self-managed-context-via-a-prop.md) | agent, compression, context |
-| 2026-07-05 | OpenReview | [BenchPreS: A Benchmark for Context-Aware Personalized Preference Selectivity of Persistent-Memory LLMs](content/papers/benchpres-a-benchmark-for-context-aware-personalized-preference-selectivity-of-p.md) | benchmark, context |
-| 2026-07-05 | OpenReview | [Before It Persists: Write-Time Defense for Multimodal Agent Memory](content/papers/before-it-persists-write-time-defense-for-multimodal-agent-memory.md) | agent, benchmark, retrieval |
 
 ## Suggested GitHub Setup
 
