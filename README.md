@@ -39,21 +39,25 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **667**
+- Total tracked papers: **671**
 - Last generated: **2026-07-10**
 
 ## Papers by Source
 
 - ACL Anthology: **4**
-- arXiv: **559**
+- arXiv: **563**
 - OpenReview: **104**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-07-09 | arXiv | [What to Keep, What to Forget: A Rate--Distortion View of Memory Compaction in LLMs and Agents](content/papers/what-to-keep-what-to-forget-a-rate-distortion-view-of-memory-compaction-in-llms-.md) | agent, benchmark, compression |
 | 2026-07-09 | OpenReview | [EfficientNav: Towards On-Device Object-Goal Navigation with Navigation Map Caching and Retrieval](content/papers/efficientnav-towards-on-device-object-goal-navigation-with-navigation-map-cachin.md) | agent, benchmark, retrieval |
 | 2026-07-09 | OpenReview | [Efficient Allocation of Working Memory Resource for Utility Maximization in Humans and Recurrent Neural Networks](content/papers/efficient-allocation-of-working-memory-resource-for-utility-maximization-in-huma.md) | context |
+| 2026-07-09 | arXiv | [ContextSniper: AntTrail's Token-Efficient Code Memory for Repository-Level Program Repair](content/papers/contextsniper-anttrail-s-token-efficient-code-memory-for-repository-level-progra.md) | agent, context |
+| 2026-07-09 | arXiv | [Cognitive-structured Multimodal Agent for Multimodal Understanding, Generation, and Editing](content/papers/cognitive-structured-multimodal-agent-for-multimodal-understanding-generation-an.md) | agent, benchmark, context |
+| 2026-07-09 | arXiv | [Autonomous heterogeneous catalyst discovery with a self-evolving multi-agent digital twin](content/papers/autonomous-heterogeneous-catalyst-discovery-with-a-self-evolving-multi-agent-dig.md) | agent, benchmark |
 | 2026-07-08 | OpenReview | [PersonaTree: Structured Lifecycle Memory for Person Understanding in LLM Agents](content/papers/personatree-structured-lifecycle-memory-for-person-understanding-in-llm-agents.md) | agent, benchmark, context |
 | 2026-07-08 | arXiv | [A-TMA: Decoupling State-Aware Memory Failures in Long-Term Agent Memory](content/papers/a-tma-decoupling-state-aware-memory-failures-in-long-term-agent-memory.md) | agent, benchmark, conversation |
 | 2026-07-07 | arXiv | [Rank-Order N-of-M Codes for Sparse Distributed Memory: Disentangling Representation and Learning Effects in Noise Robustness Against Contemporary Neuromorphic Architectures](content/papers/rank-order-n-of-m-codes-for-sparse-distributed-memory-disentangling-representati.md) | episodic |
@@ -68,10 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-07-06 | arXiv | [Narrative World Model: Narratology-Grounded Writer Memory for Long-Form Fiction](content/papers/narrative-world-model-narratology-grounded-writer-memory-for-long-form-fiction.md) | agent, benchmark, retrieval |
 | 2026-07-06 | arXiv | [Memory in the Loop: In-Process Retrieval as ExtendedWorking Memory for Language Agents](content/papers/memory-in-the-loop-in-process-retrieval-as-extendedworking-memory-for-language-a.md) | agent, retrieval |
 | 2026-07-06 | arXiv | [MemPose: Category-level Object Pose Estimation with Memory](content/papers/mempose-category-level-object-pose-estimation-with-memory.md) | benchmark |
-| 2026-07-06 | arXiv | [EvoAgentBench: Benchmarking Agent Self-Evolution via Ability Transfer](content/papers/evoagentbench-benchmarking-agent-self-evolution-via-ability-transfer.md) | agent, benchmark |
-| 2026-07-06 | arXiv | [ContextSniper: AntTrail's Token-Efficient Code Memory for Repository-Level Program Repair](content/papers/contextsniper-anttrail-s-token-efficient-code-memory-for-repository-level-progra.md) | agent, context |
-| 2026-07-05 | arXiv | [PLACEMEM: Toward a Compute-Aware Memory Plane for Lifelong Agents](content/papers/placemem-toward-a-compute-aware-memory-plane-for-lifelong-agents.md) | agent, benchmark, context |
-| 2026-07-05 | arXiv | [Memory-Orchestrated Semantic System (MOSS): An Auditable Agentic Memory Architecture](content/papers/memory-orchestrated-semantic-system-moss-an-auditable-agentic-memory-architectur.md) | agent, conversation, long-term |
 
 ## Suggested GitHub Setup
 
