@@ -4,7 +4,7 @@
 - Venue: NeurIPS 2025 poster
 - Paper ID: openreview:qMm7tC1zvj
 - Published: 2025-09-18
-- Updated: 2026-04-21
+- Updated: 2026-07-09
 - Authors: Zebin Yang, Sunjian Zheng, Tong Xie, Tianshi Xu, Bo Yu, Fan Wang, Jie Tang, Shaoshan Liu, Meng Li
 - Tags: agent, benchmark, retrieval
 - Categories: NeurIPS.cc/2025/Conference/-/Submission
