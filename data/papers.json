@@ -1,5 +1,43 @@
 [
   {
+    "abstract": "Scalable nonvolatile memory DIMMs will finally be commercially available with the release of the Intel Optane DC Persistent Memory Module (or just \"Optane DC PMM\"). This new nonvolatile DIMM supports byte-granularity accesses with access times on the order of DRAM, while also providing data storage that survives power outages. This work comprises the first in-depth, scholarly, performance review of Intel's Optane DC PMM, exploring its capabilities as a main memory device, and as persistent, byte-addressable memory exposed to user-space applications. This report details the technologies performance under a number of modes and scenarios, and across a wide variety of macro-scale benchmarks. Optane DC PMMs can be used as large memory devices with a DRAM cache to hide their lower bandwidth and higher latency. When used in this Memory (or cached) mode, Optane DC memory has little impact on applications with small memory footprints. Applications with larger memory footprints may experience some slow-down relative to DRAM, but are now able to keep much more data in memory. When used under a file system, Optane DC PMMs can result in significant performance gains, especially when the file system is optimized to use the load/store interface of the Optane DC PMM and the application uses many small, persistent writes. For instance, using the NOVA-relaxed NVMM file system, we can improve the performance of Kyoto Cabinet by almost 2x. Optane DC PMMs can also enable user-space persistence where the application explicitly controls its writes into persistent Optane DC media. In our experiments, modified applications that used user-space Optane DC persistence generally outperformed their file system counterparts. For instance, the persistent version of RocksDB performed almost 2x faster than the equivalent program utilizing an NVMM-aware file system.",
+    "authors": [
+      "Joseph Izraelevitz",
+      "Jian Yang",
+      "Lu Zhang",
+      "Juno Kim",
+      "Xiao Liu",
+      "Amir Saman Memaripour",
+      "Yun Joon Soh",
+      "Zixuan Wang",
+      "Yi Xu",
+      "Subramanya R. Dulloor",
+      "Jishen Zhao",
+      "Steven Swanson"
+    ],
+    "categories": [
+      "DBLP.org/-/Record"
+    ],
+    "id": "openreview:nj36rMxssk",
+    "intro": "这篇论文被纳入仓库，是因为它和 `benchmark` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `CoRR 2019` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Scalable nonvolatile memory DIMMs will finally be commercially available with the release of the Intel Optane DC Persistent Memory Module (or just \"Optane DC PMM\").\n\n进一步看，论文的核心做法或实验重点可以概括为：This new nonvolatile DIMM supports byte-granularity accesses with access times on the order of DRAM, while also providing data storage that survives power outages.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "persistent memory"
+    ],
+    "one_liner": "Scalable nonvolatile memory DIMMs will finally be commercially available with the release of the Intel Optane DC Persistent Memory Module (or just \"Optane DC PMM\").",
+    "published": "2019-01-01",
+    "relevance": "- 来源：OpenReview\n- Venue：CoRR 2019\n- 高亮主题命中：benchmark\n- 检索关键词命中：persistent memory\n- 来源分类信息：DBLP.org/-/Record",
+    "slug": "basic-performance-measurements-of-the-intel-optane-dc-persistent-memory-module",
+    "source": "OpenReview",
+    "source_key": "nj36rMxssk",
+    "tags": [
+      "benchmark"
+    ],
+    "title": "Basic Performance Measurements of the Intel Optane DC Persistent Memory Module",
+    "updated": "2026-07-11",
+    "url": "https://openreview.net/forum?id=nj36rMxssk",
+    "venue": "CoRR 2019"
+  },
+  {
     "abstract": "As a classic machine learning algorithm based on the Bagging ensemble strategy, Random Forest has been widely utilized in both academia and industry due to its exceptional non-linear fitting capabilities, high robustness, and inherent resistance to overfitting. However, when faced with streaming data inputs, long-sequence dependent features, and scenarios requiring dynamic, adaptive predictive adjustments, traditional Random Forests reveal inherent limitations. Once the training phase of a standard Random Forest is complete, its tree structures and leaf node statistics become permanently fixed. Consequently, each forward prediction process remains static and isolated, lacking the ability to dynamically capture and update context information during inference. To address this challenge, this paper proposes a novel ensemble learning framework termed the Memory-Augmented Forest (MAF). Drawing inspiration from the core concepts of the memory mechanism in Transformer architectures, MAF integrates a global dynamic memory module directly into the prediction pipeline of the traditional Random Forest. During each prediction cycle, the input sample is first processed by the static forest base to extract high-dimensional feature representations. An attention-based addressing mechanism is then employed to read from the memory module, retrieving historical predictive contexts or global statistical supplements. Finally, based on the current prediction outcome and environmental feedback, the memory module is dynamically updated using a gated recurrent unit or an incremental update strategy similar to Transformer memories. This paper provides a rigorous mathematical formulation and theoretical analysis of the MAF architecture, covering its forward read operations, instant update mechanisms, convergence properties, and computational complexity. Theoretical investigations demonstrate that while MAF preserves the efficiency, high parallelism, and low variance advantages of traditional Random Forests, it equips the model with the capacity to dynamically adapt to shifting contexts. This mechanism effectively bridges the gap for ensemble learning in temporal modeling and dynamic evolutionary tasks, opening up a promising new avenue for fusing ensemble methods with deep learning memory architectures.",
     "authors": [
       "Jincheng Zhang"

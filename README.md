@@ -39,19 +39,20 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **672**
-- Last generated: **2026-07-11**
+- Total tracked papers: **673**
+- Last generated: **2026-07-12**
 
 ## Papers by Source
 
 - ACL Anthology: **4**
 - arXiv: **563**
-- OpenReview: **105**
+- OpenReview: **106**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-07-11 | OpenReview | [Basic Performance Measurements of the Intel Optane DC Persistent Memory Module](content/papers/basic-performance-measurements-of-the-intel-optane-dc-persistent-memory-module.md) | benchmark |
 | 2026-07-11 | OpenReview | [A Memory-Augmented Extension of Random Forest: The Memory-Augmented Forest (MAF)](content/papers/a-memory-augmented-extension-of-random-forest-the-memory-augmented-forest-maf.md) | context |
 | 2026-07-09 | arXiv | [What to Keep, What to Forget: A Rate--Distortion View of Memory Compaction in LLMs and Agents](content/papers/what-to-keep-what-to-forget-a-rate-distortion-view-of-memory-compaction-in-llms-.md) | agent, benchmark, compression |
 | 2026-07-09 | OpenReview | [EfficientNav: Towards On-Device Object-Goal Navigation with Navigation Map Caching and Retrieval](content/papers/efficientnav-towards-on-device-object-goal-navigation-with-navigation-map-cachin.md) | agent, benchmark, retrieval |
@@ -71,7 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-07-06 | arXiv | [Self-Review Reinforcement Learning (SRRL) with Cross-Episode Memory and Policy Distillation](content/papers/self-review-reinforcement-learning-srrl-with-cross-episode-memory-and-policy-dis.md) | benchmark |
 | 2026-07-06 | OpenReview | [Schema-Mem: Structured and Evolving Memory for Long-term Conversational Knowledge](content/papers/schema-mem-structured-and-evolving-memory-for-long-term-conversational-knowledge.md) | agent, context, conversation |
 | 2026-07-06 | arXiv | [Narrative World Model: Narratology-Grounded Writer Memory for Long-Form Fiction](content/papers/narrative-world-model-narratology-grounded-writer-memory-for-long-form-fiction.md) | agent, benchmark, retrieval |
-| 2026-07-06 | arXiv | [Memory in the Loop: In-Process Retrieval as ExtendedWorking Memory for Language Agents](content/papers/memory-in-the-loop-in-process-retrieval-as-extendedworking-memory-for-language-a.md) | agent, retrieval |
 
 ## Suggested GitHub Setup
 
