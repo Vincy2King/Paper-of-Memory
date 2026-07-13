@@ -65,6 +65,143 @@
     "venue": "OpenReview.net/Archive"
   },
   {
+    "abstract": "Agentic LLM systems that generate code through multi-turn tool use face a fundamental context problem: each session starts from zero, discarding the configuration choices, domain constraints, data schemas, and tool-use patterns that made previous sessions productive. Naively persisting entire conversation histories is token-inefficient and counterproductive: irrelevant context degrades generation quality. We introduce shared selective persistent memory, an architecture that identifies and retains four categories of reusable context (task specifications, data schemas, tool configurations, and output constraints) while discarding session-specific reasoning traces. Crucially, this memory is shared: workspaces encapsulating selective memory can be transferred across users with role-based access control, enabling collaborative reuse without redundant specification. We implement it in a deployed collaborative workspace platform where LLM agents produce, edit, and maintain git-versioned artifacts (dashboards, reports, and data-driven documents) from heterogeneous sources (CSV, SQL, REST APIs, and MCP servers). A complementary zero-token data refresh mechanism decouples generated programs from runtime data, enabling artifact reuse without re-invocation. Across three enterprise scenarios, shared selective persistent memory achieves 96% task completion (vs. 79% without memory and 71% with full history). Zero-token refresh eliminates LLM re-invocation for recurring updates (14x task-time reduction), while summary-driven generation cuts per-invocation token cost by 97x versus raw data injection. A replication on four public datasets confirms generalizability, with zero-token refresh succeeding in 12/12 trials. Notably, naive full-history persistence actively degrades completion by biasing the agent with stale traces, while selective memory outperforms both extremes.",
+    "authors": [
+      "Sanjana Pedada",
+      "Aditya Dhavala",
+      "Neelraj Patil"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.MA",
+      "cs.SE"
+    ],
+    "id": "2607.09493v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, context, conversation` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Agentic LLM systems that generate code through multi-turn tool use face a fundamental context problem: each session starts from zero, discarding the configuration choices, domain constraints, data schemas, and tool-...\n\n进一步看，论文的核心做法或实验重点可以概括为：Naively persisting entire conversation histories is token-inefficient and counterproductive: irrelevant context degrades generation quality.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "persistent memory"
+    ],
+    "one_liner": "Agentic LLM systems that generate code through multi-turn tool use face a fundamental context problem: each session starts from zero, discarding the configuration choices,...",
+    "published": "2026-07-10",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, context, conversation\n- 检索关键词命中：persistent memory\n- 来源分类信息：cs.AI, cs.MA, cs.SE",
+    "slug": "shared-selective-persistent-memory-for-agentic-llm-systems",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2607.09493v1",
+    "tags": [
+      "agent",
+      "context",
+      "conversation"
+    ],
+    "title": "Shared Selective Persistent Memory for Agentic LLM Systems",
+    "updated": "2026-07-10",
+    "url": "http://arxiv.org/abs/2607.09493v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Does every cancer patient truly need a complete diagnostic workup for accurate survival prediction? In multimodal clinical oncology, diagnostic modalities follow a clinically mandated order of escalating burden -- from demographics collected at intake to genomic profiling requiring specialized tissue analysis. Current multimodal survival methods either assume all modalities are available or passively handle missing data, but none actively reason about whether acquiring the next modality is justified for a given patient along this ordered workflow. We formulate this as a sequential decision problem and propose SAGEAgent (Sequential Acquisition Guided by Experience), a self-evolving LLM-based clinical agent that decides which diagnostic modalities to acquire for each patient, balancing predictive accuracy against clinical invasiveness. SAGEAgent reasons about each patient's evolving diagnostic state through clinical tools that translate numerical predictions into text, an episodic memory that retrieves similar past cases, and a semantic memory that accumulates reusable decision patterns from experience. Experiments on a glioma cohort combining TCGA-LGG, TCGA-GBM, and BraTS with four diagnostic modalities demonstrate that SAGEAgent achieves competitive survival prediction accuracy while reducing average acquisition burden by 55%.",
+    "authors": [
+      "Chongyu Qu",
+      "Can Cui",
+      "Zhengyi Lu",
+      "Junchao Zhu",
+      "Tianyuan Yao",
+      "Junlin Guo",
+      "Juming Xiong",
+      "Yanfan Zhu",
+      "Yuechen Yang",
+      "Bennett A. Landman",
+      "Yuankai Huo"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2607.09521v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, episodic` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Does every cancer patient truly need a complete diagnostic workup for accurate survival prediction?\n\n进一步看，论文的核心做法或实验重点可以概括为：In multimodal clinical oncology, diagnostic modalities follow a clinically mandated order of escalating burden -- from demographics collected at intake to genomic profiling requiring specialized tissue analysis.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "episodic memory"
+    ],
+    "one_liner": "Does every cancer patient truly need a complete diagnostic workup for accurate survival prediction?",
+    "published": "2026-07-10",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, episodic\n- 检索关键词命中：episodic memory\n- 来源分类信息：cs.AI",
+    "slug": "sageagent-a-self-evolving-agent-for-cost-aware-modality-acquisition-in-multimoda",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2607.09521v1",
+    "tags": [
+      "agent",
+      "episodic"
+    ],
+    "title": "SAGEAgent: A Self-Evolving Agent for Cost-Aware Modality Acquisition in Multimodal Survival Prediction",
+    "updated": "2026-07-10",
+    "url": "http://arxiv.org/abs/2607.09521v1",
+    "venue": ""
+  },
+  {
+    "abstract": "In this work, we introduce LongMedBench, a real-world EHR-based benchmark for long-horizon clinical decision-making. Prior evaluations of LLM-based medical agents have largely emphasized short-context knowledge QA and tool use. However, real-world medical care is inherently longitudinal, and clinicians must aggregate evidence across repeated visits, tests, and evolving treatments. Therefore, long-horizon interaction is essential for realistic assessment. LongMedBench is constructed via a reproducible pipeline that integrates MIMIC-IV admission records and clinical notes into time-series event streams and long-context memory datasets, enabling long-horizon, multi-session interactions between agents and a clinical environment. It comprises 335 patients, with 19.72 inpatient visits per patient on average and 44.91 medical events per visit. Guided by the long-horizon decision process, we propose an evaluation taxonomy with three suites: fact-based QA, temporal reasoning, and long-horizon decision-making. This taxonomy measures how agents understand and leverage historical patient information over extended horizons. Our experiments show that while recent LLMs can make good use of explicit timestamps, they have challenges in implicit time inference; The RAG and agent memory system can improve the performance of information retrieval tasks, but the performance of decision-making tasks is highly dependent on the model's immediate context.",
+    "authors": [
+      "Yanzhen Chen",
+      "Zihan Xu",
+      "Xiaocheng Zhang",
+      "Zhiting Fan",
+      "Weiqi Zhai",
+      "Hongxia Xu",
+      "Zuozhu Liu"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2607.09322v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：In this work, we introduce LongMedBench, a real-world EHR-based benchmark for long-horizon clinical decision-making.\n\n进一步看，论文的核心做法或实验重点可以概括为：Prior evaluations of LLM-based medical agents have largely emphasized short-context knowledge QA and tool use.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory",
+      "context memory"
+    ],
+    "one_liner": "In this work, we introduce LongMedBench, a real-world EHR-based benchmark for long-horizon clinical decision-making.",
+    "published": "2026-07-10",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context, retrieval\n- 检索关键词命中：agent memory, context memory\n- 来源分类信息：cs.AI",
+    "slug": "longmedbench-benchmarking-medical-agents-for-long-horizon-clinical-decision-maki",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2607.09322v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "retrieval"
+    ],
+    "title": "LongMedBench: Benchmarking Medical Agents for Long-Horizon Clinical Decision-Making",
+    "updated": "2026-07-10",
+    "url": "http://arxiv.org/abs/2607.09322v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Modern AI systems are increasingly being evaluated for their ability to reason, code, prove theorems, use tools, and long-horizon research tasks. These are powerful capabilities, but they share a structural limitation: the representational frame within which the model operates, including its conceptual vocabulary, the space of admissible solutions it can search, and the criteria by which success is evaluated, is typically fixed and supplied in advance. This paper argues that building stronger intelligent systems capable of open-ended innovation requires additional classes of operations: the creation, stabilization, and reuse of new representational primitives, which alter the space being searched rather than simply searching within it. We characterize the distance between current AI systems and genuinely open-ended intelligence through two gaps. The first is the vocabulary gap, the difficulty of inventing and stabilizing new representational primitives rather than merely recombining existing ones. The second is the verifier gap, the difficulty of judging the value of a new primitive when its full payoff may be visible only after future reuse. We interpret both gaps through a unified framework of intelligence as cognitive discrepancy reduction. By viewing intelligent behaviors as a sequence of cognitive transformations, we distinguish intra-space transformations which operate within a fixed representational frame, from generative transformations which may modify the frame itself. On this basis, we propose a ladder of innovation autonomy and outline several directions for advancing open-ended AI, including objectives that reward useful representational change, persistent memory architectures for invented primitives, and adaptive verification mechanisms capable of evolving alongside the representations they evaluate.",
+    "authors": [
+      "Yuan Cao",
+      "Haiqian Yang"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.LG"
+    ],
+    "id": "2607.09560v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `persistent memory` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Modern AI systems are increasingly being evaluated for their ability to reason, code, prove theorems, use tools, and long-horizon research tasks.\n\n进一步看，论文的核心做法或实验重点可以概括为：These are powerful capabilities, but they share a structural limitation: the representational frame within which the model operates, including its conceptual vocabulary, the space of admissible solutions it can...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "persistent memory"
+    ],
+    "one_liner": "Modern AI systems are increasingly being evaluated for their ability to reason, code, prove theorems, use tools, and long-horizon research tasks.",
+    "published": "2026-07-10",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：persistent memory\n- 检索关键词命中：persistent memory\n- 来源分类信息：cs.AI, cs.LG",
+    "slug": "beyond-fixed-representations-the-vocabulary-and-verifier-gaps-in-open-ended-ai",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2607.09560v1",
+    "tags": [
+      "persistent memory"
+    ],
+    "title": "Beyond Fixed Representations: The Vocabulary and Verifier Gaps in Open-Ended AI",
+    "updated": "2026-07-10",
+    "url": "http://arxiv.org/abs/2607.09560v1",
+    "venue": ""
+  },
+  {
     "abstract": "Large language models, and the agents built on them, spend an ever-growing share of their compute and memory on remembering: caching attention keys and values, carrying long prompts, maintaining recurrent state, and storing what happened in previous turns and sessions. Because none of this memory is free, four largely separate research communities have each learned to compact it. They evict or quantize the KV cache, prune or distill prompts, bound architectural state, and consolidate agent memory. We argue that these are instances of one problem: a rate--distortion decision about what context-derived information to retain versus discard, at what fidelity, under a resource budget, so as to preserve downstream task utility. We make this lens precise with a single compaction objective and a layer-agnostic lower bound, use it to build a seven-axis taxonomy that classifies methods from across the stack uniformly, and use it to transfer mechanisms between layers that have never been connected, from serving-stack KV management to agent long-term memory. Two patterns hold across the survey. At every layer the signal that decides what to keep is attention magnitude or recency, and it fails in the same way everywhere, by discarding, before the query is known and with no way to undo it, information the query later needs. And while compression is measured carefully on single-turn long context, the repeated compaction that agents actually perform is almost never measured, and no benchmark holds one budget axis across all the layers at once. We turn both observations into a benchmark proposal, a small reference experiment, and a set of compaction-aware design principles, and we map the open problems.",
     "authors": [
       "Ashwin Gerard Colaco",

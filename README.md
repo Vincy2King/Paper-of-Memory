@@ -39,13 +39,13 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **673**
+- Total tracked papers: **677**
 - Last generated: **2026-07-13**
 
 ## Papers by Source
 
 - ACL Anthology: **4**
-- arXiv: **563**
+- arXiv: **567**
 - OpenReview: **106**
 
 ## Latest Papers
@@ -54,6 +54,10 @@ python3 scripts/update_papers.py --build-only
 | --- | --- | --- | --- |
 | 2026-07-11 | OpenReview | [Basic Performance Measurements of the Intel Optane DC Persistent Memory Module](content/papers/basic-performance-measurements-of-the-intel-optane-dc-persistent-memory-module.md) | benchmark |
 | 2026-07-11 | OpenReview | [A Memory-Augmented Extension of Random Forest: The Memory-Augmented Forest (MAF)](content/papers/a-memory-augmented-extension-of-random-forest-the-memory-augmented-forest-maf.md) | context |
+| 2026-07-10 | arXiv | [Shared Selective Persistent Memory for Agentic LLM Systems](content/papers/shared-selective-persistent-memory-for-agentic-llm-systems.md) | agent, context, conversation |
+| 2026-07-10 | arXiv | [SAGEAgent: A Self-Evolving Agent for Cost-Aware Modality Acquisition in Multimodal Survival Prediction](content/papers/sageagent-a-self-evolving-agent-for-cost-aware-modality-acquisition-in-multimoda.md) | agent, episodic |
+| 2026-07-10 | arXiv | [LongMedBench: Benchmarking Medical Agents for Long-Horizon Clinical Decision-Making](content/papers/longmedbench-benchmarking-medical-agents-for-long-horizon-clinical-decision-maki.md) | agent, benchmark, context |
+| 2026-07-10 | arXiv | [Beyond Fixed Representations: The Vocabulary and Verifier Gaps in Open-Ended AI](content/papers/beyond-fixed-representations-the-vocabulary-and-verifier-gaps-in-open-ended-ai.md) | persistent memory |
 | 2026-07-09 | arXiv | [What to Keep, What to Forget: A Rate--Distortion View of Memory Compaction in LLMs and Agents](content/papers/what-to-keep-what-to-forget-a-rate-distortion-view-of-memory-compaction-in-llms-.md) | agent, benchmark, compression |
 | 2026-07-09 | OpenReview | [EfficientNav: Towards On-Device Object-Goal Navigation with Navigation Map Caching and Retrieval](content/papers/efficientnav-towards-on-device-object-goal-navigation-with-navigation-map-cachin.md) | agent, benchmark, retrieval |
 | 2026-07-09 | OpenReview | [Efficient Allocation of Working Memory Resource for Utility Maximization in Humans and Recurrent Neural Networks](content/papers/efficient-allocation-of-working-memory-resource-for-utility-maximization-in-huma.md) | context |
@@ -68,10 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-07-07 | arXiv | [MemDefrag: Latent Memory Defragmentation for Large Language Models](content/papers/memdefrag-latent-memory-defragmentation-for-large-language-models.md) | benchmark, context, long-term |
 | 2026-07-06 | arXiv | [Your Agent's Memories Are Not Its Own: Forged Reasoning Attacks on LLM Agent Memory and Defenses](content/papers/your-agent-s-memories-are-not-its-own-forged-reasoning-attacks-on-llm-agent-memo.md) | agent, context |
 | 2026-07-06 | arXiv | [When Claws Remember but Do Not Tell: Stealthy Memory Injection in Persistent Personal Agents](content/papers/when-claws-remember-but-do-not-tell-stealthy-memory-injection-in-persistent-pers.md) | agent, benchmark, conversation |
-| 2026-07-06 | arXiv | [When Agents Remember Too Much: Memory Poisoning Attacks on Large Language Model Agents](content/papers/when-agents-remember-too-much-memory-poisoning-attacks-on-large-language-model-a.md) | agent, context, conversation |
-| 2026-07-06 | arXiv | [Self-Review Reinforcement Learning (SRRL) with Cross-Episode Memory and Policy Distillation](content/papers/self-review-reinforcement-learning-srrl-with-cross-episode-memory-and-policy-dis.md) | benchmark |
-| 2026-07-06 | OpenReview | [Schema-Mem: Structured and Evolving Memory for Long-term Conversational Knowledge](content/papers/schema-mem-structured-and-evolving-memory-for-long-term-conversational-knowledge.md) | agent, context, conversation |
-| 2026-07-06 | arXiv | [Narrative World Model: Narratology-Grounded Writer Memory for Long-Form Fiction](content/papers/narrative-world-model-narratology-grounded-writer-memory-for-long-form-fiction.md) | agent, benchmark, retrieval |
 
 ## Suggested GitHub Setup
 
