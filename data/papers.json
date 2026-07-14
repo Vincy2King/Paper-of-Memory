@@ -1,5 +1,36 @@
 [
   {
+    "abstract": "Persistent LLM agents require memory representations that make the formation of person understanding explicit across long term interaction. Existing agent memory methods emphasize information retention and retrieval, yet give limited account of how accumulated interaction evidence is abstracted into person understanding. We view this process as schema formation, where situated evidence is abstracted into reusable patterns and stable person level claims. We introduce PersonaTree, a structured lifecycle memory framework that realizes this view as a three level persona tree with explicit support paths from evidence to claims. PersonaTree maintains the tree through conservative writing, confidence guided consolidation, and query conditioned path retrieval, returning only the evidence depth required by each query. Across six person understanding and persistent memory benchmarks with three answer backbones, PersonaTree ranks first in 12 of 18 compact scores and reaches the top two in 16 settings. Ablations show that hierarchy improves abstract person understanding on KnowMe, while support path retrieval improves RealPref alignment under a comparable context budget.",
+    "authors": [],
+    "categories": [
+      "aclweb.org/ACL/ARR/2026/May/-/Submission"
+    ],
+    "id": "openreview:iJ437H6hSR",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, retrieval` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 May Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Persistent LLM agents require memory representations that make the formation of person understanding explicit across long term interaction.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing agent memory methods emphasize information retention and retrieval, yet give limited account of how accumulated interaction evidence is abstracted into person understanding.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory",
+      "memory benchmark",
+      "memory benchmarks",
+      "persistent memory"
+    ],
+    "one_liner": "Persistent LLM agents require memory representations that make the formation of person understanding explicit across long term interaction.",
+    "published": "2026-06-02",
+    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 May Submission\n- 高亮主题命中：agent, benchmark, context, retrieval\n- 检索关键词命中：agent memory, memory benchmark, memory benchmarks, persistent memory\n- 来源分类信息：aclweb.org/ACL/ARR/2026/May/-/Submission",
+    "slug": "personatree-structured-lifecycle-memory-for-person-understanding-in-llm-agents",
+    "source": "OpenReview",
+    "source_key": "iJ437H6hSR",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "retrieval"
+    ],
+    "title": "PersonaTree: Structured Lifecycle Memory for Person Understanding in LLM Agents",
+    "updated": "2026-07-13",
+    "url": "https://openreview.net/forum?id=iJ437H6hSR",
+    "venue": "ACL ARR 2026 May Submission"
+  },
+  {
     "abstract": "Scalable nonvolatile memory DIMMs will finally be commercially available with the release of the Intel Optane DC Persistent Memory Module (or just \"Optane DC PMM\"). This new nonvolatile DIMM supports byte-granularity accesses with access times on the order of DRAM, while also providing data storage that survives power outages. This work comprises the first in-depth, scholarly, performance review of Intel's Optane DC PMM, exploring its capabilities as a main memory device, and as persistent, byte-addressable memory exposed to user-space applications. This report details the technologies performance under a number of modes and scenarios, and across a wide variety of macro-scale benchmarks. Optane DC PMMs can be used as large memory devices with a DRAM cache to hide their lower bandwidth and higher latency. When used in this Memory (or cached) mode, Optane DC memory has little impact on applications with small memory footprints. Applications with larger memory footprints may experience some slow-down relative to DRAM, but are now able to keep much more data in memory. When used under a file system, Optane DC PMMs can result in significant performance gains, especially when the file system is optimized to use the load/store interface of the Optane DC PMM and the application uses many small, persistent writes. For instance, using the NOVA-relaxed NVMM file system, we can improve the performance of Kyoto Cabinet by almost 2x. Optane DC PMMs can also enable user-space persistence where the application explicitly controls its writes into persistent Optane DC media. In our experiments, modified applications that used user-space Optane DC persistence generally outperformed their file system counterparts. For instance, the persistent version of RocksDB performed almost 2x faster than the equivalent program utilizing an NVMM-aware file system.",
     "authors": [
       "Joseph Izraelevitz",
@@ -406,37 +437,6 @@
     "updated": "2026-07-09",
     "url": "http://arxiv.org/abs/2606.05050v2",
     "venue": ""
-  },
-  {
-    "abstract": "Persistent LLM agents require memory representations that make the formation of person understanding explicit across long term interaction. Existing agent memory methods emphasize information retention and retrieval, yet give limited account of how accumulated interaction evidence is abstracted into person understanding. We view this process as schema formation, where situated evidence is abstracted into reusable patterns and stable person level claims. We introduce PersonaTree, a structured lifecycle memory framework that realizes this view as a three level persona tree with explicit support paths from evidence to claims. PersonaTree maintains the tree through conservative writing, confidence guided consolidation, and query conditioned path retrieval, returning only the evidence depth required by each query. Across six person understanding and persistent memory benchmarks with three answer backbones, PersonaTree ranks first in 12 of 18 compact scores and reaches the top two in 16 settings. Ablations show that hierarchy improves abstract person understanding on KnowMe, while support path retrieval improves RealPref alignment under a comparable context budget.",
-    "authors": [],
-    "categories": [
-      "aclweb.org/ACL/ARR/2026/May/-/Submission"
-    ],
-    "id": "openreview:iJ437H6hSR",
-    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, retrieval` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 May Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Persistent LLM agents require memory representations that make the formation of person understanding explicit across long term interaction.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing agent memory methods emphasize information retention and retrieval, yet give limited account of how accumulated interaction evidence is abstracted into person understanding.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
-    "matched_keywords": [
-      "agent memory",
-      "memory benchmark",
-      "memory benchmarks",
-      "persistent memory"
-    ],
-    "one_liner": "Persistent LLM agents require memory representations that make the formation of person understanding explicit across long term interaction.",
-    "published": "2026-06-02",
-    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 May Submission\n- 高亮主题命中：agent, benchmark, context, retrieval\n- 检索关键词命中：agent memory, memory benchmark, memory benchmarks, persistent memory\n- 来源分类信息：aclweb.org/ACL/ARR/2026/May/-/Submission",
-    "slug": "personatree-structured-lifecycle-memory-for-person-understanding-in-llm-agents",
-    "source": "OpenReview",
-    "source_key": "iJ437H6hSR",
-    "tags": [
-      "agent",
-      "benchmark",
-      "context",
-      "retrieval"
-    ],
-    "title": "PersonaTree: Structured Lifecycle Memory for Person Understanding in LLM Agents",
-    "updated": "2026-07-08",
-    "url": "https://openreview.net/forum?id=iJ437H6hSR",
-    "venue": "ACL ARR 2026 May Submission"
   },
   {
     "abstract": "Long term memory lets LLM agents act as persistent assistants, but user facts change. A useful memory system must know what is true now, what used to be true, and what changed. We study \\emph{ghost memory}, a state coordination failure in which old, current, and transition facts coexist in the memory bank, remain mixed during retrieval, and mislead the answer model. We argue that memory systems should be understood and optimized from three levels: bank maintenance, retrieval, and answer time resolution. We propose ATMA, a state aware overlay for existing memory systems. ATMA keeps superseded and transition records in the bank, builds evidence packets for the query's requested state view, and exposes current, historical, and transition labels to QA. We further call for decoupled evaluation of bank, retrieval, and answer level failures, since final QA accuracy can hide where ghost memory occurs. To make this failure measurable, we build LTP (LoCoMo Temporal Plus), a conflict heavy benchmark for ghost memory, and evaluate on LoCoMo for long conversation generalization. On LTP, Graphiti+ATMA improves conflict accuracy by 0.240 absolute over Graphiti. On LoCoMo, Graphiti+ATMA raises temporal F1 from 0.0295 to 0.1705. The gains are host dependent, but they indicate that explicit state roles can reduce memory failures hidden by final QA accuracy.",

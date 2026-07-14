@@ -40,7 +40,7 @@ python3 scripts/update_papers.py --build-only
 ## Repository Snapshot
 
 - Total tracked papers: **677**
-- Last generated: **2026-07-13**
+- Last generated: **2026-07-14**
 
 ## Papers by Source
 
@@ -52,6 +52,7 @@ python3 scripts/update_papers.py --build-only
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-07-13 | OpenReview | [PersonaTree: Structured Lifecycle Memory for Person Understanding in LLM Agents](content/papers/personatree-structured-lifecycle-memory-for-person-understanding-in-llm-agents.md) | agent, benchmark, context |
 | 2026-07-11 | OpenReview | [Basic Performance Measurements of the Intel Optane DC Persistent Memory Module](content/papers/basic-performance-measurements-of-the-intel-optane-dc-persistent-memory-module.md) | benchmark |
 | 2026-07-11 | OpenReview | [A Memory-Augmented Extension of Random Forest: The Memory-Augmented Forest (MAF)](content/papers/a-memory-augmented-extension-of-random-forest-the-memory-augmented-forest-maf.md) | context |
 | 2026-07-10 | arXiv | [Shared Selective Persistent Memory for Agentic LLM Systems](content/papers/shared-selective-persistent-memory-for-agentic-llm-systems.md) | agent, context, conversation |
@@ -64,7 +65,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-07-09 | arXiv | [ContextSniper: AntTrail's Token-Efficient Code Memory for Repository-Level Program Repair](content/papers/contextsniper-anttrail-s-token-efficient-code-memory-for-repository-level-progra.md) | agent, context |
 | 2026-07-09 | arXiv | [Cognitive-structured Multimodal Agent for Multimodal Understanding, Generation, and Editing](content/papers/cognitive-structured-multimodal-agent-for-multimodal-understanding-generation-an.md) | agent, benchmark, context |
 | 2026-07-09 | arXiv | [Autonomous heterogeneous catalyst discovery with a self-evolving multi-agent digital twin](content/papers/autonomous-heterogeneous-catalyst-discovery-with-a-self-evolving-multi-agent-dig.md) | agent, benchmark |
-| 2026-07-08 | OpenReview | [PersonaTree: Structured Lifecycle Memory for Person Understanding in LLM Agents](content/papers/personatree-structured-lifecycle-memory-for-person-understanding-in-llm-agents.md) | agent, benchmark, context |
 | 2026-07-08 | arXiv | [A-TMA: Decoupling State-Aware Memory Failures in Long-Term Agent Memory](content/papers/a-tma-decoupling-state-aware-memory-failures-in-long-term-agent-memory.md) | agent, benchmark, conversation |
 | 2026-07-07 | arXiv | [Rank-Order N-of-M Codes for Sparse Distributed Memory: Disentangling Representation and Learning Effects in Noise Robustness Against Contemporary Neuromorphic Architectures](content/papers/rank-order-n-of-m-codes-for-sparse-distributed-memory-disentangling-representati.md) | episodic |
 | 2026-07-07 | arXiv | [Prompt-Adapter Context Routing for Parameter-Efficient Multi-Shot Long Video Extrapolation](content/papers/prompt-adapter-context-routing-for-parameter-efficient-multi-shot-long-video-ext.md) | benchmark, context |
