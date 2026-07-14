@@ -39,39 +39,39 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **677**
+- Total tracked papers: **691**
 - Last generated: **2026-07-14**
 
 ## Papers by Source
 
 - ACL Anthology: **4**
-- arXiv: **567**
+- arXiv: **581**
 - OpenReview: **106**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-07-13 | arXiv | [Vinci2: Providing Proactive Assistance in Continuous Egocentric Videos](content/papers/vinci2-providing-proactive-assistance-in-continuous-egocentric-videos.md) | agent, benchmark, context |
 | 2026-07-13 | OpenReview | [PersonaTree: Structured Lifecycle Memory for Person Understanding in LLM Agents](content/papers/personatree-structured-lifecycle-memory-for-person-understanding-in-llm-agents.md) | agent, benchmark, context |
+| 2026-07-13 | arXiv | [OpsMem: Dual-Memory Reasoning with Cross-Memory Resonance for Failure Diagnosis](content/papers/opsmem-dual-memory-reasoning-with-cross-memory-resonance-for-failure-diagnosis.md) | agent, long-term |
+| 2026-07-13 | arXiv | [LongMedBench: Benchmarking Medical Agents for Long-Horizon Clinical Decision-Making](content/papers/longmedbench-benchmarking-medical-agents-for-long-horizon-clinical-decision-maki.md) | agent, benchmark, context |
+| 2026-07-13 | arXiv | [Long-Memory Reservoir Computing for Data-Scarce Dengue Forecasting](content/papers/long-memory-reservoir-computing-for-data-scarce-dengue-forecasting.md) | long-term |
+| 2026-07-13 | arXiv | [LightMem-Ego: Your AI Memory for Everyday Life](content/papers/lightmem-ego-your-ai-memory-for-everyday-life.md) | conversation, long-term, retrieval |
+| 2026-07-13 | arXiv | [Forgetting Our Way to Shared Meaning: Effects of Forgetting on Conceptual Alignment in a Non-Partnership Coordination Game](content/papers/forgetting-our-way-to-shared-meaning-effects-of-forgetting-on-conceptual-alignme.md) | agent |
+| 2026-07-13 | arXiv | [Bringing Back Rule Induction to Fluid Intelligence Research? An Initial Validation of the ARC-AGI Benchmark in Humans](content/papers/bringing-back-rule-induction-to-fluid-intelligence-research-an-initial-validatio.md) | benchmark |
+| 2026-07-13 | arXiv | [A Glimpse into Long-term Physical Coexistence with Intelligent Robots](content/papers/a-glimpse-into-long-term-physical-coexistence-with-intelligent-robots.md) | agent, context, long-term |
+| 2026-07-12 | arXiv | [When Context Dominates: Multimodal Signatures of Takeover Readiness Under Varying Hazard and Cognitive Load Conditions](content/papers/when-context-dominates-multimodal-signatures-of-takeover-readiness-under-varying.md) | context, conversation |
+| 2026-07-12 | arXiv | [The Compliance Trap: Diagnosing How AI Agents Consume Conflicting Memory](content/papers/the-compliance-trap-diagnosing-how-ai-agents-consume-conflicting-memory.md) | agent, benchmark, retrieval |
+| 2026-07-12 | arXiv | [Agents Don't Just Agree, They Remember: Benchmarking Persistent Sycophancy in Stateful Personal Agents](content/papers/agents-don-t-just-agree-they-remember-benchmarking-persistent-sycophancy-in-stat.md) | agent, benchmark, conversation |
+| 2026-07-11 | arXiv | [PhysMRV: Physical Memory Retrieval and Verification for Physics Plausibility Reasoning](content/papers/physmrv-physical-memory-retrieval-and-verification-for-physics-plausibility-reas.md) | benchmark, context, retrieval |
+| 2026-07-11 | arXiv | [Context by Distinct Information: An Auditable Dirichlet-Process Working Memory for Long, Redundant Context Streams](content/papers/context-by-distinct-information-an-auditable-dirichlet-process-working-memory-fo.md) | context |
 | 2026-07-11 | OpenReview | [Basic Performance Measurements of the Intel Optane DC Persistent Memory Module](content/papers/basic-performance-measurements-of-the-intel-optane-dc-persistent-memory-module.md) | benchmark |
+| 2026-07-11 | arXiv | [ABot-AgentOS: A General Robotic Agent OS with Lifelong Multi-modal Memory](content/papers/abot-agentos-a-general-robotic-agent-os-with-lifelong-multi-modal-memory.md) | agent, benchmark, context |
 | 2026-07-11 | OpenReview | [A Memory-Augmented Extension of Random Forest: The Memory-Augmented Forest (MAF)](content/papers/a-memory-augmented-extension-of-random-forest-the-memory-augmented-forest-maf.md) | context |
 | 2026-07-10 | arXiv | [Shared Selective Persistent Memory for Agentic LLM Systems](content/papers/shared-selective-persistent-memory-for-agentic-llm-systems.md) | agent, context, conversation |
 | 2026-07-10 | arXiv | [SAGEAgent: A Self-Evolving Agent for Cost-Aware Modality Acquisition in Multimodal Survival Prediction](content/papers/sageagent-a-self-evolving-agent-for-cost-aware-modality-acquisition-in-multimoda.md) | agent, episodic |
 | 2026-07-10 | arXiv | [LongMedBench: Benchmarking Medical Agents for Long-Horizon Clinical Decision-Making](content/papers/longmedbench-benchmarking-medical-agents-for-long-horizon-clinical-decision-maki.md) | agent, benchmark, context |
-| 2026-07-10 | arXiv | [Beyond Fixed Representations: The Vocabulary and Verifier Gaps in Open-Ended AI](content/papers/beyond-fixed-representations-the-vocabulary-and-verifier-gaps-in-open-ended-ai.md) | persistent memory |
-| 2026-07-09 | arXiv | [What to Keep, What to Forget: A Rate--Distortion View of Memory Compaction in LLMs and Agents](content/papers/what-to-keep-what-to-forget-a-rate-distortion-view-of-memory-compaction-in-llms-.md) | agent, benchmark, compression |
-| 2026-07-09 | OpenReview | [EfficientNav: Towards On-Device Object-Goal Navigation with Navigation Map Caching and Retrieval](content/papers/efficientnav-towards-on-device-object-goal-navigation-with-navigation-map-cachin.md) | agent, benchmark, retrieval |
-| 2026-07-09 | OpenReview | [Efficient Allocation of Working Memory Resource for Utility Maximization in Humans and Recurrent Neural Networks](content/papers/efficient-allocation-of-working-memory-resource-for-utility-maximization-in-huma.md) | context |
-| 2026-07-09 | arXiv | [ContextSniper: AntTrail's Token-Efficient Code Memory for Repository-Level Program Repair](content/papers/contextsniper-anttrail-s-token-efficient-code-memory-for-repository-level-progra.md) | agent, context |
-| 2026-07-09 | arXiv | [Cognitive-structured Multimodal Agent for Multimodal Understanding, Generation, and Editing](content/papers/cognitive-structured-multimodal-agent-for-multimodal-understanding-generation-an.md) | agent, benchmark, context |
-| 2026-07-09 | arXiv | [Autonomous heterogeneous catalyst discovery with a self-evolving multi-agent digital twin](content/papers/autonomous-heterogeneous-catalyst-discovery-with-a-self-evolving-multi-agent-dig.md) | agent, benchmark |
-| 2026-07-08 | arXiv | [A-TMA: Decoupling State-Aware Memory Failures in Long-Term Agent Memory](content/papers/a-tma-decoupling-state-aware-memory-failures-in-long-term-agent-memory.md) | agent, benchmark, conversation |
-| 2026-07-07 | arXiv | [Rank-Order N-of-M Codes for Sparse Distributed Memory: Disentangling Representation and Learning Effects in Noise Robustness Against Contemporary Neuromorphic Architectures](content/papers/rank-order-n-of-m-codes-for-sparse-distributed-memory-disentangling-representati.md) | episodic |
-| 2026-07-07 | arXiv | [Prompt-Adapter Context Routing for Parameter-Efficient Multi-Shot Long Video Extrapolation](content/papers/prompt-adapter-context-routing-for-parameter-efficient-multi-shot-long-video-ext.md) | benchmark, context |
-| 2026-07-07 | arXiv | [Nested Episodic State Topology (NEST): A Graph-Theoretic Architecture of Cognitive States](content/papers/nested-episodic-state-topology-nest-a-graph-theoretic-architecture-of-cognitive-.md) | context, episodic |
-| 2026-07-07 | arXiv | [MemDefrag: Latent Memory Defragmentation for Large Language Models](content/papers/memdefrag-latent-memory-defragmentation-for-large-language-models.md) | benchmark, context, long-term |
-| 2026-07-06 | arXiv | [Your Agent's Memories Are Not Its Own: Forged Reasoning Attacks on LLM Agent Memory and Defenses](content/papers/your-agent-s-memories-are-not-its-own-forged-reasoning-attacks-on-llm-agent-memo.md) | agent, context |
-| 2026-07-06 | arXiv | [When Claws Remember but Do Not Tell: Stealthy Memory Injection in Persistent Personal Agents](content/papers/when-claws-remember-but-do-not-tell-stealthy-memory-injection-in-persistent-pers.md) | agent, benchmark, conversation |
 
 ## Suggested GitHub Setup
 
