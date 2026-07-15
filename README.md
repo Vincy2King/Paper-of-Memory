@@ -39,19 +39,21 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **691**
-- Last generated: **2026-07-14**
+- Total tracked papers: **693**
+- Last generated: **2026-07-15**
 
 ## Papers by Source
 
 - ACL Anthology: **4**
 - arXiv: **581**
-- OpenReview: **106**
+- OpenReview: **108**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-07-14 | OpenReview | [SMMBench: A Benchmark for Source-Distributed Multimodal Agent Memory](content/papers/smmbench-a-benchmark-for-source-distributed-multimodal-agent-memory.md) | agent, benchmark, context |
+| 2026-07-14 | OpenReview | [OilSAM2: Memory-Augmented SAM2 for Scalable SAR Oil Spill Detection](content/papers/oilsam2-memory-augmented-sam2-for-scalable-sar-oil-spill-detection.md) | memory augmented, memory-augmented |
 | 2026-07-13 | arXiv | [Vinci2: Providing Proactive Assistance in Continuous Egocentric Videos](content/papers/vinci2-providing-proactive-assistance-in-continuous-egocentric-videos.md) | agent, benchmark, context |
 | 2026-07-13 | OpenReview | [PersonaTree: Structured Lifecycle Memory for Person Understanding in LLM Agents](content/papers/personatree-structured-lifecycle-memory-for-person-understanding-in-llm-agents.md) | agent, benchmark, context |
 | 2026-07-13 | arXiv | [OpsMem: Dual-Memory Reasoning with Cross-Memory Resonance for Failure Diagnosis](content/papers/opsmem-dual-memory-reasoning-with-cross-memory-resonance-for-failure-diagnosis.md) | agent, long-term |
@@ -70,8 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-07-11 | arXiv | [ABot-AgentOS: A General Robotic Agent OS with Lifelong Multi-modal Memory](content/papers/abot-agentos-a-general-robotic-agent-os-with-lifelong-multi-modal-memory.md) | agent, benchmark, context |
 | 2026-07-11 | OpenReview | [A Memory-Augmented Extension of Random Forest: The Memory-Augmented Forest (MAF)](content/papers/a-memory-augmented-extension-of-random-forest-the-memory-augmented-forest-maf.md) | context |
 | 2026-07-10 | arXiv | [Shared Selective Persistent Memory for Agentic LLM Systems](content/papers/shared-selective-persistent-memory-for-agentic-llm-systems.md) | agent, context, conversation |
-| 2026-07-10 | arXiv | [SAGEAgent: A Self-Evolving Agent for Cost-Aware Modality Acquisition in Multimodal Survival Prediction](content/papers/sageagent-a-self-evolving-agent-for-cost-aware-modality-acquisition-in-multimoda.md) | agent, episodic |
-| 2026-07-10 | arXiv | [LongMedBench: Benchmarking Medical Agents for Long-Horizon Clinical Decision-Making](content/papers/longmedbench-benchmarking-medical-agents-for-long-horizon-clinical-decision-maki.md) | agent, benchmark, context |
 
 ## Suggested GitHub Setup
 
