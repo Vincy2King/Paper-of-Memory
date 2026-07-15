@@ -1,5 +1,114 @@
 [
   {
+    "abstract": "Memory is a critical component of robotic intelligence, as robots must rely on past observations and actions to accomplish long-horizon tasks in partially observable environments. However, existing robotic memory benchmarks still lack multimodal annotations for memory formation, provide limited task coverage and structural complexity, and remain restricted to simulation without real-world evaluation. We address this gap with RoboMemArena, a large-scale benchmark of 26 tasks, with average trajectory lengths exceeding 1,000 steps per task and 68.9% of subtasks being memory-dependent. The generation pipeline leverages a vision-language model (VLM) to design and compose subtasks, generates full trajectories through atomic functions, and provides memory-related annotations, including subtask instructions and native keyframe annotations, while paired real-world memory tasks support physical evaluation. We further design PrediMem, a dual-system VLA in which a high-level VLM planner manages a memory bank with recent and keyframe buffers and uses a predictive coding head to improve sensitivity to task dynamics. Extensive experiments on RoboMemArena show that PrediMem outperforms all baselines and provides insights into memory management, model architecture, and scaling laws for complex memory systems.",
+    "authors": [
+      "{'fullname': 'Huashuo Lei', 'username': ''}",
+      "{'fullname': 'Wenxuan Song', 'username': ''}",
+      "{'fullname': 'Huarui Zhang', 'username': ''}",
+      "{'fullname': 'Jieyuan Pei', 'username': ''}",
+      "{'fullname': 'Jiayi Chen', 'username': ''}",
+      "{'fullname': 'Haodong Yan', 'username': ''}",
+      "{'fullname': 'Han Zhao', 'username': ''}",
+      "{'fullname': 'Pengxiang Ding', 'username': ''}",
+      "{'fullname': 'Zhipeng Zhang', 'username': '~Zhipeng_Zhang2'}",
+      "{'fullname': 'Lida Huang', 'username': ''}",
+      "{'fullname': 'Donglin Wang', 'username': ''}",
+      "{'fullname': 'Yan Wang', 'username': ''}",
+      "{'fullname': 'Haoang Li', 'username': ''}"
+    ],
+    "categories": [
+      "OpenReview.net/Public_Article/DBLP.org/-/Record"
+    ],
+    "id": "openreview:gZ90mjAw1k",
+    "intro": "这篇论文被纳入仓库，是因为它和 `benchmark` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `CoRR 2026` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Memory is a critical component of robotic intelligence, as robots must rely on past observations and actions to accomplish long-horizon tasks in partially observable environments.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, existing robotic memory benchmarks still lack multimodal annotations for memory formation, provide limited task coverage and structural complexity, and remain restricted to simulation without real-world...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory benchmark",
+      "memory benchmarks"
+    ],
+    "one_liner": "Memory is a critical component of robotic intelligence, as robots must rely on past observations and actions to accomplish long-horizon tasks in partially observable environments.",
+    "published": "2026-12-31",
+    "relevance": "- 来源：OpenReview\n- Venue：CoRR 2026\n- 高亮主题命中：benchmark\n- 检索关键词命中：memory benchmark, memory benchmarks\n- 来源分类信息：OpenReview.net/Public_Article/DBLP.org/-/Record",
+    "slug": "robomemarena-a-comprehensive-and-challenging-robotic-memory-benchmark",
+    "source": "OpenReview",
+    "source_key": "gZ90mjAw1k",
+    "tags": [
+      "benchmark"
+    ],
+    "title": "RoboMemArena: A Comprehensive and Challenging Robotic Memory Benchmark",
+    "updated": "2026-07-15",
+    "url": "https://openreview.net/forum?id=gZ90mjAw1k",
+    "venue": "CoRR 2026"
+  },
+  {
+    "abstract": "Language agents that interleave reasoning and tool use degrade sharply as reasoning chains lengthen, even when each individual step is easy. We trace this to context dilution: an agent's investigative state (what it has confirmed, what it suspects, and what it still needs) lives only implicitly in a growing context window, where early discoveries are buried under later retrievals. We introduce SLEUTH, which makes this state explicit and actionable through a structured epistemic working memory: the agent maintains Confirmed Facts grounded to sources, Active Hypotheses ranked by evidence, and Open Questions that directly drive its next action. Across five multi-hop benchmarks and five established baselines, SLEUTH's advantage grows with difficulty, from +5 points on HotpotQA to +11 on 4-hop chains, surpassing Reflexion without multiple episodes. Analyzing where the remaining gap lies, we identify the evidence sufficiency problem: agents often find the answer but fail to commit, exhausting their budget on needless verification. A lightweight commitment trigger fixes this, but only when the agent already maintains structured state: the identical trigger applied to an unstructured agent yields no improvement, isolating organized epistemic state as the necessary condition for effective commitment. Finally, enforcing protocol adherence on a weaker model recovers up to +19 points on the hardest problems, showing that how an agent organizes its reasoning, not raw model capability, is the active ingredient for scaling multi-hop reasoning.",
+    "authors": [
+      "Ning Liu"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "id": "2607.12267v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Language agents that interleave reasoning and tool use degrade sharply as reasoning chains lengthen, even when each individual step is easy.\n\n进一步看，论文的核心做法或实验重点可以概括为：We trace this to context dilution: an agent's investigative state (what it has confirmed, what it suspects, and what it still needs) lives only implicitly in a growing context window, where early discoveries are...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "working memory"
+    ],
+    "one_liner": "Language agents that interleave reasoning and tool use degrade sharply as reasoning chains lengthen, even when each individual step is easy.",
+    "published": "2026-07-14",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context, retrieval\n- 检索关键词命中：working memory\n- 来源分类信息：cs.LG, cs.AI",
+    "slug": "track-rank-crack-epistemic-working-memory-scales-multi-hop-reasoning-in-language",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2607.12267v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "retrieval"
+    ],
+    "title": "Track, Rank, Crack: Epistemic Working Memory Scales Multi-Hop Reasoning in Language Agents",
+    "updated": "2026-07-14",
+    "url": "http://arxiv.org/abs/2607.12267v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Speculative execution accelerates LLM agents by using a smaller, cheaper model to predict and pre-launch the next step while the environment is idle. However, existing speculators are stateless and discard all information between tasks, preventing prediction quality from improving with experience. We equip the speculator with three online memory systems that learn from past agent trajectories: a contrastive transition table tracking action-sequence statistics, an episodic memory retrieving contextually similar segments, and a confusion tracker suppressing recurring errors. We evaluate this approach on six benchmarks spanning three speculation types: action prediction, observation prediction, and chained prediction. Memory-augmented speculation yields a 19--39\\% relative accuracy improvement on action prediction and up to a $2.5\\times$ increase on observation prediction tasks with repetitive action spaces. These gains grow continuously as memory accumulates and generalize across speculator models of varying cost. All speculation is lossless because it runs during idle time at zero added wall-clock cost, and the actor's trajectory is identical to non-speculative execution.",
+    "authors": [
+      "Yu Li",
+      "Qinyuan Ye",
+      "Prafulla Kumar Choubey",
+      "Jiaxin Zhang",
+      "Chien-Sheng Wu"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.CL"
+    ],
+    "id": "2607.12236v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, episodic` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Speculative execution accelerates LLM agents by using a smaller, cheaper model to predict and pre-launch the next step while the environment is idle.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, existing speculators are stateless and discard all information between tasks, preventing prediction quality from improving with experience.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "episodic memory",
+      "memory augmented",
+      "memory retrieval",
+      "memory-augmented"
+    ],
+    "one_liner": "Speculative execution accelerates LLM agents by using a smaller, cheaper model to predict and pre-launch the next step while the environment is idle.",
+    "published": "2026-07-14",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context, episodic\n- 检索关键词命中：episodic memory, memory augmented, memory retrieval, memory-augmented\n- 来源分类信息：cs.LG, cs.CL",
+    "slug": "speculate-with-memory-lossless-acceleration-for-llm-agents",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2607.12236v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "episodic"
+    ],
+    "title": "Speculate with Memory: Lossless Acceleration for LLM Agents",
+    "updated": "2026-07-14",
+    "url": "http://arxiv.org/abs/2607.12236v1",
+    "venue": ""
+  },
+  {
     "abstract": "Existing benchmarks for multimodal memory reasoning largely evaluate systems within pre-assembled contexts, but under-evaluate whether agents can use evidence distributed across independently originated sources. We argue that source-distributed memory composition is an important and under-examined bottleneck in multimodal agent memory, especially when relevant evidence is fragmented across heterogeneous artifacts such as conversations, profiles, screenshots, tables, images, and documents. To address this gap, we introduce Source-distributed Multimodal Memory Benchmark(SMMBench), which measures whether agents can retrieve, align, and compose multimodal evidence scattered across multiple sources rather than reason within a single curated context. SMMBench evaluates four core capabilities: (1) cross-source multimodal reasoning; (2) conflict resolution; (3) preference reasoning; (4) memory-grounded action prediction. The benchmark contains 1877 samples grounded in 264 sources. Experiments on representative memory-style and retrieval-based baselines show that current systems still struggle on these capabilities, positioning source-distributed multimodal memory as an important and still under-evaluated challenge for multimodal agents. Our data are available at https://huggingface.co/datasets/HuacanChai/SMMBench.",
     "authors": [
       "{'fullname': 'Huacan Chai', 'username': ''}",
@@ -42,6 +151,49 @@
     "venue": "CoRR 2026"
   },
   {
+    "abstract": "Building assistants that can continually watch the world, remember what they see, and reason over their accumulated experience is a long-standing goal, and recently multimodal agents equipped with long-term memory over video streams have attracted increasing interest. Unfortunately, existing systems either keep their memory inside the model context or in a flat feature store, and organize it around frames rather than around the persistent entities a stream is really about, which confines them to bounded videos and weakens their ability to track who and what reappears over time. In this paper, we propose ReflectWorld-MM, an entity-oriented multimodal memory system for open-ended video streams. It consists of three parts. The first is a perception front-end that turns an audiovisual stream into entity-resolved observations under a bounded short-term memory. The second is a hierarchical long-term memory, grounded in human memory theory, that couples a multi-scale episodic memory, an evolving entity-centric semantic memory, and a procedural memory. The third is a complete realization, built for real-world operation, that ingests arbitrary streams and plugs into off-the-shelf assistants. Across six long-video and lifelong-memory benchmarks, ReflectWorld-MM achieves the best accuracy on all six, outperforming strong memory agents and a frontier model.",
+    "authors": [
+      "Xiaokang Ma",
+      "Yifan Sun",
+      "Zhihong Jin",
+      "Jie Gu",
+      "Yudong Luo",
+      "Shenyi Shao",
+      "Chu Tang",
+      "Jingmin Chen",
+      "Li Pu"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "id": "2607.09759v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, episodic` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Building assistants that can continually watch the world, remember what they see, and reason over their accumulated experience is a long-standing goal, and recently multimodal agents equipped with long-term memory...\n\n进一步看，论文的核心做法或实验重点可以概括为：Unfortunately, existing systems either keep their memory inside the model context or in a flat feature store, and organize it around frames rather than around the persistent entities a stream is really about, which...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "episodic memory",
+      "long-term memory",
+      "memory benchmark",
+      "memory benchmarks"
+    ],
+    "one_liner": "Building assistants that can continually watch the world, remember what they see, and reason over their accumulated experience is a long-standing goal, and recently multimodal...",
+    "published": "2026-07-06",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context, episodic, long-term\n- 检索关键词命中：episodic memory, long-term memory, memory benchmark, memory benchmarks\n- 来源分类信息：cs.CV, cs.AI",
+    "slug": "reflectworld-mm-an-entity-oriented-multimodal-memory-system-for-open-ended-video",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2607.09759v2",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "episodic",
+      "long-term"
+    ],
+    "title": "ReflectWorld-MM: An Entity-Oriented Multimodal Memory System for Open-Ended Video Streams",
+    "updated": "2026-07-14",
+    "url": "http://arxiv.org/abs/2607.09759v2",
+    "venue": ""
+  },
+  {
     "abstract": "Segmenting oil spills from Synthetic Aperture Radar (SAR) imagery remains challenging due to severe appearance variability, scale heterogeneity, and the absence of temporal continuity in real world monitoring scenarios. While foundation models such as Segment Anything (SAM) enable prompt driven segmentation, existing SAM based approaches operate on single images and cannot effectively reuse information across scenes. Memory augmented variants (e.g., SAM2) further assume temporal coherence, making them prone to semantic drift when applied to unordered SAR image collections. We propose OilSAM2, a memory augmented segmentation framework tailored for unordered SAR oil spill monitoring. OilSAM2 introduces a hierarchical feature aware multi scale memory bank that explicitly models texture, structure, and semantic level representations, enabling robust cross image information reuse. To mitigate memory drift, we further propose a structure semantic consistent memory update strategy that selectively refreshes memory based on semantic discrepancy and structural variation.Experiments on two public SAR oil spill datasets demonstrate that OilSAM2 achieves state of the art segmentation performance, delivering stable and accurate results under noisy SAR monitoring scenarios. The source code is available at https://github.com/Chenshuaiyu1120/OILSAM2.",
     "authors": [
       "{'fullname': 'Shuaiyu Chen', 'username': ''}",
@@ -73,6 +225,116 @@
     "updated": "2026-07-14",
     "url": "https://openreview.net/forum?id=3R3GPwjuDQ",
     "venue": "CoRR 2026"
+  },
+  {
+    "abstract": "Long-term memory has become a foundational capability for LLM-based agents that accompany users across extended, multi-session interactions. Existing benchmarks, however, evaluate such memory almost exclusively through downstream question answering, scoring only the correctness of a final answer. This black-box formulation conflates the heterogeneous causes of memory failure, such as missing the introduction of a relevant fact, binding an operation to the wrong target, or relying on stale values after a correction. As a result, it can credit correct answers despite their reliance on inconsistent or unsafe memory states. In this paper, we argue that, in dynamic long-horizon interactions, memory is not a static collection of facts but a lifecycle of explicit operations, including remembering, forgetting, updating, reflecting, and their compositions. We introduce MemOps, a benchmark that reformulates conversational memory as a sequence of lifecycle operations and represents each memory event with a structured trace specifying its trigger, target, scope, state transition, and supporting evidence. A controllable generation pipeline embeds these operations into long, task-oriented conversations and produces gold operation traces together with six categories of operation-level probes, evaluated under both adjacent-evidence and long-context settings. Across long-context, retrieval-based, parametric and managed-memory systems, MemOps disentangles failure modes that final-answer accuracy alone conceals, revealing that current systems remain far from uniformly reliable. For instance, session-level retrieval outperforms turn-level retrieval, and long-context models remain notably weak at reconstructing ordered memory-state trajectories. These results move long-term memory evaluation from final-answer scoring toward interpretable, operation-level diagnosis.",
+    "authors": [
+      "Xixuan Hao",
+      "Zeyu Zhang",
+      "Zehao Lin",
+      "Yihang Sun",
+      "Ziliang Guo",
+      "Xichong Zhang",
+      "Yuxuan Liang",
+      "Feiyu Xiong",
+      "Zhiyu Li"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.CL"
+    ],
+    "id": "2607.12893v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, conversation` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Long-term memory has become a foundational capability for LLM-based agents that accompany users across extended, multi-session interactions.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing benchmarks, however, evaluate such memory almost exclusively through downstream question answering, scoring only the correctness of a final answer.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "conversational memory",
+      "long-term memory"
+    ],
+    "one_liner": "Long-term memory has become a foundational capability for LLM-based agents that accompany users across extended, multi-session interactions.",
+    "published": "2026-07-14",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context, conversation, long-term, retrieval\n- 检索关键词命中：conversational memory, long-term memory\n- 来源分类信息：cs.AI, cs.CL",
+    "slug": "memops-benchmarking-lifecycle-memory-operations-in-long-horizon-conversations",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2607.12893v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "conversation",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "MemOps: Benchmarking Lifecycle Memory Operations in Long-Horizon Conversations",
+    "updated": "2026-07-14",
+    "url": "http://arxiv.org/abs/2607.12893v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Two competing perspectives on fluid intelligence (gf) measures propose that performance is primarily constrained either by working memory capacity or by the ability to induce novel relations. The first perspective is currently dominant in measurement, as evident from the use of a limited set of recurring rules, whereas the second perspective is reflected in many definitions but rarely present in measurement. The ARC-AGI benchmark predominantly requires rule induction and was proposed as a measure of gf for both humans and artificial systems. However, its psychometric properties have not yet been examined in human samples. We therefore investigated the psychometric characteristics and nomological network of ARC-AGI in a first study with 100 participants. A compilation of ARC-AGI items showed good psychometric properties and correlated substantially with figural fluid intelligence as measured by a figural reasoning test (ρ= .63). Associations with figural originality were weak. These findings provide initial support for the validity of ARC-AGI as a measure of human fluid intelligence. Future research should include more rule induction tasks as well as additional multivariate covariates. This study is unusual by studying a task in humans that was initially designed for machines. We suggest systematically embedding AI benchmarks into the nomological network of human cognitive abilities to enable more systematic evaluation and interdisciplinary cooperation.",
+    "authors": [
+      "Jasmin Thelen",
+      "Oliver Wilhelm"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.LG"
+    ],
+    "id": "2607.11263v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `benchmark` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Two competing perspectives on fluid intelligence (gf) measures propose that performance is primarily constrained either by working memory capacity or by the ability to induce novel relations.\n\n进一步看，论文的核心做法或实验重点可以概括为：The first perspective is currently dominant in measurement, as evident from the use of a limited set of recurring rules, whereas the second perspective is reflected in many definitions but rarely present in measurement.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "working memory"
+    ],
+    "one_liner": "Two competing perspectives on fluid intelligence (gf) measures propose that performance is primarily constrained either by working memory capacity or by the ability to induce...",
+    "published": "2026-07-13",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：benchmark\n- 检索关键词命中：working memory\n- 来源分类信息：cs.AI, cs.LG",
+    "slug": "bringing-back-rule-induction-to-fluid-intelligence-research-an-initial-validatio",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2607.11263v2",
+    "tags": [
+      "benchmark"
+    ],
+    "title": "Bringing Back Rule Induction to Fluid Intelligence Research? An Initial Validation of the ARC-AGI Benchmark in Humans",
+    "updated": "2026-07-14",
+    "url": "http://arxiv.org/abs/2607.11263v2",
+    "venue": ""
+  },
+  {
+    "abstract": "Stateful personal agents increasingly maintain long-term user profiles, episodic memories, and reusable skills. This persistence turns conversational sycophancy into a state-writing failure: accepted user-centric claims can be committed as lasting preferences, background facts, or workflows and later reused after the original conversation is gone. We call this persistent sycophancy and introduce the Personal Agent Sycophancy Benchmark (PASB), a 1,600-task benchmark that traces whether a conversational claim is accepted, written into durable agent state, and reused in a later neutral query. Unlike prior benchmarks that provide pre-written memories, PASB evaluates real agents (Hermes-Agent and OpenClaw) that decide what to store. It isolates the write process by combining four scenario framings with four temporal delivery patterns and separating a five-turn persist stage from a cleared three-turn query stage, ensuring downstream effects arise only from durable state. Across twelve models, the commit boundary is the key inflection point: downstream failure increases from 45.0% in session-only episodes to 71.9% after commitment, a consistent increase of 27.0 percentage points. Committed claims exhibit three write-time patterns: status promotion, attribution removal, and scope broadening. These patterns become stronger under memory-like or procedural framing, repeated reinforcement, and even across domain boundaries. These results show that agent sycophancy is fundamentally a state-writing governance problem. Once user content is committed to durable memory, safety must govern what agents write, not only what they say. PASB identifies the write-time controls needed to gate risky commits while preserving the source, role, and scope of stored content beyond response-level mitigations.",
+    "authors": [
+      "Xutao Mao",
+      "Liangjie Zhao",
+      "Leyao Wang",
+      "Rui Qian",
+      "Qiang Huang",
+      "Wentao Wang",
+      "Bo Han",
+      "Xiang Zheng",
+      "Cong Wang"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2607.10526v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, conversation, episodic` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Stateful personal agents increasingly maintain long-term user profiles, episodic memories, and reusable skills.\n\n进一步看，论文的核心做法或实验重点可以概括为：This persistence turns conversational sycophancy into a state-writing failure: accepted user-centric claims can be committed as lasting preferences, background facts, or workflows and later reused after the original...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "episodic memory"
+    ],
+    "one_liner": "Stateful personal agents increasingly maintain long-term user profiles, episodic memories, and reusable skills.",
+    "published": "2026-07-12",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, conversation, episodic, long-term\n- 检索关键词命中：episodic memory\n- 来源分类信息：cs.AI",
+    "slug": "agents-don-t-just-agree-they-remember-benchmarking-persistent-sycophancy-in-stat",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2607.10526v2",
+    "tags": [
+      "agent",
+      "benchmark",
+      "conversation",
+      "episodic",
+      "long-term"
+    ],
+    "title": "Agents Don't Just Agree, They Remember: Benchmarking Persistent Sycophancy in Stateful Personal Agents",
+    "updated": "2026-07-14",
+    "url": "http://arxiv.org/abs/2607.10526v2",
+    "venue": ""
   },
   {
     "abstract": "When should an intelligent assistant speak up without being asked? Continuous egocentric video offers rich, evolving context that enables a new form of assistance: one that is proactive rather than merely reactive. Yet existing approaches either wait passively for user queries or treat every detected event as requiring a response, without considering the user's history, current activity, or whether assistance would actually be welcome. We reframe proactive assistance as a context-dependent decision problem: the agent must not only perceive what is happening, but reason over accumulated temporal context to determine when and whether to intervene. To this end, we present Vinci2, a proactive egocentric assistance system that advances the on-device assistant Vinci from reactive response toward proactivity. On the evaluation side, we present EgoServe, the first large-scale benchmark for proactive assistance in continuous egocentric video. EgoServe comprises over 3,000 service instances organized along 4 temporal memory horizons, ranging from immediate safety alerts to long-term habit coaching, across 10 service categories. On the modeling side, we propose EgoMemo, a training-free, memory-augmented agent that maintains three complementary memory representations: multi-scale temporal summaries, a semantic knowledge graph, and visual embedding archives. At each timestep, EgoMemo performs retrieval-augmented reasoning to determine whether assistance is warranted and, if so, produces contextually grounded responses. Experiments demonstrate that EgoMemo establishes strong baselines on EgoServe while remaining competitive on existing egocentric benchmarks. Our benchmark and code are publicly available at \\href{https://sitonggong.github.io/EgoServe-page/}{Vinci2}.",
@@ -113,6 +375,38 @@
     "title": "Vinci2: Providing Proactive Assistance in Continuous Egocentric Videos",
     "updated": "2026-07-13",
     "url": "http://arxiv.org/abs/2607.11523v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Multi-agent and memory-augmented LLM systems often place coordination content, shared state, prior discussion, tool outputs, summaries, and role instructions, inside the same finite prompt used for the current task. This creates a practical allocation problem: every token spent on coordination is unavailable to task instructions or evidence when a call is assembled under a fixed context budget. We introduce the Roundtable Context Window Test (RCWT), a controlled protocol for measuring this task-budget displacement effect. RCWT varies coordination content while controlling total budget, position order, task family, and scoring. In the main context-dependent recall task at $W=4096$, three commercial models remain near baseline through moderate overhead and then degrade sharply once residual reference evidence falls to a few hundred tokens. Window-scaling summaries are consistent with a task-specific residual-budget interpretation rather than a fixed percentage threshold, but we treat this as descriptive evidence rather than a universal law. To test whether the fixed-budget cliff persists when task evidence remains intact, we add an intact-task ablation: the full task/reference block is kept present while coordination tokens increase by expanding total prompt length. In that setting, all tested calls return every scored field correctly across GPT-4.1-mini, Claude Haiku 4.5, and Gemini 2.5 Flash up to a 95\\% coordination ratio. This ablation narrows the claim: the main RCWT cliff is best read as task-budget displacement, not as proof that coordination volume alone causes semantic interference in the original open-ended task. RCWT is therefore a measurement primitive for context-allocation budgeting, not a complete theory of multi-agent benefit or session-level coordination.",
+    "authors": [
+      "Brenda Lelis",
+      "Rodrigo Cabral-Carvalho"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.MA"
+    ],
+    "id": "2607.12216v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, context` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Multi-agent and memory-augmented LLM systems often place coordination content, shared state, prior discussion, tool outputs, summaries, and role instructions, inside the same finite prompt used for the current task.\n\n进一步看，论文的核心做法或实验重点可以概括为：This creates a practical allocation problem: every token spent on coordination is unavailable to task instructions or evidence when a call is assembled under a fixed context budget.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory augmented",
+      "memory-augmented"
+    ],
+    "one_liner": "Multi-agent and memory-augmented LLM systems often place coordination content, shared state, prior discussion, tool outputs, summaries, and role instructions, inside the same...",
+    "published": "2026-07-13",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, context\n- 检索关键词命中：memory augmented, memory-augmented\n- 来源分类信息：cs.CL, cs.AI, cs.MA",
+    "slug": "rcwt-measuring-task-budget-displacement-from-coordination-content-in-llm-calls",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2607.12216v1",
+    "tags": [
+      "agent",
+      "context"
+    ],
+    "title": "RCWT: Measuring Task-Budget Displacement from Coordination Content in LLM Calls",
+    "updated": "2026-07-13",
+    "url": "http://arxiv.org/abs/2607.12216v1",
     "venue": ""
   },
   {
@@ -330,6 +624,64 @@
     "venue": ""
   },
   {
+    "abstract": "Attention can be viewed as an online learner over context, yet existing test-time memories cannot certify that dropping a token leaves outputs unchanged or delete its influence outright. We introduce Support Vector Attention (SV-Attention), a max-margin memory whose weights are support coefficients of a one-class SVM with fixed box parameter C. Its active-set partition gives reserve tokens exactly zero weight, certifying output-preserving eviction; a reversible incremental solver deletes a token to recover the state produced by retraining without it under the same C. In fp64 experiments, decrement and refit recover identical partitions whenever the optimum is unique, and their decision functions match to a median deviation of about 10^-9 (10^-13 on learned keys); the 10^-2 worst case is confined to ill-conditioned duplicates and remains below coefficient decay in every regime. The exact path reuses the maintained KKT inverse in a custom backward. Training uses a separate stabilized batched approximation and does not carry the exact-deletion certificate; it reaches 9,125 tokens/s on a 3.22M-parameter model, while remaining 35.8 times slower than an MPS softmax reference. At matched budgets, certified selection reaches 0.86 vs. 0.32 rare-item recall and retains 0.80 vs. 0.05 deterioration hours on real MIMIC-IV streams. We also demonstrate surgical forgetting, exact editing, patient-record deletion, and a forgettable retrieval memory over real sentence embeddings. On enwik8, the hybrid obtains 2.178 BPC vs. 2.383 for a matched-state sliding-window Transformer across seven seeds (8.6% paired improvement, p=0.001); a three-seed TinyStories result is directionally positive but not significant (p=0.057).",
+    "authors": [
+      "Vishwajith Ramesh"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "id": "2607.12204v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `context, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Attention can be viewed as an online learner over context, yet existing test-time memories cannot certify that dropping a token leaves outputs unchanged or delete its influence outright.\n\n进一步看，论文的核心做法或实验重点可以概括为：We introduce Support Vector Attention (SV-Attention), a max-margin memory whose weights are support coefficients of a one-class SVM with fixed box parameter C.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "retrieval memory"
+    ],
+    "one_liner": "Attention can be viewed as an online learner over context, yet existing test-time memories cannot certify that dropping a token leaves outputs unchanged or delete its influence...",
+    "published": "2026-07-13",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：context, retrieval\n- 检索关键词命中：retrieval memory\n- 来源分类信息：cs.LG",
+    "slug": "forgetful-attention-a-trainable-support-vector-memory-with-certified-selection-a",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2607.12204v1",
+    "tags": [
+      "context",
+      "retrieval"
+    ],
+    "title": "Forgetful Attention: A Trainable Support-Vector Memory with Certified Selection and Exact Unlearning",
+    "updated": "2026-07-13",
+    "url": "http://arxiv.org/abs/2607.12204v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Semantic memory retrieval can be conceptualized as navigation through conceptual space. We compared semantic search dynamics between humans and three large language models (GPT-4o, Gemini-2.5-Pro, Claude-Sonnet-4.5) using verbal fluency data. By applying trajectory-based NLP metrics to the items generated by 82 human participants and LLM output across eight temperature settings, we quantified three complementary dimensions: entropy (step size predictability), distance to next (successive semantic steps), and distance to centroid (global dispersion). Humans exhibited higher entropy, larger semantic steps and broader dispersion than all LLMs, indicating more variable and exploratory search. Temperature tuning produced only partial alignments, as individual metrics matched between humans and LLMs at specific settings, but no configuration reproduced the complete human profile (in all dimensions). These findings suggest that human semantic search implements a distinctive balance between local exploitation and global exploration that current model architectures fail to reproduce.",
+    "authors": [
+      "Gabriel Paris-Colombo",
+      "Rodrigo M. Cabral-Carvalho",
+      "Felipe D. Toro-Hernández"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "id": "2607.12195v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Semantic memory retrieval can be conceptualized as navigation through conceptual space.\n\n进一步看，论文的核心做法或实验重点可以概括为：We compared semantic search dynamics between humans and three large language models (GPT-4o, Gemini-2.5-Pro, Claude-Sonnet-4.5) using verbal fluency data.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory retrieval"
+    ],
+    "one_liner": "Semantic memory retrieval can be conceptualized as navigation through conceptual space.",
+    "published": "2026-07-13",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：retrieval\n- 检索关键词命中：memory retrieval\n- 来源分类信息：cs.CL, cs.AI",
+    "slug": "comparing-semantic-navigation-in-humans-and-large-language-models-using-natural-",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2607.12195v1",
+    "tags": [
+      "retrieval"
+    ],
+    "title": "Comparing Semantic Navigation in Humans and Large Language Models using Natural Language Processing",
+    "updated": "2026-07-13",
+    "url": "http://arxiv.org/abs/2607.12195v1",
+    "venue": ""
+  },
+  {
     "abstract": "Two competing perspectives on fluid intelligence (gf) measures propose that performance is primarily constrained either by working memory capacity or by the ability to induce novel relations. The first perspective is currently dominant in measurement, as evident from the use of a limited set of recurring rules, whereas the second perspective is reflected in many definitions but rarely present in measurement. The ARC-AGI benchmark predominantly requires rule induction and was proposed as a measure of gf for both humans and artificial systems. However, its psychometric properties have not yet been examined in human samples. We therefore investigated the psychometric characteristics and nomological network of ARC-AGI in a first study with 100 participants. A compilation of ARC-AGI items showed good psychometric properties and correlated substantially with figural fluid intelligence as measured by a figural reasoning test (\\r{ho} = .63). Associations with figural originality were weak. These findings provide initial support for the validity of ARC-AGI as a measure of human fluid intelligence. Future research should include more rule induction tasks as well as additional multivariate covariates. This study is unusual by studying a task in humans that was initially designed for machines. We suggest systematically embedding AI benchmarks into the nomological network of human cognitive abilities to enable more systematic evaluation and interdisciplinary cooperation.",
     "authors": [
       "Jasmin Thelen",
@@ -536,6 +888,36 @@
     "venue": ""
   },
   {
+    "abstract": "How do different components of iterative prompt optimization interact, and what happens when they are combined? We investigate this through MAGE (Memory-Augmented Goal-directed Prompt Evolution), a controlled analysis framework for studying component interaction in prompt optimization. MAGE is not proposed as a superior optimizer in absolute terms; it integrates episodic memory, multi-objective Pareto selection, and adaptive evaluation as a platform for controlled ablation. Our experiments uncover a previously unreported phenomenon, the Prompt Optimization Coupling Effect (POCE): when multiple stochastic optimization signals operate within a closed reflective loop, they interact in ways that simultaneously improve performance and amplify variance, behavior that cannot be predicted by analyzing components in isolation. Three main findings emerge. First, failure-grounded reflection is essential: methods relying only on scores (OPRO) or abstract critique (Self-Refine) fail to improve prompts. Second, MAGE achieves 46.4% versus GEPA's 34.0% on GSM8K-Hard (+12.4%, P(MAGE>GEPA)=0.998, 5 seeds on gpt-4o-mini), with comparable variance (7.3% vs. 7.0%). Third, increasing candidate diversity reveals the clearest POCE signal: expanding the candidate pool from n=3 to n=5 improves mean accuracy by +21.6% while increasing variance by 3.7x. We further validate on Llama 3.1 8B and show POCE is headroom-dependent: when the base model already achieves high accuracy, variance amplification disappears. Finally, in low-data regimes (Ntrain=30), well-designed fixed prompts outperform all reflective optimizers, indicating that scaffold choice dominates optimizer choice. Our results suggest prompt optimization systems behave as coupled stochastic processes and should be evaluated in terms of both performance and stability, not just peak accuracy.",
+    "authors": [
+      "Prateek Singh"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.LG"
+    ],
+    "id": "2607.11944v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `episodic` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：How do different components of iterative prompt optimization interact, and what happens when they are combined?\n\n进一步看，论文的核心做法或实验重点可以概括为：We investigate this through MAGE (Memory-Augmented Goal-directed Prompt Evolution), a controlled analysis framework for studying component interaction in prompt optimization.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "episodic memory",
+      "memory augmented",
+      "memory-augmented"
+    ],
+    "one_liner": "How do different components of iterative prompt optimization interact, and what happens when they are combined?",
+    "published": "2026-07-11",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：episodic\n- 检索关键词命中：episodic memory, memory augmented, memory-augmented\n- 来源分类信息：cs.CL, cs.LG",
+    "slug": "mage-understanding-stability-performance-trade-offs-in-multi-component-prompt-op",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2607.11944v1",
+    "tags": [
+      "episodic"
+    ],
+    "title": "MAGE: Understanding Stability-Performance Trade-offs in Multi-component Prompt Optimization",
+    "updated": "2026-07-11",
+    "url": "http://arxiv.org/abs/2607.11944v1",
+    "venue": ""
+  },
+  {
     "abstract": "Context engineering decides what information a model carries forward, and current designs meter it in tokens: compressing the past into a bounded recurrent state, keeping a key-value entry for every token, or imposing a fixed budget through a window or eviction rule. All three make the token the unit of memory even when the stream is redundant and the task depends on the distinct information it carries. Building on a companion mechanism paper that opens a cache slot only when an incoming key is novel, so memory scales with the number of distinct items rather than tokens, we develop that allocate-on-novelty cache as a working-memory component and organize context by how a task depends on the past: recall-carried information belongs in a content-addressed novelty cache, summary-carried information in a recurrent state, and locality-carried information in a recency window. The claim is empirical and bounded. On a matched character-level control, novelty-gated attention reaches full-attention performance while attending to about half the tokens, and coupling the cache with a state-space summary matches full-attention coupling at that reduced cost; the advantage grows as context lengthens, while a sliding window is preferable on short, locality-dominated spans. On next-code prediction over synthetic Medicare claims the coupled component leads full attention and every fixed-budget eviction policy at a thousand-event horizon, whereas cost forecasting over the same stream is summary-carried and the cache is neutral. The retained memory is an inspectable table of templates, codes, drugs, or places rather than an opaque state. The experiments are small-scale and use only public data; they establish the primitive that context can scale with distinct information rather than tokens, in a working memory that is content-addressable and auditable.",
     "authors": [
       "Siddharth Pal",
@@ -636,7 +1018,8 @@
       "Mu Xu"
     ],
     "categories": [
-      "cs.AI"
+      "cs.AI",
+      "cs.RO"
     ],
     "id": "2607.10350v1",
     "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Recent VLM and VLA systems have improved robotic perception and action prediction, yet long-horizon embodied agents still require a general runtime layer for reasoning, memory, tool use, verification, and cross-...\n\n进一步看，论文的核心做法或实验重点可以概括为：We present ABot-AgentOS, a general robotic Agent Operating System that sits above low-level controllers and provides a deliberative agent layer for scene-conditioned planning, context-isolated skill execution, multi-...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
@@ -646,7 +1029,7 @@
     ],
     "one_liner": "Recent VLM and VLA systems have improved robotic perception and action prediction, yet long-horizon embodied agents still require a general runtime layer for reasoning, memory,...",
     "published": "2026-07-11",
-    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context\n- 检索关键词命中：memory benchmark, memory benchmarks\n- 来源分类信息：cs.AI",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context\n- 检索关键词命中：memory benchmark, memory benchmarks\n- 来源分类信息：cs.AI, cs.RO",
     "slug": "abot-agentos-a-general-robotic-agent-os-with-lifelong-multi-modal-memory",
     "source": "arXiv",
     "source_key": "http://arxiv.org/abs/2607.10350v1",
