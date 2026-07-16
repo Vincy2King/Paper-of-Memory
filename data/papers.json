@@ -40,6 +40,91 @@
     "venue": "CoRR 2026"
   },
   {
+    "abstract": "Decades of macaque research established the importance of prefrontal cortex for working memory. Surprisingly, recent human neuroimaging studies demonstrated that the contents of working memory can be decoded from primary visual cortex (V1). However the necessity of this mnemonic information remains unknown and contentious. Here we provide causal evidence that transcranial magnetic stimulation targeting human V1 disrupted the fidelity of visual working memory. Errors increased only for targets remembered in the portion of the visual field disrupted by stimulation. Moreover, concurrently measured electroencephalography confirmed that stimulation disrupted not only memory behavior, but neurophysiological signatures of working memory. These results change the question from whether visual cortex is necessary for working memory to what mechanisms it uses to support memory. Moreover, they point to models in which the mechanisms supporting working memory are distributed across brain regions, including sensory areas that here we show are critical for memory storage. Transcranial magnetic perturbations of human primary visual cortex cause impairments in working memory storage. These results change the question from whether visual cortex is necessary for working memory to what mechanisms it uses to support memory.",
+    "authors": [
+      "{'fullname': 'Mrugank Dake', 'username': '~Mrugank_Dake1'}",
+      "{'fullname': 'Clayton E. Curtis', 'username': 'https://orcid.org/orcid-search/search?searchQuery=Clayton%20E.%20Curtis'}"
+    ],
+    "categories": [
+      "OpenReview.net/Public_Article/ORCID.org/-/Record"
+    ],
+    "id": "openreview:NAkHMzrt2G",
+    "intro": "这篇论文被纳入仓库，是因为它和 `working memory` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `Nature Communications` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Decades of macaque research established the importance of prefrontal cortex for working memory.\n\n进一步看，论文的核心做法或实验重点可以概括为：Surprisingly, recent human neuroimaging studies demonstrated that the contents of working memory can be decoded from primary visual cortex (V1).\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "working memory"
+    ],
+    "one_liner": "Decades of macaque research established the importance of prefrontal cortex for working memory.",
+    "published": "2025-03-18",
+    "relevance": "- 来源：OpenReview\n- Venue：Nature Communications\n- 高亮主题命中：working memory\n- 检索关键词命中：working memory\n- 来源分类信息：OpenReview.net/Public_Article/ORCID.org/-/Record",
+    "slug": "perturbing-human-v1-degrades-the-fidelity-of-visual-working-memory",
+    "source": "OpenReview",
+    "source_key": "NAkHMzrt2G",
+    "tags": [
+      "working memory"
+    ],
+    "title": "Perturbing human V1 degrades the fidelity of visual working memory",
+    "updated": "2026-07-15",
+    "url": "https://openreview.net/forum?id=NAkHMzrt2G",
+    "venue": "Nature Communications"
+  },
+  {
+    "abstract": "h3>Abstract</h3> <p>Decades of macaque research established the importance of prefrontal cortex for working memory. Surprisingly, recent human neuroimaging studies demonstrated that the contents of working memory can be decoded from primary visual cortex (V1). However the necessity of this mnemonic information remains unknown and contentious. Here we provide causal evidence that transcranial magnetic stimulation targeting human V1 disrupted the fidelity of visual working memory. Errors increased only for targets remembered in the portion of the visual field disrupted by stimulation. Moreover, concurrently measured electroencephalography confirmed that stimulation disrupted not only memory behavior, but neurophysiological signatures of working memory. These results change the question from whether visual cortex is necessary for working memory to what mechanisms it uses to support memory. Moreover, they point to models in which the mechanisms supporting working memory are distributed across brain regions, including sensory areas that here we show are critical for memory storage.</p>",
+    "authors": [
+      "{'fullname': 'Mrugank Dake', 'username': '~Mrugank_Dake1'}",
+      "{'fullname': 'Clayton E. Curtis', 'username': 'https://orcid.org/orcid-search/search?searchQuery=Clayton%20E.%20Curtis'}"
+    ],
+    "categories": [
+      "OpenReview.net/Public_Article/ORCID.org/-/Record"
+    ],
+    "id": "openreview:YK0LliJIOr",
+    "intro": "这篇论文被纳入仓库，是因为它和 `working memory` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `Crossref` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：h3>Abstract</h3> <p>Decades of macaque research established the importance of prefrontal cortex for working memory.\n\n进一步看，论文的核心做法或实验重点可以概括为：Surprisingly, recent human neuroimaging studies demonstrated that the contents of working memory can be decoded from primary visual cortex (V1).\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "working memory"
+    ],
+    "one_liner": "h3>Abstract</h3> <p>Decades of macaque research established the importance of prefrontal cortex for working memory.",
+    "published": "2024-06-24",
+    "relevance": "- 来源：OpenReview\n- Venue：Crossref\n- 高亮主题命中：working memory\n- 检索关键词命中：working memory\n- 来源分类信息：OpenReview.net/Public_Article/ORCID.org/-/Record",
+    "slug": "perturbing-human-v1-degrades-the-fidelity-of-visual-working-memory",
+    "source": "OpenReview",
+    "source_key": "YK0LliJIOr",
+    "tags": [
+      "working memory"
+    ],
+    "title": "Perturbing human V1 degrades the fidelity of visual working memory",
+    "updated": "2026-07-15",
+    "url": "https://openreview.net/forum?id=YK0LliJIOr",
+    "venue": "Crossref"
+  },
+  {
+    "abstract": "h3>Abstract</h3> <p>Working memory appears to depend on neural mechanisms that are distributed across the brain. Specifically, neural activity persists in the prefrontal cortex while memories are maintained, and at the same time, the visual contents of memory can be precisely decoded from the patterns of activity in visual cortex. Contemporary models attempt to account for these findings by positing that higher-order areas, like prefrontal cortex, somehow control memory storage by recruiting encoding mechanisms in sensory cortices. Demonstrating how prefrontal cortex influences working memory representations in visual cortex is methodologically challenging and direct evidence remains scarce. Here, we leveraged the excellent temporal resolution of magnetoencephalography to test hypotheses about how synchronization of neural activity between prefrontal and visual cortex coordinates working memory representations. During a visuospatial working memory task in humans (both sexes), increased power in <i>β</i>-band activity persisted throughout memory maintenance, and changes in its topography over visual cortex predicted both memorized locations and trialwise memory errors. Moreover, neural activity in the <i>β</i>-band synchronized between the prefrontal and visual cortices during memory. Not only do these findings align with a large body of work demonstrating that working memories are widely distributed across the brain, but they also help explain how the prefrontal and sensory cortices communicate during memory.</p><h3>New &amp; Noteworthy</h3> <p>While canonical models emphasize prefrontal memory storage, recent theories propose distributed interactions between executive control and sensory areas. Using magnetoencephalography, we demonstrate that <i>β</i>-band oscillations over visual cortex track specific memory content and synchronize with prefrontal cortex activity during maintenance. Crucially, this localized sensory activity directly predicts trial-by-trial human memory errors. These findings provide critical empirical evidence for sensory recruitment models, revealing a dynamic, oscillatory mechanism coordinating working memory.</p>",
+    "authors": [
+      "{'fullname': 'Mrugank Dake', 'username': '~Mrugank_Dake1'}",
+      "{'fullname': 'Sangita Dandekar', 'username': 'https://orcid.org/orcid-search/search?searchQuery=Sangita%20Dandekar'}",
+      "{'fullname': 'Clayton E. Curtis', 'username': 'https://orcid.org/orcid-search/search?searchQuery=Clayton%20E.%20Curtis'}"
+    ],
+    "categories": [
+      "OpenReview.net/Public_Article/ORCID.org/-/Record"
+    ],
+    "id": "openreview:uiJctU4WxX",
+    "intro": "这篇论文被纳入仓库，是因为它和 `working memory` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `Crossref` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：h3>Abstract</h3> <p>Working memory appears to depend on neural mechanisms that are distributed across the brain.\n\n进一步看，论文的核心做法或实验重点可以概括为：Specifically, neural activity persists in the prefrontal cortex while memories are maintained, and at the same time, the visual contents of memory can be precisely decoded from the patterns of activity in visual cortex.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "working memory"
+    ],
+    "one_liner": "h3>Abstract</h3> <p>Working memory appears to depend on neural mechanisms that are distributed across the brain.",
+    "published": "2026-06-07",
+    "relevance": "- 来源：OpenReview\n- Venue：Crossref\n- 高亮主题命中：working memory\n- 检索关键词命中：working memory\n- 来源分类信息：OpenReview.net/Public_Article/ORCID.org/-/Record",
+    "slug": "neural-synchrony-between-prefrontal-and-visual-cortex-supports-visual-working-me",
+    "source": "OpenReview",
+    "source_key": "uiJctU4WxX",
+    "tags": [
+      "working memory"
+    ],
+    "title": "Neural synchrony between prefrontal and visual cortex supports visual working memory",
+    "updated": "2026-07-15",
+    "url": "https://openreview.net/forum?id=uiJctU4WxX",
+    "venue": "Crossref"
+  },
+  {
     "abstract": "Language agents that interleave reasoning and tool use degrade sharply as reasoning chains lengthen, even when each individual step is easy. We trace this to context dilution: an agent's investigative state (what it has confirmed, what it suspects, and what it still needs) lives only implicitly in a growing context window, where early discoveries are buried under later retrievals. We introduce SLEUTH, which makes this state explicit and actionable through a structured epistemic working memory: the agent maintains Confirmed Facts grounded to sources, Active Hypotheses ranked by evidence, and Open Questions that directly drive its next action. Across five multi-hop benchmarks and five established baselines, SLEUTH's advantage grows with difficulty, from +5 points on HotpotQA to +11 on 4-hop chains, surpassing Reflexion without multiple episodes. Analyzing where the remaining gap lies, we identify the evidence sufficiency problem: agents often find the answer but fail to commit, exhausting their budget on needless verification. A lightweight commitment trigger fixes this, but only when the agent already maintains structured state: the identical trigger applied to an unstructured agent yields no improvement, isolating organized epistemic state as the necessary condition for effective commitment. Finally, enforcing protocol adherence on a weaker model recovers up to +19 points on the hardest problems, showing that how an agent organizes its reasoning, not raw model capability, is the active ingredient for scaling multi-hop reasoning.",
     "authors": [
       "Ning Liu"

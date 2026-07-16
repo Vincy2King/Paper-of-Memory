@@ -39,20 +39,23 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **704**
-- Last generated: **2026-07-15**
+- Total tracked papers: **707**
+- Last generated: **2026-07-16**
 
 ## Papers by Source
 
 - ACL Anthology: **4**
 - arXiv: **591**
-- OpenReview: **109**
+- OpenReview: **112**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
 | 2026-07-15 | OpenReview | [RoboMemArena: A Comprehensive and Challenging Robotic Memory Benchmark](content/papers/robomemarena-a-comprehensive-and-challenging-robotic-memory-benchmark.md) | benchmark |
+| 2026-07-15 | OpenReview | [Perturbing human V1 degrades the fidelity of visual working memory](content/papers/perturbing-human-v1-degrades-the-fidelity-of-visual-working-memory.md) | working memory |
+| 2026-07-15 | OpenReview | [Perturbing human V1 degrades the fidelity of visual working memory](content/papers/perturbing-human-v1-degrades-the-fidelity-of-visual-working-memory.md) | working memory |
+| 2026-07-15 | OpenReview | [Neural synchrony between prefrontal and visual cortex supports visual working memory](content/papers/neural-synchrony-between-prefrontal-and-visual-cortex-supports-visual-working-me.md) | working memory |
 | 2026-07-14 | arXiv | [Track, Rank, Crack: Epistemic Working Memory Scales Multi-Hop Reasoning in Language Agents](content/papers/track-rank-crack-epistemic-working-memory-scales-multi-hop-reasoning-in-language.md) | agent, benchmark, context |
 | 2026-07-14 | arXiv | [Speculate with Memory: Lossless Acceleration for LLM Agents](content/papers/speculate-with-memory-lossless-acceleration-for-llm-agents.md) | agent, benchmark, context |
 | 2026-07-14 | OpenReview | [SMMBench: A Benchmark for Source-Distributed Multimodal Agent Memory](content/papers/smmbench-a-benchmark-for-source-distributed-multimodal-agent-memory.md) | agent, benchmark, context |
@@ -69,9 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-07-13 | arXiv | [Long-Memory Reservoir Computing for Data-Scarce Dengue Forecasting](content/papers/long-memory-reservoir-computing-for-data-scarce-dengue-forecasting.md) | long-term |
 | 2026-07-13 | arXiv | [LightMem-Ego: Your AI Memory for Everyday Life](content/papers/lightmem-ego-your-ai-memory-for-everyday-life.md) | conversation, long-term, retrieval |
 | 2026-07-13 | arXiv | [Forgetting Our Way to Shared Meaning: Effects of Forgetting on Conceptual Alignment in a Non-Partnership Coordination Game](content/papers/forgetting-our-way-to-shared-meaning-effects-of-forgetting-on-conceptual-alignme.md) | agent |
-| 2026-07-13 | arXiv | [Forgetful Attention: A Trainable Support-Vector Memory with Certified Selection and Exact Unlearning](content/papers/forgetful-attention-a-trainable-support-vector-memory-with-certified-selection-a.md) | context, retrieval |
-| 2026-07-13 | arXiv | [Comparing Semantic Navigation in Humans and Large Language Models using Natural Language Processing](content/papers/comparing-semantic-navigation-in-humans-and-large-language-models-using-natural-.md) | retrieval |
-| 2026-07-13 | arXiv | [Bringing Back Rule Induction to Fluid Intelligence Research? An Initial Validation of the ARC-AGI Benchmark in Humans](content/papers/bringing-back-rule-induction-to-fluid-intelligence-research-an-initial-validatio.md) | benchmark |
 
 ## Suggested GitHub Setup
 
