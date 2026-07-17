@@ -1,5 +1,218 @@
 [
   {
+    "abstract": "We investigate when belief-based memory actually improves large language model (LLM) agents. Our vehicle is Nous, a long-term memory architecture that represents each entity-attribute pair as a categorical probability distribution updated through closed-form Bayesian inference, with information-theoretic surprise driving belief revision and entropy-based forgetting. A controlled ablation on the LoCoMo benchmark shows that Bayesian belief updating alone provides little benefit over naive last-write-wins because existing conversational memory benchmarks rarely contain contradictory or differently reliable evidence. We then introduce reliability-conditioned updating, estimating per-observation reliability from epistemic language, and show on a controlled contradiction benchmark that belief updating substantially outperforms last-write-wins and raw-memory retrieval when observations differ in trustworthiness. Because content-derived reliability is itself vulnerable to manipulation, we further propose provenance-capped belief updating, where trust is bounded by source provenance rather than textual confidence. Under controlled memory-poisoning experiments, this approach resists volumetric poisoning attacks while revealing the utility costs and implementation requirements of provenance-aware memory. Finally, we quantify a 27.5-point discrepancy between strict token-F1 and LLM-as-judge evaluation on identical outputs, highlighting important reproducibility concerns for long-term memory benchmarks. Our results suggest that probabilistic belief-based memory is most beneficial in environments requiring reasoning over conflicting and differently trustworthy evidence, rather than conventional conversational recall alone.",
+    "authors": [
+      "Pranav Singh"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.CL",
+      "cs.IR",
+      "cs.LG"
+    ],
+    "id": "2606.22030v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, conversation, long-term` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：We investigate when belief-based memory actually improves large language model (LLM) agents.\n\n进一步看，论文的核心做法或实验重点可以概括为：Our vehicle is Nous, a long-term memory architecture that represents each entity-attribute pair as a categorical probability distribution updated through closed-form Bayesian inference, with information-theoretic...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "conversational memory",
+      "long-term memory",
+      "memory benchmark",
+      "memory benchmarks",
+      "memory retrieval"
+    ],
+    "one_liner": "We investigate when belief-based memory actually improves large language model (LLM) agents.",
+    "published": "2026-06-20",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, conversation, long-term, retrieval\n- 检索关键词命中：conversational memory, long-term memory, memory benchmark, memory benchmarks, memory retrieval\n- 来源分类信息：cs.AI, cs.CL, cs.IR, cs.LG",
+    "slug": "when-does-belief-based-agent-memory-help-reliability-conditional-updating-and-pr",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2606.22030v2",
+    "tags": [
+      "agent",
+      "benchmark",
+      "conversation",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "When Does Belief-Based Agent Memory Help? Reliability-Conditional Updating and Provenance-Capped Poisoning Defense",
+    "updated": "2026-07-16",
+    "url": "http://arxiv.org/abs/2606.22030v2",
+    "venue": ""
+  },
+  {
+    "abstract": "Large language model (LLM)-based generative agents simulate human behavior through long-horizon decision-making processes that comprise intermediate steps such as planning, memory retrieval, reflection, and action selection. However, fine-grained human annotations of these intermediate steps remain scarce, and existing agents are not grounded in human preferences over such intermediate decisions. To address this gap, we introduce \\method, an interactive simulation interface that enables us to collect step-level human preference supervision over agent decision trajectories, leading to a dataset of 57K fine-grained annotations. We conduct step-level preference learning on open-weight language models using supervised finetuning and direct preference optimization on this data, consistently improving simulation fidelity, coordination, and interaction quality, and inducing more socially effective agent behavior. Our results show that step-level human supervision is an effective training signal for improving both local decision quality and long-horizon agent behavior.",
+    "authors": [
+      "Wenchang Gao",
+      "Pingyue Sheng",
+      "Lanlan Qiu",
+      "Yunfei Ma",
+      "Jian Zhao",
+      "Baicheng Chen",
+      "Kangda Wang",
+      "Yuyang Tian",
+      "Shunqiang Mao",
+      "Tianxing He"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2607.14485v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Large language model (LLM)-based generative agents simulate human behavior through long-horizon decision-making processes that comprise intermediate steps such as planning, memory retrieval, reflection, and action...\n\n进一步看，论文的核心做法或实验重点可以概括为：However, fine-grained human annotations of these intermediate steps remain scarce, and existing agents are not grounded in human preferences over such intermediate decisions.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory retrieval"
+    ],
+    "one_liner": "Large language model (LLM)-based generative agents simulate human behavior through long-horizon decision-making processes that comprise intermediate steps such as planning,...",
+    "published": "2026-07-16",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, retrieval\n- 检索关键词命中：memory retrieval\n- 来源分类信息：cs.AI",
+    "slug": "step-level-preference-learning-for-generative-agents-in-social-simulations",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2607.14485v1",
+    "tags": [
+      "agent",
+      "retrieval"
+    ],
+    "title": "Step-Level Preference Learning for Generative Agents in Social Simulations",
+    "updated": "2026-07-16",
+    "url": "http://arxiv.org/abs/2607.14485v1",
+    "venue": ""
+  },
+  {
+    "abstract": "As conversational AI systems are designed for repeated use, a central question is how a series of interactions becomes a relationship. We present a longitudinal multimodal study of a memory-augmented conversational agent (24 participants x 10 sessions), in which participants rated five relational constructs -- familiarity, self-disclosure, perceived memory, conversational quality, and enjoyment -- after each session. Two complementary dynamics emerge. First, conversational quality strongly shapes how enjoyable a session feels in the moment but does not carry forward across sessions, whereas perceived memory is relationally conditioned -- predicted by prior relational state rather than reflecting system capability alone -- and it shapes later enjoyment indirectly, via subsequent self-disclosure. Second, relationships are punctuated by discrete turning points -- crashes and surges -- that are partially traceable in multimodal behavior and open different intervention windows: surges are more behaviorally detectable in the moment, enjoyment surges persist more reliably than enjoyment crashes recover, and some crashes are better forecast from person-specific behavioral drift than detected after they have already occurred. Together, the findings suggest that longitudinal human-AI relationships are built through both slow accumulation and abrupt turning points.",
+    "authors": [
+      "Ryuichi Sumida",
+      "Mao Saeki",
+      "Masaki Eguchi",
+      "Sadahiro Yoshikawa",
+      "Koji Inoue",
+      "Tatsuya Kawahara",
+      "Yoichi Matsuyama"
+    ],
+    "categories": [
+      "cs.HC",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "id": "2607.14593v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, conversation` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：As conversational AI systems are designed for repeated use, a central question is how a series of interactions becomes a relationship.\n\n进一步看，论文的核心做法或实验重点可以概括为：We present a longitudinal multimodal study of a memory-augmented conversational agent (24 participants x 10 sessions), in which participants rated five relational constructs -- familiarity, self-disclosure, perceived...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory augmented",
+      "memory-augmented"
+    ],
+    "one_liner": "As conversational AI systems are designed for repeated use, a central question is how a series of interactions becomes a relationship.",
+    "published": "2026-07-16",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, conversation\n- 检索关键词命中：memory augmented, memory-augmented\n- 来源分类信息：cs.HC, cs.AI, cs.CL",
+    "slug": "memory-driven-self-disclosure-and-relational-turning-points-a-longitudinal-multi",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2607.14593v1",
+    "tags": [
+      "agent",
+      "conversation"
+    ],
+    "title": "Memory-Driven Self-Disclosure and Relational Turning Points: A Longitudinal Multimodal Study of Human-AI Interaction",
+    "updated": "2026-07-16",
+    "url": "http://arxiv.org/abs/2607.14593v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Persistent external memory enhances agent continuity but introduces persistent security vulnerabilities: adversarial content can be injected via standard interaction channels, retained across turns, and later distort downstream behavior. To address this challenge, we propose MemPoison, a comprehensive benchmark and analysis framework featuring 1227 hand-validated cases across four attack types, three injection channels, and three representative memory substrates, evaluated on seven open-weight and three closed-weight model families. We introduce a three-tier taxonomy: (L1) direct single-record corruption, (L2) compositional multi-record corruption and (L3) context-triggered dormant corruption. Our evaluations reveal a distinct defense frontier: while baseline write-time defenses, such as consistency checks, substantially suppress direct L1 attacks, they fail to reliably suppress L2 and L3 attacks. Through mechanistic influence decomposition (MID), we demonstrate structural blind spots in write-time defenses, which admit seemingly benign records that later become harmful through joint retrieval composition or trigger-conditioned activation. Our findings advocate for shifting from static filtering to adaptive, context-sensitive memory defense strategies.",
+    "authors": [
+      "Jifeng Gao",
+      "Kang Xia",
+      "Yi Zhang",
+      "Xiaobin Hong",
+      "Mingkai Lin",
+      "Xingshen Wei",
+      "Wenzhong Li",
+      "Sanglu Lu"
+    ],
+    "categories": [
+      "cs.CR",
+      "cs.AI"
+    ],
+    "id": "2607.14651v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Persistent external memory enhances agent continuity but introduces persistent security vulnerabilities: adversarial content can be injected via standard interaction channels, retained across turns, and later distort...\n\n进一步看，论文的核心做法或实验重点可以概括为：To address this challenge, we propose MemPoison, a comprehensive benchmark and analysis framework featuring 1227 hand-validated cases across four attack types, three injection channels, and three representative memory...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "persistent memory"
+    ],
+    "one_liner": "Persistent external memory enhances agent continuity but introduces persistent security vulnerabilities: adversarial content can be injected via standard interaction channels,...",
+    "published": "2026-07-16",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context, retrieval\n- 检索关键词命中：persistent memory\n- 来源分类信息：cs.CR, cs.AI",
+    "slug": "mempoison-uncovering-persistent-memory-threats-and-structural-blind-spots-in-llm",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2607.14651v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "retrieval"
+    ],
+    "title": "MemPoison: Uncovering Persistent Memory Threats and Structural Blind Spots in LLM Agents",
+    "updated": "2026-07-16",
+    "url": "http://arxiv.org/abs/2607.14651v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Long-horizon tool agents are bottlenecked by how their context grows toward the limits of the context window. Recent systems make context management agent- or system-controlled, but they either learn a compression policy that discards evidence or manage context in a layer the agent never sees. We argue both leave a more basic gap unaddressed. Frontier language models are proprioceptively blind to their own context. From the prompt alone they cannot see how large, how old, or how used each block is, the signals a keep-or-drop decision needs. We hypothesize that competent context management is already latent in capable models, and that what is missing is not a learned policy but an interface exposing this state. We introduce VISTA (Visible Internal State for Tool Agents), a training-free, model-agnostic layer that represents working memory as typed, addressable blocks, surfaces a runtime dashboard of per-block token usage, recency, and access history, and archives blocks as recoverable full-fidelity payloads. On LOCA-Bench, BrowseComp-Plus, and GAIA, the same untrained interface transfers across 1M-, 100K-, and 10K-scale trajectories. On LOCA-Bench it improves four backbones and lifts Gemini-3-Flash from 22.7 to 50.7%. The lift grows with context pressure and transfers across backbones. Ablations further confirm that the dashboard matters beyond archive and recovery tools.",
+    "authors": [
+      "Binyan Xu",
+      "Haitao Li",
+      "Kehuan Zhang"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "id": "2606.30005v3",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, compression, context` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Long-horizon tool agents are bottlenecked by how their context grows toward the limits of the context window.\n\n进一步看，论文的核心做法或实验重点可以概括为：Recent systems make context management agent- or system-controlled, but they either learn a compression policy that discards evidence or manage context in a layer the agent never sees.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "working memory"
+    ],
+    "one_liner": "Long-horizon tool agents are bottlenecked by how their context grows toward the limits of the context window.",
+    "published": "2026-06-29",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, compression, context\n- 检索关键词命中：working memory\n- 来源分类信息：cs.CL",
+    "slug": "llm-agents-are-latent-context-managers-eliciting-self-managed-context-via-state-",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2606.30005v3",
+    "tags": [
+      "agent",
+      "compression",
+      "context"
+    ],
+    "title": "LLM Agents Are Latent Context Managers: Eliciting Self-Managed Context via State Proprioception",
+    "updated": "2026-07-16",
+    "url": "http://arxiv.org/abs/2606.30005v3",
+    "venue": ""
+  },
+  {
+    "abstract": "A growing class of agentic systems maintain persistent state across sessions through memory files, behavioral preferences, and knowledge bases. While this makes agents more useful and self-improving, it also creates a new attack surface for prompt injections in which malicious instructions can be embedded within persistent files and influence future behavior. In this work, we study prompt injection attacks in memory-based agentic systems using a sandboxed synthetic workspace. We evaluate two agentic systems, Anthropic Claude Code and OpenAI Codex, across four models: Claude Haiku 4.5, Claude Opus 4.7, GPT-5.2, and GPT-5.5. Our results show that although it is difficult to make an agent overwrite its own memory files using untrusted external content, payloads already planted in those files can successfully attack current and future sessions. Attack success and payload persistence vary substantially across systems, models, adversarial goals, and multi-session attack sequences. These findings show that persistent memory changes the threat model for prompt injection and motivate defenses that protect memory updates without removing useful agent adaptation.",
+    "authors": [
+      "Soham Gadgil",
+      "David Alexander",
+      "Sai Sunku",
+      "Franziska Roesner"
+    ],
+    "categories": [
+      "cs.CR",
+      "cs.AI",
+      "cs.MA"
+    ],
+    "id": "2607.14611v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：A growing class of agentic systems maintain persistent state across sessions through memory files, behavioral preferences, and knowledge bases.\n\n进一步看，论文的核心做法或实验重点可以概括为：While this makes agents more useful and self-improving, it also creates a new attack surface for prompt injections in which malicious instructions can be embedded within persistent files and influence future behavior.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "persistent memory"
+    ],
+    "one_liner": "A growing class of agentic systems maintain persistent state across sessions through memory files, behavioral preferences, and knowledge bases.",
+    "published": "2026-07-16",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent\n- 检索关键词命中：persistent memory\n- 来源分类信息：cs.CR, cs.AI, cs.MA",
+    "slug": "bad-memory-evaluating-prompt-injection-risks-from-memory-in-agentic-systems",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2607.14611v1",
+    "tags": [
+      "agent"
+    ],
+    "title": "Bad Memory: Evaluating Prompt Injection Risks from Memory in Agentic Systems",
+    "updated": "2026-07-16",
+    "url": "http://arxiv.org/abs/2607.14611v1",
+    "venue": ""
+  },
+  {
     "abstract": "Memory is a critical component of robotic intelligence, as robots must rely on past observations and actions to accomplish long-horizon tasks in partially observable environments. However, existing robotic memory benchmarks still lack multimodal annotations for memory formation, provide limited task coverage and structural complexity, and remain restricted to simulation without real-world evaluation. We address this gap with RoboMemArena, a large-scale benchmark of 26 tasks, with average trajectory lengths exceeding 1,000 steps per task and 68.9% of subtasks being memory-dependent. The generation pipeline leverages a vision-language model (VLM) to design and compose subtasks, generates full trajectories through atomic functions, and provides memory-related annotations, including subtask instructions and native keyframe annotations, while paired real-world memory tasks support physical evaluation. We further design PrediMem, a dual-system VLA in which a high-level VLM planner manages a memory bank with recent and keyframe buffers and uses a predictive coding head to improve sensitivity to task dynamics. Extensive experiments on RoboMemArena show that PrediMem outperforms all baselines and provides insights into memory management, model architecture, and scaling laws for complex memory systems.",
     "authors": [
       "{'fullname': 'Huashuo Lei', 'username': ''}",
@@ -156,6 +369,38 @@
     "venue": ""
   },
   {
+    "abstract": "Long-horizon robot planning requires more than predicting what actions will do next; it also requires memory of the embodied experience that makes future goals interpretable. People do not plan from the present scene alone: they draw on remembered places, object-state changes, prior procedures, and regularities revealed through repeated action. We formulate Embodied Action Memory (EAM) as the capability to form, maintain, and use such experience as a persistent memory state for later decisions. MEMORA realizes EAM with a formation-consolidation-retrieval lifecycle and four typed stores: Environment Memory, Entity Memory, Activity Memory, and Inferred Knowledge. Online editing maintains object identities and state histories as new observations arrive; offline consolidation abstracts repeated experience into reusable procedures and participant-specific regularities. MEMORA-Bench evaluates this lifecycle on 45 hours of EPIC-KITCHENS-100 extension video across 18 participants through memory-grounded planning, including previously unseen goals, and a complementary memory-assessment task. Across four open-weight language models, full MEMORA--combining editing, typed stores, and consolidation--achieves the strongest aggregate results among the evaluated memory conditions. It improves memory-assessment accuracy by up to 20.5 points over the strongest controlled baseline and improves out-of-distribution Robot-Grounded Plan score by up to 16.6% relative. A qualitative two-task robot deployment study further illustrates how memory-grounded language plans can interface with downstream control, while the overall results show that editable, consolidated memory can supply remembered context for robot planning. Project page: https://yuzihaowashu.github.io/MEMORA/",
+    "authors": [
+      "Zihao Yu",
+      "Xiu Yuan",
+      "Chongjie Zhang"
+    ],
+    "categories": [
+      "cs.RO",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "id": "2607.14252v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `context, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Long-horizon robot planning requires more than predicting what actions will do next; it also requires memory of the embodied experience that makes future goals interpretable.\n\n进一步看，论文的核心做法或实验重点可以概括为：People do not plan from the present scene alone: they draw on remembered places, object-state changes, prior procedures, and regularities revealed through repeated action.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "persistent memory"
+    ],
+    "one_liner": "Long-horizon robot planning requires more than predicting what actions will do next; it also requires memory of the embodied experience that makes future goals interpretable.",
+    "published": "2026-07-15",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：context, retrieval\n- 检索关键词命中：persistent memory\n- 来源分类信息：cs.RO, cs.AI, cs.CL",
+    "slug": "memora-embodied-action-memory-from-egocentric-videos-for-reasoning-and-planning",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2607.14252v1",
+    "tags": [
+      "context",
+      "retrieval"
+    ],
+    "title": "MEMORA: Embodied Action Memory from Egocentric Videos for Reasoning and Planning",
+    "updated": "2026-07-15",
+    "url": "http://arxiv.org/abs/2607.14252v1",
+    "venue": ""
+  },
+  {
     "abstract": "Two competing perspectives on fluid intelligence (gf) measures propose that performance is primarily constrained either by working memory capacity or by the ability to induce novel relations. The first perspective is currently dominant in measurement, as evident from the use of a limited set of recurring rules, whereas the second perspective is reflected in many definitions but rarely present in measurement. The ARC-AGI benchmark predominantly requires rule induction and was proposed as a measure of gf for both humans and artificial systems. However, its psychometric properties have not yet been examined in human samples. We therefore investigated the psychometric characteristics and nomological network of ARC-AGI in a first study with 100 participants. A compilation of ARC-AGI items showed good psychometric properties and correlated substantially with figural fluid intelligence as measured by a figural reasoning test ($ρ$ = .63). Associations with figural originality were weak. These findings provide initial support for the validity of ARC-AGI as a measure of human fluid intelligence. Future research should include more rule induction tasks as well as additional multivariate covariates. This study is unusual by studying a task in humans that was initially designed for machines. We suggest systematically embedding AI benchmarks into the nomological network of human cognitive abilities to enable more systematic evaluation and interdisciplinary cooperation.",
     "authors": [
       "Jasmin Thelen",
@@ -182,6 +427,35 @@
     "title": "Bringing Back Rule Induction to Fluid Intelligence Research? An Initial Validation of the ARC-AGI Benchmark in Humans",
     "updated": "2026-07-15",
     "url": "http://arxiv.org/abs/2607.11263v3",
+    "venue": ""
+  },
+  {
+    "abstract": "Context engineering has become central to building reliable AI agents, yet it remains largely unmeasured. Agents do not fail in isolation: their behavior is shaped by the instructions, tools, memory, retrieved knowledge, guardrails, and untrusted inputs accumulated in their context. When this context is weak, agents drift, hallucinate, misuse tools, ignore constraints, become vulnerable to injection, and waste tokens. This paper validates context-engineering quality as an independent leading indicator of agent reliability. We implement the measurement in ProofAgent-Harness, an open-source infrastructure for AI agent evaluation that uses multi-juror, consensus-based scoring. The harness assesses context across seven criteria: role clarity, guardrail coverage, instruction consistency, tool schema quality, grounding sufficiency, injection hardening, and token efficiency. Crucially, the context score is isolated from behavioral metrics and release decisions, enabling a non-circular validation. Through a controlled context-quality study across regulated agent domains, holding frontier LLM agents fixed and varying only their operating context, we show that context-quality criteria consistently predict their corresponding behavioral outcomes. Grounding sufficiency predicts hallucination resistance, guardrail coverage predicts manipulation resistance, instruction consistency predicts instruction following, and tool-schema quality predicts tool use. These findings establish context measurement as a validated preflight signal for agent reliability and position context engineering as an auditable layer of agent evaluation and governance.",
+    "authors": [
+      "Fouad Bousetouane"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.MA"
+    ],
+    "id": "2607.14275v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, context` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Context engineering has become central to building reliable AI agents, yet it remains largely unmeasured.\n\n进一步看，论文的核心做法或实验重点可以概括为：Agents do not fail in isolation: their behavior is shaped by the instructions, tools, memory, retrieved knowledge, guardrails, and untrusted inputs accumulated in their context.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory retrieval"
+    ],
+    "one_liner": "Context engineering has become central to building reliable AI agents, yet it remains largely unmeasured.",
+    "published": "2026-07-15",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, context\n- 检索关键词命中：memory retrieval\n- 来源分类信息：cs.AI, cs.MA",
+    "slug": "ai-agents-do-not-fail-alone-the-context-fails-first",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2607.14275v1",
+    "tags": [
+      "agent",
+      "context"
+    ],
+    "title": "AI Agents Do Not Fail Alone:The Context Fails First",
+    "updated": "2026-07-15",
+    "url": "http://arxiv.org/abs/2607.14275v1",
     "venue": ""
   },
   {
