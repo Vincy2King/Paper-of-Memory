@@ -39,39 +39,39 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **719**
+- Total tracked papers: **736**
 - Last generated: **2026-07-21**
 
 ## Papers by Source
 
 - ACL Anthology: **4**
-- arXiv: **603**
+- arXiv: **620**
 - OpenReview: **112**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-07-20 | arXiv | [ZifaMem: Structured Memory for Persona, Preference, and Emotional Continuity in AI Companions](content/papers/zifamem-structured-memory-for-persona-preference-and-emotional-continuity-in-ai-.md) | agent, context, episodic |
 | 2026-07-20 | OpenReview | [Working Memory Capacity and Eye Movement Patterns in Reading: A Correlational Analysis of Regressions in the Slovenian MultiplEYE Dataset](content/papers/working-memory-capacity-and-eye-movement-patterns-in-reading-a-correlational-ana.md) | context |
+| 2026-07-20 | arXiv | [Retain or Consolidate? Budget-Dependent Operator Selection for Language Agent Memory](content/papers/retain-or-consolidate-budget-dependent-operator-selection-for-language-agent-mem.md) | agent, benchmark, compression |
+| 2026-07-20 | arXiv | [Mechanistic Attention Guidance for Agent Memory Refinement](content/papers/mechanistic-attention-guidance-for-agent-memory-refinement.md) | agent, benchmark, context |
+| 2026-07-20 | arXiv | [Exploratory and Assimilating Reflection: Reflective Recall Cycle for Long-term Memory](content/papers/exploratory-and-assimilating-reflection-reflective-recall-cycle-for-long-term-me.md) | agent, benchmark, context |
+| 2026-07-20 | arXiv | [Evidence-in-the-Loop: Trace-Driven Optimization for Customer-Service LLM Agents](content/papers/evidence-in-the-loop-trace-driven-optimization-for-customer-service-llm-agents.md) | agent, conversation, retrieval |
+| 2026-07-20 | arXiv | [Autoresearch with Coding Agents: Generalizers and Metric-Maximizers on Quran Recitation Data](content/papers/autoresearch-with-coding-agents-generalizers-and-metric-maximizers-on-quran-reci.md) | agent |
+| 2026-07-19 | arXiv | [Toward Anthropomorphic Dialogue: A Closed-Loop Framework for Human-Like Chat Generation, Evaluation, and Preference Alignment](content/papers/toward-anthropomorphic-dialogue-a-closed-loop-framework-for-human-like-chat-gene.md) | benchmark, long-term |
+| 2026-07-19 | arXiv | [Memory in the Loop: In-Process Retrieval as Extended Working Memory for Language Agents](content/papers/memory-in-the-loop-in-process-retrieval-as-extended-working-memory-for-language-.md) | agent, retrieval |
+| 2026-07-19 | arXiv | [Interpreting Quantum Learning Models via Stochastic Processes](content/papers/interpreting-quantum-learning-models-via-stochastic-processes.md) | episodic |
+| 2026-07-18 | arXiv | [RECON: Benchmarking Agent Memory for Compositional Reasoning over Long Contexts](content/papers/recon-benchmarking-agent-memory-for-compositional-reasoning-over-long-contexts.md) | agent, benchmark, context |
+| 2026-07-18 | arXiv | [Beyond Memory Leaderboards: Evaluating Scientific Memory as Budgeted Context Restoration](content/papers/beyond-memory-leaderboards-evaluating-scientific-memory-as-budgeted-context-rest.md) | agent, benchmark, context |
+| 2026-07-17 | arXiv | [Memory-Driven Self-Disclosure and Relational Turning Points: A Longitudinal Multimodal Study of Human-AI Interaction](content/papers/memory-driven-self-disclosure-and-relational-turning-points-a-longitudinal-multi.md) | agent, conversation |
+| 2026-07-17 | arXiv | [MemoGuard: An Adaptive Runtime for Guarding Against Memory Traps in Communication-Limited Robot Navigation](content/papers/memoguard-an-adaptive-runtime-for-guarding-against-memory-traps-in-communication.md) | context, episodic, retrieval |
+| 2026-07-17 | arXiv | [GeoChrono: Benchmarking and Rethinking Long-Term Temporal Understanding in Remote Sensing](content/papers/geochrono-benchmarking-and-rethinking-long-term-temporal-understanding-in-remote.md) | benchmark, long-term |
+| 2026-07-17 | arXiv | [Do Agents Dream of False Memories? Black-box Visual Attacks on Long-term Memory in Multimodal AI Agents](content/papers/do-agents-dream-of-false-memories-black-box-visual-attacks-on-long-term-memory-i.md) | agent, context, conversation |
+| 2026-07-17 | arXiv | [ABot-AgentOS: A General Robotic Agent OS with Lifelong Multi-modal Memory](content/papers/abot-agentos-a-general-robotic-agent-os-with-lifelong-multi-modal-memory.md) | agent, benchmark, context |
 | 2026-07-16 | arXiv | [When Does Belief-Based Agent Memory Help? Reliability-Conditional Updating and Provenance-Capped Poisoning Defense](content/papers/when-does-belief-based-agent-memory-help-reliability-conditional-updating-and-pr.md) | agent, benchmark, conversation |
 | 2026-07-16 | arXiv | [Step-Level Preference Learning for Generative Agents in Social Simulations](content/papers/step-level-preference-learning-for-generative-agents-in-social-simulations.md) | agent, retrieval |
 | 2026-07-16 | arXiv | [Memory-Driven Self-Disclosure and Relational Turning Points: A Longitudinal Multimodal Study of Human-AI Interaction](content/papers/memory-driven-self-disclosure-and-relational-turning-points-a-longitudinal-multi.md) | agent, conversation |
-| 2026-07-16 | arXiv | [MemPoison: Uncovering Persistent Memory Threats and Structural Blind Spots in LLM Agents](content/papers/mempoison-uncovering-persistent-memory-threats-and-structural-blind-spots-in-llm.md) | agent, benchmark, context |
-| 2026-07-16 | arXiv | [LLM Agents Are Latent Context Managers: Eliciting Self-Managed Context via State Proprioception](content/papers/llm-agents-are-latent-context-managers-eliciting-self-managed-context-via-state-.md) | agent, compression, context |
-| 2026-07-16 | arXiv | [Bad Memory: Evaluating Prompt Injection Risks from Memory in Agentic Systems](content/papers/bad-memory-evaluating-prompt-injection-risks-from-memory-in-agentic-systems.md) | agent |
-| 2026-07-15 | OpenReview | [RoboMemArena: A Comprehensive and Challenging Robotic Memory Benchmark](content/papers/robomemarena-a-comprehensive-and-challenging-robotic-memory-benchmark.md) | benchmark |
-| 2026-07-15 | OpenReview | [Perturbing human V1 degrades the fidelity of visual working memory](content/papers/perturbing-human-v1-degrades-the-fidelity-of-visual-working-memory.md) | working memory |
-| 2026-07-15 | OpenReview | [Perturbing human V1 degrades the fidelity of visual working memory](content/papers/perturbing-human-v1-degrades-the-fidelity-of-visual-working-memory.md) | working memory |
-| 2026-07-15 | OpenReview | [Neural synchrony between prefrontal and visual cortex supports visual working memory](content/papers/neural-synchrony-between-prefrontal-and-visual-cortex-supports-visual-working-me.md) | working memory |
-| 2026-07-15 | arXiv | [MemDefrag: Latent Memory Defragmentation for Large Language Models](content/papers/memdefrag-latent-memory-defragmentation-for-large-language-models.md) | benchmark, context, long-term |
-| 2026-07-15 | arXiv | [MEMORA: Embodied Action Memory from Egocentric Videos for Reasoning and Planning](content/papers/memora-embodied-action-memory-from-egocentric-videos-for-reasoning-and-planning.md) | context, retrieval |
-| 2026-07-15 | arXiv | [Bringing Back Rule Induction to Fluid Intelligence Research? An Initial Validation of the ARC-AGI Benchmark in Humans](content/papers/bringing-back-rule-induction-to-fluid-intelligence-research-an-initial-validatio.md) | benchmark |
-| 2026-07-15 | arXiv | [AI Agents Do Not Fail Alone:The Context Fails First](content/papers/ai-agents-do-not-fail-alone-the-context-fails-first.md) | agent, context |
-| 2026-07-15 | arXiv | [ABot-AgentOS: A General Robotic Agent OS with Lifelong Multi-modal Memory](content/papers/abot-agentos-a-general-robotic-agent-os-with-lifelong-multi-modal-memory.md) | agent, benchmark, context |
-| 2026-07-14 | arXiv | [Track, Rank, Crack: Epistemic Working Memory Scales Multi-Hop Reasoning in Language Agents](content/papers/track-rank-crack-epistemic-working-memory-scales-multi-hop-reasoning-in-language.md) | agent, benchmark, context |
-| 2026-07-14 | arXiv | [Speculate with Memory: Lossless Acceleration for LLM Agents](content/papers/speculate-with-memory-lossless-acceleration-for-llm-agents.md) | agent, benchmark, context |
-| 2026-07-14 | OpenReview | [SMMBench: A Benchmark for Source-Distributed Multimodal Agent Memory](content/papers/smmbench-a-benchmark-for-source-distributed-multimodal-agent-memory.md) | agent, benchmark, context |
-| 2026-07-14 | arXiv | [ReflectWorld-MM: An Entity-Oriented Multimodal Memory System for Open-Ended Video Streams](content/papers/reflectworld-mm-an-entity-oriented-multimodal-memory-system-for-open-ended-video.md) | agent, benchmark, context |
 
 ## Suggested GitHub Setup
 
