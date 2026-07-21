@@ -40,7 +40,7 @@ python3 scripts/update_papers.py --build-only
 ## Repository Snapshot
 
 - Total tracked papers: **719**
-- Last generated: **2026-07-20**
+- Last generated: **2026-07-21**
 
 ## Papers by Source
 
@@ -52,6 +52,7 @@ python3 scripts/update_papers.py --build-only
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-07-20 | OpenReview | [Working Memory Capacity and Eye Movement Patterns in Reading: A Correlational Analysis of Regressions in the Slovenian MultiplEYE Dataset](content/papers/working-memory-capacity-and-eye-movement-patterns-in-reading-a-correlational-ana.md) | context |
 | 2026-07-16 | arXiv | [When Does Belief-Based Agent Memory Help? Reliability-Conditional Updating and Provenance-Capped Poisoning Defense](content/papers/when-does-belief-based-agent-memory-help-reliability-conditional-updating-and-pr.md) | agent, benchmark, conversation |
 | 2026-07-16 | arXiv | [Step-Level Preference Learning for Generative Agents in Social Simulations](content/papers/step-level-preference-learning-for-generative-agents-in-social-simulations.md) | agent, retrieval |
 | 2026-07-16 | arXiv | [Memory-Driven Self-Disclosure and Relational Turning Points: A Longitudinal Multimodal Study of Human-AI Interaction](content/papers/memory-driven-self-disclosure-and-relational-turning-points-a-longitudinal-multi.md) | agent, conversation |
@@ -71,7 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-07-14 | arXiv | [Speculate with Memory: Lossless Acceleration for LLM Agents](content/papers/speculate-with-memory-lossless-acceleration-for-llm-agents.md) | agent, benchmark, context |
 | 2026-07-14 | OpenReview | [SMMBench: A Benchmark for Source-Distributed Multimodal Agent Memory](content/papers/smmbench-a-benchmark-for-source-distributed-multimodal-agent-memory.md) | agent, benchmark, context |
 | 2026-07-14 | arXiv | [ReflectWorld-MM: An Entity-Oriented Multimodal Memory System for Open-Ended Video Streams](content/papers/reflectworld-mm-an-entity-oriented-multimodal-memory-system-for-open-ended-video.md) | agent, benchmark, context |
-| 2026-07-14 | arXiv | [Oracle Agent Memory as an Enterprise Memory Substrate for Long-Horizon AI Agents](content/papers/oracle-agent-memory-as-an-enterprise-memory-substrate-for-long-horizon-ai-agents.md) | agent, conversation, retrieval |
 
 ## Suggested GitHub Setup
 
