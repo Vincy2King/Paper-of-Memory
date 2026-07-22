@@ -1,5 +1,39 @@
 [
   {
+    "abstract": "",
+    "authors": [
+      "Manasa Mudunuri",
+      "Chandra Guntupalli",
+      "Mario Kubek",
+      "Shiraj Pokharel",
+      "Murray Patterson",
+      "Jinho Choi",
+      "Yun-Nung Chen",
+      "Kotaro Funakoshi",
+      "Ali Emami"
+    ],
+    "categories": [],
+    "id": "acl:2026.sigdial-1.55",
+    "intro": "这篇论文被纳入仓库，是因为它和 `conversation, retrieval` 这些主题直接相关。\n\n它当前来自 `ACL Anthology`，并与 `Proceedings of the 27th Annual Meeting of the Special Interest Group on Discourse and Dialogue` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：The abstract is not available yet.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "conversational memory"
+    ],
+    "one_liner": "This paper is tracked as a memory-related work and awaits a fuller summary.",
+    "published": "2026-08",
+    "relevance": "- 来源：ACL Anthology\n- Venue：Proceedings of the 27th Annual Meeting of the Special Interest Group on Discourse and Dialogue\n- 高亮主题命中：conversation, retrieval\n- 检索关键词命中：conversational memory",
+    "slug": "bounded-conversational-memory-with-hybrid-retrieval-and-evidence-highlighting-fo",
+    "source": "ACL Anthology",
+    "source_key": "2026.sigdial-1.55",
+    "tags": [
+      "conversation",
+      "retrieval"
+    ],
+    "title": "Bounded Conversational Memory with Hybrid Retrieval and Evidence Highlighting for Multi-Session Dialogue Systems",
+    "updated": "2026-07-21",
+    "url": "https://aclanthology.org/2026.sigdial-1.55",
+    "venue": "Proceedings of the 27th Annual Meeting of the Special Interest Group on Discourse and Dialogue"
+  },
+  {
     "abstract": "AI companions are judged not only by single-turn fluency but by whether they sustain emotional continuity: remembering who the companion is, what the user prefers, and how the relationship has felt. We present ZifaMem, a structured memory system that organizes dialogue into session summaries, episodic memories, and a consolidated user model. Against a deployment-honest comparator that supplies the full raw dialogue history, and under a fixed LLM-as-a-judge protocol with route audits, structured memory raises pooled four-backbone emotional-intelligence scores by 11.4% (95% CI 6.3% to 17.1%), and persona grounding improves on all four backbones (Claude +42% relative). Multi-turn affect context wins a +39% net preference over a single-turn snapshot (exploratory), whereas an additional emotion state machine yields no measurable gain on any of five endpoints. Under an identical preregistered protocol, three memory systems (ZifaMem, Mem0, and filtered verbatim retrieval) each improve significantly over raw-history deployment, and ZifaMem and Mem0 are statistically equivalent within +/-5 points on the preregistered primary preference endpoint. The ZifaMem SDK, CLI, and portable Agent Skills are open-sourced at https://github.com/zifacorp/zifamem.",
     "authors": [
       "Jingzhe Fang",

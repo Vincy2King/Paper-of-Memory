@@ -39,12 +39,12 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **736**
-- Last generated: **2026-07-21**
+- Total tracked papers: **737**
+- Last generated: **2026-07-22**
 
 ## Papers by Source
 
-- ACL Anthology: **4**
+- ACL Anthology: **5**
 - arXiv: **620**
 - OpenReview: **112**
 
@@ -52,6 +52,7 @@ python3 scripts/update_papers.py --build-only
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-07-21 | ACL Anthology | [Bounded Conversational Memory with Hybrid Retrieval and Evidence Highlighting for Multi-Session Dialogue Systems](content/papers/bounded-conversational-memory-with-hybrid-retrieval-and-evidence-highlighting-fo.md) | conversation, retrieval |
 | 2026-07-20 | arXiv | [ZifaMem: Structured Memory for Persona, Preference, and Emotional Continuity in AI Companions](content/papers/zifamem-structured-memory-for-persona-preference-and-emotional-continuity-in-ai-.md) | agent, context, episodic |
 | 2026-07-20 | OpenReview | [Working Memory Capacity and Eye Movement Patterns in Reading: A Correlational Analysis of Regressions in the Slovenian MultiplEYE Dataset](content/papers/working-memory-capacity-and-eye-movement-patterns-in-reading-a-correlational-ana.md) | context |
 | 2026-07-20 | arXiv | [Retain or Consolidate? Budget-Dependent Operator Selection for Language Agent Memory](content/papers/retain-or-consolidate-budget-dependent-operator-selection-for-language-agent-mem.md) | agent, benchmark, compression |
@@ -71,7 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-07-17 | arXiv | [ABot-AgentOS: A General Robotic Agent OS with Lifelong Multi-modal Memory](content/papers/abot-agentos-a-general-robotic-agent-os-with-lifelong-multi-modal-memory.md) | agent, benchmark, context |
 | 2026-07-16 | arXiv | [When Does Belief-Based Agent Memory Help? Reliability-Conditional Updating and Provenance-Capped Poisoning Defense](content/papers/when-does-belief-based-agent-memory-help-reliability-conditional-updating-and-pr.md) | agent, benchmark, conversation |
 | 2026-07-16 | arXiv | [Step-Level Preference Learning for Generative Agents in Social Simulations](content/papers/step-level-preference-learning-for-generative-agents-in-social-simulations.md) | agent, retrieval |
-| 2026-07-16 | arXiv | [Memory-Driven Self-Disclosure and Relational Turning Points: A Longitudinal Multimodal Study of Human-AI Interaction](content/papers/memory-driven-self-disclosure-and-relational-turning-points-a-longitudinal-multi.md) | agent, conversation |
 
 ## Suggested GitHub Setup
 
