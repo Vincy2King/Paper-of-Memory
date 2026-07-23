@@ -1,5 +1,132 @@
 [
   {
+    "abstract": "Human episodic memory supports the retrieval of experiences that unfold over extended timescales, yet the computational mechanisms underlying this ability remain debated due to the limited mechanistic accessibility in long-term memory experiments in humans. Long-context LLMs may offer promising ways to reveal plausible computational mechanisms that drive this type of retrieval. Here, we investigate whether and how LLMs capture the core behavioral signatures of episodic memory via a temporal order memory task. Using a new dataset of human behavior based on memory of a full-length novel, we show that models exhibit the same characteristic distance effect observed in humans on this task. We next apply long-context mechanistic interpretability analyses to uncover how models solve this task, and find that model performance relies on a one-dimensional temporal code that is reinstated during retrieval by a single time-reinstatement attention head. These findings support temporal context reinstatement as an important mechanism for episodic-like temporal-order memory in LLMs, offering new insights into how temporal aspects of long-term episodic memory may be instantiated in both artificial and biological systems.",
+    "authors": [
+      "Mathis Pink",
+      "Vy A. Vo",
+      "Qinyuan Wu",
+      "Jianing Mu",
+      "Javier S. Turek",
+      "Uri Hasson",
+      "Kenneth A. Norman",
+      "Sebastian Michelmann",
+      "Alexander Huth",
+      "Mariya Toneva"
+    ],
+    "categories": [
+      "ICML.cc/2026/Conference/-/Submission"
+    ],
+    "id": "openreview:sycSMgogxM",
+    "intro": "这篇论文被纳入仓库，是因为它和 `context, episodic, long-term, retrieval` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ICML 2026 regular` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Human episodic memory supports the retrieval of experiences that unfold over extended timescales, yet the computational mechanisms underlying this ability remain debated due to the limited mechanistic accessibility in...\n\n进一步看，论文的核心做法或实验重点可以概括为：Long-context LLMs may offer promising ways to reveal plausible computational mechanisms that drive this type of retrieval.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "episodic memory",
+      "long-term memory"
+    ],
+    "one_liner": "Human episodic memory supports the retrieval of experiences that unfold over extended timescales, yet the computational mechanisms underlying this ability remain debated due to...",
+    "published": "2026-04-30",
+    "relevance": "- 来源：OpenReview\n- Venue：ICML 2026 regular\n- 高亮主题命中：context, episodic, long-term, retrieval\n- 检索关键词命中：episodic memory, long-term memory\n- 来源分类信息：ICML.cc/2026/Conference/-/Submission",
+    "slug": "temporal-context-reinstatement-drives-episodic-like-order-memory-in-long-context",
+    "source": "OpenReview",
+    "source_key": "sycSMgogxM",
+    "tags": [
+      "context",
+      "episodic",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "Temporal Context Reinstatement Drives Episodic-Like Order Memory in Long-Context Language Models",
+    "updated": "2026-07-23",
+    "url": "https://openreview.net/forum?id=sycSMgogxM",
+    "venue": "ICML 2026 regular"
+  },
+  {
+    "abstract": "Reinforcement learning under partial observability requires deciding what information to retain, yet most memory-based approaches do not explicitly model short-term-to-long-term transfer of symbolic observations. We study this transfer process in a temporal knowledge-graph memory setting and cast it as a neuro-symbolic value-based decision problem: for each observed triple, the agent chooses whether to keep or drop it before long-term insertion. To handle variable-sized short-term buffers, we use a per-item Q-learning design with shared parameters and a practical temporal-difference update over matched items across consecutive steps. On the RoomKG benchmark at long-term memory capacity 128, learned transfer decisions outperform symbolic and neural baselines, including symbolic baselines with temporal annotations and history-based LSTM/Transformer baselines. Across transfer-policy ablations, a lightweight local short-term-only variant performs best, and step-level behavior shows that the policy keeps navigation- and query-relevant facts while discarding lower-value candidate facts, supporting explicit and interpretable memory decisions under memory constraints.",
+    "authors": [
+      "{'fullname': 'Taewoon Kim', 'username': ''}",
+      "{'fullname': 'Vincent François-Lavet', 'username': ''}",
+      "{'fullname': 'Michael Cochez', 'username': '~Michael_Cochez1'}"
+    ],
+    "categories": [
+      "OpenReview.net/Public_Article/DBLP.org/-/Record"
+    ],
+    "id": "openreview:PTDfyc7haE",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, long-term` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `CoRR 2026` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Reinforcement learning under partial observability requires deciding what information to retain, yet most memory-based approaches do not explicitly model short-term-to-long-term transfer of symbolic observations.\n\n进一步看，论文的核心做法或实验重点可以概括为：We study this transfer process in a temporal knowledge-graph memory setting and cast it as a neuro-symbolic value-based decision problem: for each observed triple, the agent chooses whether to keep or drop it before...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "long-term memory"
+    ],
+    "one_liner": "Reinforcement learning under partial observability requires deciding what information to retain, yet most memory-based approaches do not explicitly model short-term-to-long-term...",
+    "published": "2026-12-31",
+    "relevance": "- 来源：OpenReview\n- Venue：CoRR 2026\n- 高亮主题命中：agent, benchmark, long-term\n- 检索关键词命中：long-term memory\n- 来源分类信息：OpenReview.net/Public_Article/DBLP.org/-/Record",
+    "slug": "short-term-to-long-term-memory-transfer-for-knowledge-graphs-under-partial-obser",
+    "source": "OpenReview",
+    "source_key": "PTDfyc7haE",
+    "tags": [
+      "agent",
+      "benchmark",
+      "long-term"
+    ],
+    "title": "Short-Term-to-Long-Term Memory Transfer for Knowledge Graphs under Partial Observability",
+    "updated": "2026-07-23",
+    "url": "https://openreview.net/forum?id=PTDfyc7haE",
+    "venue": "CoRR 2026"
+  },
+  {
+    "abstract": "Persistent memory (PM) technologies, such as Intel’s Optane memory, unify memory and storage and deliver both data persistence and high-performance. PM systems allow programs to directly manage their persistent data in memory, as opposed to the conventional way that goes through the file system. Though performant, integrating this new memory technology would require significant changes throughout the system stack. First, programs that directly manage persistent data need to guarantee data recovery after a failure, as the file system is bypassed. However, it is hard and error-prone to ensure failure-recovery as programs need to carefully manage writes to PM. Second, PM is both a memory and a storage device, which requires various memory and storage supports, such as memory encryption and integrity verification that secure the data and memory deduplication for better bandwidth. Among these supports, the security guarantees are critical but can significantly increase the access latency. Moreover, these supports should also follow the existing crash consistency guarantees. Third, even with data encryption and integrity verification, there can be other vulnerabilities in a real PM system. For example, Intel’s Optane PM uses multiple levels of caches and buffers to improve performance, which can lead to new side channels. My thesis aims to provide system supports to overcome these new challenges. We hypothesize that a whole-system-level redesign, from programming support to hardware, that ensures correctness, security, and high-performance, is necessary in order to integrate persistent memory into practical systems. On the software side, to ensure the failure-recovery correctness, we have developed testing tools, PMTest and XFDetector, to help programmers detect failure-recovery issues; and a test case generator, PMFuzz, to generate high-coverage test cases. On the hardware side, we have proposed efficient and crash-consistent secured hardware-software co-designs for PM systems. Further on, we have reverse-engineered the commercial Optane PM from Intel, and exploited its covert and side-channel vulnerabilities.",
+    "authors": [
+      "{'fullname': 'Sihang Liu', 'username': '~Sihang_Liu1'}"
+    ],
+    "categories": [
+      "OpenReview.net/Public_Article/ORCID.org/-/Record"
+    ],
+    "id": "openreview:K49GvkMseM",
+    "intro": "这篇论文被纳入仓库，是因为它和 `persistent memory` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `University of Virginia` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Persistent memory (PM) technologies, such as Intel’s Optane memory, unify memory and storage and deliver both data persistence and high-performance.\n\n进一步看，论文的核心做法或实验重点可以概括为：PM systems allow programs to directly manage their persistent data in memory, as opposed to the conventional way that goes through the file system.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "persistent memory"
+    ],
+    "one_liner": "Persistent memory (PM) technologies, such as Intel’s Optane memory, unify memory and storage and deliver both data persistence and high-performance.",
+    "published": "2022-08-01",
+    "relevance": "- 来源：OpenReview\n- Venue：University of Virginia\n- 高亮主题命中：persistent memory\n- 检索关键词命中：persistent memory\n- 来源分类信息：OpenReview.net/Public_Article/ORCID.org/-/Record",
+    "slug": "a-holistic-system-support-for-persistent-memory",
+    "source": "OpenReview",
+    "source_key": "K49GvkMseM",
+    "tags": [
+      "persistent memory"
+    ],
+    "title": "A Holistic System Support for Persistent Memory",
+    "updated": "2026-07-23",
+    "url": "https://openreview.net/forum?id=K49GvkMseM",
+    "venue": "University of Virginia"
+  },
+  {
+    "abstract": "We discover a behavioral invariant in LLM agents under persistent memory poisoning and characterize its deployment boundary. In architectures where retrieval is routed through observable memory-tool invocations, successful attacks require calling memory_recall_fact before email_send_email, a transition mechanistically forced by the attack's information-retrieval dependency. A simple rule exploiting this invariant achieves AUC = 0.9563; a Random Forest over 19 trajectory features refines it to AUC = 0.9904 (BCa 95% CI [0.987, 0.993]). The signature is overdetermined within the poisoned-but-defended evaluation set: removing all recall-related features leaves AUC unchanged. Cross-model hold-out on 9 models (7B-120B) confirms AUC = 1.000 on 6/9 splits, and the invariant transfers to frontier models (GPT-4.1, GPT-4o) without retraining. [v2] A preregistered follow-up (N=4,360, 13 models) reveals a critical deployment boundary: benign memory-grounded sends produce the same recall_before_send signature, yielding 100% false positives conditional on recall_before_send=1 (unconditional benign FPR: 24.7-52.6% depending on recall protocol). The signature is a valid attack precondition, not a maliciousness predicate; standalone blocking is not viable, but gating with recipient metadata restores separation. A prefix-only variant achieves AUC = 0.934, enabling real-time triage.",
+    "authors": [
+      "Jun Wen Leong"
+    ],
+    "categories": [
+      "cs.CR",
+      "cs.LG"
+    ],
+    "id": "2606.30566v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：We discover a behavioral invariant in LLM agents under persistent memory poisoning and characterize its deployment boundary.\n\n进一步看，论文的核心做法或实验重点可以概括为：In architectures where retrieval is routed through observable memory-tool invocations, successful attacks require calling memory_recall_fact before email_send_email, a transition mechanistically forced by the attack's...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "persistent memory"
+    ],
+    "one_liner": "We discover a behavioral invariant in LLM agents under persistent memory poisoning and characterize its deployment boundary.",
+    "published": "2026-06-29",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, retrieval\n- 检索关键词命中：persistent memory\n- 来源分类信息：cs.CR, cs.LG",
+    "slug": "forensic-trajectory-signatures-for-agent-memory-poisoning-detection",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2606.30566v2",
+    "tags": [
+      "agent",
+      "retrieval"
+    ],
+    "title": "Forensic Trajectory Signatures for Agent Memory Poisoning Detection",
+    "updated": "2026-07-21",
+    "url": "http://arxiv.org/abs/2606.30566v2",
+    "venue": ""
+  },
+  {
     "abstract": "",
     "authors": [
       "Manasa Mudunuri",
@@ -5603,46 +5730,6 @@
     "updated": "2026-06-25",
     "url": "http://arxiv.org/abs/2606.26627v1",
     "venue": ""
-  },
-  {
-    "abstract": "Human episodic memory supports the retrieval of experiences that unfold over extended timescales, yet the computational mechanisms underlying this ability remain debated due to the limited mechanistic accessibility in long-term memory experiments in humans. Long-context LLMs may offer promising ways to reveal plausible computational mechanisms that drive this type of retrieval. Here, we investigate whether and how LLMs capture the core behavioral signatures of episodic memory via a temporal order memory task. Using a new dataset of human behavior based on memory of a full-length novel, we show that models exhibit the same characteristic distance effect observed in humans on this task. We next apply long-context mechanistic interpretability analyses to uncover how models solve this task, and find that model performance relies on a one-dimensional temporal code that is reinstated during retrieval by a single time-reinstatement attention head. These findings support temporal context reinstatement as an important mechanism for episodic-like temporal-order memory in LLMs, offering new insights into how temporal aspects of long-term episodic memory may be instantiated in both artificial and biological systems.",
-    "authors": [
-      "Mathis Pink",
-      "Vy A. Vo",
-      "Qinyuan Wu",
-      "Jianing Mu",
-      "Javier S. Turek",
-      "Uri Hasson",
-      "Kenneth A. Norman",
-      "Sebastian Michelmann",
-      "Alexander Huth",
-      "Mariya Toneva"
-    ],
-    "categories": [
-      "ICML.cc/2026/Conference/-/Submission"
-    ],
-    "id": "openreview:sycSMgogxM",
-    "intro": "这篇论文被纳入仓库，是因为它和 `context, episodic, long-term, retrieval` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ICML 2026 regular` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Human episodic memory supports the retrieval of experiences that unfold over extended timescales, yet the computational mechanisms underlying this ability remain debated due to the limited mechanistic accessibility in...\n\n进一步看，论文的核心做法或实验重点可以概括为：Long-context LLMs may offer promising ways to reveal plausible computational mechanisms that drive this type of retrieval.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
-    "matched_keywords": [
-      "episodic memory",
-      "long-term memory"
-    ],
-    "one_liner": "Human episodic memory supports the retrieval of experiences that unfold over extended timescales, yet the computational mechanisms underlying this ability remain debated due to...",
-    "published": "2026-04-30",
-    "relevance": "- 来源：OpenReview\n- Venue：ICML 2026 regular\n- 高亮主题命中：context, episodic, long-term, retrieval\n- 检索关键词命中：episodic memory, long-term memory\n- 来源分类信息：ICML.cc/2026/Conference/-/Submission",
-    "slug": "temporal-context-reinstatement-drives-episodic-like-order-memory-in-long-context",
-    "source": "OpenReview",
-    "source_key": "sycSMgogxM",
-    "tags": [
-      "context",
-      "episodic",
-      "long-term",
-      "retrieval"
-    ],
-    "title": "Temporal Context Reinstatement Drives Episodic-Like Order Memory in Long-Context Language Models",
-    "updated": "2026-06-24",
-    "url": "https://openreview.net/forum?id=sycSMgogxM",
-    "venue": "ICML 2026 regular"
   },
   {
     "abstract": "Conversational assistants are increasingly integrating long-term memory with large language models (LLMs). This persistence of memories, e.g., the user is vegetarian, can enhance personalization in future conversations. However, the same persistence can also introduce safety risks that have been largely overlooked. Hence, we introduce \\textbf{PersistBench} to measure the extent of these safety risks. We identify two long-term memory-specific risks: \\textit{cross-domain leakage}, where LLMs inappropriately inject context from the long-term memories; and \\textit{memory-induced sycophancy}, where stored long-term memories insidiously reinforce user biases. We evaluate 18 frontier and open-source LLMs on our benchmark. Our results reveal a surprisingly high failure rate across these LLMs - a median failure rate of $53\\%$ on cross-domain samples and $97\\%$ on sycophancy samples. To address this, our benchmark encourages the development of more robust and safer long-term memory usage in frontier conversational systems.",

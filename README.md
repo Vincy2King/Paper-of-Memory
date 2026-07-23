@@ -39,19 +39,23 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **737**
+- Total tracked papers: **740**
 - Last generated: **2026-07-23**
 
 ## Papers by Source
 
 - ACL Anthology: **5**
-- arXiv: **620**
-- OpenReview: **112**
+- arXiv: **621**
+- OpenReview: **114**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-07-23 | OpenReview | [Temporal Context Reinstatement Drives Episodic-Like Order Memory in Long-Context Language Models](content/papers/temporal-context-reinstatement-drives-episodic-like-order-memory-in-long-context.md) | context, episodic, long-term |
+| 2026-07-23 | OpenReview | [Short-Term-to-Long-Term Memory Transfer for Knowledge Graphs under Partial Observability](content/papers/short-term-to-long-term-memory-transfer-for-knowledge-graphs-under-partial-obser.md) | agent, benchmark, long-term |
+| 2026-07-23 | OpenReview | [A Holistic System Support for Persistent Memory](content/papers/a-holistic-system-support-for-persistent-memory.md) | persistent memory |
+| 2026-07-21 | arXiv | [Forensic Trajectory Signatures for Agent Memory Poisoning Detection](content/papers/forensic-trajectory-signatures-for-agent-memory-poisoning-detection.md) | agent, retrieval |
 | 2026-07-21 | ACL Anthology | [Bounded Conversational Memory with Hybrid Retrieval and Evidence Highlighting for Multi-Session Dialogue Systems](content/papers/bounded-conversational-memory-with-hybrid-retrieval-and-evidence-highlighting-fo.md) | conversation, retrieval |
 | 2026-07-20 | arXiv | [ZifaMem: Structured Memory for Persona, Preference, and Emotional Continuity in AI Companions](content/papers/zifamem-structured-memory-for-persona-preference-and-emotional-continuity-in-ai-.md) | agent, context, episodic |
 | 2026-07-20 | OpenReview | [Working Memory Capacity and Eye Movement Patterns in Reading: A Correlational Analysis of Regressions in the Slovenian MultiplEYE Dataset](content/papers/working-memory-capacity-and-eye-movement-patterns-in-reading-a-correlational-ana.md) | context |
@@ -68,10 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-07-17 | arXiv | [Memory-Driven Self-Disclosure and Relational Turning Points: A Longitudinal Multimodal Study of Human-AI Interaction](content/papers/memory-driven-self-disclosure-and-relational-turning-points-a-longitudinal-multi.md) | agent, conversation |
 | 2026-07-17 | arXiv | [MemoGuard: An Adaptive Runtime for Guarding Against Memory Traps in Communication-Limited Robot Navigation](content/papers/memoguard-an-adaptive-runtime-for-guarding-against-memory-traps-in-communication.md) | context, episodic, retrieval |
 | 2026-07-17 | arXiv | [GeoChrono: Benchmarking and Rethinking Long-Term Temporal Understanding in Remote Sensing](content/papers/geochrono-benchmarking-and-rethinking-long-term-temporal-understanding-in-remote.md) | benchmark, long-term |
-| 2026-07-17 | arXiv | [Do Agents Dream of False Memories? Black-box Visual Attacks on Long-term Memory in Multimodal AI Agents](content/papers/do-agents-dream-of-false-memories-black-box-visual-attacks-on-long-term-memory-i.md) | agent, context, conversation |
-| 2026-07-17 | arXiv | [ABot-AgentOS: A General Robotic Agent OS with Lifelong Multi-modal Memory](content/papers/abot-agentos-a-general-robotic-agent-os-with-lifelong-multi-modal-memory.md) | agent, benchmark, context |
-| 2026-07-16 | arXiv | [When Does Belief-Based Agent Memory Help? Reliability-Conditional Updating and Provenance-Capped Poisoning Defense](content/papers/when-does-belief-based-agent-memory-help-reliability-conditional-updating-and-pr.md) | agent, benchmark, conversation |
-| 2026-07-16 | arXiv | [Step-Level Preference Learning for Generative Agents in Social Simulations](content/papers/step-level-preference-learning-for-generative-agents-in-social-simulations.md) | agent, retrieval |
 
 ## Suggested GitHub Setup
 
