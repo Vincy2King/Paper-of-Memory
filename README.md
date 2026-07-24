@@ -39,19 +39,20 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **740**
+- Total tracked papers: **741**
 - Last generated: **2026-07-24**
 
 ## Papers by Source
 
 - ACL Anthology: **5**
 - arXiv: **621**
-- OpenReview: **114**
+- OpenReview: **115**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-07-24 | OpenReview | [EvolMem: A Cognitive-Driven Benchmark for Multi-Session Dialogue Memory](content/papers/evolmem-a-cognitive-driven-benchmark-for-multi-session-dialogue-memory.md) | agent, benchmark, conversation |
 | 2026-07-23 | OpenReview | [Temporal Context Reinstatement Drives Episodic-Like Order Memory in Long-Context Language Models](content/papers/temporal-context-reinstatement-drives-episodic-like-order-memory-in-long-context.md) | context, episodic, long-term |
 | 2026-07-23 | OpenReview | [Short-Term-to-Long-Term Memory Transfer for Knowledge Graphs under Partial Observability](content/papers/short-term-to-long-term-memory-transfer-for-knowledge-graphs-under-partial-obser.md) | agent, benchmark, long-term |
 | 2026-07-23 | OpenReview | [A Holistic System Support for Persistent Memory](content/papers/a-holistic-system-support-for-persistent-memory.md) | persistent memory |
@@ -71,7 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-07-18 | arXiv | [Beyond Memory Leaderboards: Evaluating Scientific Memory as Budgeted Context Restoration](content/papers/beyond-memory-leaderboards-evaluating-scientific-memory-as-budgeted-context-rest.md) | agent, benchmark, context |
 | 2026-07-17 | arXiv | [Memory-Driven Self-Disclosure and Relational Turning Points: A Longitudinal Multimodal Study of Human-AI Interaction](content/papers/memory-driven-self-disclosure-and-relational-turning-points-a-longitudinal-multi.md) | agent, conversation |
 | 2026-07-17 | arXiv | [MemoGuard: An Adaptive Runtime for Guarding Against Memory Traps in Communication-Limited Robot Navigation](content/papers/memoguard-an-adaptive-runtime-for-guarding-against-memory-traps-in-communication.md) | context, episodic, retrieval |
-| 2026-07-17 | arXiv | [GeoChrono: Benchmarking and Rethinking Long-Term Temporal Understanding in Remote Sensing](content/papers/geochrono-benchmarking-and-rethinking-long-term-temporal-understanding-in-remote.md) | benchmark, long-term |
 
 ## Suggested GitHub Setup
 

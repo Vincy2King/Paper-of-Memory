@@ -1,5 +1,43 @@
 [
   {
+    "abstract": "Despite recent advances in understanding and leveraging long-range conversational memory, existing benchmarks still lack systematic evaluation of large language models(LLMs) across diverse memory dimensions, particularly in multi-session settings. In this work, we propose EvolMem, a new benchmark for assessing multi-session memory capabilities of LLMs and agent systems. EvolMem is grounded in cognitive psychology and encompasses both declarative and non-declarative memory, further decomposed into multiple fine-grained abilities. To construct the benchmark, we introduce a hybrid data synthesis framework that consists of topic-initiated generation and narrative-inspired transformations. This framework enables scalable generation of multi-session conversations with controllable complexity, accompanied by sample-specific evaluation guidelines. Extensive evaluation reveals that no LLM consistently outperforms others across all memory dimensions. Moreover, agent memory mechanisms do not necessarily enhance LLMs' capabilities and often exhibit notable efficiency limitations. Data and code will be released at https://github.com/shenye7436/EvolMem.",
+    "authors": [
+      "{'fullname': 'Ye Shen', 'username': ''}",
+      "{'fullname': 'Dun Pei', 'username': ''}",
+      "{'fullname': 'Yiqiu Guo', 'username': ''}",
+      "{'fullname': 'Junying Wang', 'username': ''}",
+      "{'fullname': 'Yijin Guo', 'username': ''}",
+      "{'fullname': 'Zicheng Zhang', 'username': '~Zicheng_Zhang7'}",
+      "{'fullname': 'Qi Jia', 'username': ''}",
+      "{'fullname': 'Jun Zhou', 'username': ''}",
+      "{'fullname': 'Guangtao Zhai', 'username': ''}"
+    ],
+    "categories": [
+      "OpenReview.net/Public_Article/DBLP.org/-/Record"
+    ],
+    "id": "openreview:mrvVguuPES",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, conversation` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `CoRR 2026` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Despite recent advances in understanding and leveraging long-range conversational memory, existing benchmarks still lack systematic evaluation of large language models(LLMs) across diverse memory dimensions,...\n\n进一步看，论文的核心做法或实验重点可以概括为：In this work, we propose EvolMem, a new benchmark for assessing multi-session memory capabilities of LLMs and agent systems.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory",
+      "conversational memory"
+    ],
+    "one_liner": "Despite recent advances in understanding and leveraging long-range conversational memory, existing benchmarks still lack systematic evaluation of large language models(LLMs)...",
+    "published": "2026-12-31",
+    "relevance": "- 来源：OpenReview\n- Venue：CoRR 2026\n- 高亮主题命中：agent, benchmark, conversation\n- 检索关键词命中：agent memory, conversational memory\n- 来源分类信息：OpenReview.net/Public_Article/DBLP.org/-/Record",
+    "slug": "evolmem-a-cognitive-driven-benchmark-for-multi-session-dialogue-memory",
+    "source": "OpenReview",
+    "source_key": "mrvVguuPES",
+    "tags": [
+      "agent",
+      "benchmark",
+      "conversation"
+    ],
+    "title": "EvolMem: A Cognitive-Driven Benchmark for Multi-Session Dialogue Memory",
+    "updated": "2026-07-24",
+    "url": "https://openreview.net/forum?id=mrvVguuPES",
+    "venue": "CoRR 2026"
+  },
+  {
     "abstract": "Human episodic memory supports the retrieval of experiences that unfold over extended timescales, yet the computational mechanisms underlying this ability remain debated due to the limited mechanistic accessibility in long-term memory experiments in humans. Long-context LLMs may offer promising ways to reveal plausible computational mechanisms that drive this type of retrieval. Here, we investigate whether and how LLMs capture the core behavioral signatures of episodic memory via a temporal order memory task. Using a new dataset of human behavior based on memory of a full-length novel, we show that models exhibit the same characteristic distance effect observed in humans on this task. We next apply long-context mechanistic interpretability analyses to uncover how models solve this task, and find that model performance relies on a one-dimensional temporal code that is reinstated during retrieval by a single time-reinstatement attention head. These findings support temporal context reinstatement as an important mechanism for episodic-like temporal-order memory in LLMs, offering new insights into how temporal aspects of long-term episodic memory may be instantiated in both artificial and biological systems.",
     "authors": [
       "Mathis Pink",
