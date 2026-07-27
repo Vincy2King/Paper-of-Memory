@@ -39,21 +39,24 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **759**
+- Total tracked papers: **763**
 - Last generated: **2026-07-27**
 
 ## Papers by Source
 
 - ACL Anthology: **5**
-- arXiv: **637**
-- OpenReview: **117**
+- arXiv: **640**
+- OpenReview: **118**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-07-27 | OpenReview | [IFCMemoryBench: Evaluating Long-Term Memory of LLM-Based Agents in BIM Information Retrieval](content/papers/ifcmemorybench-evaluating-long-term-memory-of-llm-based-agents-in-bim-informatio.md) | agent, benchmark, context |
 | 2026-07-25 | OpenReview | [LMEB: Long-horizon Memory Embedding Benchmark](content/papers/lmeb-long-horizon-memory-embedding-benchmark.md) | benchmark, context, episodic |
 | 2026-07-25 | OpenReview | [CAST: Character-and-Scene Episodic Memory for Agents](content/papers/cast-character-and-scene-episodic-memory-for-agents.md) | agent, conversation, episodic |
+| 2026-07-24 | arXiv | [MemNMF: Memory-Augmented NMF on LPC Spectra for Anomalous Sound Detection](content/papers/memnmf-memory-augmented-nmf-on-lpc-spectra-for-anomalous-sound-detection.md) | memory-augmented |
+| 2026-07-24 | arXiv | [Ground Truth First: A Longitudinal Evaluation Instrument for Agent Memory, and the Tenure Crossover in Memory-Architecture Rankings](content/papers/ground-truth-first-a-longitudinal-evaluation-instrument-for-agent-memory-and-the.md) | agent, benchmark, conversation |
 | 2026-07-24 | OpenReview | [EvolMem: A Cognitive-Driven Benchmark for Multi-Session Dialogue Memory](content/papers/evolmem-a-cognitive-driven-benchmark-for-multi-session-dialogue-memory.md) | agent, benchmark, conversation |
 | 2026-07-23 | OpenReview | [Temporal Context Reinstatement Drives Episodic-Like Order Memory in Long-Context Language Models](content/papers/temporal-context-reinstatement-drives-episodic-like-order-memory-in-long-context.md) | context, episodic, long-term |
 | 2026-07-23 | OpenReview | [Short-Term-to-Long-Term Memory Transfer for Knowledge Graphs under Partial Observability](content/papers/short-term-to-long-term-memory-transfer-for-knowledge-graphs-under-partial-obser.md) | agent, benchmark, long-term |
@@ -69,9 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-07-22 | arXiv | [TRUST-ESD: A Risk-Calibrated and Governance-Aware AI Framework for Enterprise Strategic Decision Support Under Uncertainty](content/papers/trust-esd-a-risk-calibrated-and-governance-aware-ai-framework-for-enterprise-str.md) | retrieval |
 | 2026-07-22 | arXiv | [NVIDIA-labs OO Agents: Native Python Object-Oriented Agents](content/papers/nvidia-labs-oo-agents-native-python-object-oriented-agents.md) | agent, benchmark, context |
 | 2026-07-22 | arXiv | [Memory-Augmented Multimodal Large Language Models for Small Object Understanding in Streaming Aerial Videos](content/papers/memory-augmented-multimodal-large-language-models-for-small-object-understanding.md) | compression, context |
-| 2026-07-22 | arXiv | [Free energy landscape of Dense Associative Memory](content/papers/free-energy-landscape-of-dense-associative-memory.md) | retrieval |
-| 2026-07-22 | arXiv | [Coordinating from Memory: Graph-Structured Experience Reuse for Multi-Agent Adaptation in Dynamic Manufacturing](content/papers/coordinating-from-memory-graph-structured-experience-reuse-for-multi-agent-adapt.md) | agent, benchmark, retrieval |
-| 2026-07-21 | arXiv | [Supra Cognitive Modes: A Routed Architecture for Agent Memory](content/papers/supra-cognitive-modes-a-routed-architecture-for-agent-memory.md) | agent, benchmark, conversation |
 
 ## Suggested GitHub Setup
 
