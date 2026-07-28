@@ -1,5 +1,74 @@
 [
   {
+    "abstract": "A conversational AI that cannot tell its own output from what a user said will treat its own mistakes as user-provided facts. In humans, this capacity is called reality monitoring, and its failures are linked to hallucinations, delusions, and confabulation, yet whether LLMs possess it remains untested. Here we show, across two experiments and six LLMs, that source attribution depends on how conversational memory is structured: ceiling accuracy for self-generated content under minimal memory demands reverses to a fragile external-item advantage once episodic delay removes that shortcut. Feedback exposes two failures: in some models, internal and external judgments swap; in others, accuracy improves while confidence decouples from correctness, dissociations invisible to existing benchmarks. Across models, this pattern implicates active, not aggregate, parameter count. This suggests that as AI systems take on autonomous, multi-turn roles, evaluating what they know is not enough: tracking where that knowledge came from may matter equally.",
+    "authors": [
+      "Saurabh Ranjan",
+      "Konstantina Sokratous",
+      "Brian Odegaard"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.CL",
+      "cs.CY",
+      "q-bio.NC"
+    ],
+    "id": "2607.23927v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `benchmark, conversation, episodic` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：A conversational AI that cannot tell its own output from what a user said will treat its own mistakes as user-provided facts.\n\n进一步看，论文的核心做法或实验重点可以概括为：In humans, this capacity is called reality monitoring, and its failures are linked to hallucinations, delusions, and confabulation, yet whether LLMs possess it remains untested.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "conversational memory"
+    ],
+    "one_liner": "A conversational AI that cannot tell its own output from what a user said will treat its own mistakes as user-provided facts.",
+    "published": "2026-07-27",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：benchmark, conversation, episodic\n- 检索关键词命中：conversational memory\n- 来源分类信息：cs.AI, cs.CL, cs.CY, q-bio.NC",
+    "slug": "reality-monitoring-in-large-language-models-self-knowledge-that-transforms-with-",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2607.23927v1",
+    "tags": [
+      "benchmark",
+      "conversation",
+      "episodic"
+    ],
+    "title": "Reality Monitoring in Large Language Models: Self-Knowledge That Transforms with Conversation Memory",
+    "updated": "2026-07-27",
+    "url": "http://arxiv.org/abs/2607.23927v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Social robots that rely on large language models for conversation are unable to retain information across sessions. This absence of memory violates social expectations, potentially preventing the formation of persistent relationships. This paper presents a lightweight episodic memory module that integrates vector-based semantic retrieval with an LLM-controlled dialog system, deployed on the humanoid robot head Kim. The module employs a hybrid scoring function combining cosine similarity with a memory strength metric to retrieve contextually relevant past interactions and inject them into the generation prompt. The system was evaluated in a within-subjects video-based online study (N = 43) using the Human-Robot Interaction Evaluation Scale (HRIES). Results show that episodic memory significantly increased perceived sociability (d = 0.60, p < .001), with the strongest effects on perceived trustworthiness (d = 0.62) and warmth (d = 0.56). Perceived disturbance remained unchanged (d = 0.00), indicating that the implemented approach to personalized recall did not trigger privacy-related discomfort or uncanny valley effects. These findings suggest that episodic memory serves as a social lubricant in embodied Human-Robot Interaction, enhancing relational quality without eliciting negative affective responses.",
+    "authors": [
+      "Steve Aschenbrenner",
+      "Marcel Heisler",
+      "Thomas Sievers",
+      "Christian Becker-Asano"
+    ],
+    "categories": [
+      "cs.RO",
+      "cs.AI",
+      "cs.HC"
+    ],
+    "id": "2607.24190v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `context, conversation, episodic, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Social robots that rely on large language models for conversation are unable to retain information across sessions.\n\n进一步看，论文的核心做法或实验重点可以概括为：This absence of memory violates social expectations, potentially preventing the formation of persistent relationships.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "episodic memory"
+    ],
+    "one_liner": "Social robots that rely on large language models for conversation are unable to retain information across sessions.",
+    "published": "2026-07-27",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：context, conversation, episodic, retrieval\n- 检索关键词命中：episodic memory\n- 来源分类信息：cs.RO, cs.AI, cs.HC",
+    "slug": "not-forgotten-implementation-and-evaluation-of-a-personalized-episodic-memory-fo",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2607.24190v1",
+    "tags": [
+      "context",
+      "conversation",
+      "episodic",
+      "retrieval"
+    ],
+    "title": "Not Forgotten: Implementation and Evaluation of a Personalized Episodic Memory for the Humanoid Robot Head Kim",
+    "updated": "2026-07-27",
+    "url": "http://arxiv.org/abs/2607.24190v1",
+    "venue": ""
+  },
+  {
     "abstract": "LLM agents increasingly coordinate through persistent shared memory: one agent's write becomes another agent's premise, and eventually a tool call with real side effects. Current agent memory systems treat every accepted write as immediately actionable truth, so a polluted tool result, a stale update, or a teammate's half-finished note can silently drive an irreversible action. We argue that a memory write is not a belief commit. We present MemTX, a transactional belief-commit protocol. Each record carries evidence, permissions, provenance, and validity. Writes are staged inside snapshot-isolated transactions and admitted by a validate-and-commit pipeline, irreversible tool calls are gated on in-flight belief state, and retracting a belief triggers typed cascading repair of its derived records and tool side effects. Two invariants, action-safety gating and cascade-repair completeness, are machine-checked by property-based testing and bounded exhaustive enumeration of 5.5 million protocol states, with zero violations. Across five backbones from three model families, MemTX leads all eight baselines with paired-McNemar significance on four backbones and statistically ties the best baseline on the fifth and strongest, while remaining the only method with zero downstream harm on every backbone. Backbone capability does not substitute for commit discipline.",
     "authors": [
       "Xiaoyang Li",
@@ -33,6 +102,75 @@
     "venue": ""
   },
   {
+    "abstract": "Memory-augmented LLM agents typically answer queries by retrieving relevant memories and feeding them directly to an answer model. This retrieval-as-evidence paradigm assumes retrieved memories are already suitable for reasoning, leaving the answer model to resolve redundancy, conflicts, and weak relevance while incurring substantial context overhead in long-term memory tasks. We propose MemChain, a trainable post-retrieval memory policy that transforms retrieved candidates into answer-facing active memory, represented as a compact and grounded evidence context. Given a user query and retrieved candidates, MemChain first generates a question-conditioned evidence plan, then constructs an ordered grounded evidence trace that organizes retrieved memories according to their semantic roles and dependencies, and finally executes explicit memory actions to produce a concise evidence context for answer generation. To train the mediator, we introduce a two-stage learning framework. Supervised trace learning first teaches the policy to generate structurally valid plans, traces, actions, and evidence contexts. We then propose Trace-Guided Memory Policy Optimization (TMPO), a reinforcement learning objective that optimizes the memory policy using downstream answer quality while jointly encouraging trace grounding, evidence support, structural validity, and answer stability across multiple rollouts. Experiments on LoCoMo and LongMemEval-S demonstrate that MemChain consistently achieves state-of-the-art performance across both closed-source and open-weight frozen answer models while substantially reducing the memory context passed to the answer model.",
+    "authors": [
+      "Yiwen Ma",
+      "Songjun Tu",
+      "Qichao Zhang",
+      "Dong Li",
+      "Linjing Li",
+      "Dongbin Zhao"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2607.24097v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, context, long-term, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Memory-augmented LLM agents typically answer queries by retrieving relevant memories and feeding them directly to an answer model.\n\n进一步看，论文的核心做法或实验重点可以概括为：This retrieval-as-evidence paradigm assumes retrieved memories are already suitable for reasoning, leaving the answer model to resolve redundancy, conflicts, and weak relevance while incurring substantial context...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "long-term memory",
+      "memory augmented",
+      "memory-augmented",
+      "retrieval memory"
+    ],
+    "one_liner": "Memory-augmented LLM agents typically answer queries by retrieving relevant memories and feeding them directly to an answer model.",
+    "published": "2026-07-27",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, context, long-term, retrieval\n- 检索关键词命中：long-term memory, memory augmented, memory-augmented, retrieval memory\n- 来源分类信息：cs.AI",
+    "slug": "memchain-learning-interpretable-memory-traces-for-memory-augmented-llm-agents",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2607.24097v1",
+    "tags": [
+      "agent",
+      "context",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "MemChain: Learning Interpretable Memory Traces for Memory-Augmented LLM Agents",
+    "updated": "2026-07-27",
+    "url": "http://arxiv.org/abs/2607.24097v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Individuals with Attention-Deficit/Hyperactivity Disorder (ADHD) often face significant barriers in computing education. In asynchronous learning environments, instructional videos can impose high extraneous cognitive load, often relying on assumptions about sustained attention and working memory that do not align with ADHD neurocognitive profiles. In this work, we evaluate a post-hoc video processing intervention that segments instructional content into single-instruction chunks followed by fixed-length pauses to reduce cognitive load. In a within-participants controlled study with 17 individuals with ADHD and 10 without, we find that the intervention has an equalizing effect. Although it improved performance for all participants, gains were larger for those with ADHD, reducing their errors and hesitations to levels comparable to those of participants without ADHD under the same intervention. These results align with the goals of Universal Design for Learning (UDL), by showing that cognitively-aligned, post-hoc instructional video modifications can reduce performance disparities across diverse neurocognitive profiles.",
+    "authors": [
+      "Veronica Pimenova",
+      "Chris Lee",
+      "Baramee Bhakdibhumi",
+      "Simon Chu",
+      "Andrew Begel"
+    ],
+    "categories": [
+      "cs.HC"
+    ],
+    "id": "2607.24612v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `working memory` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Individuals with Attention-Deficit/Hyperactivity Disorder (ADHD) often face significant barriers in computing education.\n\n进一步看，论文的核心做法或实验重点可以概括为：In asynchronous learning environments, instructional videos can impose high extraneous cognitive load, often relying on assumptions about sustained attention and working memory that do not align with ADHD...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "working memory"
+    ],
+    "one_liner": "Individuals with Attention-Deficit/Hyperactivity Disorder (ADHD) often face significant barriers in computing education.",
+    "published": "2026-07-27",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：working memory\n- 检索关键词命中：working memory\n- 来源分类信息：cs.HC",
+    "slug": "leveling-the-playing-field-temporal-video-segmentation-for-individuals-with-adhd",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2607.24612v1",
+    "tags": [
+      "working memory"
+    ],
+    "title": "Leveling the Playing Field: Temporal Video Segmentation for Individuals with ADHD in Computing Education",
+    "updated": "2026-07-27",
+    "url": "http://arxiv.org/abs/2607.24612v1",
+    "venue": ""
+  },
+  {
     "abstract": "Long-term memory systems store what a user says in an external store and retrieve it when a related query arrives. This interface rests on an assumption so natural that it is rarely stated: a memory that is needed will resemble the query that needs it. World knowledge breaks the assumption. A tree-nut allergy should change the answer to a macaron request through their almond-flour ingredient, yet the two texts share no cue a retriever can see. We call this failure mode the implicit-association blind spot and introduce InMind, a 125-task, expert-verified benchmark spanning ten life domains, with 113 tasks grounded in citable public sources. Its paired controls separate three explanations that existing evaluations conflate: the fact was never stored, the model lacks the bridging knowledge, or the fact was stored and never surfaced. The verdict is clean. With the decisive memory placed in context, the backbone answers 84.0 percent of indirect queries; when the same memory must be retrieved, six vector, graph, and agentic memory systems reach at most 14.4 percent, even though they recall the same facts on demand at up to 100 percent. An embedding with eight times the dimensionality raises answer-blind target recall for every system yet leaves the gap essentially intact. A minimal diagnostic probe that keeps memory visible before the query arrives recovers most of the gap, locating the failure in the query-conditioned interface itself and pointing to routing, deciding which facts must stay visible, as the open problem InMind is built to score.",
     "authors": [
       "Ruizhe Li",
@@ -46,11 +184,12 @@
     "id": "2607.24368v1",
     "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, long-term` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Long-term memory systems store what a user says in an external store and retrieve it when a related query arrives.\n\n进一步看，论文的核心做法或实验重点可以概括为：This interface rests on an assumption so natural that it is rarely stated: a memory that is needed will resemble the query that needs it.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
     "matched_keywords": [
-      "agent memory"
+      "agent memory",
+      "long-term memory"
     ],
     "one_liner": "Long-term memory systems store what a user says in an external store and retrieve it when a related query arrives.",
     "published": "2026-07-27",
-    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context, long-term\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.CL",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context, long-term\n- 检索关键词命中：agent memory, long-term memory\n- 来源分类信息：cs.CL",
     "slug": "keep-it-inmind-benchmarking-the-implicit-association-blind-spot-in-agent-memory",
     "source": "arXiv",
     "source_key": "http://arxiv.org/abs/2607.24368v1",
@@ -102,6 +241,166 @@
     "venue": "Agentic AI Evaluation and Trustworthiness KDD2026"
   },
   {
+    "abstract": "A language model with a bounded working memory must repeatedly decide which stored items to keep. Every deployed method decides the moment an item arrives, from the past (StreamingLLM, H2O) or from a guess about the future (SnapKV). We recast the choice as an estimation problem on a hidden signal, whether an item will be reused, placing existing methods on one axis, the commit lag $H$: online filters and learned predictors commit at $H=0$, while Belady's offline optimum sits where the whole future is known. The missing regime in between, fixed-lag smoothing, waits a bounded number of steps, observes which items a correct near-future prediction attended to, and only then commits. This measurement, demonstrated utility, turns Belady's unobservable future request into something we read off the model itself. We instantiate it as a training-free policy, RMM, a strict generalization of H2O that reduces to it exactly when the measurement is uniform. In controlled settings where reuse is endogenous and separated in time, demonstrated utility identifies used memory far better than accumulated attention, and a small bounded memory behaves like a much larger one. But on independent third-party benchmarks, run inside NVIDIA's KVPress harness against its own SnapKV, H2O, and StreamingLLM implementations, the advantage mostly disappears: RMM is on par with H2O for single-turn question answering and loses to both H2O and SnapKV in a streaming multi-turn setting. The cause is simple: on natural text the model is correct about most tokens, so weighting attention by correctness barely changes it, and demonstrated utility collapses onto accumulated attention unless reuse is sharp and endogenous, which standard benchmarks do not exercise. Our contribution is the framework and an honest map of when measuring beats accumulating, not a new state of the art.",
+    "authors": [
+      "Maruthi Vemula",
+      "Neeraj Praneeth Gajula"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2607.24667v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `benchmark` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：A language model with a bounded working memory must repeatedly decide which stored items to keep.\n\n进一步看，论文的核心做法或实验重点可以概括为：Every deployed method decides the moment an item arrives, from the past (StreamingLLM, H2O) or from a guess about the future (SnapKV).\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "working memory"
+    ],
+    "one_liner": "A language model with a bounded working memory must repeatedly decide which stored items to keep.",
+    "published": "2026-07-27",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：benchmark\n- 检索关键词命中：working memory\n- 来源分类信息：cs.AI",
+    "slug": "eviction-as-estimation-a-fixed-lag-smoothing-view-of-test-time-memory-and-when-m",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2607.24667v1",
+    "tags": [
+      "benchmark"
+    ],
+    "title": "Eviction as Estimation: A Fixed-Lag Smoothing View of Test-Time Memory, and When Measuring Beats Accumulating",
+    "updated": "2026-07-27",
+    "url": "http://arxiv.org/abs/2607.24667v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Dementia encompasses a group of syndromes that impair cognitive functions such as memory, reasoning, and the ability to perform daily activities. As populations globally age, nearly 10 million new dementia cases occur annually. Clinical diagnosis remains challenging because symptoms overlap with other conditions and require comprehensive cognitive assessment, highlighting the need for feasible and accurate detection methods. Recent advances in machine learning have highlighted spontaneous speech as a promising noninvasive, cost-effective, and scalable biomarker for dementia detection. In this study, spontaneous speech recordings from the ADReSS dataset and the extended Pitt Corpus were analyzed, consisting of picture description tasks performed by cognitively healthy individuals and participants with Alzheimer's disease or dementia. Unlike many prior approaches relying on speech-active segments, acoustic features were extracted from entire recordings with the openSMILE toolkit. This recording-level representation reduces the number of feature vectors and provides a computationally efficient framework for dementia classification, while indirectly incorporating pause- and hesitation-related information. Classification models with classifier-based wrapper feature selection were employed to estimate feature importance and identify diagnostically relevant acoustic characteristics. Among the evaluated classifiers, the extreme minimal learning machine emerged as the most computationally efficient method, providing competitive classification accuracy with substantially lower training time in repeated leave-one-subject-out validation. The results demonstrated that the proposed framework is computationally efficient, interpretable, and well-suited as a supportive tool for speech-based dementia assessment.",
+    "authors": [
+      "Marko Niemelä",
+      "Mikaela von Bonsdorff",
+      "Sami Äyrämö",
+      "Tommi Kärkkäinen"
+    ],
+    "categories": [
+      "eess.AS",
+      "cs.LG",
+      "cs.SD"
+    ],
+    "id": "2502.03484v3",
+    "intro": "这篇论文被纳入仓库，是因为它和 `memory research` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Dementia encompasses a group of syndromes that impair cognitive functions such as memory, reasoning, and the ability to perform daily activities.\n\n进一步看，论文的核心做法或实验重点可以概括为：As populations globally age, nearly 10 million new dementia cases occur annually.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory reasoning"
+    ],
+    "one_liner": "Dementia encompasses a group of syndromes that impair cognitive functions such as memory, reasoning, and the ability to perform daily activities.",
+    "published": "2025-02-04",
+    "relevance": "- 来源：arXiv\n- 检索关键词命中：memory reasoning\n- 来源分类信息：eess.AS, cs.LG, cs.SD",
+    "slug": "dementia-classification-from-spontaneous-speech-using-wrapper-based-feature-sele",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2502.03484v3",
+    "tags": [],
+    "title": "Dementia classification from spontaneous speech using wrapper-based feature selection",
+    "updated": "2026-07-27",
+    "url": "http://arxiv.org/abs/2502.03484v3",
+    "venue": ""
+  },
+  {
+    "abstract": "Stateful personal agents increasingly maintain long-term user profiles, episodic memories, and reusable skills. This persistence turns conversational sycophancy into a state-writing failure: accepted user-centric claims can be committed as lasting preferences, background facts, or workflows and later reused after the original conversation is gone. We call this persistent sycophancy and introduce the Personal Agent Sycophancy Benchmark (PASB), a 1,600-task benchmark that traces whether a conversational claim is accepted, written into durable agent state, and reused in a later neutral query. Unlike prior benchmarks that provide pre-written memories, PASB evaluates real agents (Hermes-Agent and OpenClaw) that decide what to store. It isolates the write process by combining four scenario framings with four temporal delivery patterns and separating a five-turn persist stage from a cleared three-turn query stage, ensuring downstream effects arise only from durable state. Across twelve models, the commit boundary is the key inflection point: downstream failure increases from 45.0% in session-only episodes to 71.9% after commitment, a consistent increase of 27.0 percentage points. Committed claims exhibit three write-time patterns: status promotion, attribution removal, and scope broadening. These patterns become stronger under memory-like or procedural framing, repeated reinforcement, and even across domain boundaries. These results show that agent sycophancy is fundamentally a state-writing governance problem. Once user content is committed to durable memory, safety must govern what agents write, not only what they say. PASB identifies the write-time controls needed to gate risky commits while preserving the source, role, and scope of stored content beyond response-level mitigations.",
+    "authors": [
+      "Xutao Mao",
+      "Liangjie Zhao",
+      "Leyao Wang",
+      "Rui Qian",
+      "Qiang Huang",
+      "Wentao Wang",
+      "Bo Han",
+      "Xiang Zheng",
+      "Cong Wang"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2607.10526v3",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, conversation, episodic` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Stateful personal agents increasingly maintain long-term user profiles, episodic memories, and reusable skills.\n\n进一步看，论文的核心做法或实验重点可以概括为：This persistence turns conversational sycophancy into a state-writing failure: accepted user-centric claims can be committed as lasting preferences, background facts, or workflows and later reused after the original...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "episodic memory"
+    ],
+    "one_liner": "Stateful personal agents increasingly maintain long-term user profiles, episodic memories, and reusable skills.",
+    "published": "2026-07-12",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, conversation, episodic, long-term\n- 检索关键词命中：episodic memory\n- 来源分类信息：cs.AI",
+    "slug": "agents-don-t-just-agree-they-remember-benchmarking-persistent-sycophancy-in-stat",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2607.10526v3",
+    "tags": [
+      "agent",
+      "benchmark",
+      "conversation",
+      "episodic",
+      "long-term"
+    ],
+    "title": "Agents Don't Just Agree, They Remember: Benchmarking Persistent Sycophancy in Stateful Personal Agents",
+    "updated": "2026-07-27",
+    "url": "http://arxiv.org/abs/2607.10526v3",
+    "venue": ""
+  },
+  {
+    "abstract": "Long-horizon agents increasingly reuse their KV cache as memory: a serving system keeps a subset of cached entries and drops the rest. Eviction and episodic-memory schemes therefore rest on a premise rarely tested directly, that a retained event is still informative once the observations that produced it are gone. We test it by omitting one earlier observation from what is served, across otherwise identical agent histories. Among items sensitive to that observation, the answer overwhelmingly follows the omitted value, though no served span says which value is correct. We call this semantic materialization: a downstream event's cached rows act as an independently servable view of computation whose inputs are gone. It can also be written on purpose. A deliberately phrased, answer-free event raises donor-aligned recovery from 6% to 51% on Qwen3-8B without ever naming the value, whereas passively harvesting natural mentions from long-term dialog yields no detected advantage. What such a row carries is specific and bounded. Compact state survives, larger payloads decay toward chance, and whether a construction writes at all turns on phrasing rather than on meaning alone, so two phrasings the model comprehends equally well can diverge sharply. The result is a memory contract for sparse event-KV serving: what to write, where it lands, and what survives once the source is gone. For anyone who evicts the corollary is that dropping a source event and observing no accuracy loss does not show the source was unnecessary.",
+    "authors": [
+      "Zefeng Cai",
+      "Zerui Cai"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2607.23693v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, episodic, long-term` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Long-horizon agents increasingly reuse their KV cache as memory: a serving system keeps a subset of cached entries and drops the rest.\n\n进一步看，论文的核心做法或实验重点可以概括为：Eviction and episodic-memory schemes therefore rest on a premise rarely tested directly, that a retained event is still informative once the observations that produced it are gone.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "episodic memory"
+    ],
+    "one_liner": "Long-horizon agents increasingly reuse their KV cache as memory: a serving system keeps a subset of cached entries and drops the rest.",
+    "published": "2026-07-26",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, episodic, long-term\n- 检索关键词命中：episodic memory\n- 来源分类信息：cs.AI",
+    "slug": "compute-globally-materialize-locally-the-memory-contract-of-sparse-event-kv",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2607.23693v1",
+    "tags": [
+      "agent",
+      "episodic",
+      "long-term"
+    ],
+    "title": "Compute Globally, Materialize Locally: The Memory Contract of Sparse Event-KV",
+    "updated": "2026-07-26",
+    "url": "http://arxiv.org/abs/2607.23693v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Improving a language model today means retraining it: enormous compute, a new opaque model each cycle, non-deterministic output. We take the opposite path: the model stays frozen, and a persistent memory of verified solutions grows beside it. Once a problem family is solved and has passed an independent verification step that never consults the answer key, every new instance of that family is answered at zero generation tokens, bit-exact, deterministically. Across 180 fresh instances spanning nine problem families, four architectures from four vendors - dense and mixture-of-experts - each score 180/180 at zero generation tokens per answer: execution-bound capability decoupled from parameter scaling. A negative control attributes the capability fully to the memory: emptied, it solves nothing. The same verify-before-store contract holds for open-ended reasoning: 88/88 consistency-gated acceptances across all four models, machine-checked formal proof, and reasoning-method transfer at 77/80. Memory selection takes 1.4 microseconds; a full reuse completes in 6-23 ms at 36 mWh. Approximate similarity retrieval selects the wrong item 94.3% of the time on a 4,500-item verified store where exact addressing makes zero errors. The store also serves as working context at a scale no shipped engine matches: a 6,000,000-token movable window on a single 46 GB GPU at flat memory, where vLLM stops at 30,399 tokens and SGLang silently truncates past 32,000. On published benchmarks, frontier models remain far ahead of any 12B at raw from-scratch reasoning; on everything this system has solved and verified, the comparison inverts: a frontier API call pays a fresh generation pass on every query, forever, while verified reuse costs zero tokens and returns the identical bits every time. A public testbench with free, rate-limited access accompanies this report: https://corbenic-galahad-bench.hf.space",
+    "authors": [
+      "Sietse Schelpe"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.IR",
+      "cs.LG",
+      "cs.PF"
+    ],
+    "id": "2607.23806v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `benchmark, context, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Improving a language model today means retraining it: enormous compute, a new opaque model each cycle, non-deterministic output.\n\n进一步看，论文的核心做法或实验重点可以概括为：We take the opposite path: the model stays frozen, and a persistent memory of verified solutions grows beside it.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "persistent memory"
+    ],
+    "one_liner": "Improving a language model today means retraining it: enormous compute, a new opaque model each cycle, non-deterministic output.",
+    "published": "2026-07-26",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：benchmark, context, retrieval\n- 检索关键词命中：persistent memory\n- 来源分类信息：cs.CL, cs.AI, cs.IR, cs.LG",
+    "slug": "a-frozen-12b-beats-frontier-models-on-verified-work-100-accuracy-0-tokens-bit-ex",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2607.23806v1",
+    "tags": [
+      "benchmark",
+      "context",
+      "retrieval"
+    ],
+    "title": "A Frozen 12B Beats Frontier Models on Verified Work: 100% Accuracy, 0 Tokens, Bit-Exact, Forever",
+    "updated": "2026-07-26",
+    "url": "http://arxiv.org/abs/2607.23806v1",
+    "venue": ""
+  },
+  {
     "abstract": "Memory embeddings are crucial for memory-augmented systems, such as OpenClaw, but their evaluation is underexplored in current text embedding benchmarks, which narrowly focus on traditional passage retrieval and fail to assess models' ability to handle long-horizon memory retrieval tasks involving fragmented, context-dependent, and temporally distant information. To address this gap, we introduce the Long-horizon Memory Embedding Benchmark (LMEB), a comprehensive framework for evaluating embedding models on complex, long-horizon memory retrieval. LMEB comprises 22 datasets and 193 zero-shot retrieval tasks spanning four memory types: episodic, dialogue, semantic, and procedural. These memory types differ in terms of level of abstraction and temporal dependency, capturing distinct aspects of memory retrieval that reflect the diverse challenges of the real world. We evaluate 15 widely used embedding models, ranging from hundreds of millions to ten billion parameters. The results reveal that (1) LMEB provides a reasonable level of difficulty; (2) Larger models do not always perform better; (3) LMEB and MTEB measure orthogonal capabilities. This suggests that the field has yet to converge on a universal model capable of excelling across all memory retrieval tasks, and that strong performance on traditional passage retrieval does not necessarily transfer to long-horizon memory retrieval. LMEB provides a standardized and reproducible framework that fills a key gap in memory embedding evaluation and supports future advances in long-term, context-dependent retrieval.",
     "authors": [
       "{'fullname': 'Xinping Zhao', 'username': ''}",
@@ -145,6 +444,70 @@
     "venue": "CoRR 2026"
   },
   {
+    "abstract": "Quantum machine learning models define probabilistic input--output maps through coherent quantum evolution and measurement. While such models can exhibit computational advantages, their internal functioning and decision making generally resists interpretation in terms of stochastic trajectories through intermediate configurations. In contrast to classical (Markovian) stochastic processes, quantum dynamics generically violates the Chapman--Kolmogorov divisibility condition, preventing a decomposition into probabilistically meaningful intermediate transitions. We develop a probabilistic framework for representing quantum learning models as stochastic processes over configuration spaces where the dynamics are modeled as linear maps on probability distributions. Starting from a fixed POVM, arbitrary quantum channels induce transition kernels on the associated probability representation. For informationally complete POVMs, and in particular SIC-POVMs, these kernels are Markovian but generally quasi-stochastic, with non-classicality appearing as negativity. By contrast, projective spaces admit positive stochastic kernels but generally require non-Markovian dynamics due to the failure of Chapman--Kolmogorov divisibility. This yields a trade-off between negativity and dependence on past configurations, i.e. quantum dynamics can be represented either by Markovian quasi-stochastic maps or by positive stochastic processes with higher Markov order. We discuss how such representations of quantum dynamics can be interpreted as stochastic walks through a memory space in the spirit of Projective Simulation, a model of learning and agency in which decisions arise from random walks over an episodic memory network. We further outline how finite-order stochastic kernels can approximate such quantum deliberation processes and show in what regimes the classical machine learning model is recovered.",
+    "authors": [
+      "Johannes Fankhauser",
+      "Lukas J. Fiderer",
+      "Hans J. Briegel"
+    ],
+    "categories": [
+      "quant-ph",
+      "cs.LG"
+    ],
+    "id": "2607.17327v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `episodic` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Quantum machine learning models define probabilistic input--output maps through coherent quantum evolution and measurement.\n\n进一步看，论文的核心做法或实验重点可以概括为：While such models can exhibit computational advantages, their internal functioning and decision making generally resists interpretation in terms of stochastic trajectories through intermediate configurations.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "episodic memory"
+    ],
+    "one_liner": "Quantum machine learning models define probabilistic input--output maps through coherent quantum evolution and measurement.",
+    "published": "2026-07-19",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：episodic\n- 检索关键词命中：episodic memory\n- 来源分类信息：quant-ph, cs.LG",
+    "slug": "interpreting-quantum-learning-models-via-stochastic-processes",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2607.17327v2",
+    "tags": [
+      "episodic"
+    ],
+    "title": "Interpreting Quantum Learning Models via Stochastic Processes",
+    "updated": "2026-07-25",
+    "url": "http://arxiv.org/abs/2607.17327v2",
+    "venue": ""
+  },
+  {
+    "abstract": "Multi-hop question answering requires coordinating relational and textual evidence across reasoning steps, a combination neither a text corpus nor a knowledge graph can supply alone. Prior work often emphasizes only part of this loop: graph-augmented RAG retrieves from a pre-built or query-updated graph, KGQA systems search within topic-centered subgraphs, and memory-augmented agents maintain evolving memories without continuously reconciling graph memory with textual context. We propose Co-E, a training-free system built around synchronized bidirectional graph-text working memory. A synchronization cycle consolidates textual memory, extracts relational triples into graph memory, and injects graph facts back into the generation context. Because both memories are maintained, they shape subsequent retrieval and generation. Evaluated on six multi-hop QA benchmarks, Co-E improves over comparable training-free open-backbone baselines and is competitive with larger or trained systems.",
+    "authors": [
+      "Hieu Man",
+      "Thien Huu Nguyen"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.MA"
+    ],
+    "id": "2607.23278v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Multi-hop question answering requires coordinating relational and textual evidence across reasoning steps, a combination neither a text corpus nor a knowledge graph can supply alone.\n\n进一步看，论文的核心做法或实验重点可以概括为：Prior work often emphasizes only part of this loop: graph-augmented RAG retrieves from a pre-built or query-updated graph, KGQA systems search within topic-centered subgraphs, and memory-augmented agents maintain...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory augmented",
+      "memory-augmented",
+      "working memory"
+    ],
+    "one_liner": "Multi-hop question answering requires coordinating relational and textual evidence across reasoning steps, a combination neither a text corpus nor a knowledge graph can supply...",
+    "published": "2026-07-25",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context, retrieval\n- 检索关键词命中：memory augmented, memory-augmented, working memory\n- 来源分类信息：cs.CL, cs.MA",
+    "slug": "co-evolving-graph-and-text-memory-for-training-free-multi-hop-question-answering",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2607.23278v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "retrieval"
+    ],
+    "title": "Co-Evolving Graph and Text Memory for Training-Free Multi-Hop Question Answering",
+    "updated": "2026-07-25",
+    "url": "http://arxiv.org/abs/2607.23278v1",
+    "venue": ""
+  },
+  {
     "abstract": "Episodic memory is a central component of human memory, which refers to the ability to recall coherent events grounded in who, when, and where. However, most agent memory systems only emphasize semantic recall and treat experience as structures such as key-value, vector, or graph, which makes them struggle to represent and retrieve coherent events. To address this challenge, we propose a Character-and-Scene based memory architecture(CAST) inspired by dramatic theory. Specifically, CAST constructs 3D scenes (time/place/topic) and organizes them into character profiles that summarize the events of a character to represent episodic memory. Moreover, CAST complements this episodic memory with a graph-based semantic memory, which yields a robust dual memory design. Experiments demonstrate that CAST has averagely improved 8.11% F1 and 10.21% J(LLM-as-a-Judge) than baselines on various datasets, especially on open and time-sensitive conversational questions.",
     "authors": [
       "{'fullname': 'Kexin Ma', 'username': '~Kexin_Ma1'}",
@@ -179,6 +542,35 @@
     "venue": "CoRR 2026"
   },
   {
+    "abstract": "Partially observable reinforcement learning requires deciding what to retain, retrieve, and forget over time. We introduce a neuro-symbolic meta-policy that learns which symbolic memory heuristic to apply at each decision point while keeping execution symbolic. Our setting uses temporal knowledge-graph memory in RoomKG, where hidden state and observations are represented as Resource Description Framework (RDF) graphs and memory is augmented with temporal RDF triple annotations. The model combines knowledge-graph encoding of memory contents with value heads for question answering, exploration, and forgetting, yielding a controller that is both adaptive and inspectable. This gives the work a direct Semantic Web grounding through RDF-based representation, annotation-compatible graph semantics, and graph-based symbolic operations over explicit memory state. On train/test room splits at long-term memory capacity of 512, the qualifier-aware StarE-GNN configuration achieves the best held-out performance among the compared symbolic, neural, and neuro-symbolic systems while preserving step-level traceability of memory-management decisions.",
+    "authors": [
+      "Taewoon Kim",
+      "Vincent François-Lavet",
+      "Michael Cochez"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2607.18368v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `long-term` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Partially observable reinforcement learning requires deciding what to retain, retrieve, and forget over time.\n\n进一步看，论文的核心做法或实验重点可以概括为：We introduce a neuro-symbolic meta-policy that learns which symbolic memory heuristic to apply at each decision point while keeping execution symbolic.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "long-term memory"
+    ],
+    "one_liner": "Partially observable reinforcement learning requires deciding what to retain, retrieve, and forget over time.",
+    "published": "2026-07-20",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：long-term\n- 检索关键词命中：long-term memory\n- 来源分类信息：cs.AI",
+    "slug": "neuro-symbolic-meta-policies-for-temporal-knowledge-graph-memory-under-partial-o",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2607.18368v2",
+    "tags": [
+      "long-term"
+    ],
+    "title": "Neuro-Symbolic Meta-Policies for Temporal Knowledge-Graph Memory under Partial Observability",
+    "updated": "2026-07-24",
+    "url": "http://arxiv.org/abs/2607.18368v2",
+    "venue": ""
+  },
+  {
     "abstract": "Autoencoder-based anomalous sound detection is attractive for machine condition monitoring because it can be trained using only normal recordings and yields an interpretable anomaly score from reconstruction error. Most prior work uses spectrogram autoencoders, but reconstructing detailed time--frequency patterns is sensitive to noise and transients, and models can reconstruct some anomalous inputs well, weakening normal--anomaly separation. We propose MemNMF, a constrained reconstruction method that operates on the Linear Predictive Coding spectrum, a compact estimate of the spectral envelope. MemNMF initializes a memory module from an NMF dictionary learned on normal LPC spectra and reconstructs each input as an attention-weighted combination of prototypical normal spectral patterns. Experiments on MIMII and DCASE 2020 Task 2 across multiple machine types and operating conditions show that LPC-spectrum inputs improve a standard autoencoder baseline and that MemNMF yields further gains, with especially strong robustness under noisy, non-stationary settings.",
     "authors": [
       "Phurich Saengthong",
@@ -206,6 +598,37 @@
     "title": "MemNMF: Memory-Augmented NMF on LPC Spectra for Anomalous Sound Detection",
     "updated": "2026-07-24",
     "url": "http://arxiv.org/abs/2607.22086v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Recall presents a difficult choice: transformers have a linearly growing memory that slows each successive token, while linear RNNs typically have fixed costs but limited recall. We present Key-Value Means (\"KVM\"), a novel block-recurrence for attention that can accommodate either fixed-size or growing state. Equipping a strong transformer baseline with fixed-size KVM attention layers yields a strong $O(N)$ chunked RNN, while adding only an insignificant number of new parameters. We train a transformer with a growable KVM cache and show it performs competitively on long-context tests with only subquadratic prefill time and sublinear state growth. KVM is implementable with standard operations and without custom kernels, and supports chunk-wise parallelizable training and prefill. It provides many of the benefits of both traditional transformers (expandable context memory, chunk-wise parallelizable training and prefill) and RNNs in a single unified package. It can be used on every layer, saving KV-cache memory, and allowing a continuous range of choices of prefill time complexity between $O(N)$ and $O(N^2)$. We release our code at https://github.com/featherless-ai/KVM-paper and trained models at https://huggingface.co/collections/featherless-ai/kvm-paper under the Apache 2.0 license.",
+    "authors": [
+      "Daniel Goldstein",
+      "Navneel Singhal",
+      "Eugene Cheah"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "id": "2605.09877v4",
+    "intro": "这篇论文被纳入仓库，是因为它和 `context` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Recall presents a difficult choice: transformers have a linearly growing memory that slows each successive token, while linear RNNs typically have fixed costs but limited recall.\n\n进一步看，论文的核心做法或实验重点可以概括为：We present Key-Value Means (\"KVM\"), a novel block-recurrence for attention that can accommodate either fixed-size or growing state.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "context memory"
+    ],
+    "one_liner": "Recall presents a difficult choice: transformers have a linearly growing memory that slows each successive token, while linear RNNs typically have fixed costs but limited recall.",
+    "published": "2026-05-11",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：context\n- 检索关键词命中：context memory\n- 来源分类信息：cs.LG, cs.AI, cs.CL",
+    "slug": "key-value-means-transformers-with-expandable-block-recurrent-compressed-memory",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2605.09877v4",
+    "tags": [
+      "context"
+    ],
+    "title": "Key-Value Means: Transformers with Expandable Block-Recurrent Compressed Memory",
+    "updated": "2026-07-24",
+    "url": "http://arxiv.org/abs/2605.09877v4",
     "venue": ""
   },
   {

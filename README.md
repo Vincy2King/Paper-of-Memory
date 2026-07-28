@@ -39,39 +39,39 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **765**
+- Total tracked papers: **778**
 - Last generated: **2026-07-28**
 
 ## Papers by Source
 
 - ACL Anthology: **5**
-- arXiv: **642**
+- arXiv: **655**
 - OpenReview: **118**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-07-27 | arXiv | [Reality Monitoring in Large Language Models: Self-Knowledge That Transforms with Conversation Memory](content/papers/reality-monitoring-in-large-language-models-self-knowledge-that-transforms-with-.md) | benchmark, conversation, episodic |
+| 2026-07-27 | arXiv | [Not Forgotten: Implementation and Evaluation of a Personalized Episodic Memory for the Humanoid Robot Head Kim](content/papers/not-forgotten-implementation-and-evaluation-of-a-personalized-episodic-memory-fo.md) | context, conversation, episodic |
 | 2026-07-27 | arXiv | [MemTX: Transactional Belief Commit for Stateful Agent Memory](content/papers/memtx-transactional-belief-commit-for-stateful-agent-memory.md) | agent |
+| 2026-07-27 | arXiv | [MemChain: Learning Interpretable Memory Traces for Memory-Augmented LLM Agents](content/papers/memchain-learning-interpretable-memory-traces-for-memory-augmented-llm-agents.md) | agent, context, long-term |
+| 2026-07-27 | arXiv | [Leveling the Playing Field: Temporal Video Segmentation for Individuals with ADHD in Computing Education](content/papers/leveling-the-playing-field-temporal-video-segmentation-for-individuals-with-adhd.md) | working memory |
 | 2026-07-27 | arXiv | [Keep It InMind: Benchmarking the Implicit-Association Blind Spot in Agent Memory](content/papers/keep-it-inmind-benchmarking-the-implicit-association-blind-spot-in-agent-memory.md) | agent, benchmark, context |
 | 2026-07-27 | OpenReview | [IFCMemoryBench: Evaluating Long-Term Memory of LLM-Based Agents in BIM Information Retrieval](content/papers/ifcmemorybench-evaluating-long-term-memory-of-llm-based-agents-in-bim-informatio.md) | agent, benchmark, context |
+| 2026-07-27 | arXiv | [Eviction as Estimation: A Fixed-Lag Smoothing View of Test-Time Memory, and When Measuring Beats Accumulating](content/papers/eviction-as-estimation-a-fixed-lag-smoothing-view-of-test-time-memory-and-when-m.md) | benchmark |
+| 2026-07-27 | arXiv | [Dementia classification from spontaneous speech using wrapper-based feature selection](content/papers/dementia-classification-from-spontaneous-speech-using-wrapper-based-feature-sele.md) | memory |
+| 2026-07-27 | arXiv | [Agents Don't Just Agree, They Remember: Benchmarking Persistent Sycophancy in Stateful Personal Agents](content/papers/agents-don-t-just-agree-they-remember-benchmarking-persistent-sycophancy-in-stat.md) | agent, benchmark, conversation |
+| 2026-07-26 | arXiv | [Compute Globally, Materialize Locally: The Memory Contract of Sparse Event-KV](content/papers/compute-globally-materialize-locally-the-memory-contract-of-sparse-event-kv.md) | agent, episodic, long-term |
+| 2026-07-26 | arXiv | [A Frozen 12B Beats Frontier Models on Verified Work: 100% Accuracy, 0 Tokens, Bit-Exact, Forever](content/papers/a-frozen-12b-beats-frontier-models-on-verified-work-100-accuracy-0-tokens-bit-ex.md) | benchmark, context, retrieval |
 | 2026-07-25 | OpenReview | [LMEB: Long-horizon Memory Embedding Benchmark](content/papers/lmeb-long-horizon-memory-embedding-benchmark.md) | benchmark, context, episodic |
+| 2026-07-25 | arXiv | [Interpreting Quantum Learning Models via Stochastic Processes](content/papers/interpreting-quantum-learning-models-via-stochastic-processes.md) | episodic |
+| 2026-07-25 | arXiv | [Co-Evolving Graph and Text Memory for Training-Free Multi-Hop Question Answering](content/papers/co-evolving-graph-and-text-memory-for-training-free-multi-hop-question-answering.md) | agent, benchmark, context |
 | 2026-07-25 | OpenReview | [CAST: Character-and-Scene Episodic Memory for Agents](content/papers/cast-character-and-scene-episodic-memory-for-agents.md) | agent, conversation, episodic |
+| 2026-07-24 | arXiv | [Neuro-Symbolic Meta-Policies for Temporal Knowledge-Graph Memory under Partial Observability](content/papers/neuro-symbolic-meta-policies-for-temporal-knowledge-graph-memory-under-partial-o.md) | long-term |
 | 2026-07-24 | arXiv | [MemNMF: Memory-Augmented NMF on LPC Spectra for Anomalous Sound Detection](content/papers/memnmf-memory-augmented-nmf-on-lpc-spectra-for-anomalous-sound-detection.md) | memory-augmented |
+| 2026-07-24 | arXiv | [Key-Value Means: Transformers with Expandable Block-Recurrent Compressed Memory](content/papers/key-value-means-transformers-with-expandable-block-recurrent-compressed-memory.md) | context |
 | 2026-07-24 | arXiv | [Ground Truth First: A Longitudinal Evaluation Instrument for Agent Memory, and the Tenure Crossover in Memory-Architecture Rankings](content/papers/ground-truth-first-a-longitudinal-evaluation-instrument-for-agent-memory-and-the.md) | agent, benchmark, conversation |
-| 2026-07-24 | OpenReview | [EvolMem: A Cognitive-Driven Benchmark for Multi-Session Dialogue Memory](content/papers/evolmem-a-cognitive-driven-benchmark-for-multi-session-dialogue-memory.md) | agent, benchmark, conversation |
-| 2026-07-23 | OpenReview | [Temporal Context Reinstatement Drives Episodic-Like Order Memory in Long-Context Language Models](content/papers/temporal-context-reinstatement-drives-episodic-like-order-memory-in-long-context.md) | context, episodic, long-term |
-| 2026-07-23 | OpenReview | [Short-Term-to-Long-Term Memory Transfer for Knowledge Graphs under Partial Observability](content/papers/short-term-to-long-term-memory-transfer-for-knowledge-graphs-under-partial-obser.md) | agent, benchmark, long-term |
-| 2026-07-23 | arXiv | [RUMBA: Russian User Memory Benchmark](content/papers/rumba-russian-user-memory-benchmark.md) | benchmark, context, conversation |
-| 2026-07-23 | arXiv | [MemTools: A Unified Research Framework for Interoperable Agent Memory](content/papers/memtools-a-unified-research-framework-for-interoperable-agent-memory.md) | agent, benchmark |
-| 2026-07-23 | arXiv | [LLM Agents Are Latent Context Managers: Eliciting Self-Managed Context via State Proprioception](content/papers/llm-agents-are-latent-context-managers-eliciting-self-managed-context-via-state-.md) | agent, compression, context |
-| 2026-07-23 | arXiv | [Delivery, Not Storage: Cue-Anchored Working Memory as a Harness Property for Coding Agents](content/papers/delivery-not-storage-cue-anchored-working-memory-as-a-harness-property-for-codin.md) | agent, conversation |
-| 2026-07-23 | arXiv | [AttriMem: Attribution-Guided Process Feedback for Agent Memory Learning](content/papers/attrimem-attribution-guided-process-feedback-for-agent-memory-learning.md) | agent, benchmark, retrieval |
-| 2026-07-23 | arXiv | [Agentic Context Management: Solving Agent Memory and Cost by Treating Them as Lifecycle and Architecture Problems](content/papers/agentic-context-management-solving-agent-memory-and-cost-by-treating-them-as-lif.md) | agent, benchmark, context |
-| 2026-07-23 | OpenReview | [A Holistic System Support for Persistent Memory](content/papers/a-holistic-system-support-for-persistent-memory.md) | persistent memory |
-| 2026-07-22 | arXiv | [Toward Anthropomorphic Dialogue: A Closed-Loop Framework for Human-Like Chat Generation, Evaluation, and Preference Alignment](content/papers/toward-anthropomorphic-dialogue-a-closed-loop-framework-for-human-like-chat-gene.md) | benchmark, long-term |
-| 2026-07-22 | arXiv | [The Giant Hippocampus: From Structural Monoculture to a System of Systems](content/papers/the-giant-hippocampus-from-structural-monoculture-to-a-system-of-systems.md) | working memory |
-| 2026-07-22 | arXiv | [TRUST-ESD: A Risk-Calibrated and Governance-Aware AI Framework for Enterprise Strategic Decision Support Under Uncertainty](content/papers/trust-esd-a-risk-calibrated-and-governance-aware-ai-framework-for-enterprise-str.md) | retrieval |
 
 ## Suggested GitHub Setup
 
