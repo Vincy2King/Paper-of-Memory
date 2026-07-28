@@ -39,19 +39,21 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **763**
-- Last generated: **2026-07-27**
+- Total tracked papers: **765**
+- Last generated: **2026-07-28**
 
 ## Papers by Source
 
 - ACL Anthology: **5**
-- arXiv: **640**
+- arXiv: **642**
 - OpenReview: **118**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-07-27 | arXiv | [MemTX: Transactional Belief Commit for Stateful Agent Memory](content/papers/memtx-transactional-belief-commit-for-stateful-agent-memory.md) | agent |
+| 2026-07-27 | arXiv | [Keep It InMind: Benchmarking the Implicit-Association Blind Spot in Agent Memory](content/papers/keep-it-inmind-benchmarking-the-implicit-association-blind-spot-in-agent-memory.md) | agent, benchmark, context |
 | 2026-07-27 | OpenReview | [IFCMemoryBench: Evaluating Long-Term Memory of LLM-Based Agents in BIM Information Retrieval](content/papers/ifcmemorybench-evaluating-long-term-memory-of-llm-based-agents-in-bim-informatio.md) | agent, benchmark, context |
 | 2026-07-25 | OpenReview | [LMEB: Long-horizon Memory Embedding Benchmark](content/papers/lmeb-long-horizon-memory-embedding-benchmark.md) | benchmark, context, episodic |
 | 2026-07-25 | OpenReview | [CAST: Character-and-Scene Episodic Memory for Agents](content/papers/cast-character-and-scene-episodic-memory-for-agents.md) | agent, conversation, episodic |
@@ -70,8 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-07-22 | arXiv | [Toward Anthropomorphic Dialogue: A Closed-Loop Framework for Human-Like Chat Generation, Evaluation, and Preference Alignment](content/papers/toward-anthropomorphic-dialogue-a-closed-loop-framework-for-human-like-chat-gene.md) | benchmark, long-term |
 | 2026-07-22 | arXiv | [The Giant Hippocampus: From Structural Monoculture to a System of Systems](content/papers/the-giant-hippocampus-from-structural-monoculture-to-a-system-of-systems.md) | working memory |
 | 2026-07-22 | arXiv | [TRUST-ESD: A Risk-Calibrated and Governance-Aware AI Framework for Enterprise Strategic Decision Support Under Uncertainty](content/papers/trust-esd-a-risk-calibrated-and-governance-aware-ai-framework-for-enterprise-str.md) | retrieval |
-| 2026-07-22 | arXiv | [NVIDIA-labs OO Agents: Native Python Object-Oriented Agents](content/papers/nvidia-labs-oo-agents-native-python-object-oriented-agents.md) | agent, benchmark, context |
-| 2026-07-22 | arXiv | [Memory-Augmented Multimodal Large Language Models for Small Object Understanding in Streaming Aerial Videos](content/papers/memory-augmented-multimodal-large-language-models-for-small-object-understanding.md) | compression, context |
 
 ## Suggested GitHub Setup
 
