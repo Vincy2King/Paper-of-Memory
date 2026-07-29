@@ -1,5 +1,233 @@
 [
   {
+    "abstract": "Robots deployed in realistic settings will accumulate experience across many sessions and tasks over their deployment. The robot's tasks may often require it to remember information from multiple sessions ago, making long-context robot memory important for real-world deployments. However, most robot-memory benchmarks today are based on single episodes or a short context. To measure how current robot memory systems perform on longer sessions with more distractions, we introduce RoboMME-Interference, a cross-session benchmark built on RoboMME. For each query episode, we construct a session history using the query's relevant prior demonstration followed by a controlled number of unrelated sessions, which we provide to the VLA as memory and measure accuracy. Running RoboMME's released memory-augmented $π_{0.5}$ variants unmodified through this benchmark, we find that while perceptual memory variants improve success when given the history without any distractors, they decay strongly and steadily as unrelated sessions accumulate. Adding a retrieval step to the strongest variant, which finds the demonstration by visual similarity and passes only it to the policy, restores its no-distractor success rate at every interference level. With this release, we emphasize the importance of long-context memory and robustness to interference and show that current systems largely fail on such capabilities. The project page, videos, code, and data are at https://robotmemorybench.com.",
+    "authors": [
+      "Soumil Rathi"
+    ],
+    "categories": [
+      "cs.RO",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "id": "2606.22338v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `benchmark, context, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Robots deployed in realistic settings will accumulate experience across many sessions and tasks over their deployment.\n\n进一步看，论文的核心做法或实验重点可以概括为：The robot's tasks may often require it to remember information from multiple sessions ago, making long-context robot memory important for real-world deployments.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "context memory",
+      "memory augmented",
+      "memory benchmark",
+      "memory benchmarks",
+      "memory-augmented"
+    ],
+    "one_liner": "Robots deployed in realistic settings will accumulate experience across many sessions and tasks over their deployment.",
+    "published": "2026-06-21",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：benchmark, context, retrieval\n- 检索关键词命中：context memory, memory augmented, memory benchmark, memory benchmarks, memory-augmented\n- 来源分类信息：cs.RO, cs.AI, cs.LG",
+    "slug": "robomme-interference-benchmarking-robot-memory-under-interference",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2606.22338v2",
+    "tags": [
+      "benchmark",
+      "context",
+      "retrieval"
+    ],
+    "title": "RoboMME-Interference: Benchmarking Robot Memory Under Interference",
+    "updated": "2026-07-28",
+    "url": "http://arxiv.org/abs/2606.22338v2",
+    "venue": ""
+  },
+  {
+    "abstract": "Partially observable reinforcement learning requires deciding what to retain, retrieve, and forget over time. We introduce a neuro-symbolic meta-policy that learns which symbolic memory heuristic to apply at each decision point while keeping execution symbolic. Our setting uses temporal knowledge-graph memory in RoomKG, where hidden state and observations are represented as Resource Description Framework (RDF) graphs and memory is augmented with temporal RDF triple annotations. The model combines knowledge-graph encoding of memory contents with value heads for question answering, exploration, and forgetting, yielding a controller that is both adaptive and inspectable. This gives the work a direct Semantic Web grounding through RDF-based representation, annotation-compatible graph semantics, and graph-based symbolic operations over explicit memory state. On train/test room splits at long-term memory capacity of 512, the qualifier-aware StarE-GNN configuration achieves the best held-out performance among the compared symbolic, neural, and neuro-symbolic systems while preserving step-level traceability of memory-management decisions.",
+    "authors": [
+      "Taewoon Kim",
+      "Vincent François-Lavet",
+      "Michael Cochez"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2607.18368v3",
+    "intro": "这篇论文被纳入仓库，是因为它和 `long-term` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Partially observable reinforcement learning requires deciding what to retain, retrieve, and forget over time.\n\n进一步看，论文的核心做法或实验重点可以概括为：We introduce a neuro-symbolic meta-policy that learns which symbolic memory heuristic to apply at each decision point while keeping execution symbolic.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "long-term memory"
+    ],
+    "one_liner": "Partially observable reinforcement learning requires deciding what to retain, retrieve, and forget over time.",
+    "published": "2026-07-20",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：long-term\n- 检索关键词命中：long-term memory\n- 来源分类信息：cs.AI",
+    "slug": "neuro-symbolic-meta-policies-for-temporal-knowledge-graph-memory-under-partial-o",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2607.18368v3",
+    "tags": [
+      "long-term"
+    ],
+    "title": "Neuro-Symbolic Meta-Policies for Temporal Knowledge-Graph Memory under Partial Observability",
+    "updated": "2026-07-28",
+    "url": "http://arxiv.org/abs/2607.18368v3",
+    "venue": ""
+  },
+  {
+    "abstract": "LLM agents increasingly coordinate through persistent shared memory: one agent's write becomes another agent's premise, and eventually a tool call with real side effects. Current agent memory systems treat every accepted write as immediately actionable truth, so a polluted tool result, a stale update, or a teammate's half-finished note can silently drive an irreversible action. We argue that a memory write is not a belief commit. We present MemTX, a transactional belief-commit protocol. Each record carries evidence, permissions, provenance, and validity. Writes are staged inside snapshot-isolated transactions and admitted by a validate-and-commit pipeline, irreversible tool calls are gated on in-flight belief state, and retracting a belief triggers typed cascading repair of its derived records and tool side effects. Two invariants, action-safety gating and cascade-repair completeness, are machine-checked by property-based testing and bounded exhaustive enumeration of 5.5 million protocol states, with zero violations. Across five backbones from three model families, MemTX leads all eight baselines with paired-McNemar significance on four backbones and statistically ties the best baseline on the fifth and strongest, while remaining the only method with zero downstream harm on every backbone. Backbone capability does not substitute for commit discipline.",
+    "authors": [
+      "Xiaoyang Li",
+      "Yiqi Wang",
+      "Haohui Lu",
+      "Zhi Chen",
+      "Mo Li",
+      "Pingan Song",
+      "Mingkai Zheng",
+      "Taotao Cai"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2607.23929v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：LLM agents increasingly coordinate through persistent shared memory: one agent's write becomes another agent's premise, and eventually a tool call with real side effects.\n\n进一步看，论文的核心做法或实验重点可以概括为：Current agent memory systems treat every accepted write as immediately actionable truth, so a polluted tool result, a stale update, or a teammate's half-finished note can silently drive an irreversible action.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "LLM agents increasingly coordinate through persistent shared memory: one agent's write becomes another agent's premise, and eventually a tool call with real side effects.",
+    "published": "2026-07-27",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.AI",
+    "slug": "memtx-transactional-belief-commit-for-stateful-agent-memory",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2607.23929v2",
+    "tags": [
+      "agent"
+    ],
+    "title": "MemTX: Transactional Belief Commit for Stateful Agent Memory",
+    "updated": "2026-07-28",
+    "url": "http://arxiv.org/abs/2607.23929v2",
+    "venue": ""
+  },
+  {
+    "abstract": "Recently, memory management has become a key infrastructure for LLM-based agents, as it directly affects long-horizon reasoning, personalized responses, and knowledge reuse. However, existing LLM memory systems typically adopt a coarse-grained (utility-agnostic) manner that treats heterogeneous user-LLM interaction records uniformly, leading to redundant and low-impact records persisting in the memory repository. To address this challenge, we present MemLens, a value-aware memory management system that takes memory records as first-class data objects. MemLens provides an end-to-end interactive analytics dashboard that exposes the complete memory lifecycle, including Shapley-style memory evaluation, value-aware storage, and memory-assisted response. Through a study-copilot application, the system enables users to inspect memory values, visualize hierarchical memory structures, and compare various memory management strategies in terms of response quality, retrieval latency, and token consumption. Therefore, our MemLens can serve as an efficient, interpretable, and personalized long-term memory management system for LLM-based agents.",
+    "authors": [
+      "Shuyue Wei",
+      "Chang Liu",
+      "Zimu Zhou",
+      "Yongxin Tong",
+      "Lizhen Cui"
+    ],
+    "categories": [
+      "cs.DB",
+      "cs.AI"
+    ],
+    "id": "2607.25992v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, long-term, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Recently, memory management has become a key infrastructure for LLM-based agents, as it directly affects long-horizon reasoning, personalized responses, and knowledge reuse.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, existing LLM memory systems typically adopt a coarse-grained (utility-agnostic) manner that treats heterogeneous user-LLM interaction records uniformly, leading to redundant and low-impact records persisting...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "long-term memory"
+    ],
+    "one_liner": "Recently, memory management has become a key infrastructure for LLM-based agents, as it directly affects long-horizon reasoning, personalized responses, and knowledge reuse.",
+    "published": "2026-07-28",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, long-term, retrieval\n- 检索关键词命中：long-term memory\n- 来源分类信息：cs.DB, cs.AI",
+    "slug": "memlens-a-value-aware-memory-management-system-with-interactive-analytics-for-ll",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2607.25992v1",
+    "tags": [
+      "agent",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "MemLens: A Value-Aware Memory Management System with Interactive Analytics for LLM-based Agents",
+    "updated": "2026-07-28",
+    "url": "http://arxiv.org/abs/2607.25992v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Long-term memory enables LLM agents to leverage past interactions, but dialogue histories quickly exceed the context window, forcing agents to retrieve relevant subsets at query time. Because useful evidence is sparse and scattered across verbose conversations, retrieval faces a fundamental tension: broadening recall improves coverage but floods downstream reasoning with noise, while compressing memories at write time eases retrieval but irreversibly discards details that future queries may need. We introduce LazyMem, which resolves this tension by deferring all memory construction to query time. Given a retrieved candidate pool, a lightweight model processes it in overlapping parallel windows, selectively retaining and compressing only query-relevant content. The model is trained with supervised fine-tuning followed by reinforcement learning, using a reward that jointly encourages the identification of relevant messages and the generation of compressions that are faithful to the source and useful for answering the query. On LongMemEval, LazyMem-4B achieves an LLM-judge accuracy of 0.85, outperforming the strongest non-oracle baseline while using only 213 answer-context memory tokens, 21.0 times fewer than the baseline. It further generalizes to LoCoMo without target-domain training and reduces mean latency relative to the prior query-time baseline. Code is available at https://github.com/allacnobug/LazyMem.",
+    "authors": [
+      "Jing Yu",
+      "Yibo Zhao",
+      "Jiaming Zhang",
+      "Xiang Li"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2607.22690v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, compression, context, conversation` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Long-term memory enables LLM agents to leverage past interactions, but dialogue histories quickly exceed the context window, forcing agents to retrieve relevant subsets at query time.\n\n进一步看，论文的核心做法或实验重点可以概括为：Because useful evidence is sparse and scattered across verbose conversations, retrieval faces a fundamental tension: broadening recall improves coverage but floods downstream reasoning with noise, while compressing...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory",
+      "context memory",
+      "long-term memory"
+    ],
+    "one_liner": "Long-term memory enables LLM agents to leverage past interactions, but dialogue histories quickly exceed the context window, forcing agents to retrieve relevant subsets at query...",
+    "published": "2026-07-17",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, compression, context, conversation, long-term, retrieval\n- 检索关键词命中：agent memory, context memory, long-term memory\n- 来源分类信息：cs.AI",
+    "slug": "lazymem-retrieve-broadly-construct-selectively-for-efficient-long-term-agent-mem",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2607.22690v2",
+    "tags": [
+      "agent",
+      "compression",
+      "context",
+      "conversation",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "LazyMem: Retrieve Broadly, Construct Selectively for Efficient Long-Term Agent Memory",
+    "updated": "2026-07-28",
+    "url": "http://arxiv.org/abs/2607.22690v2",
+    "venue": ""
+  },
+  {
+    "abstract": "Effective human-robot teamwork requires robots to adapt to partners, situations, and task dynamics from the start of an interaction. In the MATRX Urban Search and Rescue (USAR) environment, people can externalize collaboration patterns (CPs) they discover during teamwork through a chat and reflection interface. We study whether a robot can use such prior team experience to become a better teammate in future interactions. To this end, we represent historical CPs as knowledge-graph episodic memories and use graph representation learning with a node-classification objective to identify a representative and effective memory for reuse. We then initialize the robot with this memory before a new collaboration episode begins. Across 20 participants and 160 round-level observations, initializing the robot with a single automatically selected prior CP increases rescue success from 25.7% to 41.3% and reduces average task time by 283 seconds. The strongest gains appear at the beginning of interaction, suggesting that reusable episodic memory can help robots enter collaboration with more effective task knowledge and support smoother early teamwork.",
+    "authors": [
+      "Taewoon Kim",
+      "Emma van Zoelen",
+      "Mark Neerincx"
+    ],
+    "categories": [
+      "cs.HC",
+      "cs.AI"
+    ],
+    "id": "2606.18836v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `episodic` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Effective human-robot teamwork requires robots to adapt to partners, situations, and task dynamics from the start of an interaction.\n\n进一步看，论文的核心做法或实验重点可以概括为：In the MATRX Urban Search and Rescue (USAR) environment, people can externalize collaboration patterns (CPs) they discover during teamwork through a chat and reflection interface.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "episodic memory"
+    ],
+    "one_liner": "Effective human-robot teamwork requires robots to adapt to partners, situations, and task dynamics from the start of an interaction.",
+    "published": "2026-06-17",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：episodic\n- 检索关键词命中：episodic memory\n- 来源分类信息：cs.HC, cs.AI",
+    "slug": "improving-human-robot-teamwork-in-urban-search-and-rescue-through-episodic-memor",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2606.18836v2",
+    "tags": [
+      "episodic"
+    ],
+    "title": "Improving Human-Robot Teamwork in Urban Search and Rescue Through Episodic Memory of Prior Collaboration",
+    "updated": "2026-07-28",
+    "url": "http://arxiv.org/abs/2606.18836v2",
+    "venue": ""
+  },
+  {
+    "abstract": "Production LLM agents are increasingly assembled from a frozen model wrapped in a harness: a prompt template, a tool set, a memory/retrieval layer, a planning strategy, and a verification policy. Two 2026 systems, Meta-Harness (Lee et al., 2026) and HyperAgents (Meta AI, 2026), show that this harness can itself be optimized or even self-rewritten by an agentic proposer -- at the cost of either an expensive code-search loop or unconstrained self-modifying code, neither of which is auditable or usable with a fully black-box model API. We take a narrower, more constrained position: treat the harness as a small, fixed, human-legible action space and learn a policy over it online with classic sample-efficient reinforcement learning (an $ε$-greedy contextual bandit and REINFORCE), scored against a multi-objective reward (task success, verifier score, policy compliance, cost, latency, and an unsupported-claim penalty). We instantiate this control system with DSPy (Khattab et al., 2024) as both the context assembler and the source of the strongest non-adaptive baseline (a DSPy BootstrapFewShot static prompt), and evaluate it across three verifiable task domains -- tool-use workflows, code generation (HumanEval), and multi-hop retrieval QA (HotpotQA) -- and two model providers (a local Ollama model and AWS Bedrock). We release the harness-control-system code, the cross-domain verifiable task suite, the full trajectory/reward-decomposition logs from training, and a provider-agnostic deployment recipe for applying this to a new organization's domain and verification setup.",
+    "authors": [
+      "Debjyoti Paul"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2607.25415v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, context, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Production LLM agents are increasingly assembled from a frozen model wrapped in a harness: a prompt template, a tool set, a memory/retrieval layer, a planning strategy, and a verification policy.\n\n进一步看，论文的核心做法或实验重点可以概括为：Two 2026 systems, Meta-Harness (Lee et al., 2026) and HyperAgents (Meta AI, 2026), show that this harness can itself be optimized or even self-rewritten by an agentic proposer -- at the cost of either an expensive...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory retrieval"
+    ],
+    "one_liner": "Production LLM agents are increasingly assembled from a frozen model wrapped in a harness: a prompt template, a tool set, a memory/retrieval layer, a planning strategy, and a...",
+    "published": "2026-07-28",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, context, retrieval\n- 检索关键词命中：memory retrieval\n- 来源分类信息：cs.AI",
+    "slug": "a-control-system-a-dataset-and-a-recipe-for-making-frozen-llm-agents-learn-a-dom",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2607.25415v1",
+    "tags": [
+      "agent",
+      "context",
+      "retrieval"
+    ],
+    "title": "A Control System, a Dataset, and a Recipe for Making Frozen LLM Agents Learn a Domain",
+    "updated": "2026-07-28",
+    "url": "http://arxiv.org/abs/2607.25415v1",
+    "venue": ""
+  },
+  {
     "abstract": "A conversational AI that cannot tell its own output from what a user said will treat its own mistakes as user-provided facts. In humans, this capacity is called reality monitoring, and its failures are linked to hallucinations, delusions, and confabulation, yet whether LLMs possess it remains untested. Here we show, across two experiments and six LLMs, that source attribution depends on how conversational memory is structured: ceiling accuracy for self-generated content under minimal memory demands reverses to a fragile external-item advantage once episodic delay removes that shortcut. Feedback exposes two failures: in some models, internal and external judgments swap; in others, accuracy improves while confidence decouples from correctness, dissociations invisible to existing benchmarks. Across models, this pattern implicates active, not aggregate, parameter count. This suggests that as AI systems take on autonomous, multi-turn roles, evaluating what they know is not enough: tracking where that knowledge came from may matter equally.",
     "authors": [
       "Saurabh Ranjan",
@@ -66,6 +294,37 @@
     "title": "Not Forgotten: Implementation and Evaluation of a Personalized Episodic Memory for the Humanoid Robot Head Kim",
     "updated": "2026-07-27",
     "url": "http://arxiv.org/abs/2607.24190v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Recent advances in AI music generation have enabled users to create complete musical pieces from natural-language prompts. However, most existing systems follow a prompt-and-regenerate paradigm, making iterative refinement difficult because users must repeatedly recreate compositions instead of directly evolving existing musical ideas. We present MusiChat, a conversational vibe composing system that enables collaborative human-AI music creation through natural-language interaction and iterative refinement. At the core of MusiChat is a hierarchical controllable music generation framework that separates lyric-aligned musical structure generation from expressive surface realization, allowing flexible stylistic transformations and structure-preserving edits. The system integrates a large language model with a hybrid symbolic music engine through a memory-augmented architecture that maintains the active composition state and user history across interactions. A hybrid intent-routing mechanism further enables efficient interpretation of both precise musical edits and open-ended creative requests. Rather than regenerating compositions from scratch, MusiChat incrementally transforms an evolving musical artifact while preserving relevant musical structure and user intent. We evaluate MusiChat through objective analysis and human studies, achieving 95.31% and 100% accuracy for single- and multi-turn interactions, respectively, and obtaining like-to-dislike ratios of 2:1 for melody naturalness and 3:1 for musical quality. Our results demonstrate that MusiChat supports coherent multi-turn music authoring and interactive human-AI co-creation through a conversational interface.",
+    "authors": [
+      "Callie C. Liao",
+      "Duoduo Liao",
+      "Ellie L. Zhang"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.SD"
+    ],
+    "id": "2607.24873v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `conversation` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Recent advances in AI music generation have enabled users to create complete musical pieces from natural-language prompts.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, most existing systems follow a prompt-and-regenerate paradigm, making iterative refinement difficult because users must repeatedly recreate compositions instead of directly evolving existing musical ideas.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory augmented",
+      "memory-augmented"
+    ],
+    "one_liner": "Recent advances in AI music generation have enabled users to create complete musical pieces from natural-language prompts.",
+    "published": "2026-07-27",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：conversation\n- 检索关键词命中：memory augmented, memory-augmented\n- 来源分类信息：cs.AI, cs.SD",
+    "slug": "musichat-vibe-composing-for-music-creation",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2607.24873v1",
+    "tags": [
+      "conversation"
+    ],
+    "title": "MusiChat: Vibe Composing for Music Creation",
+    "updated": "2026-07-27",
+    "url": "http://arxiv.org/abs/2607.24873v1",
     "venue": ""
   },
   {
@@ -296,6 +555,38 @@
     "title": "Dementia classification from spontaneous speech using wrapper-based feature selection",
     "updated": "2026-07-27",
     "url": "http://arxiv.org/abs/2502.03484v3",
+    "venue": ""
+  },
+  {
+    "abstract": "Empirical user studies are essential for evaluating visual encodings and can reveal perceptual and cognitive mechanisms, but they do not by themselves provide causal, predictive accounts of interpretation errors. Evaluations are therefore often post hoc: they measure performance after a design has been specified rather than predicting how attention, uncertainty, memory, and bias may produce accurate or erroneous judgments. To address this mechanistic gap, we translate a cognitive theory of visualization interpretation into executable simulation using Active Inference, a probabilistic framework for perception, learning, and action. We model chart reading as dynamic visual search in which agents update beliefs and choose actions that balance uncertainty reduction against cognitive effort. As a proof of concept, we implement Fast, heuristic (Type 1) and Slow, analytic (Type 2) agents for a bar-chart average-estimation task. The Fast agent is vulnerable to tick-salience bias, whereas the Slow agent is more vulnerable to working-memory decay. Both produce inspectable cognitive traces, including evolving belief uncertainty and fixation sequences. By expressing these hypothesized failure mechanisms as interpretable parameters, the architecture provides a framework for formalizing and testing mechanistic hypotheses about visualization interpretation. Empirical studies can then parameterize, refine, or falsify these simulations, supporting earlier and more predictive in silico evaluation of visualization efficacy.",
+    "authors": [
+      "Harrison J. Goldwyn",
+      "Graham Johnson",
+      "Christopher Ibarra",
+      "Lace Padilla",
+      "Kenny Gruchalla"
+    ],
+    "categories": [
+      "cs.HC",
+      "q-bio.NC"
+    ],
+    "id": "2607.25131v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Empirical user studies are essential for evaluating visual encodings and can reveal perceptual and cognitive mechanisms, but they do not by themselves provide causal, predictive accounts of interpretation errors.\n\n进一步看，论文的核心做法或实验重点可以概括为：Evaluations are therefore often post hoc: they measure performance after a design has been specified rather than predicting how attention, uncertainty, memory, and bias may produce accurate or erroneous judgments.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "working memory"
+    ],
+    "one_liner": "Empirical user studies are essential for evaluating visual encodings and can reveal perceptual and cognitive mechanisms, but they do not by themselves provide causal, predictive...",
+    "published": "2026-07-27",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent\n- 检索关键词命中：working memory\n- 来源分类信息：cs.HC, q-bio.NC",
+    "slug": "beyond-the-post-hoc-user-study-modeling-visual-decision-making-with-active-infer",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2607.25131v1",
+    "tags": [
+      "agent"
+    ],
+    "title": "Beyond the Post Hoc User Study: Modeling Visual Decision-Making with Active Inference",
+    "updated": "2026-07-27",
+    "url": "http://arxiv.org/abs/2607.25131v1",
     "venue": ""
   },
   {
