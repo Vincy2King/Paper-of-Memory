@@ -1,5 +1,353 @@
 [
   {
+    "abstract": "We introduce CMP (Cognitive Memory Primitive), a continual-learning architecture that repre?sents inputs as sparse relational codes, stores them in a two-tier competitive memory, and learns through local updates without end-to-end backpropagation through its feature-generating system. We investigate whether combining sparse representations, local learning, and persistent memory can reduce catastrophic forgetting relative to conventional backpropagation-based continual?learning approaches. On a controlled domain-incremental byte-level language modeling protocol, CMP demonstrates substantially lower backward transfer than a parameter-matched Trans?former trained with online Elastic Weight Consolidation (EWC). Across a three-seed replicated 15-domain experiment, CMP exhibits stable forgetting behavior, while separate head-to-head comparisons and domain-order analyses show consistently lower forgetting than the evaluated Transformer baseline under the reported experimental settings. We report these findings alongside a substantial single-domain accuracy gap relative to the Transformer, a null result on a vision benchmark, and a documented failure to combine CMP with an independent accuracy-improving mechanism, reflecting our commitment to reporting both positive and negative outcomes. These results suggest that the combination of sparse representations, local learning, and persistent memory is a promising direction for continual learning, while motivating further investigation into the respective roles of learning rules, representations, and architectural design in mitigating catastrophic forgetting.",
+    "authors": [
+      "Ashmith Atmuri",
+      "Yashaswini Rao Bhogarajula"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "id": "2607.26523v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `benchmark` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：We introduce CMP (Cognitive Memory Primitive), a continual-learning architecture that repre?sents inputs as sparse relational codes, stores them in a two-tier competitive memory, and learns through local updates...\n\n进一步看，论文的核心做法或实验重点可以概括为：We investigate whether combining sparse representations, local learning, and persistent memory can reduce catastrophic forgetting relative to conventional backpropagation-based continual?learning approaches.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "persistent memory"
+    ],
+    "one_liner": "We introduce CMP (Cognitive Memory Primitive), a continual-learning architecture that repre?sents inputs as sparse relational codes, stores them in a two-tier competitive...",
+    "published": "2026-07-29",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：benchmark\n- 检索关键词命中：persistent memory\n- 来源分类信息：cs.LG, cs.AI",
+    "slug": "the-art-of-not-forgetting-a-local-learning-architecture-for-continual-learning",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2607.26523v1",
+    "tags": [
+      "benchmark"
+    ],
+    "title": "The Art of Not Forgetting A Local Learning Architecture for Continual Learning",
+    "updated": "2026-07-29",
+    "url": "http://arxiv.org/abs/2607.26523v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Personalized agents are increasingly applied to assist users across a wide range of tasks. Effective personalized assistance requires not only retrieving explicit facts from past interactions stored in agent memory, but also inferring abstract personal characteristics. However, existing memory benchmarks primarily evaluate whether an agent can retrieve information explicitly stated in conversational histories, failing to provide an effective assessment of deeper user understanding. In this work, we propose Setoka, a benchmark for evaluating memory-augmented personalized agents with hierarchical user understanding from heterogeneous data. Grounded in theories from cognitive and personality psychology, Setoka defines four levels of user understanding, i.e., semantic memory, episodic memory, behavior pattern, and personality trait. Moreover, to enable realistic yet privacy-preserving evaluation, we design a psychometrics-based pipeline that synthesizes diverse, coherent heterogeneous user data and queries at scale. Finally, we leverage Setoka to evaluate 3 language models combined with 5 memory systems for 10 synthetic users. Our comprehensive evaluation reveals that while existing systems perform well on semantic memory retrieval, their performance declines on episodic memory. Moreover, when dealing with behavior pattern and personality trait understanding tasks that require integrating heterogeneous and fragmented information dispersed over time, performance declines even further. These findings demonstrate that user understanding cannot be handled by simple fact retrieval, motivating the design of memory mechanisms for cross-source integration and abstraction over long-term user behavior.",
+    "authors": [
+      "Lingyang Zeng",
+      "Guangze Chen",
+      "Kaichen Yu",
+      "Zhicheng Pan",
+      "Siyang Weng",
+      "Zirui Hu",
+      "Xiangyun Du",
+      "Hailin He",
+      "Rong Zhang",
+      "Chengcheng Yang",
+      "Kai Huang",
+      "Xuan Zhou"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.CL"
+    ],
+    "id": "2607.27056v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, conversation, episodic` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Personalized agents are increasingly applied to assist users across a wide range of tasks.\n\n进一步看，论文的核心做法或实验重点可以概括为：Effective personalized assistance requires not only retrieving explicit facts from past interactions stored in agent memory, but also inferring abstract personal characteristics.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory",
+      "episodic memory",
+      "memory augmented",
+      "memory benchmark",
+      "memory benchmarks",
+      "memory retrieval",
+      "memory-augmented"
+    ],
+    "one_liner": "Personalized agents are increasingly applied to assist users across a wide range of tasks.",
+    "published": "2026-07-29",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, conversation, episodic, long-term, retrieval\n- 检索关键词命中：agent memory, episodic memory, memory augmented, memory benchmark, memory benchmarks, memory retrieval\n- 来源分类信息：cs.AI, cs.CL",
+    "slug": "setoka-a-benchmark-for-hierarchical-user-understanding-in-personalized-agents-ov",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2607.27056v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "conversation",
+      "episodic",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "Setoka: A Benchmark for Hierarchical User Understanding in Personalized Agents over Heterogeneous Data",
+    "updated": "2026-07-29",
+    "url": "http://arxiv.org/abs/2607.27056v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Item cold-start recommendation is difficult when new items have sparse early interactions and appear in recommendation environments that keep changing over time. Static content, early feedback, and temporal-state evidence are all useful, but their reliability varies across the item lifecycle. This work proposes a framework--Neural Memory Kalman Fusion Recommender (NMKFR), which combines a Titans-based semantic encoder with time-aware Kalman state tracking. The semantic branch extracts memory-enhanced item observations from text, while the temporal branch estimates latent states under irregular interaction intervals. The NMKFR further uses posterior covariance as an uncertainty signal to calibrate semantic memory retrieval and adaptive static-temporal fusion. Experiments on Amazon Video Games and MovieLens-32M evaluate NMKFR under time-aware and item cold-start protocols using sampled candidate ranking. Across the reported comparisons, ablations, diagnostics, and robustness analyses, NMKFR achieves the strongest retained results and exhibits bounded uncertainty-related internal behavior. These findings provide empirical evidence for posterior-covariance-guided semantic-temporal fusion under the evaluated offline settings.",
+    "authors": [
+      "Chengzhi Liu",
+      "Ning Zeng",
+      "Zehui Qu"
+    ],
+    "categories": [
+      "cs.IR"
+    ],
+    "id": "2607.26429v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Item cold-start recommendation is difficult when new items have sparse early interactions and appear in recommendation environments that keep changing over time.\n\n进一步看，论文的核心做法或实验重点可以概括为：Static content, early feedback, and temporal-state evidence are all useful, but their reliability varies across the item lifecycle.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory retrieval"
+    ],
+    "one_liner": "Item cold-start recommendation is difficult when new items have sparse early interactions and appear in recommendation environments that keep changing over time.",
+    "published": "2026-07-29",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：retrieval\n- 检索关键词命中：memory retrieval\n- 来源分类信息：cs.IR",
+    "slug": "nmkfr-a-robust-framework-for-time-aware-cold-start-recommendation",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2607.26429v1",
+    "tags": [
+      "retrieval"
+    ],
+    "title": "NMKFR: A Robust Framework for Time-Aware Cold-Start Recommendation",
+    "updated": "2026-07-29",
+    "url": "http://arxiv.org/abs/2607.26429v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Recent advances in AI agents have increasingly internalized native capabilities into their underlying foundation models, giving rise to multimodal foundation models and large reasoning models. However, agent memory is still primarily implemented through external modules, leaving the native memory capability largely unexplored. In this paper, we take a first step toward this direction by introducing memory foundation models, which empower foundation models with native memory capabilities. We formalize native memory from two perspectives: a persistent and dynamically evolving memory state within the backbone, and native memory procedures that autonomously store and utilize information through model computation. We show that native memory offers advantages in architecture, end-to-end optimization, and efficiency. Based on this formulation, we propose Metis, the first prototype of memory foundation models. Metis introduces a new architecture that equips a foundation model with a native memory state, allowing historical information to be compressed into the model and accessed through memory attention. We construct large-scale memory-specific training data and introduce multiple optimization objectives to acquire these native memory procedures through mid-training. The online memory maintenance of Metis is gradient-free, and the memory update requires only a forward pass. At inference time, all learned model weights remain frozen, while the native memory states are autonomously transformed through standard forward computation. Through extensive experiments, we show that Metis exhibits native memory capabilities and further provide a detailed analysis of its strengths, limitations, and behaviors. To facilitate future research on memory foundation models, we release our project and model checkpoints.",
+    "authors": [
+      "Zeyu Zhang",
+      "Ziliang Guo",
+      "Yihang Sun",
+      "Xichong Zhang",
+      "Xixuan Hao",
+      "Zehao Lin",
+      "Yang Zhang",
+      "Xiaoyan Zhao",
+      "Tong Shen",
+      "Bo Tang",
+      "Zhi-Qin John Xu",
+      "Junchi Yan",
+      "Haofen Wang",
+      "Xu Chen",
+      "Feiyu Xiong",
+      "Zhiyu Li",
+      "Tat-Seng Chua"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.LG"
+    ],
+    "id": "2607.26760v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Recent advances in AI agents have increasingly internalized native capabilities into their underlying foundation models, giving rise to multimodal foundation models and large reasoning models.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, agent memory is still primarily implemented through external modules, leaving the native memory capability largely unexplored.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "Recent advances in AI agents have increasingly internalized native capabilities into their underlying foundation models, giving rise to multimodal foundation models and large...",
+    "published": "2026-07-29",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.CL, cs.LG",
+    "slug": "metis-memory-foundation-model",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2607.26760v1",
+    "tags": [
+      "agent"
+    ],
+    "title": "Metis: Memory Foundation Model",
+    "updated": "2026-07-29",
+    "url": "http://arxiv.org/abs/2607.26760v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Memory systems allow agents to retain and reuse information from past interactions, but they can also let malicious content persist. A malicious instruction crafted by an attacker may be stored in long-term memory, recalled much later, and quietly shape a real action. Recent benchmarks increasingly examine agent memory security, yet few trace the same malicious semantics across persistence, downstream consequences, and selective repair under diverse memory-backend comparisons. To address this gap, we introduce MemSecBench, a task-grounded benchmark for the lifecycle security of agent memory systems. It contains 310 cases drawn from 48 realistic contexts across code and science, daily life, and office work. Each case follows a controlled Write--Execute--Forget protocol in an isolated runtime under an exact agent configuration, defined by an agent harness, a memory backend, and an LLM backend. Evidence-based adjudication combines a deterministic write check, checkpoint-specific judge-model evaluations, and programmatic gates across seven lifecycle checkpoints. The experimental design spans a 24-configuration matrix of two agent harnesses, four memory backends, and three LLM backends. Across all 24 configurations, malicious memory persists in 84.2% of all cases, and the full Write--Execute chain succeeds in 50.3%. Among successfully poisoned cases, 59.6% complete the full Execute chain, while 56.1% achieve selective repair.Compared with matched Native configurations, the largest absolute differences are 16.1 percentage points for end-to-end attack success and 41.3 percentage points for selective repair. These descriptive contrasts indicate that the evaluated memory system stacks differ in lifecycle security, both in the propagation of malicious memory and in selective repair after successful memory poisoning.",
+    "authors": [
+      "Xuanze Chen",
+      "Xukang Xie",
+      "Wentao Fu",
+      "Jiajun Zhou",
+      "Shanqing Yu",
+      "Qi Xuan"
+    ],
+    "categories": [
+      "cs.CR",
+      "cs.AI"
+    ],
+    "id": "2607.27080v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, long-term` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Memory systems allow agents to retain and reuse information from past interactions, but they can also let malicious content persist.\n\n进一步看，论文的核心做法或实验重点可以概括为：A malicious instruction crafted by an attacker may be stored in long-term memory, recalled much later, and quietly shape a real action.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory",
+      "long-term memory"
+    ],
+    "one_liner": "Memory systems allow agents to retain and reuse information from past interactions, but they can also let malicious content persist.",
+    "published": "2026-07-29",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context, long-term\n- 检索关键词命中：agent memory, long-term memory\n- 来源分类信息：cs.CR, cs.AI",
+    "slug": "memsecbench-tracking-agent-memory-poisoning-from-persistence-to-consequence-and-",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2607.27080v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "long-term"
+    ],
+    "title": "MemSecBench: Tracking Agent Memory Poisoning from Persistence to Consequence and Repair",
+    "updated": "2026-07-29",
+    "url": "http://arxiv.org/abs/2607.27080v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Large language model (LLM) agents may recover from a failure within an episode or after a retry, yet the same execution failure can recur in later tasks because post-episode feedback rarely revises the persistent harness that guides future interactions. Static harnesses improve reliability through fixed tools, context, memory, and workflow structures, but remain unchanged after deployment. We propose $\\textbf{Living-Harness}$, a self-evolving agent harness that converts each completed trajectory and its evaluator signals into posterior evidence for bounded harness updates. Guided by a domain-level $\\textbf{Evolution-SOP}$ ($\\textbf{S}$tandard $\\textbf{O}$perating $\\textbf{P}$rocedure), Living-Harness extracts an episode abstraction and structured update evidence, and writes two complementary forms of procedural knowledge: episodic memory that records trigger conditions, failure patterns, and recovery actions, and a state graph that records state nodes, repair edges, and transition rules. The updated harness state is retrieved to guide future interactions, while tools and base context remain frozen, allowing procedural repairs to accumulate across evolution cycles. On eight interactive environments derived from $τ^2$-Bench and MultiWOZ-2.4, Living-Harness improves average Pass@1 over the strongest interactive baseline by 10.07 and 9.91 percentage points, respectively, and supports retrieval-only reuse of the evolved harness state across model backbones.",
+    "authors": [
+      "Yuetian Du",
+      "Yucheng Wang",
+      "He Xu",
+      "Jiexu Xu",
+      "Shanwen Tan",
+      "Bing Zhao",
+      "Boyu Yang",
+      "Zhijie Xu",
+      "Ming Kong",
+      "Hu Wei",
+      "Jie Liu",
+      "Qiang Zhu"
+    ],
+    "categories": [
+      "cs.MA",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "id": "2607.26598v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, context, episodic, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Large language model (LLM) agents may recover from a failure within an episode or after a retry, yet the same execution failure can recur in later tasks because post-episode feedback rarely revises the persistent...\n\n进一步看，论文的核心做法或实验重点可以概括为：Static harnesses improve reliability through fixed tools, context, memory, and workflow structures, but remain unchanged after deployment.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "context memory",
+      "episodic memory"
+    ],
+    "one_liner": "Large language model (LLM) agents may recover from a failure within an episode or after a retry, yet the same execution failure can recur in later tasks because post-episode...",
+    "published": "2026-07-29",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, context, episodic, retrieval\n- 检索关键词命中：context memory, episodic memory\n- 来源分类信息：cs.MA, cs.AI, cs.CL",
+    "slug": "living-harness-is-an-interactive-agent-evolver",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2607.26598v1",
+    "tags": [
+      "agent",
+      "context",
+      "episodic",
+      "retrieval"
+    ],
+    "title": "Living-Harness Is an Interactive-Agent Evolver",
+    "updated": "2026-07-29",
+    "url": "http://arxiv.org/abs/2607.26598v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Deployed LLM agents increasingly keep their long-term memory as a filesystem: a directory tree of markdown files that the agent itself reads, writes, and reorganizes through generic file tools. Yet research has largely passed over this medium: prior systems design bespoke memory representations and study retrieval over them, leaving the default's two working assumptions untested: that an agent can keep a growing store organized as memories accumulate, conflict, and go stale, and that this organization pays. We present the first systematic exploration of filesystem-based memory for LLM agents. We formalize the setting as three roles around one memory filesystem: a management agent integrates and organizes incoming content, a search agent answers queries with cited sources, and an execution agent supplies task trajectories that are distilled into skills, unifying declarative memory and skills in a single store. Across long-conversation benchmarks and embodied tasks, we vary memory shape (agent-organized hierarchy, verbatim dump, chunk retrieval), stream scale, tool harness (sandboxed shell, memory-tool-style functions, varied search tooling), and the strengths of the management and search agents, tracking answer quality, cost, and store health as memory grows. What organization reliably buys is search economy: organized stores roughly halve retrieval cost where material is large. Today's agents, however, fall short of the default's promise: in our growth study, organization erodes for all but the strongest management agent, and no agent we measure converts organization itself into better answers. And the model is not the only lever over a store's shape: changing the tool set alone reshapes the store as strongly as swapping the model. The study turns the filesystem default from an assumption into a design space for agent memory.",
+    "authors": [
+      "Sizhe Zhou",
+      "Sheldon Yu",
+      "Hui Wei",
+      "Junda Wu",
+      "Siru Ouyang",
+      "Yizhu Jiao",
+      "Shijia Pan",
+      "Julian McAuley",
+      "Yu Zhang",
+      "Tong Yu",
+      "Jiawei Han"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "id": "2607.26637v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, conversation, long-term` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Deployed LLM agents increasingly keep their long-term memory as a filesystem: a directory tree of markdown files that the agent itself reads, writes, and reorganizes through generic file tools.\n\n进一步看，论文的核心做法或实验重点可以概括为：Yet research has largely passed over this medium: prior systems design bespoke memory representations and study retrieval over them, leaving the default's two working assumptions untested: that an agent can keep a...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory",
+      "long-term memory"
+    ],
+    "one_liner": "Deployed LLM agents increasingly keep their long-term memory as a filesystem: a directory tree of markdown files that the agent itself reads, writes, and reorganizes through...",
+    "published": "2026-07-29",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, conversation, long-term, retrieval\n- 检索关键词命中：agent memory, long-term memory\n- 来源分类信息：cs.CL, cs.AI",
+    "slug": "filesystem-based-memory-for-llm-agents-organization-evolution-and-sustainability",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2607.26637v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "conversation",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "Filesystem-Based Memory for LLM Agents: Organization, Evolution, and Sustainability",
+    "updated": "2026-07-29",
+    "url": "http://arxiv.org/abs/2607.26637v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Multi-turn information-seeking conversations require both multi-hop reasoning and long-range dependency tracking across turns. However, existing RAG systems typically represent conversational memory as raw dialogue history, rewritten queries, or unstructured summaries, making it difficult to recover the specific prior reasoning steps and evidence required for follow-up queries. Our key insight is to align conversational memory with retrieval by representing dialogue context as sub-question-level reasoning traces. Building on this insight, we introduce MuMu-QA, a benchmark for multi-turn multi-hop RAG with explicit cross-turn sub-question dependency annotations, and CMT-RAG, a complementary memory framework for this setting. At each turn, CMT-RAG employs a state-space trace generator, whose recurrent state serves as runtime memory, to incorporate recent conversational context and decompose the current query into structured trace drafts containing retrieval-oriented sub-questions and dependencies on earlier traces. It then grounds these drafts with retrieved evidence and stores them as persistent memory traces in a session-level DAG, enabling future turns to efficiently recover relevant prior reasoning and evidence. Experiments on MuMu-QA and corpus-level RAG benchmarks show that CMT-RAG consistently outperforms five categories of RAG baselines in answer accuracy.",
+    "authors": [
+      "Lang Zhou",
+      "Yingjian Chen",
+      "Shuxuan Li",
+      "Kun-Yu Lin",
+      "Zhilin Zhao"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.IR"
+    ],
+    "id": "2607.26470v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `benchmark, context, conversation, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Multi-turn information-seeking conversations require both multi-hop reasoning and long-range dependency tracking across turns.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, existing RAG systems typically represent conversational memory as raw dialogue history, rewritten queries, or unstructured summaries, making it difficult to recover the specific prior reasoning steps and...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "conversational memory",
+      "persistent memory"
+    ],
+    "one_liner": "Multi-turn information-seeking conversations require both multi-hop reasoning and long-range dependency tracking across turns.",
+    "published": "2026-07-29",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：benchmark, context, conversation, retrieval\n- 检索关键词命中：conversational memory, persistent memory\n- 来源分类信息：cs.CL, cs.IR",
+    "slug": "cmt-rag-complementary-memory-traces-for-multi-turn-multi-hop-rag",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2607.26470v1",
+    "tags": [
+      "benchmark",
+      "context",
+      "conversation",
+      "retrieval"
+    ],
+    "title": "CMT-RAG: Complementary Memory Traces for Multi-turn Multi-hop RAG",
+    "updated": "2026-07-29",
+    "url": "http://arxiv.org/abs/2607.26470v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Conversational AI agents commonly lack persistent memory across sessions. The obvious fixes like injecting full chat histories into the context window, or delegating to a third-party memory service, either exhaust the model's context budget or send personal data through infrastructure the user does not control. We describe a memory store that avoids both problems: an agent-local Neo4j property graph augmented with HNSW vector indexes and a full bitemporal data model. Each memory is stored as an immutable identity node linked to versioned content nodes carrying two closed-open time intervals: valid time (when the fact was true in the world) and transaction time (when the database recorded it). This design supports point-in-time semantic retrieval without physically overwriting history. Semantic edges between related memories are maintained automatically at write time using cosine similarity over 1024-dimensional embeddings. We evaluate the system on LongMemEval, a 500-question benchmark spanning six question types designed to stress long-term memory. Across 60 sampled questions, the current-state semantic search path achieves 46.7% R@10 overall, rising to 80% on knowledge-update questions. The time-travel path yields 80% R@10 on knowledge-update but decreases recall on temporal-reasoning questions (50% to 37.5%), a consequence of post-filter dilution that points directly to a concrete design improvement. We discuss what these results reveal about the limits of pure retrieval for different question types and what each failure mode suggests for future work.",
+    "authors": [
+      "Alp Niksarli",
+      "Gopesh Baheti"
+    ],
+    "categories": [
+      "cs.DB",
+      "cs.AI",
+      "cs.IR"
+    ],
+    "id": "2607.26520v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, conversation` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Conversational AI agents commonly lack persistent memory across sessions.\n\n进一步看，论文的核心做法或实验重点可以概括为：The obvious fixes like injecting full chat histories into the context window, or delegating to a third-party memory service, either exhaust the model's context budget or send personal data through infrastructure the...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "long-term memory",
+      "persistent memory"
+    ],
+    "one_liner": "Conversational AI agents commonly lack persistent memory across sessions.",
+    "published": "2026-07-29",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context, conversation, long-term, retrieval\n- 检索关键词命中：long-term memory, persistent memory\n- 来源分类信息：cs.DB, cs.AI, cs.IR",
+    "slug": "a-graph-native-bitemporal-memory-store-for-conversational-ai-agents",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2607.26520v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "conversation",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "A Graph-Native Bitemporal Memory Store for Conversational AI Agents",
+    "updated": "2026-07-29",
+    "url": "http://arxiv.org/abs/2607.26520v1",
+    "venue": ""
+  },
+  {
     "abstract": "Robots deployed in realistic settings will accumulate experience across many sessions and tasks over their deployment. The robot's tasks may often require it to remember information from multiple sessions ago, making long-context robot memory important for real-world deployments. However, most robot-memory benchmarks today are based on single episodes or a short context. To measure how current robot memory systems perform on longer sessions with more distractions, we introduce RoboMME-Interference, a cross-session benchmark built on RoboMME. For each query episode, we construct a session history using the query's relevant prior demonstration followed by a controlled number of unrelated sessions, which we provide to the VLA as memory and measure accuracy. Running RoboMME's released memory-augmented $π_{0.5}$ variants unmodified through this benchmark, we find that while perceptual memory variants improve success when given the history without any distractors, they decay strongly and steadily as unrelated sessions accumulate. Adding a retrieval step to the strongest variant, which finds the demonstration by visual similarity and passes only it to the policy, restores its no-distractor success rate at every interference level. With this release, we emphasize the importance of long-context memory and robustness to interference and show that current systems largely fail on such capabilities. The project page, videos, code, and data are at https://robotmemorybench.com.",
     "authors": [
       "Soumil Rathi"

@@ -39,19 +39,28 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **787**
+- Total tracked papers: **796**
 - Last generated: **2026-07-30**
 
 ## Papers by Source
 
 - ACL Anthology: **5**
-- arXiv: **664**
+- arXiv: **673**
 - OpenReview: **118**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-07-29 | arXiv | [The Art of Not Forgetting A Local Learning Architecture for Continual Learning](content/papers/the-art-of-not-forgetting-a-local-learning-architecture-for-continual-learning.md) | benchmark |
+| 2026-07-29 | arXiv | [Setoka: A Benchmark for Hierarchical User Understanding in Personalized Agents over Heterogeneous Data](content/papers/setoka-a-benchmark-for-hierarchical-user-understanding-in-personalized-agents-ov.md) | agent, benchmark, conversation |
+| 2026-07-29 | arXiv | [NMKFR: A Robust Framework for Time-Aware Cold-Start Recommendation](content/papers/nmkfr-a-robust-framework-for-time-aware-cold-start-recommendation.md) | retrieval |
+| 2026-07-29 | arXiv | [Metis: Memory Foundation Model](content/papers/metis-memory-foundation-model.md) | agent |
+| 2026-07-29 | arXiv | [MemSecBench: Tracking Agent Memory Poisoning from Persistence to Consequence and Repair](content/papers/memsecbench-tracking-agent-memory-poisoning-from-persistence-to-consequence-and-.md) | agent, benchmark, context |
+| 2026-07-29 | arXiv | [Living-Harness Is an Interactive-Agent Evolver](content/papers/living-harness-is-an-interactive-agent-evolver.md) | agent, context, episodic |
+| 2026-07-29 | arXiv | [Filesystem-Based Memory for LLM Agents: Organization, Evolution, and Sustainability](content/papers/filesystem-based-memory-for-llm-agents-organization-evolution-and-sustainability.md) | agent, benchmark, conversation |
+| 2026-07-29 | arXiv | [CMT-RAG: Complementary Memory Traces for Multi-turn Multi-hop RAG](content/papers/cmt-rag-complementary-memory-traces-for-multi-turn-multi-hop-rag.md) | benchmark, context, conversation |
+| 2026-07-29 | arXiv | [A Graph-Native Bitemporal Memory Store for Conversational AI Agents](content/papers/a-graph-native-bitemporal-memory-store-for-conversational-ai-agents.md) | agent, benchmark, context |
 | 2026-07-28 | arXiv | [RoboMME-Interference: Benchmarking Robot Memory Under Interference](content/papers/robomme-interference-benchmarking-robot-memory-under-interference.md) | benchmark, context, retrieval |
 | 2026-07-28 | arXiv | [Neuro-Symbolic Meta-Policies for Temporal Knowledge-Graph Memory under Partial Observability](content/papers/neuro-symbolic-meta-policies-for-temporal-knowledge-graph-memory-under-partial-o.md) | long-term |
 | 2026-07-28 | arXiv | [MemTX: Transactional Belief Commit for Stateful Agent Memory](content/papers/memtx-transactional-belief-commit-for-stateful-agent-memory.md) | agent |
@@ -63,15 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-07-27 | arXiv | [Not Forgotten: Implementation and Evaluation of a Personalized Episodic Memory for the Humanoid Robot Head Kim](content/papers/not-forgotten-implementation-and-evaluation-of-a-personalized-episodic-memory-fo.md) | context, conversation, episodic |
 | 2026-07-27 | arXiv | [MusiChat: Vibe Composing for Music Creation](content/papers/musichat-vibe-composing-for-music-creation.md) | conversation |
 | 2026-07-27 | arXiv | [MemTX: Transactional Belief Commit for Stateful Agent Memory](content/papers/memtx-transactional-belief-commit-for-stateful-agent-memory.md) | agent |
-| 2026-07-27 | arXiv | [MemChain: Learning Interpretable Memory Traces for Memory-Augmented LLM Agents](content/papers/memchain-learning-interpretable-memory-traces-for-memory-augmented-llm-agents.md) | agent, context, long-term |
-| 2026-07-27 | arXiv | [Leveling the Playing Field: Temporal Video Segmentation for Individuals with ADHD in Computing Education](content/papers/leveling-the-playing-field-temporal-video-segmentation-for-individuals-with-adhd.md) | working memory |
-| 2026-07-27 | arXiv | [Keep It InMind: Benchmarking the Implicit-Association Blind Spot in Agent Memory](content/papers/keep-it-inmind-benchmarking-the-implicit-association-blind-spot-in-agent-memory.md) | agent, benchmark, context |
-| 2026-07-27 | OpenReview | [IFCMemoryBench: Evaluating Long-Term Memory of LLM-Based Agents in BIM Information Retrieval](content/papers/ifcmemorybench-evaluating-long-term-memory-of-llm-based-agents-in-bim-informatio.md) | agent, benchmark, context |
-| 2026-07-27 | arXiv | [Eviction as Estimation: A Fixed-Lag Smoothing View of Test-Time Memory, and When Measuring Beats Accumulating](content/papers/eviction-as-estimation-a-fixed-lag-smoothing-view-of-test-time-memory-and-when-m.md) | benchmark |
-| 2026-07-27 | arXiv | [Dementia classification from spontaneous speech using wrapper-based feature selection](content/papers/dementia-classification-from-spontaneous-speech-using-wrapper-based-feature-sele.md) | memory |
-| 2026-07-27 | arXiv | [Beyond the Post Hoc User Study: Modeling Visual Decision-Making with Active Inference](content/papers/beyond-the-post-hoc-user-study-modeling-visual-decision-making-with-active-infer.md) | agent |
-| 2026-07-27 | arXiv | [Agents Don't Just Agree, They Remember: Benchmarking Persistent Sycophancy in Stateful Personal Agents](content/papers/agents-don-t-just-agree-they-remember-benchmarking-persistent-sycophancy-in-stat.md) | agent, benchmark, conversation |
-| 2026-07-26 | arXiv | [Compute Globally, Materialize Locally: The Memory Contract of Sparse Event-KV](content/papers/compute-globally-materialize-locally-the-memory-contract-of-sparse-event-kv.md) | agent, episodic, long-term |
 
 ## Suggested GitHub Setup
 

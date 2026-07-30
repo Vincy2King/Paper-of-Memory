@@ -1,0 +1,39 @@
+# The Art of Not Forgetting A Local Learning Architecture for Continual Learning
+
+- Source: arXiv
+- Venue: N/A
+- Paper ID: 2607.26523v1
+- Published: 2026-07-29
+- Updated: 2026-07-29
+- Authors: Ashmith Atmuri, Yashaswini Rao Bhogarajula
+- Tags: benchmark
+- Categories: cs.LG, cs.AI
+- URL: http://arxiv.org/abs/2607.26523v1
+
+## One-Sentence Summary
+We introduce CMP (Cognitive Memory Primitive), a continual-learning architecture that repre?sents inputs as sparse relational codes, stores them in a two-tier competitive...
+
+## Introduction
+这篇论文被纳入仓库，是因为它和 `benchmark` 这些主题直接相关。
+
+它当前来自 `arXiv`。
+
+从摘要来看，作者主要关注的是：We introduce CMP (Cognitive Memory Primitive), a continual-learning architecture that repre?sents inputs as sparse relational codes, stores them in a two-tier competitive memory, and learns through local updates...
+
+进一步看，论文的核心做法或实验重点可以概括为：We investigate whether combining sparse representations, local learning, and persistent memory can reduce catastrophic forgetting relative to conventional backpropagation-based continual?learning approaches.
+
+如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。
+
+## Why It Was Included
+- 来源：arXiv
+- 高亮主题命中：benchmark
+- 检索关键词命中：persistent memory
+- 来源分类信息：cs.LG, cs.AI
+
+## Abstract Snapshot
+We introduce CMP (Cognitive Memory Primitive), a continual-learning architecture that repre?sents inputs as sparse relational codes, stores them in a two-tier competitive memory, and learns through local updates without end-to-end backpropagation through its feature-generating system. We investigate whether combining sparse representations, local learning, and persistent memory can reduce catastrophic forgetting relative to conventional backpropagation-based continual?learning approaches. On a controlled domain-incremental byte-level language modeling protocol, CMP demonstrates substantially lower backward transfer than a parameter-matched Trans?former trained with online Elastic Weight Consolidation (EWC). Across a three-seed replicated 15-domain experiment, CMP exhibits stable forgetting behavior, while separate head-to-head comparisons and domain-order analyses show consistently lower forgetting than the evaluated Transformer baseline under the reported experimental settings. We report these findings alongside a substantial single-domain accuracy gap relative to the Transformer, a null result on a vision benchmark, and a documented failure to combine CMP with an independent accuracy-improving mechanism, reflecting our commitment to reporting both positive and negative outcomes. These results suggest that the combination of sparse representations, local learning, and persistent memory is a promising direction for continual learning, while motivating further investigation into the respective roles of learning rules, representations, and architectural design in mitigating catastrophic forgetting.
+
+## Manual Notes
+<!-- MANUAL_NOTES_START -->
+在这里补充你的人工解读、和其他工作的关系、复现记录，或你认为最值得读的段落。
+<!-- MANUAL_NOTES_END -->
