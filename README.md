@@ -39,19 +39,29 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **796**
+- Total tracked papers: **807**
 - Last generated: **2026-07-31**
 
 ## Papers by Source
 
 - ACL Anthology: **5**
-- arXiv: **673**
-- OpenReview: **118**
+- arXiv: **683**
+- OpenReview: **119**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-07-31 | OpenReview | [Caching for the Future: Scrub Jay Episodic Memory Principles for Agent Memory Systems](content/papers/caching-for-the-future-scrub-jay-episodic-memory-principles-for-agent-memory-sys.md) | agent, benchmark, context |
+| 2026-07-30 | arXiv | [Understanding Is Done Early: A Depth Division of Labor in Large Language Models and Its Use for Unbounded-Context Memory](content/papers/understanding-is-done-early-a-depth-division-of-labor-in-large-language-models-a.md) | compression, context, conversation |
+| 2026-07-30 | arXiv | [RRM: Experience-Driven Reflective Retrieval Memory for Long-Horizon Multimodal Reasoning](content/papers/rrm-experience-driven-reflective-retrieval-memory-for-long-horizon-multimodal-re.md) | agent, context, episodic |
+| 2026-07-30 | arXiv | [Memory Decoder at Scale: A Pretrained, Parametric Long-Term Memory](content/papers/memory-decoder-at-scale-a-pretrained-parametric-long-term-memory.md) | benchmark, long-term, retrieval |
+| 2026-07-30 | arXiv | [MemTxn: A Transaction Boundary for Source-Supported Updates and Complete-State Recovery in Agent Memory](content/papers/memtxn-a-transaction-boundary-for-source-supported-updates-and-complete-state-re.md) | agent, retrieval |
+| 2026-07-30 | arXiv | [MemHarness: Memory Is Reconstructed, Not Replayed](content/papers/memharness-memory-is-reconstructed-not-replayed.md) | agent, context |
+| 2026-07-30 | arXiv | [MIND: Lightweight and Effective Memory Injection Defense for LLM Agents via Intent-Aware Information Bottleneck](content/papers/mind-lightweight-and-effective-memory-injection-defense-for-llm-agents-via-inten.md) | agent, context |
+| 2026-07-30 | arXiv | [LabEvolver: Training-Free Experience Evolution for Safe and Grounded Wet-Lab Agents](content/papers/labevolver-training-free-experience-evolution-for-safe-and-grounded-wet-lab-agen.md) | agent, episodic |
+| 2026-07-30 | arXiv | [ChronoMem: Version Control and Semantic Rollback for Large Language Model Agent Memory](content/papers/chronomem-version-control-and-semantic-rollback-for-large-language-model-agent-m.md) | agent, benchmark, conversation |
+| 2026-07-30 | arXiv | [ARES: Adaptive Reasoning-Effort Steering for PPA- and Cost-Aware RTL Optimization with LLM Agents](content/papers/ares-adaptive-reasoning-effort-steering-for-ppa-and-cost-aware-rtl-optimization-.md) | agent, long-term |
 | 2026-07-29 | arXiv | [The Art of Not Forgetting A Local Learning Architecture for Continual Learning](content/papers/the-art-of-not-forgetting-a-local-learning-architecture-for-continual-learning.md) | benchmark |
 | 2026-07-29 | arXiv | [Setoka: A Benchmark for Hierarchical User Understanding in Personalized Agents over Heterogeneous Data](content/papers/setoka-a-benchmark-for-hierarchical-user-understanding-in-personalized-agents-ov.md) | agent, benchmark, conversation |
 | 2026-07-29 | arXiv | [NMKFR: A Robust Framework for Time-Aware Cold-Start Recommendation](content/papers/nmkfr-a-robust-framework-for-time-aware-cold-start-recommendation.md) | retrieval |
@@ -60,18 +70,8 @@ python3 scripts/update_papers.py --build-only
 | 2026-07-29 | arXiv | [Living-Harness Is an Interactive-Agent Evolver](content/papers/living-harness-is-an-interactive-agent-evolver.md) | agent, context, episodic |
 | 2026-07-29 | arXiv | [Filesystem-Based Memory for LLM Agents: Organization, Evolution, and Sustainability](content/papers/filesystem-based-memory-for-llm-agents-organization-evolution-and-sustainability.md) | agent, benchmark, conversation |
 | 2026-07-29 | arXiv | [CMT-RAG: Complementary Memory Traces for Multi-turn Multi-hop RAG](content/papers/cmt-rag-complementary-memory-traces-for-multi-turn-multi-hop-rag.md) | benchmark, context, conversation |
+| 2026-07-29 | arXiv | [Bridging Inference-Time Scaling and Episodic Memory with Action-Centric Graphs](content/papers/bridging-inference-time-scaling-and-episodic-memory-with-action-centric-graphs.md) | agent, benchmark, context |
 | 2026-07-29 | arXiv | [A Graph-Native Bitemporal Memory Store for Conversational AI Agents](content/papers/a-graph-native-bitemporal-memory-store-for-conversational-ai-agents.md) | agent, benchmark, context |
-| 2026-07-28 | arXiv | [RoboMME-Interference: Benchmarking Robot Memory Under Interference](content/papers/robomme-interference-benchmarking-robot-memory-under-interference.md) | benchmark, context, retrieval |
-| 2026-07-28 | arXiv | [Neuro-Symbolic Meta-Policies for Temporal Knowledge-Graph Memory under Partial Observability](content/papers/neuro-symbolic-meta-policies-for-temporal-knowledge-graph-memory-under-partial-o.md) | long-term |
-| 2026-07-28 | arXiv | [MemTX: Transactional Belief Commit for Stateful Agent Memory](content/papers/memtx-transactional-belief-commit-for-stateful-agent-memory.md) | agent |
-| 2026-07-28 | arXiv | [MemLens: A Value-Aware Memory Management System with Interactive Analytics for LLM-based Agents](content/papers/memlens-a-value-aware-memory-management-system-with-interactive-analytics-for-ll.md) | agent, long-term, retrieval |
-| 2026-07-28 | arXiv | [LazyMem: Retrieve Broadly, Construct Selectively for Efficient Long-Term Agent Memory](content/papers/lazymem-retrieve-broadly-construct-selectively-for-efficient-long-term-agent-mem.md) | agent, compression, context |
-| 2026-07-28 | arXiv | [Improving Human-Robot Teamwork in Urban Search and Rescue Through Episodic Memory of Prior Collaboration](content/papers/improving-human-robot-teamwork-in-urban-search-and-rescue-through-episodic-memor.md) | episodic |
-| 2026-07-28 | arXiv | [A Control System, a Dataset, and a Recipe for Making Frozen LLM Agents Learn a Domain](content/papers/a-control-system-a-dataset-and-a-recipe-for-making-frozen-llm-agents-learn-a-dom.md) | agent, context, retrieval |
-| 2026-07-27 | arXiv | [Reality Monitoring in Large Language Models: Self-Knowledge That Transforms with Conversation Memory](content/papers/reality-monitoring-in-large-language-models-self-knowledge-that-transforms-with-.md) | benchmark, conversation, episodic |
-| 2026-07-27 | arXiv | [Not Forgotten: Implementation and Evaluation of a Personalized Episodic Memory for the Humanoid Robot Head Kim](content/papers/not-forgotten-implementation-and-evaluation-of-a-personalized-episodic-memory-fo.md) | context, conversation, episodic |
-| 2026-07-27 | arXiv | [MusiChat: Vibe Composing for Music Creation](content/papers/musichat-vibe-composing-for-music-creation.md) | conversation |
-| 2026-07-27 | arXiv | [MemTX: Transactional Belief Commit for Stateful Agent Memory](content/papers/memtx-transactional-belief-commit-for-stateful-agent-memory.md) | agent |
 
 ## Suggested GitHub Setup
 
