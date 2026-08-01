@@ -1,5 +1,96 @@
 [
   {
+    "abstract": "Why can we hold so few items in mind at the same time? Recent theoretical work suggests this owes to a tradeoff between generalization and working memory capacity in representation learning systems. This approach provides a potential explanation for observations of capacity limits in both humans and artificial neural networks. In the present study, we seek to validate this theory by modeling behavior in the change detection task that is commonly used to evaluate human working memory capacity. Modeling is based on artificial neural networks that we evaluate in terms of the change detection task, their ability to generalize, and their representational structure. Applying various learning objectives during training allows us to probe the predicted tradeoff. We show that generalization-optimized models develop structured representations that strongly limit working memory capacity. Models trained to avoid representational structure through orthogonal representations do not show these limitations but fail to generalize. Finally, models that are optimized for high working memory capacity form orthogonal representations and also fail to generalize. Together, these findings provide evidence that one set of representations cannot serve both generalization and working memory capacity, further strengthening evidence for shared limitations in artificial and human cognition.",
+    "authors": [
+      "Jonathan König",
+      "Steven M Frankland",
+      "Taylor Whittington Webb"
+    ],
+    "categories": [
+      "ccneuro.org/CCN/2026/Extended_Abstracts/-/Submission"
+    ],
+    "id": "openreview:p9wQUrK62k",
+    "intro": "这篇论文被纳入仓库，是因为它和 `working memory` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `CCN 2026 Extended Abstracts Poster` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Why can we hold so few items in mind at the same time?\n\n进一步看，论文的核心做法或实验重点可以概括为：Recent theoretical work suggests this owes to a tradeoff between generalization and working memory capacity in representation learning systems.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "working memory"
+    ],
+    "one_liner": "Why can we hold so few items in mind at the same time?",
+    "published": "2026-05-14",
+    "relevance": "- 来源：OpenReview\n- Venue：CCN 2026 Extended Abstracts Poster\n- 高亮主题命中：working memory\n- 检索关键词命中：working memory\n- 来源分类信息：ccneuro.org/CCN/2026/Extended_Abstracts/-/Submission",
+    "slug": "trading-generalization-for-working-memory-capacity-in-neural-network-representat",
+    "source": "OpenReview",
+    "source_key": "p9wQUrK62k",
+    "tags": [
+      "working memory"
+    ],
+    "title": "Trading Generalization for Working Memory Capacity in Neural Network Representations",
+    "updated": "2026-07-31",
+    "url": "https://openreview.net/forum?id=p9wQUrK62k",
+    "venue": "CCN 2026 Extended Abstracts Poster"
+  },
+  {
+    "abstract": "Research on hippocampal sharp-wave ripples (SWR) suggests that memory retrieval and internal simulation are deeply intertwined: prospective sequences emerge during the same neural events that drive memory access, and their content reflects expected future relevance rather than recency. Yet the computational mechanism coupling imagination to retrieval remains underspecified. We propose that imagination-guided retrieval, using internally generated latent simulations as queries against stored experience, offers a parsimonious account of this coupling. We examine navigation agents that use a world model to imagine latent future states that index persistent memory. Perfect-retrieval experiments reveal a consistent $\\sim$20-point performance gap that bounds the headroom attributable to prospective simulation, and multi-agent memory sharing improves navigation in proportion to the agent pool, loosely paralleling hippocampal replay reorganized by social observation. Together, these offer testable predictions for the imagination-retrieval hypothesis.",
+    "authors": [
+      "Yunzhe XU"
+    ],
+    "categories": [
+      "ccneuro.org/CCN/2026/Extended_Abstracts/-/Submission"
+    ],
+    "id": "openreview:2FsNmWoP3t",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, retrieval` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `CCN 2026 Extended Abstracts Poster` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Research on hippocampal sharp-wave ripples (SWR) suggests that memory retrieval and internal simulation are deeply intertwined: prospective sequences emerge during the same neural events that drive memory access, and...\n\n进一步看，论文的核心做法或实验重点可以概括为：Yet the computational mechanism coupling imagination to retrieval remains underspecified.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory",
+      "memory retrieval",
+      "persistent memory"
+    ],
+    "one_liner": "Research on hippocampal sharp-wave ripples (SWR) suggests that memory retrieval and internal simulation are deeply intertwined: prospective sequences emerge during the same...",
+    "published": "2026-05-14",
+    "relevance": "- 来源：OpenReview\n- Venue：CCN 2026 Extended Abstracts Poster\n- 高亮主题命中：agent, retrieval\n- 检索关键词命中：agent memory, memory retrieval, persistent memory\n- 来源分类信息：ccneuro.org/CCN/2026/Extended_Abstracts/-/Submission",
+    "slug": "predictive-latent-simulation-as-a-memory-retrieval-mechanism",
+    "source": "OpenReview",
+    "source_key": "2FsNmWoP3t",
+    "tags": [
+      "agent",
+      "retrieval"
+    ],
+    "title": "Predictive Latent Simulation as a Memory Retrieval Mechanism",
+    "updated": "2026-07-31",
+    "url": "https://openreview.net/forum?id=2FsNmWoP3t",
+    "venue": "CCN 2026 Extended Abstracts Poster"
+  },
+  {
+    "abstract": "Working memory is traditionally attributed to sustained activity in higher-order cortical areas such as prefrontal cortex. In contrast, sensory cortical regions like the ventral temporal cortex (VTC) are typically viewed as passive encoders of visual information. However, emerging evidence suggests that top-down feedback may enable sensory areas to participate in higher cognitive functions. Here, we show that biologically plausible recurrent neural networks (RNNs) trained on a working memory task naturally develop a circuit mechanism in which sensory-like neurons encode stimuli during input, yet exhibit stimulus-specific suppression at probe through inhibitory signaling from persistently active \"memory\" units. We further demonstrate that human VTC single neurons exhibit qualitatively similar response profiles during a Sternberg working memory task, including reduced responses to repeated stimuli at probe. Together, these findings suggest that persistent top-down inhibition may provide a mechanism by which sensory cortex supports working memory, linking feedback-driven modulation with stimulus-specific response suppression within a unified circuit framework.",
+    "authors": [
+      "Robert Kim",
+      "Nuttida Rungratsameetaweemana",
+      "Jonathan Daume",
+      "Chrystal M. Reed",
+      "Adam N. Mamelak",
+      "Ueli Rutishauser"
+    ],
+    "categories": [
+      "ccneuro.org/CCN/2026/Extended_Abstracts/-/Submission"
+    ],
+    "id": "openreview:g4dfmG9rxx",
+    "intro": "这篇论文被纳入仓库，是因为它和 `working memory` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `CCN 2026 Extended Abstracts Poster` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Working memory is traditionally attributed to sustained activity in higher-order cortical areas such as prefrontal cortex.\n\n进一步看，论文的核心做法或实验重点可以概括为：In contrast, sensory cortical regions like the ventral temporal cortex (VTC) are typically viewed as passive encoders of visual information.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "working memory"
+    ],
+    "one_liner": "Working memory is traditionally attributed to sustained activity in higher-order cortical areas such as prefrontal cortex.",
+    "published": "2026-05-14",
+    "relevance": "- 来源：OpenReview\n- Venue：CCN 2026 Extended Abstracts Poster\n- 高亮主题命中：working memory\n- 检索关键词命中：working memory\n- 来源分类信息：ccneuro.org/CCN/2026/Extended_Abstracts/-/Submission",
+    "slug": "inhibitory-signals-support-working-memory-in-sensory-cortex",
+    "source": "OpenReview",
+    "source_key": "g4dfmG9rxx",
+    "tags": [
+      "working memory"
+    ],
+    "title": "Inhibitory signals support working memory in sensory cortex",
+    "updated": "2026-07-31",
+    "url": "https://openreview.net/forum?id=g4dfmG9rxx",
+    "venue": "CCN 2026 Extended Abstracts Poster"
+  },
+  {
     "abstract": "LLM agents that persist across sessions accumulate stored memories whose validity varies enormously by content type, yet existing memory architectures treat all memories as equally persistent and systematically contaminate retrieved context with outdated facts. We show that per-memory, type-conditioned temporal decay, a property of western scrub jay episodic memory, can be operationalized as an auto-classified coefficient $\\pi_i$ in an external LLM-agent memory store, yielding \\textsc{ScrubJay-MEM}: each memory is encoded as a jointly-bound What--Where--When tuple with an estimated perishability $\\pi_i$ and utility horizon $\\tau_i$, retrieved by query-adaptive scoring, and revised retroactively at $O(1)$ LLM calls per update. We introduce the \\emph{Temporal Generalization Test} (TGT), a benchmark with held-out retention intervals and a Generalization Gap (GenGap) diagnostic. On TGT, ScrubJay-MEM attains the highest staleness accuracy among retrieval-based systems ($82.3\\%$ vs.\\ at most $77.7\\%$) at comparable combined accuracy; on MemoryAgentBench EventQA-64k it improves F1 by $+2.66$ over Mem0 and $+3.09$ over Qwen3-Embedding-4B under an 8B backbone. A decay ablation leaves staleness accuracy unchanged while lowering combined accuracy, attributing the staleness result to per-memory perishability estimation and the residual difference to type-conditioned decay. Gains narrow under stronger backbones and reverse on fact-consolidation tasks, scoping the contribution to temporal reasoning over perishable facts.",
     "authors": [
       "Kartikey Singh Bhandari",

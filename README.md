@@ -39,19 +39,22 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **807**
-- Last generated: **2026-07-31**
+- Total tracked papers: **810**
+- Last generated: **2026-08-01**
 
 ## Papers by Source
 
 - ACL Anthology: **5**
 - arXiv: **683**
-- OpenReview: **119**
+- OpenReview: **122**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-07-31 | OpenReview | [Trading Generalization for Working Memory Capacity in Neural Network Representations](content/papers/trading-generalization-for-working-memory-capacity-in-neural-network-representat.md) | working memory |
+| 2026-07-31 | OpenReview | [Predictive Latent Simulation as a Memory Retrieval Mechanism](content/papers/predictive-latent-simulation-as-a-memory-retrieval-mechanism.md) | agent, retrieval |
+| 2026-07-31 | OpenReview | [Inhibitory signals support working memory in sensory cortex](content/papers/inhibitory-signals-support-working-memory-in-sensory-cortex.md) | working memory |
 | 2026-07-31 | OpenReview | [Caching for the Future: Scrub Jay Episodic Memory Principles for Agent Memory Systems](content/papers/caching-for-the-future-scrub-jay-episodic-memory-principles-for-agent-memory-sys.md) | agent, benchmark, context |
 | 2026-07-30 | arXiv | [Understanding Is Done Early: A Depth Division of Labor in Large Language Models and Its Use for Unbounded-Context Memory](content/papers/understanding-is-done-early-a-depth-division-of-labor-in-large-language-models-a.md) | compression, context, conversation |
 | 2026-07-30 | arXiv | [RRM: Experience-Driven Reflective Retrieval Memory for Long-Horizon Multimodal Reasoning](content/papers/rrm-experience-driven-reflective-retrieval-memory-for-long-horizon-multimodal-re.md) | agent, context, episodic |
@@ -69,9 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-07-29 | arXiv | [MemSecBench: Tracking Agent Memory Poisoning from Persistence to Consequence and Repair](content/papers/memsecbench-tracking-agent-memory-poisoning-from-persistence-to-consequence-and-.md) | agent, benchmark, context |
 | 2026-07-29 | arXiv | [Living-Harness Is an Interactive-Agent Evolver](content/papers/living-harness-is-an-interactive-agent-evolver.md) | agent, context, episodic |
 | 2026-07-29 | arXiv | [Filesystem-Based Memory for LLM Agents: Organization, Evolution, and Sustainability](content/papers/filesystem-based-memory-for-llm-agents-organization-evolution-and-sustainability.md) | agent, benchmark, conversation |
-| 2026-07-29 | arXiv | [CMT-RAG: Complementary Memory Traces for Multi-turn Multi-hop RAG](content/papers/cmt-rag-complementary-memory-traces-for-multi-turn-multi-hop-rag.md) | benchmark, context, conversation |
-| 2026-07-29 | arXiv | [Bridging Inference-Time Scaling and Episodic Memory with Action-Centric Graphs](content/papers/bridging-inference-time-scaling-and-episodic-memory-with-action-centric-graphs.md) | agent, benchmark, context |
-| 2026-07-29 | arXiv | [A Graph-Native Bitemporal Memory Store for Conversational AI Agents](content/papers/a-graph-native-bitemporal-memory-store-for-conversational-ai-agents.md) | agent, benchmark, context |
 
 ## Suggested GitHub Setup
 
