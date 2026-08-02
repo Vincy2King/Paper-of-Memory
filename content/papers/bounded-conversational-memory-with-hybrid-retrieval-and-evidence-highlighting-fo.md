@@ -5,7 +5,7 @@
 - Paper ID: acl:2026.sigdial-1.55
 - Published: 2026-08
 - Updated: 2026-07-21
-- Authors: Manasa Mudunuri, Chandra Guntupalli, Mario Kubek, Shiraj Pokharel, Murray Patterson, Jinho Choi, Yun-Nung Chen, Kotaro Funakoshi, Ali Emami
+- Authors: Manasa Mudunuri, Chandra Guntupalli, Shiraj Pokharel, Murray Patterson, Mario Kubek, Jinho Choi, Yun-Nung Chen, Kotaro Funakoshi, Ali Emami
 - Tags: conversation, retrieval
 - Categories: N/A
 - URL: https://aclanthology.org/2026.sigdial-1.55
