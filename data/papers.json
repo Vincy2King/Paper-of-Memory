@@ -1,5 +1,1196 @@
 [
   {
+    "abstract": "Conversational memory in AI systems becomes crucial for coherent interactions through prolonged conversations. State-of-the-art techniques mainly aim at improving memory by context expansion, using retrieval, or external memory. However, most methods assume that any entity mention should be immediately mapped to one interpretation. This often leads to premature commitments, memory confirmation bias, hallucinations in the conversation, and accumulation of wrong conversational state. This paper states that conversational memory should not hide ambiguity, but should represent it explicitly as part of the reasoning process. This paper proposes an Entity-Centric Conversational Memory Framework that views entity linking as a process of explicit belief management, instead of a deterministic one. It maintains the space of interpretations of entities that includes both correct and incorrect hypotheses, such as $\\mathrm{UNKNOWN}$ hypothesis, processes heterogeneous conversational evidence via belief update, detects ambiguity, and performs one of three actions: Commit, Clarify, or Delay. By doing so, the framework separates entity reasoning from memory updates, allowing to write to memory only when certain. The experiments conducted on ConEL conversational entity linking dataset show that the proposed framework reaches $99.0\\%$ commit precision providing explicit control over the precision-coverage trade-off. The analysis shows several properties of conversational memory and brings important architectural insights to light: the existence of memory confirmation bias, the importance of treating $\\mathrm{UNKNOWN}$ as an active competing hypothesis, and the limitations of fixed ambiguity thresholds on different entity types.",
+    "authors": [],
+    "categories": [
+      "aclweb.org/ACL/ARR/2026/August/-/Submission"
+    ],
+    "id": "openreview:oobq0Zs3mc",
+    "intro": "这篇论文被纳入仓库，是因为它和 `context, conversation, retrieval` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 August Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Conversational memory in AI systems becomes crucial for coherent interactions through prolonged conversations.\n\n进一步看，论文的核心做法或实验重点可以概括为：State-of-the-art techniques mainly aim at improving memory by context expansion, using retrieval, or external memory.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "conversational memory"
+    ],
+    "one_liner": "Conversational memory in AI systems becomes crucial for coherent interactions through prolonged conversations.",
+    "published": "2026-08-04",
+    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 August Submission\n- 高亮主题命中：context, conversation, retrieval\n- 检索关键词命中：conversational memory\n- 来源分类信息：aclweb.org/ACL/ARR/2026/August/-/Submission",
+    "slug": "reason-before-remembering-an-entity-centric-framework-for-trustworthy-conversati",
+    "source": "OpenReview",
+    "source_key": "oobq0Zs3mc",
+    "tags": [
+      "context",
+      "conversation",
+      "retrieval"
+    ],
+    "title": "Reason Before Remembering: An Entity-Centric Framework for Trustworthy Conversational Memory",
+    "updated": "2026-08-04",
+    "url": "https://openreview.net/forum?id=oobq0Zs3mc",
+    "venue": "ACL ARR 2026 August Submission"
+  },
+  {
+    "abstract": "Long-term memory is essential for LLM agents that interact across sessions, yet current memory benchmarks primarily evaluate single-hop recall, leaving multi-hop association largely unmeasured. We make three contributions. First, we introduce MemHop, a multi-hop memory benchmark of 1,000 questions at hop depths 1-5 across 10 social-network scenarios, with per-hop evidence annotations. Second, we present Profile-Graph Memory (ProGraph), a two-layer memory architecture combining (i) profile expansion -- substring-matched traversal of entity names that naturally appear in LLM-written profile narratives, a minimal alternative to explicit knowledge-graph construction -- and (ii) compression residuals -- exact dates, quantities, and named items co-extracted with each profile update at zero extra API cost. Third, a full-grid ablation shows cross-benchmark mechanism specialization: profile expansion drives multi-hop reasoning (-22.6pp on MemHop when removed) while compression residuals drive precision recall (-8.6pp on LoCoMo when not co-extracted), with cross-effects under 3pp within a single architecture. ProGraph averages 80.1% on MemHop (matching the FullContext reference) and 78.4% on LoCoMo (exceeding FullContext by 11.3pp), outperforming Mem0, A-Mem, HippoRAG, and RAG on both. We release MemHop, ProGraph, and baseline implementations.",
+    "authors": [],
+    "categories": [
+      "aclweb.org/ACL/ARR/2026/August/-/Submission"
+    ],
+    "id": "openreview:8oUXCzERe8",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, compression, context` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 August Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Long-term memory is essential for LLM agents that interact across sessions, yet current memory benchmarks primarily evaluate single-hop recall, leaving multi-hop association largely unmeasured.\n\n进一步看，论文的核心做法或实验重点可以概括为：We make three contributions.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "long-term memory",
+      "memory benchmark",
+      "memory benchmarks"
+    ],
+    "one_liner": "Long-term memory is essential for LLM agents that interact across sessions, yet current memory benchmarks primarily evaluate single-hop recall, leaving multi-hop association...",
+    "published": "2026-08-04",
+    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 August Submission\n- 高亮主题命中：agent, benchmark, compression, context, long-term\n- 检索关键词命中：long-term memory, memory benchmark, memory benchmarks\n- 来源分类信息：aclweb.org/ACL/ARR/2026/August/-/Submission",
+    "slug": "profile-graph-memory-for-llm-agents-implicit-cross-entity-traversal-through-narr",
+    "source": "OpenReview",
+    "source_key": "8oUXCzERe8",
+    "tags": [
+      "agent",
+      "benchmark",
+      "compression",
+      "context",
+      "long-term"
+    ],
+    "title": "Profile-Graph Memory for LLM Agents: Implicit Cross-Entity Traversal through Narrative Profiles",
+    "updated": "2026-08-04",
+    "url": "https://openreview.net/forum?id=8oUXCzERe8",
+    "venue": "ACL ARR 2026 August Submission"
+  },
+  {
+    "abstract": "Long-context modeling requires tracking entity states across thousands of tokens, yet dense semantic retrieval conflates distinct states of the same entity. We present KGERMAR, a memory-augmented framework that constructs dynamic, context-specific knowledge graphs at both training and inference time. By integrating graph-structural embeddings with textual semantics in a three-bank memory architecture (contextual, semantic, and structural), KGERMAR discriminates between lexically similar passages based on underlying entity relationships. On entity-rich corpora, structural memory provides a stable complementary signal that reduces perplexity by up to 8.5\\% and memory per token by 1.6–2.2× compared to memory-augmented baselines. Ablations show that semantic retrieval dominates at shorter contexts but saturates at 32K tokens, whereas structural memory maintains consistent gains, establishing that dynamic knowledge graphs improve long-context modeling specifically when entity density is high.",
+    "authors": [],
+    "categories": [
+      "aclweb.org/ACL/ARR/2026/August/-/Submission"
+    ],
+    "id": "openreview:QdDQUKsvDn",
+    "intro": "这篇论文被纳入仓库，是因为它和 `context, retrieval` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 August Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Long-context modeling requires tracking entity states across thousands of tokens, yet dense semantic retrieval conflates distinct states of the same entity.\n\n进一步看，论文的核心做法或实验重点可以概括为：We present KGERMAR, a memory-augmented framework that constructs dynamic, context-specific knowledge graphs at both training and inference time.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory-augmented"
+    ],
+    "one_liner": "Long-context modeling requires tracking entity states across thousands of tokens, yet dense semantic retrieval conflates distinct states of the same entity.",
+    "published": "2026-08-04",
+    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 August Submission\n- 高亮主题命中：context, retrieval\n- 检索关键词命中：memory-augmented\n- 来源分类信息：aclweb.org/ACL/ARR/2026/August/-/Submission",
+    "slug": "knowledge-graph-enhanced-memory-augmented-retrieval-for-long-context-modeling",
+    "source": "OpenReview",
+    "source_key": "QdDQUKsvDn",
+    "tags": [
+      "context",
+      "retrieval"
+    ],
+    "title": "Knowledge Graph Enhanced Memory-Augmented Retrieval for Long Context Modeling",
+    "updated": "2026-08-04",
+    "url": "https://openreview.net/forum?id=QdDQUKsvDn",
+    "venue": "ACL ARR 2026 August Submission"
+  },
+  {
+    "abstract": "AI assistants now accumulate conversation history spanning days, months, or years, making retrieval of past context essential for grounded responses. Users may seek specific details from prior interactions, either explicitly through history search or implicitly during ongoing conversations. Unlike typical document retrieval in RAG settings, dialogue history forms a coherent sequential discourse in which the meaning of an utterance depends on its surrounding context. Existing approaches construct dialogue retrieval units through segmentation, summarization, or hybrid memory construction, but these units are constructed offline and therefore cannot adapt to the information needs expressed by the current query. We propose D-ACR (Dialogue-Aware Context Retrieval), which dynamically identifies relevant segments at query time via KadaneDial, our adaptation of Kadane's maximum-subarray algorithm to the dialogue domain. Across four conversational memory benchmarks and four backbone LLMs, D-ACR achieves the highest retrieval hit and recall while retrieving fewer turns than other strong methods, and maintains stable performance regardless of the backbone LLM.",
+    "authors": [],
+    "categories": [
+      "aclweb.org/ACL/ARR/2026/August/-/Submission"
+    ],
+    "id": "openreview:LJTjY3nUJm",
+    "intro": "这篇论文被纳入仓库，是因为它和 `benchmark, context, conversation, long-term` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 August Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：AI assistants now accumulate conversation history spanning days, months, or years, making retrieval of past context essential for grounded responses.\n\n进一步看，论文的核心做法或实验重点可以概括为：Users may seek specific details from prior interactions, either explicitly through history search or implicitly during ongoing conversations.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "conversational memory",
+      "memory benchmark",
+      "memory benchmarks"
+    ],
+    "one_liner": "AI assistants now accumulate conversation history spanning days, months, or years, making retrieval of past context essential for grounded responses.",
+    "published": "2026-08-04",
+    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 August Submission\n- 高亮主题命中：benchmark, context, conversation, long-term, retrieval\n- 检索关键词命中：conversational memory, memory benchmark, memory benchmarks\n- 来源分类信息：aclweb.org/ACL/ARR/2026/August/-/Submission",
+    "slug": "d-acr-dialogue-aware-context-retrieval-for-long-term-conversational-memory",
+    "source": "OpenReview",
+    "source_key": "LJTjY3nUJm",
+    "tags": [
+      "benchmark",
+      "context",
+      "conversation",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "D-ACR: Dialogue-Aware Context Retrieval for Long-Term Conversational Memory",
+    "updated": "2026-08-04",
+    "url": "https://openreview.net/forum?id=LJTjY3nUJm",
+    "venue": "ACL ARR 2026 August Submission"
+  },
+  {
+    "abstract": "Episodic memory retrieval for LLM agents, whether via dense vector similarity or structured multi-axis indexing, generally assumes every extracted query cue is equally reliable, so an incomplete or ambiguous cue can eliminate relevant memories under rigid intersection. We introduce CIRCUIT Memory, a two-tier structured episodic memory architecture that instead separates query-cue confidence (how reliably a cue was extracted) from evidence matching (how well a memory satisfies it), letting retrieval down-weight unreliable cues rather than enforcing hard intersection across axes. On EPBench, replacing hard multi-axis intersection with this confidence-weighted aggregate, using per-axis held-out calibrated confidence, nearly eliminates zero-retrieval failures (61.1% to 1.0%) and is the most robust rule across two books; on LoCoMo, the same additive form, with per-axis confidence calibrated under held-out cross-validation, reaches 81.2% QA accuracy while scanning 41.6% fewer candidates than flat-scan retrieval. We report these gains alongside a candid analysis of where fixed structured strategies, and confidence-weighting itself, still fall short.",
+    "authors": [],
+    "categories": [
+      "aclweb.org/ACL/ARR/2026/August/-/Submission"
+    ],
+    "id": "openreview:yLpeuklQK4",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, episodic, retrieval` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 August Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Episodic memory retrieval for LLM agents, whether via dense vector similarity or structured multi-axis indexing, generally assumes every extracted query cue is equally reliable, so an incomplete or ambiguous cue can...\n\n进一步看，论文的核心做法或实验重点可以概括为：We introduce CIRCUIT Memory, a two-tier structured episodic memory architecture that instead separates query-cue confidence (how reliably a cue was extracted) from evidence matching (how well a memory satisfies it),...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "episodic memory",
+      "memory retrieval"
+    ],
+    "one_liner": "Episodic memory retrieval for LLM agents, whether via dense vector similarity or structured multi-axis indexing, generally assumes every extracted query cue is equally reliable,...",
+    "published": "2026-08-04",
+    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 August Submission\n- 高亮主题命中：agent, episodic, retrieval\n- 检索关键词命中：episodic memory, memory retrieval\n- 来源分类信息：aclweb.org/ACL/ARR/2026/August/-/Submission",
+    "slug": "circuit-memory-confidence-aware-multi-axis-retrieval-for-episodic-memory-in-llm-",
+    "source": "OpenReview",
+    "source_key": "yLpeuklQK4",
+    "tags": [
+      "agent",
+      "episodic",
+      "retrieval"
+    ],
+    "title": "CIRCUIT Memory: Confidence-Aware Multi-Axis Retrieval for Episodic Memory in LLM Agents",
+    "updated": "2026-08-04",
+    "url": "https://openreview.net/forum?id=yLpeuklQK4",
+    "venue": "ACL ARR 2026 August Submission"
+  },
+  {
+    "abstract": "Long-term multimodal memory must support not only retrieving relevant information but also computing over observations accumulated across interactions. Existing systems largely emphasize \\emph{retrieval memory}, organizing interaction histories through summaries and indexes to return query-relevant information at multiple granularities, from high-level abstractions to underlying records. In this paper, we formulate \\emph{analytic memory} as a complementary abstraction that organizes recurring multimodal observations into queryable structures supporting filtering, aggregation, ranking, and temporal comparison. We present \\method, a framework that jointly supports retrieval and analytic memory. Rather than relying on application-defined schemas, \\method extracts provenance-linked attribute-value observations from dialogue, images, and contextual metadata, discovers recurring field structures, and materializes them for analytical access. At inference time, a memory-aware planner decomposes queries into retrieval and analytic operations and routes each operation to the appropriate tools. Experiments on two long-term multimodal memory benchmarks, MemEye and MemGallery, show that AdaMM improves performance by up to 11.3\\% and 6.9\\%, respectively.",
+    "authors": [],
+    "categories": [
+      "aclweb.org/ACL/ARR/2026/August/-/Submission"
+    ],
+    "id": "openreview:Mu4CipM8Gd",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, long-term` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 August Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Long-term multimodal memory must support not only retrieving relevant information but also computing over observations accumulated across interactions.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing systems largely emphasize \\emph{retrieval memory}, organizing interaction histories through summaries and indexes to return query-relevant information at multiple granularities, from high-level abstractions...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory benchmark",
+      "memory benchmarks",
+      "retrieval memory"
+    ],
+    "one_liner": "Long-term multimodal memory must support not only retrieving relevant information but also computing over observations accumulated across interactions.",
+    "published": "2026-08-04",
+    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 August Submission\n- 高亮主题命中：agent, benchmark, context, long-term, retrieval\n- 检索关键词命中：memory benchmark, memory benchmarks, retrieval memory\n- 来源分类信息：aclweb.org/ACL/ARR/2026/August/-/Submission",
+    "slug": "beyond-retrieval-analytic-memory-for-multimodal-agents",
+    "source": "OpenReview",
+    "source_key": "Mu4CipM8Gd",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "Beyond Retrieval: Analytic Memory for Multimodal Agents",
+    "updated": "2026-08-04",
+    "url": "https://openreview.net/forum?id=Mu4CipM8Gd",
+    "venue": "ACL ARR 2026 August Submission"
+  },
+  {
+    "abstract": "Memory-augmented agents can know that a user's stored state is outdated and still plan around the old value. The STALE benchmark calls this the implicit policy adaptation (IPA) gap. We identify one structural contributor: draft-anchored verification checks what a response says, and in an open-ended response the stale dependency is usually unsaid. StateAuditor therefore audits in the opposite direction, from stored state to draft. An LLM proposes candidate old-to-new transitions from timestamped evidence; deterministic code pins each quotation to a single entry, checks that the new evidence really is newer, and lets only these verified transitions trigger repair. What is verified is provenance and chronology - not semantic supersession. On STALE's full protocol (400 scenarios, 50-session histories, one independent response per query), strict single-query VTA scores .736 against .686 for our locked predecessor under the same judge: a +5.0-point paired gain (95% CI [+2.9, +7.2]) coming almost entirely from IPA and premise resistance (PR). The benchmark's own judge, from a third model family, reproduces the gain (.738 vs. .680). On an independent cross-family preference-evolution benchmark (HorizonBench), the full draft-audit-repair pipeline over a gold-derived structured store raises current-preference accuracy (user-clustered p<.01), though a matched control shows most of this external gain is the draft-side audit itself; a harder authored lifecycle set gives no gain, bounding the claim while false invalidation stays controlled. On STALE, by contrast, a matched control (same evidence, adapter, and call budget) scores only .692 (+0.6 over the predecessor, n.s.), attributing the STALE gain to the transition machinery rather than added context or calls. We make no claim about general-purpose agent memory.",
+    "authors": [
+      "Haofei Sun",
+      "Lin He"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2608.01619v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Memory-augmented agents can know that a user's stored state is outdated and still plan around the old value.\n\n进一步看，论文的核心做法或实验重点可以概括为：The STALE benchmark calls this the implicit policy adaptation (IPA) gap.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory",
+      "memory augmented",
+      "memory-augmented"
+    ],
+    "one_liner": "Memory-augmented agents can know that a user's stored state is outdated and still plan around the old value.",
+    "published": "2026-08-03",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context\n- 检索关键词命中：agent memory, memory augmented, memory-augmented\n- 来源分类信息：cs.AI",
+    "slug": "when-memory-updates-but-behavior-does-not-repairing-implicit-stale-dependencies-",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.01619v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context"
+    ],
+    "title": "When Memory Updates but Behavior Does Not: Repairing Implicit Stale Dependencies in Personalized Agent Responses",
+    "updated": "2026-08-03",
+    "url": "http://arxiv.org/abs/2608.01619v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Persistent memory allows (self-evolving) LLM agents to adapt across tasks by consolidating heterogeneous interaction histories into reusable facts, preferences, observations, and rules. Yet consolidation also imposes an implicit authorization boundary: it determines whether stored information may later be consumed as a user fact, an attested observation, or a standing instruction. We identify authority collapse, in which consolidation preserves a claim while erasing the source constraints governing its authorized use, causing the stored memory to imply greater authority than its source permits. We introduce AuthMem-Bench, a controlled paired benchmark that holds the focal claim and downstream task fixed while varying only source authority. It evaluates write-time collapse, downstream authorization errors, and automatic authority preservation. Across seven consolidators based on widely used agent-memory systems and seven LLM backbones, we observe authority collapse in 48 of 49 evaluated configurations. In a controlled action-grounded evaluation, collapsed memories without authority metadata yield a mean unauthorized-action rate of 50.3%. In an end-to-end evaluation, automatically predicted and persisted authority labels reduce the observed unauthorized-action rate from 16.9% to 0.0%, while benign task success remains essentially unchanged. These findings show that memory-driven adaptation must preserve not only what was learned, but also the authority under which it may be reused.",
+    "authors": [
+      "Qiuyang Zhan",
+      "Rui Zhang",
+      "Sheng Guo",
+      "Lepeng Zhao",
+      "Zhuotao Liu"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2608.01679v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Persistent memory allows (self-evolving) LLM agents to adapt across tasks by consolidating heterogeneous interaction histories into reusable facts, preferences, observations, and rules.\n\n进一步看，论文的核心做法或实验重点可以概括为：Yet consolidation also imposes an implicit authorization boundary: it determines whether stored information may later be consumed as a user fact, an attested observation, or a standing instruction.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory",
+      "persistent memory"
+    ],
+    "one_liner": "Persistent memory allows (self-evolving) LLM agents to adapt across tasks by consolidating heterogeneous interaction histories into reusable facts, preferences, observations,...",
+    "published": "2026-08-03",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark\n- 检索关键词命中：agent memory, persistent memory\n- 来源分类信息：cs.AI",
+    "slug": "when-memory-becomes-authority-benchmarking-authority-collapse-at-the-memory-cons",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.01679v1",
+    "tags": [
+      "agent",
+      "benchmark"
+    ],
+    "title": "When Memory Becomes Authority: Benchmarking Authority Collapse at the Memory Consolidation Boundary",
+    "updated": "2026-08-03",
+    "url": "http://arxiv.org/abs/2608.01679v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Retrieval-augmented generation (RAG) imposes a prefill cost proportional to retrieved context length, and -- with Transformer backbones -- a KV-cache that grows with each generated token. State-Space Models (SSMs) avoid the second cost by construction; we eliminate the first, collapsing prefill from $O(L_{context})$ to $O(1)$ per query. We introduce PRECOG (Pre-Computed Context Injection), a retrieval mechanism that exploits a property unique to SSMs: the fixed-size, position-agnostic recurrent hidden state is a complete summary of everything the model has read. PRECOG pre-encodes document corpora offline as SSM hidden states and injects the best-matching state directly at query time, bypassing in-context re-ingestion entirely. The same state-injection mechanism enables SMC (Structured Memory Consolidation): a hierarchical persistent memory with cognitive-domain clustering, an adjustable fidelity-vs-storage dial, and $O(1)$ session initialization, which consolidates short-term episodic states into long-term semantic memory and fuses both with retrieved corpus states at query time. We demonstrate the system on TENNs-LLM, a 1.2B-parameter gated-SSM language model with a 192 KB hidden state. PRECOG matches in-context RAG answer quality, reducing prefill latency from $\\sim$27 s to $<$6 ms on edge hardware -- a $\\sim$4500$\\times$ speedup that crosses the threshold from unusable to interactive. The mechanism is architecturally impossible for Transformer KV-caches, which are position-entangled and grow linearly with context length.",
+    "authors": [
+      "Anusha Madan Gopal",
+      "Aras Pirbadian",
+      "Kristofor D. Carlson",
+      "M Anthony Lewis",
+      "Jonathan Tapson"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "cs.IR"
+    ],
+    "id": "2608.02560v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `context, episodic, long-term, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Retrieval-augmented generation (RAG) imposes a prefill cost proportional to retrieved context length, and -- with Transformer backbones -- a KV-cache that grows with each generated token.\n\n进一步看，论文的核心做法或实验重点可以概括为：State-Space Models (SSMs) avoid the second cost by construction; we eliminate the first, collapsing prefill from $O(L_{context})$ to $O(1)$ per query.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "persistent memory"
+    ],
+    "one_liner": "Retrieval-augmented generation (RAG) imposes a prefill cost proportional to retrieved context length, and -- with Transformer backbones -- a KV-cache that grows with each...",
+    "published": "2026-08-03",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：context, episodic, long-term, retrieval\n- 检索关键词命中：persistent memory\n- 来源分类信息：cs.LG, cs.AI, cs.IR",
+    "slug": "structured-memory-for-edge-language-models-persistent-context-and-corpus-retriev",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.02560v1",
+    "tags": [
+      "context",
+      "episodic",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "Structured Memory for Edge Language Models: Persistent Context and Corpus Retrieval via O(1) SSM State Injection",
+    "updated": "2026-08-03",
+    "url": "http://arxiv.org/abs/2608.02560v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Personalized agents are increasingly applied to assist users across a wide range of tasks. Effective personalized assistance requires not only retrieving explicit facts from past interactions stored in agent memory, but also inferring abstract personal characteristics. However, existing memory benchmarks primarily evaluate whether an agent can retrieve information explicitly stated in conversational histories, failing to provide an effective assessment of deeper user understanding. In this work, we propose Setoka, a benchmark for evaluating memory-augmented personalized agents with hierarchical user understanding from heterogeneous data. Grounded in theories from cognitive and personality psychology, Setoka defines four levels of user understanding, i.e., semantic memory, episodic memory, behavior pattern, and personality trait. Moreover, to enable realistic yet privacy-preserving evaluation, we design a psychometrics-based pipeline that synthesizes diverse, coherent heterogeneous user data and queries at scale. Finally, we leverage Setoka to evaluate 3 language models combined with 5 memory systems for 10 synthetic users. Our comprehensive evaluation reveals that while existing systems perform well on semantic memory retrieval, their performance declines on episodic memory. Moreover, when dealing with behavior pattern and personality trait understanding tasks that require integrating heterogeneous and fragmented information dispersed over time, performance declines even further. These findings demonstrate that user understanding cannot be handled by simple fact retrieval, motivating the design of memory mechanisms for cross-source integration and abstraction over long-term user behavior.",
+    "authors": [
+      "Lingyang Zeng",
+      "Guangze Chen",
+      "Kaichen Yu",
+      "Zhicheng Pan",
+      "Siyang Weng",
+      "Zirui Hu",
+      "Xiangyun Du",
+      "Hailin He",
+      "Rong Zhang",
+      "Chengcheng Yang",
+      "Kai Huang",
+      "Xuan Zhou"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.CL"
+    ],
+    "id": "2607.27056v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, conversation, episodic` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Personalized agents are increasingly applied to assist users across a wide range of tasks.\n\n进一步看，论文的核心做法或实验重点可以概括为：Effective personalized assistance requires not only retrieving explicit facts from past interactions stored in agent memory, but also inferring abstract personal characteristics.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory",
+      "episodic memory",
+      "memory augmented",
+      "memory benchmark",
+      "memory benchmarks",
+      "memory retrieval",
+      "memory-augmented"
+    ],
+    "one_liner": "Personalized agents are increasingly applied to assist users across a wide range of tasks.",
+    "published": "2026-07-29",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, conversation, episodic, long-term, retrieval\n- 检索关键词命中：agent memory, episodic memory, memory augmented, memory benchmark, memory benchmarks, memory retrieval\n- 来源分类信息：cs.AI, cs.CL",
+    "slug": "setoka-a-benchmark-for-hierarchical-user-understanding-in-personalized-agents-ov",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2607.27056v2",
+    "tags": [
+      "agent",
+      "benchmark",
+      "conversation",
+      "episodic",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "Setoka: A Benchmark for Hierarchical User Understanding in Personalized Agents over Heterogeneous Data",
+    "updated": "2026-08-03",
+    "url": "http://arxiv.org/abs/2607.27056v2",
+    "venue": ""
+  },
+  {
+    "abstract": "Autonomous agents are increasingly used to execute consequential tasks in environments governed by operational constraints, organizational policies, regulatory requirements, and technical standards. Their safety is therefore determined not by the correctness of individual actions, but by whether their overall behavior remains consistent with the rules and invariants of the systems in which they operate. As large language model (LLM)-based agents become more autonomous and increasingly delegate tasks across organizational boundaries, securing them evolves from a single challenge into a broad and interconnected landscape spanning the entire agentic stack. At the single-agent level, untrusted inputs through prompts, memory, retrieved knowledge, and tool interfaces create attack surfaces. In multi-agent settings, delegation and communication introduce challenges related to identity, trust, capability control, and decision transparency, while the underlying model routing and execution control plane remains vulnerable to manipulation and to unverified model provenance. Perhaps the most fundamental challenge is behavioral containment: sequences of individually permissible actions may collectively violate system-level constraints and safety invariants. At the broader level, supply-chain integrity, provenance, accountability, and end-to-end observability remain largely open problems. A common principle unifies these directions: security must become a verifiable property of the architectures, protocols, and runtimes that govern agent behavior, rather than an optional layer of guidance. Charting these challenges provides a roadmap toward trustworthy autonomous agent deployment.",
+    "authors": [
+      "Alireza Lotfi",
+      "Subangkar Karmaker Shanto",
+      "Imtiaz Karim",
+      "Elisa Bertino"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.CR",
+      "cs.MA"
+    ],
+    "id": "2608.01558v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Autonomous agents are increasingly used to execute consequential tasks in environments governed by operational constraints, organizational policies, regulatory requirements, and technical standards.\n\n进一步看，论文的核心做法或实验重点可以概括为：Their safety is therefore determined not by the correctness of individual actions, but by whether their overall behavior remains consistent with the rules and invariants of the systems in which they operate.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory retrieval"
+    ],
+    "one_liner": "Autonomous agents are increasingly used to execute consequential tasks in environments governed by operational constraints, organizational policies, regulatory requirements, and...",
+    "published": "2026-08-03",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent\n- 检索关键词命中：memory retrieval\n- 来源分类信息：cs.AI, cs.CR, cs.MA",
+    "slug": "securing-agentic-ai-from-per-action-checks-to-trajectory-assurance",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.01558v1",
+    "tags": [
+      "agent"
+    ],
+    "title": "Securing Agentic AI: From Per-Action Checks to Trajectory Assurance",
+    "updated": "2026-08-03",
+    "url": "http://arxiv.org/abs/2608.01558v1",
+    "venue": ""
+  },
+  {
+    "abstract": "To operate robustly in open-world environments, autonomous agents should be able to infer the behavior of unfamiliar systems through interaction alone, even in the absence of documentation. However, existing tool-use benchmarks expose semantic tool schemas in static environments, allowing agents to rely on prior knowledge rather than autonomous discovery. To address this limitation, we introduce ScrambleToolBench, an interactive terminal benchmark designed to isolate behavioral reasoning. By removing semantic cues and enforcing a continuous task curriculum, the benchmark requires agents to uncover hidden tool behaviors entirely through trial-and-error interaction. The benchmark further introduces dynamic challenges, including mapping drift, stochastic action failures, and temporal execution windows, to evaluate whether agents can revise and adapt their hypotheses as the environment changes. Our evaluation of state-of-the-art language models reveals that successful initial discovery does not translate into robust adaptation. When faced with structural changes such as mapping drift, agents fail to use deductive strategies such as cycle tracing, and instead exhibit belief inertia or fall back to exhaustive search. Increasing test-time reasoning only amplifies this expensive brute-force search rather than enabling deductive recovery. While equipping agents with persistent memory reduces compounding errors, they remain unable to efficiently infer structural changes, highlighting a gap in current agent reasoning.",
+    "authors": [
+      "Vernon Toh",
+      "Navonil Majumder",
+      "Zhengyuan Liu",
+      "Nancy F. Chen",
+      "Soujanya Poria"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "id": "2608.02358v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：To operate robustly in open-world environments, autonomous agents should be able to infer the behavior of unfamiliar systems through interaction alone, even in the absence of documentation.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, existing tool-use benchmarks expose semantic tool schemas in static environments, allowing agents to rely on prior knowledge rather than autonomous discovery.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "persistent memory"
+    ],
+    "one_liner": "To operate robustly in open-world environments, autonomous agents should be able to infer the behavior of unfamiliar systems through interaction alone, even in the absence of...",
+    "published": "2026-08-03",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark\n- 检索关键词命中：persistent memory\n- 来源分类信息：cs.CL",
+    "slug": "scrambletoolbench-agents-search-exhaustively-even-when-their-own-map-points-to-t",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.02358v1",
+    "tags": [
+      "agent",
+      "benchmark"
+    ],
+    "title": "ScrambleToolBench: Agents Search Exhaustively Even When Their Own Map Points to the Next Step",
+    "updated": "2026-08-03",
+    "url": "http://arxiv.org/abs/2608.02358v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Long-term memory enables LLM agents to retain useful information across sessions, but also creates an attack surface through which adversaries may poison an agent's persistent memory to steer its behavior. Existing memory poisoning attacks mainly rely on individually malicious records, overlooking a compositional threat: multiple benign-looking memories may jointly induce unsafe behavior. In this paper, we introduce MemCollusion, an automated red-teaming framework for constructing collusive memory poisoning attacks. MemCollusion applies salami tactics---a strategy that slices an adversarial objective into small, individually innocuous pieces---to generate memory fragments that are individually benign looking but collectively harmful. It constructs memory coalitions using four design constraints, five theory-informed strategies, and a fine-tuned generator. To assess collusive memory poisoning in a realistic cross-session setting, we develop MoltLab, a controlled research reproduction of Moltbook, in which crafted platform content must first be observed and distilled into persistent memory before influencing the agent's behavior in a separate session. We evaluate MemCollusion on OpenClaw using two backbone models across 48 scenarios. Under the strongest memory-saving setting, MemCollusion achieves an average Memory Save Rate of 81.3% and an Attack Success Rate of 75.0%, and remains effective under both benign memory dilution and memory-level defenses.",
+    "authors": [
+      "Zheng Lin",
+      "Yuzhe Huang",
+      "Zhenxing Niu",
+      "Xianmin Ye",
+      "Haichang Gao"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2608.01637v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, long-term` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Long-term memory enables LLM agents to retain useful information across sessions, but also creates an attack surface through which adversaries may poison an agent's persistent memory to steer its behavior.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing memory poisoning attacks mainly rely on individually malicious records, overlooking a compositional threat: multiple benign-looking memories may jointly induce unsafe behavior.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "long-term memory",
+      "persistent memory"
+    ],
+    "one_liner": "Long-term memory enables LLM agents to retain useful information across sessions, but also creates an attack surface through which adversaries may poison an agent's persistent...",
+    "published": "2026-08-03",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, long-term\n- 检索关键词命中：long-term memory, persistent memory\n- 来源分类信息：cs.AI",
+    "slug": "salami-attack-stealthy-collusive-memory-poisoning-against-openclaw",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.01637v1",
+    "tags": [
+      "agent",
+      "long-term"
+    ],
+    "title": "Salami Attack: Stealthy Collusive Memory Poisoning against OpenClaw",
+    "updated": "2026-08-03",
+    "url": "http://arxiv.org/abs/2608.01637v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Learning-based memory systems for self-evolving LLM agents face two tightly coupled challenges. First, trajectory-indexed utilities grow with the interaction history, thereby dispersing limited feedback over an ever-expanding state space. Second, because trajectory-level rewards are jointly assigned to co-retrieved memories, irrelevant experiences may receive misleading utility updates and consequently enter the memory-reward trap. To address these challenges, we introduce Reduced-Order Memory Reinforcement Learning (RoMeRL), which represents the growing trajectory-indexed utility space using a fixed-dimensional per-task memory state factorized by outcome polarity and memory dynamics. RoMeRL incorporates new experiences through a fixed set of semantic coordinates whose contents are updated or replaced over time, thereby concentrating feedback over a bounded utility support. Theoretically, we show that this reduced-order parameterization increases the average feedback received by each utility coordinate and characterize the steady-state occupancy of erroneous coordinates under a generic coordinate-transition model. Empirically, across ALFWorld and LifelongAgentBench, RoMeRL improves task performance, reduces the Cold-Q ratio by 80.0%, increases feedback density by approximately 6.0 times, reduces the maintained memory size by 84.4%, and cuts LLM calls by 21.1%. These results show that reduced-order utility states support efficient self-evolving agent memory while limiting persistent reward contamination. Code is available at: https://github.com/YOUNG-fnxm/RoMeRL",
+    "authors": [
+      "Yi Yang",
+      "Zhennan Chen",
+      "Yihong Zhuang",
+      "Tiehan Fan",
+      "Yinan Chen",
+      "Jian Li",
+      "Jian Yang",
+      "Ying Tai"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.CL"
+    ],
+    "id": "2608.02508v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Learning-based memory systems for self-evolving LLM agents face two tightly coupled challenges.\n\n进一步看，论文的核心做法或实验重点可以概括为：First, trajectory-indexed utilities grow with the interaction history, thereby dispersing limited feedback over an ever-expanding state space.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory",
+      "retrieval memory"
+    ],
+    "one_liner": "Learning-based memory systems for self-evolving LLM agents face two tightly coupled challenges.",
+    "published": "2026-08-03",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent\n- 检索关键词命中：agent memory, retrieval memory\n- 来源分类信息：cs.LG, cs.CL",
+    "slug": "romerl-balancing-feedback-coverage-and-the-memory-reward-trap-in-self-evolving-a",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.02508v1",
+    "tags": [
+      "agent"
+    ],
+    "title": "RoMeRL: Balancing Feedback Coverage and the Memory-Reward Trap in Self-Evolving Agent Memory via Reduced-Order Utility States",
+    "updated": "2026-08-03",
+    "url": "http://arxiv.org/abs/2608.02508v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Long-term personalized dialogue agents must track user preferences as their personas evolve. Existing memory systems organize past events well, but store personas as flat profiles detached from the events that justify them. This loose coupling leads to the memory-persona validity gap and the persona-aware retrieval gap. We propose PGMem, a heterogeneous persona-memory graph that connects event and persona nodes through typed provenance and evidence edges, keeping each persona signal traceable to the events that support or revise it. At retrieval time, PGMem expands from query-relevant seeds and ranks signals by evidential validity. Across three benchmarks with small language model backbones, PGMem consistently outperforms summary-based, persona-aware, graph-structured, and agentic memory baselines, and improves performance as the context grows. The source code of PGMem is available at https://github.com/wonjunchoi23/pgmem/",
+    "authors": [
+      "Wonjun Choi",
+      "Yerim Kim",
+      "Yukyung Lee",
+      "Susik Yoon"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "id": "2608.01708v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, long-term` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Long-term personalized dialogue agents must track user preferences as their personas evolve.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing memory systems organize past events well, but store personas as flat profiles detached from the events that justify them.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "Long-term personalized dialogue agents must track user preferences as their personas evolve.",
+    "published": "2026-08-03",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context, long-term, retrieval\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.CL",
+    "slug": "pgmem-tightly-coupled-persona-memory-graph-for-lifelong-personalized-agents",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.01708v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "PGMem: Tightly Coupled Persona-Memory Graph for Lifelong Personalized Agents",
+    "updated": "2026-08-03",
+    "url": "http://arxiv.org/abs/2608.01708v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Long-term memory is critical for LLM agents operating over long-horizon interactions. However, several persistent limitations of existing memory systems can be traced to two recurring misalignment patterns in long-term interaction settings: Temporal-Structural Misalignment (TSM) and Delayed Utility Manifestation (DUM). TSM arises when temporal proximity does not reliably align with topical or event-level relatedness, whereas DUM arises when write-time salience does not reliably predict future query utility. To mitigate these misalignment patterns, we propose MemSIF (Memory with Structured Interactions and Facts), a structured interaction-to-fact memory framework. Structured Interaction Memory organizes raw interactions into Topical Segments that preserve local topical coherence and Event Trajectories that maintain cross-time event continuity. Dual-Track Fact Memory uses two complementary tracks: CoreFact memory consolidates stable, schema-guided information at write time, whereas ActiveFact memory forms facts on demand and promotes those supported by multiple historical sources and recurring query demand for reuse. Experiments on LoCoMo and LongMemEval-S across five backbone LLMs show that MemSIF achieves the highest Total ACC in all settings, outperforming the strongest baseline by 2.29%-8.79% on LoCoMo and 2.87%-6.15% on LongMemEval-S. These results support the effectiveness of combining Structured Interaction Memory with Dual-Track Fact Memory to mitigate TSM and DUM. Code is available at https://github.com/luoyufeihaha/MemSIF.",
+    "authors": [
+      "YuFei Luo",
+      "Xiucheng Xu",
+      "Zhen Yang"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.CL"
+    ],
+    "id": "2608.01742v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, long-term` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Long-term memory is critical for LLM agents operating over long-horizon interactions.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, several persistent limitations of existing memory systems can be traced to two recurring misalignment patterns in long-term interaction settings: Temporal-Structural Misalignment (TSM) and Delayed Utility...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "long-term memory"
+    ],
+    "one_liner": "Long-term memory is critical for LLM agents operating over long-horizon interactions.",
+    "published": "2026-08-03",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, long-term\n- 检索关键词命中：long-term memory\n- 来源分类信息：cs.AI, cs.CL",
+    "slug": "memsif-from-structured-interactions-to-dual-track-fact-memory-for-llm-agents",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.01742v1",
+    "tags": [
+      "agent",
+      "long-term"
+    ],
+    "title": "MemSIF: From Structured Interactions to Dual-Track Fact Memory for LLM Agents",
+    "updated": "2026-08-03",
+    "url": "http://arxiv.org/abs/2608.01742v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Recurrent linear attention models (RLAs) such as Mamba offer efficient linear-time sequence modeling as an alternative to Transformers, yet their fixed-capacity recurrent states limit long-sequence modeling. Drawing inspiration from hierarchical human memory, we propose Hierarchical Memory Mamba (HMM) to address this limitation. Building upon a pre-trained Mamba backbone, HMM integrates a lightweight working memory that extracts slow paragraph-level semantics (PLS) from the fast sensory memory embedded in the backbone's hidden states. The PLS is subsequently compressed into persistent long-term memory for task-relevant retrieval. The hierarchical processing of semantic information overcomes the representation bottleneck of RLAs and endows HMM cross-task generalization through parametric learning, which is not observed in other long-context enhanced Mamba variants. Evaluations on Passkey Retrieval and LongBench-E tasks demonstrate that HMM improves retrieval success by 34.3--37.1% and reasoning accuracy by 1.6--14.2% over strong Mamba-based models, while adding only 2% extra parameters and with minimal training overhead.",
+    "authors": [
+      "Qinwen Wang",
+      "Jieping Luo",
+      "Aoxiang Qin",
+      "Ruoyu Zhao",
+      "Jianxiong Tang",
+      "Wei Zhang",
+      "Zhichao Lu",
+      "Luziwei Leng"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2608.02347v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `context, long-term, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Recurrent linear attention models (RLAs) such as Mamba offer efficient linear-time sequence modeling as an alternative to Transformers, yet their fixed-capacity recurrent states limit long-sequence modeling.\n\n进一步看，论文的核心做法或实验重点可以概括为：Drawing inspiration from hierarchical human memory, we propose Hierarchical Memory Mamba (HMM) to address this limitation.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "long-term memory",
+      "working memory"
+    ],
+    "one_liner": "Recurrent linear attention models (RLAs) such as Mamba offer efficient linear-time sequence modeling as an alternative to Transformers, yet their fixed-capacity recurrent states...",
+    "published": "2026-08-03",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：context, long-term, retrieval\n- 检索关键词命中：long-term memory, working memory\n- 来源分类信息：cs.AI",
+    "slug": "mamba-with-hierarchical-memory-solving-representation-bottleneck-in-long-sequenc",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.02347v1",
+    "tags": [
+      "context",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "Mamba with Hierarchical Memory: Solving Representation Bottleneck in Long Sequence Modeling",
+    "updated": "2026-08-03",
+    "url": "http://arxiv.org/abs/2608.02347v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Multi-agent large language model (LLM) systems can expose protected state through internal messages, tool arguments, logs, and persistent memory even when their public outputs appear innocuous. Existing privacy prompts, redaction methods, and source-level access controls restrict surface content or data access, but do not specify what a legitimately informed agent should disclose or how that disclosure may be reused downstream. We introduce Minimum-Necessary Communication (MNC), a typed semantic-declassification protocol that selects a task-sufficient disclosure from an application-authored candidate family and binds it to explicit recipient, purpose, forwarding, lifetime, logging, and memory scopes. A reference monitor enforces these scopes across subsequent operations, while a history-aware extension accounts for inference risk accumulated over repeated disclosures. Controlled semantic-join, memory, probing, and longitudinal experiments show that conventional defenses can preserve protocol-level utility while exposing substantial additional inference signal. Under identical receipt text, MNC preserves authorized delivery while blocking unauthorized forwarding, logging, durable storage, and retrieval after expiration that a text-only semantic declassifier permits. Two-backbone MAGPIE executions further show that mediated disclosures propagate through subsequent planning, tool use, coordination, and memory retrieval. These results support scope-bound semantic declassification as a practical communication boundary for private LLM-agent systems.",
+    "authors": [
+      "Jinghan Xu",
+      "Longze Fan",
+      "Zeyuan Wang",
+      "Xinjin Li",
+      "Hankai Liu"
+    ],
+    "categories": [
+      "cs.CR",
+      "cs.AI"
+    ],
+    "id": "2608.01719v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Multi-agent large language model (LLM) systems can expose protected state through internal messages, tool arguments, logs, and persistent memory even when their public outputs appear innocuous.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing privacy prompts, redaction methods, and source-level access controls restrict surface content or data access, but do not specify what a legitimately informed agent should disclose or how that disclosure may...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory retrieval",
+      "persistent memory"
+    ],
+    "one_liner": "Multi-agent large language model (LLM) systems can expose protected state through internal messages, tool arguments, logs, and persistent memory even when their public outputs...",
+    "published": "2026-08-03",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, retrieval\n- 检索关键词命中：memory retrieval, persistent memory\n- 来源分类信息：cs.CR, cs.AI",
+    "slug": "mnc-scope-bound-semantic-declassification-for-private-llm-agent-communication",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.01719v1",
+    "tags": [
+      "agent",
+      "retrieval"
+    ],
+    "title": "MNC: Scope-Bound Semantic Declassification for Private LLM-Agent Communication",
+    "updated": "2026-08-03",
+    "url": "http://arxiv.org/abs/2608.01719v1",
+    "venue": ""
+  },
+  {
+    "abstract": "We study what happens when a single general-purpose large language model acts as the sole researcher on a long-horizon neural architecture design problem. The agent receives a scientific question, an initial hypothesis and motivation, a compute budget, and research affordances (source and experiment management, experiment tracking, literature access, and persistent memory), then autonomously proposes, implements, evaluates, and records experiments over an extended period. The study comprises three phases, separated by human-declared transitions, that progressively expand the agent's tool surface or problem scale. Across approximately 100 sequential experiments, the agent improves a non-standard Vision Transformer from a weak baseline to a stronger, efficient model on small benchmarks and a usable but sub-SOTA model on ImageNet-1K, while producing a dense behavioural trace. We report four findings.(i)Productivity exhibits a clear phase structure: rapid early gains, a multi-dozen-hypothesis saturation wall, and recovery, with recovery triggered by expanding the action surface rather than changing the underlying model.(ii)A single early hypothesis contributes more to accuracy gain, with later improvements long-tailed.(iii)The preference for greedy, incremental hypotheses is largely workflow-induced: a commit-or-discard evaluation rule is isomorphic to greedy hill-climbing; the remainder reflects risk aversion after bold failures and anchoring on familiar literature. (iv)The agent independently rediscovers established results and, in the unfamiliar regime of pure channel attention, overturns a standard design choice. We conclude that workflow design was at least as influential as agent capability in this study and propose diversified search, budgeted moonshot hypotheses, explicit forks, and regime-aware re-validation as testable directions for future autonomous research.",
+    "authors": [
+      "Aon Safdar",
+      "Mohamed Saadeldin"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2608.01995v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：We study what happens when a single general-purpose large language model acts as the sole researcher on a long-horizon neural architecture design problem.\n\n进一步看，论文的核心做法或实验重点可以概括为：The agent receives a scientific question, an initial hypothesis and motivation, a compute budget, and research affordances (source and experiment management, experiment tracking, literature access, and persistent...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "persistent memory"
+    ],
+    "one_liner": "We study what happens when a single general-purpose large language model acts as the sole researcher on a long-horizon neural architecture design problem.",
+    "published": "2026-08-03",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark\n- 检索关键词命中：persistent memory\n- 来源分类信息：cs.AI",
+    "slug": "long-horizon-autonomous-architecture-research-with-a-language-model-agent-a-beha",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.01995v1",
+    "tags": [
+      "agent",
+      "benchmark"
+    ],
+    "title": "Long-Horizon Autonomous Architecture Research with a Language-Model Agent: A Behavioural Case Study",
+    "updated": "2026-08-03",
+    "url": "http://arxiv.org/abs/2608.01995v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Recall presents a difficult choice: transformers have a linearly growing memory that slows each successive token, while linear RNNs typically have fixed costs but limited recall. We present Key-Value Means (\"KVM\"), a novel block-recurrence for attention that can accommodate either fixed-size or growing state. Equipping a strong transformer baseline with fixed-size KVM attention layers yields a strong $O(N)$ chunked RNN, while adding only an insignificant number of new parameters. We train a transformer with a growable KVM cache and show it performs competitively on long-context tests with only subquadratic prefill time and sublinear state growth. KVM is implementable with standard operations and without custom kernels, and supports chunk-wise parallelizable training and prefill. It provides many of the benefits of both traditional transformers (expandable context memory, chunk-wise parallelizable training and prefill) and RNNs in a single unified package. It can be used on every layer, saving KV-cache memory, and allowing a continuous range of choices of prefill time complexity between $O(N)$ and $O(N^2)$. We release our code at https://github.com/featherless-ai/KVM-paper and trained models at https://huggingface.co/collections/featherless-ai/kvm-paper under the Apache 2.0 license.",
+    "authors": [
+      "Daniel Goldstein",
+      "Navneel Singhal",
+      "Eugene Cheah"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "id": "2605.09877v5",
+    "intro": "这篇论文被纳入仓库，是因为它和 `context` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Recall presents a difficult choice: transformers have a linearly growing memory that slows each successive token, while linear RNNs typically have fixed costs but limited recall.\n\n进一步看，论文的核心做法或实验重点可以概括为：We present Key-Value Means (\"KVM\"), a novel block-recurrence for attention that can accommodate either fixed-size or growing state.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "context memory"
+    ],
+    "one_liner": "Recall presents a difficult choice: transformers have a linearly growing memory that slows each successive token, while linear RNNs typically have fixed costs but limited recall.",
+    "published": "2026-05-11",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：context\n- 检索关键词命中：context memory\n- 来源分类信息：cs.LG, cs.AI, cs.CL",
+    "slug": "key-value-means-transformers-with-expandable-block-recurrent-compressed-memory",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2605.09877v5",
+    "tags": [
+      "context"
+    ],
+    "title": "Key-Value Means: Transformers with Expandable Block-Recurrent Compressed Memory",
+    "updated": "2026-08-03",
+    "url": "http://arxiv.org/abs/2605.09877v5",
+    "venue": ""
+  },
+  {
+    "abstract": "Large language model (LLM) agents learn world dynamics from local interaction experience to support subsequent planning and action selection. However, the experience available to a single client is often incomplete, which motivates sharing knowledge across clients. Existing federated methods mainly aggregate model parameters, while agent memory-sharing methods commonly pool trajectories, memories, or rules without checking whether they remain valid for each client. This assumption is problematic because the same abstract action may produce different effects under different policies, environments, or exception conditions. Consequently, a rule supported by most clients may overwrite correct knowledge held by a minority client. To address this problem, we propose FEDWORLD, a scope-aware federated world-model protocol that exchanges structured abstract transition rules. Each client converts private transitions into normalized rules, and the server aligns related rules to identify each rule supporting and contradicting evidence across clients. The resulting evidence determines whether a rule is shared, cluster-specific, private, or unresolved. Each target client retains its local rules and accepts federated updates only for uncovered cases whose inferred scope is compatible; ambiguous rules are withheld. Experiments on $τ$-bench and ALFWorld show that FEDWORLD reduces negative transfer under conflicting dynamics while retaining useful cross-client transfer, leading to fewer state regressions, repeated actions, and excess steps, as well as higher task success.",
+    "authors": [
+      "Yuchao Hou"
+    ],
+    "categories": [
+      "cs.HC"
+    ],
+    "id": "2608.01561v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Large language model (LLM) agents learn world dynamics from local interaction experience to support subsequent planning and action selection.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, the experience available to a single client is often incomplete, which motivates sharing knowledge across clients.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "Large language model (LLM) agents learn world dynamics from local interaction experience to support subsequent planning and action selection.",
+    "published": "2026-08-03",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.HC",
+    "slug": "fedworld-scope-aware-federation-of-agent-world-models",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.01561v1",
+    "tags": [
+      "agent"
+    ],
+    "title": "FedWorld: Scope-Aware Federation of Agent World Models",
+    "updated": "2026-08-03",
+    "url": "http://arxiv.org/abs/2608.01561v1",
+    "venue": ""
+  },
+  {
+    "abstract": "The ability to robustly maintain and update continuous variables is a hallmark of working memory. While classical continuous attractor networks suffer from severe fine-tuning fragility, standard artificial recurrent neural networks (RNNs) like GRUs and LSTMs typically fail to stably learn continuous manifolds, instead shattering the state space into discretized point attractors. To bridge this gap, we draw inspiration from divisive normalization, a canonical neural computation widely observed across cortical circuits, and propose the Recurrent Divisive Normalization Network (RDNN), a minimal and algebraically isolated model of dynamic division. Through dynamical systems analysis on canonical working memory tasks, we demonstrate that this biophysical constraint allows the network to converge to robust, high-fidelity slow manifolds. Furthermore, we analyze the gradient dynamics of divisive normalization during Backpropagation Through Time (BPTT), showing that it introduces an activity-dependent local gradient scaling. This scaling dampens parameter updates in highly active regimes, which empirically aligns with a significant self-compression of the network's effective rank, confining the recurrent dynamics to a tight, low-dimensional subspace while avoiding the optimization pathologies associated with explicit low-rank factorization. Finally, ablations demonstrate that while subtractive inhibition can maintain static memories, divisive normalization is mathematically essential to prevent manifold shattering under time-varying inputs. Our findings identify divisive normalization not merely as a biological artifact, but as a critical computational mechanism for learning high-fidelity continuous representations.",
+    "authors": [
+      "Zhaotian Gu",
+      "Jie Su",
+      "Weiwei Wang",
+      "Chang Liu",
+      "Tianyi Qian",
+      "Dahui Wang"
+    ],
+    "categories": [
+      "q-bio.NC",
+      "cs.AI",
+      "cs.NE"
+    ],
+    "id": "2608.01947v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `compression` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：The ability to robustly maintain and update continuous variables is a hallmark of working memory.\n\n进一步看，论文的核心做法或实验重点可以概括为：While classical continuous attractor networks suffer from severe fine-tuning fragility, standard artificial recurrent neural networks (RNNs) like GRUs and LSTMs typically fail to stably learn continuous manifolds,...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "working memory"
+    ],
+    "one_liner": "The ability to robustly maintain and update continuous variables is a hallmark of working memory.",
+    "published": "2026-08-03",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：compression\n- 检索关键词命中：working memory\n- 来源分类信息：q-bio.NC, cs.AI, cs.NE",
+    "slug": "divisive-normalization-shapes-low-rank-slow-manifolds-for-continuous-working-mem",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.01947v1",
+    "tags": [
+      "compression"
+    ],
+    "title": "Divisive Normalization Shapes Low-Rank Slow Manifolds for Continuous Working Memory",
+    "updated": "2026-08-03",
+    "url": "http://arxiv.org/abs/2608.01947v1",
+    "venue": ""
+  },
+  {
+    "abstract": "As memories accumulate across tasks and sessions, the performance of long-term LLM agents depends jointly on query-specific retrieval and continual memory refinement. However, existing methods typically optimize either memory access, through iterative query refinement or adaptive retrieval policies, or memory evolution such as structural update. This separation overlooks a fundamental feedback loop: retrieval determines which memories receive usage signals, while updated memory bank reshape future retrieval. We propose \\textbf{CoEvo-Mem}, a closed-loop framework for co-evolving the retrieval policy and memory bank. For each query, a frozen LLM generates route-specific query rewrites and a routing prior, which a lightweight residual router corrects online. The retrieved context serves as the coupling interface between the two learning processes: task outcomes assign credit to routing decisions, while trajectory-conditioned feedback updates memory values and graph relations. These updates alter how memories are ranked and selected for subsequent queries, thereby closing the feedback loop. To mitigate coupling induced non-stationarity, CoEvo-Mem alternates between updating the router with the memory bank fixed and evolving the memory bank with the retrieval policy fixed. Across seven diverse benchmarks, \\textbf{CoEvo-Mem} achieves state-of-the-art performance, demonstrating the importance of retrieval-memory coevolution.",
+    "authors": [
+      "Bowen Ye",
+      "Yongchao Xu",
+      "Zhijian Li",
+      "Xiang Yin",
+      "Junkai Ma",
+      "Wenzhao Li"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2608.01739v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, long-term` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：As memories accumulate across tasks and sessions, the performance of long-term LLM agents depends jointly on query-specific retrieval and continual memory refinement.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, existing methods typically optimize either memory access, through iterative query refinement or adaptive retrieval policies, or memory evolution such as structural update.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "retrieval memory"
+    ],
+    "one_liner": "As memories accumulate across tasks and sessions, the performance of long-term LLM agents depends jointly on query-specific retrieval and continual memory refinement.",
+    "published": "2026-08-03",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context, long-term, retrieval\n- 检索关键词命中：retrieval memory\n- 来源分类信息：cs.AI",
+    "slug": "coevo-mem-co-evolving-retrieval-policy-and-memory-bank-for-llm-agents",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.01739v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "CoEvo-Mem: Co-Evolving Retrieval Policy and Memory Bank for LLM Agents",
+    "updated": "2026-08-03",
+    "url": "http://arxiv.org/abs/2608.01739v1",
+    "venue": ""
+  },
+  {
+    "abstract": "An isolated final user message is often treated as the query in evaluations of AI systems. In a conversation, however, the actionable request may be distributed across preceding turns. We directly test whether that omitted within-conversation context changes answers. For each of 180 English multi-turn conversations sampled from a governed commercial corpus and the public PRISM dataset, we hold the final user message and requested answer model constant while generating three answers: one from the full role-labelled conversation, one from the final message alone, and one from the final message plus a prefix-only reconstruction capped at 160 words. A separately requested judge model evaluates answers under randomized labels. The prespecified primary endpoint is a material difference that could change what the user does, rather than a difference in style or detail. After inverse-probability weighting to the eligible cohorts, the full-conversation and isolated-final answers differ materially in 44.7% of cases (95% bootstrap CI 33.8% to 56.1%). Full-conversation answers score 0.49 points higher on a 0 to 4 request-satisfaction scale (0.32 to 0.67). Adding the compressed prefix reduces the material-difference rate to 30.8% (20.2% to 42.1%), a 13.9-point reduction (4.9% to 24.1%), and reduces the mean satisfaction gap to 0.01 points (-0.12 to 0.13). Yet compression is not equivalent to the complete dialogue context: almost one third of answers remain materially different. An order-swapped repeat on 48 cases yields 91.7% agreement and kappa = 0.83 for the primary decision. The study concerns preceding turns in the same conversation and does not test persistent memory across separate conversations.",
+    "authors": [
+      "Benjamin Tannenbaum"
+    ],
+    "categories": [
+      "cs.IR"
+    ],
+    "id": "2608.02556v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `compression, context, conversation` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：An isolated final user message is often treated as the query in evaluations of AI systems.\n\n进一步看，论文的核心做法或实验重点可以概括为：In a conversation, however, the actionable request may be distributed across preceding turns.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "persistent memory"
+    ],
+    "one_liner": "An isolated final user message is often treated as the query in evaluations of AI systems.",
+    "published": "2026-08-03",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：compression, context, conversation\n- 检索关键词命中：persistent memory\n- 来源分类信息：cs.IR",
+    "slug": "beyond-the-final-prompt-measuring-the-effect-of-within-conversation-context-on-a",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.02556v1",
+    "tags": [
+      "compression",
+      "context",
+      "conversation"
+    ],
+    "title": "Beyond the Final Prompt: Measuring the Effect of Within-Conversation Context on AI Answers",
+    "updated": "2026-08-03",
+    "url": "http://arxiv.org/abs/2608.02556v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Cognitive AI seeks to move beyond language generation and autonomous task execution toward systems capable of sustained reasoning, adaptive behavior, persistent memory, and self-regulation. While generative and agentic AI have demonstrated impressive capabilities across a wide range of tasks, many fundamental cognitive functions remain fragmented or weakly developed, limiting reliable operation over extended time horizons. This paper presents a taxonomy-driven survey of the major cognitive capability gaps that continue to constrain the development of Cognitive AI. The literature is organized around five dimensions: persistent state modeling, goal-directed autonomy, self-monitoring and control, environment interaction, and learning and adaptation. For each dimension, we review recent advances, identify recurring limitations, and discuss open research challenges. Building on these insights, we outline a conceptual Adaptive Cognitive Intelligence Architecture (ACIA) and examine emerging directions in cognition-centric evaluation. The proposed taxonomy provides a unified framework for organizing existing research, identifying unresolved challenges, and guiding the design of future cognitively capable systems. Together, the taxonomy, architectural perspective, and evaluation framework offer a roadmap for advancing AI systems that exhibit more reliable long-term reasoning, adaptive decision-making, and continual learning. The survey highlights key research opportunities toward more adaptive, reliable, and cognitively capable AI systems, providing a foundation for future progress toward Cognitive AI and, ultimately, Artificial General Intelligence (AGI).",
+    "authors": [
+      "Taye Akinrele",
+      "Sindhuja Penchala",
+      "Noorbakhsh Amiri Golilarz",
+      "Sudip Mittal",
+      "Shahram Rahimi"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2608.02553v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, long-term` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Cognitive AI seeks to move beyond language generation and autonomous task execution toward systems capable of sustained reasoning, adaptive behavior, persistent memory, and self-regulation.\n\n进一步看，论文的核心做法或实验重点可以概括为：While generative and agentic AI have demonstrated impressive capabilities across a wide range of tasks, many fundamental cognitive functions remain fragmented or weakly developed, limiting reliable operation over...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "persistent memory"
+    ],
+    "one_liner": "Cognitive AI seeks to move beyond language generation and autonomous task execution toward systems capable of sustained reasoning, adaptive behavior, persistent memory, and...",
+    "published": "2026-08-03",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, long-term\n- 检索关键词命中：persistent memory\n- 来源分类信息：cs.AI",
+    "slug": "a-taxonomy-of-cognitive-capability-gaps-in-generative-and-agentic-ai",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.02553v1",
+    "tags": [
+      "agent",
+      "long-term"
+    ],
+    "title": "A Taxonomy of Cognitive Capability Gaps in Generative and Agentic AI",
+    "updated": "2026-08-03",
+    "url": "http://arxiv.org/abs/2608.02553v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Interaction between users and LLM agents is increasingly multimodal: conversations interleave text with images, and a later question may target either. Yet most agent memories are designed around text, and even the few that support multimodal conversations still fail on vision-related questions. We trace this failure to an assumption behind the similarity search they rely on: in the index space, a query lies close to the relevant evidence that answers it. In multimodal settings, two gaps break it. By the modality gap, a query lies closer to memory content of its own modality than to evidence in another, even in a trained joint embedding space. By the similarity-relevance gap, the content most similar to a query is often not the evidence that answers it, most acutely when a query carries both text and image and its evidence resembles neither part alone. We present V-Mem, a multimodal agentic memory system that routes retrieval by the modality of the query and that of the target evidence, both recognized from the query alone. To cross the modality gap, V-Mem organizes the conversation into rounds and returns the target-modality content from the same round as the match, without comparing across modalities. To close the similarity-relevance gap, it searches with an LLM-generated anchor that sits closer to the relevant evidence than the query does: a hypothetical caption for a text-only query seeking an image, and an enriched search anchor, the query text plus relevant keywords extracted from the query image, when the evidence is reachable only by combining the two. On Mem-Gallery, V-Mem reaches an LLM-judge score of 0.82 versus 0.56 for the second best, with the largest margin on questions carrying an image (0.87, no baseline above 0.47); on LoCoMo it scores 0.69 versus 0.58.",
+    "authors": [
+      "Dingyi Kang",
+      "Dongming Jiang",
+      "Yi Li",
+      "Guanpeng Li",
+      "Bingzhe Li"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.CL",
+      "cs.CV",
+      "cs.IR"
+    ],
+    "id": "2608.01543v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, conversation, long-term, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Interaction between users and LLM agents is increasingly multimodal: conversations interleave text with images, and a later question may target either.\n\n进一步看，论文的核心做法或实验重点可以概括为：Yet most agent memories are designed around text, and even the few that support multimodal conversations still fail on vision-related questions.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "Interaction between users and LLM agents is increasingly multimodal: conversations interleave text with images, and a later question may target either.",
+    "published": "2026-08-02",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, conversation, long-term, retrieval\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.AI, cs.CL, cs.CV, cs.IR",
+    "slug": "v-mem-modality-routed-retrieval-for-long-term-multimodal-agentic-memory",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.01543v1",
+    "tags": [
+      "agent",
+      "conversation",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "V-Mem: Modality-Routed Retrieval for Long-Term Multimodal Agentic Memory",
+    "updated": "2026-08-02",
+    "url": "http://arxiv.org/abs/2608.01543v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Large language model agents have shown strong capabilities in generating coherent and contextually appropriate responses, yet robust long-horizon dialogue remains limited by the lack of external memory that is traceable, updatable, and diagnostically transparent. Existing memory-augmented agents often store memories as isolated records or overwritable states, making it difficult to preserve how information originates, evolves, conflicts, or becomes obsolete over time. We propose TrajWiki, a trajectory-based memory framework for long-horizon conversational agents. Instead of treating memory as static entries, TrajWiki represents each memory as a source-grounded evolution trajectory, maintained through immutable episodic snapshots and claim-level operations such as ADD, REVISE, and DEPRECATE. To reduce fragmentation and retrieval cost, TrajWiki further introduces Memory Wiki, a persistent intermediate layer that incrementally compiles dialogue history into structured and interlinked wiki pages capturing salient entities, events, quantities, topics, and conflicts. At inference time, queries are routed hierarchically from relevant wiki pages to linked memory trajectories, then to corresponding snapshots and source messages for evidence-grounded answer synthesis. Experiments on LoCoMo and MedMT show that TrajWiki improves long-horizon dialogue performance across both open-source and closed-source LLM backbones, while providing greater interpretability and diagnostic visibility into memory evolution, retrieval failures, and answer generation.",
+    "authors": [
+      "Jingyu Sun",
+      "Yuyang Xue",
+      "Mingyang Li",
+      "Zhengtao Yao",
+      "Jiachen Li",
+      "Yang Cui",
+      "Wenhao Cai",
+      "Haozhe Liu",
+      "Fangying Wang",
+      "Magdalene Katharina Montgomery",
+      "Syed Murtuza Baker",
+      "Hongpeng Zhou"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2608.00967v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, context, conversation, episodic` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Large language model agents have shown strong capabilities in generating coherent and contextually appropriate responses, yet robust long-horizon dialogue remains limited by the lack of external memory that is...\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing memory-augmented agents often store memories as isolated records or overwritable states, making it difficult to preserve how information originates, evolves, conflicts, or becomes obsolete over time.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory augmented",
+      "memory-augmented"
+    ],
+    "one_liner": "Large language model agents have shown strong capabilities in generating coherent and contextually appropriate responses, yet robust long-horizon dialogue remains limited by the...",
+    "published": "2026-08-02",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, context, conversation, episodic, retrieval\n- 检索关键词命中：memory augmented, memory-augmented\n- 来源分类信息：cs.AI",
+    "slug": "trajwiki-source-grounded-memory-trajectories-for-long-horizon-dialogue-agents",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.00967v1",
+    "tags": [
+      "agent",
+      "context",
+      "conversation",
+      "episodic",
+      "retrieval"
+    ],
+    "title": "TrajWiki: Source-Grounded Memory Trajectories for Long-Horizon Dialogue Agents",
+    "updated": "2026-08-02",
+    "url": "http://arxiv.org/abs/2608.00967v1",
+    "venue": ""
+  },
+  {
+    "abstract": "The continued development of LLMs toward persistent and adaptive intelligence increasingly requires long-term memory mechanisms that preserve and reuse information across interactions. Existing memory systems either compress and structure histories for efficient access or perform deep research over broader trajectories. The former lowers online cost but may omit temporal, causal, or cross-step dependencies, while the latter improves evidence coverage at substantial latency and inference cost. This raises a key question: can a memory system achieve strong answer quality while maintaining low online latency? We introduce Router-Mem, an evidence-conditioned progressive execution framework for long-horizon agent memory. Router-Mem first applies a shared low-cost retrieval prefix to obtain evidence. A lightweight sufficiency router then predicts whether the context supports early termination, which enable a single-token decision at inference time. It is trained with evidence-level supervision and rationale-conditioned representation distillation. When evidence is insufficient, Router-Mem reuses retrieval hits to expand memory blocks and perform deeper analysis and aggregation. Experiments on AMA-Bench and BEAM show that Router-Mem achieves 55.17\\% and 38.77\\% score while reducing average inference time by 27.3\\% and 25.5\\% compared with full memory execution.",
+    "authors": [
+      "Yidan Lin",
+      "Kaixiang Wang",
+      "Jiong Lou",
+      "Jie Li"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "id": "2608.01285v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, context, long-term, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：The continued development of LLMs toward persistent and adaptive intelligence increasingly requires long-term memory mechanisms that preserve and reuse information across interactions.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing memory systems either compress and structure histories for efficient access or perform deep research over broader trajectories.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory",
+      "long-term memory"
+    ],
+    "one_liner": "The continued development of LLMs toward persistent and adaptive intelligence increasingly requires long-term memory mechanisms that preserve and reuse information across...",
+    "published": "2026-08-02",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, context, long-term, retrieval\n- 检索关键词命中：agent memory, long-term memory\n- 来源分类信息：cs.LG, cs.AI",
+    "slug": "stop-when-memory-suffices-evidence-conditioned-progressive-execution-for-llm-age",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.01285v1",
+    "tags": [
+      "agent",
+      "context",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "Stop When Memory Suffices: Evidence-Conditioned Progressive Execution for LLM Agents",
+    "updated": "2026-08-02",
+    "url": "http://arxiv.org/abs/2608.01285v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Conversational investment advisors influence not only what users know, but also how they make subsequent decisions as market conditions evolve. Existing evaluations primarily assess response quality or observed outcomes, leaving the long-horizon pathway from advisor language to investor behavior difficult to audit. We introduce ShiJianBench, an offline framework for evaluating conversational investment advisors through matched investor trajectories under fixed historical market feedback. At its core is a multi-agent investor simulator with explicit evolving state variables, motive-driven deliberation, long-term memory, and dialogue-grounded updates. The simulator is calibrated against aggregate behavioral patterns from 7,199 real users, and advisor policies are evaluated using separate investor-side, service-side, and content-side metrics under a hard compliance gate. Experiments on Chinese fund-market traces from 2021 to 2026 identify a stable leading group of LLM advisors that combines substantially stronger personalized content with competitive investor-side trajectory outcomes. These results reveal a systematic distinction between producing a high-quality response and delivering an effective long-horizon intervention, motivating trajectory-aware evaluation of conversational advisors.",
+    "authors": [
+      "Jie Gong",
+      "Maowei Jiang",
+      "Zhiwei Liu",
+      "Yang Qiao",
+      "Wenxi Wu",
+      "Mengxi Xiao",
+      "Enze Zhang",
+      "Ziyan Kuang",
+      "Yankai Chen",
+      "Caishuang Huang",
+      "Meng Zhou",
+      "Xiku Du",
+      "Xue Liu",
+      "Guojun Xiong",
+      "Min Peng",
+      "Qianqian Xie",
+      "Sophia Ananiadou"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "id": "2608.01204v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, conversation, long-term` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Conversational investment advisors influence not only what users know, but also how they make subsequent decisions as market conditions evolve.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing evaluations primarily assess response quality or observed outcomes, leaving the long-horizon pathway from advisor language to investor behavior difficult to audit.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "long-term memory"
+    ],
+    "one_liner": "Conversational investment advisors influence not only what users know, but also how they make subsequent decisions as market conditions evolve.",
+    "published": "2026-08-02",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, conversation, long-term\n- 检索关键词命中：long-term memory\n- 来源分类信息：cs.CL",
+    "slug": "shijianbench-from-dialogue-to-decision-for-long-horizon-evaluation-of-investment",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.01204v1",
+    "tags": [
+      "agent",
+      "conversation",
+      "long-term"
+    ],
+    "title": "ShiJianBench: From Dialogue to Decision for Long-Horizon Evaluation of Investment Advisors",
+    "updated": "2026-08-02",
+    "url": "http://arxiv.org/abs/2608.01204v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Long-term memory is essential for LVLM agents to maintain consistency and integrate information across extended multimodal interactions. Existing agent memory systems, however, often reduce visual experiences into textual summaries or rely on static retrieve-then-reason pipelines, which are inefficient at query time and brittle when questions require image-text binding, temporal updates, or visual details. We propose Prospective Multimodal Memory Compilation, a framework that shifts part of the memory reasoning process from query time to memory consolidation time. Given accumulated multimodal interactions, a Questioner predicts future question candidates, a Planner compiles question-conditioned multimodal memory programs, and a Doubter verifies whether the planned evidence path can support the predicted answer. The verified question-program pairs form a structured question bank for efficient query-time routing and evidence retrieval. Experiments on multimodal long-term memory benchmarks show that our method improves answer quality and visual evidence recall while reducing query-time token and latency costs. Extensive ablations analyze the effects of self-feedback, dynamic planning, raw-image access, and question bank coverage.",
+    "authors": [
+      "Jingyu Sun",
+      "Yan Lin",
+      "Yuyang Xue",
+      "Yifan Wang",
+      "Zhengtao Yao",
+      "Rui Qian",
+      "Zefeng Xu",
+      "Jiachen Li",
+      "Xianyang Liu",
+      "Jiancheng Pan",
+      "Jingyuan Sun",
+      "Syed Murtuza Baker",
+      "Hongpeng Zhou"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2608.00962v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, long-term, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Long-term memory is essential for LVLM agents to maintain consistency and integrate information across extended multimodal interactions.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing agent memory systems, however, often reduce visual experiences into textual summaries or rely on static retrieve-then-reason pipelines, which are inefficient at query time and brittle when questions require...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory",
+      "long-term memory",
+      "memory benchmark",
+      "memory benchmarks",
+      "memory reasoning"
+    ],
+    "one_liner": "Long-term memory is essential for LVLM agents to maintain consistency and integrate information across extended multimodal interactions.",
+    "published": "2026-08-02",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, long-term, retrieval\n- 检索关键词命中：agent memory, long-term memory, memory benchmark, memory benchmarks, memory reasoning\n- 来源分类信息：cs.AI",
+    "slug": "pmmc-prospective-multimodal-memory-compilation-for-long-term-lvlm-agents",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.00962v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "PMMC: Prospective Multimodal Memory Compilation for Long-Term LVLM Agents",
+    "updated": "2026-08-02",
+    "url": "http://arxiv.org/abs/2608.00962v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Lifelong LLM agents increasingly adapt through external learning states that store past interactions as retrievable memories or reusable skills, yet existing benchmarks rarely account for how the path of accumulated experience shapes what agents transfer and retain. In this work, we establish PATH-Bench, a benchmark for path-dependent evaluation of lifelong agents. PATH-Bench estimates directed task relationships via multi-model in-context learning, constructs probe-centered sequences with controlled helpful and interfering histories, and repeatedly evaluates probe tasks to measure average performance, forward transfer, backward transfer, and forgetting. We evaluate eight representative agents on single-turn code generation and multi-turn tool-use tasks under positive- and negative-dominant histories. Benchmark results show that experience utility depends jointly on how experience is represented and on the task's interaction structure, that strong transfer does not ensure retention, and that later experience can reshape gains acquired earlier in the learning path. Based on these findings, we propose Selective Experience Use (SEU), an agent harness that regulates how path-accumulated experience influences each new task, admitting helpful items while filtering out potential interference. SEU consistently reduces forgetting while improving forward transfer in the majority of settings. The PATH-Bench provides both a controlled evaluation framework and actionable guidance for designing more selective and robust lifelong agents.",
+    "authors": [
+      "Xidong Yang",
+      "Xingyi Zhang",
+      "Wenhao Li",
+      "Wenyan Liu",
+      "Junjie Sheng",
+      "Yun Hua",
+      "Wei Yin",
+      "Tao Fang",
+      "Chuyun Shen",
+      "Xiangfeng Wang"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2608.01149v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Lifelong LLM agents increasingly adapt through external learning states that store past interactions as retrievable memories or reusable skills, yet existing benchmarks rarely account for how the path of accumulated...\n\n进一步看，论文的核心做法或实验重点可以概括为：In this work, we establish PATH-Bench, a benchmark for path-dependent evaluation of lifelong agents.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "retrieval memory"
+    ],
+    "one_liner": "Lifelong LLM agents increasingly adapt through external learning states that store past interactions as retrievable memories or reusable skills, yet existing benchmarks rarely...",
+    "published": "2026-08-02",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context\n- 检索关键词命中：retrieval memory\n- 来源分类信息：cs.AI",
+    "slug": "path-bench-path-dependent-evaluation-of-lifelong-agents",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.01149v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context"
+    ],
+    "title": "PATH-Bench: Path-Dependent Evaluation of Lifelong Agents",
+    "updated": "2026-08-02",
+    "url": "http://arxiv.org/abs/2608.01149v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Agents are increasingly expected to act not only as task executors, but also as decision-makers on behalf of human users. This shift requires agents to accumulate evidence over long horizons, interpret implicit user preferences, and compare multiple candidates under partial observations. In this work, we propose DunphyBench, a new benchmark for evaluating agents on long-horizon human-centered embodied decision-making, where the agent must navigate through multiple embodied housing environments and make decisions that align with multi-dimensional human preferences. Unlike standard embodied reasoning tasks that often focus on procedural planning or immediate goal completion, our setting requires agents to integrate multimodal, multi-source input into coherent knowledge that supports complex reasoning across long horizon. The evaluation results reveal that there is a substantial gap between current agents and human performance. Furthermore, our diagnosis of state-of-the-art VLM-driven agents reveals that memory management is one of the bottlenecks, where raw multimodal history introduces noise that hinders decision quality. Motivated by this finding, we design MeMento, a preference-conditioned multimodal memory compressor that selectively compresses decision-relevant information from long-horizon history based on user preferences with a fixed set of memory tokens. Experiments show that MeMento helps VLM-driven agents improve accuracy by 7.18%, while reducing memory usage by 85.38% compared to the strongest baseline.",
+    "authors": [
+      "Bingxuan Li",
+      "Rui Yang",
+      "Cheng Qian",
+      "Jiateng Liu",
+      "Jeonghwan Kim",
+      "Zhenhailong Wang",
+      "Manling Li",
+      "Tong Zhang",
+      "Heng Ji"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.CL"
+    ],
+    "id": "2608.01456v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, compression` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Agents are increasingly expected to act not only as task executors, but also as decision-makers on behalf of human users.\n\n进一步看，论文的核心做法或实验重点可以概括为：This shift requires agents to accumulate evidence over long horizons, interpret implicit user preferences, and compare multiple candidates under partial observations.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory compression"
+    ],
+    "one_liner": "Agents are increasingly expected to act not only as task executors, but also as decision-makers on behalf of human users.",
+    "published": "2026-08-02",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, compression\n- 检索关键词命中：memory compression\n- 来源分类信息：cs.CV, cs.CL",
+    "slug": "long-horizon-embodied-decision-making-via-multimodal-memory-compression",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.01456v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "compression"
+    ],
+    "title": "Long-Horizon Embodied Decision-Making via Multimodal Memory Compression",
+    "updated": "2026-08-02",
+    "url": "http://arxiv.org/abs/2608.01456v1",
+    "venue": ""
+  },
+  {
+    "abstract": "The emergence of Agentic AI systems, characterized by autonomous reasoning, multi-agent collaboration, tool orchestration, adaptive decision-making, and persistent memory, represents a fundamental shift from traditional AI pipelines to dynamic software ecosystems. While AI Technical Debt (AITD) has been widely studied in machine learning and software engineering, existing models assume static, component-level architectures and fail to capture the dynamic and emergent behaviors of agentic environments. To address this gap, this paper introduces Agentic Technical Debt (AgTD), defined as technical debt that emerges, accumulates, propagates, and amplifies due to the autonomous and collaborative nature of Agentic AI systems. Building on our prior systematic scoping review of 31 AITDs across seven root-cause categories, we employ a theory-informed transformation methodology to reinterpret these debts in Agentic AI through direct transformation, contextual transformation, and manifestation expansion. We present the first systematic mapping of established AITDs to their agentic manifestations, showing how conventional debts evolve into system-level liabilities, including memory inconsistencies, orchestration fragility, cascading failures, and unsafe autonomous decision-making. Our findings show that technical debt extends beyond software artifacts to encompass agent behaviors, coordination mechanisms, and interactions among agents, tools, and execution environments. We further examine its implications for AI Trust, Risk, and Security Management (AI TRiSM), highlighting impacts on trustworthiness, governance, security, operational resilience, and Sustainability Technical Debt. Overall, this work establishes AgTD as a foundational software engineering construct and provides a transformation framework, taxonomy, and research agenda for managing technical debt in autonomous multi-agent AI systems.",
+    "authors": [
+      "Muhammad Tukur",
+      "Hayatullahi B. Adeyemo",
+      "Tao Chen",
+      "Nour Ali",
+      "Anis Zarrad",
+      "Marco Agus",
+      "Rick Kazman",
+      "Rami Bahsoon"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.CR",
+      "cs.SE"
+    ],
+    "id": "2608.01001v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, context` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：The emergence of Agentic AI systems, characterized by autonomous reasoning, multi-agent collaboration, tool orchestration, adaptive decision-making, and persistent memory, represents a fundamental shift from...\n\n进一步看，论文的核心做法或实验重点可以概括为：While AI Technical Debt (AITD) has been widely studied in machine learning and software engineering, existing models assume static, component-level architectures and fail to capture the dynamic and emergent behaviors...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "persistent memory"
+    ],
+    "one_liner": "The emergence of Agentic AI systems, characterized by autonomous reasoning, multi-agent collaboration, tool orchestration, adaptive decision-making, and persistent memory,...",
+    "published": "2026-08-02",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, context\n- 检索关键词命中：persistent memory\n- 来源分类信息：cs.AI, cs.CR, cs.SE",
+    "slug": "from-ai-technical-debt-to-agentic-technical-debt-a-systematic-mapping-of-root-ca",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.01001v1",
+    "tags": [
+      "agent",
+      "context"
+    ],
+    "title": "From AI Technical Debt to Agentic Technical Debt: A Systematic Mapping of Root Causes and Manifestations in Agentic AI Systems",
+    "updated": "2026-08-02",
+    "url": "http://arxiv.org/abs/2608.01001v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Generative Recommendation (GR) has exhibited great potential by modeling item transitions as a sequence-to-sequence task. Despite the success of GR, existing frameworks primarily focus on modeling individual user sequences within a constrained internal parametric space, failing to explicitly leverage cross-user collaborative signals. To address this issue, we propose \\textbf{OMEGA}, a cOllaborative MEmory augmentation framework for Generative recommendAtion. OMEGA bridges the gap between implicit parametric knowledge and explicit collaborative signals. We first introduce a latent context compression method that utilizes learnable query tokens to distill sequential user behavior into compact representations, significantly reducing storage overhead. These compressed representations are aggregated into a collaborative memory bank, serving as an explicit repository of global behavioral patterns. To ensure precise knowledge acquisition, we design a lightweight and target-aware retrieval mechanism that identifies pertinent memories by considering both sequence-level and target-level similarities. Furthermore, a context-aware integration module, equipped with a gated cross-attention mechanism, is employed to adaptively fuse the retrieved collaborative memories with the local user context while mitigating the interference of noisy patterns. Empirical evaluations on multiple real-world datasets demonstrate that OMEGA significantly outperforms existing advanced GR models, validating the potential of external memory as a complement to the generative paradigm.",
+    "authors": [
+      "Enze Liu",
+      "Zhen Tian",
+      "Wayne Xin Zhao"
+    ],
+    "categories": [
+      "cs.IR"
+    ],
+    "id": "2608.01315v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `compression, context, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Generative Recommendation (GR) has exhibited great potential by modeling item transitions as a sequence-to-sequence task.\n\n进一步看，论文的核心做法或实验重点可以概括为：Despite the success of GR, existing frameworks primarily focus on modeling individual user sequences within a constrained internal parametric space, failing to explicitly leverage cross-user collaborative signals.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory augmented",
+      "memory-augmented"
+    ],
+    "one_liner": "Generative Recommendation (GR) has exhibited great potential by modeling item transitions as a sequence-to-sequence task.",
+    "published": "2026-08-02",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：compression, context, retrieval\n- 检索关键词命中：memory augmented, memory-augmented\n- 来源分类信息：cs.IR",
+    "slug": "collaborative-memory-augmentation-for-generative-recommendation",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.01315v1",
+    "tags": [
+      "compression",
+      "context",
+      "retrieval"
+    ],
+    "title": "Collaborative Memory Augmentation for Generative Recommendation",
+    "updated": "2026-08-02",
+    "url": "http://arxiv.org/abs/2608.01315v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Evaluating artificial intelligence systems has historically relied on outcome-based benchmarks that measure task accuracy, robustness, or fairness. While indispensable, these benchmarks provide limited diagnostic insight into the underlying cognitive processes that generate performance-leaving critical questions unanswered about how AI systems reason, integrate memory, manage complexity, or avoid generating false information. This paper introduces the Multi-Dimensional Assessment for AI Cognition (MAAC), a theoretically grounded framework for shifting evaluation from what text-based AI systems produce to how they think. MAAC defines nine cognitively motivated dimensions: Cognitive Load, Tool Execution, Content Quality, Memory Integration, Complexity Handling, Hallucination Control, Knowledge Transfer, Processing Efficiency, and Process-Outcome Alignment. Each dimension is grounded in established cognitive science theory-drawing on Marr's tri-level hypothesis, Baddeley's working memory model, Sweller's cognitive load theory, and unified theories of cognition. Five theoretical analyses provide initial support for the framework's coherence and empirical testability: dimension-to-theory mapping; a coverage matrix assessing breadth and non-redundancy; a formal gap analysis relative to current evaluation practice; a worked diagnostic illustration; and a set of a priori interdependency predictions for future empirical testing. MAAC provides a theoretical and operational framework for principled process-level cognitive assessment of text-based AI systems, complementing existing outcome-based benchmarks with cognitively grounded, multi-dimensional evaluation.",
+    "authors": [
+      "Abdalla Doleh",
+      "Ratna Babu Chinnam"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2608.00680v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `benchmark` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Evaluating artificial intelligence systems has historically relied on outcome-based benchmarks that measure task accuracy, robustness, or fairness.\n\n进一步看，论文的核心做法或实验重点可以概括为：While indispensable, these benchmarks provide limited diagnostic insight into the underlying cognitive processes that generate performance-leaving critical questions unanswered about how AI systems reason, integrate...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "working memory"
+    ],
+    "one_liner": "Evaluating artificial intelligence systems has historically relied on outcome-based benchmarks that measure task accuracy, robustness, or fairness.",
+    "published": "2026-08-01",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：benchmark\n- 检索关键词命中：working memory\n- 来源分类信息：cs.AI",
+    "slug": "multi-dimensional-assessment-for-ai-cognition-maac-a-theoretical-framework-for-p",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.00680v1",
+    "tags": [
+      "benchmark"
+    ],
+    "title": "Multi-Dimensional Assessment for AI Cognition (MAAC): A Theoretical Framework for Process-Oriented Cognitive Evaluation of Text-Based AI Systems",
+    "updated": "2026-08-01",
+    "url": "http://arxiv.org/abs/2608.00680v1",
+    "venue": ""
+  },
+  {
     "abstract": "LLM agents need memory to act consistently over long interactions, yet many systems use additional LLM calls to operate that memory. Generating intermediate records and mediating their retrieval adds recurring token and time costs, while omitted or merged details can obscure the original evidence. We ask whether structured memory access requires generation at all. Zero-Mem introduces \\emph{zero-token memory operations}: no step outside final question answering invokes an LLM or consumes LLM input or output tokens; encoder computation is accounted for separately. Zero-Mem preserves original interaction traces as its source of record. It organizes the traces in two complementary ways. An entity--context graph exposes connections across interactions, while a temporal hierarchy preserves conversational locality and session state. For each query, Zero-Mem weighs the two views, retrieves from both, and follows their structure to recover supporting relations or surrounding context. Deterministic calibration first discards conflicting evidence and then keeps the reader's answer grounded in the retrieved traces. Only the final-QA reader invokes an LLM. Across long-memory and long-context question-answering benchmarks, Zero-Mem achieves competitive performance while eliminating LLM calls and LLM-token consumption from memory operations. With the same final-QA reader and context budget, it reduces memory-operation time cost by 57.6\\% relative to the fastest compared baseline. Ablations support the contribution of the two views and their query-dependent coordination. Overall, the results show that structured agent memory need not generate an intermediate representation of the past. After peer review, the code and implementation details will be available at \\textcolor{blue}{https://github.com/TheMoon0815/Zero-mem}.",
     "authors": [
       "Yilin Xiao",
@@ -106,6 +1297,35 @@
     "venue": "CCN 2026 Extended Abstracts Poster"
   },
   {
+    "abstract": "Enterprise coding agents rely on tools and retrieval, yet enterprise knowledge often remains outside public training data and formal documentation: internal DSLs, proprietary platforms, local conventions, recent fixes, and tacit workflows. Existing knowledge interfaces expose stored resources but still depend on agents recognizing and explicitly recording lessons worth reusing, disconnecting capture from the coding workflow and leaving development experience repeatedly rediscovered. We report an ongoing production deployment of a shared organizational memory system that makes capture a platform-level part of coding work: it collects task-adjacent experience with contributor approval, curates it into reusable question-answer memories, gates obvious security and privacy risks, and retrieves memories for future agents. This short paper describes the deployed lifecycle and an operational snapshot. Effects on retrieval and coding tasks remain under evaluation.",
+    "authors": [
+      "Harsh Rao Dhanyamraju",
+      "Leonidas Raghav"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2608.00122v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Enterprise coding agents rely on tools and retrieval, yet enterprise knowledge often remains outside public training data and formal documentation: internal DSLs, proprietary platforms, local conventions, recent...\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing knowledge interfaces expose stored resources but still depend on agents recognizing and explicitly recording lessons worth reusing, disconnecting capture from the coding workflow and leaving development...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "retrieval memory"
+    ],
+    "one_liner": "Enterprise coding agents rely on tools and retrieval, yet enterprise knowledge often remains outside public training data and formal documentation: internal DSLs, proprietary...",
+    "published": "2026-07-31",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, retrieval\n- 检索关键词命中：retrieval memory\n- 来源分类信息：cs.AI",
+    "slug": "shared-organizational-memory-for-enterprise-coding-agents-system-design-and-depl",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.00122v1",
+    "tags": [
+      "agent",
+      "retrieval"
+    ],
+    "title": "Shared Organizational Memory for Enterprise Coding Agents: System Design and Deployment Snapshot",
+    "updated": "2026-07-31",
+    "url": "http://arxiv.org/abs/2608.00122v1",
+    "venue": ""
+  },
+  {
     "abstract": "Research on hippocampal sharp-wave ripples (SWR) suggests that memory retrieval and internal simulation are deeply intertwined: prospective sequences emerge during the same neural events that drive memory access, and their content reflects expected future relevance rather than recency. Yet the computational mechanism coupling imagination to retrieval remains underspecified. We propose that imagination-guided retrieval, using internally generated latent simulations as queries against stored experience, offers a parsimonious account of this coupling. We examine navigation agents that use a world model to imagine latent future states that index persistent memory. Perfect-retrieval experiments reveal a consistent $\\sim$20-point performance gap that bounds the headroom attributable to prospective simulation, and multi-agent memory sharing improves navigation in proportion to the agent pool, loosely paralleling hippocampal replay reorganized by social observation. Together, these offer testable predictions for the imagination-retrieval hypothesis.",
     "authors": [
       "Yunzhe XU"
@@ -134,6 +1354,39 @@
     "updated": "2026-07-31",
     "url": "https://openreview.net/forum?id=2FsNmWoP3t",
     "venue": "CCN 2026 Extended Abstracts Poster"
+  },
+  {
+    "abstract": "Large language model (LLM) agents can retrieve memory, call tools, ask clarifying questions, and vary response style, yet adapting these execution decisions to an individual user remains difficult. Fine-tuning a separate LLM is costly or impossible for proprietary systems, while prompts and memory primarily expose user information to the agent rather than adapt its execution decisions from feedback. We formulate personalization of a frozen agent as online learning of a per-user execution policy from scalar feedback observed only for the executed action. We propose FABLE (Factorized Adaptive Bandit Layer for Execution), a lightweight policy layer outside a potentially black-box host agent. FABLE factorizes memory, information-acquisition, and response decisions so feedback updates related choices; filters actions through an externally specified feasible set before exploration; and learns user-specific residual preferences relative to a fixed default-and-cost score via Bayesian contextual Thompson sampling. Under a linear residual-reward model, a calibrated variant inherits an expected-regret bound against the best feasible action. We also characterize preferences unidentifiable under persistent feasibility constraints and provide anytime-valid false-promotion control. Across personalized-reasoning, controlled-feedback, and executable tool-use evaluations, FABLE improves several preference-sensitive behaviors relative to rule-only control while remaining competitive on end-to-end task performance.",
+    "authors": [
+      "Dian Jin",
+      "Zhi Zhang",
+      "Huichao Li",
+      "Yihe Pan",
+      "Rundong Huang",
+      "Doudou Zhou"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2608.00215v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, context` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Large language model (LLM) agents can retrieve memory, call tools, ask clarifying questions, and vary response style, yet adapting these execution decisions to an individual user remains difficult.\n\n进一步看，论文的核心做法或实验重点可以概括为：Fine-tuning a separate LLM is costly or impossible for proprietary systems, while prompts and memory primarily expose user information to the agent rather than adapt its execution decisions from feedback.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "retrieval memory"
+    ],
+    "one_liner": "Large language model (LLM) agents can retrieve memory, call tools, ask clarifying questions, and vary response style, yet adapting these execution decisions to an individual...",
+    "published": "2026-07-31",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, context\n- 检索关键词命中：retrieval memory\n- 来源分类信息：cs.AI",
+    "slug": "personalizing-large-language-model-agents-with-small-policy-models",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.00215v1",
+    "tags": [
+      "agent",
+      "context"
+    ],
+    "title": "Personalizing Large Language Model Agents with Small Policy Models",
+    "updated": "2026-07-31",
+    "url": "http://arxiv.org/abs/2608.00215v1",
+    "venue": ""
   },
   {
     "abstract": "Long-term memory lets large language model(LLM) agents reuse prior preferences and work flows, but it also turns untrusted observations into persistent action context. We identify memory provenance laundering: during LLM-based memory consolidation, an external observation may be rewritten as apparent user history or workflow support, preserving an action trigger while erasing the low-trust source that should limit its authority. Existing prompt filters, content sanitizers, and tool guards do not enforce source-authority non-amplification after lossy memory consolidation. We formalize this boundary and instantiate it as Provenance-Preserving Memory Fire wall (PPMF), a lightweight memory middleware that preserves platform-maintained provenance and authorizes tool calls by matching action risk to the authority of action-relevant memories. In our schema-grounded evaluation with fixed risk policies, vulnerable consolidated memories reach up to 1.000 attack success rate(ASR); with intact platform-maintained provenance, confirmation, and risk labels, no evaluated unauthorized high-risk action passes the PPMF gate while confirmed benign actions and targeted low-risk memory use remain executable.",

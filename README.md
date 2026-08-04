@@ -39,39 +39,39 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **819**
+- Total tracked papers: **856**
 - Last generated: **2026-08-04**
 
 ## Papers by Source
 
 - ACL Anthology: **5**
-- arXiv: **692**
-- OpenReview: **122**
+- arXiv: **723**
+- OpenReview: **128**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
-| 2026-07-31 | arXiv | [Zero-Mem: Zero-Token Memory Operations for LLM Agents](content/papers/zero-mem-zero-token-memory-operations-for-llm-agents.md) | agent, benchmark, context |
-| 2026-07-31 | arXiv | [TransMem: Transforming Hidden States into Memory for Large Language Models](content/papers/transmem-transforming-hidden-states-into-memory-for-large-language-models.md) | agent, context |
-| 2026-07-31 | OpenReview | [Trading Generalization for Working Memory Capacity in Neural Network Representations](content/papers/trading-generalization-for-working-memory-capacity-in-neural-network-representat.md) | working memory |
-| 2026-07-31 | OpenReview | [Predictive Latent Simulation as a Memory Retrieval Mechanism](content/papers/predictive-latent-simulation-as-a-memory-retrieval-mechanism.md) | agent, retrieval |
-| 2026-07-31 | arXiv | [Memory Provenance Laundering in LLM Agents: A Non-Amplification Firewall for Persistent Memory](content/papers/memory-provenance-laundering-in-llm-agents-a-non-amplification-firewall-for-pers.md) | agent, context, long-term |
-| 2026-07-31 | arXiv | [LabEvolver: Training-Free Experience Evolution for Safe and Grounded Wet-Lab Agents](content/papers/labevolver-training-free-experience-evolution-for-safe-and-grounded-wet-lab-agen.md) | agent, episodic |
-| 2026-07-31 | arXiv | [LLM Agents Are Latent Context Managers: Eliciting Self-Managed Context via State Proprioception](content/papers/llm-agents-are-latent-context-managers-eliciting-self-managed-context-via-state-.md) | agent, compression, context |
-| 2026-07-31 | OpenReview | [Inhibitory signals support working memory in sensory cortex](content/papers/inhibitory-signals-support-working-memory-in-sensory-cortex.md) | working memory |
-| 2026-07-31 | OpenReview | [Caching for the Future: Scrub Jay Episodic Memory Principles for Agent Memory Systems](content/papers/caching-for-the-future-scrub-jay-episodic-memory-principles-for-agent-memory-sys.md) | agent, benchmark, context |
-| 2026-07-31 | arXiv | [CMT-RAG: Complementary Memory Traces for Multi-turn Multi-hop RAG](content/papers/cmt-rag-complementary-memory-traces-for-multi-turn-multi-hop-rag.md) | benchmark, context, conversation |
-| 2026-07-31 | arXiv | [Beyond Retrieval: Analytic Memory for Multimodal Agents](content/papers/beyond-retrieval-analytic-memory-for-multimodal-agents.md) | agent, benchmark, context |
-| 2026-07-31 | arXiv | [AttriMem: Attribution-Guided Process Feedback for Agent Memory Construction](content/papers/attrimem-attribution-guided-process-feedback-for-agent-memory-construction.md) | agent, benchmark, retrieval |
-| 2026-07-30 | arXiv | [Understanding Is Done Early: A Depth Division of Labor in Large Language Models and Its Use for Unbounded-Context Memory](content/papers/understanding-is-done-early-a-depth-division-of-labor-in-large-language-models-a.md) | compression, context, conversation |
-| 2026-07-30 | arXiv | [RRM: Experience-Driven Reflective Retrieval Memory for Long-Horizon Multimodal Reasoning](content/papers/rrm-experience-driven-reflective-retrieval-memory-for-long-horizon-multimodal-re.md) | agent, context, episodic |
-| 2026-07-30 | arXiv | [Memory Decoder at Scale: A Pretrained, Parametric Long-Term Memory](content/papers/memory-decoder-at-scale-a-pretrained-parametric-long-term-memory.md) | benchmark, long-term, retrieval |
-| 2026-07-30 | arXiv | [MemTxn: A Transaction Boundary for Source-Supported Updates and Complete-State Recovery in Agent Memory](content/papers/memtxn-a-transaction-boundary-for-source-supported-updates-and-complete-state-re.md) | agent, retrieval |
-| 2026-07-30 | arXiv | [MemHarness: Memory Is Reconstructed, Not Replayed](content/papers/memharness-memory-is-reconstructed-not-replayed.md) | agent, context |
-| 2026-07-30 | arXiv | [MIND: Lightweight and Effective Memory Injection Defense for LLM Agents via Intent-Aware Information Bottleneck](content/papers/mind-lightweight-and-effective-memory-injection-defense-for-llm-agents-via-inten.md) | agent, context |
-| 2026-07-30 | arXiv | [LabEvolver: Training-Free Experience Evolution for Safe and Grounded Wet-Lab Agents](content/papers/labevolver-training-free-experience-evolution-for-safe-and-grounded-wet-lab-agen.md) | agent, episodic |
-| 2026-07-30 | arXiv | [ChronoMem: Version Control and Semantic Rollback for Large Language Model Agent Memory](content/papers/chronomem-version-control-and-semantic-rollback-for-large-language-model-agent-m.md) | agent, benchmark, conversation |
+| 2026-08-04 | OpenReview | [Reason Before Remembering: An Entity-Centric Framework for Trustworthy Conversational Memory](content/papers/reason-before-remembering-an-entity-centric-framework-for-trustworthy-conversati.md) | context, conversation, retrieval |
+| 2026-08-04 | OpenReview | [Profile-Graph Memory for LLM Agents: Implicit Cross-Entity Traversal through Narrative Profiles](content/papers/profile-graph-memory-for-llm-agents-implicit-cross-entity-traversal-through-narr.md) | agent, benchmark, compression |
+| 2026-08-04 | OpenReview | [Knowledge Graph Enhanced Memory-Augmented Retrieval for Long Context Modeling](content/papers/knowledge-graph-enhanced-memory-augmented-retrieval-for-long-context-modeling.md) | context, retrieval |
+| 2026-08-04 | OpenReview | [D-ACR: Dialogue-Aware Context Retrieval for Long-Term Conversational Memory](content/papers/d-acr-dialogue-aware-context-retrieval-for-long-term-conversational-memory.md) | benchmark, context, conversation |
+| 2026-08-04 | OpenReview | [CIRCUIT Memory: Confidence-Aware Multi-Axis Retrieval for Episodic Memory in LLM Agents](content/papers/circuit-memory-confidence-aware-multi-axis-retrieval-for-episodic-memory-in-llm-.md) | agent, episodic, retrieval |
+| 2026-08-04 | OpenReview | [Beyond Retrieval: Analytic Memory for Multimodal Agents](content/papers/beyond-retrieval-analytic-memory-for-multimodal-agents.md) | agent, benchmark, context |
+| 2026-08-03 | arXiv | [When Memory Updates but Behavior Does Not: Repairing Implicit Stale Dependencies in Personalized Agent Responses](content/papers/when-memory-updates-but-behavior-does-not-repairing-implicit-stale-dependencies-.md) | agent, benchmark, context |
+| 2026-08-03 | arXiv | [When Memory Becomes Authority: Benchmarking Authority Collapse at the Memory Consolidation Boundary](content/papers/when-memory-becomes-authority-benchmarking-authority-collapse-at-the-memory-cons.md) | agent, benchmark |
+| 2026-08-03 | arXiv | [Structured Memory for Edge Language Models: Persistent Context and Corpus Retrieval via O(1) SSM State Injection](content/papers/structured-memory-for-edge-language-models-persistent-context-and-corpus-retriev.md) | context, episodic, long-term |
+| 2026-08-03 | arXiv | [Setoka: A Benchmark for Hierarchical User Understanding in Personalized Agents over Heterogeneous Data](content/papers/setoka-a-benchmark-for-hierarchical-user-understanding-in-personalized-agents-ov.md) | agent, benchmark, conversation |
+| 2026-08-03 | arXiv | [Securing Agentic AI: From Per-Action Checks to Trajectory Assurance](content/papers/securing-agentic-ai-from-per-action-checks-to-trajectory-assurance.md) | agent |
+| 2026-08-03 | arXiv | [ScrambleToolBench: Agents Search Exhaustively Even When Their Own Map Points to the Next Step](content/papers/scrambletoolbench-agents-search-exhaustively-even-when-their-own-map-points-to-t.md) | agent, benchmark |
+| 2026-08-03 | arXiv | [Salami Attack: Stealthy Collusive Memory Poisoning against OpenClaw](content/papers/salami-attack-stealthy-collusive-memory-poisoning-against-openclaw.md) | agent, long-term |
+| 2026-08-03 | arXiv | [RoMeRL: Balancing Feedback Coverage and the Memory-Reward Trap in Self-Evolving Agent Memory via Reduced-Order Utility States](content/papers/romerl-balancing-feedback-coverage-and-the-memory-reward-trap-in-self-evolving-a.md) | agent |
+| 2026-08-03 | arXiv | [PGMem: Tightly Coupled Persona-Memory Graph for Lifelong Personalized Agents](content/papers/pgmem-tightly-coupled-persona-memory-graph-for-lifelong-personalized-agents.md) | agent, benchmark, context |
+| 2026-08-03 | arXiv | [MemSIF: From Structured Interactions to Dual-Track Fact Memory for LLM Agents](content/papers/memsif-from-structured-interactions-to-dual-track-fact-memory-for-llm-agents.md) | agent, long-term |
+| 2026-08-03 | arXiv | [Mamba with Hierarchical Memory: Solving Representation Bottleneck in Long Sequence Modeling](content/papers/mamba-with-hierarchical-memory-solving-representation-bottleneck-in-long-sequenc.md) | context, long-term, retrieval |
+| 2026-08-03 | arXiv | [MNC: Scope-Bound Semantic Declassification for Private LLM-Agent Communication](content/papers/mnc-scope-bound-semantic-declassification-for-private-llm-agent-communication.md) | agent, retrieval |
+| 2026-08-03 | arXiv | [Long-Horizon Autonomous Architecture Research with a Language-Model Agent: A Behavioural Case Study](content/papers/long-horizon-autonomous-architecture-research-with-a-language-model-agent-a-beha.md) | agent, benchmark |
+| 2026-08-03 | arXiv | [Key-Value Means: Transformers with Expandable Block-Recurrent Compressed Memory](content/papers/key-value-means-transformers-with-expandable-block-recurrent-compressed-memory.md) | context |
 
 ## Suggested GitHub Setup
 
