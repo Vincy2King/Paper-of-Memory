@@ -58,6 +58,66 @@
     "venue": "ACL ARR 2026 August Submission"
   },
   {
+    "abstract": "Memory-augmented agents increasingly operate over long-term tasks. These agents rely on persistent memory that evolves through update and delete operations on stored content. Many existing memory architectures execute these irreversible operations within the task execution loop, treating task feedback as a proxy for memory utility. This position paper argues that task-triggered evolution of memory content can destroy memories with high long-term utility. We introduce a taxonomy of memory-augmented agents organized by the trigger and target of their evolution operations. We present per-operation evidence from nine architectures across procedural and episodic-memory settings. We show that task-triggered update and delete operations precede a substantial share of downstream failures, while methods that defer evolution or restrict evolution to auxiliary content exhibit far fewer. We call on the community to (i) discipline memory operations separately for episodic and procedural memory, and (ii) adopt stage-level diagnostic tools that attribute failures to specific pipeline stages rather than report aggregate accuracy alone.",
+    "authors": [
+      "Afrin Dange",
+      "Rahul Rahaman",
+      "Deepak Gupta",
+      "Sankalp Dayal"
+    ],
+    "categories": [
+      "colmweb.org/COLM/2026/Workshop/CBW/-/Submission"
+    ],
+    "id": "openreview:yVsPr3C0Th",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, episodic, long-term` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `CBW Poster` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Memory-augmented agents increasingly operate over long-term tasks.\n\n进一步看，论文的核心做法或实验重点可以概括为：These agents rely on persistent memory that evolves through update and delete operations on stored content.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory-augmented",
+      "persistent memory"
+    ],
+    "one_liner": "Memory-augmented agents increasingly operate over long-term tasks.",
+    "published": "2026-08-04",
+    "relevance": "- 来源：OpenReview\n- Venue：CBW Poster\n- 高亮主题命中：agent, episodic, long-term\n- 检索关键词命中：memory-augmented, persistent memory\n- 来源分类信息：colmweb.org/COLM/2026/Workshop/CBW/-/Submission",
+    "slug": "position-task-triggered-memory-evolution-can-destroy-memories-with-high-long-ter",
+    "source": "OpenReview",
+    "source_key": "yVsPr3C0Th",
+    "tags": [
+      "agent",
+      "episodic",
+      "long-term"
+    ],
+    "title": "Position: Task-Triggered Memory Evolution Can Destroy Memories with High Long-Term Utility",
+    "updated": "2026-08-04",
+    "url": "https://openreview.net/forum?id=yVsPr3C0Th",
+    "venue": "CBW Poster"
+  },
+  {
+    "abstract": "We report a controlled plug-in comparison of four transformer memory mechanisms at a single fixed context length of 2048 tokens. Each mechanism is dropped into the same 286M-parameter nanochat GPT and trained from scratch under identical data, optimizer, and compute, so the only thing that varies is the memory module. At 2048 tokens, Persistent Memory is the one mechanism that significantly improves on softmax attention (-1.79 mBPB, p=0.002). The other three degrade quality: RMT by 39.25 mBPB (p<0.001), TTT-Linear by 6.00 mBPB (p<0.001), and Gated DeltaNet by 1.35 mBPB (p=0.008). We state the scope plainly: 2048 tokens is a short-context regime, and RMT and TTT-Linear were designed for 8k+ contexts, so the negative results here are about behaviour at this length and are not a verdict on those mechanisms in the regime they target. Read that way, the finding is a clean negative result with a reproducible protocol: at short context, three of four tested mechanisms cost quality rather than add it, and the harness makes the longer-context comparison straightforward to run next. A multi-context sweep (2048/4096/8192) confirms the Persistent Memory gain is not an artifact of the shortest length. Code, weights, and seeds are released under MIT.",
+    "authors": [
+      "Rob Sneiderman"
+    ],
+    "categories": [
+      "colmweb.org/COLM/2026/Workshop/CBW/-/Submission"
+    ],
+    "id": "openreview:XzM3pojgHN",
+    "intro": "这篇论文被纳入仓库，是因为它和 `context` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `CBW Poster` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：We report a controlled plug-in comparison of four transformer memory mechanisms at a single fixed context length of 2048 tokens.\n\n进一步看，论文的核心做法或实验重点可以概括为：Each mechanism is dropped into the same 286M-parameter nanochat GPT and trained from scratch under identical data, optimizer, and compute, so the only thing that varies is the memory module.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "persistent memory"
+    ],
+    "one_liner": "We report a controlled plug-in comparison of four transformer memory mechanisms at a single fixed context length of 2048 tokens.",
+    "published": "2026-08-04",
+    "relevance": "- 来源：OpenReview\n- Venue：CBW Poster\n- 高亮主题命中：context\n- 检索关键词命中：persistent memory\n- 来源分类信息：colmweb.org/COLM/2026/Workshop/CBW/-/Submission",
+    "slug": "memory-bench-at-short-context-only-persistent-memory-beats-softmax-attention-at-",
+    "source": "OpenReview",
+    "source_key": "XzM3pojgHN",
+    "tags": [
+      "context"
+    ],
+    "title": "Memory-Bench at Short Context: Only Persistent Memory Beats Softmax Attention at 2048 Tokens",
+    "updated": "2026-08-04",
+    "url": "https://openreview.net/forum?id=XzM3pojgHN",
+    "venue": "CBW Poster"
+  },
+  {
     "abstract": "Long-context modeling requires tracking entity states across thousands of tokens, yet dense semantic retrieval conflates distinct states of the same entity. We present KGERMAR, a memory-augmented framework that constructs dynamic, context-specific knowledge graphs at both training and inference time. By integrating graph-structural embeddings with textual semantics in a three-bank memory architecture (contextual, semantic, and structural), KGERMAR discriminates between lexically similar passages based on underlying entity relationships. On entity-rich corpora, structural memory provides a stable complementary signal that reduces perplexity by up to 8.5\\% and memory per token by 1.6–2.2× compared to memory-augmented baselines. Ablations show that semantic retrieval dominates at shorter contexts but saturates at 32K tokens, whereas structural memory maintains consistent gains, establishing that dynamic knowledge graphs improve long-context modeling specifically when entity density is high.",
     "authors": [],
     "categories": [
@@ -82,6 +142,40 @@
     "updated": "2026-08-04",
     "url": "https://openreview.net/forum?id=QdDQUKsvDn",
     "venue": "ACL ARR 2026 August Submission"
+  },
+  {
+    "abstract": "Large language models (LLMs) are increasingly augmented with long-term memory systems to overcome finite context windows and enable persistent reasoning across interactions. However, recent research finds that LLMs become more vulnerable because memory provides extra attack surfaces. In this paper, we present the first systematic study of black-box adversarial memory injection attacks that target the similarity-based retrieval mechanism in long-term memory-augmented LLMs. We introduce ER-MIA, a unified framework that exposes this vulnerability and formalizes two realistic attack settings: content-based attacks and question-targeted attacks. In these settings, ER-MIA includes an arsenal of composable attack primitives and ensemble attacks that achieve high success rates under minimal attacker assumptions. Extensive experiments across multiple LLMs and long-term memory systems demonstrate that similarity-based retrieval constitutes a fundamental and system-level vulnerability, revealing security risks that persist across memory designs and application scenarios.",
+    "authors": [
+      "{'fullname': 'Mitchell Piehl', 'username': '~Mitchell_Piehl1'}",
+      "{'fullname': 'Zhaohan Xi', 'username': ''}",
+      "{'fullname': 'Zuobin Xiong', 'username': ''}",
+      "{'fullname': 'Pan He', 'username': '~Pan_He1'}",
+      "{'fullname': 'Muchao Ye', 'username': ''}"
+    ],
+    "categories": [
+      "OpenReview.net/Public_Article/DBLP.org/-/Record"
+    ],
+    "id": "openreview:dvHe2slkTV",
+    "intro": "这篇论文被纳入仓库，是因为它和 `context, long-term, retrieval` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `CoRR 2026` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Large language models (LLMs) are increasingly augmented with long-term memory systems to overcome finite context windows and enable persistent reasoning across interactions.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, recent research finds that LLMs become more vulnerable because memory provides extra attack surfaces.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "long-term memory",
+      "memory-augmented"
+    ],
+    "one_liner": "Large language models (LLMs) are increasingly augmented with long-term memory systems to overcome finite context windows and enable persistent reasoning across interactions.",
+    "published": "2026-12-31",
+    "relevance": "- 来源：OpenReview\n- Venue：CoRR 2026\n- 高亮主题命中：context, long-term, retrieval\n- 检索关键词命中：long-term memory, memory-augmented\n- 来源分类信息：OpenReview.net/Public_Article/DBLP.org/-/Record",
+    "slug": "er-mia-black-box-adversarial-memory-injection-attacks-on-long-term-memory-augmen",
+    "source": "OpenReview",
+    "source_key": "dvHe2slkTV",
+    "tags": [
+      "context",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "ER-MIA: Black-Box Adversarial Memory Injection Attacks on Long-Term Memory-Augmented Large Language Models",
+    "updated": "2026-08-04",
+    "url": "https://openreview.net/forum?id=dvHe2slkTV",
+    "venue": "CoRR 2026"
   },
   {
     "abstract": "AI assistants now accumulate conversation history spanning days, months, or years, making retrieval of past context essential for grounded responses. Users may seek specific details from prior interactions, either explicitly through history search or implicitly during ongoing conversations. Unlike typical document retrieval in RAG settings, dialogue history forms a coherent sequential discourse in which the meaning of an utterance depends on its surrounding context. Existing approaches construct dialogue retrieval units through segmentation, summarization, or hybrid memory construction, but these units are constructed offline and therefore cannot adapt to the information needs expressed by the current query. We propose D-ACR (Dialogue-Aware Context Retrieval), which dynamically identifies relevant segments at query time via KadaneDial, our adaptation of Kadane's maximum-subarray algorithm to the dialogue domain. Across four conversational memory benchmarks and four backbone LLMs, D-ACR achieves the highest retrieval hit and recall while retrieving fewer turns than other strong methods, and maintains stable performance regardless of the backbone LLM.",
@@ -16965,40 +17059,6 @@
     "updated": "2026-05-30",
     "url": "https://openreview.net/forum?id=LeE9lXiGUC",
     "venue": "NAACL (Long Papers) 2025"
-  },
-  {
-    "abstract": "Large language models (LLMs) are increasingly augmented with long-term memory systems to overcome finite context windows and enable persistent reasoning across interactions. However, recent research finds that LLMs become more vulnerable because memory provides extra attack surfaces. In this paper, we present the first systematic study of black-box adversarial memory injection attacks that target the similarity-based retrieval mechanism in long-term memory-augmented LLMs. We introduce ER-MIA, a unified framework that exposes this vulnerability and formalizes two realistic attack settings: content-based attacks and question-targeted attacks. In these settings, ER-MIA includes an arsenal of composable attack primitives and ensemble attacks that achieve high success rates under minimal attacker assumptions. Extensive experiments across multiple LLMs and long-term memory systems demonstrate that similarity-based retrieval constitutes a fundamental and system-level vulnerability, revealing security risks that persist across memory designs and application scenarios.",
-    "authors": [
-      "{'fullname': 'Mitchell Piehl', 'username': ''}",
-      "{'fullname': 'Zhaohan Xi', 'username': ''}",
-      "{'fullname': 'Zuobin Xiong', 'username': ''}",
-      "{'fullname': 'Pan He', 'username': '~Pan_He1'}",
-      "{'fullname': 'Muchao Ye', 'username': ''}"
-    ],
-    "categories": [
-      "OpenReview.net/Public_Article/DBLP.org/-/Record"
-    ],
-    "id": "openreview:dvHe2slkTV",
-    "intro": "这篇论文被纳入仓库，是因为它和 `context, long-term, retrieval` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `CoRR 2026` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Large language models (LLMs) are increasingly augmented with long-term memory systems to overcome finite context windows and enable persistent reasoning across interactions.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, recent research finds that LLMs become more vulnerable because memory provides extra attack surfaces.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
-    "matched_keywords": [
-      "long-term memory",
-      "memory-augmented"
-    ],
-    "one_liner": "Large language models (LLMs) are increasingly augmented with long-term memory systems to overcome finite context windows and enable persistent reasoning across interactions.",
-    "published": "2026-12-31",
-    "relevance": "- 来源：OpenReview\n- Venue：CoRR 2026\n- 高亮主题命中：context, long-term, retrieval\n- 检索关键词命中：long-term memory, memory-augmented\n- 来源分类信息：OpenReview.net/Public_Article/DBLP.org/-/Record",
-    "slug": "er-mia-black-box-adversarial-memory-injection-attacks-on-long-term-memory-augmen",
-    "source": "OpenReview",
-    "source_key": "dvHe2slkTV",
-    "tags": [
-      "context",
-      "long-term",
-      "retrieval"
-    ],
-    "title": "ER-MIA: Black-Box Adversarial Memory Injection Attacks on Long-Term Memory-Augmented Large Language Models",
-    "updated": "2026-05-30",
-    "url": "https://openreview.net/forum?id=dvHe2slkTV",
-    "venue": "CoRR 2026"
   },
   {
     "abstract": "Deploying lightweight Large Language Model (LLM) agents on edge servers can reduce latency and move agentic services closer to users, but resource-constrained edge models often struggle with long-horizon tasks that require persistent memory, subgoal tracking, and reflection. Fine-tuning edge models after deployment is costly and difficult to scale across heterogeneous nodes, while purely local memory leaves agents with isolated experience and growing prompt context. We propose \\textsc{CoMIC}, a parameter-update-free cloud-edge framework for Collaborative Memory and Insights Circulation. \\textsc{CoMIC} follows a \\textit{Centralized Reflection, Decentralized Execution} design: edge agents execute locally using subgoal-oriented hierarchical memory and selective re-expansion of relevant histories, while a cloud-side LLM critic asynchronously evaluates completed trajectories, filters reusable experience, and aggregates cross-agent guidance keyed by semantic subgoal identifiers. Across five long-horizon agent tasks spanning symbolic planning and text interaction, \\textsc{CoMIC} improves progress rate and action grounding for weak edge agents and yields task-dependent success-rate gains without updating model parameters.",

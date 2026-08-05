@@ -4,8 +4,8 @@
 - Venue: CoRR 2026
 - Paper ID: openreview:dvHe2slkTV
 - Published: 2026-12-31
-- Updated: 2026-05-30
-- Authors: {'fullname': 'Mitchell Piehl', 'username': ''}, {'fullname': 'Zhaohan Xi', 'username': ''}, {'fullname': 'Zuobin Xiong', 'username': ''}, {'fullname': 'Pan He', 'username': '~Pan_He1'}, {'fullname': 'Muchao Ye', 'username': ''}
+- Updated: 2026-08-04
+- Authors: {'fullname': 'Mitchell Piehl', 'username': '~Mitchell_Piehl1'}, {'fullname': 'Zhaohan Xi', 'username': ''}, {'fullname': 'Zuobin Xiong', 'username': ''}, {'fullname': 'Pan He', 'username': '~Pan_He1'}, {'fullname': 'Muchao Ye', 'username': ''}
 - Tags: context, long-term, retrieval
 - Categories: OpenReview.net/Public_Article/DBLP.org/-/Record
 - URL: https://openreview.net/forum?id=dvHe2slkTV

@@ -39,14 +39,14 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **856**
-- Last generated: **2026-08-04**
+- Total tracked papers: **858**
+- Last generated: **2026-08-05**
 
 ## Papers by Source
 
 - ACL Anthology: **5**
 - arXiv: **723**
-- OpenReview: **128**
+- OpenReview: **130**
 
 ## Latest Papers
 
@@ -54,7 +54,10 @@ python3 scripts/update_papers.py --build-only
 | --- | --- | --- | --- |
 | 2026-08-04 | OpenReview | [Reason Before Remembering: An Entity-Centric Framework for Trustworthy Conversational Memory](content/papers/reason-before-remembering-an-entity-centric-framework-for-trustworthy-conversati.md) | context, conversation, retrieval |
 | 2026-08-04 | OpenReview | [Profile-Graph Memory for LLM Agents: Implicit Cross-Entity Traversal through Narrative Profiles](content/papers/profile-graph-memory-for-llm-agents-implicit-cross-entity-traversal-through-narr.md) | agent, benchmark, compression |
+| 2026-08-04 | OpenReview | [Position: Task-Triggered Memory Evolution Can Destroy Memories with High Long-Term Utility](content/papers/position-task-triggered-memory-evolution-can-destroy-memories-with-high-long-ter.md) | agent, episodic, long-term |
+| 2026-08-04 | OpenReview | [Memory-Bench at Short Context: Only Persistent Memory Beats Softmax Attention at 2048 Tokens](content/papers/memory-bench-at-short-context-only-persistent-memory-beats-softmax-attention-at-.md) | context |
 | 2026-08-04 | OpenReview | [Knowledge Graph Enhanced Memory-Augmented Retrieval for Long Context Modeling](content/papers/knowledge-graph-enhanced-memory-augmented-retrieval-for-long-context-modeling.md) | context, retrieval |
+| 2026-08-04 | OpenReview | [ER-MIA: Black-Box Adversarial Memory Injection Attacks on Long-Term Memory-Augmented Large Language Models](content/papers/er-mia-black-box-adversarial-memory-injection-attacks-on-long-term-memory-augmen.md) | context, long-term, retrieval |
 | 2026-08-04 | OpenReview | [D-ACR: Dialogue-Aware Context Retrieval for Long-Term Conversational Memory](content/papers/d-acr-dialogue-aware-context-retrieval-for-long-term-conversational-memory.md) | benchmark, context, conversation |
 | 2026-08-04 | OpenReview | [CIRCUIT Memory: Confidence-Aware Multi-Axis Retrieval for Episodic Memory in LLM Agents](content/papers/circuit-memory-confidence-aware-multi-axis-retrieval-for-episodic-memory-in-llm-.md) | agent, episodic, retrieval |
 | 2026-08-04 | OpenReview | [Beyond Retrieval: Analytic Memory for Multimodal Agents](content/papers/beyond-retrieval-analytic-memory-for-multimodal-agents.md) | agent, benchmark, context |
@@ -69,9 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-08-03 | arXiv | [PGMem: Tightly Coupled Persona-Memory Graph for Lifelong Personalized Agents](content/papers/pgmem-tightly-coupled-persona-memory-graph-for-lifelong-personalized-agents.md) | agent, benchmark, context |
 | 2026-08-03 | arXiv | [MemSIF: From Structured Interactions to Dual-Track Fact Memory for LLM Agents](content/papers/memsif-from-structured-interactions-to-dual-track-fact-memory-for-llm-agents.md) | agent, long-term |
 | 2026-08-03 | arXiv | [Mamba with Hierarchical Memory: Solving Representation Bottleneck in Long Sequence Modeling](content/papers/mamba-with-hierarchical-memory-solving-representation-bottleneck-in-long-sequenc.md) | context, long-term, retrieval |
-| 2026-08-03 | arXiv | [MNC: Scope-Bound Semantic Declassification for Private LLM-Agent Communication](content/papers/mnc-scope-bound-semantic-declassification-for-private-llm-agent-communication.md) | agent, retrieval |
-| 2026-08-03 | arXiv | [Long-Horizon Autonomous Architecture Research with a Language-Model Agent: A Behavioural Case Study](content/papers/long-horizon-autonomous-architecture-research-with-a-language-model-agent-a-beha.md) | agent, benchmark |
-| 2026-08-03 | arXiv | [Key-Value Means: Transformers with Expandable Block-Recurrent Compressed Memory](content/papers/key-value-means-transformers-with-expandable-block-recurrent-compressed-memory.md) | context |
 
 ## Suggested GitHub Setup
 
