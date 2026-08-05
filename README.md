@@ -39,39 +39,39 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **858**
+- Total tracked papers: **873**
 - Last generated: **2026-08-05**
 
 ## Papers by Source
 
 - ACL Anthology: **5**
-- arXiv: **723**
+- arXiv: **738**
 - OpenReview: **130**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-08-05 | OpenReview | [Caching for the Future: Scrub Jay Episodic Memory Principles for Agent Memory Systems](content/papers/caching-for-the-future-scrub-jay-episodic-memory-principles-for-agent-memory-sys.md) | agent, benchmark, context |
+| 2026-08-05 | OpenReview | [Beyond Retrieval: Analytic Memory for Multimodal Agents](content/papers/beyond-retrieval-analytic-memory-for-multimodal-agents.md) | agent, benchmark, context |
+| 2026-08-04 | arXiv | [When Memory Becomes Authority: Benchmarking Authority Collapse at the Memory Consolidation Boundary](content/papers/when-memory-becomes-authority-benchmarking-authority-collapse-at-the-memory-cons.md) | agent, benchmark |
+| 2026-08-04 | arXiv | [Verifiable Memory: Learning Unified Memory Management with Local and Global Verifiers for Large Language Model Agents](content/papers/verifiable-memory-learning-unified-memory-management-with-local-and-global-verif.md) | agent, benchmark, context |
+| 2026-08-04 | arXiv | [TARL: Transaction-Aware Reliable Ledgers for Executable Memory Management in Long-Term Agents](content/papers/tarl-transaction-aware-reliable-ledgers-for-executable-memory-management-in-long.md) | agent, benchmark, long-term |
+| 2026-08-04 | arXiv | [SPEAR: Code-Augmented Agentic Prompt Optimization](content/papers/spear-code-augmented-agentic-prompt-optimization.md) | agent, context, conversation |
+| 2026-08-04 | arXiv | [RoMeRL: Balancing Feedback Coverage and the Memory-Reward Trap in Self-Evolving Agent Memory via Reduced-Order Utility States](content/papers/romerl-balancing-feedback-coverage-and-the-memory-reward-trap-in-self-evolving-a.md) | agent |
 | 2026-08-04 | OpenReview | [Reason Before Remembering: An Entity-Centric Framework for Trustworthy Conversational Memory](content/papers/reason-before-remembering-an-entity-centric-framework-for-trustworthy-conversati.md) | context, conversation, retrieval |
 | 2026-08-04 | OpenReview | [Profile-Graph Memory for LLM Agents: Implicit Cross-Entity Traversal through Narrative Profiles](content/papers/profile-graph-memory-for-llm-agents-implicit-cross-entity-traversal-through-narr.md) | agent, benchmark, compression |
 | 2026-08-04 | OpenReview | [Position: Task-Triggered Memory Evolution Can Destroy Memories with High Long-Term Utility](content/papers/position-task-triggered-memory-evolution-can-destroy-memories-with-high-long-ter.md) | agent, episodic, long-term |
+| 2026-08-04 | arXiv | [OR-Agent: Bridging Evolutionary Search and Structured Research for Automated Algorithm Discovery](content/papers/or-agent-bridging-evolutionary-search-and-structured-research-for-automated-algo.md) | agent, compression, long-term |
+| 2026-08-04 | arXiv | [Metis: Memory Foundation Model](content/papers/metis-memory-foundation-model.md) | agent |
 | 2026-08-04 | OpenReview | [Memory-Bench at Short Context: Only Persistent Memory Beats Softmax Attention at 2048 Tokens](content/papers/memory-bench-at-short-context-only-persistent-memory-beats-softmax-attention-at-.md) | context |
+| 2026-08-04 | arXiv | [MAFIA: Query-Only Memory Attacks via Probing and Factual Injection against Audited LLM Agents](content/papers/mafia-query-only-memory-attacks-via-probing-and-factual-injection-against-audite.md) | agent, context, retrieval |
+| 2026-08-04 | arXiv | [LeanMem: Simple and Efficient Long-Term Memory for LLM Agents](content/papers/leanmem-simple-and-efficient-long-term-memory-for-llm-agents.md) | agent, long-term, retrieval |
 | 2026-08-04 | OpenReview | [Knowledge Graph Enhanced Memory-Augmented Retrieval for Long Context Modeling](content/papers/knowledge-graph-enhanced-memory-augmented-retrieval-for-long-context-modeling.md) | context, retrieval |
 | 2026-08-04 | OpenReview | [ER-MIA: Black-Box Adversarial Memory Injection Attacks on Long-Term Memory-Augmented Large Language Models](content/papers/er-mia-black-box-adversarial-memory-injection-attacks-on-long-term-memory-augmen.md) | context, long-term, retrieval |
+| 2026-08-04 | arXiv | [Distractor-Aware Truncation: Disentangling Context-Length Effects from Signal Loss in Long-Context LLM Benchmarks](content/papers/distractor-aware-truncation-disentangling-context-length-effects-from-signal-los.md) | benchmark, context, retrieval |
+| 2026-08-04 | arXiv | [DP-MemView: A Memory Interface for Attribute-Level Transcript Privacy in Long-Term LLM Agents](content/papers/dp-memview-a-memory-interface-for-attribute-level-transcript-privacy-in-long-ter.md) | agent, benchmark, long-term |
 | 2026-08-04 | OpenReview | [D-ACR: Dialogue-Aware Context Retrieval for Long-Term Conversational Memory](content/papers/d-acr-dialogue-aware-context-retrieval-for-long-term-conversational-memory.md) | benchmark, context, conversation |
-| 2026-08-04 | OpenReview | [CIRCUIT Memory: Confidence-Aware Multi-Axis Retrieval for Episodic Memory in LLM Agents](content/papers/circuit-memory-confidence-aware-multi-axis-retrieval-for-episodic-memory-in-llm-.md) | agent, episodic, retrieval |
-| 2026-08-04 | OpenReview | [Beyond Retrieval: Analytic Memory for Multimodal Agents](content/papers/beyond-retrieval-analytic-memory-for-multimodal-agents.md) | agent, benchmark, context |
-| 2026-08-03 | arXiv | [When Memory Updates but Behavior Does Not: Repairing Implicit Stale Dependencies in Personalized Agent Responses](content/papers/when-memory-updates-but-behavior-does-not-repairing-implicit-stale-dependencies-.md) | agent, benchmark, context |
-| 2026-08-03 | arXiv | [When Memory Becomes Authority: Benchmarking Authority Collapse at the Memory Consolidation Boundary](content/papers/when-memory-becomes-authority-benchmarking-authority-collapse-at-the-memory-cons.md) | agent, benchmark |
-| 2026-08-03 | arXiv | [Structured Memory for Edge Language Models: Persistent Context and Corpus Retrieval via O(1) SSM State Injection](content/papers/structured-memory-for-edge-language-models-persistent-context-and-corpus-retriev.md) | context, episodic, long-term |
-| 2026-08-03 | arXiv | [Setoka: A Benchmark for Hierarchical User Understanding in Personalized Agents over Heterogeneous Data](content/papers/setoka-a-benchmark-for-hierarchical-user-understanding-in-personalized-agents-ov.md) | agent, benchmark, conversation |
-| 2026-08-03 | arXiv | [Securing Agentic AI: From Per-Action Checks to Trajectory Assurance](content/papers/securing-agentic-ai-from-per-action-checks-to-trajectory-assurance.md) | agent |
-| 2026-08-03 | arXiv | [ScrambleToolBench: Agents Search Exhaustively Even When Their Own Map Points to the Next Step](content/papers/scrambletoolbench-agents-search-exhaustively-even-when-their-own-map-points-to-t.md) | agent, benchmark |
-| 2026-08-03 | arXiv | [Salami Attack: Stealthy Collusive Memory Poisoning against OpenClaw](content/papers/salami-attack-stealthy-collusive-memory-poisoning-against-openclaw.md) | agent, long-term |
-| 2026-08-03 | arXiv | [RoMeRL: Balancing Feedback Coverage and the Memory-Reward Trap in Self-Evolving Agent Memory via Reduced-Order Utility States](content/papers/romerl-balancing-feedback-coverage-and-the-memory-reward-trap-in-self-evolving-a.md) | agent |
-| 2026-08-03 | arXiv | [PGMem: Tightly Coupled Persona-Memory Graph for Lifelong Personalized Agents](content/papers/pgmem-tightly-coupled-persona-memory-graph-for-lifelong-personalized-agents.md) | agent, benchmark, context |
-| 2026-08-03 | arXiv | [MemSIF: From Structured Interactions to Dual-Track Fact Memory for LLM Agents](content/papers/memsif-from-structured-interactions-to-dual-track-fact-memory-for-llm-agents.md) | agent, long-term |
-| 2026-08-03 | arXiv | [Mamba with Hierarchical Memory: Solving Representation Bottleneck in Long Sequence Modeling](content/papers/mamba-with-hierarchical-memory-solving-representation-bottleneck-in-long-sequenc.md) | context, long-term, retrieval |
 
 ## Suggested GitHub Setup
 
