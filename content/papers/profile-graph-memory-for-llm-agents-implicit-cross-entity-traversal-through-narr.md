@@ -4,7 +4,7 @@
 - Venue: ACL ARR 2026 August Submission
 - Paper ID: openreview:8oUXCzERe8
 - Published: 2026-08-04
-- Updated: 2026-08-04
+- Updated: 2026-08-06
 - Authors: Unknown
 - Tags: agent, benchmark, compression, context, long-term
 - Categories: aclweb.org/ACL/ARR/2026/August/-/Submission
