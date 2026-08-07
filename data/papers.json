@@ -1,5 +1,79 @@
 [
   {
+    "abstract": "Long-document question answering (QA) requires large language models (LLMs) to reason over evidence scattered across lengthy documents, where answers often depend on event order, section-level context, and cross-part evidence connections. Although retrieval-augmented generation (RAG) reduces the input context by retrieving relevant evidence, existing structured RAG methods still face three limitations: costly query-agnostic knowledge organization, insufficient use of original document structure, and no reuse of historical reasoning experience. To address these limitations, we propose DocTrace, a multi-agent RAG framework for long-document QA that supports query-triggered knowledge organization, document-structure-aware and experience-guided reasoning. DocTrace preserves document hierarchy with a lightweight document structural tree index, constructs agent-shared hypergraph-structured working memory on demand during reasoning, and stores successful reasoning plans in graph-structured experience memory for future reuse, enabling adaptive exploration across related long-document questions. Experiments on four long-document QA datasets show that DocTrace outperforms the strongest baseline, ComoRAG, with average relative gains of 16.91% in F1 and 15.50% in EM on open-form QA benchmarks, and by up to 20.67% and 23.78%, respectively, on NarrativeQA.",
+    "authors": [
+      "Xiangjun Zai",
+      "Xingyu Tan",
+      "Chen Chen",
+      "Xiaoyang Wang",
+      "Wenjie Zhang"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "id": "2606.10921v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Long-document question answering (QA) requires large language models (LLMs) to reason over evidence scattered across lengthy documents, where answers often depend on event order, section-level context, and cross-part...\n\n进一步看，论文的核心做法或实验重点可以概括为：Although retrieval-augmented generation (RAG) reduces the input context by retrieving relevant evidence, existing structured RAG methods still face three limitations: costly query-agnostic knowledge organization,...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "working memory"
+    ],
+    "one_liner": "Long-document question answering (QA) requires large language models (LLMs) to reason over evidence scattered across lengthy documents, where answers often depend on event...",
+    "published": "2026-06-09",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context, retrieval\n- 检索关键词命中：working memory\n- 来源分类信息：cs.CL",
+    "slug": "trace-only-what-you-need-structure-aware-on-demand-hypergraph-memory-for-long-do",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2606.10921v2",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "retrieval"
+    ],
+    "title": "Trace Only What You Need: Structure-Aware On-Demand Hypergraph Memory for Long-Document Question Answering",
+    "updated": "2026-08-06",
+    "url": "http://arxiv.org/abs/2606.10921v2",
+    "venue": ""
+  },
+  {
+    "abstract": "Embodied visuomotor models, including Diffusion Policy (DP) and Vision-Language-Action (VLA) models, have demonstrated promising performance on robotic manipulation benchmarks. However, their potential remains fundamentally constrained by the scarcity of large-scale embodied trajectory datasets, leading to insufficient compositional generalization in out-of-distribution (OOD) scenarios with limited capability to capture reusable skill structures. To address this limitation, we propose Skill-Based Memory (SkillMemo) framework that implicitly decomposes long-horizon demonstrations into latent atomic skills and integrates skill-level features into a dynamic episodic memory bank for solving compositional tasks. Specifically, we first introduce an expert-guided trajectory segmentation module built upon a Mixture-of-Experts (MoE) architecture, which implicitly partitions trajectories into distinct skill primitives represented by learned gating coefficients. We further design a skill-level episodic memory architecture that stores compact skill representations as retrievable key-value pairs. During inference, the memory bank retrieves the most relevant skill primitives which are subsequently fused with the model's current gating distribution, providing a robust contextual prior to refine action predictions. Extensive experiments on the simulation benchmark and real-world manipulation tasks demonstrate that SkillMemo consistently enhances both DP and VLA backbones, achieving state-of-the-art performance and outperforming $π_{0.5}$, while exhibiting strong compositional generalization to unseen task configurations.",
+    "authors": [
+      "Changyuan Wang",
+      "Chubin Zhang",
+      "Zhenyu Wu",
+      "Runhao Li",
+      "Angyuan Ma",
+      "Ke Chao",
+      "Yinan Liang",
+      "Xiuwei Xu",
+      "Ziwei Wang",
+      "Yansong Tang",
+      "Jiwen Lu"
+    ],
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "id": "2608.05970v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `benchmark, context, episodic` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Embodied visuomotor models, including Diffusion Policy (DP) and Vision-Language-Action (VLA) models, have demonstrated promising performance on robotic manipulation benchmarks.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, their potential remains fundamentally constrained by the scarcity of large-scale embodied trajectory datasets, leading to insufficient compositional generalization in out-of-distribution (OOD) scenarios with...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "episodic memory"
+    ],
+    "one_liner": "Embodied visuomotor models, including Diffusion Policy (DP) and Vision-Language-Action (VLA) models, have demonstrated promising performance on robotic manipulation benchmarks.",
+    "published": "2026-08-06",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：benchmark, context, episodic\n- 检索关键词命中：episodic memory\n- 来源分类信息：cs.RO, cs.AI",
+    "slug": "skillmemo-expert-guided-skill-memory-framework-for-compositional-embodied-manipu",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.05970v1",
+    "tags": [
+      "benchmark",
+      "context",
+      "episodic"
+    ],
+    "title": "SkillMemo: Expert-guided Skill Memory Framework for Compositional Embodied Manipulation",
+    "updated": "2026-08-06",
+    "url": "http://arxiv.org/abs/2608.05970v1",
+    "venue": ""
+  },
+  {
     "abstract": "Long-term memory is essential for LLM agents that interact across sessions, yet current memory benchmarks primarily evaluate single-hop recall, leaving multi-hop association largely unmeasured. We make three contributions. First, we introduce MemHop, a multi-hop memory benchmark of 1,000 questions at hop depths 1-5 across 10 social-network scenarios, with per-hop evidence annotations. Second, we present Profile-Graph Memory (ProGraph), a two-layer memory architecture combining (i) profile expansion -- substring-matched traversal of entity names that naturally appear in LLM-written profile narratives, a minimal alternative to explicit knowledge-graph construction -- and (ii) compression residuals -- exact dates, quantities, and named items co-extracted with each profile update at zero extra API cost. Third, a full-grid ablation shows cross-benchmark mechanism specialization: profile expansion drives multi-hop reasoning (-22.6pp on MemHop when removed) while compression residuals drive precision recall (-8.6pp on LoCoMo when not co-extracted), with cross-effects under 3pp within a single architecture. ProGraph averages 80.1% on MemHop (matching the FullContext reference) and 78.4% on LoCoMo (exceeding FullContext by 11.3pp), outperforming Mem0, A-Mem, HippoRAG, and RAG on both. We release MemHop, ProGraph, and baseline implementations.",
     "authors": [],
     "categories": [
@@ -101,6 +175,68 @@
     "updated": "2026-08-06",
     "url": "https://openreview.net/forum?id=6qhcTpOpae",
     "venue": "ACL (1) 2026"
+  },
+  {
+    "abstract": "LLM agents that repair failures often discard successful corrections, forcing later episodes to rediscover similar solutions. We study whether finalized repair outcomes can improve subsequent Text-to-SQL episodes without parameter updates. We introduce MERIT, a training-free agent that maintains an online dual-polarity memory of oracle-verified corrections and observed unsuccessful directions. Under oracle-assisted benchmark feedback, only memories from earlier finalized episodes are eligible for retrieval. A deterministic classifier assigns a coarse failure type, which conditions a hybrid lexical-dense retriever before the frozen model generates each revision. Using Qwen2.5-7B-Instruct with identical initial predictions and repair budgets, MERIT improves execution accuracy over stateless iterative repair from \\(66.34\\%\\) to \\(69.79\\%\\) on Spider and from \\(47.35\\%\\) to \\(48.44\\%\\) on BIRD. Paired analyses provide clear evidence for the Spider gain but weaker evidence on BIRD. MERIT is not reliably separated from untyped dynamic retrieval on either benchmark, while Reflexion-style memory reaches \\(51.24\\%\\) on BIRD at substantially higher inference cost. Ablations show that negative memory contributes modestly, the value of type conditioning and lexical--dense ranking is dataset dependent, and schema-local experience provides the most consistent benefit. These results clarify when causal cross-query memory improves repair and when broader memory representations remain preferable.",
+    "authors": [
+      "Khang Nhat Hoang Vo",
+      "Tam Minh Chu",
+      "Anh Trac Duc Dinh",
+      "Thuyen Vinh Ha Bui",
+      "Tho Quan"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "id": "2608.05906v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, episodic, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：LLM agents that repair failures often discard successful corrections, forcing later episodes to rediscover similar solutions.\n\n进一步看，论文的核心做法或实验重点可以概括为：We study whether finalized repair outcomes can improve subsequent Text-to-SQL episodes without parameter updates.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "episodic memory"
+    ],
+    "one_liner": "LLM agents that repair failures often discard successful corrections, forcing later episodes to rediscover similar solutions.",
+    "published": "2026-08-06",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, episodic, retrieval\n- 检索关键词命中：episodic memory\n- 来源分类信息：cs.CL",
+    "slug": "causal-episodic-memory-for-feedback-driven-agent-repair",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.05906v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "episodic",
+      "retrieval"
+    ],
+    "title": "Causal Episodic Memory for Feedback-Driven Agent Repair",
+    "updated": "2026-08-06",
+    "url": "http://arxiv.org/abs/2608.05906v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Computer-use agents pay full frontier inference to re-derive routines their user has already performed, because an agent's memory today records what the user said, not what the user did. We compile passively captured screen activity into agent memory with a deterministic, zero-model pipeline: it segments a local capture stream into typed activity frames, bounded episodes carrying application, site, timing, input volume, and evidence pointers back to the raw rows, with no model in the loop, so the output is byte-identical, cacheable, and mechanically auditable. On one professional's single-user corpus of 128,756 frames over 51 active days, the compiler reduces a day of raw capture to a prompt-ready context block 86x smaller in 68 ms, and an agent reading that block answers questions about the day at 98.4% accuracy (Wilson 95% CI 91.7-99.7%) against an independent oracle, versus 66-80% for an LLM summary of the same capture, a mid-tier model reading the block matching a frontier one. The same compiler doubles as a demand-side cost instrument. Read off passive, pre-delegation human activity rather than agent rollouts, it supplies two parameters that agent-cost models assume but, to our knowledge, have not measured: the Routine Overhead Ratio R and the routine recurrence h. We report first values of R, a modeled upper bound, at 60-343x, and a delegable recurrence of 9.0% in-sample and 7.7% out-of-sample, for a realistic all-fleet token ceiling near 8%; a compiled routine replays deterministically with the model out of the loop, demonstrated live at zero model tokens on a guard-matched hit. Schema, compiler, and evaluation harness are open.",
+    "authors": [
+      "Nossa Iyamu"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2608.05784v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, context` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Computer-use agents pay full frontier inference to re-derive routines their user has already performed, because an agent's memory today records what the user said, not what the user did.\n\n进一步看，论文的核心做法或实验重点可以概括为：We compile passively captured screen activity into agent memory with a deterministic, zero-model pipeline: it segments a local capture stream into typed activity frames, bounded episodes carrying application, site,...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "Computer-use agents pay full frontier inference to re-derive routines their user has already performed, because an agent's memory today records what the user said, not what the...",
+    "published": "2026-08-06",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, context\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.AI",
+    "slug": "activity-frames-deterministic-screen-activity-compilation-for-agent-memory-and-r",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.05784v1",
+    "tags": [
+      "agent",
+      "context"
+    ],
+    "title": "Activity Frames: Deterministic Screen-Activity Compilation for Agent Memory and Replay",
+    "updated": "2026-08-06",
+    "url": "http://arxiv.org/abs/2608.05784v1",
+    "venue": ""
   },
   {
     "abstract": "Memory-augmented VLM agents act on persistent spatial knowledge, yet that knowledge silently goes stale as the environment changes. We ask what happens when an agent must reconcile a confident memory claim with a contradicting observation, and whether current models can catch the conflict before it becomes a safety-relevant mistake. Using a dynamic FrozenLake testbed, we pair a staleness-detection task with a downstream navigation task across three closed-source models and three open-weight VLMs under both text and image inputs (1,800 detection runs, and 12,000 text-mode navigation episodes over four LLM navigators at a shared 50-seed scale). Three findings emerge. First, text solvability does not imply visual grounding: models that flag stale entries reliably from text nonetheless span vision F1 from 0.887 down to 0.067 on the identical grids, and the weakest keeps making fluent, confident decisions that ignore the image. Second, consuming stale memory without an audit is a safety liability: in our primary GPT-4o setting, an agent that trusts raw memory dies more than twice as often as the same agent given no memory at all. Third, auditing helps but does not close the gap: a transparent read-time filter removes much of the safety cost in text mode, yet even oracle stale labels bring no further significant gain on the current grid size, and when visual auditing is unreliable, filtering yields no consistent benefit. Together these results frame spatial-memory staleness as a safety failure mode and isolate reliable visual grounding and action selection under memory--observation conflict as the central open challenges for memory-augmented agents.",
@@ -469,6 +605,38 @@
     "title": "Attention, Anomalies! Handling Attention Layers in Unsupervised Federated Outlier Detection",
     "updated": "2026-08-05",
     "url": "http://arxiv.org/abs/2608.04753v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Changes in spontaneous speech provide an early signal of cognitive dysfunction in Alzheimer's disease (AD) that large language models (LLMs) can detect. However, detection alone cannot establish whether the underlying model representations contribute functionally to behavior. We introduce an activation-guided intervention framework using Qwen3-8B. The framework identifies feed-forward neurons with higher activation rates for AD than control transcripts and modulates their output contributions during generation by scaling the corresponding down-projection weights. This yielded nine edited variants differing in intervention direction, magnitude, and scope. The original and edited models completed the same 12-turn neuropsychological battery, assessed through blinded human ratings and computational linguistic measures. Amplifying AD-associated neurons produced graded impairments in story recall, verbal fluency, working memory, procedural discourse, scene construction, and coreference resolution. Attenuation largely preserved performance and selectively improved several outcomes. Amplification also reduced lexical surprisal, idea density, syntactic complexity, and discourse quantity, broadly paralleling changes reported in human AD speech. These findings show that neurons identified solely from clinical language differences can influence behavior across multiple cognitive domains, providing proof of concept for an AD-related computational phenotype and a controlled framework for experimentally examining links between language and broader cognitive dysfunction.",
+    "authors": [
+      "Rui He",
+      "Ercong Nie",
+      "Hong Jiang",
+      "Iris E. Sommer",
+      "Philipp Homan",
+      "Wolfram Hinzen"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "id": "2608.03067v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `working memory` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Changes in spontaneous speech provide an early signal of cognitive dysfunction in Alzheimer's disease (AD) that large language models (LLMs) can detect.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, detection alone cannot establish whether the underlying model representations contribute functionally to behavior.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "working memory"
+    ],
+    "one_liner": "Changes in spontaneous speech provide an early signal of cognitive dysfunction in Alzheimer's disease (AD) that large language models (LLMs) can detect.",
+    "published": "2026-08-04",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：working memory\n- 检索关键词命中：working memory\n- 来源分类信息：cs.CL",
+    "slug": "activation-guided-neuron-intervention-to-induce-alzheimer-s-related-computationa",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.03067v2",
+    "tags": [
+      "working memory"
+    ],
+    "title": "Activation-Guided Neuron Intervention to Induce Alzheimer's-Related Computational Language Phenotypes in a Large Language Model",
+    "updated": "2026-08-05",
+    "url": "http://arxiv.org/abs/2608.03067v2",
     "venue": ""
   },
   {

@@ -39,22 +39,26 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **887**
+- Total tracked papers: **892**
 - Last generated: **2026-08-07**
 
 ## Papers by Source
 
 - ACL Anthology: **5**
-- arXiv: **750**
+- arXiv: **755**
 - OpenReview: **132**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-08-06 | arXiv | [Trace Only What You Need: Structure-Aware On-Demand Hypergraph Memory for Long-Document Question Answering](content/papers/trace-only-what-you-need-structure-aware-on-demand-hypergraph-memory-for-long-do.md) | agent, benchmark, context |
+| 2026-08-06 | arXiv | [SkillMemo: Expert-guided Skill Memory Framework for Compositional Embodied Manipulation](content/papers/skillmemo-expert-guided-skill-memory-framework-for-compositional-embodied-manipu.md) | benchmark, context, episodic |
 | 2026-08-06 | OpenReview | [Profile-Graph Memory for LLM Agents: Implicit Cross-Entity Traversal through Narrative Profiles](content/papers/profile-graph-memory-for-llm-agents-implicit-cross-entity-traversal-through-narr.md) | agent, benchmark, compression |
 | 2026-08-06 | OpenReview | [MemTrace: Probing What Final Accuracy Misses in Long-Term Memory](content/papers/memtrace-probing-what-final-accuracy-misses-in-long-term-memory.md) | agent, benchmark, long-term |
 | 2026-08-06 | OpenReview | [Long Context Modeling with Ranked Memory-Augmented Retrieval](content/papers/long-context-modeling-with-ranked-memory-augmented-retrieval.md) | benchmark, context, long-term |
+| 2026-08-06 | arXiv | [Causal Episodic Memory for Feedback-Driven Agent Repair](content/papers/causal-episodic-memory-for-feedback-driven-agent-repair.md) | agent, benchmark, episodic |
+| 2026-08-06 | arXiv | [Activity Frames: Deterministic Screen-Activity Compilation for Agent Memory and Replay](content/papers/activity-frames-deterministic-screen-activity-compilation-for-agent-memory-and-r.md) | agent, context |
 | 2026-08-05 | arXiv | [When Memory Lies: An Empirical Study of Spatial Memory Staleness in VLM Agents](content/papers/when-memory-lies-an-empirical-study-of-spatial-memory-staleness-in-vlm-agents.md) | agent |
 | 2026-08-05 | arXiv | [The Personalization Mirage: How LLMs Fabricate User Profiles, and Why Self-Monitoring Misleads](content/papers/the-personalization-mirage-how-llms-fabricate-user-profiles-and-why-self-monitor.md) | persistent memory |
 | 2026-08-05 | arXiv | [MemoryCPT: An End-to-End Agent Memory Framework for Cost-Performance Trade-off](content/papers/memorycpt-an-end-to-end-agent-memory-framework-for-cost-performance-trade-off.md) | agent, context, retrieval |
@@ -66,12 +70,8 @@ python3 scripts/update_papers.py --build-only
 | 2026-08-05 | arXiv | [Caching for the Future: Scrub Jay Episodic Memory Principles for Agent Memory Systems](content/papers/caching-for-the-future-scrub-jay-episodic-memory-principles-for-agent-memory-sys.md) | agent, benchmark, context |
 | 2026-08-05 | OpenReview | [Beyond Retrieval: Analytic Memory for Multimodal Agents](content/papers/beyond-retrieval-analytic-memory-for-multimodal-agents.md) | agent, benchmark, context |
 | 2026-08-05 | arXiv | [Attention, Anomalies! Handling Attention Layers in Unsupervised Federated Outlier Detection](content/papers/attention-anomalies-handling-attention-layers-in-unsupervised-federated-outlier-.md) | context |
+| 2026-08-05 | arXiv | [Activation-Guided Neuron Intervention to Induce Alzheimer's-Related Computational Language Phenotypes in a Large Language Model](content/papers/activation-guided-neuron-intervention-to-induce-alzheimer-s-related-computationa.md) | working memory |
 | 2026-08-04 | arXiv | [When Memory Becomes Authority: Benchmarking Authority Collapse at the Memory Consolidation Boundary](content/papers/when-memory-becomes-authority-benchmarking-authority-collapse-at-the-memory-cons.md) | agent, benchmark |
-| 2026-08-04 | arXiv | [Verifiable Memory: Learning Unified Memory Management with Local and Global Verifiers for Large Language Model Agents](content/papers/verifiable-memory-learning-unified-memory-management-with-local-and-global-verif.md) | agent, benchmark, context |
-| 2026-08-04 | arXiv | [TARL: Transaction-Aware Reliable Ledgers for Executable Memory Management in Long-Term Agents](content/papers/tarl-transaction-aware-reliable-ledgers-for-executable-memory-management-in-long.md) | agent, benchmark, long-term |
-| 2026-08-04 | arXiv | [SafeCommit: Certifying When Memory-Grounded Agents May Safely Act](content/papers/safecommit-certifying-when-memory-grounded-agents-may-safely-act.md) | agent |
-| 2026-08-04 | arXiv | [SPEAR: Code-Augmented Agentic Prompt Optimization](content/papers/spear-code-augmented-agentic-prompt-optimization.md) | agent, context, conversation |
-| 2026-08-04 | arXiv | [RoMeRL: Balancing Feedback Coverage and the Memory-Reward Trap in Self-Evolving Agent Memory via Reduced-Order Utility States](content/papers/romerl-balancing-feedback-coverage-and-the-memory-reward-trap-in-self-evolving-a.md) | agent |
 
 ## Suggested GitHub Setup
 
