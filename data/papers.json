@@ -31,6 +31,41 @@
     "venue": "ACL ARR 2026 August Submission"
   },
   {
+    "abstract": "LLM agents increasingly maintain long-term memory of user facts across sessions. Yet such memory is usually evaluated by aggregating accuracy over question rows or episodes. Because this approach scores question rows independently, even when several questions probe the same fact, it cannot show how that fact behaves as conditions change. We introduce MemTrace, a benchmark whose unit of measurement is the knowledge point: a single typed fact about the user, rather than an individual question. MemTrace probes each fact along three controlled dimensions: memory age, defined by how many sessions ago the fact appeared in the history; question type, covering current state, earlier state, and trajectory of change; and evidence condition, covering present, missing, and contradicted-by-false-premise settings. Evaluating 13 memory-system configurations across four paradigms, we find that similar pooled accuracy hides different failures: recovering a fact's current and earlier states does not imply tracking how it changed, and safe abstention does not imply correcting a false premise. The dominant bottleneck is evidence use, not retrieval: when systems fail, the evidence was retrievable 10 times more often than it was missing. These results suggest that improving long-term memory requires better use of reachable evidence, not simply more storage or retrieval.",
+    "authors": [
+      "{'fullname': 'Xianxuan Long', 'username': ''}",
+      "{'fullname': 'Zhikai Chen', 'username': ''}",
+      "{'fullname': 'Shenglai Zeng', 'username': ''}",
+      "{'fullname': 'Shouren Wang', 'username': '~Shouren_Wang1'}",
+      "{'fullname': 'Kai Guo', 'username': ''}",
+      "{'fullname': 'Jiliang Tang', 'username': ''}"
+    ],
+    "categories": [
+      "OpenReview.net/Public_Article/DBLP.org/-/Record"
+    ],
+    "id": "openreview:7dCGRIeQoe",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, long-term, retrieval` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `CoRR 2026` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：LLM agents increasingly maintain long-term memory of user facts across sessions.\n\n进一步看，论文的核心做法或实验重点可以概括为：Yet such memory is usually evaluated by aggregating accuracy over question rows or episodes.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "long-term memory"
+    ],
+    "one_liner": "LLM agents increasingly maintain long-term memory of user facts across sessions.",
+    "published": "2026-12-31",
+    "relevance": "- 来源：OpenReview\n- Venue：CoRR 2026\n- 高亮主题命中：agent, benchmark, long-term, retrieval\n- 检索关键词命中：long-term memory\n- 来源分类信息：OpenReview.net/Public_Article/DBLP.org/-/Record",
+    "slug": "memtrace-probing-what-final-accuracy-misses-in-long-term-memory",
+    "source": "OpenReview",
+    "source_key": "7dCGRIeQoe",
+    "tags": [
+      "agent",
+      "benchmark",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "MemTrace: Probing What Final Accuracy Misses in Long-Term Memory",
+    "updated": "2026-08-06",
+    "url": "https://openreview.net/forum?id=7dCGRIeQoe",
+    "venue": "CoRR 2026"
+  },
+  {
     "abstract": "Effective long-term memory management is crucial for language models handling extended contexts. We introduce the Enhanced Ranked Memory Augmented Retrieval ERMAR framework, which dynamically ranks memory entries based on relevance. Unlike prior models, ERMAR employs a novel relevance scoring mechanism and a pointwise re-ranking model for key-value embeddings, inspired by learning-to-rank techniques in information retrieval. By integrating historical usage patterns and adaptive retrieval, ERMAR achieves state-of-the-art results on standard benchmarks, demonstrating superior scalability and performance in long-context tasks.",
     "authors": [
       "{'fullname': 'Ghadir Alselwi', 'username': '~Ghadir_Alselwi1'}",
