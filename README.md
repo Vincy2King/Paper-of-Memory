@@ -39,19 +39,20 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **892**
-- Last generated: **2026-08-07**
+- Total tracked papers: **893**
+- Last generated: **2026-08-08**
 
 ## Papers by Source
 
 - ACL Anthology: **5**
 - arXiv: **755**
-- OpenReview: **132**
+- OpenReview: **133**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-08-07 | OpenReview | [ReWork: Efficient Iterative Reasoning with Working Memory](content/papers/rework-efficient-iterative-reasoning-with-working-memory.md) | working memory |
 | 2026-08-06 | arXiv | [Trace Only What You Need: Structure-Aware On-Demand Hypergraph Memory for Long-Document Question Answering](content/papers/trace-only-what-you-need-structure-aware-on-demand-hypergraph-memory-for-long-do.md) | agent, benchmark, context |
 | 2026-08-06 | arXiv | [SkillMemo: Expert-guided Skill Memory Framework for Compositional Embodied Manipulation](content/papers/skillmemo-expert-guided-skill-memory-framework-for-compositional-embodied-manipu.md) | benchmark, context, episodic |
 | 2026-08-06 | OpenReview | [Profile-Graph Memory for LLM Agents: Implicit Cross-Entity Traversal through Narrative Profiles](content/papers/profile-graph-memory-for-llm-agents-implicit-cross-entity-traversal-through-narr.md) | agent, benchmark, compression |
@@ -71,7 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-08-05 | OpenReview | [Beyond Retrieval: Analytic Memory for Multimodal Agents](content/papers/beyond-retrieval-analytic-memory-for-multimodal-agents.md) | agent, benchmark, context |
 | 2026-08-05 | arXiv | [Attention, Anomalies! Handling Attention Layers in Unsupervised Federated Outlier Detection](content/papers/attention-anomalies-handling-attention-layers-in-unsupervised-federated-outlier-.md) | context |
 | 2026-08-05 | arXiv | [Activation-Guided Neuron Intervention to Induce Alzheimer's-Related Computational Language Phenotypes in a Large Language Model](content/papers/activation-guided-neuron-intervention-to-induce-alzheimer-s-related-computationa.md) | working memory |
-| 2026-08-04 | arXiv | [When Memory Becomes Authority: Benchmarking Authority Collapse at the Memory Consolidation Boundary](content/papers/when-memory-becomes-authority-benchmarking-authority-collapse-at-the-memory-cons.md) | agent, benchmark |
 
 ## Suggested GitHub Setup
 

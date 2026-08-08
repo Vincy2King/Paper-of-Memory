@@ -1,5 +1,32 @@
 [
   {
+    "abstract": "Hard reasoning problems yield to iteration: a model drafts a candidate solution, then repeatedly revises it. Two group of revision methods coexist in the literature: latent recursion deepens the computation in the latent space, and diffusion revises the predictions over denoising steps. Iteration of either kind places two competing demands on model state, which must maintain the partial solution built so far yet and keep the plasticity to change wherever that solution is wrong. A recurrent network that carries a single hidden state forward asks one representation to serve both demands: persistence protects progress but establishes stale computation, while plasticity enables correction but erases what is already built. To mitigate this, we introduce ReWork with refreshing working memory for latent recurrence. To split the two demands into two states with different lifetimes a token-aligned sensory memory persists across latent recursions and holds the evolving answer, while compact working memory reads that answer, integrates global evidence, writes an update back, and is refreshed for the next recurrence. By nesting the latent recurrence and discrete diffusion, ReWork re-estimates every token across denoising steps, and latent recursion refines the sensory memory within each latent recurrence. Experiments on Maze-Hard show that a 36.8M-parameter ReWork solves 82.0\\% of mazes exactly compared to size-matched token-aligned recurrent model (72.8\\%), while costing under 48\\% of the attention a token-aligned update would use. On Sudoku-Extreme the same separation nearly triples exact solve (60.4\\% against 21.1\\%). Exact accuracy grows along both loops and equal-compute allocations are not interchangeable, so recursion and denoising act as complementary axes of test-time compute, and a learned halting rule removes about half of the recurrent computation at unchanged accuracy. An iterative reasoner, these results suggest, should couple a persistent sensory memory with disposable working memory.",
+    "authors": [
+      "Haoyu He"
+    ],
+    "categories": [
+      "colmweb.org/COLM/2026/Workshop/Efficient_Reasoning/-/Submission"
+    ],
+    "id": "openreview:cNK4KZzHH2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `working memory` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `COLM 2026` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Hard reasoning problems yield to iteration: a model drafts a candidate solution, then repeatedly revises it.\n\n进一步看，论文的核心做法或实验重点可以概括为：Two group of revision methods coexist in the literature: latent recursion deepens the computation in the latent space, and diffusion revises the predictions over denoising steps.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "working memory"
+    ],
+    "one_liner": "Hard reasoning problems yield to iteration: a model drafts a candidate solution, then repeatedly revises it.",
+    "published": "2026-08-07",
+    "relevance": "- 来源：OpenReview\n- Venue：COLM 2026\n- 高亮主题命中：working memory\n- 检索关键词命中：working memory\n- 来源分类信息：colmweb.org/COLM/2026/Workshop/Efficient_Reasoning/-/Submission",
+    "slug": "rework-efficient-iterative-reasoning-with-working-memory",
+    "source": "OpenReview",
+    "source_key": "cNK4KZzHH2",
+    "tags": [
+      "working memory"
+    ],
+    "title": "ReWork: Efficient Iterative Reasoning with Working Memory",
+    "updated": "2026-08-07",
+    "url": "https://openreview.net/forum?id=cNK4KZzHH2",
+    "venue": "COLM 2026"
+  },
+  {
     "abstract": "Long-document question answering (QA) requires large language models (LLMs) to reason over evidence scattered across lengthy documents, where answers often depend on event order, section-level context, and cross-part evidence connections. Although retrieval-augmented generation (RAG) reduces the input context by retrieving relevant evidence, existing structured RAG methods still face three limitations: costly query-agnostic knowledge organization, insufficient use of original document structure, and no reuse of historical reasoning experience. To address these limitations, we propose DocTrace, a multi-agent RAG framework for long-document QA that supports query-triggered knowledge organization, document-structure-aware and experience-guided reasoning. DocTrace preserves document hierarchy with a lightweight document structural tree index, constructs agent-shared hypergraph-structured working memory on demand during reasoning, and stores successful reasoning plans in graph-structured experience memory for future reuse, enabling adaptive exploration across related long-document questions. Experiments on four long-document QA datasets show that DocTrace outperforms the strongest baseline, ComoRAG, with average relative gains of 16.91% in F1 and 15.50% in EM on open-form QA benchmarks, and by up to 20.67% and 23.78%, respectively, on NarrativeQA.",
     "authors": [
       "Xiangjun Zai",
