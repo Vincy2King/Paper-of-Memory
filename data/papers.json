@@ -1,5 +1,35 @@
 [
   {
+    "abstract": "Long-term memory enables large language models (LLMs) to personalize responses using prior user interactions, yet different queries may require different forms of memory evidence. This study investigates whether behavioral signals, including recency, preference, and user updates, improve personalized memory retrieval and whether these signals can be selected adaptively according to the query. We evaluate six retrieval strategies on 589 PersonaMem queries using a common LLM backbone. Preference-Aware retrieval achieves the highest overall accuracy of 47.88%, followed by Query-Adaptive retrieval at 47.54% and Static Semantic retrieval at 47.20%. Task-level results show that the effectiveness of behavioral signals varies substantially across query types. Query-adaptive routing does not significantly outperform the strongest fixed strategies, while oracle selection reaches 50.42%, leaving only 2.55 percentage points of headroom. These results show that behavioral memory is task-dependent and highlight the need to determine when specific behavioral evidence should be used rather than uniformly combining multiple memory signals.",
+    "authors": [
+      "Keonvin Park",
+      "John J. Sohn"
+    ],
+    "categories": [
+      "OpenReview.net/Archive/-/Direct_Upload"
+    ],
+    "id": "openreview:hC72QPtiz3",
+    "intro": "这篇论文被纳入仓库，是因为它和 `long-term, retrieval` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `IEEE IROS 2026 Workshop BEMHAT` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Long-term memory enables large language models (LLMs) to personalize responses using prior user interactions, yet different queries may require different forms of memory evidence.\n\n进一步看，论文的核心做法或实验重点可以概括为：This study investigates whether behavioral signals, including recency, preference, and user updates, improve personalized memory retrieval and whether these signals can be selected adaptively according to the query.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "long-term memory",
+      "memory retrieval"
+    ],
+    "one_liner": "Long-term memory enables large language models (LLMs) to personalize responses using prior user interactions, yet different queries may require different forms of memory evidence.",
+    "published": "2026-08-08",
+    "relevance": "- 来源：OpenReview\n- Venue：IEEE IROS 2026 Workshop BEMHAT\n- 高亮主题命中：long-term, retrieval\n- 检索关键词命中：long-term memory, memory retrieval\n- 来源分类信息：OpenReview.net/Archive/-/Direct_Upload",
+    "slug": "when-should-llms-use-behavioral-memory-task-dependent-retrieval-for-personalized",
+    "source": "OpenReview",
+    "source_key": "hC72QPtiz3",
+    "tags": [
+      "long-term",
+      "retrieval"
+    ],
+    "title": "When Should LLMs Use Behavioral Memory? Task-Dependent Retrieval for Personalized Long-Term Memory",
+    "updated": "2026-08-08",
+    "url": "https://openreview.net/forum?id=hC72QPtiz3",
+    "venue": "IEEE IROS 2026 Workshop BEMHAT"
+  },
+  {
     "abstract": "Hard reasoning problems yield to iteration: a model drafts a candidate solution, then repeatedly revises it. Two group of revision methods coexist in the literature: latent recursion deepens the computation in the latent space, and diffusion revises the predictions over denoising steps. Iteration of either kind places two competing demands on model state, which must maintain the partial solution built so far yet and keep the plasticity to change wherever that solution is wrong. A recurrent network that carries a single hidden state forward asks one representation to serve both demands: persistence protects progress but establishes stale computation, while plasticity enables correction but erases what is already built. To mitigate this, we introduce ReWork with refreshing working memory for latent recurrence. To split the two demands into two states with different lifetimes a token-aligned sensory memory persists across latent recursions and holds the evolving answer, while compact working memory reads that answer, integrates global evidence, writes an update back, and is refreshed for the next recurrence. By nesting the latent recurrence and discrete diffusion, ReWork re-estimates every token across denoising steps, and latent recursion refines the sensory memory within each latent recurrence. Experiments on Maze-Hard show that a 36.8M-parameter ReWork solves 82.0\\% of mazes exactly compared to size-matched token-aligned recurrent model (72.8\\%), while costing under 48\\% of the attention a token-aligned update would use. On Sudoku-Extreme the same separation nearly triples exact solve (60.4\\% against 21.1\\%). Exact accuracy grows along both loops and equal-compute allocations are not interchangeable, so recursion and denoising act as complementary axes of test-time compute, and a learned halting rule removes about half of the recurrent computation at unchanged accuracy. An iterative reasoner, these results suggest, should couple a persistent sensory memory with disposable working memory.",
     "authors": [
       "Haoyu He"
