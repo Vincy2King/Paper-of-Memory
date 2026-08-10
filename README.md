@@ -40,7 +40,7 @@ python3 scripts/update_papers.py --build-only
 ## Repository Snapshot
 
 - Total tracked papers: **894**
-- Last generated: **2026-08-09**
+- Last generated: **2026-08-10**
 
 ## Papers by Source
 
