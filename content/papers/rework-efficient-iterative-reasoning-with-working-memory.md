@@ -4,8 +4,8 @@
 - Venue: COLM 2026
 - Paper ID: openreview:cNK4KZzHH2
 - Published: 2026-08-07
-- Updated: 2026-08-07
-- Authors: Haoyu He
+- Updated: 2026-08-10
+- Authors: Haoyu He, Yong Cao, Andreas Geiger
 - Tags: working memory
 - Categories: colmweb.org/COLM/2026/Workshop/Efficient_Reasoning/-/Submission
 - URL: https://openreview.net/forum?id=cNK4KZzHH2

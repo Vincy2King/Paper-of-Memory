@@ -39,39 +39,39 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **894**
+- Total tracked papers: **908**
 - Last generated: **2026-08-10**
 
 ## Papers by Source
 
 - ACL Anthology: **5**
-- arXiv: **755**
+- arXiv: **769**
 - OpenReview: **134**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
-| 2026-08-08 | OpenReview | [When Should LLMs Use Behavioral Memory? Task-Dependent Retrieval for Personalized Long-Term Memory](content/papers/when-should-llms-use-behavioral-memory-task-dependent-retrieval-for-personalized.md) | long-term, retrieval |
-| 2026-08-07 | OpenReview | [ReWork: Efficient Iterative Reasoning with Working Memory](content/papers/rework-efficient-iterative-reasoning-with-working-memory.md) | working memory |
+| 2026-08-10 | OpenReview | [When Should LLMs Use Behavioral Memory? Task-Dependent Retrieval for Personalized Long-Term Memory](content/papers/when-should-llms-use-behavioral-memory-task-dependent-retrieval-for-personalized.md) | long-term, retrieval |
+| 2026-08-10 | OpenReview | [ReWork: Efficient Iterative Reasoning with Working Memory](content/papers/rework-efficient-iterative-reasoning-with-working-memory.md) | working memory |
+| 2026-08-07 | arXiv | [The Optimizer Is the Agent: Reasoning-Driven Search across Prompts, Programs, and ML Workflows](content/papers/the-optimizer-is-the-agent-reasoning-driven-search-across-prompts-programs-and-m.md) | agent |
+| 2026-08-07 | arXiv | [The Horizon Gap: Planning, Memory, Execution, Training, and Evaluation for Long-Horizon LLM Agents](content/papers/the-horizon-gap-planning-memory-execution-training-and-evaluation-for-long-horiz.md) | agent, context, long-term |
+| 2026-08-07 | arXiv | [TEPA: Revoking Stale Memories for Conflict-Robust Language Agents](content/papers/tepa-revoking-stale-memories-for-conflict-robust-language-agents.md) | agent, context, long-term |
+| 2026-08-07 | arXiv | [MemWM: Memory-Augmented Text-Based World Model](content/papers/memwm-memory-augmented-text-based-world-model.md) | agent, benchmark |
+| 2026-08-07 | arXiv | [MemPrism: Task-Conditioned Relational Memory Views for Long-Horizon Agents](content/papers/memprism-task-conditioned-relational-memory-views-for-long-horizon-agents.md) | agent, benchmark, context |
+| 2026-08-07 | arXiv | [MemOPD: On-Policy Distillation through Memory State Alignment for Long-Horizon Agents](content/papers/memopd-on-policy-distillation-through-memory-state-alignment-for-long-horizon-ag.md) | agent, compression, context |
+| 2026-08-07 | arXiv | [LifelongCrossNav: Persistent 3D Semantic Memory for Cross-Floor Multi-Object Navigation](content/papers/lifelongcrossnav-persistent-3d-semantic-memory-for-cross-floor-multi-object-navi.md) | agent, benchmark, retrieval |
+| 2026-08-07 | arXiv | [Learning Suffers More Than the Policy Class Under Partial Observability: A Closed-Form Analysis](content/papers/learning-suffers-more-than-the-policy-class-under-partial-observability-a-closed.md) | agent |
+| 2026-08-07 | arXiv | [LLMRouter: Unified Infrastructure for Developing, Evaluating, and Deploying LLM Routers](content/papers/llmrouter-unified-infrastructure-for-developing-evaluating-and-deploying-llm-rou.md) | benchmark, context |
+| 2026-08-07 | arXiv | [Explicit, Not Longer: What Makes Epistemic Stance Survive Memory Compression](content/papers/explicit-not-longer-what-makes-epistemic-stance-survive-memory-compression.md) | agent, compression |
+| 2026-08-07 | arXiv | [DocMemo: Dynamic Evidence Discovery via Probabilistic Memory-Guided Retrieval for Multi-Modal Document Understanding](content/papers/docmemo-dynamic-evidence-discovery-via-probabilistic-memory-guided-retrieval-for.md) | benchmark, episodic, retrieval |
+| 2026-08-07 | arXiv | [Coupling Planning with Episodic Memory in LLM Agents for Software Issue Resolution](content/papers/coupling-planning-with-episodic-memory-in-llm-agents-for-software-issue-resoluti.md) | agent, context, episodic |
+| 2026-08-07 | arXiv | [Agent Memory Distillation: Empowering Small LLM Agents with Hierarchical Teacher Memory](content/papers/agent-memory-distillation-empowering-small-llm-agents-with-hierarchical-teacher-.md) | agent, benchmark |
+| 2026-08-07 | arXiv | [Addressable Memory for Video World Models](content/papers/addressable-memory-for-video-world-models.md) | benchmark, compression, episodic |
 | 2026-08-06 | arXiv | [Trace Only What You Need: Structure-Aware On-Demand Hypergraph Memory for Long-Document Question Answering](content/papers/trace-only-what-you-need-structure-aware-on-demand-hypergraph-memory-for-long-do.md) | agent, benchmark, context |
 | 2026-08-06 | arXiv | [SkillMemo: Expert-guided Skill Memory Framework for Compositional Embodied Manipulation](content/papers/skillmemo-expert-guided-skill-memory-framework-for-compositional-embodied-manipu.md) | benchmark, context, episodic |
 | 2026-08-06 | OpenReview | [Profile-Graph Memory for LLM Agents: Implicit Cross-Entity Traversal through Narrative Profiles](content/papers/profile-graph-memory-for-llm-agents-implicit-cross-entity-traversal-through-narr.md) | agent, benchmark, compression |
 | 2026-08-06 | OpenReview | [MemTrace: Probing What Final Accuracy Misses in Long-Term Memory](content/papers/memtrace-probing-what-final-accuracy-misses-in-long-term-memory.md) | agent, benchmark, long-term |
-| 2026-08-06 | OpenReview | [Long Context Modeling with Ranked Memory-Augmented Retrieval](content/papers/long-context-modeling-with-ranked-memory-augmented-retrieval.md) | benchmark, context, long-term |
-| 2026-08-06 | arXiv | [Causal Episodic Memory for Feedback-Driven Agent Repair](content/papers/causal-episodic-memory-for-feedback-driven-agent-repair.md) | agent, benchmark, episodic |
-| 2026-08-06 | arXiv | [Activity Frames: Deterministic Screen-Activity Compilation for Agent Memory and Replay](content/papers/activity-frames-deterministic-screen-activity-compilation-for-agent-memory-and-r.md) | agent, context |
-| 2026-08-05 | arXiv | [When Memory Lies: An Empirical Study of Spatial Memory Staleness in VLM Agents](content/papers/when-memory-lies-an-empirical-study-of-spatial-memory-staleness-in-vlm-agents.md) | agent |
-| 2026-08-05 | arXiv | [The Personalization Mirage: How LLMs Fabricate User Profiles, and Why Self-Monitoring Misleads](content/papers/the-personalization-mirage-how-llms-fabricate-user-profiles-and-why-self-monitor.md) | persistent memory |
-| 2026-08-05 | arXiv | [MemoryCPT: An End-to-End Agent Memory Framework for Cost-Performance Trade-off](content/papers/memorycpt-an-end-to-end-agent-memory-framework-for-cost-performance-trade-off.md) | agent, context, retrieval |
-| 2026-08-05 | arXiv | [MemSIF: From Structured Interactions to Dual-Track Fact Memory for LLM Agents](content/papers/memsif-from-structured-interactions-to-dual-track-fact-memory-for-llm-agents.md) | agent, long-term |
-| 2026-08-05 | arXiv | [Mamba with Hierarchical Memory: Solving Representation Bottleneck in Long Sequence Modeling](content/papers/mamba-with-hierarchical-memory-solving-representation-bottleneck-in-long-sequenc.md) | context, long-term, retrieval |
-| 2026-08-05 | arXiv | [CogniFold: Always-On Proactive Memory via Cognitive Folding](content/papers/cognifold-always-on-proactive-memory-via-cognitive-folding.md) | agent, benchmark, conversation |
-| 2026-08-05 | arXiv | [ChronoMem: Version Control and Semantic Rollback for Large Language Model Agent Memory](content/papers/chronomem-version-control-and-semantic-rollback-for-large-language-model-agent-m.md) | agent, benchmark, conversation |
-| 2026-08-05 | OpenReview | [Caching for the Future: Scrub Jay Episodic Memory Principles for Agent Memory Systems](content/papers/caching-for-the-future-scrub-jay-episodic-memory-principles-for-agent-memory-sys.md) | agent, benchmark, context |
-| 2026-08-05 | arXiv | [Caching for the Future: Scrub Jay Episodic Memory Principles for Agent Memory Systems](content/papers/caching-for-the-future-scrub-jay-episodic-memory-principles-for-agent-memory-sys.md) | agent, benchmark, context |
-| 2026-08-05 | OpenReview | [Beyond Retrieval: Analytic Memory for Multimodal Agents](content/papers/beyond-retrieval-analytic-memory-for-multimodal-agents.md) | agent, benchmark, context |
-| 2026-08-05 | arXiv | [Attention, Anomalies! Handling Attention Layers in Unsupervised Federated Outlier Detection](content/papers/attention-anomalies-handling-attention-layers-in-unsupervised-federated-outlier-.md) | context |
 
 ## Suggested GitHub Setup
 

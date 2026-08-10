@@ -4,7 +4,7 @@
 - Venue: IEEE IROS 2026 Workshop BEMHAT
 - Paper ID: openreview:hC72QPtiz3
 - Published: 2026-08-08
-- Updated: 2026-08-08
+- Updated: 2026-08-10
 - Authors: Keonvin Park, John J. Sohn
 - Tags: long-term, retrieval
 - Categories: OpenReview.net/Archive/-/Direct_Upload

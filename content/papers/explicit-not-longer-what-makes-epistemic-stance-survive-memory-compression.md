@@ -1,0 +1,39 @@
+# Explicit, Not Longer: What Makes Epistemic Stance Survive Memory Compression
+
+- Source: arXiv
+- Venue: N/A
+- Paper ID: 2608.06953v1
+- Published: 2026-08-07
+- Updated: 2026-08-07
+- Authors: Alex Kwon
+- Tags: agent, compression
+- Categories: cs.CL, cs.AI, cs.LG
+- URL: http://arxiv.org/abs/2608.06953v1
+
+## One-Sentence Summary
+Agent memory systems compress what they store, and compression is built to drop qualifiers, so a claim's epistemic standing tends not to survive being written to memory.
+
+## Introduction
+这篇论文被纳入仓库，是因为它和 `agent, compression` 这些主题直接相关。
+
+它当前来自 `arXiv`。
+
+从摘要来看，作者主要关注的是：Agent memory systems compress what they store, and compression is built to drop qualifiers, so a claim's epistemic standing tends not to survive being written to memory.
+
+进一步看，论文的核心做法或实验重点可以概括为：We ask what governs whether it does.
+
+如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。
+
+## Why It Was Included
+- 来源：arXiv
+- 高亮主题命中：agent, compression
+- 检索关键词命中：agent memory, memory compression
+- 来源分类信息：cs.CL, cs.AI, cs.LG
+
+## Abstract Snapshot
+Agent memory systems compress what they store, and compression is built to drop qualifiers, so a claim's epistemic standing tends not to survive being written to memory. We ask what governs whether it does. Matched notes carry the identical claim and identical stance and differ only in where that stance sits; one model compresses both under the same budget among the same filler notes, and a blind reader that never sees the condition scores the result. Across 60 claims in seven registers, writing the stance as a labelled field rather than a bracketed aside raises retention by about 15 points on two models (37 claims to 2 on one, 30 to 8 on the other; permutation p=0.00005), and a pre-registered replication on Haiku, its prediction and decision rule committed before the run, gives +15.6 points, 38 claims to 1. Ablating the format on both models gives the same net effect from different parts: labels help on both (+9.7 and +12.8) and length helps on neither, but wording the stance as a full sentence is the largest component on one model (+12.5) and worth nothing on the other (+0.6). Either model alone would have licensed a confident and different mechanism, so we claim only the intersection: make the stance explicit, not merely longer, and expect the best way of being explicit to depend on the model. A deterministic readout with no model reproduces the two-cell direction and five of seven ablation contrasts, but not length or labels, which we therefore do not claim on one instrument. Fifty hand labels (kappa=0.75) agree on direction; we print their seven disagreements in full. We also report nine withdrawn claims, three of them former title claims of this paper.
+
+## Manual Notes
+<!-- MANUAL_NOTES_START -->
+在这里补充你的人工解读、和其他工作的关系、复现记录，或你认为最值得读的段落。
+<!-- MANUAL_NOTES_END -->
