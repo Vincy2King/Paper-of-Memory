@@ -39,13 +39,13 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **908**
+- Total tracked papers: **920**
 - Last generated: **2026-08-11**
 
 ## Papers by Source
 
 - ACL Anthology: **5**
-- arXiv: **769**
+- arXiv: **781**
 - OpenReview: **134**
 
 ## Latest Papers
@@ -53,7 +53,17 @@ python3 scripts/update_papers.py --build-only
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
 | 2026-08-10 | OpenReview | [When Should LLMs Use Behavioral Memory? Task-Dependent Retrieval for Personalized Long-Term Memory](content/papers/when-should-llms-use-behavioral-memory-task-dependent-retrieval-for-personalized.md) | long-term, retrieval |
+| 2026-08-10 | arXiv | [TEPA: Revoking Stale Memories for Conflict-Robust Language Agents](content/papers/tepa-revoking-stale-memories-for-conflict-robust-language-agents.md) | agent, context, long-term |
+| 2026-08-10 | arXiv | [SHE: Trajectory-driven Safety Harness Evolution for LLM Agents](content/papers/she-trajectory-driven-safety-harness-evolution-for-llm-agents.md) | agent, benchmark, context |
+| 2026-08-10 | arXiv | [RoMeRL: Balancing Feedback Coverage and the Memory-Reward Trap in Self-Evolving Agent Memory via Reduced-Order Utility States](content/papers/romerl-balancing-feedback-coverage-and-the-memory-reward-trap-in-self-evolving-a.md) | agent |
 | 2026-08-10 | OpenReview | [ReWork: Efficient Iterative Reasoning with Working Memory](content/papers/rework-efficient-iterative-reasoning-with-working-memory.md) | working memory |
+| 2026-08-10 | arXiv | [Omni2LoRA: Coherence-Preserving Parametric Memory for Efficient Omni Language Models](content/papers/omni2lora-coherence-preserving-parametric-memory-for-efficient-omni-language-mod.md) | benchmark, compression, context |
+| 2026-08-10 | arXiv | [KVDiagnosis: A Diagnostic Benchmark for KV-Cache Compression in Long-Context Language Models](content/papers/kvdiagnosis-a-diagnostic-benchmark-for-kv-cache-compression-in-long-context-lang.md) | benchmark, compression, context |
+| 2026-08-09 | arXiv | [REVEAL: A Rubric-Guided Agent for Explicit Evidence Sufficiency Verificationin Long-Video Question Answering](content/papers/reveal-a-rubric-guided-agent-for-explicit-evidence-sufficiency-verificationin-lo.md) | agent, context, retrieval |
+| 2026-08-09 | arXiv | [AquiLLM: An Architecture for Supporting Tacit Knowledge Capture in Research Groups](content/papers/aquillm-an-architecture-for-supporting-tacit-knowledge-capture-in-research-group.md) | episodic, retrieval |
+| 2026-08-08 | arXiv | [SuperLocalMemory 4.0: The Governed Memory Operating System for AI Agents](content/papers/superlocalmemory-4-0-the-governed-memory-operating-system-for-ai-agents.md) | agent, benchmark, context |
+| 2026-08-08 | arXiv | [Mitigating Over-Personalization in LLMs via Structured Memory](content/papers/mitigating-over-personalization-in-llms-via-structured-memory.md) | context, conversation, long-term |
+| 2026-08-08 | arXiv | [CommitKV: Lifecycle-Aware KV Cache Compression via Commit Transitions for Multi-Turn Agents](content/papers/commitkv-lifecycle-aware-kv-cache-compression-via-commit-transitions-for-multi-t.md) | agent, benchmark, compression |
 | 2026-08-07 | arXiv | [The Optimizer Is the Agent: Reasoning-Driven Search across Prompts, Programs, and ML Workflows](content/papers/the-optimizer-is-the-agent-reasoning-driven-search-across-prompts-programs-and-m.md) | agent |
 | 2026-08-07 | arXiv | [The Horizon Gap: Planning, Memory, Execution, Training, and Evaluation for Long-Horizon LLM Agents](content/papers/the-horizon-gap-planning-memory-execution-training-and-evaluation-for-long-horiz.md) | agent, context, long-term |
 | 2026-08-07 | arXiv | [TEPA: Revoking Stale Memories for Conflict-Robust Language Agents](content/papers/tepa-revoking-stale-memories-for-conflict-robust-language-agents.md) | agent, context, long-term |
@@ -62,16 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-08-07 | arXiv | [MemOPD: On-Policy Distillation through Memory State Alignment for Long-Horizon Agents](content/papers/memopd-on-policy-distillation-through-memory-state-alignment-for-long-horizon-ag.md) | agent, compression, context |
 | 2026-08-07 | arXiv | [LifelongCrossNav: Persistent 3D Semantic Memory for Cross-Floor Multi-Object Navigation](content/papers/lifelongcrossnav-persistent-3d-semantic-memory-for-cross-floor-multi-object-navi.md) | agent, benchmark, retrieval |
 | 2026-08-07 | arXiv | [Learning Suffers More Than the Policy Class Under Partial Observability: A Closed-Form Analysis](content/papers/learning-suffers-more-than-the-policy-class-under-partial-observability-a-closed.md) | agent |
-| 2026-08-07 | arXiv | [LLMRouter: Unified Infrastructure for Developing, Evaluating, and Deploying LLM Routers](content/papers/llmrouter-unified-infrastructure-for-developing-evaluating-and-deploying-llm-rou.md) | benchmark, context |
-| 2026-08-07 | arXiv | [Explicit, Not Longer: What Makes Epistemic Stance Survive Memory Compression](content/papers/explicit-not-longer-what-makes-epistemic-stance-survive-memory-compression.md) | agent, compression |
-| 2026-08-07 | arXiv | [DocMemo: Dynamic Evidence Discovery via Probabilistic Memory-Guided Retrieval for Multi-Modal Document Understanding](content/papers/docmemo-dynamic-evidence-discovery-via-probabilistic-memory-guided-retrieval-for.md) | benchmark, episodic, retrieval |
-| 2026-08-07 | arXiv | [Coupling Planning with Episodic Memory in LLM Agents for Software Issue Resolution](content/papers/coupling-planning-with-episodic-memory-in-llm-agents-for-software-issue-resoluti.md) | agent, context, episodic |
-| 2026-08-07 | arXiv | [Agent Memory Distillation: Empowering Small LLM Agents with Hierarchical Teacher Memory](content/papers/agent-memory-distillation-empowering-small-llm-agents-with-hierarchical-teacher-.md) | agent, benchmark |
-| 2026-08-07 | arXiv | [Addressable Memory for Video World Models](content/papers/addressable-memory-for-video-world-models.md) | benchmark, compression, episodic |
-| 2026-08-06 | arXiv | [Trace Only What You Need: Structure-Aware On-Demand Hypergraph Memory for Long-Document Question Answering](content/papers/trace-only-what-you-need-structure-aware-on-demand-hypergraph-memory-for-long-do.md) | agent, benchmark, context |
-| 2026-08-06 | arXiv | [SkillMemo: Expert-guided Skill Memory Framework for Compositional Embodied Manipulation](content/papers/skillmemo-expert-guided-skill-memory-framework-for-compositional-embodied-manipu.md) | benchmark, context, episodic |
-| 2026-08-06 | OpenReview | [Profile-Graph Memory for LLM Agents: Implicit Cross-Entity Traversal through Narrative Profiles](content/papers/profile-graph-memory-for-llm-agents-implicit-cross-entity-traversal-through-narr.md) | agent, benchmark, compression |
-| 2026-08-06 | OpenReview | [MemTrace: Probing What Final Accuracy Misses in Long-Term Memory](content/papers/memtrace-probing-what-final-accuracy-misses-in-long-term-memory.md) | agent, benchmark, long-term |
 
 ## Suggested GitHub Setup
 
