@@ -1,10 +1,10 @@
 # ReWork: Efficient Iterative Reasoning with Working Memory
 
 - Source: OpenReview
-- Venue: COLM 2026
+- Venue: COLM 2026 ER Workshop
 - Paper ID: openreview:cNK4KZzHH2
 - Published: 2026-08-07
-- Updated: 2026-08-10
+- Updated: 2026-08-11
 - Authors: Haoyu He, Yong Cao, Andreas Geiger
 - Tags: working memory
 - Categories: colmweb.org/COLM/2026/Workshop/Efficient_Reasoning/-/Submission
@@ -26,7 +26,7 @@ Hard reasoning problems yield to iteration: a model drafts a candidate solution,
 
 ## Why It Was Included
 - 来源：OpenReview
-- Venue：COLM 2026
+- Venue：COLM 2026 ER Workshop
 - 高亮主题命中：working memory
 - 检索关键词命中：working memory
 - 来源分类信息：colmweb.org/COLM/2026/Workshop/Efficient_Reasoning/-/Submission
