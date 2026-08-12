@@ -39,39 +39,39 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **920**
+- Total tracked papers: **929**
 - Last generated: **2026-08-12**
 
 ## Papers by Source
 
 - ACL Anthology: **5**
-- arXiv: **781**
+- arXiv: **790**
 - OpenReview: **134**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-08-11 | arXiv | [TARL: Transaction-Aware Reliable Ledgers for Executable Memory Management in Long-Term Agents](content/papers/tarl-transaction-aware-reliable-ledgers-for-executable-memory-management-in-long.md) | agent, benchmark, long-term |
+| 2026-08-11 | arXiv | [StreamFlow: Dynamic Memory Flows for Streaming Video Understanding](content/papers/streamflow-dynamic-memory-flows-for-streaming-video-understanding.md) | benchmark, long-term, retrieval |
 | 2026-08-11 | OpenReview | [ReWork: Efficient Iterative Reasoning with Working Memory](content/papers/rework-efficient-iterative-reasoning-with-working-memory.md) | working memory |
+| 2026-08-11 | arXiv | [On Understanding, Identifying, and Mitigating Vulnerabilities in Agentic Large Language Models](content/papers/on-understanding-identifying-and-mitigating-vulnerabilities-in-agentic-large-lan.md) | agent, conversation |
+| 2026-08-11 | arXiv | [Living-Harness Is an Interactive-Agent Evolver](content/papers/living-harness-is-an-interactive-agent-evolver.md) | agent, context, episodic |
+| 2026-08-11 | arXiv | [From Faulty Memories to Corrected Actions: Dependency-Guided Rollback Repair for Memory-Augmented Agents](content/papers/from-faulty-memories-to-corrected-actions-dependency-guided-rollback-repair-for-.md) | agent, benchmark |
+| 2026-08-11 | arXiv | [EvoMem: Memory-Augmented Evolution for Code Optimization](content/papers/evomem-memory-augmented-evolution-for-code-optimization.md) | benchmark, context |
+| 2026-08-11 | arXiv | [Efficient Reinforcement Learning for Long-Horizon Tool-Use Agentic Tasks](content/papers/efficient-reinforcement-learning-for-long-horizon-tool-use-agentic-tasks.md) | agent, benchmark, context |
+| 2026-08-11 | arXiv | [Decomposition-Induced Context-Memory Conflict: When Fact-Checking Pipelines Contradict Their Own Source Text](content/papers/decomposition-induced-context-memory-conflict-when-fact-checking-pipelines-contr.md) | context |
 | 2026-08-10 | OpenReview | [When Should LLMs Use Behavioral Memory? Task-Dependent Retrieval for Personalized Long-Term Memory](content/papers/when-should-llms-use-behavioral-memory-task-dependent-retrieval-for-personalized.md) | long-term, retrieval |
 | 2026-08-10 | arXiv | [TEPA: Revoking Stale Memories for Conflict-Robust Language Agents](content/papers/tepa-revoking-stale-memories-for-conflict-robust-language-agents.md) | agent, context, long-term |
 | 2026-08-10 | arXiv | [SHE: Trajectory-driven Safety Harness Evolution for LLM Agents](content/papers/she-trajectory-driven-safety-harness-evolution-for-llm-agents.md) | agent, benchmark, context |
 | 2026-08-10 | arXiv | [RoMeRL: Balancing Feedback Coverage and the Memory-Reward Trap in Self-Evolving Agent Memory via Reduced-Order Utility States](content/papers/romerl-balancing-feedback-coverage-and-the-memory-reward-trap-in-self-evolving-a.md) | agent |
 | 2026-08-10 | arXiv | [Omni2LoRA: Coherence-Preserving Parametric Memory for Efficient Omni Language Models](content/papers/omni2lora-coherence-preserving-parametric-memory-for-efficient-omni-language-mod.md) | benchmark, compression, context |
+| 2026-08-10 | arXiv | [MESA:Task-Adaptive Multi-Structure Evidence Selection for Long-Horizon Agent Memory](content/papers/mesa-task-adaptive-multi-structure-evidence-selection-for-long-horizon-agent-mem.md) | agent, context |
 | 2026-08-10 | arXiv | [KVDiagnosis: A Diagnostic Benchmark for KV-Cache Compression in Long-Context Language Models](content/papers/kvdiagnosis-a-diagnostic-benchmark-for-kv-cache-compression-in-long-context-lang.md) | benchmark, compression, context |
 | 2026-08-09 | arXiv | [REVEAL: A Rubric-Guided Agent for Explicit Evidence Sufficiency Verificationin Long-Video Question Answering](content/papers/reveal-a-rubric-guided-agent-for-explicit-evidence-sufficiency-verificationin-lo.md) | agent, context, retrieval |
 | 2026-08-09 | arXiv | [AquiLLM: An Architecture for Supporting Tacit Knowledge Capture in Research Groups](content/papers/aquillm-an-architecture-for-supporting-tacit-knowledge-capture-in-research-group.md) | episodic, retrieval |
 | 2026-08-08 | arXiv | [SuperLocalMemory 4.0: The Governed Memory Operating System for AI Agents](content/papers/superlocalmemory-4-0-the-governed-memory-operating-system-for-ai-agents.md) | agent, benchmark, context |
 | 2026-08-08 | arXiv | [Mitigating Over-Personalization in LLMs via Structured Memory](content/papers/mitigating-over-personalization-in-llms-via-structured-memory.md) | context, conversation, long-term |
-| 2026-08-08 | arXiv | [CommitKV: Lifecycle-Aware KV Cache Compression via Commit Transitions for Multi-Turn Agents](content/papers/commitkv-lifecycle-aware-kv-cache-compression-via-commit-transitions-for-multi-t.md) | agent, benchmark, compression |
-| 2026-08-07 | arXiv | [The Optimizer Is the Agent: Reasoning-Driven Search across Prompts, Programs, and ML Workflows](content/papers/the-optimizer-is-the-agent-reasoning-driven-search-across-prompts-programs-and-m.md) | agent |
-| 2026-08-07 | arXiv | [The Horizon Gap: Planning, Memory, Execution, Training, and Evaluation for Long-Horizon LLM Agents](content/papers/the-horizon-gap-planning-memory-execution-training-and-evaluation-for-long-horiz.md) | agent, context, long-term |
-| 2026-08-07 | arXiv | [TEPA: Revoking Stale Memories for Conflict-Robust Language Agents](content/papers/tepa-revoking-stale-memories-for-conflict-robust-language-agents.md) | agent, context, long-term |
-| 2026-08-07 | arXiv | [MemWM: Memory-Augmented Text-Based World Model](content/papers/memwm-memory-augmented-text-based-world-model.md) | agent, benchmark |
-| 2026-08-07 | arXiv | [MemPrism: Task-Conditioned Relational Memory Views for Long-Horizon Agents](content/papers/memprism-task-conditioned-relational-memory-views-for-long-horizon-agents.md) | agent, benchmark, context |
-| 2026-08-07 | arXiv | [MemOPD: On-Policy Distillation through Memory State Alignment for Long-Horizon Agents](content/papers/memopd-on-policy-distillation-through-memory-state-alignment-for-long-horizon-ag.md) | agent, compression, context |
-| 2026-08-07 | arXiv | [LifelongCrossNav: Persistent 3D Semantic Memory for Cross-Floor Multi-Object Navigation](content/papers/lifelongcrossnav-persistent-3d-semantic-memory-for-cross-floor-multi-object-navi.md) | agent, benchmark, retrieval |
-| 2026-08-07 | arXiv | [Learning Suffers More Than the Policy Class Under Partial Observability: A Closed-Form Analysis](content/papers/learning-suffers-more-than-the-policy-class-under-partial-observability-a-closed.md) | agent |
 
 ## Suggested GitHub Setup
 
