@@ -1,5 +1,201 @@
 [
   {
+    "abstract": "Despite the wide deployment of memory in large-model agents, there is no unified formal account of what a memory is or when it is optimal. This paper takes a first step toward this account. The central idea is that memory is a basis, knowledge is its span, and answerability is a coverage problem: an agent stores events extracted from a material; a generation operator turns any event set into the knowledge it entails; and a query is answerable exactly when some single item in the span covers it. The optimal memory is then the capacity-constrained maximizer of expected coverage, and its value traces a utility--capacity frontier, the common yardstick on which memory systems can be compared. Next, we consider noise in the memory and discuss coverage versus precision under it: a memory may store false claims, so the write policy must infer the truth of what it stores. Drawing an analogy with biological memory, which is formed continuously through ongoing experience, we formalize the continual agent-memory problem in a sequential MDP that covers multiple levels, where memory is the state, writing is the action, and the utility settled at query time is the delayed reward that drives learning. To make the framework concrete, we instantiate it on Homer's \\emph{Odyssey}, turning the frontier, the compression zone, and the divergence of coverage from precision into concrete numbers. Finally, we position existing systems within the framework, making ``how good is a memory'' measurable and recasting the open problems of constructing and learning agent memory as concrete research questions.",
+    "authors": [
+      "Hongyao Tang"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "id": "2608.11654v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, compression` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Despite the wide deployment of memory in large-model agents, there is no unified formal account of what a memory is or when it is optimal.\n\n进一步看，论文的核心做法或实验重点可以概括为：This paper takes a first step toward this account.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "Despite the wide deployment of memory in large-model agents, there is no unified formal account of what a memory is or when it is optimal.",
+    "published": "2026-08-12",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, compression\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.LG",
+    "slug": "towards-a-formal-definition-of-agent-memory-basis-span-optimality-and-the-sequen",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.11654v1",
+    "tags": [
+      "agent",
+      "compression"
+    ],
+    "title": "Towards a Formal Definition of Agent Memory: Basis, Span, Optimality, and the Sequential Memory Problem",
+    "updated": "2026-08-12",
+    "url": "http://arxiv.org/abs/2608.11654v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Long-running conversational agents increasingly rely on a memory system to avoid resending the whole conversation each turn, yet how much that costs to serve has received little systematic benchmarking. We compare three memory systems (Mem0, Hindsight, and Mastra Observational Memory) against two reference strategies -- a fixed-size rolling window and resubmitting the full transcript -- across two backbones and conversations of up to 400 turns, pairing every cost measurement with answer accuracy on 665 LoCoMo questions. First, a memory system's serving cost cannot be predicted from conversation length and message size alone: a regression that tracks the two reference strategies closely misses the memory systems by 18-69%, their cost driven instead by internal memory behavior. Second, a break-even analysis shows that whether -- and when -- a memory system becomes cheaper to serve than the full transcript is highly sensitive to the system and the backbone, from the first tens of turns for the cheapest to never within 400 turns for the most expensive. Third, no system wins on both axes: accuracy spans 21-54%, and the backbone choice drives cost as much as the memory system does.",
+    "authors": [
+      "Natchanon Pollertlam",
+      "Witchayut Kornsuwannawit"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.IR"
+    ],
+    "id": "2608.11879v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, conversation` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Long-running conversational agents increasingly rely on a memory system to avoid resending the whole conversation each turn, yet how much that costs to serve has received little systematic benchmarking.\n\n进一步看，论文的核心做法或实验重点可以概括为：We compare three memory systems (Mem0, Hindsight, and Mastra Observational Memory) against two reference strategies -- a fixed-size rolling window and resubmitting the full transcript -- across two backbones and...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "Long-running conversational agents increasingly rely on a memory system to avoid resending the whole conversation each turn, yet how much that costs to serve has received little...",
+    "published": "2026-08-12",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, conversation\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.CL, cs.IR",
+    "slug": "total-recall-at-what-cost-benchmarking-the-serving-cost-of-agentic-memory-system",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.11879v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "conversation"
+    ],
+    "title": "Total Recall at What Cost? Benchmarking the Serving Cost of Agentic Memory Systems",
+    "updated": "2026-08-12",
+    "url": "http://arxiv.org/abs/2608.11879v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Gist-based context compression---summarising older conversation history into compact representations---is a common approach in long-horizon language model agents, yet its effect on different types of memory retrieval is poorly understood. We use Salience-Weighted Consolidation (SWC), a biologically-inspired compression framework motivated by sleep-based memory consolidation, as a diagnostic probe to study when gist compression helps and when it hurts. SWC scores conversation history by salience, partitions it into priority tiers, and applies structured gist abstraction to mid-priority content. Evaluating four conditions on all ten LoCoMo conversations---1,935 matched text-only questions in total, 1,501 used in the primary aggregate after excluding Category 5 (adversarial) questions---at temperature 0, we find a consistent task-type interaction: gist compression substantially outperforms truncation on multi-hop reasoning and single-hop factual questions, but temporal questions remain substantially harder under compression, with compressed conditions scoring well below the full-context reference on the conversations where both are evaluated. We trace this failure to a specific mechanism: the gist abstraction prompt preserves relational and event structure while discarding dates and times. A preservation analysis across all ten conversations confirms the mechanism: an approximately 20-fold increase in temporal expression preservation (3.05% to 62.39%) with a one-sentence prompt modification, while named entity and event preservation rates barely change (x1.02 and x1.11), demonstrating that the fix is a precision instrument. The prompt modification recovers +0.314 [0.254, 0.375] judge accuracy on category-2 (temporal) questions in the matched set. Code and results: https://github.com/kyrkewood/sleeping-agent.",
+    "authors": [
+      "Nicholas E. Kyrkewood"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.CL"
+    ],
+    "id": "2608.11775v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, compression, context, conversation` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Gist-based context compression---summarising older conversation history into compact representations---is a common approach in long-horizon language model agents, yet its effect on different types of memory retrieval...\n\n进一步看，论文的核心做法或实验重点可以概括为：We use Salience-Weighted Consolidation (SWC), a biologically-inspired compression framework motivated by sleep-based memory consolidation, as a diagnostic probe to study when gist compression helps and when it hurts.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory retrieval"
+    ],
+    "one_liner": "Gist-based context compression---summarising older conversation history into compact representations---is a common approach in long-horizon language model agents, yet its effect...",
+    "published": "2026-08-12",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, compression, context, conversation, retrieval\n- 检索关键词命中：memory retrieval\n- 来源分类信息：cs.AI, cs.CL",
+    "slug": "the-sleeping-agent-what-gist-based-context-compression-loses-and-why",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.11775v1",
+    "tags": [
+      "agent",
+      "compression",
+      "context",
+      "conversation",
+      "retrieval"
+    ],
+    "title": "The Sleeping Agent: What Gist-Based Context Compression Loses and Why",
+    "updated": "2026-08-12",
+    "url": "http://arxiv.org/abs/2608.11775v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Continual pre-training (CPT) has been widely adopted as a method for domain adaptation in large language models. However, CPT has consistently been accompanied by challenges, such as the difficulty of acquiring large-scale domain-specific datasets and high computational costs. In this study, we propose a novel method called Test-Enhanced Learning for Language Model Enrichment (TELLME) to alleviate these issues. TELLME leverages the TestEnhanced Learning (TEL) principle, whereby the model's training efficiency is improved using quizzes during training. It integrates this principle with CPT, thereby promoting efficient domain-specific knowledge acquisition and long-term memory retention. Experimental results demonstrate that TELLME outperforms existing methods by up to 23.6% in the financial domain and achieves a 9.8% improvement in long-term memory retention.",
+    "authors": [
+      "Minjun Kim",
+      "Inho Won",
+      "Hyeonseok Lim",
+      "MinKyu Kim",
+      "Junghun Yuk",
+      "Wooyoung Go",
+      "Jongyoul Park",
+      "Jungyeul Park",
+      "KyungTae Lim"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "id": "2608.11788v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `long-term` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Continual pre-training (CPT) has been widely adopted as a method for domain adaptation in large language models.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, CPT has consistently been accompanied by challenges, such as the difficulty of acquiring large-scale domain-specific datasets and high computational costs.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "long-term memory"
+    ],
+    "one_liner": "Continual pre-training (CPT) has been widely adopted as a method for domain adaptation in large language models.",
+    "published": "2026-08-12",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：long-term\n- 检索关键词命中：long-term memory\n- 来源分类信息：cs.CL, cs.AI",
+    "slug": "tellme-test-enhanced-learning-for-language-model-enrichment",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.11788v1",
+    "tags": [
+      "long-term"
+    ],
+    "title": "TELLME: Test-Enhanced Learning for Language Model Enrichment",
+    "updated": "2026-08-12",
+    "url": "http://arxiv.org/abs/2608.11788v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Large language model agents increasingly rely on long-horizon reasoning to solve complex tasks involving planning, tool use, and memory. A critical capability in such settings is reflection: assessing trajectory progress, identifying missing evidence and unreliable intermediate states, and deciding whether to continue, revise, or abandon the current branch. Learning effective reflection, however, is challenging because reflection is performed locally within the current branch, whereas its utility can only be determined by its contribution to the final trajectory outcome. This local-global mismatch makes outcome-based reinforcement learning provide only local, sparse and delayed supervision for reflective decisions. To solve these, we propose LoongReflect, a training framework that formulates reflection as a memory-control policy. The agent operates over a reversible trajectory tree using explicit reflect and backtrack actions. Reflection consolidates verified facts, missing evidence, and branch-specific risks into working memory, while backtracking removes an unreliable branch from the active context and preserves a concise corrective lesson. To learn this policy, LoongReflect combines two complementary signals through a look-ahead, extragradient-style coordination mechanism. A fast channel distills globally informed reflective behavior from a privileged teacher, with supervision restricted to reflection and backtracking tokens. A slow channel optimizes complete trajectories using outcome-based GRPO, aligning local control decisions with final task success. Experiments on multi-hop retrieval-augmented generation and mathematical reasoning benchmarks demonstrate consistent improvements over outcome-only reinforcement learning and self-distillation baselines.",
+    "authors": [
+      "Zhixin Zhang",
+      "Xinke Jiang",
+      "Zhibang Yang",
+      "Weixuan Xu",
+      "Guohong Qiu",
+      "Xu Chu",
+      "Junfeng Zhao",
+      "Yasha Wang"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "id": "2608.11967v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Large language model agents increasingly rely on long-horizon reasoning to solve complex tasks involving planning, tool use, and memory.\n\n进一步看，论文的核心做法或实验重点可以概括为：A critical capability in such settings is reflection: assessing trajectory progress, identifying missing evidence and unreliable intermediate states, and deciding whether to continue, revise, or abandon the current...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "working memory"
+    ],
+    "one_liner": "Large language model agents increasingly rely on long-horizon reasoning to solve complex tasks involving planning, tool use, and memory.",
+    "published": "2026-08-12",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context, retrieval\n- 检索关键词命中：working memory\n- 来源分类信息：cs.LG, cs.AI",
+    "slug": "loongreflect-boosting-long-horizon-reflection-in-search-agents-via-global-perspe",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.11967v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "retrieval"
+    ],
+    "title": "LoongReflect: Boosting Long-Horizon Reflection in Search Agents via Global Perspective Distillation",
+    "updated": "2026-08-12",
+    "url": "http://arxiv.org/abs/2608.11967v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Copying short-term memory (STM) into a slower store can preserve state across a context boundary, but persistence alone does not ensure that the retained state influences subsequent memory access. We test this distinction in a Phasor Memory Network (PMNet) using Consolidator, a shared slot-local operator that transforms routed STM before accumulating it into long-term memory (LTM), without replaying the source tokens. After each consolidation, the KV cache and STM are cleared. The retained LTM can still be read and is also fed into the hierarchical router, thereby conditioning which explicit-memory slots subsequent inputs access. We evaluate this mechanism on a two-segment modulo-10 mapping task in which the second segment updates the mapping at the same memory address. Following a second consolidation and reset, a held-out query must recover the updated mapping from LTM. The backbone and memory interface are frozen, leaving only 12.35K Consolidator parameters trainable (0.041\\% of a 29.95M model). Across five paired runs from the same STM-pretraining checkpoint, direct LTM routing raises updated-mapping recall from $44.38\\pm1.94\\%$ to $87.02\\pm1.76\\%$ ($+42.64\\pm1.10$ percentage points), while immediate STM recall remains 89.90\\% in both conditions; both train separate Consolidators and retain the same LTM read paths. Learned consolidation outperforms forced identity accumulation by $21.40\\pm1.91$ percentage points without routing and $68.70\\pm1.76$ with routing. Thus, on this task, consolidated LTM serves as both retrievable content and an access state that shapes subsequent slot selection.",
+    "authors": [
+      "Sungwoo Goo",
+      "Hwi-yeol Yun",
+      "Sangkeun Jung"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "id": "2608.11701v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `context, long-term` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Copying short-term memory (STM) into a slower store can preserve state across a context boundary, but persistence alone does not ensure that the retained state influences subsequent memory access.\n\n进一步看，论文的核心做法或实验重点可以概括为：We test this distinction in a Phasor Memory Network (PMNet) using Consolidator, a shared slot-local operator that transforms routed STM before accumulating it into long-term memory (LTM), without replaying the source...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "long-term memory"
+    ],
+    "one_liner": "Copying short-term memory (STM) into a slower store can preserve state across a context boundary, but persistence alone does not ensure that the retained state influences...",
+    "published": "2026-08-12",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：context, long-term\n- 检索关键词命中：long-term memory\n- 来源分类信息：cs.LG, cs.AI",
+    "slug": "consolidator-learning-persistent-routed-memory-across-context-boundaries",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.11701v1",
+    "tags": [
+      "context",
+      "long-term"
+    ],
+    "title": "Consolidator: Learning Persistent Routed Memory Across Context Boundaries",
+    "updated": "2026-08-12",
+    "url": "http://arxiv.org/abs/2608.11701v1",
+    "venue": ""
+  },
+  {
     "abstract": "Persistent memory helps long-term agents retain knowledge, yet a single update error can repeatedly distort future retrieval and reasoning. Most existing systems reduce memory updating to a binary Write/Hold decision, which cannot distinguish whether new information should be added, ignored, used to revise an outdated belief, rejected as unreliable, or deferred for verification. These choices may share the same binary label while producing fundamentally different memory states. We introduce TARL, a memory state update framework that maps each statement to one of five executable actions. TARL identifies the affected memory, resolves its temporal scope, compares source reliability, and updates accepted, pending, and rejected ledgers. It is further trained by comparing the memory states produced by alternative update operations, encouraging the model to select the operation that leads to the correct result. We also introduce TARL-Mem, a benchmark with fine-grained action labels and next-state targets. Across in-domain, cross-source, temporal, counterfactual, and sequential evaluations, TARL improves action prediction and state recovery, reduces memory pollution, preserves conflicting evidence, and limits cumulative corruption.",
     "authors": [
       "Han Xiao",

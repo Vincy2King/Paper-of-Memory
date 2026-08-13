@@ -39,19 +39,25 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **929**
+- Total tracked papers: **935**
 - Last generated: **2026-08-13**
 
 ## Papers by Source
 
 - ACL Anthology: **5**
-- arXiv: **790**
+- arXiv: **796**
 - OpenReview: **134**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-08-12 | arXiv | [Towards a Formal Definition of Agent Memory: Basis, Span, Optimality, and the Sequential Memory Problem](content/papers/towards-a-formal-definition-of-agent-memory-basis-span-optimality-and-the-sequen.md) | agent, compression |
+| 2026-08-12 | arXiv | [Total Recall at What Cost? Benchmarking the Serving Cost of Agentic Memory Systems](content/papers/total-recall-at-what-cost-benchmarking-the-serving-cost-of-agentic-memory-system.md) | agent, benchmark, conversation |
+| 2026-08-12 | arXiv | [The Sleeping Agent: What Gist-Based Context Compression Loses and Why](content/papers/the-sleeping-agent-what-gist-based-context-compression-loses-and-why.md) | agent, compression, context |
+| 2026-08-12 | arXiv | [TELLME: Test-Enhanced Learning for Language Model Enrichment](content/papers/tellme-test-enhanced-learning-for-language-model-enrichment.md) | long-term |
+| 2026-08-12 | arXiv | [LoongReflect: Boosting Long-Horizon Reflection in Search Agents via Global Perspective Distillation](content/papers/loongreflect-boosting-long-horizon-reflection-in-search-agents-via-global-perspe.md) | agent, benchmark, context |
+| 2026-08-12 | arXiv | [Consolidator: Learning Persistent Routed Memory Across Context Boundaries](content/papers/consolidator-learning-persistent-routed-memory-across-context-boundaries.md) | context, long-term |
 | 2026-08-11 | arXiv | [TARL: Transaction-Aware Reliable Ledgers for Executable Memory Management in Long-Term Agents](content/papers/tarl-transaction-aware-reliable-ledgers-for-executable-memory-management-in-long.md) | agent, benchmark, long-term |
 | 2026-08-11 | arXiv | [StreamFlow: Dynamic Memory Flows for Streaming Video Understanding](content/papers/streamflow-dynamic-memory-flows-for-streaming-video-understanding.md) | benchmark, long-term, retrieval |
 | 2026-08-11 | OpenReview | [ReWork: Efficient Iterative Reasoning with Working Memory](content/papers/rework-efficient-iterative-reasoning-with-working-memory.md) | working memory |
@@ -66,12 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-08-10 | arXiv | [SHE: Trajectory-driven Safety Harness Evolution for LLM Agents](content/papers/she-trajectory-driven-safety-harness-evolution-for-llm-agents.md) | agent, benchmark, context |
 | 2026-08-10 | arXiv | [RoMeRL: Balancing Feedback Coverage and the Memory-Reward Trap in Self-Evolving Agent Memory via Reduced-Order Utility States](content/papers/romerl-balancing-feedback-coverage-and-the-memory-reward-trap-in-self-evolving-a.md) | agent |
 | 2026-08-10 | arXiv | [Omni2LoRA: Coherence-Preserving Parametric Memory for Efficient Omni Language Models](content/papers/omni2lora-coherence-preserving-parametric-memory-for-efficient-omni-language-mod.md) | benchmark, compression, context |
-| 2026-08-10 | arXiv | [MESA:Task-Adaptive Multi-Structure Evidence Selection for Long-Horizon Agent Memory](content/papers/mesa-task-adaptive-multi-structure-evidence-selection-for-long-horizon-agent-mem.md) | agent, context |
-| 2026-08-10 | arXiv | [KVDiagnosis: A Diagnostic Benchmark for KV-Cache Compression in Long-Context Language Models](content/papers/kvdiagnosis-a-diagnostic-benchmark-for-kv-cache-compression-in-long-context-lang.md) | benchmark, compression, context |
-| 2026-08-09 | arXiv | [REVEAL: A Rubric-Guided Agent for Explicit Evidence Sufficiency Verificationin Long-Video Question Answering](content/papers/reveal-a-rubric-guided-agent-for-explicit-evidence-sufficiency-verificationin-lo.md) | agent, context, retrieval |
-| 2026-08-09 | arXiv | [AquiLLM: An Architecture for Supporting Tacit Knowledge Capture in Research Groups](content/papers/aquillm-an-architecture-for-supporting-tacit-knowledge-capture-in-research-group.md) | episodic, retrieval |
-| 2026-08-08 | arXiv | [SuperLocalMemory 4.0: The Governed Memory Operating System for AI Agents](content/papers/superlocalmemory-4-0-the-governed-memory-operating-system-for-ai-agents.md) | agent, benchmark, context |
-| 2026-08-08 | arXiv | [Mitigating Over-Personalization in LLMs via Structured Memory](content/papers/mitigating-over-personalization-in-llms-via-structured-memory.md) | context, conversation, long-term |
 
 ## Suggested GitHub Setup
 
