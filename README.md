@@ -39,19 +39,21 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **949**
+- Total tracked papers: **952**
 - Last generated: **2026-08-17**
 
 ## Papers by Source
 
 - ACL Anthology: **5**
-- arXiv: **810**
+- arXiv: **813**
 - OpenReview: **134**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-08-14 | arXiv | [MemoryLake on MemoryArena: A Matched Study of Agent Memory Backends](content/papers/memorylake-on-memoryarena-a-matched-study-of-agent-memory-backends.md) | agent, benchmark, context |
+| 2026-08-14 | arXiv | [Engineering Reliable Coding Agents: Evaluating and Operating the System Around the Model](content/papers/engineering-reliable-coding-agents-evaluating-and-operating-the-system-around-th.md) | agent, benchmark, retrieval |
 | 2026-08-13 | arXiv | [When Your Agent Opens the Chat App: Agent-Controlled Search over Raw Chat Logs Rivals Structured Memory](content/papers/when-your-agent-opens-the-chat-app-agent-controlled-search-over-raw-chat-logs-ri.md) | agent, context, conversation |
 | 2026-08-13 | arXiv | [StateBridge: Training-free Hidden-state Alignment for Latent Communication in LLM Multi-Agent Systems](content/papers/statebridge-training-free-hidden-state-alignment-for-latent-communication-in-llm.md) | agent |
 | 2026-08-13 | arXiv | [Spatial Memory Agent: Experience-Grounded Procedure Memory for Spatial Intelligence](content/papers/spatial-memory-agent-experience-grounded-procedure-memory-for-spatial-intelligen.md) | agent, benchmark, retrieval |
@@ -70,8 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-08-12 | arXiv | [Governed Persistent Memory: Source-Bound State Semantics and Fail-Closed Release for Long-Horizon Agents](content/papers/governed-persistent-memory-source-bound-state-semantics-and-fail-closed-release-.md) | agent, long-term, retrieval |
 | 2026-08-12 | arXiv | [EgoCITE: Context-Augmented Indexing and Time-Aware Retrieval for Long-Horizon Egocentric Memory](content/papers/egocite-context-augmented-indexing-and-time-aware-retrieval-for-long-horizon-ego.md) | agent, context, conversation |
 | 2026-08-12 | arXiv | [Consolidator: Learning Persistent Routed Memory Across Context Boundaries](content/papers/consolidator-learning-persistent-routed-memory-across-context-boundaries.md) | context, long-term |
-| 2026-08-12 | arXiv | [$\varepsilon$-MemEvo: Adaptive Cross-Task Memory Transfer for LLM Program Evolution](content/papers/varepsilon-memevo-adaptive-cross-task-memory-transfer-for-llm-program-evolution.md) | benchmark |
-| 2026-08-11 | arXiv | [TARL: Transaction-Aware Reliable Ledgers for Executable Memory Management in Long-Term Agents](content/papers/tarl-transaction-aware-reliable-ledgers-for-executable-memory-management-in-long.md) | agent, benchmark, long-term |
 
 ## Suggested GitHub Setup
 
