@@ -39,19 +39,30 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **952**
+- Total tracked papers: **963**
 - Last generated: **2026-08-18**
 
 ## Papers by Source
 
 - ACL Anthology: **5**
-- arXiv: **813**
+- arXiv: **824**
 - OpenReview: **134**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-08-17 | arXiv | [MobileMem: Learning from a Year of Mobile Experiences](content/papers/mobilemem-learning-from-a-year-of-mobile-experiences.md) | agent, benchmark, long-term |
+| 2026-08-17 | arXiv | [MELD: A Protocol for Merging Knowledge Across Distributed Agentic Memories](content/papers/meld-a-protocol-for-merging-knowledge-across-distributed-agentic-memories.md) | agent, context |
+| 2026-08-17 | arXiv | [FTA-Mem: Fact-Time-Affect Anchored Memory for Low-Density Long-Term Dialogue](content/papers/fta-mem-fact-time-affect-anchored-memory-for-low-density-long-term-dialogue.md) | agent, benchmark, context |
+| 2026-08-17 | arXiv | [D2-ScaleAgent: Dual-Dimensional Scaling for Long Document Understanding](content/papers/d2-scaleagent-dual-dimensional-scaling-for-long-document-understanding.md) | agent, benchmark, retrieval |
+| 2026-08-17 | arXiv | [Coverage Is Not Redundancy: Maintenance Cost and Exposure of Query-Aware Admission Indexes in Vector Databases Under Workload Drift](content/papers/coverage-is-not-redundancy-maintenance-cost-and-exposure-of-query-aware-admissio.md) | retrieval |
+| 2026-08-16 | arXiv | [When Your Agent Opens the Chat App: Agent-Controlled Search over Raw Chat Logs Rivals Structured Memory](content/papers/when-your-agent-opens-the-chat-app-agent-controlled-search-over-raw-chat-logs-ri.md) | agent, context, conversation |
+| 2026-08-16 | arXiv | [Deploying Frontier Agentic Technology in MOOSEnger, a Multiphysics-Capable AI Assistant](content/papers/deploying-frontier-agentic-technology-in-moosenger-a-multiphysics-capable-ai-ass.md) | agent, context |
+| 2026-08-16 | arXiv | [Beat the Counter First: A Baseline for Temporal-Graph Anomaly Detectors](content/papers/beat-the-counter-first-a-baseline-for-temporal-graph-anomaly-detectors.md) | memory-augmented |
+| 2026-08-15 | arXiv | [Valhalla: A Layered Knowledge-State and Service-Governance Framework for Long-Term Scientific Knowledge Work](content/papers/valhalla-a-layered-knowledge-state-and-service-governance-framework-for-long-ter.md) | agent, long-term, retrieval |
+| 2026-08-15 | arXiv | [Harness the Memory: A Holistic Evaluation of Memory Substrates in Memory Agents](content/papers/harness-the-memory-a-holistic-evaluation-of-memory-substrates-in-memory-agents.md) | agent, benchmark, context |
+| 2026-08-15 | arXiv | [EgoCITE: Context-Augmented Indexing and Time-Aware Retrieval for Long-Horizon Egocentric Memory](content/papers/egocite-context-augmented-indexing-and-time-aware-retrieval-for-long-horizon-ego.md) | agent, context, conversation |
 | 2026-08-14 | arXiv | [MemoryLake on MemoryArena: A Matched Study of Agent Memory Backends](content/papers/memorylake-on-memoryarena-a-matched-study-of-agent-memory-backends.md) | agent, benchmark, context |
 | 2026-08-14 | arXiv | [Engineering Reliable Coding Agents: Evaluating and Operating the System Around the Model](content/papers/engineering-reliable-coding-agents-evaluating-and-operating-the-system-around-th.md) | agent, benchmark, retrieval |
 | 2026-08-13 | arXiv | [When Your Agent Opens the Chat App: Agent-Controlled Search over Raw Chat Logs Rivals Structured Memory](content/papers/when-your-agent-opens-the-chat-app-agent-controlled-search-over-raw-chat-logs-ri.md) | agent, context, conversation |
@@ -61,17 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-08-13 | arXiv | [LycheeMemory V2: Efficient Long-Term Memory for LLM Agents via Semantic Segment-Level Consolidation](content/papers/lycheememory-v2-efficient-long-term-memory-for-llm-agents-via-semantic-segment-l.md) | agent, context, conversation |
 | 2026-08-13 | arXiv | [Intern-S2-Preview: Scientific Agentic Foundation Model](content/papers/intern-s2-preview-scientific-agentic-foundation-model.md) | agent, benchmark |
 | 2026-08-13 | arXiv | [Enhancing Virtual Agents through SLMs and Edge-Computing: An Exploratory Evaluation of Think and Memory Processes](content/papers/enhancing-virtual-agents-through-slms-and-edge-computing-an-exploratory-evaluati.md) | agent, context, conversation |
-| 2026-08-13 | arXiv | [ERSkill: Evolving for Skill-Guided Adaptive Memory Retrieval](content/papers/erskill-evolving-for-skill-guided-adaptive-memory-retrieval.md) | agent, benchmark, long-term |
-| 2026-08-13 | arXiv | [AQuA: Recursively Self-Improving Quantitative Trading Research Agents](content/papers/aqua-recursively-self-improving-quantitative-trading-research-agents.md) | agent |
-| 2026-08-12 | arXiv | [Towards a Formal Definition of Agent Memory: Basis, Span, Optimality, and the Sequential Memory Problem](content/papers/towards-a-formal-definition-of-agent-memory-basis-span-optimality-and-the-sequen.md) | agent, compression |
-| 2026-08-12 | arXiv | [Total Recall at What Cost? Benchmarking the Serving Cost of Agentic Memory Systems](content/papers/total-recall-at-what-cost-benchmarking-the-serving-cost-of-agentic-memory-system.md) | agent, benchmark, conversation |
-| 2026-08-12 | arXiv | [The Sleeping Agent: What Gist-Based Context Compression Loses and Why](content/papers/the-sleeping-agent-what-gist-based-context-compression-loses-and-why.md) | agent, compression, context |
-| 2026-08-12 | arXiv | [TELLME: Test-Enhanced Learning for Language Model Enrichment](content/papers/tellme-test-enhanced-learning-for-language-model-enrichment.md) | long-term |
-| 2026-08-12 | arXiv | [LoongReflect: Boosting Long-Horizon Reflection in Search Agents via Global Perspective Distillation](content/papers/loongreflect-boosting-long-horizon-reflection-in-search-agents-via-global-perspe.md) | agent, benchmark, context |
-| 2026-08-12 | arXiv | [LLMs Are Not Good Strategists, Yet Memory-Enhanced Agency Boosts Reasoning](content/papers/llms-are-not-good-strategists-yet-memory-enhanced-agency-boosts-reasoning.md) | agent, context, long-term |
-| 2026-08-12 | arXiv | [Governed Persistent Memory: Source-Bound State Semantics and Fail-Closed Release for Long-Horizon Agents](content/papers/governed-persistent-memory-source-bound-state-semantics-and-fail-closed-release-.md) | agent, long-term, retrieval |
-| 2026-08-12 | arXiv | [EgoCITE: Context-Augmented Indexing and Time-Aware Retrieval for Long-Horizon Egocentric Memory](content/papers/egocite-context-augmented-indexing-and-time-aware-retrieval-for-long-horizon-ego.md) | agent, context, conversation |
-| 2026-08-12 | arXiv | [Consolidator: Learning Persistent Routed Memory Across Context Boundaries](content/papers/consolidator-learning-persistent-routed-memory-across-context-boundaries.md) | context, long-term |
 
 ## Suggested GitHub Setup
 
