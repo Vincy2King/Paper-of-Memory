@@ -39,24 +39,31 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **963**
+- Total tracked papers: **970**
 - Last generated: **2026-08-19**
 
 ## Papers by Source
 
 - ACL Anthology: **5**
-- arXiv: **824**
+- arXiv: **831**
 - OpenReview: **134**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-08-18 | arXiv | [On the Fragility of Self-Improving Agents: Variance, Task Order, and Underspecification](content/papers/on-the-fragility-of-self-improving-agents-variance-task-order-and-underspecifica.md) | agent |
+| 2026-08-18 | arXiv | [Multi-turn Conversational AI from Text to Multimodal Interaction: Data, Models, Evaluation, and Open Challenges](content/papers/multi-turn-conversational-ai-from-text-to-multimodal-interaction-data-models-eva.md) | agent, benchmark, context |
+| 2026-08-18 | arXiv | [GraphWake: Group Polarization via Memory-Mediated Polarization Cascade in LLM-Agent Communities](content/papers/graphwake-group-polarization-via-memory-mediated-polarization-cascade-in-llm-age.md) | agent, retrieval |
+| 2026-08-18 | arXiv | [D$^2$ACCI: A Dual-Loop Diagnostic Protocol for Evidence-Preserving Agent Memory](content/papers/d-2-acci-a-dual-loop-diagnostic-protocol-for-evidence-preserving-agent-memory.md) | agent, benchmark, retrieval |
+| 2026-08-18 | arXiv | [CABLE: Extending the Reach of Memory Retrieval via Complementary Antecedent-Based Linking and Expansion](content/papers/cable-extending-the-reach-of-memory-retrieval-via-complementary-antecedent-based.md) | agent, context, conversation |
+| 2026-08-18 | arXiv | [ArborMem: Navigating Interaction States with Memory Forests](content/papers/arbormem-navigating-interaction-states-with-memory-forests.md) | benchmark, context, conversation |
 | 2026-08-17 | arXiv | [MobileMem: Learning from a Year of Mobile Experiences](content/papers/mobilemem-learning-from-a-year-of-mobile-experiences.md) | agent, benchmark, long-term |
 | 2026-08-17 | arXiv | [MELD: A Protocol for Merging Knowledge Across Distributed Agentic Memories](content/papers/meld-a-protocol-for-merging-knowledge-across-distributed-agentic-memories.md) | agent, context |
 | 2026-08-17 | arXiv | [FTA-Mem: Fact-Time-Affect Anchored Memory for Low-Density Long-Term Dialogue](content/papers/fta-mem-fact-time-affect-anchored-memory-for-low-density-long-term-dialogue.md) | agent, benchmark, context |
 | 2026-08-17 | arXiv | [D2-ScaleAgent: Dual-Dimensional Scaling for Long Document Understanding](content/papers/d2-scaleagent-dual-dimensional-scaling-for-long-document-understanding.md) | agent, benchmark, retrieval |
 | 2026-08-17 | arXiv | [Coverage Is Not Redundancy: Maintenance Cost and Exposure of Query-Aware Admission Indexes in Vector Databases Under Workload Drift](content/papers/coverage-is-not-redundancy-maintenance-cost-and-exposure-of-query-aware-admissio.md) | retrieval |
+| 2026-08-17 | arXiv | [AQuA: Recursively Self-Improving Quantitative Trading Research Agents](content/papers/aqua-recursively-self-improving-quantitative-trading-research-agents.md) | agent |
 | 2026-08-16 | arXiv | [When Your Agent Opens the Chat App: Agent-Controlled Search over Raw Chat Logs Rivals Structured Memory](content/papers/when-your-agent-opens-the-chat-app-agent-controlled-search-over-raw-chat-logs-ri.md) | agent, context, conversation |
 | 2026-08-16 | arXiv | [Deploying Frontier Agentic Technology in MOOSEnger, a Multiphysics-Capable AI Assistant](content/papers/deploying-frontier-agentic-technology-in-moosenger-a-multiphysics-capable-ai-ass.md) | agent, context |
 | 2026-08-16 | arXiv | [Beat the Counter First: A Baseline for Temporal-Graph Anomaly Detectors](content/papers/beat-the-counter-first-a-baseline-for-temporal-graph-anomaly-detectors.md) | memory-augmented |
@@ -65,13 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-08-15 | arXiv | [EgoCITE: Context-Augmented Indexing and Time-Aware Retrieval for Long-Horizon Egocentric Memory](content/papers/egocite-context-augmented-indexing-and-time-aware-retrieval-for-long-horizon-ego.md) | agent, context, conversation |
 | 2026-08-14 | arXiv | [MemoryLake on MemoryArena: A Matched Study of Agent Memory Backends](content/papers/memorylake-on-memoryarena-a-matched-study-of-agent-memory-backends.md) | agent, benchmark, context |
 | 2026-08-14 | arXiv | [Engineering Reliable Coding Agents: Evaluating and Operating the System Around the Model](content/papers/engineering-reliable-coding-agents-evaluating-and-operating-the-system-around-th.md) | agent, benchmark, retrieval |
-| 2026-08-13 | arXiv | [When Your Agent Opens the Chat App: Agent-Controlled Search over Raw Chat Logs Rivals Structured Memory](content/papers/when-your-agent-opens-the-chat-app-agent-controlled-search-over-raw-chat-logs-ri.md) | agent, context, conversation |
-| 2026-08-13 | arXiv | [StateBridge: Training-free Hidden-state Alignment for Latent Communication in LLM Multi-Agent Systems](content/papers/statebridge-training-free-hidden-state-alignment-for-latent-communication-in-llm.md) | agent |
-| 2026-08-13 | arXiv | [Spatial Memory Agent: Experience-Grounded Procedure Memory for Spatial Intelligence](content/papers/spatial-memory-agent-experience-grounded-procedure-memory-for-spatial-intelligen.md) | agent, benchmark, retrieval |
-| 2026-08-13 | arXiv | [RippleMem: From Isolated Retrieval to Associative Recollection for Long-Term Agent Memory](content/papers/ripplemem-from-isolated-retrieval-to-associative-recollection-for-long-term-agen.md) | agent, context, episodic |
-| 2026-08-13 | arXiv | [LycheeMemory V2: Efficient Long-Term Memory for LLM Agents via Semantic Segment-Level Consolidation](content/papers/lycheememory-v2-efficient-long-term-memory-for-llm-agents-via-semantic-segment-l.md) | agent, context, conversation |
-| 2026-08-13 | arXiv | [Intern-S2-Preview: Scientific Agentic Foundation Model](content/papers/intern-s2-preview-scientific-agentic-foundation-model.md) | agent, benchmark |
-| 2026-08-13 | arXiv | [Enhancing Virtual Agents through SLMs and Edge-Computing: An Exploratory Evaluation of Think and Memory Processes](content/papers/enhancing-virtual-agents-through-slms-and-edge-computing-an-exploratory-evaluati.md) | agent, context, conversation |
 
 ## Suggested GitHub Setup
 
