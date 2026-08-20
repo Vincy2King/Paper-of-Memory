@@ -39,22 +39,29 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **970**
+- Total tracked papers: **977**
 - Last generated: **2026-08-20**
 
 ## Papers by Source
 
 - ACL Anthology: **5**
-- arXiv: **831**
+- arXiv: **838**
 - OpenReview: **134**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-08-19 | arXiv | [Report on The 1st Workshop on Human-Centered Proactive and Personalized Agents for Interactive Information Access at CHIIR 2026](content/papers/report-on-the-1st-workshop-on-human-centered-proactive-and-personalized-agents-f.md) | agent, context, long-term |
+| 2026-08-19 | arXiv | [MemFuse: Multi-Source Memory Fusion from Fragmented Observations](content/papers/memfuse-multi-source-memory-fusion-from-fragmented-observations.md) | agent, benchmark, episodic |
+| 2026-08-19 | arXiv | [D$^2$ACCI: A Dual-Loop Diagnostic Protocol for Evidence-Preserving Agent Memory](content/papers/d-2-acci-a-dual-loop-diagnostic-protocol-for-evidence-preserving-agent-memory.md) | agent, benchmark, retrieval |
+| 2026-08-19 | arXiv | [Compress and Forget: bitsandbytes Quantization Amplifies Proactive Interference in LLMs](content/papers/compress-and-forget-bitsandbytes-quantization-amplifies-proactive-interference-i.md) | benchmark, context, retrieval |
+| 2026-08-19 | arXiv | [Adaptive Memory and Reflection Multi-Agent System for Medical Question Answering](content/papers/adaptive-memory-and-reflection-multi-agent-system-for-medical-question-answering.md) | agent, retrieval |
 | 2026-08-18 | arXiv | [On the Fragility of Self-Improving Agents: Variance, Task Order, and Underspecification](content/papers/on-the-fragility-of-self-improving-agents-variance-task-order-and-underspecifica.md) | agent |
 | 2026-08-18 | arXiv | [Multi-turn Conversational AI from Text to Multimodal Interaction: Data, Models, Evaluation, and Open Challenges](content/papers/multi-turn-conversational-ai-from-text-to-multimodal-interaction-data-models-eva.md) | agent, benchmark, context |
 | 2026-08-18 | arXiv | [GraphWake: Group Polarization via Memory-Mediated Polarization Cascade in LLM-Agent Communities](content/papers/graphwake-group-polarization-via-memory-mediated-polarization-cascade-in-llm-age.md) | agent, retrieval |
+| 2026-08-18 | arXiv | [EgoMemReason: A Memory-Driven Reasoning Benchmark for Long-Horizon Egocentric Video Understanding](content/papers/egomemreason-a-memory-driven-reasoning-benchmark-for-long-horizon-egocentric-vid.md) | agent, benchmark, context |
+| 2026-08-18 | arXiv | [EgoCITE: Context-Augmented Indexing and Time-Aware Retrieval for Long-Horizon Egocentric Memory](content/papers/egocite-context-augmented-indexing-and-time-aware-retrieval-for-long-horizon-ego.md) | agent, context, conversation |
 | 2026-08-18 | arXiv | [D$^2$ACCI: A Dual-Loop Diagnostic Protocol for Evidence-Preserving Agent Memory](content/papers/d-2-acci-a-dual-loop-diagnostic-protocol-for-evidence-preserving-agent-memory.md) | agent, benchmark, retrieval |
 | 2026-08-18 | arXiv | [CABLE: Extending the Reach of Memory Retrieval via Complementary Antecedent-Based Linking and Expansion](content/papers/cable-extending-the-reach-of-memory-retrieval-via-complementary-antecedent-based.md) | agent, context, conversation |
 | 2026-08-18 | arXiv | [ArborMem: Navigating Interaction States with Memory Forests](content/papers/arbormem-navigating-interaction-states-with-memory-forests.md) | benchmark, context, conversation |
@@ -65,13 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-08-17 | arXiv | [Coverage Is Not Redundancy: Maintenance Cost and Exposure of Query-Aware Admission Indexes in Vector Databases Under Workload Drift](content/papers/coverage-is-not-redundancy-maintenance-cost-and-exposure-of-query-aware-admissio.md) | retrieval |
 | 2026-08-17 | arXiv | [AQuA: Recursively Self-Improving Quantitative Trading Research Agents](content/papers/aqua-recursively-self-improving-quantitative-trading-research-agents.md) | agent |
 | 2026-08-16 | arXiv | [When Your Agent Opens the Chat App: Agent-Controlled Search over Raw Chat Logs Rivals Structured Memory](content/papers/when-your-agent-opens-the-chat-app-agent-controlled-search-over-raw-chat-logs-ri.md) | agent, context, conversation |
-| 2026-08-16 | arXiv | [Deploying Frontier Agentic Technology in MOOSEnger, a Multiphysics-Capable AI Assistant](content/papers/deploying-frontier-agentic-technology-in-moosenger-a-multiphysics-capable-ai-ass.md) | agent, context |
-| 2026-08-16 | arXiv | [Beat the Counter First: A Baseline for Temporal-Graph Anomaly Detectors](content/papers/beat-the-counter-first-a-baseline-for-temporal-graph-anomaly-detectors.md) | memory-augmented |
-| 2026-08-15 | arXiv | [Valhalla: A Layered Knowledge-State and Service-Governance Framework for Long-Term Scientific Knowledge Work](content/papers/valhalla-a-layered-knowledge-state-and-service-governance-framework-for-long-ter.md) | agent, long-term, retrieval |
-| 2026-08-15 | arXiv | [Harness the Memory: A Holistic Evaluation of Memory Substrates in Memory Agents](content/papers/harness-the-memory-a-holistic-evaluation-of-memory-substrates-in-memory-agents.md) | agent, benchmark, context |
-| 2026-08-15 | arXiv | [EgoCITE: Context-Augmented Indexing and Time-Aware Retrieval for Long-Horizon Egocentric Memory](content/papers/egocite-context-augmented-indexing-and-time-aware-retrieval-for-long-horizon-ego.md) | agent, context, conversation |
-| 2026-08-14 | arXiv | [MemoryLake on MemoryArena: A Matched Study of Agent Memory Backends](content/papers/memorylake-on-memoryarena-a-matched-study-of-agent-memory-backends.md) | agent, benchmark, context |
-| 2026-08-14 | arXiv | [Engineering Reliable Coding Agents: Evaluating and Operating the System Around the Model](content/papers/engineering-reliable-coding-agents-evaluating-and-operating-the-system-around-th.md) | agent, benchmark, retrieval |
 
 ## Suggested GitHub Setup
 

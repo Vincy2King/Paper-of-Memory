@@ -1,5 +1,176 @@
 [
   {
+    "abstract": "Interactive information access is increasingly moving beyond reactive query-response paradigms toward agentic systems that can personalize interaction, retain context, infer latent needs, recommend next steps, and initiate support. This shift creates new opportunities for adaptive and context-aware assistance, while also raising important questions about autonomy, privacy, trust, transparency, user welfare, and evaluation. The First Workshop on Human-Centered Proactive and Personalized Agents for Interactive Information Access provided an interdisciplinary forum for examining these questions across information retrieval, human-computer interaction, dialogue systems, AI ethics, cognitive science, learning technologies, and human-centered AI. Through invited talks, paper presentations, and open discussion, the workshop engaged with topics including calibrated initiative, knowledge-gap navigation, long-term memory, value-sensitive design, implicit personalization, AI-mediated care, proactive dialogue, and evaluation beyond task accuracy. A central theme across the workshop was that proactivity should not be understood only as earlier action or improved prediction, but as a form of initiative that must be appropriately timed, transparent, contestable, and aligned with user goals. This report summarizes the workshop and synthesizes the research challenges it surfaced for designing proactive and personalized agents in interactive information access.",
+    "authors": [
+      "Kirandeep Kaur",
+      "Vinayak Gupta",
+      "Tanya Roosta",
+      "Madhura Raju",
+      "Grace Hui Yang",
+      "Chirag Shah"
+    ],
+    "categories": [
+      "cs.HC"
+    ],
+    "id": "2608.18638v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, context, long-term, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Interactive information access is increasingly moving beyond reactive query-response paradigms toward agentic systems that can personalize interaction, retain context, infer latent needs, recommend next steps, and...\n\n进一步看，论文的核心做法或实验重点可以概括为：This shift creates new opportunities for adaptive and context-aware assistance, while also raising important questions about autonomy, privacy, trust, transparency, user welfare, and evaluation.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "long-term memory"
+    ],
+    "one_liner": "Interactive information access is increasingly moving beyond reactive query-response paradigms toward agentic systems that can personalize interaction, retain context, infer...",
+    "published": "2026-08-19",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, context, long-term, retrieval\n- 检索关键词命中：long-term memory\n- 来源分类信息：cs.HC",
+    "slug": "report-on-the-1st-workshop-on-human-centered-proactive-and-personalized-agents-f",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.18638v1",
+    "tags": [
+      "agent",
+      "context",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "Report on The 1st Workshop on Human-Centered Proactive and Personalized Agents for Interactive Information Access at CHIIR 2026",
+    "updated": "2026-08-19",
+    "url": "http://arxiv.org/abs/2608.18638v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Long-term memory is essential for agents that operate across extended interactions, yet existing memory systems and benchmarks predominantly focus on single-source textual histories. In realistic settings, however, relevant information is often fragmented across applications and devices, as well as across users and time, requiring agents to integrate dispersed observations into coherent episodic memories while preserving their source provenance. To address these gaps, we introduce **MemFuseBench**, a benchmark for *multi-source memory fusion*. MemFuseBench is built with a Scene-to-Sensor pipeline that synthesizes controllable scenarios into source-tagged observations, evidence-grounded questions, and adversarial distractors. It enables systematic evaluation of temporal reasoning, cross-source evidence fusion, and robustness to noise. We further propose **MemFuse**, a structured memory system that preserves source-level evidence in event-layer atomic memory and organizes related atomic events into cluster-layer fused memory within a causal fusion graph. During retrieval, MemFuse retrieves and organizes related evidence fragments while maintaining traceability to original source events. Experiments on MemFuseBench show that MemFuse achieves the best overall performance among the evaluated memory systems under all three LLM settings and consistently improves performance on questions requiring cross-source evidence fusion.",
+    "authors": [
+      "Chao Li",
+      "Yuanfa Li",
+      "Wenhao Wu",
+      "Xule Liu",
+      "Zhi Wang",
+      "Kun Shao"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "id": "2608.18704v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, episodic, long-term` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Long-term memory is essential for agents that operate across extended interactions, yet existing memory systems and benchmarks predominantly focus on single-source textual histories.\n\n进一步看，论文的核心做法或实验重点可以概括为：In realistic settings, however, relevant information is often fragmented across applications and devices, as well as across users and time, requiring agents to integrate dispersed observations into coherent episodic...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "episodic memory",
+      "long-term memory"
+    ],
+    "one_liner": "Long-term memory is essential for agents that operate across extended interactions, yet existing memory systems and benchmarks predominantly focus on single-source textual...",
+    "published": "2026-08-19",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, episodic, long-term, retrieval\n- 检索关键词命中：episodic memory, long-term memory\n- 来源分类信息：cs.CL, cs.AI",
+    "slug": "memfuse-multi-source-memory-fusion-from-fragmented-observations",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.18704v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "episodic",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "MemFuse: Multi-Source Memory Fusion from Fragmented Observations",
+    "updated": "2026-08-19",
+    "url": "http://arxiv.org/abs/2608.18704v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Memory is a key capability of LLM agents. Persistent memory extends this across sessions---enabling recall, revision, and personalization. Yet its multi-stage pipeline (ingestion, retrieval, filtering, generation) makes failures difficult to localize: end-to-end evaluation reveals that an error occurred, but not which stage caused it. Existing evaluations often report aggregate performance without paired statistical comparisons, slice-level non-regression checks, or stage-level diagnostic traces. We propose D$^2$ACCI (Diagnostic-Driven Artifact-based Closed-loop Controlled Iteration), a dual-loop protocol whose outer diagnostic gate promotes, feature-flags, or rejects memory interventions based on paired evidence, protected-slice monitoring, and trace-level localizability. We further introduce DCR, a graded observability metric that measures whether failures remain localizable, and D$^2$ACCI-Eval, a reusable artifact for gate replay. We instantiate the protocol in MemStack and evaluate on three public benchmarks, achieving 93.59% on LoCoMo, 90.93% on LongMemEval, and 57.20% on PersonaMem-V2. Five paired ablations show that supplement extraction, session-memory retrieval, and Forget Guard yield statistically significant gains (+1.9 to +3.7pp, all p $\\le$ .003). In contrast, BM25/RRF is retained as a monitored feature flag---a distinction invisible to aggregate-only evaluation. A diagnostic audit shows enriched traces substantially improve root-cause agreement over result-only relabeling. Diagnostic artifacts reach 98--100% DCR@3 versus 0% for results-only logs. These results establish that robust memory-system iteration demands traceable, statistically grounded, and regression-aware evidence---exactly the gap D$^2$ACCI fills.",
+    "authors": [
+      "Xule Liu",
+      "Yijun Liu",
+      "Chao Li",
+      "Shao Kun"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2608.17756v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Memory is a key capability of LLM agents.\n\n进一步看，论文的核心做法或实验重点可以概括为：Persistent memory extends this across sessions---enabling recall, revision, and personalization.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory",
+      "memory retrieval",
+      "persistent memory"
+    ],
+    "one_liner": "Memory is a key capability of LLM agents.",
+    "published": "2026-08-18",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, retrieval\n- 检索关键词命中：agent memory, memory retrieval, persistent memory\n- 来源分类信息：cs.AI",
+    "slug": "d-2-acci-a-dual-loop-diagnostic-protocol-for-evidence-preserving-agent-memory",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.17756v2",
+    "tags": [
+      "agent",
+      "benchmark",
+      "retrieval"
+    ],
+    "title": "D$^2$ACCI: A Dual-Loop Diagnostic Protocol for Evidence-Preserving Agent Memory",
+    "updated": "2026-08-19",
+    "url": "http://arxiv.org/abs/2608.17756v2",
+    "venue": ""
+  },
+  {
+    "abstract": "Proactive interference (PI) is a documented failure mode in large language models in which retrieval of a repeatedly overwritten value degrades as prior overwrites accumulate, mirroring a classical phenomenon in human working memory. Post-training quantization (PTQ) is now the default deployment path for open-weight models, yet its effect on this failure mode has not been tested. We evaluate three precision levels (FP16, INT8, INT4/NF4, via bitsandbytes) across three architecturally distinct instruction-tuned models (Qwen2.5-7B-Instruct, Mistral-7B-Instruct-v0.3, Phi-3.5-mini-instruct), holding the retrieval task fixed. INT4 quantization significantly reduces accuracy under high interference in every model (e.g., from 81.0% to 68.3% for Qwen), confirmed by paired McNemar's tests ($p \\le 2.6 \\times 10^{-6}$) and a mixed-effects regression spanning all interference levels; INT8, often assumed safe, also carries a smaller but real penalty in two of three models. The effect is specific to semantically similar (word-type) distractors and reverses sign under a numeric control condition, and is mechanistically linked to a rise in same-key intrusion errors under INT4 (from 21.5% to 24.6% of trials, $p = 4.8 \\times 10^{-7}$). A follow-up ablation shows the effect originates in the quantized transformer backbone rather than the output projection layer. These results suggest that bitsandbytes 4-bit quantization can impose an additional cost on applications relying on long, updatable, semantically dense contexts, even when aggregate benchmark accuracy appears largely unaffected. We release our code and tokenizer-verified vocabulary construction method at https://github.com/ShayanShahrabi/compress-and-forget",
+    "authors": [
+      "Shayan Shahrabi-Farahani",
+      "Dara Rahmati"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.LG"
+    ],
+    "id": "2608.18578v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `benchmark, context, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Proactive interference (PI) is a documented failure mode in large language models in which retrieval of a repeatedly overwritten value degrades as prior overwrites accumulate, mirroring a classical phenomenon in human...\n\n进一步看，论文的核心做法或实验重点可以概括为：Post-training quantization (PTQ) is now the default deployment path for open-weight models, yet its effect on this failure mode has not been tested.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "working memory"
+    ],
+    "one_liner": "Proactive interference (PI) is a documented failure mode in large language models in which retrieval of a repeatedly overwritten value degrades as prior overwrites accumulate,...",
+    "published": "2026-08-19",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：benchmark, context, retrieval\n- 检索关键词命中：working memory\n- 来源分类信息：cs.CL, cs.LG",
+    "slug": "compress-and-forget-bitsandbytes-quantization-amplifies-proactive-interference-i",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.18578v1",
+    "tags": [
+      "benchmark",
+      "context",
+      "retrieval"
+    ],
+    "title": "Compress and Forget: bitsandbytes Quantization Amplifies Proactive Interference in LLMs",
+    "updated": "2026-08-19",
+    "url": "http://arxiv.org/abs/2608.18578v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Accurate and responsible medical question answering (QA) is important in healthcare, where complex cases require factual knowledge and nuanced reasoning. Existing medical QA systems, typically based on single-agent architectures and static retrieval, often lack adaptability, persistent memory, and structured decision-making. This work introduces an adaptive memory and reflection (AMR) agentic system, a multi-agent framework in which specialized agents use dedicated memory and reflection-based feedback to retrieve relevant prior cases and improve subsequent reasoning. Complexity assessment routes questions through solo, collaborative, or escalated workflows, while consensus and ethical overseer modules support reasoning consolidation and output review. Evaluation on MedQA and MedMCQA demonstrates strong performance compared with several baselines. Ablation studies show that combining agent-specific memory, reflection, and external retrieval yields the strongest performance. These findings highlight the potential of structured memory and feedback for developing more trustworthy medical agents. The source code is publicly available at https://github.com/mm-air/AMR-Agent.",
+    "authors": [
+      "Pradeep Murugesan",
+      "Luoxiao Yang",
+      "Xueli Chen",
+      "Xinqi Fan"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.CL",
+      "cs.MA"
+    ],
+    "id": "2608.19029v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Accurate and responsible medical question answering (QA) is important in healthcare, where complex cases require factual knowledge and nuanced reasoning.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing medical QA systems, typically based on single-agent architectures and static retrieval, often lack adaptability, persistent memory, and structured decision-making.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "persistent memory"
+    ],
+    "one_liner": "Accurate and responsible medical question answering (QA) is important in healthcare, where complex cases require factual knowledge and nuanced reasoning.",
+    "published": "2026-08-19",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, retrieval\n- 检索关键词命中：persistent memory\n- 来源分类信息：cs.AI, cs.CL, cs.MA",
+    "slug": "adaptive-memory-and-reflection-multi-agent-system-for-medical-question-answering",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.19029v1",
+    "tags": [
+      "agent",
+      "retrieval"
+    ],
+    "title": "Adaptive Memory and Reflection Multi-Agent System for Medical Question Answering",
+    "updated": "2026-08-19",
+    "url": "http://arxiv.org/abs/2608.19029v1",
+    "venue": ""
+  },
+  {
     "abstract": "Memory-based self-improving agents--those that learn from an online stream of tasks and improve over time by maintaining a textual memory bank--have shown great promise in recent literature. However, the reliability aspects of these methods have been critically overlooked. In this work, we conduct a comprehensive re-evaluation of two memory-based methods, broadening the scope of evaluation along two axes: (1) including multiple runs to quantify variance, and (2) randomly shuffling the tasks to investigate the effect of task order. Through these experiments, we make two observations that expose the fragility of current methods: First, agent evaluation is inherently noisy in complex environments and on multi-step tasks, and stacking a self-improving loop on top can further amplify this noise. Second, the agent's improvement is highly dependent on task order. Prior works often adopt default orderings that impose an implicit curriculum, acting as a hidden prerequisite for success. To better understand this fragility, we manually examine the agents' memory and hypothesize that task and environment underspecification contribute to this fragility. We validate this hypothesis by incorporating information that enables better specification, such as detailed rubrics and environment feedback, into the memory construction process. While this added information partially closes the performance degradation in previous experiments, significant gaps still remain, suggesting that other uncharacterized factors contribute to this fragility. Looking ahead, our work advocates for more rigorous evaluation protocols for self-improving agents by reporting results across multiple runs and stress-testing them under challenging conditions. Moreover, our findings on underspecification call for systems and interfaces that enable effective human oversight, preventing agents from failing in unforeseeable ways.",
     "authors": [
       "Qinyuan Ye",
@@ -98,6 +269,82 @@
     "title": "GraphWake: Group Polarization via Memory-Mediated Polarization Cascade in LLM-Agent Communities",
     "updated": "2026-08-18",
     "url": "http://arxiv.org/abs/2608.17665v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Next-generation visual assistants, such as smart glasses, embodied agents, and always-on life-logging systems, must reason over an entire day or more of continuous visual experience. In ultra-long videos, relevant information is sparsely distributed across hours or days, making memory a fundamental challenge: models must accumulate information over time, recall prior states, track temporal order, and abstract recurring patterns. However, existing week-long video benchmarks are primarily designed for perception and recognition, such as moment localization or global summarization, rather than reasoning that requires integrating evidence across multiple days. To address this gap, we introduce EgoMemReason, a comprehensive benchmark for week-long egocentric video understanding through memory-driven reasoning. EgoMemReason evaluates three complementary memory types: entity memory, tracking how object states evolve and change across days; event memory, recalling and ordering activities separated by hours or days; and behavior memory, abstracting recurring patterns from sparse, repeated observations over the whole week period. EgoMemReason comprises 500 questions across three memory types and six core challenges, with an average of 5.1 video segments of evidence per question and 25.9 hours of memory backtracking. We evaluate EgoMemReason on 17 methods across MLLMs and agentic frameworks, revealing that even the best model achieves only 39.6% overall accuracy. Further analysis shows that the three memory types fail for distinct reasons and that performance degrades as evidence spans longer temporal horizons, revealing that long-horizon memory remains far from solved. We believe EgoMemReason establishes a strong foundation for evaluating and advancing long-context, memory-aware multimodal systems.",
+    "authors": [
+      "Ziyang Wang",
+      "Yue Zhang",
+      "Shoubin Yu",
+      "Ce Zhang",
+      "Zengqi Zhao",
+      "Jaehong Yoon",
+      "Hyunji Lee",
+      "Gedas Bertasius",
+      "Mohit Bansal"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "id": "2605.09874v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Next-generation visual assistants, such as smart glasses, embodied agents, and always-on life-logging systems, must reason over an entire day or more of continuous visual experience.\n\n进一步看，论文的核心做法或实验重点可以概括为：In ultra-long videos, relevant information is sparsely distributed across hours or days, making memory a fundamental challenge: models must accumulate information over time, recall prior states, track temporal order,...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "context memory"
+    ],
+    "one_liner": "Next-generation visual assistants, such as smart glasses, embodied agents, and always-on life-logging systems, must reason over an entire day or more of continuous visual...",
+    "published": "2026-05-11",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context\n- 检索关键词命中：context memory\n- 来源分类信息：cs.CV, cs.AI, cs.CL",
+    "slug": "egomemreason-a-memory-driven-reasoning-benchmark-for-long-horizon-egocentric-vid",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2605.09874v2",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context"
+    ],
+    "title": "EgoMemReason: A Memory-Driven Reasoning Benchmark for Long-Horizon Egocentric Video Understanding",
+    "updated": "2026-08-18",
+    "url": "http://arxiv.org/abs/2605.09874v2",
+    "venue": ""
+  },
+  {
+    "abstract": "Long-horizon egocentric memory transforms continuous first-person video and audio into a searchable record of past experiences. We demonstrate two bottlenecks in existing systems: indices built from context-poor captions are unreliable for agentic search, while retrieval ignores a question's temporal intent. To address both bottlenecks, we introduce EgoCITE (Egocentric Context-augmented Indexing and Time-aware Evidence retrieval), a long-horizon agentic memory framework for egocentric QA. EgoCITE comprises three components. EgoScheme uses local multimodal context to turn fragmentary video captions and speech transcripts into self-contained atomic memory indices. EgoIndex organizes complementary action, activity, utterance, and conversation representations into searchable multi-view memory indices at multiple granularities. EgoRetrv combines semantic search with question-conditioned temporal relevance scoring and curation of retrieved evidence. We evaluate EgoCITE on EgoLifeQA, EgoMem, and EgoR1-Bench in terms of answer accuracy and target-event retrieval alignment. EgoCITE improves accuracy over agentic memory baselines by at least 4.4--14.2% while achieving 36$\\times$ lower cost than long-context LLM agents.",
+    "authors": [
+      "Le Zhang",
+      "Hao Chen",
+      "Vlad Roznyatovskiy",
+      "Jianzhong Zhang",
+      "Ke Sun"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "cs.CL",
+      "cs.HC"
+    ],
+    "id": "2608.12627v3",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, context, conversation, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Long-horizon egocentric memory transforms continuous first-person video and audio into a searchable record of past experiences.\n\n进一步看，论文的核心做法或实验重点可以概括为：We demonstrate two bottlenecks in existing systems: indices built from context-poor captions are unreliable for agentic search, while retrieval ignores a question's temporal intent.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "Long-horizon egocentric memory transforms continuous first-person video and audio into a searchable record of past experiences.",
+    "published": "2026-08-12",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, context, conversation, retrieval\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.CV, cs.AI, cs.CL, cs.HC",
+    "slug": "egocite-context-augmented-indexing-and-time-aware-retrieval-for-long-horizon-ego",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.12627v3",
+    "tags": [
+      "agent",
+      "context",
+      "conversation",
+      "retrieval"
+    ],
+    "title": "EgoCITE: Context-Augmented Indexing and Time-Aware Retrieval for Long-Horizon Egocentric Memory",
+    "updated": "2026-08-18",
+    "url": "http://arxiv.org/abs/2608.12627v3",
     "venue": ""
   },
   {
