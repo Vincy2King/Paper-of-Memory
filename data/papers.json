@@ -1,5 +1,33 @@
 [
   {
+    "abstract": "Episodic memory retrieval for LLM agents, whether via dense vector similarity or structured multi-axis indexing, generally assumes every extracted query cue is equally reliable, so an incomplete or ambiguous cue can eliminate relevant memories under rigid intersection. We introduce CIRCUIT Memory, a two-tier structured episodic memory architecture that instead separates query-cue confidence (how reliably a cue was extracted) from evidence matching (how well a memory satisfies it), letting retrieval down-weight unreliable cues rather than enforcing hard intersection across axes. On EPBench, replacing hard multi-axis intersection with this confidence-weighted aggregate, using per-axis held-out calibrated confidence, nearly eliminates zero-retrieval failures (61.1% to 1.0%) and is the most robust rule across two books; on LoCoMo, the same additive form, with per-axis confidence calibrated under held-out cross-validation, reaches 81.2% QA accuracy while scanning 41.6% fewer candidates than flat-scan retrieval. We report these gains alongside a candid analysis of where fixed structured strategies, and confidence-weighting itself, still fall short.",
+    "authors": [],
+    "categories": [
+      "aclweb.org/ACL/ARR/2026/August/-/Submission"
+    ],
+    "id": "openreview:yLpeuklQK4",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, episodic, retrieval` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 August Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Episodic memory retrieval for LLM agents, whether via dense vector similarity or structured multi-axis indexing, generally assumes every extracted query cue is equally reliable, so an incomplete or ambiguous cue can...\n\n进一步看，论文的核心做法或实验重点可以概括为：We introduce CIRCUIT Memory, a two-tier structured episodic memory architecture that instead separates query-cue confidence (how reliably a cue was extracted) from evidence matching (how well a memory satisfies it),...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "episodic memory",
+      "memory retrieval"
+    ],
+    "one_liner": "Episodic memory retrieval for LLM agents, whether via dense vector similarity or structured multi-axis indexing, generally assumes every extracted query cue is equally reliable,...",
+    "published": "2026-08-04",
+    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 August Submission\n- 高亮主题命中：agent, episodic, retrieval\n- 检索关键词命中：episodic memory, memory retrieval\n- 来源分类信息：aclweb.org/ACL/ARR/2026/August/-/Submission",
+    "slug": "circuit-memory-confidence-aware-multi-axis-retrieval-for-episodic-memory-in-llm-",
+    "source": "OpenReview",
+    "source_key": "yLpeuklQK4",
+    "tags": [
+      "agent",
+      "episodic",
+      "retrieval"
+    ],
+    "title": "CIRCUIT Memory: Confidence-Aware Multi-Axis Retrieval for Episodic Memory in LLM Agents",
+    "updated": "2026-08-20",
+    "url": "https://openreview.net/forum?id=yLpeuklQK4",
+    "venue": "ACL ARR 2026 August Submission"
+  },
+  {
     "abstract": "Interactive information access is increasingly moving beyond reactive query-response paradigms toward agentic systems that can personalize interaction, retain context, infer latent needs, recommend next steps, and initiate support. This shift creates new opportunities for adaptive and context-aware assistance, while also raising important questions about autonomy, privacy, trust, transparency, user welfare, and evaluation. The First Workshop on Human-Centered Proactive and Personalized Agents for Interactive Information Access provided an interdisciplinary forum for examining these questions across information retrieval, human-computer interaction, dialogue systems, AI ethics, cognitive science, learning technologies, and human-centered AI. Through invited talks, paper presentations, and open discussion, the workshop engaged with topics including calibrated initiative, knowledge-gap navigation, long-term memory, value-sensitive design, implicit personalization, AI-mediated care, proactive dialogue, and evaluation beyond task accuracy. A central theme across the workshop was that proactivity should not be understood only as earlier action or improved prediction, but as a form of initiative that must be appropriately timed, transparent, contestable, and aligned with user goals. This report summarizes the workshop and synthesizes the research challenges it surfaced for designing proactive and personalized agents in interactive information access.",
     "authors": [
       "Kirandeep Kaur",
@@ -4386,34 +4414,6 @@
     "title": "D-ACR: Dialogue-Aware Context Retrieval for Long-Term Conversational Memory",
     "updated": "2026-08-04",
     "url": "https://openreview.net/forum?id=LJTjY3nUJm",
-    "venue": "ACL ARR 2026 August Submission"
-  },
-  {
-    "abstract": "Episodic memory retrieval for LLM agents, whether via dense vector similarity or structured multi-axis indexing, generally assumes every extracted query cue is equally reliable, so an incomplete or ambiguous cue can eliminate relevant memories under rigid intersection. We introduce CIRCUIT Memory, a two-tier structured episodic memory architecture that instead separates query-cue confidence (how reliably a cue was extracted) from evidence matching (how well a memory satisfies it), letting retrieval down-weight unreliable cues rather than enforcing hard intersection across axes. On EPBench, replacing hard multi-axis intersection with this confidence-weighted aggregate, using per-axis held-out calibrated confidence, nearly eliminates zero-retrieval failures (61.1% to 1.0%) and is the most robust rule across two books; on LoCoMo, the same additive form, with per-axis confidence calibrated under held-out cross-validation, reaches 81.2% QA accuracy while scanning 41.6% fewer candidates than flat-scan retrieval. We report these gains alongside a candid analysis of where fixed structured strategies, and confidence-weighting itself, still fall short.",
-    "authors": [],
-    "categories": [
-      "aclweb.org/ACL/ARR/2026/August/-/Submission"
-    ],
-    "id": "openreview:yLpeuklQK4",
-    "intro": "这篇论文被纳入仓库，是因为它和 `agent, episodic, retrieval` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 August Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Episodic memory retrieval for LLM agents, whether via dense vector similarity or structured multi-axis indexing, generally assumes every extracted query cue is equally reliable, so an incomplete or ambiguous cue can...\n\n进一步看，论文的核心做法或实验重点可以概括为：We introduce CIRCUIT Memory, a two-tier structured episodic memory architecture that instead separates query-cue confidence (how reliably a cue was extracted) from evidence matching (how well a memory satisfies it),...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
-    "matched_keywords": [
-      "episodic memory",
-      "memory retrieval"
-    ],
-    "one_liner": "Episodic memory retrieval for LLM agents, whether via dense vector similarity or structured multi-axis indexing, generally assumes every extracted query cue is equally reliable,...",
-    "published": "2026-08-04",
-    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 August Submission\n- 高亮主题命中：agent, episodic, retrieval\n- 检索关键词命中：episodic memory, memory retrieval\n- 来源分类信息：aclweb.org/ACL/ARR/2026/August/-/Submission",
-    "slug": "circuit-memory-confidence-aware-multi-axis-retrieval-for-episodic-memory-in-llm-",
-    "source": "OpenReview",
-    "source_key": "yLpeuklQK4",
-    "tags": [
-      "agent",
-      "episodic",
-      "retrieval"
-    ],
-    "title": "CIRCUIT Memory: Confidence-Aware Multi-Axis Retrieval for Episodic Memory in LLM Agents",
-    "updated": "2026-08-04",
-    "url": "https://openreview.net/forum?id=yLpeuklQK4",
     "venue": "ACL ARR 2026 August Submission"
   },
   {

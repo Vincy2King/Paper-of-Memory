@@ -40,7 +40,7 @@ python3 scripts/update_papers.py --build-only
 ## Repository Snapshot
 
 - Total tracked papers: **977**
-- Last generated: **2026-08-20**
+- Last generated: **2026-08-21**
 
 ## Papers by Source
 
@@ -52,6 +52,7 @@ python3 scripts/update_papers.py --build-only
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-08-20 | OpenReview | [CIRCUIT Memory: Confidence-Aware Multi-Axis Retrieval for Episodic Memory in LLM Agents](content/papers/circuit-memory-confidence-aware-multi-axis-retrieval-for-episodic-memory-in-llm-.md) | agent, episodic, retrieval |
 | 2026-08-19 | arXiv | [Report on The 1st Workshop on Human-Centered Proactive and Personalized Agents for Interactive Information Access at CHIIR 2026](content/papers/report-on-the-1st-workshop-on-human-centered-proactive-and-personalized-agents-f.md) | agent, context, long-term |
 | 2026-08-19 | arXiv | [MemFuse: Multi-Source Memory Fusion from Fragmented Observations](content/papers/memfuse-multi-source-memory-fusion-from-fragmented-observations.md) | agent, benchmark, episodic |
 | 2026-08-19 | arXiv | [D$^2$ACCI: A Dual-Loop Diagnostic Protocol for Evidence-Preserving Agent Memory](content/papers/d-2-acci-a-dual-loop-diagnostic-protocol-for-evidence-preserving-agent-memory.md) | agent, benchmark, retrieval |
@@ -71,7 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-08-17 | arXiv | [D2-ScaleAgent: Dual-Dimensional Scaling for Long Document Understanding](content/papers/d2-scaleagent-dual-dimensional-scaling-for-long-document-understanding.md) | agent, benchmark, retrieval |
 | 2026-08-17 | arXiv | [Coverage Is Not Redundancy: Maintenance Cost and Exposure of Query-Aware Admission Indexes in Vector Databases Under Workload Drift](content/papers/coverage-is-not-redundancy-maintenance-cost-and-exposure-of-query-aware-admissio.md) | retrieval |
 | 2026-08-17 | arXiv | [AQuA: Recursively Self-Improving Quantitative Trading Research Agents](content/papers/aqua-recursively-self-improving-quantitative-trading-research-agents.md) | agent |
-| 2026-08-16 | arXiv | [When Your Agent Opens the Chat App: Agent-Controlled Search over Raw Chat Logs Rivals Structured Memory](content/papers/when-your-agent-opens-the-chat-app-agent-controlled-search-over-raw-chat-logs-ri.md) | agent, context, conversation |
 
 ## Suggested GitHub Setup
 
