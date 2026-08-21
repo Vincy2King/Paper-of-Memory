@@ -39,22 +39,30 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **977**
+- Total tracked papers: **984**
 - Last generated: **2026-08-21**
 
 ## Papers by Source
 
 - ACL Anthology: **5**
-- arXiv: **838**
+- arXiv: **845**
 - OpenReview: **134**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-08-21 | OpenReview | [D-ACR: Dialogue-Aware Context Retrieval for Long-Term Conversational Memory](content/papers/d-acr-dialogue-aware-context-retrieval-for-long-term-conversational-memory.md) | benchmark, context, conversation |
+| 2026-08-20 | arXiv | [SABET-QA: Temporal Knowledge Graph Question Answering](content/papers/sabet-qa-temporal-knowledge-graph-question-answering.md) | context |
+| 2026-08-20 | arXiv | [Remember, Verify, or Ask? Cross-Family Evaluation of Memory Commitment in LLM Agents](content/papers/remember-verify-or-ask-cross-family-evaluation-of-memory-commitment-in-llm-agent.md) | agent, context |
+| 2026-08-20 | arXiv | [MemTrapBench: Benchmarking Cognitive Traps in LLM Memory Use](content/papers/memtrapbench-benchmarking-cognitive-traps-in-llm-memory-use.md) | benchmark, long-term |
+| 2026-08-20 | arXiv | [Compress and Forget: bitsandbytes Quantization Amplifies Proactive Interference in LLMs](content/papers/compress-and-forget-bitsandbytes-quantization-amplifies-proactive-interference-i.md) | benchmark, context, retrieval |
+| 2026-08-20 | arXiv | [Can Agent Memory Systems Track Evolving State?](content/papers/can-agent-memory-systems-track-evolving-state.md) | agent, benchmark, context |
 | 2026-08-20 | OpenReview | [CIRCUIT Memory: Confidence-Aware Multi-Axis Retrieval for Episodic Memory in LLM Agents](content/papers/circuit-memory-confidence-aware-multi-axis-retrieval-for-episodic-memory-in-llm-.md) | agent, episodic, retrieval |
+| 2026-08-20 | arXiv | [Beyond Memory Majority: Latent-Source Reasoning for Multi-Agent Memory Arbitration](content/papers/beyond-memory-majority-latent-source-reasoning-for-multi-agent-memory-arbitratio.md) | agent, benchmark, long-term |
 | 2026-08-19 | arXiv | [Report on The 1st Workshop on Human-Centered Proactive and Personalized Agents for Interactive Information Access at CHIIR 2026](content/papers/report-on-the-1st-workshop-on-human-centered-proactive-and-personalized-agents-f.md) | agent, context, long-term |
 | 2026-08-19 | arXiv | [MemFuse: Multi-Source Memory Fusion from Fragmented Observations](content/papers/memfuse-multi-source-memory-fusion-from-fragmented-observations.md) | agent, benchmark, episodic |
+| 2026-08-19 | arXiv | [DeltaMomentum: A Key-Value based Anisotropic Momentum Update via Delta Rule](content/papers/deltamomentum-a-key-value-based-anisotropic-momentum-update-via-delta-rule.md) | persistent memory |
 | 2026-08-19 | arXiv | [D$^2$ACCI: A Dual-Loop Diagnostic Protocol for Evidence-Preserving Agent Memory](content/papers/d-2-acci-a-dual-loop-diagnostic-protocol-for-evidence-preserving-agent-memory.md) | agent, benchmark, retrieval |
 | 2026-08-19 | arXiv | [Compress and Forget: bitsandbytes Quantization Amplifies Proactive Interference in LLMs](content/papers/compress-and-forget-bitsandbytes-quantization-amplifies-proactive-interference-i.md) | benchmark, context, retrieval |
 | 2026-08-19 | arXiv | [Adaptive Memory and Reflection Multi-Agent System for Medical Question Answering](content/papers/adaptive-memory-and-reflection-multi-agent-system-for-medical-question-answering.md) | agent, retrieval |
@@ -64,14 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-08-18 | arXiv | [EgoMemReason: A Memory-Driven Reasoning Benchmark for Long-Horizon Egocentric Video Understanding](content/papers/egomemreason-a-memory-driven-reasoning-benchmark-for-long-horizon-egocentric-vid.md) | agent, benchmark, context |
 | 2026-08-18 | arXiv | [EgoCITE: Context-Augmented Indexing and Time-Aware Retrieval for Long-Horizon Egocentric Memory](content/papers/egocite-context-augmented-indexing-and-time-aware-retrieval-for-long-horizon-ego.md) | agent, context, conversation |
 | 2026-08-18 | arXiv | [D$^2$ACCI: A Dual-Loop Diagnostic Protocol for Evidence-Preserving Agent Memory](content/papers/d-2-acci-a-dual-loop-diagnostic-protocol-for-evidence-preserving-agent-memory.md) | agent, benchmark, retrieval |
-| 2026-08-18 | arXiv | [CABLE: Extending the Reach of Memory Retrieval via Complementary Antecedent-Based Linking and Expansion](content/papers/cable-extending-the-reach-of-memory-retrieval-via-complementary-antecedent-based.md) | agent, context, conversation |
-| 2026-08-18 | arXiv | [ArborMem: Navigating Interaction States with Memory Forests](content/papers/arbormem-navigating-interaction-states-with-memory-forests.md) | benchmark, context, conversation |
-| 2026-08-17 | arXiv | [MobileMem: Learning from a Year of Mobile Experiences](content/papers/mobilemem-learning-from-a-year-of-mobile-experiences.md) | agent, benchmark, long-term |
-| 2026-08-17 | arXiv | [MELD: A Protocol for Merging Knowledge Across Distributed Agentic Memories](content/papers/meld-a-protocol-for-merging-knowledge-across-distributed-agentic-memories.md) | agent, context |
-| 2026-08-17 | arXiv | [FTA-Mem: Fact-Time-Affect Anchored Memory for Low-Density Long-Term Dialogue](content/papers/fta-mem-fact-time-affect-anchored-memory-for-low-density-long-term-dialogue.md) | agent, benchmark, context |
-| 2026-08-17 | arXiv | [D2-ScaleAgent: Dual-Dimensional Scaling for Long Document Understanding](content/papers/d2-scaleagent-dual-dimensional-scaling-for-long-document-understanding.md) | agent, benchmark, retrieval |
-| 2026-08-17 | arXiv | [Coverage Is Not Redundancy: Maintenance Cost and Exposure of Query-Aware Admission Indexes in Vector Databases Under Workload Drift](content/papers/coverage-is-not-redundancy-maintenance-cost-and-exposure-of-query-aware-admissio.md) | retrieval |
-| 2026-08-17 | arXiv | [AQuA: Recursively Self-Improving Quantitative Trading Research Agents](content/papers/aqua-recursively-self-improving-quantitative-trading-research-agents.md) | agent |
 
 ## Suggested GitHub Setup
 

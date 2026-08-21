@@ -1,5 +1,207 @@
 [
   {
+    "abstract": "AI assistants now accumulate conversation history spanning days, months, or years, making retrieval of past context essential for grounded responses. Users may seek specific details from prior interactions, either explicitly through history search or implicitly during ongoing conversations. Unlike typical document retrieval in RAG settings, dialogue history forms a coherent sequential discourse in which the meaning of an utterance depends on its surrounding context. Existing approaches construct dialogue retrieval units through segmentation, summarization, or hybrid memory construction, but these units are constructed offline and therefore cannot adapt to the information needs expressed by the current query. We propose D-ACR (Dialogue-Aware Context Retrieval), which dynamically identifies relevant segments at query time via KadaneDial, our adaptation of Kadane's maximum-subarray algorithm to the dialogue domain. Across four conversational memory benchmarks and four backbone LLMs, D-ACR achieves the highest retrieval hit and recall while retrieving fewer turns than other strong methods, and maintains stable performance regardless of the backbone LLM.",
+    "authors": [],
+    "categories": [
+      "aclweb.org/ACL/ARR/2026/August/-/Submission"
+    ],
+    "id": "openreview:LJTjY3nUJm",
+    "intro": "这篇论文被纳入仓库，是因为它和 `benchmark, context, conversation, long-term` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 August Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：AI assistants now accumulate conversation history spanning days, months, or years, making retrieval of past context essential for grounded responses.\n\n进一步看，论文的核心做法或实验重点可以概括为：Users may seek specific details from prior interactions, either explicitly through history search or implicitly during ongoing conversations.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "conversational memory",
+      "memory benchmark",
+      "memory benchmarks"
+    ],
+    "one_liner": "AI assistants now accumulate conversation history spanning days, months, or years, making retrieval of past context essential for grounded responses.",
+    "published": "2026-08-04",
+    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 August Submission\n- 高亮主题命中：benchmark, context, conversation, long-term, retrieval\n- 检索关键词命中：conversational memory, memory benchmark, memory benchmarks\n- 来源分类信息：aclweb.org/ACL/ARR/2026/August/-/Submission",
+    "slug": "d-acr-dialogue-aware-context-retrieval-for-long-term-conversational-memory",
+    "source": "OpenReview",
+    "source_key": "LJTjY3nUJm",
+    "tags": [
+      "benchmark",
+      "context",
+      "conversation",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "D-ACR: Dialogue-Aware Context Retrieval for Long-Term Conversational Memory",
+    "updated": "2026-08-21",
+    "url": "https://openreview.net/forum?id=LJTjY3nUJm",
+    "venue": "ACL ARR 2026 August Submission"
+  },
+  {
+    "abstract": "Question Answering over Temporal Knowledge Graphs (TKGQA) requires reasoning over time-sensitive facts, yet existing embedding-based methods struggle with multi-step queries due to single-pass reasoning pipelines. We propose SABET-QA, a framework that iteratively refines reasoning states across multiple hops via a bidirectional entity-temporal scoring mechanism and a slot-aware contextualization module that aligns question semantics with temporal KG embeddings. A differentiable working memory enables progressive hypothesis refinement, while auxiliary temporal boundaries serve as coarse supervision when available. Experiments on CronQuestions, Complex-CronQuestions, MultiTQ, and TimeQuestions demonstrate consistent improvements over strong baselines, particularly on complex multi-step temporal queries.",
+    "authors": [
+      "Brahim Touayouch",
+      "Mirette Moawad",
+      "Dmitry Akulov"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "id": "2608.20083v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `context` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Question Answering over Temporal Knowledge Graphs (TKGQA) requires reasoning over time-sensitive facts, yet existing embedding-based methods struggle with multi-step queries due to single-pass reasoning pipelines.\n\n进一步看，论文的核心做法或实验重点可以概括为：We propose SABET-QA, a framework that iteratively refines reasoning states across multiple hops via a bidirectional entity-temporal scoring mechanism and a slot-aware contextualization module that aligns question...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "working memory"
+    ],
+    "one_liner": "Question Answering over Temporal Knowledge Graphs (TKGQA) requires reasoning over time-sensitive facts, yet existing embedding-based methods struggle with multi-step queries due...",
+    "published": "2026-08-20",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：context\n- 检索关键词命中：working memory\n- 来源分类信息：cs.CL, cs.AI",
+    "slug": "sabet-qa-temporal-knowledge-graph-question-answering",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.20083v1",
+    "tags": [
+      "context"
+    ],
+    "title": "SABET-QA: Temporal Knowledge Graph Question Answering",
+    "updated": "2026-08-20",
+    "url": "http://arxiv.org/abs/2608.20083v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Persistent memory can personalize an LLM agent, but an incorrect durable update can silently distort future behavior. We study the memory-clarification boundary: whether interaction-derived information should be persisted, used only in the current context, re-verified, or clarified with the user. MCB contains 140 primary scenarios, split into 70 development and 70 held-out items, plus a separate 70-item contrast set. It evaluates both action labels and structured tool-call selection. Two non-authors independently label the 70 held-out primary and 70 contrast items (97.1% agreement, Cohen's kappa = 0.962); a blind third resolves four disagreements, replacing eight author labels by non-author majority. Across Claude and Qwen, models verify changing facts more reliably than they ask users to resolve ambiguity. Bare Qwen asks on 0/12 clarification items while verifying 12/18 freshness items. Few-shot prompting raises accuracy from 0.557 to 0.771 (paired delta = +0.214, Holm-adjusted exact McNemar p_H = 0.002), yet clarification recall remains 0.333. The policy prompt reduces erroneous persistence from 0.243 to 0.100 (p_H = 0.038), although its accuracy gain is not significant. Label-tool agreement is 57% for each Claude model and 23% for Qwen; Qwen accuracy falls from 0.557 to 0.343 (p_H = 0.047). Memory evaluation must test both stated decisions and tool-call choices.",
+    "authors": [
+      "Baichuan Li",
+      "Junyi Yao",
+      "Zihao Zheng"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "id": "2608.19564v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, context` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Persistent memory can personalize an LLM agent, but an incorrect durable update can silently distort future behavior.\n\n进一步看，论文的核心做法或实验重点可以概括为：We study the memory-clarification boundary: whether interaction-derived information should be persisted, used only in the current context, re-verified, or clarified with the user.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "persistent memory"
+    ],
+    "one_liner": "Persistent memory can personalize an LLM agent, but an incorrect durable update can silently distort future behavior.",
+    "published": "2026-08-20",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, context\n- 检索关键词命中：persistent memory\n- 来源分类信息：cs.CL",
+    "slug": "remember-verify-or-ask-cross-family-evaluation-of-memory-commitment-in-llm-agent",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.19564v1",
+    "tags": [
+      "agent",
+      "context"
+    ],
+    "title": "Remember, Verify, or Ask? Cross-Family Evaluation of Memory Commitment in LLM Agents",
+    "updated": "2026-08-20",
+    "url": "http://arxiv.org/abs/2608.19564v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Memory has become a key component of large language models, enabling them to retain information and learn from long-term interactions. However, existing memory benchmarks mainly evaluate whether information is correctly extracted, stored, and retrieved, while largely overlooking how retrieved memories reshape model reasoning and affect performance on the current task. We identify memory-induced cognitive traps: even faithfully recorded and semantically relevant memories can distort model reasoning or beliefs and degrade current task performance. To systematically evaluate these failure modes, we introduce MemTrapBench, which covers two forms of cognitive traps: Reasoning Fixation and Belief Distortion. Experiments across two model families and five representative memory frameworks show that MemTrapBench is challenging: all evaluated memory strategies underperform the no-memory setting, with even the strongest methods suffering drops of more than 10%. To mitigate these cognitive traps, we propose AdaptiveMem, a simple yet effective inference-time method that instructs LLMs to avoid memory traps. AdaptiveMem mitigates cognitive traps on MemTrapBench while preserving or improving performance on standard memory benchmarks across diverse memory frameworks.",
+    "authors": [
+      "Mengru Wang",
+      "Haozhe Luo",
+      "Zhenqian Xu",
+      "Zhixiang Cui",
+      "Haoming Xu",
+      "Qu Yang",
+      "Jizhan Fang",
+      "Junfeng Fang",
+      "Ningyu Zhang"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.CL",
+      "cs.CY",
+      "cs.DB",
+      "cs.LG"
+    ],
+    "id": "2608.20202v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `benchmark, long-term` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Memory has become a key component of large language models, enabling them to retain information and learn from long-term interactions.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, existing memory benchmarks mainly evaluate whether information is correctly extracted, stored, and retrieved, while largely overlooking how retrieved memories reshape model reasoning and affect performance on...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory benchmark",
+      "memory benchmarks",
+      "retrieval memory"
+    ],
+    "one_liner": "Memory has become a key component of large language models, enabling them to retain information and learn from long-term interactions.",
+    "published": "2026-08-20",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：benchmark, long-term\n- 检索关键词命中：memory benchmark, memory benchmarks, retrieval memory\n- 来源分类信息：cs.AI, cs.CL, cs.CY, cs.DB",
+    "slug": "memtrapbench-benchmarking-cognitive-traps-in-llm-memory-use",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.20202v1",
+    "tags": [
+      "benchmark",
+      "long-term"
+    ],
+    "title": "MemTrapBench: Benchmarking Cognitive Traps in LLM Memory Use",
+    "updated": "2026-08-20",
+    "url": "http://arxiv.org/abs/2608.20202v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Proactive interference (PI) is a documented failure mode in large language models in which retrieval of a repeatedly overwritten value degrades as prior overwrites accumulate, mirroring a classical phenomenon in human working memory. Post-training quantization (PTQ) is now the default deployment path for open-weight models, yet its effect on this failure mode has not been tested. We evaluate three precision levels (FP16, INT8, INT4/NF4, via bitsandbytes) across three architecturally distinct instruction-tuned models (Qwen2.5-7B-Instruct, Mistral-7B-Instruct-v0.3, Phi-3.5-mini-instruct), holding the retrieval task fixed. INT4 quantization significantly reduces accuracy under high interference in every model (e.g., from 81.0% to 68.3% for Qwen), confirmed by paired McNemar's tests ($p \\le 2.6 \\times 10^{-6}$) and a mixed-effects regression spanning all interference levels; INT8, often assumed safe, also carries a smaller but real penalty in two of three models. The effect is specific to semantically similar (word-type) distractors and reverses sign under a numeric control condition, and is mechanistically linked to a rise in same-key intrusion errors under INT4 (from 21.5% to 24.6% of trials, $p = 4.8 \\times 10^{-7}$). A follow-up ablation shows the effect originates in the quantized transformer backbone rather than the output projection layer. These results suggest that bitsandbytes 4-bit quantization can impose an additional cost on applications relying on long, updatable, semantically dense contexts, even when aggregate benchmark accuracy appears largely unaffected. We release our code and tokenizer-verified vocabulary construction method at https://github.com/ShayanShahrabi/compress-and-forget",
+    "authors": [
+      "Shayan Shahrabi-Farahani",
+      "Dara Rahmati"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.LG"
+    ],
+    "id": "2608.18578v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `benchmark, context, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Proactive interference (PI) is a documented failure mode in large language models in which retrieval of a repeatedly overwritten value degrades as prior overwrites accumulate, mirroring a classical phenomenon in human...\n\n进一步看，论文的核心做法或实验重点可以概括为：Post-training quantization (PTQ) is now the default deployment path for open-weight models, yet its effect on this failure mode has not been tested.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "working memory"
+    ],
+    "one_liner": "Proactive interference (PI) is a documented failure mode in large language models in which retrieval of a repeatedly overwritten value degrades as prior overwrites accumulate,...",
+    "published": "2026-08-19",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：benchmark, context, retrieval\n- 检索关键词命中：working memory\n- 来源分类信息：cs.CL, cs.LG",
+    "slug": "compress-and-forget-bitsandbytes-quantization-amplifies-proactive-interference-i",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.18578v2",
+    "tags": [
+      "benchmark",
+      "context",
+      "retrieval"
+    ],
+    "title": "Compress and Forget: bitsandbytes Quantization Amplifies Proactive Interference in LLMs",
+    "updated": "2026-08-20",
+    "url": "http://arxiv.org/abs/2608.18578v2",
+    "venue": ""
+  },
+  {
+    "abstract": "As LLM-based agents are deployed for longer and higher-stakes tasks, their memory systems continue to have crucial gaps. While existing memory benchmarks focus largely on recall-shaped tasks, we argue an effective memory system must track the evolving state of the world; as facts, constraints, and decisions are revised over a long interaction, answers must reflect the current state and not a superseded one. We define this capability as state tracking and instantiate it in StateMemBench, a benchmark of 234 multi-session scenarios spanning two conversation-length regimes. Its closed-pool grading scores whether an answer reflects the current state, the superseded state, or fails otherwise, separating state-tracking failures from other errors by construction. Our analysis shows that this task is challenging for existing memory systems, retrieval-augmented baselines, and long-context baselines. We then present StateMem, a state-first memory method that explicitly tracks supersession and relational dependencies, and show it improves current-state accuracy over the strongest same-backbone baseline by 1.8x (0.205 -> 0.363) on DeepSeek-V4-Flash and over the strongest memory system by 1.6x (0.149 -> 0.233) on Qwen-3.5-9B, while remaining competitive with the long-context baselines. Finally, we show the same state approach can be applied as a lightweight single-call wrapper over existing memory systems, lifting current-state accuracy by +32 to +67 points on StateMemBench across six memory and retrieval backends. A length- and cost-matched control attributes +15 to +32 of those points to state structure rather than added context.",
+    "authors": [
+      "Xinyi Fan",
+      "Miri Liu",
+      "Ruozhen Yang",
+      "Siru Ouyang",
+      "Jiawei Han"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.CL"
+    ],
+    "id": "2608.19652v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, conversation` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：As LLM-based agents are deployed for longer and higher-stakes tasks, their memory systems continue to have crucial gaps.\n\n进一步看，论文的核心做法或实验重点可以概括为：While existing memory benchmarks focus largely on recall-shaped tasks, we argue an effective memory system must track the evolving state of the world; as facts, constraints, and decisions are revised over a long...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory",
+      "memory benchmark",
+      "memory benchmarks"
+    ],
+    "one_liner": "As LLM-based agents are deployed for longer and higher-stakes tasks, their memory systems continue to have crucial gaps.",
+    "published": "2026-08-20",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context, conversation, retrieval\n- 检索关键词命中：agent memory, memory benchmark, memory benchmarks\n- 来源分类信息：cs.AI, cs.CL",
+    "slug": "can-agent-memory-systems-track-evolving-state",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.19652v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "conversation",
+      "retrieval"
+    ],
+    "title": "Can Agent Memory Systems Track Evolving State?",
+    "updated": "2026-08-20",
+    "url": "http://arxiv.org/abs/2608.19652v1",
+    "venue": ""
+  },
+  {
     "abstract": "Episodic memory retrieval for LLM agents, whether via dense vector similarity or structured multi-axis indexing, generally assumes every extracted query cue is equally reliable, so an incomplete or ambiguous cue can eliminate relevant memories under rigid intersection. We introduce CIRCUIT Memory, a two-tier structured episodic memory architecture that instead separates query-cue confidence (how reliably a cue was extracted) from evidence matching (how well a memory satisfies it), letting retrieval down-weight unreliable cues rather than enforcing hard intersection across axes. On EPBench, replacing hard multi-axis intersection with this confidence-weighted aggregate, using per-axis held-out calibrated confidence, nearly eliminates zero-retrieval failures (61.1% to 1.0%) and is the most robust rule across two books; on LoCoMo, the same additive form, with per-axis confidence calibrated under held-out cross-validation, reaches 81.2% QA accuracy while scanning 41.6% fewer candidates than flat-scan retrieval. We report these gains alongside a candid analysis of where fixed structured strategies, and confidence-weighting itself, still fall short.",
     "authors": [],
     "categories": [
@@ -26,6 +228,40 @@
     "updated": "2026-08-20",
     "url": "https://openreview.net/forum?id=yLpeuklQK4",
     "venue": "ACL ARR 2026 August Submission"
+  },
+  {
+    "abstract": "Long-term multi-agent systems continuously accumulate the memories produced by different agents. Existing memory methods typically treat retrieved memories as independent evidence and combine them through voting or weighting. However, this independence assumption often fails in multi-agent settings: memories written by different agents may inherit the same upstream source or shared bias, causing correlated evidence to be repeatedly counted and creating a false majority. We term this failure mode \\textit{Memory Correlation Bias}. To address the issue, we propose the \\textbf{C}orrelation-\\textbf{A}ware \\textbf{M}emory \\textbf{A}rbitration (CAMA) framework that jointly decouples retrieved memories and recovers missing independent evidence. We model the retrieved memories as query-conditioned evidence groups and combine neural dependency inference with provenance-based symbolic priors to estimate the effective number of independent evidence sources, thereby preventing correlated memories from forming a false majority. Since critical independent evidence may be absent from the initial retrieval set, \\textsc{CAMA} further learns a sequential recovery policy that actively retrieves alternative evidence or traces upstream sources before making the final decision, aiming to recover sufficient independent evidence for reliable arbitration while minimizing retrieval cost. Experiments on multiple benchmarks demonstrate the superiority of our method over the state-of-the-art baseline methods, suppressing false majorities induced by correlated memories.",
+    "authors": [
+      "Chenchen Lin",
+      "Wenhao Yuan",
+      "Xuehe Wang",
+      "Edith Cheuk Han Ngai"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2608.19701v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, long-term, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Long-term multi-agent systems continuously accumulate the memories produced by different agents.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing memory methods typically treat retrieved memories as independent evidence and combine them through voting or weighting.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory",
+      "retrieval memory"
+    ],
+    "one_liner": "Long-term multi-agent systems continuously accumulate the memories produced by different agents.",
+    "published": "2026-08-20",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, long-term, retrieval\n- 检索关键词命中：agent memory, retrieval memory\n- 来源分类信息：cs.AI",
+    "slug": "beyond-memory-majority-latent-source-reasoning-for-multi-agent-memory-arbitratio",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.19701v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "Beyond Memory Majority: Latent-Source Reasoning for Multi-Agent Memory Arbitration",
+    "updated": "2026-08-20",
+    "url": "http://arxiv.org/abs/2608.19701v1",
+    "venue": ""
   },
   {
     "abstract": "Interactive information access is increasingly moving beyond reactive query-response paradigms toward agentic systems that can personalize interaction, retain context, infer latent needs, recommend next steps, and initiate support. This shift creates new opportunities for adaptive and context-aware assistance, while also raising important questions about autonomy, privacy, trust, transparency, user welfare, and evaluation. The First Workshop on Human-Centered Proactive and Personalized Agents for Interactive Information Access provided an interdisciplinary forum for examining these questions across information retrieval, human-computer interaction, dialogue systems, AI ethics, cognitive science, learning technologies, and human-centered AI. Through invited talks, paper presentations, and open discussion, the workshop engaged with topics including calibrated initiative, knowledge-gap navigation, long-term memory, value-sensitive design, implicit personalization, AI-mediated care, proactive dialogue, and evaluation beyond task accuracy. A central theme across the workshop was that proactivity should not be understood only as earlier action or improved prediction, but as a form of initiative that must be appropriately timed, transparent, contestable, and aligned with user goals. This report summarizes the workshop and synthesizes the research challenges it surfaced for designing proactive and personalized agents in interactive information access.",
@@ -98,6 +334,37 @@
     "title": "MemFuse: Multi-Source Memory Fusion from Fragmented Observations",
     "updated": "2026-08-19",
     "url": "http://arxiv.org/abs/2608.18704v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Most modern optimizers form their momentum as an exponential moving average (EMA) of past gradients, forgetting every direction at one fixed rate. However, the inputs a deep network sees during training can be highly anisotropic, with a few directions queried frequently while most are seen rarely. Recent methods address this anisotropy by wrapping extra processing around this buffer, leaving the momentum update itself unchanged. We propose DeltaMomentum, which builds direction-awareness into the momentum update rule. The main observation is that the gradient of a linear layer splits into an input that acts as a key and an output-side error that acts as a value. Exploiting the key-value structure, DeltaMomentum updates the momentum buffer by the canonical delta rule, so each direction is forgotten at a rate set by how often it appears. We prove that it is a valid momentum, that it applies the input-side curvature correction without matrix inversion, and that it clears stale directions faster than EMA under both a fixed and a drifting optimum. It is a drop-in replacement for the momentum buffer of any optimizer, its coefficient transfers across widths under $μ$P, and its extra compute stays between $22.2\\%$ and $25.0\\%$ of a gated-MLP block's linear cost with no persistent memory. In FineWeb-Edu pretraining, AdamW with DeltaMomentum (DeltaAdamW) reaches AdamW's validation loss in up to $46.39 \\pm 4.32\\%$ fewer steps at 67M and $22.12 \\pm 0.80\\%$ at 370M over three seeds, and the gain persists at 1B on a Chinchilla-optimal budget. A Muon baseline tuned under the same protocol sits above DeltaAdamW at both language-model scales, and the gain holds for SGD, ResNet-18, and ViT-Tiny on CIFAR-10. Training-time diagnostics confirm the predicted mechanism, better gradient tracking and healthier input directions.",
+    "authors": [
+      "Euijin Hong",
+      "Guannan Qu"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.CL",
+      "math.OC",
+      "stat.ML"
+    ],
+    "id": "2608.19491v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `persistent memory` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Most modern optimizers form their momentum as an exponential moving average (EMA) of past gradients, forgetting every direction at one fixed rate.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, the inputs a deep network sees during training can be highly anisotropic, with a few directions queried frequently while most are seen rarely.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "persistent memory"
+    ],
+    "one_liner": "Most modern optimizers form their momentum as an exponential moving average (EMA) of past gradients, forgetting every direction at one fixed rate.",
+    "published": "2026-08-19",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：persistent memory\n- 检索关键词命中：persistent memory\n- 来源分类信息：cs.LG, cs.CL, math.OC, stat.ML",
+    "slug": "deltamomentum-a-key-value-based-anisotropic-momentum-update-via-delta-rule",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.19491v1",
+    "tags": [
+      "persistent memory"
+    ],
+    "title": "DeltaMomentum: A Key-Value based Anisotropic Momentum Update via Delta Rule",
+    "updated": "2026-08-19",
+    "url": "http://arxiv.org/abs/2608.19491v1",
     "venue": ""
   },
   {
@@ -4384,37 +4651,6 @@
     "updated": "2026-08-04",
     "url": "http://arxiv.org/abs/2608.03130v1",
     "venue": ""
-  },
-  {
-    "abstract": "AI assistants now accumulate conversation history spanning days, months, or years, making retrieval of past context essential for grounded responses. Users may seek specific details from prior interactions, either explicitly through history search or implicitly during ongoing conversations. Unlike typical document retrieval in RAG settings, dialogue history forms a coherent sequential discourse in which the meaning of an utterance depends on its surrounding context. Existing approaches construct dialogue retrieval units through segmentation, summarization, or hybrid memory construction, but these units are constructed offline and therefore cannot adapt to the information needs expressed by the current query. We propose D-ACR (Dialogue-Aware Context Retrieval), which dynamically identifies relevant segments at query time via KadaneDial, our adaptation of Kadane's maximum-subarray algorithm to the dialogue domain. Across four conversational memory benchmarks and four backbone LLMs, D-ACR achieves the highest retrieval hit and recall while retrieving fewer turns than other strong methods, and maintains stable performance regardless of the backbone LLM.",
-    "authors": [],
-    "categories": [
-      "aclweb.org/ACL/ARR/2026/August/-/Submission"
-    ],
-    "id": "openreview:LJTjY3nUJm",
-    "intro": "这篇论文被纳入仓库，是因为它和 `benchmark, context, conversation, long-term` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 August Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：AI assistants now accumulate conversation history spanning days, months, or years, making retrieval of past context essential for grounded responses.\n\n进一步看，论文的核心做法或实验重点可以概括为：Users may seek specific details from prior interactions, either explicitly through history search or implicitly during ongoing conversations.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
-    "matched_keywords": [
-      "conversational memory",
-      "memory benchmark",
-      "memory benchmarks"
-    ],
-    "one_liner": "AI assistants now accumulate conversation history spanning days, months, or years, making retrieval of past context essential for grounded responses.",
-    "published": "2026-08-04",
-    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 August Submission\n- 高亮主题命中：benchmark, context, conversation, long-term, retrieval\n- 检索关键词命中：conversational memory, memory benchmark, memory benchmarks\n- 来源分类信息：aclweb.org/ACL/ARR/2026/August/-/Submission",
-    "slug": "d-acr-dialogue-aware-context-retrieval-for-long-term-conversational-memory",
-    "source": "OpenReview",
-    "source_key": "LJTjY3nUJm",
-    "tags": [
-      "benchmark",
-      "context",
-      "conversation",
-      "long-term",
-      "retrieval"
-    ],
-    "title": "D-ACR: Dialogue-Aware Context Retrieval for Long-Term Conversational Memory",
-    "updated": "2026-08-04",
-    "url": "https://openreview.net/forum?id=LJTjY3nUJm",
-    "venue": "ACL ARR 2026 August Submission"
   },
   {
     "abstract": "Long-term multimodal memory must support not only retrieving relevant information but also computing over observations accumulated across interactions. Existing systems largely emphasize \\emph{retrieval memory}, organizing interaction histories through summaries and indexes to return query-relevant information at multiple granularities, from high-level abstractions to underlying records. In this paper, we formulate \\emph{analytic memory} as a complementary abstraction that organizes recurring multimodal observations into queryable structures supporting filtering, aggregation, ranking, and temporal comparison. We present AdaMM, a framework that jointly supports retrieval and analytic memory. Rather than relying on application-defined schemas, AdaMM extracts provenance-linked attribute-value observations from dialogue, images, and contextual metadata, discovers recurring field structures, and materializes them for analytical access. At inference time, a memory-aware planner decomposes queries into retrieval and analytic operations and routes each operation to the appropriate tools. Experiments on two long-term multimodal memory benchmarks, MemEye and MemGallery, show that AdaMM improves performance by up to 11.3\\% and 6.9\\%, respectively.",
