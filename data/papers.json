@@ -1,5 +1,32 @@
 [
   {
+    "abstract": "Conversational memory in AI systems becomes crucial for coherent interactions through prolonged conversations. State-of-the-art techniques mainly aim at improving memory by context expansion, using retrieval, or external memory. However, most methods assume that any entity mention should be immediately mapped to one interpretation. This often leads to premature commitments, memory confirmation bias, hallucinations in the conversation, and accumulation of wrong conversational state. This paper states that conversational memory should not hide ambiguity, but should represent it explicitly as part of the reasoning process. This paper proposes an Entity-Centric Conversational Memory Framework that views entity linking as a process of explicit belief management, instead of a deterministic one. It maintains the space of interpretations of entities that includes both correct and incorrect hypotheses, such as $\\mathrm{UNKNOWN}$ hypothesis, processes heterogeneous conversational evidence via belief update, detects ambiguity, and performs one of three actions: Commit, Clarify, or Delay. By doing so, the framework separates entity reasoning from memory updates, allowing to write to memory only when certain. The experiments conducted on ConEL conversational entity linking dataset show that the proposed framework reaches $99.0\\%$ commit precision providing explicit control over the precision-coverage trade-off. The analysis shows several properties of conversational memory and brings important architectural insights to light: the existence of memory confirmation bias, the importance of treating $\\mathrm{UNKNOWN}$ as an active competing hypothesis, and the limitations of fixed ambiguity thresholds on different entity types.",
+    "authors": [],
+    "categories": [
+      "aclweb.org/ACL/ARR/2026/August/-/Submission"
+    ],
+    "id": "openreview:oobq0Zs3mc",
+    "intro": "这篇论文被纳入仓库，是因为它和 `context, conversation, retrieval` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 August Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Conversational memory in AI systems becomes crucial for coherent interactions through prolonged conversations.\n\n进一步看，论文的核心做法或实验重点可以概括为：State-of-the-art techniques mainly aim at improving memory by context expansion, using retrieval, or external memory.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "conversational memory"
+    ],
+    "one_liner": "Conversational memory in AI systems becomes crucial for coherent interactions through prolonged conversations.",
+    "published": "2026-08-04",
+    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 August Submission\n- 高亮主题命中：context, conversation, retrieval\n- 检索关键词命中：conversational memory\n- 来源分类信息：aclweb.org/ACL/ARR/2026/August/-/Submission",
+    "slug": "reason-before-remembering-an-entity-centric-framework-for-trustworthy-conversati",
+    "source": "OpenReview",
+    "source_key": "oobq0Zs3mc",
+    "tags": [
+      "context",
+      "conversation",
+      "retrieval"
+    ],
+    "title": "Reason Before Remembering: An Entity-Centric Framework for Trustworthy Conversational Memory",
+    "updated": "2026-08-21",
+    "url": "https://openreview.net/forum?id=oobq0Zs3mc",
+    "venue": "ACL ARR 2026 August Submission"
+  },
+  {
     "abstract": "AI assistants now accumulate conversation history spanning days, months, or years, making retrieval of past context essential for grounded responses. Users may seek specific details from prior interactions, either explicitly through history search or implicitly during ongoing conversations. Unlike typical document retrieval in RAG settings, dialogue history forms a coherent sequential discourse in which the meaning of an utterance depends on its surrounding context. Existing approaches construct dialogue retrieval units through segmentation, summarization, or hybrid memory construction, but these units are constructed offline and therefore cannot adapt to the information needs expressed by the current query. We propose D-ACR (Dialogue-Aware Context Retrieval), which dynamically identifies relevant segments at query time via KadaneDial, our adaptation of Kadane's maximum-subarray algorithm to the dialogue domain. Across four conversational memory benchmarks and four backbone LLMs, D-ACR achieves the highest retrieval hit and recall while retrieving fewer turns than other strong methods, and maintains stable performance regardless of the backbone LLM.",
     "authors": [],
     "categories": [
@@ -4223,33 +4250,6 @@
     "updated": "2026-08-04",
     "url": "http://arxiv.org/abs/2608.02508v2",
     "venue": ""
-  },
-  {
-    "abstract": "Conversational memory in AI systems becomes crucial for coherent interactions through prolonged conversations. State-of-the-art techniques mainly aim at improving memory by context expansion, using retrieval, or external memory. However, most methods assume that any entity mention should be immediately mapped to one interpretation. This often leads to premature commitments, memory confirmation bias, hallucinations in the conversation, and accumulation of wrong conversational state. This paper states that conversational memory should not hide ambiguity, but should represent it explicitly as part of the reasoning process. This paper proposes an Entity-Centric Conversational Memory Framework that views entity linking as a process of explicit belief management, instead of a deterministic one. It maintains the space of interpretations of entities that includes both correct and incorrect hypotheses, such as $\\mathrm{UNKNOWN}$ hypothesis, processes heterogeneous conversational evidence via belief update, detects ambiguity, and performs one of three actions: Commit, Clarify, or Delay. By doing so, the framework separates entity reasoning from memory updates, allowing to write to memory only when certain. The experiments conducted on ConEL conversational entity linking dataset show that the proposed framework reaches $99.0\\%$ commit precision providing explicit control over the precision-coverage trade-off. The analysis shows several properties of conversational memory and brings important architectural insights to light: the existence of memory confirmation bias, the importance of treating $\\mathrm{UNKNOWN}$ as an active competing hypothesis, and the limitations of fixed ambiguity thresholds on different entity types.",
-    "authors": [],
-    "categories": [
-      "aclweb.org/ACL/ARR/2026/August/-/Submission"
-    ],
-    "id": "openreview:oobq0Zs3mc",
-    "intro": "这篇论文被纳入仓库，是因为它和 `context, conversation, retrieval` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 August Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Conversational memory in AI systems becomes crucial for coherent interactions through prolonged conversations.\n\n进一步看，论文的核心做法或实验重点可以概括为：State-of-the-art techniques mainly aim at improving memory by context expansion, using retrieval, or external memory.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
-    "matched_keywords": [
-      "conversational memory"
-    ],
-    "one_liner": "Conversational memory in AI systems becomes crucial for coherent interactions through prolonged conversations.",
-    "published": "2026-08-04",
-    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 August Submission\n- 高亮主题命中：context, conversation, retrieval\n- 检索关键词命中：conversational memory\n- 来源分类信息：aclweb.org/ACL/ARR/2026/August/-/Submission",
-    "slug": "reason-before-remembering-an-entity-centric-framework-for-trustworthy-conversati",
-    "source": "OpenReview",
-    "source_key": "oobq0Zs3mc",
-    "tags": [
-      "context",
-      "conversation",
-      "retrieval"
-    ],
-    "title": "Reason Before Remembering: An Entity-Centric Framework for Trustworthy Conversational Memory",
-    "updated": "2026-08-04",
-    "url": "https://openreview.net/forum?id=oobq0Zs3mc",
-    "venue": "ACL ARR 2026 August Submission"
   },
   {
     "abstract": "Memory-augmented agents increasingly operate over long-term tasks. These agents rely on persistent memory that evolves through update and delete operations on stored content. Many existing memory architectures execute these irreversible operations within the task execution loop, treating task feedback as a proxy for memory utility. This position paper argues that task-triggered evolution of memory content can destroy memories with high long-term utility. We introduce a taxonomy of memory-augmented agents organized by the trigger and target of their evolution operations. We present per-operation evidence from nine architectures across procedural and episodic-memory settings. We show that task-triggered update and delete operations precede a substantial share of downstream failures, while methods that defer evolution or restrict evolution to auxiliary content exhibit far fewer. We call on the community to (i) discipline memory operations separately for episodic and procedural memory, and (ii) adopt stage-level diagnostic tools that attribute failures to specific pipeline stages rather than report aggregate accuracy alone.",

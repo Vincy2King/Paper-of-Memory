@@ -40,7 +40,7 @@ python3 scripts/update_papers.py --build-only
 ## Repository Snapshot
 
 - Total tracked papers: **984**
-- Last generated: **2026-08-21**
+- Last generated: **2026-08-22**
 
 ## Papers by Source
 
@@ -52,6 +52,7 @@ python3 scripts/update_papers.py --build-only
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-08-21 | OpenReview | [Reason Before Remembering: An Entity-Centric Framework for Trustworthy Conversational Memory](content/papers/reason-before-remembering-an-entity-centric-framework-for-trustworthy-conversati.md) | context, conversation, retrieval |
 | 2026-08-21 | OpenReview | [D-ACR: Dialogue-Aware Context Retrieval for Long-Term Conversational Memory](content/papers/d-acr-dialogue-aware-context-retrieval-for-long-term-conversational-memory.md) | benchmark, context, conversation |
 | 2026-08-20 | arXiv | [SABET-QA: Temporal Knowledge Graph Question Answering](content/papers/sabet-qa-temporal-knowledge-graph-question-answering.md) | context |
 | 2026-08-20 | arXiv | [Remember, Verify, or Ask? Cross-Family Evaluation of Memory Commitment in LLM Agents](content/papers/remember-verify-or-ask-cross-family-evaluation-of-memory-commitment-in-llm-agent.md) | agent, context |
@@ -71,7 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-08-18 | arXiv | [GraphWake: Group Polarization via Memory-Mediated Polarization Cascade in LLM-Agent Communities](content/papers/graphwake-group-polarization-via-memory-mediated-polarization-cascade-in-llm-age.md) | agent, retrieval |
 | 2026-08-18 | arXiv | [EgoMemReason: A Memory-Driven Reasoning Benchmark for Long-Horizon Egocentric Video Understanding](content/papers/egomemreason-a-memory-driven-reasoning-benchmark-for-long-horizon-egocentric-vid.md) | agent, benchmark, context |
 | 2026-08-18 | arXiv | [EgoCITE: Context-Augmented Indexing and Time-Aware Retrieval for Long-Horizon Egocentric Memory](content/papers/egocite-context-augmented-indexing-and-time-aware-retrieval-for-long-horizon-ego.md) | agent, context, conversation |
-| 2026-08-18 | arXiv | [D$^2$ACCI: A Dual-Loop Diagnostic Protocol for Evidence-Preserving Agent Memory](content/papers/d-2-acci-a-dual-loop-diagnostic-protocol-for-evidence-preserving-agent-memory.md) | agent, benchmark, retrieval |
 
 ## Suggested GitHub Setup
 
