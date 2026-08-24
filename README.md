@@ -39,19 +39,20 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **984**
-- Last generated: **2026-08-23**
+- Total tracked papers: **985**
+- Last generated: **2026-08-24**
 
 ## Papers by Source
 
 - ACL Anthology: **5**
 - arXiv: **845**
-- OpenReview: **134**
+- OpenReview: **135**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-08-23 | OpenReview | [Human-inspired Perspectives: A Survey on AI Long-term Memory](content/papers/human-inspired-perspectives-a-survey-on-ai-long-term-memory.md) | long-term |
 | 2026-08-22 | OpenReview | [Knowledge Graph Enhanced Memory-Augmented Retrieval for Long Context Modeling](content/papers/knowledge-graph-enhanced-memory-augmented-retrieval-for-long-context-modeling.md) | context, retrieval |
 | 2026-08-21 | OpenReview | [Reason Before Remembering: An Entity-Centric Framework for Trustworthy Conversational Memory](content/papers/reason-before-remembering-an-entity-centric-framework-for-trustworthy-conversati.md) | context, conversation, retrieval |
 | 2026-08-21 | OpenReview | [D-ACR: Dialogue-Aware Context Retrieval for Long-Term Conversational Memory](content/papers/d-acr-dialogue-aware-context-retrieval-for-long-term-conversational-memory.md) | benchmark, context, conversation |
@@ -71,7 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-08-18 | arXiv | [On the Fragility of Self-Improving Agents: Variance, Task Order, and Underspecification](content/papers/on-the-fragility-of-self-improving-agents-variance-task-order-and-underspecifica.md) | agent |
 | 2026-08-18 | arXiv | [Multi-turn Conversational AI from Text to Multimodal Interaction: Data, Models, Evaluation, and Open Challenges](content/papers/multi-turn-conversational-ai-from-text-to-multimodal-interaction-data-models-eva.md) | agent, benchmark, context |
 | 2026-08-18 | arXiv | [GraphWake: Group Polarization via Memory-Mediated Polarization Cascade in LLM-Agent Communities](content/papers/graphwake-group-polarization-via-memory-mediated-polarization-cascade-in-llm-age.md) | agent, retrieval |
-| 2026-08-18 | arXiv | [EgoMemReason: A Memory-Driven Reasoning Benchmark for Long-Horizon Egocentric Video Understanding](content/papers/egomemreason-a-memory-driven-reasoning-benchmark-for-long-horizon-egocentric-vid.md) | agent, benchmark, context |
 
 ## Suggested GitHub Setup
 

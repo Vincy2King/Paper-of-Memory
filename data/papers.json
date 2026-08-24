@@ -1,5 +1,41 @@
 [
   {
+    "abstract": "With the rapid advancement of AI systems, their abilities to store, retrieve, and utilize information over the long term - referred to as long-term memory - have become increasingly significant. These capabilities are crucial for enhancing the performance of AI systems across a wide range of tasks. However, there is currently no comprehensive survey that systematically investigates AI's long-term memory capabilities, formulates a theoretical framework, and inspires the development of next-generation AI long-term memory systems. This paper begins by introducing the mechanisms of human long-term memory, then explores AI long-term memory mechanisms, establishing a mapping between the two. Based on the mapping relationships identified, we extend the current cognitive architectures and propose the Cognitive Architecture of Self-Adaptive Long-term Memory (SALM). SALM provides a theoretical framework for the practice of AI long-term memory and holds potential for guiding the creation of next-generation long-term memory driven AI systems. Finally, we delve into the future directions and application prospects of AI long-term memory.",
+    "authors": [
+      "Zihong He",
+      "Weizhe Lin",
+      "Hao Zheng",
+      "Fan Zhang",
+      "Matt W. Jones",
+      "Laurence Aitchison",
+      "Xuhai Xu",
+      "Miao Liu",
+      "Per Ola Kristensson",
+      "Junxiao Shen"
+    ],
+    "categories": [
+      "DBLP.org/-/Record"
+    ],
+    "id": "openreview:XCeaJEOzq7",
+    "intro": "这篇论文被纳入仓库，是因为它和 `long-term` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `CoRR 2024` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：With the rapid advancement of AI systems, their abilities to store, retrieve, and utilize information over the long term - referred to as long-term memory - have become increasingly significant.\n\n进一步看，论文的核心做法或实验重点可以概括为：These capabilities are crucial for enhancing the performance of AI systems across a wide range of tasks.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "long-term memory"
+    ],
+    "one_liner": "With the rapid advancement of AI systems, their abilities to store, retrieve, and utilize information over the long term - referred to as long-term memory - have become...",
+    "published": "2024-01-01",
+    "relevance": "- 来源：OpenReview\n- Venue：CoRR 2024\n- 高亮主题命中：long-term\n- 检索关键词命中：long-term memory\n- 来源分类信息：DBLP.org/-/Record",
+    "slug": "human-inspired-perspectives-a-survey-on-ai-long-term-memory",
+    "source": "OpenReview",
+    "source_key": "XCeaJEOzq7",
+    "tags": [
+      "long-term"
+    ],
+    "title": "Human-inspired Perspectives: A Survey on AI Long-term Memory",
+    "updated": "2026-08-23",
+    "url": "https://openreview.net/forum?id=XCeaJEOzq7",
+    "venue": "CoRR 2024"
+  },
+  {
     "abstract": "Long-context modeling requires tracking entity states across thousands of tokens, yet dense semantic retrieval conflates distinct states of the same entity. We present KGERMAR, a memory-augmented framework that constructs dynamic, context-specific knowledge graphs at both training and inference time. By integrating graph-structural embeddings with textual semantics in a three-bank memory architecture (contextual, semantic, and structural), KGERMAR discriminates between lexically similar passages based on underlying entity relationships. On entity-rich corpora, structural memory provides a stable complementary signal that reduces perplexity by up to 8.5\\% and memory per token by 1.6–2.2× compared to memory-augmented baselines. Ablations show that semantic retrieval dominates at shorter contexts but saturates at 32K tokens, whereas structural memory maintains consistent gains, establishing that dynamic knowledge graphs improve long-context modeling specifically when entity density is high.",
     "authors": [],
     "categories": [
