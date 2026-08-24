@@ -1,5 +1,141 @@
 [
   {
+    "abstract": "Large language models are often assumed to benefit from longer context windows, yet retrieval from context requires not only locating the target information but also suppressing competing information tied to the same cue. Inspired by the proactive interference (PI) paradigm in cognitive science, we introduce PI-LLM, an evaluation in which interleaved key-value updates are streamed and models are queried to retrieve only the final value of each key, therefore isolating interference rather than search as the primary variable. Across 35+ models ranging from 0.6B open-weight to frontier-scale proprietary systems, retrieval accuracy declines approximately log-linearly as repeated same-key updates accumulate, with errors dominated by outdated values. Similar log-linear degradation patterns emerge across multiple independent load dimensions, and persist when total input length is held constant, pointing to a working-memory-like bottleneck in maintaining and retrieving the current binding under interference; resistance scales with effective parameter size rather than context window length. This degradation is not alleviated by explicit \"forget\" instructions or chain-of-thought reasoning, and shows no sign of leveling off within the tested range, in contrast to the plateau observed in human PI studies. Together, these results suggest that LLMs' working-memory-like capacity, though large, is governed by less flexible control than the executive processes that support human resilience to interference.",
+    "authors": [
+      "Chupei Wang",
+      "Jiaqiu Vince Sun"
+    ],
+    "categories": [
+      "colmweb.org/COLM/2026/Conference/-/Submission"
+    ],
+    "id": "openreview:7WyNCZXSw7",
+    "intro": "这篇论文被纳入仓库，是因为它和 `context, retrieval` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `COLM 2026` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Large language models are often assumed to benefit from longer context windows, yet retrieval from context requires not only locating the target information but also suppressing competing information tied to the same...\n\n进一步看，论文的核心做法或实验重点可以概括为：Inspired by the proactive interference (PI) paradigm in cognitive science, we introduce PI-LLM, an evaluation in which interleaved key-value updates are streamed and models are queried to retrieve only the final value...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "working memory"
+    ],
+    "one_liner": "Large language models are often assumed to benefit from longer context windows, yet retrieval from context requires not only locating the target information but also suppressing...",
+    "published": "2026-07-08",
+    "relevance": "- 来源：OpenReview\n- Venue：COLM 2026\n- 高亮主题命中：context, retrieval\n- 检索关键词命中：working memory\n- 来源分类信息：colmweb.org/COLM/2026/Conference/-/Submission",
+    "slug": "unable-to-forget-proactive-interference-reveals-working-memory-limits-in-llms-be",
+    "source": "OpenReview",
+    "source_key": "7WyNCZXSw7",
+    "tags": [
+      "context",
+      "retrieval"
+    ],
+    "title": "Unable to Forget: Proactive Interference Reveals Working Memory Limits in LLMs Beyond Context Length",
+    "updated": "2026-08-24",
+    "url": "https://openreview.net/forum?id=7WyNCZXSw7",
+    "venue": "COLM 2026"
+  },
+  {
+    "abstract": "Long-horizon agents must preserve past experience before knowing what future queries will require. Compact memory makes growing histories efficient to reuse by distilling experience into reusable abstractions, while raw history preserves fine-grained evidence for faithful grounding. Because future queries require different levels of detail, the appropriate memory granularity cannot be reliably fixed when memory is written. We therefore argue that memory granularity should be determined when the future information need becomes known. We introduce \\textbf{TierMem}, a provenance-linked two-tier memory framework that allocates memory granularity according to evidence sufficiency. TierMem retrieves compact memory by default, uses a learned router to identify when finer-grained evidence is required, and follows provenance links to recover relevant raw evidence. Recovered evidence can be consolidated into compact memory for future reuse. Across two long-horizon memory benchmarks, TierMem recovers much of the quality enabled by raw evidence while substantially reducing inference cost. Further analyses show that provenance improves evidence recovery and that consolidation progressively increases the share of queries served by compact memory.",
+    "authors": [
+      "Qiming Zhu",
+      "Shunian Chen",
+      "Rui Yu",
+      "Zhehao Wu",
+      "Benyou Wang"
+    ],
+    "categories": [
+      "colmweb.org/COLM/2026/Conference/-/Submission"
+    ],
+    "id": "openreview:svKCa4itcd",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `COLM 2026` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Long-horizon agents must preserve past experience before knowing what future queries will require.\n\n进一步看，论文的核心做法或实验重点可以概括为：Compact memory makes growing histories efficient to reuse by distilling experience into reusable abstractions, while raw history preserves fine-grained evidence for faithful grounding.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory",
+      "memory benchmark",
+      "memory benchmarks"
+    ],
+    "one_liner": "Long-horizon agents must preserve past experience before knowing what future queries will require.",
+    "published": "2026-07-08",
+    "relevance": "- 来源：OpenReview\n- Venue：COLM 2026\n- 高亮主题命中：agent, benchmark\n- 检索关键词命中：agent memory, memory benchmark, memory benchmarks\n- 来源分类信息：colmweb.org/COLM/2026/Conference/-/Submission",
+    "slug": "tiermem-balancing-compressed-memory-and-raw-evidence-for-long-horizon-agent-memo",
+    "source": "OpenReview",
+    "source_key": "svKCa4itcd",
+    "tags": [
+      "agent",
+      "benchmark"
+    ],
+    "title": "TierMem: Balancing Compressed Memory and Raw Evidence for Long-Horizon Agent Memory",
+    "updated": "2026-08-24",
+    "url": "https://openreview.net/forum?id=svKCa4itcd",
+    "venue": "COLM 2026"
+  },
+  {
+    "abstract": "Intelligent systems must maintain and manipulate task-relevant information online to adapt to dynamic environments. This capacity, known as working memory, is fundamental to human reasoning. Yet, human working memory is strikingly limited, maintaining only three to four items in a brain with billions of neurons. Surprisingly, large language models (LLMs), despite different substrates and direct access to prior context through attention, exhibit similar working memory limitations. Why should such different systems face analogous constraints? We propose that working memory limitations reflect a general trade-off of shared representations: representational compression and reuse support efficient learning and generalization, but also cause simultaneously active representations to interfere. We show a two-layer transformer trained on a working memory task can solve it perfectly, but diverse trained LLMs exhibit human-like limitations: performance declines with memory load, while retrieval is biased by recency and stimulus statistics. Mirroring humans, working memory performance in LLMs is also associated with broader model capability. Mechanistically, we show that LLMs encode multiple memories in entangled representations --- a condition we call \\emph{in-context superposition} --- and progressively suppress competing content while aligning the target with the readout. Moreover, a causal intervention that suppresses interfering information improves performance. Together, these findings suggest that working memory capacity reflects the ability to select task-relevant information under interference, a computational challenge shared by biological and artificial systems.",
+    "authors": [
+      "Hua-Dong Xiong",
+      "Li Ji-An",
+      "Jiaqi Huang",
+      "Robert Wilson",
+      "Kwonjoon Lee",
+      "Xue-Xin Wei"
+    ],
+    "categories": [
+      "colmweb.org/COLM/2026/Conference/-/Submission"
+    ],
+    "id": "openreview:g1hMOOAX2n",
+    "intro": "这篇论文被纳入仓库，是因为它和 `compression, context, retrieval` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `COLM 2026` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Intelligent systems must maintain and manipulate task-relevant information online to adapt to dynamic environments.\n\n进一步看，论文的核心做法或实验重点可以概括为：This capacity, known as working memory, is fundamental to human reasoning.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "working memory"
+    ],
+    "one_liner": "Intelligent systems must maintain and manipulate task-relevant information online to adapt to dynamic environments.",
+    "published": "2026-07-08",
+    "relevance": "- 来源：OpenReview\n- Venue：COLM 2026\n- 高亮主题命中：compression, context, retrieval\n- 检索关键词命中：working memory\n- 来源分类信息：colmweb.org/COLM/2026/Conference/-/Submission",
+    "slug": "in-context-superposition-human-like-working-memory-interference-in-large-languag",
+    "source": "OpenReview",
+    "source_key": "g1hMOOAX2n",
+    "tags": [
+      "compression",
+      "context",
+      "retrieval"
+    ],
+    "title": "In-context superposition: human-like working memory interference in large language models",
+    "updated": "2026-08-24",
+    "url": "https://openreview.net/forum?id=g1hMOOAX2n",
+    "venue": "COLM 2026"
+  },
+  {
+    "abstract": "Existing conversational memory systems rely on complex hierarchical summarization or reinforcement learning to manage long-term dialogue history, yet remain vulnerable to context dilution as conversations grow. In this work, we offer a different perspective: the primary bottleneck may lie not in memory architecture, but in the Signal Sparsity Effect within the latent knowledge manifold. Through controlled experiments, we identify two key phenomena: Decisive Evidence Sparsity, where relevant signals become increasingly isolated with longer sessions, leading to sharp degradation in aggregation-based methods; and Dual-Level Redundancy, where both intersession interference and intra-session conversational filler introduce large amounts of non-informative content, hindering effective generation. Motivated by these insights, we propose Nano-Memory, a minimalist framework that brings conversational memory back to basics, relying solely on retrieval and generation via Turn Isolation Retrieval (TIR) and Query-Driven Pruning (QDP). TIR replaces global aggregation with a max-activation strategy to capture turn-level signals, while QDP removes redundant sessions and conversational filler to construct a compact, high-density evidence set. Extensive experiments on multiple benchmarks demonstrate that Nano-Memory achieves robust performance across diverse settings, consistently outperforming strong baselines while maintaining high efficiency in tokens and latency, establishing a new minimalist baseline for conversational memory.",
+    "authors": [
+      "Yuqian Wu",
+      "Wei Chen",
+      "Zhengjun Huang",
+      "Junle Chen",
+      "Qingxiang Liu",
+      "Kai Wang",
+      "Xiaofang Zhou",
+      "Yuxuan Liang"
+    ],
+    "categories": [
+      "colmweb.org/COLM/2026/Conference/-/Submission"
+    ],
+    "id": "openreview:BFHdlmY3nL",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, conversation` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `COLM 2026` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Existing conversational memory systems rely on complex hierarchical summarization or reinforcement learning to manage long-term dialogue history, yet remain vulnerable to context dilution as conversations grow.\n\n进一步看，论文的核心做法或实验重点可以概括为：In this work, we offer a different perspective: the primary bottleneck may lie not in memory architecture, but in the Signal Sparsity Effect within the latent knowledge manifold.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "conversational memory"
+    ],
+    "one_liner": "Existing conversational memory systems rely on complex hierarchical summarization or reinforcement learning to manage long-term dialogue history, yet remain vulnerable to...",
+    "published": "2026-07-08",
+    "relevance": "- 来源：OpenReview\n- Venue：COLM 2026\n- 高亮主题命中：agent, benchmark, context, conversation, long-term, retrieval\n- 检索关键词命中：conversational memory\n- 来源分类信息：colmweb.org/COLM/2026/Conference/-/Submission",
+    "slug": "back-to-basics-let-conversational-agents-remember-with-just-retrieval-and-genera",
+    "source": "OpenReview",
+    "source_key": "BFHdlmY3nL",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "conversation",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "Back to Basics: Let Conversational Agents Remember with Just Retrieval and Generation",
+    "updated": "2026-08-24",
+    "url": "https://openreview.net/forum?id=BFHdlmY3nL",
+    "venue": "COLM 2026"
+  },
+  {
     "abstract": "With the rapid advancement of AI systems, their abilities to store, retrieve, and utilize information over the long term - referred to as long-term memory - have become increasingly significant. These capabilities are crucial for enhancing the performance of AI systems across a wide range of tasks. However, there is currently no comprehensive survey that systematically investigates AI's long-term memory capabilities, formulates a theoretical framework, and inspires the development of next-generation AI long-term memory systems. This paper begins by introducing the mechanisms of human long-term memory, then explores AI long-term memory mechanisms, establishing a mapping between the two. Based on the mapping relationships identified, we extend the current cognitive architectures and propose the Cognitive Architecture of Self-Adaptive Long-term Memory (SALM). SALM provides a theoretical framework for the practice of AI long-term memory and holds potential for guiding the creation of next-generation long-term memory driven AI systems. Finally, we delve into the future directions and application prospects of AI long-term memory.",
     "authors": [
       "Zihong He",
@@ -62,6 +198,108 @@
     "venue": "ACL ARR 2026 August Submission"
   },
   {
+    "abstract": "Large language model (LLM) agents have demonstrated the ability to solve multi-step tasks requiring planning, tool use, and external information access, yet growing execution histories increase inference cost and expose reasoning to outdated, irrelevant, or misleading information, potentially degrading reasoning quality. Existing memory approaches organize or compress execution histories but provide limited mechanisms for deciding which memories remain active. We introduce the, a hierarchical memory system that organizes execution into tasks, subtasks, and actions while assigning each memory a dynamic retention score. Event-based updates and selection-based decay revise these scores, allowing WMT to preserve useful information, fold completed trajectories, suppress low-utility content, and retain access to folded context. We evaluate WMT on GAIA-Text using Qwen3-8B, Gemma 4 E4B, and Llama-3.1-8B, with ablations and memory-poisoning experiments. Relative to linear memory, WMT improves accuracy by an average of 9.97 percentage points while reducing prompt-token usage by 32.8%. Memory-poisoning experiments show that WMT limits the persistence and propagation of unreliable information. Our results suggest that effective long-horizon agent memory depends less on storing more information than on deciding which information should remain active.",
+    "authors": [
+      "Quang Dao",
+      "Purvi Kathalkar",
+      "Kenneth Eaton"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2608.20631v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, context` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Large language model (LLM) agents have demonstrated the ability to solve multi-step tasks requiring planning, tool use, and external information access, yet growing execution histories increase inference cost and...\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing memory approaches organize or compress execution histories but provide limited mechanisms for deciding which memories remain active.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "Large language model (LLM) agents have demonstrated the ability to solve multi-step tasks requiring planning, tool use, and external information access, yet growing execution...",
+    "published": "2026-08-21",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, context\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.AI",
+    "slug": "weighted-memory-tree-remembering-what-matters-for-long-horizon-llm-agents",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.20631v1",
+    "tags": [
+      "agent",
+      "context"
+    ],
+    "title": "Weighted Memory Tree: Remembering What Matters for Long-Horizon LLM Agents",
+    "updated": "2026-08-21",
+    "url": "http://arxiv.org/abs/2608.20631v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Persistent memory makes false information durable: once a false statement is stored, it can be retrieved into future sessions that match it. We measure the cost of this failure mode using plainly worded false assertions generated in a single pass, with no instruction, trigger, or retriever optimization. Poisoning 1.2% of a LongMemEval corpus reduces accuracy from 0.850 to 0.300. A four-stage write-time screening pipeline that reaches 0.832 recall on indirect prompt injection while flagging 1.5% of trigger-word-laden benign text rejects 0 of 360 poisoned memories. We argue this exposes a boundary of content-only screening: distinguishing a false assertion from a true one generally requires external grounding beyond the text itself. We then evaluate provenance-weighted retrieval. The shipped weight is statistically indistinguishable from no defense (p=0.80), while a stronger weight recovers utility only by excluding untrusted content. In a mixed-provenance corpus where untrusted content is mostly benign, accuracy rises from 0.3167 to 0.7000; when the answer-bearing evidence itself arrives untrusted, evidence recall falls to zero and accuracy to 0.0417. Under the measured similarity regime, the additive provenance term has no usable setting: a weight strong enough to resist query-shaped poison is also strong enough to suppress legitimate untrusted evidence. We therefore argue for bounded occupancy constraints at retrieval rather than additive provenance penalties, and release the harnesses, corpora, and aggregate run reports.",
+    "authors": [
+      "Arulnidhi Karunanidhi"
+    ],
+    "categories": [
+      "cs.CR",
+      "cs.AI"
+    ],
+    "id": "2608.21230v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Persistent memory makes false information durable: once a false statement is stored, it can be retrieved into future sessions that match it.\n\n进一步看，论文的核心做法或实验重点可以概括为：We measure the cost of this failure mode using plainly worded false assertions generated in a single pass, with no instruction, trigger, or retriever optimization.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory",
+      "persistent memory"
+    ],
+    "one_liner": "Persistent memory makes false information durable: once a false statement is stored, it can be retrieved into future sessions that match it.",
+    "published": "2026-08-21",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, retrieval\n- 检索关键词命中：agent memory, persistent memory\n- 来源分类信息：cs.CR, cs.AI",
+    "slug": "utility-under-attack-agent-memory-poisoning-and-the-limits-of-content-screening-",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.21230v1",
+    "tags": [
+      "agent",
+      "retrieval"
+    ],
+    "title": "Utility Under Attack: Agent Memory Poisoning and the Limits of Content Screening and Provenance Ranking",
+    "updated": "2026-08-21",
+    "url": "http://arxiv.org/abs/2608.21230v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Simulating realistic user shopping behavior underpins offline evaluation and reinforcement learning in e-commerce scenarios. While recent LLM- and VLM-based simulators have made encouraging progress, reproducing a real browsing session remains difficult for two reasons. (i) Memory Challenge: a shopping session spans dozens of pages, yet existing agents either discard long-range observation histories, losing the evolving user state, or naively concatenate them, overwhelming the context window and even degrading simulation quality. (ii) Optimization Challenge: current user simulators are typically supervised to match each logged action via imitation or step-level rewards; the resulting sessions often display unrealistic patterns, such as over-exploration or excessive passivity, which per-step supervision can neither detect nor correct. To address the above challenges, we present RecVerse, a GUI-grounded simulation agent that perceives pages through screenshots and produces faithful multi-turn trajectories. For the memory challenge, RecVerse adopts a cognitive-inspired hierarchical memory: Working Memory for short-term focus, Episodic Memory for in-session traces, and Preference Memory for high-level intent, with memory updates treated as actions so that the agent adaptively learns when and what to memorize. For the optimization challenge, RecVerse is optimized with a trajectory-level RL objective that scores entire sessions, aligning both macro-level action-type distributions and micro-level shopping intent with real users. We further release USB (User Simulation Benchmark), an interactive e-commerce GUI trajectory dataset for multi-turn user simulation. Experiments show that RecVerse significantly outperforms existing baselines in both behavioral fidelity and intent consistency.",
+    "authors": [
+      "Jiakai Tang",
+      "Yan Mi",
+      "Jing Yu",
+      "Yang Zhang",
+      "See-Kiong Ng",
+      "Qi Cao",
+      "Fei Sun",
+      "Xu Chen",
+      "Wen Chen",
+      "Jian Wu",
+      "Han Zhu",
+      "Bo Zheng"
+    ],
+    "categories": [
+      "cs.IR"
+    ],
+    "id": "2608.20707v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, episodic` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Simulating realistic user shopping behavior underpins offline evaluation and reinforcement learning in e-commerce scenarios.\n\n进一步看，论文的核心做法或实验重点可以概括为：While recent LLM- and VLM-based simulators have made encouraging progress, reproducing a real browsing session remains difficult for two reasons. (i) Memory Challenge: a shopping session spans dozens of pages, yet...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "episodic memory",
+      "working memory"
+    ],
+    "one_liner": "Simulating realistic user shopping behavior underpins offline evaluation and reinforcement learning in e-commerce scenarios.",
+    "published": "2026-08-21",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context, episodic\n- 检索关键词命中：episodic memory, working memory\n- 来源分类信息：cs.IR",
+    "slug": "towards-faithful-simulation-of-human-shopping-behavior",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.20707v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "episodic"
+    ],
+    "title": "Towards Faithful Simulation of Human Shopping Behavior",
+    "updated": "2026-08-21",
+    "url": "http://arxiv.org/abs/2608.20707v1",
+    "venue": ""
+  },
+  {
     "abstract": "Conversational memory in AI systems becomes crucial for coherent interactions through prolonged conversations. State-of-the-art techniques mainly aim at improving memory by context expansion, using retrieval, or external memory. However, most methods assume that any entity mention should be immediately mapped to one interpretation. This often leads to premature commitments, memory confirmation bias, hallucinations in the conversation, and accumulation of wrong conversational state. This paper states that conversational memory should not hide ambiguity, but should represent it explicitly as part of the reasoning process. This paper proposes an Entity-Centric Conversational Memory Framework that views entity linking as a process of explicit belief management, instead of a deterministic one. It maintains the space of interpretations of entities that includes both correct and incorrect hypotheses, such as $\\mathrm{UNKNOWN}$ hypothesis, processes heterogeneous conversational evidence via belief update, detects ambiguity, and performs one of three actions: Commit, Clarify, or Delay. By doing so, the framework separates entity reasoning from memory updates, allowing to write to memory only when certain. The experiments conducted on ConEL conversational entity linking dataset show that the proposed framework reaches $99.0\\%$ commit precision providing explicit control over the precision-coverage trade-off. The analysis shows several properties of conversational memory and brings important architectural insights to light: the existence of memory confirmation bias, the importance of treating $\\mathrm{UNKNOWN}$ as an active competing hypothesis, and the limitations of fixed ambiguity thresholds on different entity types.",
     "authors": [],
     "categories": [
@@ -87,6 +325,148 @@
     "updated": "2026-08-21",
     "url": "https://openreview.net/forum?id=oobq0Zs3mc",
     "venue": "ACL ARR 2026 August Submission"
+  },
+  {
+    "abstract": "Large language models often rely on Chain-of-Thought (CoT) reasoning to solve complex tasks, but verbose reasoning traces introduce substantial inference overhead. CoT compression shortens generation, yet aggressive compression may disrupt logical coherence and degrade performance. We formalize this trade-off as the \\textit{Context-Generation Substitution Law}, where explicit reasoning context substitutes for part of decode-time generation. Based on this principle, we propose \\textit{Memory-Augmented Compression}, a training-free framework that constructs reusable reasoning memories from historical traces and retrieves them as prefill-side scaffolds. Rather than using raw demonstrations, these memories summarize reusable reasoning patterns, key constraints, and critical operations to compensate for information lost during compression. Experiments show that Memory consistently improves prompt-based Chain-of-Draft (CoD) compression across mathematical reasoning, complex reasoning, and science question answering tasks, yielding accuracy gains of 21.4, 28.0, 29.5, and 6.61 points over CoD on GSM8K, MATH, BBH, and MMLU-Sci, while achieving a 1.14--1.49$\\times$ latency speedup over standard CoT. Memory is also compatible with token-level, reasoning-trace-level, and inference-state compression mechanisms. Further analyzes show that the gains come from relevant reasoning memories rather than simply increasing context length.",
+    "authors": [
+      "Simeng Zhang",
+      "Yilong Chen",
+      "Wenyuan Zhang",
+      "Zhenyu Zhang",
+      "Yao Chen",
+      "Junyuan Shang",
+      "Tingwen Liu"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "id": "2608.21265v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `compression, context` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Large language models often rely on Chain-of-Thought (CoT) reasoning to solve complex tasks, but verbose reasoning traces introduce substantial inference overhead.\n\n进一步看，论文的核心做法或实验重点可以概括为：CoT compression shortens generation, yet aggressive compression may disrupt logical coherence and degrade performance.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory augmented",
+      "memory-augmented"
+    ],
+    "one_liner": "Large language models often rely on Chain-of-Thought (CoT) reasoning to solve complex tasks, but verbose reasoning traces introduce substantial inference overhead.",
+    "published": "2026-08-21",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：compression, context\n- 检索关键词命中：memory augmented, memory-augmented\n- 来源分类信息：cs.CL",
+    "slug": "memory-augmentation-unlocks-efficient-chain-of-thought-reasoning",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.21265v1",
+    "tags": [
+      "compression",
+      "context"
+    ],
+    "title": "Memory Augmentation Unlocks Efficient Chain-of-Thought Reasoning",
+    "updated": "2026-08-21",
+    "url": "http://arxiv.org/abs/2608.21265v1",
+    "venue": ""
+  },
+  {
+    "abstract": "World models are increasingly used to support planning in agents by predicting how environment states evolve in response to agent actions. Yet fluent next-state predictions can still omit task-critical facts, corrupt product attributes, or apply incorrect transition rules. To address such systematic prediction errors, we introduce MemWM, a memory-augmented text-based world model. MemWM uses world memory, a curated memory bank of transition rules, state caches, and hard-to-predict facts, to condition next-state imagination. We evaluate factual state preservation with Structured State Fidelity (SSF), which scores predicted states through benchmark-specific facts and fields. Compared with SFT, memory-augmented training improves SSF by up to 206.3%. In the full planning setting, we keep the policy model frozen and provide policy-side world skill: retrieved task-level skills and step-wise corrective guidance for action selection. Across ALFWorld, WebShop, and ScienceWorld, memory-augmented agents improve downstream success over an SFT-trained world-model agent, with up to a 65.4% relative gain. Sensitivity analyses further show that retrieved memory improves task success and efficiency under different memory and action-budget settings.",
+    "authors": [
+      "Yujun Wang",
+      "Tao Zhang",
+      "Jinhe Bi",
+      "Aniri",
+      "Wenxuan Ye",
+      "Boliang Liu",
+      "Sikuan Yan",
+      "Shuning Wang",
+      "Xuebing Zhou",
+      "Sören Pirk",
+      "Hinrich Schütze",
+      "Yunpu Ma"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2608.07107v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：World models are increasingly used to support planning in agents by predicting how environment states evolve in response to agent actions.\n\n进一步看，论文的核心做法或实验重点可以概括为：Yet fluent next-state predictions can still omit task-critical facts, corrupt product attributes, or apply incorrect transition rules.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory augmented",
+      "memory-augmented",
+      "retrieval memory"
+    ],
+    "one_liner": "World models are increasingly used to support planning in agents by predicting how environment states evolve in response to agent actions.",
+    "published": "2026-08-07",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark\n- 检索关键词命中：memory augmented, memory-augmented, retrieval memory\n- 来源分类信息：cs.AI",
+    "slug": "memwm-memory-augmented-text-based-world-model",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.07107v2",
+    "tags": [
+      "agent",
+      "benchmark"
+    ],
+    "title": "MemWM: Memory-Augmented Text-Based World Model",
+    "updated": "2026-08-21",
+    "url": "http://arxiv.org/abs/2608.07107v2",
+    "venue": ""
+  },
+  {
+    "abstract": "Open-web future event prediction requires agents to distill reliable signals from noisy, redundant, and incomplete evidence. Existing retrieval/memory mechanisms directly feed retrieved information to agents or rely on simple memory functions such as storing and reusing prior information for prediction, leaving them insufficient for open-web forecasting. We propose to transform raw web evidence into structured memory before prediction, enabling agents to reason over distilled, question-specific evidence rather than noisy retrieval results. This paper presents ForeDreamer, a self-evolving dual-agent framework for managing memory over open-web evidence. ForeDreamer separates factual memory, a question-specific evidence state for the current forecast, from experiential memory, persistent agent experience accumulated across forecasting episodes. It uses a main agent for search and prediction, and a memory-processing subagent to convert search results into factual memory with dedicated tools. ForeDreamer further evolves experiential memory through two tracks, improving both forecasting decisions and factual-memory construction. Experiments on Prophet Arena and FutureX demonstrate the effectiveness of ForeDreamer. Project page: https://zhongzero.github.io/ForeDreamer",
+    "authors": [
+      "Linhao Zhong",
+      "Zongze Du",
+      "Linyu Wu",
+      "Yu Bo",
+      "Hourong Li",
+      "Chenchen Jing",
+      "Hao Chen",
+      "Yuling Xi",
+      "Chunhua Shen"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "id": "2608.20920v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Open-web future event prediction requires agents to distill reliable signals from noisy, redundant, and incomplete evidence.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing retrieval/memory mechanisms directly feed retrieved information to agents or rely on simple memory functions such as storing and reusing prior information for prediction, leaving them insufficient for open-...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory",
+      "retrieval memory"
+    ],
+    "one_liner": "Open-web future event prediction requires agents to distill reliable signals from noisy, redundant, and incomplete evidence.",
+    "published": "2026-08-21",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, retrieval\n- 检索关键词命中：agent memory, retrieval memory\n- 来源分类信息：cs.CL",
+    "slug": "foredreamer-a-self-evolving-dual-agent-memory-architecture-for-future-event-pred",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.20920v1",
+    "tags": [
+      "agent",
+      "retrieval"
+    ],
+    "title": "ForeDreamer: A Self-Evolving Dual-Agent Memory Architecture for Future Event Prediction",
+    "updated": "2026-08-21",
+    "url": "http://arxiv.org/abs/2608.20920v1",
+    "venue": ""
+  },
+  {
+    "abstract": "DreamBench-SWE is a multi-session benchmark for software-agent memory hygiene in which later software tasks depend on non-inferable evidence from earlier sessions and are scored by executable hidden oracles. We report the original scaled v2 fold and a separately preregistered v2.1 successor audit designed after that study but frozen before successor outcome inspection. The successor run completed 360/360 work units and 720/720 S3 cells across four conditions. In the original fold, the primary DF-hybrid--B5 contrast was null (95/180 versus 89/180; clustered p=.518, Holm p=1), not evidence of equivalence, and C9/C10 retained B0-headroom limitations. In the successor, no external memory achieved 21/180 passes (rate 0.1167), deterministic verbatim event memory 82/180 (rate 0.4556), the typed-plus-raw reference probe 83/180 (rate 0.4611), and one pinned hosted Mem0 literal-storage configuration 97/180 (rate 0.5389). The registered six-slot Family A retained unavailable slots at p=1; all three available comparisons against no memory rejected after Holm correction. Both preregistered mechanism contrasts were unavailable after pre-evaluation conformance rejection. The secondary literal-storage-versus-verbatim comparison was nonconfirmatory and sensitivity-dependent, while the comparison with the reference probe did not reject. The audit therefore supports DreamBench-SWE as a discriminating executable profile benchmark and characterizes one exact hosted-memory configuration, but it does not establish an external-system mechanism, superiority among memory-bearing conditions, equivalence, or broad product generality. The original v2.0.5 findings and artifacts remain unchanged.",
+    "authors": [
+      "Sarthak Singh"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.SE"
+    ],
+    "id": "2608.20664v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：DreamBench-SWE is a multi-session benchmark for software-agent memory hygiene in which later software tasks depend on non-inferable evidence from earlier sessions and are scored by executable hidden oracles.\n\n进一步看，论文的核心做法或实验重点可以概括为：We report the original scaled v2 fold and a separately preregistered v2.1 successor audit designed after that study but frozen before successor outcome inspection.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "DreamBench-SWE is a multi-session benchmark for software-agent memory hygiene in which later software tasks depend on non-inferable evidence from earlier sessions and are scored...",
+    "published": "2026-08-21",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.AI, cs.SE",
+    "slug": "dreambench-swe-a-multi-session-memory-hygiene-benchmark-for-software-agents",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.20664v1",
+    "tags": [
+      "agent",
+      "benchmark"
+    ],
+    "title": "DreamBench-SWE: A Multi-Session Memory-Hygiene Benchmark for Software Agents",
+    "updated": "2026-08-21",
+    "url": "http://arxiv.org/abs/2608.20664v1",
+    "venue": ""
   },
   {
     "abstract": "AI assistants now accumulate conversation history spanning days, months, or years, making retrieval of past context essential for grounded responses. Users may seek specific details from prior interactions, either explicitly through history search or implicitly during ongoing conversations. Unlike typical document retrieval in RAG settings, dialogue history forms a coherent sequential discourse in which the meaning of an utterance depends on its surrounding context. Existing approaches construct dialogue retrieval units through segmentation, summarization, or hybrid memory construction, but these units are constructed offline and therefore cannot adapt to the information needs expressed by the current query. We propose D-ACR (Dialogue-Aware Context Retrieval), which dynamically identifies relevant segments at query time via KadaneDial, our adaptation of Kadane's maximum-subarray algorithm to the dialogue domain. Across four conversational memory benchmarks and four backbone LLMs, D-ACR achieves the highest retrieval hit and recall while retrieving fewer turns than other strong methods, and maintains stable performance regardless of the backbone LLM.",
