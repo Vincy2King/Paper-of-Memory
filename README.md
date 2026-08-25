@@ -39,14 +39,14 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **996**
-- Last generated: **2026-08-24**
+- Total tracked papers: **997**
+- Last generated: **2026-08-25**
 
 ## Papers by Source
 
 - ACL Anthology: **5**
 - arXiv: **852**
-- OpenReview: **139**
+- OpenReview: **140**
 
 ## Latest Papers
 
@@ -54,6 +54,7 @@ python3 scripts/update_papers.py --build-only
 | --- | --- | --- | --- |
 | 2026-08-24 | OpenReview | [Unable to Forget: Proactive Interference Reveals Working Memory Limits in LLMs Beyond Context Length](content/papers/unable-to-forget-proactive-interference-reveals-working-memory-limits-in-llms-be.md) | context, retrieval |
 | 2026-08-24 | OpenReview | [TierMem: Balancing Compressed Memory and Raw Evidence for Long-Horizon Agent Memory](content/papers/tiermem-balancing-compressed-memory-and-raw-evidence-for-long-horizon-agent-memo.md) | agent, benchmark |
+| 2026-08-24 | OpenReview | [On Memory Construction and Retrieval for Personalized Conversational Agents](content/papers/on-memory-construction-and-retrieval-for-personalized-conversational-agents.md) | agent, benchmark, compression |
 | 2026-08-24 | OpenReview | [In-context superposition: human-like working memory interference in large language models](content/papers/in-context-superposition-human-like-working-memory-interference-in-large-languag.md) | compression, context, retrieval |
 | 2026-08-24 | OpenReview | [Back to Basics: Let Conversational Agents Remember with Just Retrieval and Generation](content/papers/back-to-basics-let-conversational-agents-remember-with-just-retrieval-and-genera.md) | agent, benchmark, context |
 | 2026-08-23 | OpenReview | [Human-inspired Perspectives: A Survey on AI Long-term Memory](content/papers/human-inspired-perspectives-a-survey-on-ai-long-term-memory.md) | long-term |
@@ -71,7 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-08-20 | arXiv | [Remember, Verify, or Ask? Cross-Family Evaluation of Memory Commitment in LLM Agents](content/papers/remember-verify-or-ask-cross-family-evaluation-of-memory-commitment-in-llm-agent.md) | agent, context |
 | 2026-08-20 | arXiv | [MemTrapBench: Benchmarking Cognitive Traps in LLM Memory Use](content/papers/memtrapbench-benchmarking-cognitive-traps-in-llm-memory-use.md) | benchmark, long-term |
 | 2026-08-20 | arXiv | [Compress and Forget: bitsandbytes Quantization Amplifies Proactive Interference in LLMs](content/papers/compress-and-forget-bitsandbytes-quantization-amplifies-proactive-interference-i.md) | benchmark, context, retrieval |
-| 2026-08-20 | arXiv | [Can Agent Memory Systems Track Evolving State?](content/papers/can-agent-memory-systems-track-evolving-state.md) | agent, benchmark, context |
 
 ## Suggested GitHub Setup
 

@@ -63,6 +63,48 @@
     "venue": "COLM 2026"
   },
   {
+    "abstract": "To deliver coherent and personalized experiences in long-term conversations, existing approaches typically perform retrieval augmented response generation by constructing memory banks from conversation history at either the turn-level, session-level, or through summarization techniques.In this paper, we present two key findings: (1) The granularity of memory unit matters: turn-level, session-level, and summarization-based methods each exhibit limitations in both memory retrieval accuracy and the semantic quality of the retrieved content. (2) Prompt compression methods, such as LLMLingua-2, can effectively serve as a denoising mechanism, enhancing memory retrieval accuracy across different granularities. Building on these insights, we propose SeCom, a method that constructs the memory bank at segment level by introducing a conversation segmentation model that partitions long-term conversations into topically coherent segments, while applying compression based denoising on memory units to enhance memory retrieval. Experimental results show that SeCom exhibits a significant performance advantage over baselines on long-term conversation benchmarks LOCOMO and Long-MT-Bench+. Additionally, the proposed conversation segmentation method demonstrates superior performance on dialogue segmentation datasets such as DialSeg711, TIAGE, and SuperDialSeg.",
+    "authors": [
+      "Zhuoshi Pan",
+      "Qianhui Wu",
+      "Huiqiang Jiang",
+      "Xufang Luo",
+      "Hao Cheng",
+      "Dongsheng Li",
+      "Yuqing Yang",
+      "Chin-Yew Lin",
+      "H. Vicky Zhao",
+      "Lili Qiu",
+      "Jianfeng Gao"
+    ],
+    "categories": [
+      "DBLP.org/-/Record"
+    ],
+    "id": "openreview:oGFeYwuB2l",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, compression, conversation` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `CoRR 2025` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：To deliver coherent and personalized experiences in long-term conversations, existing approaches typically perform retrieval augmented response generation by constructing memory banks from conversation history at...\n\n进一步看，论文的核心做法或实验重点可以概括为：Building on these insights, we propose SeCom, a method that constructs the memory bank at segment level by introducing a conversation segmentation model that partitions long-term conversations into topically coherent...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory retrieval"
+    ],
+    "one_liner": "To deliver coherent and personalized experiences in long-term conversations, existing approaches typically perform retrieval augmented response generation by constructing memory...",
+    "published": "2025-01-01",
+    "relevance": "- 来源：OpenReview\n- Venue：CoRR 2025\n- 高亮主题命中：agent, benchmark, compression, conversation, long-term, retrieval\n- 检索关键词命中：memory retrieval\n- 来源分类信息：DBLP.org/-/Record",
+    "slug": "on-memory-construction-and-retrieval-for-personalized-conversational-agents",
+    "source": "OpenReview",
+    "source_key": "oGFeYwuB2l",
+    "tags": [
+      "agent",
+      "benchmark",
+      "compression",
+      "conversation",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "On Memory Construction and Retrieval for Personalized Conversational Agents",
+    "updated": "2026-08-24",
+    "url": "https://openreview.net/forum?id=oGFeYwuB2l",
+    "venue": "CoRR 2025"
+  },
+  {
     "abstract": "Intelligent systems must maintain and manipulate task-relevant information online to adapt to dynamic environments. This capacity, known as working memory, is fundamental to human reasoning. Yet, human working memory is strikingly limited, maintaining only three to four items in a brain with billions of neurons. Surprisingly, large language models (LLMs), despite different substrates and direct access to prior context through attention, exhibit similar working memory limitations. Why should such different systems face analogous constraints? We propose that working memory limitations reflect a general trade-off of shared representations: representational compression and reuse support efficient learning and generalization, but also cause simultaneously active representations to interfere. We show a two-layer transformer trained on a working memory task can solve it perfectly, but diverse trained LLMs exhibit human-like limitations: performance declines with memory load, while retrieval is biased by recency and stimulus statistics. Mirroring humans, working memory performance in LLMs is also associated with broader model capability. Mechanistically, we show that LLMs encode multiple memories in entangled representations --- a condition we call \\emph{in-context superposition} --- and progressively suppress competing content while aligning the target with the readout. Moreover, a causal intervention that suppresses interfering information improves performance. Together, these findings suggest that working memory capacity reflects the ability to select task-relevant information under interference, a computational challenge shared by biological and artificial systems.",
     "authors": [
       "Hua-Dong Xiong",
