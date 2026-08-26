@@ -39,20 +39,27 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **1014**
+- Total tracked papers: **1023**
 - Last generated: **2026-08-26**
 
 ## Papers by Source
 
 - ACL Anthology: **5**
-- arXiv: **869**
+- arXiv: **878**
 - OpenReview: **140**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-08-25 | arXiv | [VideoHarness-RSI: Recursive Harness Self-Improvement for Long-Video Understanding with Frozen Vision-Language Models](content/papers/videoharness-rsi-recursive-harness-self-improvement-for-long-video-understanding.md) | agent, benchmark, compression |
+| 2026-08-25 | arXiv | [Recursive Experiential-Working Memory Evolution for Long-Horizon Agent Harnesses](content/papers/recursive-experiential-working-memory-evolution-for-long-horizon-agent-harnesses.md) | agent, benchmark |
+| 2026-08-25 | arXiv | [PonderPounce: A Pretrained MLLM as an Episode Context Engine for Robot Control](content/papers/ponderpounce-a-pretrained-mllm-as-an-episode-context-engine-for-robot-control.md) | context |
 | 2026-08-25 | OpenReview | [Memory-Bench at Short Context: Only Persistent Memory Beats Softmax Attention at 2048 Tokens](content/papers/memory-bench-at-short-context-only-persistent-memory-beats-softmax-attention-at-.md) | context |
+| 2026-08-25 | arXiv | [EviGraph: Towards Verifiable Evidence Construction for Information-Seeking Agents](content/papers/evigraph-towards-verifiable-evidence-construction-for-information-seeking-agents.md) | agent |
+| 2026-08-25 | arXiv | [Don't Just Listen, Try Planning: Graph-based Retrieval-Generation Agent for Long-form Audio Meeting Understanding](content/papers/don-t-just-listen-try-planning-graph-based-retrieval-generation-agent-for-long-f.md) | agent, context, long-term |
+| 2026-08-25 | arXiv | [Counter with Evidence! A Multi-Agent Memory Efficient Reasoning Framework for Hate Category Informed Counterspeech Generation](content/papers/counter-with-evidence-a-multi-agent-memory-efficient-reasoning-framework-for-hat.md) | agent, context |
+| 2026-08-24 | arXiv | [Wontopos Tablet 2: Measuring Multilingual and Multimodal Memory Retrieval Without Lexical Matching](content/papers/wontopos-tablet-2-measuring-multilingual-and-multimodal-memory-retrieval-without.md) | benchmark, long-term, retrieval |
 | 2026-08-24 | OpenReview | [Unable to Forget: Proactive Interference Reveals Working Memory Limits in LLMs Beyond Context Length](content/papers/unable-to-forget-proactive-interference-reveals-working-memory-limits-in-llms-be.md) | context, retrieval |
 | 2026-08-24 | OpenReview | [TierMem: Balancing Compressed Memory and Raw Evidence for Long-Horizon Agent Memory](content/papers/tiermem-balancing-compressed-memory-and-raw-evidence-for-long-horizon-agent-memo.md) | agent, benchmark |
 | 2026-08-24 | arXiv | [The Retriever Should Remember: Experience-Amortized Reranking for Long-Term Agent Memory](content/papers/the-retriever-should-remember-experience-amortized-reranking-for-long-term-agent.md) | agent, conversation, long-term |
@@ -63,15 +70,8 @@ python3 scripts/update_papers.py --build-only
 | 2026-08-24 | OpenReview | [In-context superposition: human-like working memory interference in large language models](content/papers/in-context-superposition-human-like-working-memory-interference-in-large-languag.md) | compression, context, retrieval |
 | 2026-08-24 | arXiv | [ForeDreamer: A Self-Evolving Dual-Agent Memory Architecture for Future Event Prediction](content/papers/foredreamer-a-self-evolving-dual-agent-memory-architecture-for-future-event-pred.md) | agent, retrieval |
 | 2026-08-24 | arXiv | [EarthVerse: Benchmarking Scientific Agents Across Dynamic Earth Systems and Natural Hazards](content/papers/earthverse-benchmarking-scientific-agents-across-dynamic-earth-systems-and-natur.md) | agent, benchmark |
+| 2026-08-24 | arXiv | [Does Episodic Memory Help Close the Lexical Frequency Gap in Sensitivity to Syntactic Contrasts? A Test Using Retrieval-Augmented Language Models](content/papers/does-episodic-memory-help-close-the-lexical-frequency-gap-in-sensitivity-to-synt.md) | episodic, retrieval |
 | 2026-08-24 | arXiv | [Counter with Evidence! A Multi-Agent Memory Efficient Reasoning Framework for Hate Category Informed Counterspeech Generation](content/papers/counter-with-evidence-a-multi-agent-memory-efficient-reasoning-framework-for-hat.md) | agent, context |
-| 2026-08-24 | OpenReview | [Back to Basics: Let Conversational Agents Remember with Just Retrieval and Generation](content/papers/back-to-basics-let-conversational-agents-remember-with-just-retrieval-and-genera.md) | agent, benchmark, context |
-| 2026-08-23 | OpenReview | [Human-inspired Perspectives: A Survey on AI Long-term Memory](content/papers/human-inspired-perspectives-a-survey-on-ai-long-term-memory.md) | long-term |
-| 2026-08-23 | arXiv | [HERO: Human-profile Enhanced Retrieval Optimization Framework for Long-term Agent Memory](content/papers/hero-human-profile-enhanced-retrieval-optimization-framework-for-long-term-agent.md) | agent, benchmark, compression |
-| 2026-08-23 | arXiv | [Dual-Layer Agentic Memory with Fast Write Routing and Slow Consolidation](content/papers/dual-layer-agentic-memory-with-fast-write-routing-and-slow-consolidation.md) | agent, retrieval |
-| 2026-08-22 | arXiv | [MemGuard: Persisting Verifier Signals for LLM-Agent Memory Governance](content/papers/memguard-persisting-verifier-signals-for-llm-agent-memory-governance.md) | agent, benchmark, retrieval |
-| 2026-08-22 | arXiv | [MegaMem: A Retrieval Solution for Ultra-Large Context Windows](content/papers/megamem-a-retrieval-solution-for-ultra-large-context-windows.md) | agent, context, retrieval |
-| 2026-08-22 | arXiv | [MSM-Mem: A Universal Medical Structured Multimodal Memory Framework for Medical AI Agents](content/papers/msm-mem-a-universal-medical-structured-multimodal-memory-framework-for-medical-a.md) | agent, context, episodic |
-| 2026-08-22 | arXiv | [MEMORY Wins All: Indirect Bias Injection Attacks via Social Media Feeds](content/papers/memory-wins-all-indirect-bias-injection-attacks-via-social-media-feeds.md) | agent, benchmark |
 
 ## Suggested GitHub Setup
 

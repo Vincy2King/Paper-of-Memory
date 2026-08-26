@@ -1,5 +1,105 @@
 [
   {
+    "abstract": "Long-video understanding depends critically on how a limited model context is constructed from a much longer video. Existing approaches improve this process through compression, retrieval, memory, and agentic evidence acquisition, but these mechanisms are typically introduced as part of a manually designed inference system or optimized together with other components. This makes it difficult to isolate a simpler question: how much can be gained by improving the executable context-construction program alone? We study this question through VIDEOHARNESS-RSI, a controlled baseline for recursively searching executable context constructors around a frozen vision-language model (VLM). An outer-loop proposer uses prior programs, evaluation outcomes, and execution traces to generate candidate harnesses, which are executed and evaluated end to end before successful variants are retained for further search. This makes long-video understanding a controlled instance of automated harness design: the searchable object is executable program structure, while the answering model and interface remain fixed. Starting from uniform sampling, recursive harness search consistently finds room for improvement and surpasses several weaker hand-crafted baselines. Starting instead from a stronger hand-crafted baseline, the same RSI process yields a further improvement. The selected harness also transfers to additional long-video benchmarks without further search. Together, these results establish executable context construction as a distinct optimization layer and provide a reproducible baseline for studying harness discovery and transfer around frozen VLMs.",
+    "authors": [
+      "Guoyang Xu",
+      "Hao Chen"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2608.24302v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, compression, context` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Long-video understanding depends critically on how a limited model context is constructed from a much longer video.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing approaches improve this process through compression, retrieval, memory, and agentic evidence acquisition, but these mechanisms are typically introduced as part of a manually designed inference system or...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "retrieval memory"
+    ],
+    "one_liner": "Long-video understanding depends critically on how a limited model context is constructed from a much longer video.",
+    "published": "2026-08-25",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, compression, context, retrieval\n- 检索关键词命中：retrieval memory\n- 来源分类信息：cs.AI",
+    "slug": "videoharness-rsi-recursive-harness-self-improvement-for-long-video-understanding",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.24302v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "compression",
+      "context",
+      "retrieval"
+    ],
+    "title": "VideoHarness-RSI: Recursive Harness Self-Improvement for Long-Video Understanding with Frozen Vision-Language Models",
+    "updated": "2026-08-25",
+    "url": "http://arxiv.org/abs/2608.24302v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Recursive self-improvement (RSI) remains hard in long-horizon tasks, where growing histories obscure the task state and misalign skill invocation. We introduce Recuris, a recursive Experiential-Working Memory architecture for long-horizon agent harnesses, in which Working Memory tracks task progress and guides skill selection from Experiential Memory, grounding skill use in current needs rather than the full history. This coupling also turns execution into structured evidence that localizes failures to specific memory components. Across tasks, a fixed Meta-Agent turns that evidence into localized, validation-gated updates to Skill Memory that reshape execution and yield new evidence, forming a bounded recursive memory-evolution loop. Across four long-horizon benchmarks and ten models, Recuris improves task success in 35 of the 37 completed model-benchmark pairs, carrying frontier models to SOTA-level task success: on tau-bench it adds +17.8 points to GPT-5.6 Sol and +15.6 to Claude Opus 5, taking Opus 5 to 87.9%, and +16.6/+13.5 points on Qwen3.6-27B/35B on SkillFlow. The advantage widens as the interaction horizon grows, to +32.2 points on the longest tasks, and common long-horizon failures fall by up to 80%. These results position recursively evolving memory as a scalable foundation for RSI, enabling agents to continuously transform accumulated experience into increasingly effective long-horizon behavior. Code: https://github.com/Gen-Verse/Recuris",
+    "authors": [
+      "Zhaochen Yu",
+      "Yingcheng Wu",
+      "Zhenfei Yin",
+      "Kaiyuan Chen",
+      "Zhe Zhao",
+      "Mengdi Wang",
+      "Shuicheng Yan",
+      "Ling Yang"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.CL"
+    ],
+    "id": "2608.24876v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Recursive self-improvement (RSI) remains hard in long-horizon tasks, where growing histories obscure the task state and misalign skill invocation.\n\n进一步看，论文的核心做法或实验重点可以概括为：We introduce Recuris, a recursive Experiential-Working Memory architecture for long-horizon agent harnesses, in which Working Memory tracks task progress and guides skill selection from Experiential Memory, grounding...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "working memory"
+    ],
+    "one_liner": "Recursive self-improvement (RSI) remains hard in long-horizon tasks, where growing histories obscure the task state and misalign skill invocation.",
+    "published": "2026-08-25",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark\n- 检索关键词命中：working memory\n- 来源分类信息：cs.AI, cs.CL",
+    "slug": "recursive-experiential-working-memory-evolution-for-long-horizon-agent-harnesses",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.24876v1",
+    "tags": [
+      "agent",
+      "benchmark"
+    ],
+    "title": "Recursive Experiential-Working Memory Evolution for Long-Horizon Agent Harnesses",
+    "updated": "2026-08-25",
+    "url": "http://arxiv.org/abs/2608.24876v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Multimodal large language models (MLLMs) can integrate long visual histories, reason under partial observability, and infer behavior from a few examples. Yet vision-language-action (VLA) models generally inherit pretrained representations without using this contextual capacity as episode memory. Memory-dependent policies address this gap through purpose-built history mechanisms. PonderPounce instead reuses an MLLM's native causal context as robot memory. Ponder, a System2 MLLM, accumulates episode observations, demonstrations, and prior cognition in its native causal context and can generate subgoal text and demonstration reasoning for internal use. Pounce, a System1 VLA, receives the current observation, instruction, and proprioception directly; through the Ponder--Pounce interface, it asynchronously receives only the newest continuous cognition token and its age. Both are jointly trained end to end without a purpose-built memory module or separate bridge pretraining. Optimized serving achieves p50 latencies of 78ms for cognition refresh and 25ms for action-model invocation, supporting 20Hz action playback. On RoboMME with base-scale training data, PonderPounce reaches 60.83% with 9B and 50.04% with 0.8B under the same Pounce architecture and interface, versus 44.51% for FrameSamp+Modul and 17.93% for the current-observation π_{0.5}. With 9x data, it reaches 75.54% versus 57.88% for FrameSamp+Modul. On RoboCasa-DC, the same interface learns from action supervision alone and reaches 12.5% versus 11.6% for the strongest published demonstration-conditioned baseline, falling to 8.6% when cognition is replaced by a learned null state.",
+    "authors": [
+      "Suhwan Choi",
+      "Jaeyoon Jung",
+      "Sungkyung Kim",
+      "Yunsung Lee",
+      "Youngjae Yu"
+    ],
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "id": "2608.24115v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `context` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Multimodal large language models (MLLMs) can integrate long visual histories, reason under partial observability, and infer behavior from a few examples.\n\n进一步看，论文的核心做法或实验重点可以概括为：Yet vision-language-action (VLA) models generally inherit pretrained representations without using this contextual capacity as episode memory.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "episodic memory"
+    ],
+    "one_liner": "Multimodal large language models (MLLMs) can integrate long visual histories, reason under partial observability, and infer behavior from a few examples.",
+    "published": "2026-08-25",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：context\n- 检索关键词命中：episodic memory\n- 来源分类信息：cs.RO, cs.AI",
+    "slug": "ponderpounce-a-pretrained-mllm-as-an-episode-context-engine-for-robot-control",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.24115v1",
+    "tags": [
+      "context"
+    ],
+    "title": "PonderPounce: A Pretrained MLLM as an Episode Context Engine for Robot Control",
+    "updated": "2026-08-25",
+    "url": "http://arxiv.org/abs/2608.24115v1",
+    "venue": ""
+  },
+  {
     "abstract": "We report a controlled plug-in comparison of four transformer memory mechanisms at a single fixed context length of 2048 tokens. Each mechanism is dropped into the same 286M-parameter nanochat GPT and trained from scratch under identical data, optimizer, and compute, so the only thing that varies is the memory module. At 2048 tokens, Persistent Memory is the one mechanism that significantly improves on softmax attention (-1.79 mBPB, p=0.002). The other three degrade quality: RMT by 39.25 mBPB (p<0.001), TTT-Linear by 6.00 mBPB (p<0.001), and Gated DeltaNet by 1.35 mBPB (p=0.008). We state the scope plainly: 2048 tokens is a short-context regime, and RMT and TTT-Linear were designed for 8k+ contexts, so the negative results here are about behaviour at this length and are not a verdict on those mechanisms in the regime they target. Read that way, the finding is a clean negative result with a reproducible protocol: at short context, three of four tested mechanisms cost quality rather than add it, and the harness makes the longer-context comparison straightforward to run next. A multi-context sweep (2048/4096/8192) confirms the Persistent Memory gain is not an artifact of the shortest length. Code, weights, and seeds are released under MIT.",
     "authors": [
       "Rob Sneiderman"
@@ -25,6 +125,131 @@
     "updated": "2026-08-25",
     "url": "https://openreview.net/forum?id=XzM3pojgHN",
     "venue": "CBW Poster"
+  },
+  {
+    "abstract": "Agentic Web search can retrieve relevant information without establishing that the retrieved content actually supports the claims used in an answer. Existing agents typically keep search and evidence recording in a linear interaction trace and optimize primarily for final-answer correctness, providing limited supervision for intermediate grounding. We present EviGraph, a deep-search framework that separates search execution from evidence recording while using a shared policy for the trainable roles. An executor plans concise queries, a frozen evidence verifier inspects source pages and returns verbatim evidence items with an explicit polarity, and the policy maps those items to add/support graph requests that are checked by a deterministic structural validator. The resulting graph serves both as persistent working memory and as a source of dense process rewards, enabling reinforcement learning to directly supervise evidence construction rather than only the final answer. On BrowseComp-Plus, a Qwen3-8B EviGraph agent achieves 35.9% accuracy under a matched interaction budget, compared with 26.9% for the same dual-role architecture without reinforcement learning and 2.7% for a monolithic agent, while generating fewer tokens per rollout. Consistent gains on BrowseComp, GAIA, and XBench indicate that explicitly structuring and rewarding evidence recording improves agentic search",
+    "authors": [
+      "Jiashun Chen",
+      "Yirong Mao",
+      "Wenhui Que"
+    ],
+    "categories": [
+      "cs.IR"
+    ],
+    "id": "2608.24667v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Agentic Web search can retrieve relevant information without establishing that the retrieved content actually supports the claims used in an answer.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing agents typically keep search and evidence recording in a linear interaction trace and optimize primarily for final-answer correctness, providing limited supervision for intermediate grounding.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "working memory"
+    ],
+    "one_liner": "Agentic Web search can retrieve relevant information without establishing that the retrieved content actually supports the claims used in an answer.",
+    "published": "2026-08-25",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent\n- 检索关键词命中：working memory\n- 来源分类信息：cs.IR",
+    "slug": "evigraph-towards-verifiable-evidence-construction-for-information-seeking-agents",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.24667v1",
+    "tags": [
+      "agent"
+    ],
+    "title": "EviGraph: Towards Verifiable Evidence Construction for Information-Seeking Agents",
+    "updated": "2026-08-25",
+    "url": "http://arxiv.org/abs/2608.24667v1",
+    "venue": ""
+  },
+  {
+    "abstract": "While long-form audio meeting understanding (LAMU) is garnering growing attention, task-specific question answering (QA) datasets remain scarce. Existing speech QA paradigms and state-of-the-art Speech LLMs suffer from acoustic information loss and poor long-term context memory. To address these issues, we construct the LongAudioQA dataset and propose the GRGA model, which models heterogeneous audio features into a multi-dimensional graph and leverages agent planning for retrieval and answer generation.",
+    "authors": [
+      "Quanwei Tang",
+      "Dong Zhang",
+      "Shoushan Li",
+      "Guodong Zhou"
+    ],
+    "categories": [
+      "cs.SD",
+      "cs.AI"
+    ],
+    "id": "2608.24048v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, context, long-term, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：While long-form audio meeting understanding (LAMU) is garnering growing attention, task-specific question answering (QA) datasets remain scarce.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing speech QA paradigms and state-of-the-art Speech LLMs suffer from acoustic information loss and poor long-term context memory.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "context memory"
+    ],
+    "one_liner": "While long-form audio meeting understanding (LAMU) is garnering growing attention, task-specific question answering (QA) datasets remain scarce.",
+    "published": "2026-08-25",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, context, long-term, retrieval\n- 检索关键词命中：context memory\n- 来源分类信息：cs.SD, cs.AI",
+    "slug": "don-t-just-listen-try-planning-graph-based-retrieval-generation-agent-for-long-f",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.24048v1",
+    "tags": [
+      "agent",
+      "context",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "Don't Just Listen, Try Planning: Graph-based Retrieval-Generation Agent for Long-form Audio Meeting Understanding",
+    "updated": "2026-08-25",
+    "url": "http://arxiv.org/abs/2608.24048v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Counterspeech effectively neutralizes the impact of online hate. Although prior work explores automated counterspeech generation, it largely emphasizes stylistic control while treating hate speech as homogeneous, overlooking that distinct forms of abuse require fundamentally different counterspeech strategies. To address this gap, we introduce FIRE (Factuality Informed Multi-Agent Reasoning Framework) that first decomposes hate speech into one of the five distinct categories (misinformation, stereotype, conspiracy, dehumanizing, non-factual), and then maps it to a targeted counterspeech style. To facilitate FIRE, we curate FactualCS, a novel dataset of $4,784$ instances that provides the annotations regarding hate categories, reasoning traces, and evidence mappings, which are critical elements for grounded generation that are missing in prior work. A comprehensive evaluation across $28$ baseline configurations demonstrates that FIRE significantly surpasses existing methods, despite using compact agents ($<$2B). FIRE achieves a $\\sim$ $12 \\%$ and $\\sim$ $11 \\%$ improvements in factual and category-specific accuracy respectively, while simultaneously reducing toxicity by $\\sim$ $11 \\%$ relative to the strongest baselines. Further human evaluation confirms that responses generated by FIRE are significantly preferred over the strongest baselines, underscoring its effectiveness for real-world deployment. These findings show that decomposing the underlying intent of hate speech is essential for generating safe, effective, and contextually precise counterspeech.",
+    "authors": [
+      "Sujoy Nath",
+      "Aswini Kumar",
+      "Tanmoy Chakraborty"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "id": "2608.23152v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, context` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Counterspeech effectively neutralizes the impact of online hate.\n\n进一步看，论文的核心做法或实验重点可以概括为：Although prior work explores automated counterspeech generation, it largely emphasizes stylistic control while treating hate speech as homogeneous, overlooking that distinct forms of abuse require fundamentally...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "Counterspeech effectively neutralizes the impact of online hate.",
+    "published": "2026-08-24",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, context\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.CL",
+    "slug": "counter-with-evidence-a-multi-agent-memory-efficient-reasoning-framework-for-hat",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.23152v2",
+    "tags": [
+      "agent",
+      "context"
+    ],
+    "title": "Counter with Evidence! A Multi-Agent Memory Efficient Reasoning Framework for Hate Category Informed Counterspeech Generation",
+    "updated": "2026-08-25",
+    "url": "http://arxiv.org/abs/2608.23152v2",
+    "venue": ""
+  },
+  {
+    "abstract": "We measure tablet-2, a production long-term memory engine for language models, on the text benchmarks the field already uses and on cross-lingual retrieval of photographs stored with no text at all. Its retrieval path contains no lexical matching, no keyword scoring, and no language model of its own. On LongMemEval-S (500 questions) it scores 95.7% [93.4, 97.1]; on BEAM-1M (700 questions, 2.21M stored memories) 67.5% [64.8, 70.2]. Those are question-sampling intervals, not the run-to-run spread, which is an order of magnitude narrower. Most of the paper is about how little they mean alone. Holding engine, corpus, settings and judge fixed, changing only the reader moves LongMemEval-S by 2.0 points; changing only the re-ask budget moves BEAM-1M by 8.9. Neither is stated in the reports we compare against, and the second exceeds most gaps there, so we give that table as a placement and not a ranking. For the multimodal axis we run two controls. Against BM25, configured as strongly as we could, we reach 95.2% mean recall@5 over 70 store-and-query language cells where BM25 reaches 19.0% and is exactly zero in 54. On captionless photographs a lexical method has no document to score at all. Open dense baselines on 300 Crossmodal-3600 photographs in 14 languages show that density confers no language independence: one scores 91.0% on English and 4.7% on Russian from identical image vectors, and a multilingual variant collapses on Telugu and Swahili. Our spread across languages is 14.0 against their 27.5 and 27.7. Three results run against us and are reported at equal weight: low-resource languages degrade sharply (Swahili 53.0%, Telugu 64.0%), attaching captions lowers cross-lingual retrieval by 11.4 points, and one setting omitted into one stage of our own retrieval cost 37 points of Korean top-1 accuracy while leaving nine languages untouched.",
+    "authors": [
+      "Sunwoo Kim"
+    ],
+    "categories": [
+      "cs.IR",
+      "cs.CL",
+      "cs.CV"
+    ],
+    "id": "2608.23920v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `benchmark, long-term, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：We measure tablet-2, a production long-term memory engine for language models, on the text benchmarks the field already uses and on cross-lingual retrieval of photographs stored with no text at all.\n\n进一步看，论文的核心做法或实验重点可以概括为：Its retrieval path contains no lexical matching, no keyword scoring, and no language model of its own.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "long-term memory",
+      "memory retrieval"
+    ],
+    "one_liner": "We measure tablet-2, a production long-term memory engine for language models, on the text benchmarks the field already uses and on cross-lingual retrieval of photographs stored...",
+    "published": "2026-08-24",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：benchmark, long-term, retrieval\n- 检索关键词命中：long-term memory, memory retrieval\n- 来源分类信息：cs.IR, cs.CL, cs.CV",
+    "slug": "wontopos-tablet-2-measuring-multilingual-and-multimodal-memory-retrieval-without",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.23920v1",
+    "tags": [
+      "benchmark",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "Wontopos Tablet 2: Measuring Multilingual and Multimodal Memory Retrieval Without Lexical Matching",
+    "updated": "2026-08-24",
+    "url": "http://arxiv.org/abs/2608.23920v1",
+    "venue": ""
   },
   {
     "abstract": "Large language models are often assumed to benefit from longer context windows, yet retrieval from context requires not only locating the target information but also suppressing competing information tied to the same cue. Inspired by the proactive interference (PI) paradigm in cognitive science, we introduce PI-LLM, an evaluation in which interleaved key-value updates are streamed and models are queried to retrieve only the final value of each key, therefore isolating interference rather than search as the primary variable. Across 35+ models ranging from 0.6B open-weight to frontier-scale proprietary systems, retrieval accuracy declines approximately log-linearly as repeated same-key updates accumulate, with errors dominated by outdated values. Similar log-linear degradation patterns emerge across multiple independent load dimensions, and persist when total input length is held constant, pointing to a working-memory-like bottleneck in maintaining and retrieving the current binding under interference; resistance scales with effective parameter size rather than context window length. This degradation is not alleviated by explicit \"forget\" instructions or chain-of-thought reasoning, and shows no sign of leveling off within the tested range, in contrast to the plateau observed in human PI studies. Together, these results suggest that LLMs' working-memory-like capacity, though large, is governed by less flexible control than the executive processes that support human resilience to interference.",
@@ -380,6 +605,35 @@
     "title": "EarthVerse: Benchmarking Scientific Agents Across Dynamic Earth Systems and Natural Hazards",
     "updated": "2026-08-24",
     "url": "http://arxiv.org/abs/2608.23525v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Grammatical knowledge and how it is empirically tested are typically considered robust to the frequency of the lexical items in the expressions. However, neural network-based models of grammaticality exhibit high sensitivity to lexical frequency. We draw upon Complementary Learning Systems theory to test the hypothesis that robustness to lexical frequency can arise via a hippocampal episodic memory mechanism, which enables rapid encoding and retrieval of specific experiences and allows learners to leverage them when processing rare patterns. We use retrieval-augmented language models as an instantiation of such an episodic memory mechanism (specifically, $k$-nearest-neighbor language models that augment parametric models with explicit instance storage), and test whether this augmentation helps close the lexical frequency gap that vanilla language models exhibit in syntactic contrast tests. Using syntactic contrasts with frequency-stratified test items, we find that retrieval augmentation narrows the performance gap between high- and low-frequency items, consistent with episodic memory compensating for weak parametric representations. This benefit is consistent across different syntactic phenomena and across models pretrained on child-realistic and large-scale data. Additionally, we show that structural information is critical for effective retrieval, whereas semantic similarity alone provides little benefit. While these are promising proof-of-concept results supporting our hypothesis, the frequency gap is narrowed rather than fully closed. Based on our analyses, we propose preferential reweighting of retrieved instances, better representations and retrieval strategies for structural information, and flexible configurations of storage and retrieval as promising future directions for improving the implementation of episodic memory in language models.",
+    "authors": [
+      "Jing Liu",
+      "Najoung Kim"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "id": "2608.23851v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `episodic, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Grammatical knowledge and how it is empirically tested are typically considered robust to the frequency of the lexical items in the expressions.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, neural network-based models of grammaticality exhibit high sensitivity to lexical frequency.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "episodic memory"
+    ],
+    "one_liner": "Grammatical knowledge and how it is empirically tested are typically considered robust to the frequency of the lexical items in the expressions.",
+    "published": "2026-08-24",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：episodic, retrieval\n- 检索关键词命中：episodic memory\n- 来源分类信息：cs.CL",
+    "slug": "does-episodic-memory-help-close-the-lexical-frequency-gap-in-sensitivity-to-synt",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.23851v1",
+    "tags": [
+      "episodic",
+      "retrieval"
+    ],
+    "title": "Does Episodic Memory Help Close the Lexical Frequency Gap in Sensitivity to Syntactic Contrasts? A Test Using Retrieval-Augmented Language Models",
+    "updated": "2026-08-24",
+    "url": "http://arxiv.org/abs/2608.23851v1",
     "venue": ""
   },
   {
@@ -1394,6 +1648,40 @@
     "title": "Beyond Memory Majority: Latent-Source Reasoning for Multi-Agent Memory Arbitration",
     "updated": "2026-08-20",
     "url": "http://arxiv.org/abs/2608.19701v1",
+    "venue": ""
+  },
+  {
+    "abstract": "EDA flow parameter tuning is critical for quality-of-results~(QoR), yet the parameter space is large, tightly coupled, and full evaluations are prohibitively expensive. Prior LLM-assisted tuners mainly use the LLM as an external proposer with transient working context; we instead present \\textbf{StateTune}, which reformulates LLM-assisted EDA tuning as a closed-loop, state-carrying process. Its optimizer state is a typed, evidence-gated \\emph{persistent optimization memory} that is updated by every evaluation and shared between candidate generation and budget allocation. On top of this optimizer state, an expected hypervolume improvement (EHVI)-guided, runtime-aware promotion policy ranks quick-stage candidates by expected Pareto frontier gain per unit of runtime cost. Evaluated on a Cadence industrial flow across six benchmark blocks (two technology nodes \\(\\times\\) three designs), against five baselines including LLM+retrieval-augmented generation (RAG) and preference-based Bayesian optimization (BO) tuners, StateTune achieves the strongest final hypervolume on all six benchmark blocks, showing a stable improvement in frontier quality across the full matrix; it also matches or surpasses the strongest baselines on worst negative slack (WNS), area, and power across the same set. Ablation shows persistent memory is the largest contributor: removing it costs 58.5\\% of the hypervolume. Dedicated analyses of evidence-gating sensitivity, memory poisoning, cross-design transfer, and three-seed reproducibility (CV\\,\\(<\\)\\,7\\% on five of six blocks) further validate the memory design.",
+    "authors": [
+      "Kunlong Li",
+      "Shangshang Yao",
+      "Su Zheng",
+      "Lingli Wang"
+    ],
+    "categories": [
+      "cs.AR",
+      "cs.LG",
+      "cs.MA"
+    ],
+    "id": "2608.23601v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `benchmark, context, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：EDA flow parameter tuning is critical for quality-of-results~(QoR), yet the parameter space is large, tightly coupled, and full evaluations are prohibitively expensive.\n\n进一步看，论文的核心做法或实验重点可以概括为：Prior LLM-assisted tuners mainly use the LLM as an external proposer with transient working context; we instead present \\textbf{StateTune}, which reformulates LLM-assisted EDA tuning as a closed-loop, state-carrying...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "persistent memory"
+    ],
+    "one_liner": "EDA flow parameter tuning is critical for quality-of-results~(QoR), yet the parameter space is large, tightly coupled, and full evaluations are prohibitively expensive.",
+    "published": "2026-08-19",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：benchmark, context, retrieval\n- 检索关键词命中：persistent memory\n- 来源分类信息：cs.AR, cs.LG, cs.MA",
+    "slug": "statetune-transforming-llm-assisted-eda-flow-tuning-into-a-stateful-closed-loop-",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.23601v1",
+    "tags": [
+      "benchmark",
+      "context",
+      "retrieval"
+    ],
+    "title": "StateTune: Transforming LLM-Assisted EDA Flow Tuning into a Stateful, Closed-Loop Process",
+    "updated": "2026-08-19",
+    "url": "http://arxiv.org/abs/2608.23601v1",
     "venue": ""
   },
   {
