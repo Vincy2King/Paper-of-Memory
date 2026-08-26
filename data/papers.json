@@ -1,5 +1,32 @@
 [
   {
+    "abstract": "We report a controlled plug-in comparison of four transformer memory mechanisms at a single fixed context length of 2048 tokens. Each mechanism is dropped into the same 286M-parameter nanochat GPT and trained from scratch under identical data, optimizer, and compute, so the only thing that varies is the memory module. At 2048 tokens, Persistent Memory is the one mechanism that significantly improves on softmax attention (-1.79 mBPB, p=0.002). The other three degrade quality: RMT by 39.25 mBPB (p<0.001), TTT-Linear by 6.00 mBPB (p<0.001), and Gated DeltaNet by 1.35 mBPB (p=0.008). We state the scope plainly: 2048 tokens is a short-context regime, and RMT and TTT-Linear were designed for 8k+ contexts, so the negative results here are about behaviour at this length and are not a verdict on those mechanisms in the regime they target. Read that way, the finding is a clean negative result with a reproducible protocol: at short context, three of four tested mechanisms cost quality rather than add it, and the harness makes the longer-context comparison straightforward to run next. A multi-context sweep (2048/4096/8192) confirms the Persistent Memory gain is not an artifact of the shortest length. Code, weights, and seeds are released under MIT.",
+    "authors": [
+      "Rob Sneiderman"
+    ],
+    "categories": [
+      "colmweb.org/COLM/2026/Workshop/CBW/-/Submission"
+    ],
+    "id": "openreview:XzM3pojgHN",
+    "intro": "这篇论文被纳入仓库，是因为它和 `context` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `CBW Poster` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：We report a controlled plug-in comparison of four transformer memory mechanisms at a single fixed context length of 2048 tokens.\n\n进一步看，论文的核心做法或实验重点可以概括为：Each mechanism is dropped into the same 286M-parameter nanochat GPT and trained from scratch under identical data, optimizer, and compute, so the only thing that varies is the memory module.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "persistent memory"
+    ],
+    "one_liner": "We report a controlled plug-in comparison of four transformer memory mechanisms at a single fixed context length of 2048 tokens.",
+    "published": "2026-08-04",
+    "relevance": "- 来源：OpenReview\n- Venue：CBW Poster\n- 高亮主题命中：context\n- 检索关键词命中：persistent memory\n- 来源分类信息：colmweb.org/COLM/2026/Workshop/CBW/-/Submission",
+    "slug": "memory-bench-at-short-context-only-persistent-memory-beats-softmax-attention-at-",
+    "source": "OpenReview",
+    "source_key": "XzM3pojgHN",
+    "tags": [
+      "context"
+    ],
+    "title": "Memory-Bench at Short Context: Only Persistent Memory Beats Softmax Attention at 2048 Tokens",
+    "updated": "2026-08-25",
+    "url": "https://openreview.net/forum?id=XzM3pojgHN",
+    "venue": "CBW Poster"
+  },
+  {
     "abstract": "Large language models are often assumed to benefit from longer context windows, yet retrieval from context requires not only locating the target information but also suppressing competing information tied to the same cue. Inspired by the proactive interference (PI) paradigm in cognitive science, we introduce PI-LLM, an evaluation in which interleaved key-value updates are streamed and models are queried to retrieve only the final value of each key, therefore isolating interference rather than search as the primary variable. Across 35+ models ranging from 0.6B open-weight to frontier-scale proprietary systems, retrieval accuracy declines approximately log-linearly as repeated same-key updates accumulate, with errors dominated by outdated values. Similar log-linear degradation patterns emerge across multiple independent load dimensions, and persist when total input length is held constant, pointing to a working-memory-like bottleneck in maintaining and retrieving the current binding under interference; resistance scales with effective parameter size rather than context window length. This degradation is not alleviated by explicit \"forget\" instructions or chain-of-thought reasoning, and shows no sign of leveling off within the tested range, in contrast to the plateau observed in human PI studies. Together, these results suggest that LLMs' working-memory-like capacity, though large, is governed by less flexible control than the executive processes that support human resilience to interference.",
     "authors": [
       "Chupei Wang",
@@ -5440,33 +5467,6 @@
     "updated": "2026-08-04",
     "url": "http://arxiv.org/abs/2607.26760v2",
     "venue": ""
-  },
-  {
-    "abstract": "We report a controlled plug-in comparison of four transformer memory mechanisms at a single fixed context length of 2048 tokens. Each mechanism is dropped into the same 286M-parameter nanochat GPT and trained from scratch under identical data, optimizer, and compute, so the only thing that varies is the memory module. At 2048 tokens, Persistent Memory is the one mechanism that significantly improves on softmax attention (-1.79 mBPB, p=0.002). The other three degrade quality: RMT by 39.25 mBPB (p<0.001), TTT-Linear by 6.00 mBPB (p<0.001), and Gated DeltaNet by 1.35 mBPB (p=0.008). We state the scope plainly: 2048 tokens is a short-context regime, and RMT and TTT-Linear were designed for 8k+ contexts, so the negative results here are about behaviour at this length and are not a verdict on those mechanisms in the regime they target. Read that way, the finding is a clean negative result with a reproducible protocol: at short context, three of four tested mechanisms cost quality rather than add it, and the harness makes the longer-context comparison straightforward to run next. A multi-context sweep (2048/4096/8192) confirms the Persistent Memory gain is not an artifact of the shortest length. Code, weights, and seeds are released under MIT.",
-    "authors": [
-      "Rob Sneiderman"
-    ],
-    "categories": [
-      "colmweb.org/COLM/2026/Workshop/CBW/-/Submission"
-    ],
-    "id": "openreview:XzM3pojgHN",
-    "intro": "这篇论文被纳入仓库，是因为它和 `context` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `CBW Poster` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：We report a controlled plug-in comparison of four transformer memory mechanisms at a single fixed context length of 2048 tokens.\n\n进一步看，论文的核心做法或实验重点可以概括为：Each mechanism is dropped into the same 286M-parameter nanochat GPT and trained from scratch under identical data, optimizer, and compute, so the only thing that varies is the memory module.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
-    "matched_keywords": [
-      "persistent memory"
-    ],
-    "one_liner": "We report a controlled plug-in comparison of four transformer memory mechanisms at a single fixed context length of 2048 tokens.",
-    "published": "2026-08-04",
-    "relevance": "- 来源：OpenReview\n- Venue：CBW Poster\n- 高亮主题命中：context\n- 检索关键词命中：persistent memory\n- 来源分类信息：colmweb.org/COLM/2026/Workshop/CBW/-/Submission",
-    "slug": "memory-bench-at-short-context-only-persistent-memory-beats-softmax-attention-at-",
-    "source": "OpenReview",
-    "source_key": "XzM3pojgHN",
-    "tags": [
-      "context"
-    ],
-    "title": "Memory-Bench at Short Context: Only Persistent Memory Beats Softmax Attention at 2048 Tokens",
-    "updated": "2026-08-04",
-    "url": "https://openreview.net/forum?id=XzM3pojgHN",
-    "venue": "CBW Poster"
   },
   {
     "abstract": "Memory-augmented LLM agents rely on rich context for long-horizon reasoning and acting, yet their memory modules expose a persistent attack surface for malicious records, making the study of memory poisoning threats imperative. However, existing query-only attacks often fail to remain effective in two realistic and prevalent settings: large-scale benign memory pools and active input auditing. Consequently, current approaches fall short when facing the dual challenges of high retrieval competitiveness and rigorous semantic checks. To overcome these limitations, we propose MAFIA, a query-only Memory Attack framework via probing and Factual Injection against Audit, tailored to this extended threat model. Specifically, MAFIA introduces: (1) a placement strategy that ensures retrieval-competitive injection via memory probing, budget allocation, and scheduling; and (2) a payload design that bypasses audits using compact factual cloaks, preserving malicious effects while maintaining high semantic similarity. Extensive evaluations reveal that MAFIA achieves up to a 90.7% attack success rate while suppressing audit detection from a peak of 83.3% to at most 7.4%, exposing critical vulnerabilities across agentic memory systems. Code will be made publicly available at https://github.com/JiamingChen1234/MAFIA.",

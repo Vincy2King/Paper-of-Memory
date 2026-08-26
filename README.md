@@ -40,7 +40,7 @@ python3 scripts/update_papers.py --build-only
 ## Repository Snapshot
 
 - Total tracked papers: **1014**
-- Last generated: **2026-08-25**
+- Last generated: **2026-08-26**
 
 ## Papers by Source
 
@@ -52,6 +52,7 @@ python3 scripts/update_papers.py --build-only
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-08-25 | OpenReview | [Memory-Bench at Short Context: Only Persistent Memory Beats Softmax Attention at 2048 Tokens](content/papers/memory-bench-at-short-context-only-persistent-memory-beats-softmax-attention-at-.md) | context |
 | 2026-08-24 | OpenReview | [Unable to Forget: Proactive Interference Reveals Working Memory Limits in LLMs Beyond Context Length](content/papers/unable-to-forget-proactive-interference-reveals-working-memory-limits-in-llms-be.md) | context, retrieval |
 | 2026-08-24 | OpenReview | [TierMem: Balancing Compressed Memory and Raw Evidence for Long-Horizon Agent Memory](content/papers/tiermem-balancing-compressed-memory-and-raw-evidence-for-long-horizon-agent-memo.md) | agent, benchmark |
 | 2026-08-24 | arXiv | [The Retriever Should Remember: Experience-Amortized Reranking for Long-Term Agent Memory](content/papers/the-retriever-should-remember-experience-amortized-reranking-for-long-term-agent.md) | agent, conversation, long-term |
@@ -71,7 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-08-22 | arXiv | [MegaMem: A Retrieval Solution for Ultra-Large Context Windows](content/papers/megamem-a-retrieval-solution-for-ultra-large-context-windows.md) | agent, context, retrieval |
 | 2026-08-22 | arXiv | [MSM-Mem: A Universal Medical Structured Multimodal Memory Framework for Medical AI Agents](content/papers/msm-mem-a-universal-medical-structured-multimodal-memory-framework-for-medical-a.md) | agent, context, episodic |
 | 2026-08-22 | arXiv | [MEMORY Wins All: Indirect Bias Injection Attacks via Social Media Feeds](content/papers/memory-wins-all-indirect-bias-injection-attacks-via-social-media-feeds.md) | agent, benchmark |
-| 2026-08-22 | OpenReview | [Knowledge Graph Enhanced Memory-Augmented Retrieval for Long Context Modeling](content/papers/knowledge-graph-enhanced-memory-augmented-retrieval-for-long-context-modeling.md) | context, retrieval |
 
 ## Suggested GitHub Setup
 
