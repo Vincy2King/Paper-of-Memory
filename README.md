@@ -39,20 +39,31 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **1023**
-- Last generated: **2026-08-26**
+- Total tracked papers: **1034**
+- Last generated: **2026-08-27**
 
 ## Papers by Source
 
 - ACL Anthology: **5**
-- arXiv: **878**
+- arXiv: **889**
 - OpenReview: **140**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-08-26 | arXiv | [When Stale Constraints Go Unchecked: Budgeted Verification Failures in Inherited Agent Memory](content/papers/when-stale-constraints-go-unchecked-budgeted-verification-failures-in-inherited-.md) | agent |
+| 2026-08-26 | arXiv | [VISA: Agentic Self-Evolving Data Synthesis for Multimodal Instruction Following](content/papers/visa-agentic-self-evolving-data-synthesis-for-multimodal-instruction-following.md) | agent, benchmark |
+| 2026-08-26 | arXiv | [S-EMBER: A Large-Scale Benchmark for Streaming Egocentric Memory Retrieval](content/papers/s-ember-a-large-scale-benchmark-for-streaming-egocentric-memory-retrieval.md) | agent, benchmark, episodic |
+| 2026-08-26 | arXiv | [RoboMME-Interference: Benchmarking Robot Memory Under Interference](content/papers/robomme-interference-benchmarking-robot-memory-under-interference.md) | benchmark, context, retrieval |
+| 2026-08-26 | arXiv | [Reconstructing the Right Episode: Evaluating Interleaved Conversational Memory Beyond Long Context](content/papers/reconstructing-the-right-episode-evaluating-interleaved-conversational-memory-be.md) | benchmark, context, conversation |
+| 2026-08-26 | arXiv | [PolyMemDB: A Polyglot Database System for AI Memory Management](content/papers/polymemdb-a-polyglot-database-system-for-ai-memory-management.md) | agent, long-term |
+| 2026-08-26 | arXiv | [Memory Augmentation Unlocks Efficient Chain-of-Thought Reasoning](content/papers/memory-augmentation-unlocks-efficient-chain-of-thought-reasoning.md) | compression, context |
+| 2026-08-26 | arXiv | [Learning What to Share and What to Personalize: Hierarchical Strategy Co-Evolution for Agent Memory](content/papers/learning-what-to-share-and-what-to-personalize-hierarchical-strategy-co-evolutio.md) | agent, conversation |
+| 2026-08-26 | arXiv | [Governed Persistent Memory: Source-Bound State Semantics and Fail-Closed Release for Long-Horizon Agents](content/papers/governed-persistent-memory-source-bound-state-semantics-and-fail-closed-release-.md) | agent, long-term, retrieval |
+| 2026-08-26 | arXiv | [AWM: Answerable Working Memory for Long-Document VQA Agents](content/papers/awm-answerable-working-memory-for-long-document-vqa-agents.md) | agent, context |
 | 2026-08-25 | arXiv | [VideoHarness-RSI: Recursive Harness Self-Improvement for Long-Video Understanding with Frozen Vision-Language Models](content/papers/videoharness-rsi-recursive-harness-self-improvement-for-long-video-understanding.md) | agent, benchmark, compression |
+| 2026-08-25 | arXiv | [The Von-Neumann State-Space Transformer for neural decoding](content/papers/the-von-neumann-state-space-transformer-for-neural-decoding.md) | benchmark, context |
 | 2026-08-25 | arXiv | [Recursive Experiential-Working Memory Evolution for Long-Horizon Agent Harnesses](content/papers/recursive-experiential-working-memory-evolution-for-long-horizon-agent-harnesses.md) | agent, benchmark |
 | 2026-08-25 | arXiv | [PonderPounce: A Pretrained MLLM as an Episode Context Engine for Robot Control](content/papers/ponderpounce-a-pretrained-mllm-as-an-episode-context-engine-for-robot-control.md) | context |
 | 2026-08-25 | OpenReview | [Memory-Bench at Short Context: Only Persistent Memory Beats Softmax Attention at 2048 Tokens](content/papers/memory-bench-at-short-context-only-persistent-memory-beats-softmax-attention-at-.md) | context |
@@ -61,17 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-08-25 | arXiv | [Counter with Evidence! A Multi-Agent Memory Efficient Reasoning Framework for Hate Category Informed Counterspeech Generation](content/papers/counter-with-evidence-a-multi-agent-memory-efficient-reasoning-framework-for-hat.md) | agent, context |
 | 2026-08-24 | arXiv | [Wontopos Tablet 2: Measuring Multilingual and Multimodal Memory Retrieval Without Lexical Matching](content/papers/wontopos-tablet-2-measuring-multilingual-and-multimodal-memory-retrieval-without.md) | benchmark, long-term, retrieval |
 | 2026-08-24 | OpenReview | [Unable to Forget: Proactive Interference Reveals Working Memory Limits in LLMs Beyond Context Length](content/papers/unable-to-forget-proactive-interference-reveals-working-memory-limits-in-llms-be.md) | context, retrieval |
-| 2026-08-24 | OpenReview | [TierMem: Balancing Compressed Memory and Raw Evidence for Long-Horizon Agent Memory](content/papers/tiermem-balancing-compressed-memory-and-raw-evidence-for-long-horizon-agent-memo.md) | agent, benchmark |
-| 2026-08-24 | arXiv | [The Retriever Should Remember: Experience-Amortized Reranking for Long-Term Agent Memory](content/papers/the-retriever-should-remember-experience-amortized-reranking-for-long-term-agent.md) | agent, conversation, long-term |
-| 2026-08-24 | arXiv | [The Compaction Cliff in Long-Running AI Agent Memory](content/papers/the-compaction-cliff-in-long-running-ai-agent-memory.md) | agent, benchmark, context |
-| 2026-08-24 | arXiv | [SEAM: Shot Entity-Attribute Memory for Consistent Short-Drama Generation at Scale](content/papers/seam-shot-entity-attribute-memory-for-consistent-short-drama-generation-at-scale.md) | agent, benchmark, context |
-| 2026-08-24 | OpenReview | [On Memory Construction and Retrieval for Personalized Conversational Agents](content/papers/on-memory-construction-and-retrieval-for-personalized-conversational-agents.md) | agent, benchmark, compression |
-| 2026-08-24 | arXiv | [InjecMEM: Memory Injection Attack on LLM Agent Memory Systems](content/papers/injecmem-memory-injection-attack-on-llm-agent-memory-systems.md) | agent, context, retrieval |
-| 2026-08-24 | OpenReview | [In-context superposition: human-like working memory interference in large language models](content/papers/in-context-superposition-human-like-working-memory-interference-in-large-languag.md) | compression, context, retrieval |
-| 2026-08-24 | arXiv | [ForeDreamer: A Self-Evolving Dual-Agent Memory Architecture for Future Event Prediction](content/papers/foredreamer-a-self-evolving-dual-agent-memory-architecture-for-future-event-pred.md) | agent, retrieval |
-| 2026-08-24 | arXiv | [EarthVerse: Benchmarking Scientific Agents Across Dynamic Earth Systems and Natural Hazards](content/papers/earthverse-benchmarking-scientific-agents-across-dynamic-earth-systems-and-natur.md) | agent, benchmark |
-| 2026-08-24 | arXiv | [Does Episodic Memory Help Close the Lexical Frequency Gap in Sensitivity to Syntactic Contrasts? A Test Using Retrieval-Augmented Language Models](content/papers/does-episodic-memory-help-close-the-lexical-frequency-gap-in-sensitivity-to-synt.md) | episodic, retrieval |
-| 2026-08-24 | arXiv | [Counter with Evidence! A Multi-Agent Memory Efficient Reasoning Framework for Hate Category Informed Counterspeech Generation](content/papers/counter-with-evidence-a-multi-agent-memory-efficient-reasoning-framework-for-hat.md) | agent, context |
 
 ## Suggested GitHub Setup
 
