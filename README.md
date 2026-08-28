@@ -39,19 +39,24 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **1034**
-- Last generated: **2026-08-27**
+- Total tracked papers: **1039**
+- Last generated: **2026-08-28**
 
 ## Papers by Source
 
 - ACL Anthology: **5**
-- arXiv: **889**
+- arXiv: **894**
 - OpenReview: **140**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-08-28 | OpenReview | [When Should LLMs Use Behavioral Memory? Task-Dependent Retrieval for Personalized Long-Term Memory](content/papers/when-should-llms-use-behavioral-memory-task-dependent-retrieval-for-personalized.md) | long-term, retrieval |
+| 2026-08-27 | arXiv | [When Stale Constraints Go Unchecked: Budgeted Verification Failures in Inherited Agent Memory](content/papers/when-stale-constraints-go-unchecked-budgeted-verification-failures-in-inherited-.md) | agent |
+| 2026-08-27 | arXiv | [When Memory Takes Gradients: Collaborative Vector Memory for Agentic Recommender Systems](content/papers/when-memory-takes-gradients-collaborative-vector-memory-for-agentic-recommender-.md) | agent, benchmark, context |
+| 2026-08-27 | arXiv | [VISA: Agentic Self-Evolving Data Synthesis for Multimodal Instruction Following](content/papers/visa-agentic-self-evolving-data-synthesis-for-multimodal-instruction-following.md) | agent, benchmark |
+| 2026-08-27 | arXiv | [GraphMemix: Query-Aware Evidence Forests for Long-Term Multimodal Agent Memory](content/papers/graphmemix-query-aware-evidence-forests-for-long-term-multimodal-agent-memory.md) | agent, benchmark, context |
 | 2026-08-26 | arXiv | [When Stale Constraints Go Unchecked: Budgeted Verification Failures in Inherited Agent Memory](content/papers/when-stale-constraints-go-unchecked-budgeted-verification-failures-in-inherited-.md) | agent |
 | 2026-08-26 | arXiv | [VISA: Agentic Self-Evolving Data Synthesis for Multimodal Instruction Following](content/papers/visa-agentic-self-evolving-data-synthesis-for-multimodal-instruction-following.md) | agent, benchmark |
 | 2026-08-26 | arXiv | [S-EMBER: A Large-Scale Benchmark for Streaming Egocentric Memory Retrieval](content/papers/s-ember-a-large-scale-benchmark-for-streaming-egocentric-memory-retrieval.md) | agent, benchmark, episodic |
@@ -61,17 +66,12 @@ python3 scripts/update_papers.py --build-only
 | 2026-08-26 | arXiv | [Memory Augmentation Unlocks Efficient Chain-of-Thought Reasoning](content/papers/memory-augmentation-unlocks-efficient-chain-of-thought-reasoning.md) | compression, context |
 | 2026-08-26 | arXiv | [Learning What to Share and What to Personalize: Hierarchical Strategy Co-Evolution for Agent Memory](content/papers/learning-what-to-share-and-what-to-personalize-hierarchical-strategy-co-evolutio.md) | agent, conversation |
 | 2026-08-26 | arXiv | [Governed Persistent Memory: Source-Bound State Semantics and Fail-Closed Release for Long-Horizon Agents](content/papers/governed-persistent-memory-source-bound-state-semantics-and-fail-closed-release-.md) | agent, long-term, retrieval |
+| 2026-08-26 | arXiv | [Don't Overthink, Don't Underthink: Toward Adaptive Reasoning in Agentic AI](content/papers/don-t-overthink-don-t-underthink-toward-adaptive-reasoning-in-agentic-ai.md) | agent, benchmark, retrieval |
 | 2026-08-26 | arXiv | [AWM: Answerable Working Memory for Long-Document VQA Agents](content/papers/awm-answerable-working-memory-for-long-document-vqa-agents.md) | agent, context |
 | 2026-08-25 | arXiv | [VideoHarness-RSI: Recursive Harness Self-Improvement for Long-Video Understanding with Frozen Vision-Language Models](content/papers/videoharness-rsi-recursive-harness-self-improvement-for-long-video-understanding.md) | agent, benchmark, compression |
 | 2026-08-25 | arXiv | [The Von-Neumann State-Space Transformer for neural decoding](content/papers/the-von-neumann-state-space-transformer-for-neural-decoding.md) | benchmark, context |
 | 2026-08-25 | arXiv | [Recursive Experiential-Working Memory Evolution for Long-Horizon Agent Harnesses](content/papers/recursive-experiential-working-memory-evolution-for-long-horizon-agent-harnesses.md) | agent, benchmark |
 | 2026-08-25 | arXiv | [PonderPounce: A Pretrained MLLM as an Episode Context Engine for Robot Control](content/papers/ponderpounce-a-pretrained-mllm-as-an-episode-context-engine-for-robot-control.md) | context |
-| 2026-08-25 | OpenReview | [Memory-Bench at Short Context: Only Persistent Memory Beats Softmax Attention at 2048 Tokens](content/papers/memory-bench-at-short-context-only-persistent-memory-beats-softmax-attention-at-.md) | context |
-| 2026-08-25 | arXiv | [EviGraph: Towards Verifiable Evidence Construction for Information-Seeking Agents](content/papers/evigraph-towards-verifiable-evidence-construction-for-information-seeking-agents.md) | agent |
-| 2026-08-25 | arXiv | [Don't Just Listen, Try Planning: Graph-based Retrieval-Generation Agent for Long-form Audio Meeting Understanding](content/papers/don-t-just-listen-try-planning-graph-based-retrieval-generation-agent-for-long-f.md) | agent, context, long-term |
-| 2026-08-25 | arXiv | [Counter with Evidence! A Multi-Agent Memory Efficient Reasoning Framework for Hate Category Informed Counterspeech Generation](content/papers/counter-with-evidence-a-multi-agent-memory-efficient-reasoning-framework-for-hat.md) | agent, context |
-| 2026-08-24 | arXiv | [Wontopos Tablet 2: Measuring Multilingual and Multimodal Memory Retrieval Without Lexical Matching](content/papers/wontopos-tablet-2-measuring-multilingual-and-multimodal-memory-retrieval-without.md) | benchmark, long-term, retrieval |
-| 2026-08-24 | OpenReview | [Unable to Forget: Proactive Interference Reveals Working Memory Limits in LLMs Beyond Context Length](content/papers/unable-to-forget-proactive-interference-reveals-working-memory-limits-in-llms-be.md) | context, retrieval |
 
 ## Suggested GitHub Setup
 

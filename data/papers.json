@@ -1,5 +1,171 @@
 [
   {
+    "abstract": "Long-term memory enables large language models (LLMs) to personalize responses using prior user interactions, yet different queries may require different forms of memory evidence. This study investigates whether behavioral signals, including recency, preference, and user updates, improve personalized memory retrieval and whether these signals can be selected adaptively according to the query. We evaluate six retrieval strategies on 589 PersonaMem queries using a common LLM backbone. Preference-Aware retrieval achieves the highest overall accuracy of 47.88%, followed by Query-Adaptive retrieval at 47.54% and Static Semantic retrieval at 47.20%. Task-level results show that the effectiveness of behavioral signals varies substantially across query types. Query-adaptive routing does not significantly outperform the strongest fixed strategies, while oracle selection reaches 50.42%, leaving only 2.55 percentage points of headroom. These results show that behavioral memory is task-dependent and highlight the need to determine when specific behavioral evidence should be used rather than uniformly combining multiple memory signals.",
+    "authors": [
+      "Keonvin Park",
+      "John J. Sohn"
+    ],
+    "categories": [
+      "OpenReview.net/Archive/-/Direct_Upload"
+    ],
+    "id": "openreview:hC72QPtiz3",
+    "intro": "这篇论文被纳入仓库，是因为它和 `long-term, retrieval` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `IEEE IROS 2026 Workshop BEMHAT` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Long-term memory enables large language models (LLMs) to personalize responses using prior user interactions, yet different queries may require different forms of memory evidence.\n\n进一步看，论文的核心做法或实验重点可以概括为：This study investigates whether behavioral signals, including recency, preference, and user updates, improve personalized memory retrieval and whether these signals can be selected adaptively according to the query.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "long-term memory",
+      "memory retrieval"
+    ],
+    "one_liner": "Long-term memory enables large language models (LLMs) to personalize responses using prior user interactions, yet different queries may require different forms of memory evidence.",
+    "published": "2026-08-08",
+    "relevance": "- 来源：OpenReview\n- Venue：IEEE IROS 2026 Workshop BEMHAT\n- 高亮主题命中：long-term, retrieval\n- 检索关键词命中：long-term memory, memory retrieval\n- 来源分类信息：OpenReview.net/Archive/-/Direct_Upload",
+    "slug": "when-should-llms-use-behavioral-memory-task-dependent-retrieval-for-personalized",
+    "source": "OpenReview",
+    "source_key": "hC72QPtiz3",
+    "tags": [
+      "long-term",
+      "retrieval"
+    ],
+    "title": "When Should LLMs Use Behavioral Memory? Task-Dependent Retrieval for Personalized Long-Term Memory",
+    "updated": "2026-08-28",
+    "url": "https://openreview.net/forum?id=hC72QPtiz3",
+    "venue": "IEEE IROS 2026 Workshop BEMHAT"
+  },
+  {
+    "abstract": "An agent that inherits a consolidated memory may inherit a constraint that was true when written and has since been withdrawn by a newer authoritative record. Under a scarce verification budget, does the agent recover the withdrawal, and if not, is the resulting stale-consistent decision avoidable without spending more? We model supersession explicitly -- provenance is immutable; what changes is which record is current -- and assign by design the memory's form, the world's state and the verification policy at a fixed budget of two records: the agent's own allocation, or the same budget with one slot re-assigned to the critical provenance path or to a random record. With a constraint stated, agents inspected its provenance path in about one episode in five; when that constraint had been superseded, native allocation produced stale-consistent decisions in 77.3%, 74.7% and 74.7% of episodes across a primary run, a fresh-wording replication and a held-out domain. Re-assigning one slot to the critical path raised current-record-consistent decisions by +74.0, +72.7 and +61.3 points, positive in six of six models in each run, and left an already near-ceiling rate unchanged when the record agreed with the memory. The held-out scenario was later found to contain a temporal inconsistency; a robustness replication with one sentence corrected, deposited externally before execution, gave +73.3 points (positive in 5 of six models, the sixth at a native missed-path rate of zero) and is reported alongside the original. The intervention uses knowledge of the critical path and is not a scheduler; it quantifies how much of the stale-consistent decision rate the bundled same-budget policy removes: the effect approaches the native missed-path rate in the primary, replication and corrected held-out runs. Memory systems may need freshness or supersession signals separate from relevance.",
+    "authors": [
+      "Kazuki Nakayashiki"
+    ],
+    "categories": [
+      "cs.IR",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "id": "2608.25553v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：An agent that inherits a consolidated memory may inherit a constraint that was true when written and has since been withdrawn by a newer authoritative record.\n\n进一步看，论文的核心做法或实验重点可以概括为：Under a scarce verification budget, does the agent recover the withdrawal, and if not, is the resulting stale-consistent decision avoidable without spending more?\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "An agent that inherits a consolidated memory may inherit a constraint that was true when written and has since been withdrawn by a newer authoritative record.",
+    "published": "2026-08-26",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.IR, cs.AI, cs.CL",
+    "slug": "when-stale-constraints-go-unchecked-budgeted-verification-failures-in-inherited-",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.25553v2",
+    "tags": [
+      "agent"
+    ],
+    "title": "When Stale Constraints Go Unchecked: Budgeted Verification Failures in Inherited Agent Memory",
+    "updated": "2026-08-27",
+    "url": "http://arxiv.org/abs/2608.25553v2",
+    "venue": ""
+  },
+  {
+    "abstract": "Agentic recommender systems ground each decision of a large language model (LLM) in a persistent memory of the user, and in existing agents that memory is text: a narrative written and maintained by further LLM calls. Text limits this memory in two ways. It is updated one rewrite at a time, so exploiting the full interaction history is prohibitively expensive; and collaborative evidence, graded similarity over an entire catalog, does not survive translation into sentences. We propose CoVeMem (Collaborative Vector Memory), which vectorizes the collaborative core of the agent's memory. Frozen LightGCN user and item states form the memory bank; at each decision, the candidate set itself retrieves the most relevant historical states, which enter the LLM's context as soft tokens alongside a light textual profile. Contrastive alignment to item-semantic anchors, followed by listwise co-training with masked candidates, teaches the model to read these states and to rank through them; a pointwise yes/no readout scores each candidate. Across four instruction-grounded recommendation benchmarks, CoVeMem matches or exceeds the strongest collaborative text-memory agent on 19 of 20 metric cells while requiring zero additional LLM calls for memory maintenance beyond the shared static profile, against per-interaction calls for text memory. The memory now takes gradients: the full interaction history, out of reach for text, becomes available as training data for what the agent remembers and for how it reads what it remembers.",
+    "authors": [
+      "Hanchong Chen",
+      "Xing Tang",
+      "Lingjie Li",
+      "Xiongfeng Shan",
+      "Xiuqiang He"
+    ],
+    "categories": [
+      "cs.IR",
+      "cs.AI"
+    ],
+    "id": "2608.26895v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Agentic recommender systems ground each decision of a large language model (LLM) in a persistent memory of the user, and in existing agents that memory is text: a narrative written and maintained by further LLM calls.\n\n进一步看，论文的核心做法或实验重点可以概括为：Text limits this memory in two ways.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory",
+      "persistent memory"
+    ],
+    "one_liner": "Agentic recommender systems ground each decision of a large language model (LLM) in a persistent memory of the user, and in existing agents that memory is text: a narrative...",
+    "published": "2026-08-27",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context\n- 检索关键词命中：agent memory, persistent memory\n- 来源分类信息：cs.IR, cs.AI",
+    "slug": "when-memory-takes-gradients-collaborative-vector-memory-for-agentic-recommender-",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.26895v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context"
+    ],
+    "title": "When Memory Takes Gradients: Collaborative Vector Memory for Agentic Recommender Systems",
+    "updated": "2026-08-27",
+    "url": "http://arxiv.org/abs/2608.26895v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Multimodal instruction-following models require training data that is accurate, diverse, verifiable, and challenging. Existing synthesis pipelines typically follow a one-pass generate-and-filter paradigm, discarding feedback from failed samples, verifier outcomes, and target-model errors. We present VISA (Visual Instruction Synthesis Agent), an agentic framework that reformulates multimodal instruction synthesis as a self-evolving loop. At each round, VISA analyzes an image to filter incompatible constraints and discover new verifiable ones, samples diversity- and difficulty-aware constraint sets from persistent memory, generates candidate instructions, and verifies the resulting samples with executable tools and structured large language model judges. Failed samples trigger diagnostic-guided recovery, while accepted samples are probed against the target model to estimate difficulty. The resulting verifier signals and target-model failure profiles are written back to memory, allowing subsequent rounds to adaptively expand the constraint space, reduce template repetition, and focus on unresolved model weaknesses. The same verifier contracts further provide reward signals for reinforcement learning without a separately trained reward model. Experiments on MM-IFEval show that VISA consistently improves multimodal instruction following over strong baselines, while preserving general multimodal capability across seven public benchmarks.",
+    "authors": [
+      "Min Zeng",
+      "Guanxin Tan",
+      "Libin Cen",
+      "Yafei Wen",
+      "Rui Hu",
+      "Liuyang Bian",
+      "Xiaolong Chen",
+      "Xiaoxin Chen"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "id": "2608.26013v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Multimodal instruction-following models require training data that is accurate, diverse, verifiable, and challenging.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing synthesis pipelines typically follow a one-pass generate-and-filter paradigm, discarding feedback from failed samples, verifier outcomes, and target-model errors.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "persistent memory"
+    ],
+    "one_liner": "Multimodal instruction-following models require training data that is accurate, diverse, verifiable, and challenging.",
+    "published": "2026-08-26",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark\n- 检索关键词命中：persistent memory\n- 来源分类信息：cs.CL",
+    "slug": "visa-agentic-self-evolving-data-synthesis-for-multimodal-instruction-following",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.26013v2",
+    "tags": [
+      "agent",
+      "benchmark"
+    ],
+    "title": "VISA: Agentic Self-Evolving Data Synthesis for Multimodal Instruction Following",
+    "updated": "2026-08-27",
+    "url": "http://arxiv.org/abs/2608.26013v2",
+    "venue": ""
+  },
+  {
+    "abstract": "Organizing long-term memory for multimodal agents remains challenging because existing methods either suffer from expensive question-agnostic offline summaries or naive embedding similarity matching that introduces incomplete and redundant context. To address these issues, we propose GraphMemix, a combinatorial-optimization graph memory framework that models memory organization as query-aware evidence-forest construction. Specifically, our method consists of three key components:(1) candidate graph construction, which expands multi-view seed memories through schema and semantic relations to acquire query-aware original context; (2) evidence utility and activation costs, which decouples direct memory support from anchor-conditioned relation verification to suppress redundant or conflicting information; and (3) forest optimization, which jointly selects a forest-format memory context under a maximum evidence budget and its reliable relational structure. By organizing memory into a query-relevant subgraph, the method avoids substantial lifecycle cost and recovers low-similarity complementary evidence. Experimental results across four long-term multimodal memory benchmarks demonstrate significant improvements with different foundation models and establish a new Pareto frontier between accuracy and lifecycle cost.",
+    "authors": [
+      "Geng Li",
+      "Yuhao Wang",
+      "Dong Li",
+      "Jianye Hao",
+      "Yuxin Peng"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2608.26983v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, long-term` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Organizing long-term memory for multimodal agents remains challenging because existing methods either suffer from expensive question-agnostic offline summaries or naive embedding similarity matching that introduces...\n\n进一步看，论文的核心做法或实验重点可以概括为：To address these issues, we propose GraphMemix, a combinatorial-optimization graph memory framework that models memory organization as query-aware evidence-forest construction.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory",
+      "long-term memory",
+      "memory benchmark",
+      "memory benchmarks"
+    ],
+    "one_liner": "Organizing long-term memory for multimodal agents remains challenging because existing methods either suffer from expensive question-agnostic offline summaries or naive...",
+    "published": "2026-08-27",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context, long-term\n- 检索关键词命中：agent memory, long-term memory, memory benchmark, memory benchmarks\n- 来源分类信息：cs.AI",
+    "slug": "graphmemix-query-aware-evidence-forests-for-long-term-multimodal-agent-memory",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.26983v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "long-term"
+    ],
+    "title": "GraphMemix: Query-Aware Evidence Forests for Long-Term Multimodal Agent Memory",
+    "updated": "2026-08-27",
+    "url": "http://arxiv.org/abs/2608.26983v1",
+    "venue": ""
+  },
+  {
     "abstract": "An agent that inherits a consolidated memory may inherit a constraint that was true when written and has since been withdrawn by a newer authoritative record. Under a scarce verification budget, does the agent recover the withdrawal, and if not, is the error avoidable without spending more? We model supersession explicitly -- historical provenance is immutable; what changes is which record is current -- and assign by design the memory's form, the world's state (source current or superseded), and the verification policy at a fixed budget of two records: the agent's own allocation, or the same budget with one slot re-assigned to the critical provenance path or to a random record. With a constraint stated, agents inspected its provenance path in about one episode in five; when that constraint had been superseded, native allocation produced stale-consistent decisions in 77.3%, 74.7% and 74.7% of episodes across a primary run, a fresh-wording replication and a held-out domain. Re-assigning one slot to the critical path raised current-record-consistent decisions by +74.0, +72.7 and +61.3 points, positive in six of six models in each of those runs, and changed nothing when the record agreed with the memory. The held-out scenario was later found to contain a temporal inconsistency; a robustness replication with one sentence corrected, deposited externally before execution, gave +73.3 points and is reported alongside the original. The intervention uses knowledge of the critical path and is not a scheduler; it identifies that the share of stale-memory error attributable to verification allocation is close to its structural ceiling. Memory systems may need freshness or supersession signals separate from relevance.",
     "authors": [
       "Kazuki Nakayashiki"
@@ -302,6 +468,37 @@
     "title": "Governed Persistent Memory: Source-Bound State Semantics and Fail-Closed Release for Long-Horizon Agents",
     "updated": "2026-08-26",
     "url": "http://arxiv.org/abs/2608.12476v2",
+    "venue": ""
+  },
+  {
+    "abstract": "Recent advances in Large Language Models (LLMs) have shown that increased inference-time reasoning can improve performance on complex tasks. However, many existing approaches rely on fixed or preallocated reasoning controls, such as fixed token budgets, pre-execution difficulty estimates, or activation-space interventions, and are often evaluated on standalone reasoning benchmarks rather than full agentic workflows. These assumptions may not hold in agentic AI systems, where reasoning requirements evolve dynamically through planning, tool use, memory retrieval, and agent-to-agent interactions. Consequently, reasoning can become either excessive or insufficient, resulting in unnecessary computation, increased latency, planning drift, excessive tool use, or incomplete solutions. We argue that a major challenge for next-generation agentic AI is not merely how much reasoning a language model should perform, but how it should allocate reasoning according to evolving task demands. We characterize over-reasoning and under-reasoning as recurring failure modes of misallocated reasoning and evaluate them on MATH-500 and the GAIA public validation benchmark. Using tool-decision latency, token consumption, token-limit exhaustion, and answer correctness, our results suggest that cases classified as over-reasoning are associated with higher computational cost without proportional accuracy gains, whereas cases classified as under-reasoning are consistently associated with incorrect or incomplete solutions. These findings motivate future research on adaptive reasoning mechanisms for agentic AI.",
+    "authors": [
+      "Md Jueal Mia",
+      "M. Hadi Amini"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.CL"
+    ],
+    "id": "2608.26442v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Recent advances in Large Language Models (LLMs) have shown that increased inference-time reasoning can improve performance on complex tasks.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, many existing approaches rely on fixed or preallocated reasoning controls, such as fixed token budgets, pre-execution difficulty estimates, or activation-space interventions, and are often evaluated on...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory retrieval"
+    ],
+    "one_liner": "Recent advances in Large Language Models (LLMs) have shown that increased inference-time reasoning can improve performance on complex tasks.",
+    "published": "2026-08-26",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, retrieval\n- 检索关键词命中：memory retrieval\n- 来源分类信息：cs.AI, cs.CL",
+    "slug": "don-t-overthink-don-t-underthink-toward-adaptive-reasoning-in-agentic-ai",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.26442v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "retrieval"
+    ],
+    "title": "Don't Overthink, Don't Underthink: Toward Adaptive Reasoning in Agentic AI",
+    "updated": "2026-08-26",
+    "url": "http://arxiv.org/abs/2608.26442v1",
     "venue": ""
   },
   {
@@ -4165,36 +4362,6 @@
     "updated": "2026-08-11",
     "url": "http://arxiv.org/abs/2608.10627v1",
     "venue": ""
-  },
-  {
-    "abstract": "Long-term memory enables large language models (LLMs) to personalize responses using prior user interactions, yet different queries may require different forms of memory evidence. This study investigates whether behavioral signals, including recency, preference, and user updates, improve personalized memory retrieval and whether these signals can be selected adaptively according to the query. We evaluate six retrieval strategies on 589 PersonaMem queries using a common LLM backbone. Preference-Aware retrieval achieves the highest overall accuracy of 47.88%, followed by Query-Adaptive retrieval at 47.54% and Static Semantic retrieval at 47.20%. Task-level results show that the effectiveness of behavioral signals varies substantially across query types. Query-adaptive routing does not significantly outperform the strongest fixed strategies, while oracle selection reaches 50.42%, leaving only 2.55 percentage points of headroom. These results show that behavioral memory is task-dependent and highlight the need to determine when specific behavioral evidence should be used rather than uniformly combining multiple memory signals.",
-    "authors": [
-      "Keonvin Park",
-      "John J. Sohn"
-    ],
-    "categories": [
-      "OpenReview.net/Archive/-/Direct_Upload"
-    ],
-    "id": "openreview:hC72QPtiz3",
-    "intro": "这篇论文被纳入仓库，是因为它和 `long-term, retrieval` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `IEEE IROS 2026 Workshop BEMHAT` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Long-term memory enables large language models (LLMs) to personalize responses using prior user interactions, yet different queries may require different forms of memory evidence.\n\n进一步看，论文的核心做法或实验重点可以概括为：This study investigates whether behavioral signals, including recency, preference, and user updates, improve personalized memory retrieval and whether these signals can be selected adaptively according to the query.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
-    "matched_keywords": [
-      "long-term memory",
-      "memory retrieval"
-    ],
-    "one_liner": "Long-term memory enables large language models (LLMs) to personalize responses using prior user interactions, yet different queries may require different forms of memory evidence.",
-    "published": "2026-08-08",
-    "relevance": "- 来源：OpenReview\n- Venue：IEEE IROS 2026 Workshop BEMHAT\n- 高亮主题命中：long-term, retrieval\n- 检索关键词命中：long-term memory, memory retrieval\n- 来源分类信息：OpenReview.net/Archive/-/Direct_Upload",
-    "slug": "when-should-llms-use-behavioral-memory-task-dependent-retrieval-for-personalized",
-    "source": "OpenReview",
-    "source_key": "hC72QPtiz3",
-    "tags": [
-      "long-term",
-      "retrieval"
-    ],
-    "title": "When Should LLMs Use Behavioral Memory? Task-Dependent Retrieval for Personalized Long-Term Memory",
-    "updated": "2026-08-10",
-    "url": "https://openreview.net/forum?id=hC72QPtiz3",
-    "venue": "IEEE IROS 2026 Workshop BEMHAT"
   },
   {
     "abstract": "Long-term memory enables language agents to reuse past facts, preferences, and task experience. Persistence also creates a central falsifiability problem: when the world changes, stale memories can remain retrievable and pollute the prompt. We characterize this failure mode as memory pollution: degradation caused by active memories that newer conflicting evidence has superseded. We introduce TEPA, a revocable evidence-memory mechanism that makes validity an explicit state of memory. TEPA represents observations as keyed precedents and revokes active precedents when fresh evidence contradicts them under the same key, allowing retrieval to draw from current evidence while preserving revoked history for audit. Across controlled hidden-regime drift, real file-backed executable drift, and preference-update streams, revocation prevents stale active memory from remaining in the retrieval set after reversal. In controlled drift over 50 seeds, append-only and last-write-wins memory fell below no memory during full reversal (append-only and last-write-wins both 0.210, no memory 0.309, TEPA 0.950), and the same pattern reproduced under real file execution (append-only 0.203, no memory 0.298, TEPA 0.950). On clean MemoryAgentBench SH-6k, TEPA matches a strong last-write-wins cache, confirming that current-key replacement is the decisive operation for single-hop fact consolidation. Boundary tests on multi-hop and very long-context MemoryAgentBench settings expose retrieval-chain and context-selection bottlenecks beyond fact-level validity tracking. Together, these results establish lifecycle revocation as a core memory operation for agents that must falsify, audit, and later re-promote evolving knowledge.",
