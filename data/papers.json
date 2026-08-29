@@ -27,6 +27,34 @@
     "venue": "ACL ARR 2026 August Submission"
   },
   {
+    "abstract": "Vision-Language Navigation (VLN) requires embodied agents to interpret natural language instructions and navigate through previously unseen complex environments. Despite recent progress with large-scale pretraining and multimodal foundation models, current VLN systems remain limited by shallow temporal modeling and insufficient spatial understanding, often processing only short observation sequences and lacking structured memory. Such deficiency severely hinders them from capturing critical information from earlier observations and building detailed representations with structured spatial contexts, unable to make reliable decisions. In this work, we present MemoryVLN, a memory-augmented VLN framework that explicitly models temporal, spatial, and trajectory information to enable long-horizon reasoning and comprehensive spatial understanding. It includes a temporal reasoning memory to adaptively distinguish short-term dynamics and long-term context through selective frame retention, a spatial intelligence memory to build detailed scene graphs with object entities and relationships, and a trajectory memory to visualize historical actions as top-down trajectory maps to encode holistic motion history. With information-intensive memory features, MemoryVLN demonstrates new state-of-the-art performance on R2R-CE and RxR-CE benchmarks by outperforming previous methods by 5%-10%, while simultaneously achieving high computing efficiency by consuming far fewer input tokens. It even largely outperforms previous models with panoramic observations by using RGB observations only. Moreover, experiments on cross-dataset generalization and enhanced spatial reasoning further validate the effectiveness of MemoryVLN in capturing long-term temporal dependencies and 3D scene understanding for embodied navigation.",
+    "authors": [],
+    "categories": [
+      "TMLR/-/Submission"
+    ],
+    "id": "openreview:vHb61DlKTh",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, long-term` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `Under review for TMLR` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Vision-Language Navigation (VLN) requires embodied agents to interpret natural language instructions and navigate through previously unseen complex environments.\n\n进一步看，论文的核心做法或实验重点可以概括为：Despite recent progress with large-scale pretraining and multimodal foundation models, current VLN systems remain limited by shallow temporal modeling and insufficient spatial understanding, often processing only...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory-augmented"
+    ],
+    "one_liner": "Vision-Language Navigation (VLN) requires embodied agents to interpret natural language instructions and navigate through previously unseen complex environments.",
+    "published": "2026-06-23",
+    "relevance": "- 来源：OpenReview\n- Venue：Decision pending for TMLR\n- 高亮主题命中：agent, benchmark, context, long-term\n- 检索关键词命中：memory-augmented\n- 来源分类信息：TMLR/-/Submission",
+    "slug": "memoryvln-memory-augmented-vision-language-navigation",
+    "source": "OpenReview",
+    "source_key": "vHb61DlKTh",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "long-term"
+    ],
+    "title": "MemoryVLN: Memory-Augmented Vision-Language Navigation",
+    "updated": "2026-08-29",
+    "url": "https://openreview.net/forum?id=vHb61DlKTh",
+    "venue": "Decision pending for TMLR"
+  },
+  {
     "abstract": "Long-term memory enables large language models (LLMs) to personalize responses using prior user interactions, yet different queries may require different forms of memory evidence. This study investigates whether behavioral signals, including recency, preference, and user updates, improve personalized memory retrieval and whether these signals can be selected adaptively according to the query. We evaluate six retrieval strategies on 589 PersonaMem queries using a common LLM backbone. Preference-Aware retrieval achieves the highest overall accuracy of 47.88%, followed by Query-Adaptive retrieval at 47.54% and Static Semantic retrieval at 47.20%. Task-level results show that the effectiveness of behavioral signals varies substantially across query types. Query-adaptive routing does not significantly outperform the strongest fixed strategies, while oracle selection reaches 50.42%, leaving only 2.55 percentage points of headroom. These results show that behavioral memory is task-dependent and highlight the need to determine when specific behavioral evidence should be used rather than uniformly combining multiple memory signals.",
     "authors": [
       "Keonvin Park",
@@ -16722,34 +16750,6 @@
     "updated": "2026-06-23",
     "url": "http://arxiv.org/abs/2606.25206v1",
     "venue": ""
-  },
-  {
-    "abstract": "Vision-Language Navigation (VLN) requires embodied agents to interpret natural language instructions and navigate through previously unseen complex environments. Despite recent progress with large-scale pretraining and multimodal foundation models, current VLN systems remain limited by shallow temporal modeling and insufficient spatial understanding, often processing only short observation sequences and lacking structured memory. Such deficiency severely hinders them from capturing critical information from earlier observations and building detailed representations with structured spatial contexts, unable to make reliable decisions. In this work, we present MemoryVLN, a memory-augmented VLN framework that explicitly models temporal, spatial, and trajectory information to enable long-horizon reasoning and comprehensive spatial understanding. It includes a temporal reasoning memory to adaptively distinguish short-term dynamics and long-term context through selective frame retention, a spatial intelligence memory to build detailed scene graphs with object entities and relationships, and a trajectory memory to visualize historical actions as top-down trajectory maps to encode holistic motion history. With information-intensive memory features, MemoryVLN demonstrates new state-of-the-art performance on R2R-CE and RxR-CE benchmarks by outperforming previous methods by 5%-10%, while simultaneously achieving high computing efficiency by consuming far fewer input tokens. It even largely outperforms previous models with panoramic observations by using RGB observations only. Moreover, experiments on cross-dataset generalization and enhanced spatial reasoning further validate the effectiveness of MemoryVLN in capturing long-term temporal dependencies and 3D scene understanding for embodied navigation.",
-    "authors": [],
-    "categories": [
-      "TMLR/-/Submission"
-    ],
-    "id": "openreview:vHb61DlKTh",
-    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, long-term` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `Under review for TMLR` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Vision-Language Navigation (VLN) requires embodied agents to interpret natural language instructions and navigate through previously unseen complex environments.\n\n进一步看，论文的核心做法或实验重点可以概括为：Despite recent progress with large-scale pretraining and multimodal foundation models, current VLN systems remain limited by shallow temporal modeling and insufficient spatial understanding, often processing only...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
-    "matched_keywords": [
-      "memory-augmented"
-    ],
-    "one_liner": "Vision-Language Navigation (VLN) requires embodied agents to interpret natural language instructions and navigate through previously unseen complex environments.",
-    "published": "2026-06-23",
-    "relevance": "- 来源：OpenReview\n- Venue：Under review for TMLR\n- 高亮主题命中：agent, benchmark, context, long-term\n- 检索关键词命中：memory-augmented\n- 来源分类信息：TMLR/-/Submission",
-    "slug": "memoryvln-memory-augmented-vision-language-navigation",
-    "source": "OpenReview",
-    "source_key": "vHb61DlKTh",
-    "tags": [
-      "agent",
-      "benchmark",
-      "context",
-      "long-term"
-    ],
-    "title": "MemoryVLN: Memory-Augmented Vision-Language Navigation",
-    "updated": "2026-06-23",
-    "url": "https://openreview.net/forum?id=vHb61DlKTh",
-    "venue": "Under review for TMLR"
   },
   {
     "abstract": "Long-term memory promises LLM agents that grow more capable across sessions, maintaining an accurate, evolving understanding of the user that interaction forms. In practice, however, this memory is evaluated mostly through downstream behavior, such as later answers, personalization quality, or task success, which tests that understanding only indirectly and leaves the memory artifact itself largely unaudited. We argue that long-term memory should instead be evaluated as an auditable post-interaction artifact: after ordinary assistance, what structured user state can be reconstructed from the memory the agent leaves behind? We instantiate this view in MEMPROBE, a benchmark in which a memory-equipped agent assists simulated users, each carrying a hidden, taxonomy-anchored user-state bank, across a trajectory of leak-controlled tasks, after which that bank is reconstructed from the agent's resulting memory under both full-store and top-k access. Built on synthetic ground truth for efficient, scalable measurement, MEMPROBE spans 50 simulated users with 31 hidden dimensions each (1,550 recovery targets) and tests 5 representative memory systems. Testing state-of-the-art memory agents, we find that successful assistance and recoverable memory behave as distinct capabilities. Task completion nearly saturates, even for a memoryless baseline, while category-balanced recovery stays moderate (about 0.6) and drops further under top-k retrieval. MEMPROBE is the first benchmark to study memory recovery directly, reconstructing the user state a system retains and scoring it against ground truth. We see recovery as a concrete objective for future memory agents to optimize, and MEMPROBE as a step toward an environment where agents are trained to remember their users, growing more faithful the longer they know them.",

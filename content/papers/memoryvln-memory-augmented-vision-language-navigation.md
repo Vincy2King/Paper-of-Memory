@@ -1,10 +1,10 @@
 # MemoryVLN: Memory-Augmented Vision-Language Navigation
 
 - Source: OpenReview
-- Venue: Under review for TMLR
+- Venue: Decision pending for TMLR
 - Paper ID: openreview:vHb61DlKTh
 - Published: 2026-06-23
-- Updated: 2026-06-23
+- Updated: 2026-08-29
 - Authors: Unknown
 - Tags: agent, benchmark, context, long-term
 - Categories: TMLR/-/Submission
@@ -26,7 +26,7 @@ Vision-Language Navigation (VLN) requires embodied agents to interpret natural l
 
 ## Why It Was Included
 - 来源：OpenReview
-- Venue：Under review for TMLR
+- Venue：Decision pending for TMLR
 - 高亮主题命中：agent, benchmark, context, long-term
 - 检索关键词命中：memory-augmented
 - 来源分类信息：TMLR/-/Submission

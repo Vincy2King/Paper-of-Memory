@@ -53,6 +53,7 @@ python3 scripts/update_papers.py --build-only
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
 | 2026-08-29 | OpenReview | [Reason Before Remembering: An Entity-Centric Framework for Trustworthy Conversational Memory](content/papers/reason-before-remembering-an-entity-centric-framework-for-trustworthy-conversati.md) | context, conversation, retrieval |
+| 2026-08-29 | OpenReview | [MemoryVLN: Memory-Augmented Vision-Language Navigation](content/papers/memoryvln-memory-augmented-vision-language-navigation.md) | agent, benchmark, context |
 | 2026-08-28 | OpenReview | [When Should LLMs Use Behavioral Memory? Task-Dependent Retrieval for Personalized Long-Term Memory](content/papers/when-should-llms-use-behavioral-memory-task-dependent-retrieval-for-personalized.md) | long-term, retrieval |
 | 2026-08-28 | OpenReview | [Profile-Graph Memory for LLM Agents: Implicit Cross-Entity Traversal through Narrative Profiles](content/papers/profile-graph-memory-for-llm-agents-implicit-cross-entity-traversal-through-narr.md) | agent, benchmark, compression |
 | 2026-08-28 | OpenReview | [Knowledge Graph Enhanced Memory-Augmented Retrieval for Long Context Modeling](content/papers/knowledge-graph-enhanced-memory-augmented-retrieval-for-long-context-modeling.md) | context, retrieval |
@@ -71,7 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-08-26 | arXiv | [Governed Persistent Memory: Source-Bound State Semantics and Fail-Closed Release for Long-Horizon Agents](content/papers/governed-persistent-memory-source-bound-state-semantics-and-fail-closed-release-.md) | agent, long-term, retrieval |
 | 2026-08-26 | arXiv | [Don't Overthink, Don't Underthink: Toward Adaptive Reasoning in Agentic AI](content/papers/don-t-overthink-don-t-underthink-toward-adaptive-reasoning-in-agentic-ai.md) | agent, benchmark, retrieval |
 | 2026-08-26 | arXiv | [AWM: Answerable Working Memory for Long-Document VQA Agents](content/papers/awm-answerable-working-memory-for-long-document-vqa-agents.md) | agent, context |
-| 2026-08-25 | arXiv | [VideoHarness-RSI: Recursive Harness Self-Improvement for Long-Video Understanding with Frozen Vision-Language Models](content/papers/videoharness-rsi-recursive-harness-self-improvement-for-long-video-understanding.md) | agent, benchmark, compression |
 
 ## Suggested GitHub Setup
 
