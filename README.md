@@ -40,7 +40,7 @@ python3 scripts/update_papers.py --build-only
 ## Repository Snapshot
 
 - Total tracked papers: **1039**
-- Last generated: **2026-08-28**
+- Last generated: **2026-08-29**
 
 ## Papers by Source
 
@@ -52,7 +52,10 @@ python3 scripts/update_papers.py --build-only
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-08-29 | OpenReview | [Reason Before Remembering: An Entity-Centric Framework for Trustworthy Conversational Memory](content/papers/reason-before-remembering-an-entity-centric-framework-for-trustworthy-conversati.md) | context, conversation, retrieval |
 | 2026-08-28 | OpenReview | [When Should LLMs Use Behavioral Memory? Task-Dependent Retrieval for Personalized Long-Term Memory](content/papers/when-should-llms-use-behavioral-memory-task-dependent-retrieval-for-personalized.md) | long-term, retrieval |
+| 2026-08-28 | OpenReview | [Profile-Graph Memory for LLM Agents: Implicit Cross-Entity Traversal through Narrative Profiles](content/papers/profile-graph-memory-for-llm-agents-implicit-cross-entity-traversal-through-narr.md) | agent, benchmark, compression |
+| 2026-08-28 | OpenReview | [Knowledge Graph Enhanced Memory-Augmented Retrieval for Long Context Modeling](content/papers/knowledge-graph-enhanced-memory-augmented-retrieval-for-long-context-modeling.md) | context, retrieval |
 | 2026-08-27 | arXiv | [When Stale Constraints Go Unchecked: Budgeted Verification Failures in Inherited Agent Memory](content/papers/when-stale-constraints-go-unchecked-budgeted-verification-failures-in-inherited-.md) | agent |
 | 2026-08-27 | arXiv | [When Memory Takes Gradients: Collaborative Vector Memory for Agentic Recommender Systems](content/papers/when-memory-takes-gradients-collaborative-vector-memory-for-agentic-recommender-.md) | agent, benchmark, context |
 | 2026-08-27 | arXiv | [VISA: Agentic Self-Evolving Data Synthesis for Multimodal Instruction Following](content/papers/visa-agentic-self-evolving-data-synthesis-for-multimodal-instruction-following.md) | agent, benchmark |
@@ -69,9 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-08-26 | arXiv | [Don't Overthink, Don't Underthink: Toward Adaptive Reasoning in Agentic AI](content/papers/don-t-overthink-don-t-underthink-toward-adaptive-reasoning-in-agentic-ai.md) | agent, benchmark, retrieval |
 | 2026-08-26 | arXiv | [AWM: Answerable Working Memory for Long-Document VQA Agents](content/papers/awm-answerable-working-memory-for-long-document-vqa-agents.md) | agent, context |
 | 2026-08-25 | arXiv | [VideoHarness-RSI: Recursive Harness Self-Improvement for Long-Video Understanding with Frozen Vision-Language Models](content/papers/videoharness-rsi-recursive-harness-self-improvement-for-long-video-understanding.md) | agent, benchmark, compression |
-| 2026-08-25 | arXiv | [The Von-Neumann State-Space Transformer for neural decoding](content/papers/the-von-neumann-state-space-transformer-for-neural-decoding.md) | benchmark, context |
-| 2026-08-25 | arXiv | [Recursive Experiential-Working Memory Evolution for Long-Horizon Agent Harnesses](content/papers/recursive-experiential-working-memory-evolution-for-long-horizon-agent-harnesses.md) | agent, benchmark |
-| 2026-08-25 | arXiv | [PonderPounce: A Pretrained MLLM as an Episode Context Engine for Robot Control](content/papers/ponderpounce-a-pretrained-mllm-as-an-episode-context-engine-for-robot-control.md) | context |
 
 ## Suggested GitHub Setup
 

@@ -1,5 +1,32 @@
 [
   {
+    "abstract": "Conversational memory in AI systems becomes crucial for coherent interactions through prolonged conversations. State-of-the-art techniques mainly aim at improving memory by context expansion, using retrieval, or external memory. However, most methods assume that any entity mention should be immediately mapped to one interpretation. This often leads to premature commitments, memory confirmation bias, hallucinations in the conversation, and accumulation of wrong conversational state. This paper states that conversational memory should not hide ambiguity, but should represent it explicitly as part of the reasoning process. This paper proposes an Entity-Centric Conversational Memory Framework that views entity linking as a process of explicit belief management, instead of a deterministic one. It maintains the space of interpretations of entities that includes both correct and incorrect hypotheses, such as $\\mathrm{UNKNOWN}$ hypothesis, processes heterogeneous conversational evidence via belief update, detects ambiguity, and performs one of three actions: Commit, Clarify, or Delay. By doing so, the framework separates entity reasoning from memory updates, allowing to write to memory only when certain. The experiments conducted on ConEL conversational entity linking dataset show that the proposed framework reaches $99.0\\%$ commit precision providing explicit control over the precision-coverage trade-off. The analysis shows several properties of conversational memory and brings important architectural insights to light: the existence of memory confirmation bias, the importance of treating $\\mathrm{UNKNOWN}$ as an active competing hypothesis, and the limitations of fixed ambiguity thresholds on different entity types.",
+    "authors": [],
+    "categories": [
+      "aclweb.org/ACL/ARR/2026/August/-/Submission"
+    ],
+    "id": "openreview:oobq0Zs3mc",
+    "intro": "这篇论文被纳入仓库，是因为它和 `context, conversation, retrieval` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 August Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Conversational memory in AI systems becomes crucial for coherent interactions through prolonged conversations.\n\n进一步看，论文的核心做法或实验重点可以概括为：State-of-the-art techniques mainly aim at improving memory by context expansion, using retrieval, or external memory.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "conversational memory"
+    ],
+    "one_liner": "Conversational memory in AI systems becomes crucial for coherent interactions through prolonged conversations.",
+    "published": "2026-08-04",
+    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 August Submission\n- 高亮主题命中：context, conversation, retrieval\n- 检索关键词命中：conversational memory\n- 来源分类信息：aclweb.org/ACL/ARR/2026/August/-/Submission",
+    "slug": "reason-before-remembering-an-entity-centric-framework-for-trustworthy-conversati",
+    "source": "OpenReview",
+    "source_key": "oobq0Zs3mc",
+    "tags": [
+      "context",
+      "conversation",
+      "retrieval"
+    ],
+    "title": "Reason Before Remembering: An Entity-Centric Framework for Trustworthy Conversational Memory",
+    "updated": "2026-08-29",
+    "url": "https://openreview.net/forum?id=oobq0Zs3mc",
+    "venue": "ACL ARR 2026 August Submission"
+  },
+  {
     "abstract": "Long-term memory enables large language models (LLMs) to personalize responses using prior user interactions, yet different queries may require different forms of memory evidence. This study investigates whether behavioral signals, including recency, preference, and user updates, improve personalized memory retrieval and whether these signals can be selected adaptively according to the query. We evaluate six retrieval strategies on 589 PersonaMem queries using a common LLM backbone. Preference-Aware retrieval achieves the highest overall accuracy of 47.88%, followed by Query-Adaptive retrieval at 47.54% and Static Semantic retrieval at 47.20%. Task-level results show that the effectiveness of behavioral signals varies substantially across query types. Query-adaptive routing does not significantly outperform the strongest fixed strategies, while oracle selection reaches 50.42%, leaving only 2.55 percentage points of headroom. These results show that behavioral memory is task-dependent and highlight the need to determine when specific behavioral evidence should be used rather than uniformly combining multiple memory signals.",
     "authors": [
       "Keonvin Park",
@@ -28,6 +55,63 @@
     "updated": "2026-08-28",
     "url": "https://openreview.net/forum?id=hC72QPtiz3",
     "venue": "IEEE IROS 2026 Workshop BEMHAT"
+  },
+  {
+    "abstract": "Long-term memory is essential for LLM agents that interact across sessions, yet current memory benchmarks primarily evaluate single-hop recall, leaving multi-hop association largely unmeasured. We make three contributions. First, we introduce MemHop, a multi-hop memory benchmark of 1,000 questions at hop depths 1-5 across 10 social-network scenarios, with per-hop evidence annotations. Second, we present Profile-Graph Memory (ProGraph), a two-layer memory architecture combining (i) profile expansion -- substring-matched traversal of entity names that naturally appear in LLM-written profile narratives, a minimal alternative to explicit knowledge-graph construction -- and (ii) compression residuals -- exact dates, quantities, and named items co-extracted with each profile update at zero extra API cost. Third, a full-grid ablation shows cross-benchmark mechanism specialization: profile expansion drives multi-hop reasoning (-22.6pp on MemHop when removed) while compression residuals drive precision recall (-8.6pp on LoCoMo when not co-extracted), with cross-effects under 3pp within a single architecture. ProGraph averages 80.1% on MemHop (matching the FullContext reference) and 78.4% on LoCoMo (exceeding FullContext by 11.3pp), outperforming Mem0, A-Mem, HippoRAG, and RAG on both. We release MemHop, ProGraph, and baseline implementations.",
+    "authors": [],
+    "categories": [
+      "aclweb.org/ACL/ARR/2026/August/-/Submission"
+    ],
+    "id": "openreview:8oUXCzERe8",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, compression, context` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 August Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Long-term memory is essential for LLM agents that interact across sessions, yet current memory benchmarks primarily evaluate single-hop recall, leaving multi-hop association largely unmeasured.\n\n进一步看，论文的核心做法或实验重点可以概括为：We make three contributions.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "long-term memory",
+      "memory benchmark",
+      "memory benchmarks"
+    ],
+    "one_liner": "Long-term memory is essential for LLM agents that interact across sessions, yet current memory benchmarks primarily evaluate single-hop recall, leaving multi-hop association...",
+    "published": "2026-08-04",
+    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 August Submission\n- 高亮主题命中：agent, benchmark, compression, context, long-term\n- 检索关键词命中：long-term memory, memory benchmark, memory benchmarks\n- 来源分类信息：aclweb.org/ACL/ARR/2026/August/-/Submission",
+    "slug": "profile-graph-memory-for-llm-agents-implicit-cross-entity-traversal-through-narr",
+    "source": "OpenReview",
+    "source_key": "8oUXCzERe8",
+    "tags": [
+      "agent",
+      "benchmark",
+      "compression",
+      "context",
+      "long-term"
+    ],
+    "title": "Profile-Graph Memory for LLM Agents: Implicit Cross-Entity Traversal through Narrative Profiles",
+    "updated": "2026-08-28",
+    "url": "https://openreview.net/forum?id=8oUXCzERe8",
+    "venue": "ACL ARR 2026 August Submission"
+  },
+  {
+    "abstract": "Long-context modeling requires tracking entity states across thousands of tokens, yet dense semantic retrieval conflates distinct states of the same entity. We present KGERMAR, a memory-augmented framework that constructs dynamic, context-specific knowledge graphs at both training and inference time. By integrating graph-structural embeddings with textual semantics in a three-bank memory architecture (contextual, semantic, and structural), KGERMAR discriminates between lexically similar passages based on underlying entity relationships. On entity-rich corpora, structural memory provides a stable complementary signal that reduces perplexity by up to 8.5\\% and memory per token by 1.6–2.2× compared to memory-augmented baselines. Ablations show that semantic retrieval dominates at shorter contexts but saturates at 32K tokens, whereas structural memory maintains consistent gains, establishing that dynamic knowledge graphs improve long-context modeling specifically when entity density is high.",
+    "authors": [],
+    "categories": [
+      "aclweb.org/ACL/ARR/2026/August/-/Submission"
+    ],
+    "id": "openreview:QdDQUKsvDn",
+    "intro": "这篇论文被纳入仓库，是因为它和 `context, retrieval` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 August Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Long-context modeling requires tracking entity states across thousands of tokens, yet dense semantic retrieval conflates distinct states of the same entity.\n\n进一步看，论文的核心做法或实验重点可以概括为：We present KGERMAR, a memory-augmented framework that constructs dynamic, context-specific knowledge graphs at both training and inference time.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory-augmented"
+    ],
+    "one_liner": "Long-context modeling requires tracking entity states across thousands of tokens, yet dense semantic retrieval conflates distinct states of the same entity.",
+    "published": "2026-08-04",
+    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 August Submission\n- 高亮主题命中：context, retrieval\n- 检索关键词命中：memory-augmented\n- 来源分类信息：aclweb.org/ACL/ARR/2026/August/-/Submission",
+    "slug": "knowledge-graph-enhanced-memory-augmented-retrieval-for-long-context-modeling",
+    "source": "OpenReview",
+    "source_key": "QdDQUKsvDn",
+    "tags": [
+      "context",
+      "retrieval"
+    ],
+    "title": "Knowledge Graph Enhanced Memory-Augmented Retrieval for Long Context Modeling",
+    "updated": "2026-08-28",
+    "url": "https://openreview.net/forum?id=QdDQUKsvDn",
+    "venue": "ACL ARR 2026 August Submission"
   },
   {
     "abstract": "An agent that inherits a consolidated memory may inherit a constraint that was true when written and has since been withdrawn by a newer authoritative record. Under a scarce verification budget, does the agent recover the withdrawal, and if not, is the resulting stale-consistent decision avoidable without spending more? We model supersession explicitly -- provenance is immutable; what changes is which record is current -- and assign by design the memory's form, the world's state and the verification policy at a fixed budget of two records: the agent's own allocation, or the same budget with one slot re-assigned to the critical provenance path or to a random record. With a constraint stated, agents inspected its provenance path in about one episode in five; when that constraint had been superseded, native allocation produced stale-consistent decisions in 77.3%, 74.7% and 74.7% of episodes across a primary run, a fresh-wording replication and a held-out domain. Re-assigning one slot to the critical path raised current-record-consistent decisions by +74.0, +72.7 and +61.3 points, positive in six of six models in each run, and left an already near-ceiling rate unchanged when the record agreed with the memory. The held-out scenario was later found to contain a temporal inconsistency; a robustness replication with one sentence corrected, deposited externally before execution, gave +73.3 points (positive in 5 of six models, the sixth at a native missed-path rate of zero) and is reported alongside the original. The intervention uses knowledge of the critical path and is not a scheduler; it quantifies how much of the stale-consistent decision rate the bundled same-budget policy removes: the effect approaches the native missed-path rate in the primary, replication and corrected held-out runs. Memory systems may need freshness or supersession signals separate from relevance.",
@@ -1524,32 +1608,6 @@
     "venue": ""
   },
   {
-    "abstract": "Long-context modeling requires tracking entity states across thousands of tokens, yet dense semantic retrieval conflates distinct states of the same entity. We present KGERMAR, a memory-augmented framework that constructs dynamic, context-specific knowledge graphs at both training and inference time. By integrating graph-structural embeddings with textual semantics in a three-bank memory architecture (contextual, semantic, and structural), KGERMAR discriminates between lexically similar passages based on underlying entity relationships. On entity-rich corpora, structural memory provides a stable complementary signal that reduces perplexity by up to 8.5\\% and memory per token by 1.6–2.2× compared to memory-augmented baselines. Ablations show that semantic retrieval dominates at shorter contexts but saturates at 32K tokens, whereas structural memory maintains consistent gains, establishing that dynamic knowledge graphs improve long-context modeling specifically when entity density is high.",
-    "authors": [],
-    "categories": [
-      "aclweb.org/ACL/ARR/2026/August/-/Submission"
-    ],
-    "id": "openreview:QdDQUKsvDn",
-    "intro": "这篇论文被纳入仓库，是因为它和 `context, retrieval` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 August Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Long-context modeling requires tracking entity states across thousands of tokens, yet dense semantic retrieval conflates distinct states of the same entity.\n\n进一步看，论文的核心做法或实验重点可以概括为：We present KGERMAR, a memory-augmented framework that constructs dynamic, context-specific knowledge graphs at both training and inference time.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
-    "matched_keywords": [
-      "memory-augmented"
-    ],
-    "one_liner": "Long-context modeling requires tracking entity states across thousands of tokens, yet dense semantic retrieval conflates distinct states of the same entity.",
-    "published": "2026-08-04",
-    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 August Submission\n- 高亮主题命中：context, retrieval\n- 检索关键词命中：memory-augmented\n- 来源分类信息：aclweb.org/ACL/ARR/2026/August/-/Submission",
-    "slug": "knowledge-graph-enhanced-memory-augmented-retrieval-for-long-context-modeling",
-    "source": "OpenReview",
-    "source_key": "QdDQUKsvDn",
-    "tags": [
-      "context",
-      "retrieval"
-    ],
-    "title": "Knowledge Graph Enhanced Memory-Augmented Retrieval for Long Context Modeling",
-    "updated": "2026-08-22",
-    "url": "https://openreview.net/forum?id=QdDQUKsvDn",
-    "venue": "ACL ARR 2026 August Submission"
-  },
-  {
     "abstract": "Document classification in regulated industries is constrained by data residency, limited cold-start labels, scarce review capacity, and costly model-governance procedures. We present HIRA, a training-free, on-premises retrieval-augmented cascade for document classification in regulated deployments that combines BM25 over OCR text, dense text embeddings, and image-level representations through validation-calibrated weighted reciprocal-rank fusion. Confident documents are classified directly by retrieval; uncertain or visually confusable documents are passed to a locally hosted LLM verifier, which receives the OCR text, retrieved exemplars, label descriptions, and confusion-specific terms. When the verifier remains uncertain, the document is sent to human review. Each correction is stored as a margin-weighted retrieval exemplar and updates a Dirichlet-smoothed confusion graph, letting the system improve without updating model weights. On a private 80-class trade-finance corpus, HIRA processes the full 30,233-document production stream while requesting human correction for only 1,945 documents (6.4%), improving Macro-F1 from 0.6218 to 0.8548. On the corrected Tobacco-3482 benchmark, HIRA reaches 0.9423 Macro-F1 with a locally hosted DeepSeek-R1-Distill-Qwen-32B verifier, 17.4 percentage points above the zero-shot LLM baseline, while invoking the verifier for only about 40% of documents and reducing LLM calls by approximately 60%. With 518 human corrections (24.8% of the pool), HIRA matches the fully labelled pool oracle, in which all 2,086 pool documents are indexed with their ground-truth labels. These results show that selective human feedback and retrieval-memory adaptation can be a practical alternative to repeated model retraining for long-tail document classification in regulated deployments.",
     "authors": [
       "Shangxuan Tian",
@@ -1784,33 +1842,6 @@
     "updated": "2026-08-21",
     "url": "http://arxiv.org/abs/2608.20707v1",
     "venue": ""
-  },
-  {
-    "abstract": "Conversational memory in AI systems becomes crucial for coherent interactions through prolonged conversations. State-of-the-art techniques mainly aim at improving memory by context expansion, using retrieval, or external memory. However, most methods assume that any entity mention should be immediately mapped to one interpretation. This often leads to premature commitments, memory confirmation bias, hallucinations in the conversation, and accumulation of wrong conversational state. This paper states that conversational memory should not hide ambiguity, but should represent it explicitly as part of the reasoning process. This paper proposes an Entity-Centric Conversational Memory Framework that views entity linking as a process of explicit belief management, instead of a deterministic one. It maintains the space of interpretations of entities that includes both correct and incorrect hypotheses, such as $\\mathrm{UNKNOWN}$ hypothesis, processes heterogeneous conversational evidence via belief update, detects ambiguity, and performs one of three actions: Commit, Clarify, or Delay. By doing so, the framework separates entity reasoning from memory updates, allowing to write to memory only when certain. The experiments conducted on ConEL conversational entity linking dataset show that the proposed framework reaches $99.0\\%$ commit precision providing explicit control over the precision-coverage trade-off. The analysis shows several properties of conversational memory and brings important architectural insights to light: the existence of memory confirmation bias, the importance of treating $\\mathrm{UNKNOWN}$ as an active competing hypothesis, and the limitations of fixed ambiguity thresholds on different entity types.",
-    "authors": [],
-    "categories": [
-      "aclweb.org/ACL/ARR/2026/August/-/Submission"
-    ],
-    "id": "openreview:oobq0Zs3mc",
-    "intro": "这篇论文被纳入仓库，是因为它和 `context, conversation, retrieval` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 August Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Conversational memory in AI systems becomes crucial for coherent interactions through prolonged conversations.\n\n进一步看，论文的核心做法或实验重点可以概括为：State-of-the-art techniques mainly aim at improving memory by context expansion, using retrieval, or external memory.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
-    "matched_keywords": [
-      "conversational memory"
-    ],
-    "one_liner": "Conversational memory in AI systems becomes crucial for coherent interactions through prolonged conversations.",
-    "published": "2026-08-04",
-    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 August Submission\n- 高亮主题命中：context, conversation, retrieval\n- 检索关键词命中：conversational memory\n- 来源分类信息：aclweb.org/ACL/ARR/2026/August/-/Submission",
-    "slug": "reason-before-remembering-an-entity-centric-framework-for-trustworthy-conversati",
-    "source": "OpenReview",
-    "source_key": "oobq0Zs3mc",
-    "tags": [
-      "context",
-      "conversation",
-      "retrieval"
-    ],
-    "title": "Reason Before Remembering: An Entity-Centric Framework for Trustworthy Conversational Memory",
-    "updated": "2026-08-21",
-    "url": "https://openreview.net/forum?id=oobq0Zs3mc",
-    "venue": "ACL ARR 2026 August Submission"
   },
   {
     "abstract": "Large language models often rely on Chain-of-Thought (CoT) reasoning to solve complex tasks, but verbose reasoning traces introduce substantial inference overhead. CoT compression shortens generation, yet aggressive compression may disrupt logical coherence and degrade performance. We formalize this trade-off as the \\textit{Context-Generation Substitution Law}, where explicit reasoning context substitutes for part of decode-time generation. Based on this principle, we propose \\textit{Memory-Augmented Compression}, a training-free framework that constructs reusable reasoning memories from historical traces and retrieves them as prefill-side scaffolds. Rather than using raw demonstrations, these memories summarize reusable reasoning patterns, key constraints, and critical operations to compensate for information lost during compression. Experiments show that Memory consistently improves prompt-based Chain-of-Draft (CoD) compression across mathematical reasoning, complex reasoning, and science question answering tasks, yielding accuracy gains of 21.4, 28.0, 29.5, and 6.61 points over CoD on GSM8K, MATH, BBH, and MMLU-Sci, while achieving a 1.14--1.49$\\times$ latency speedup over standard CoT. Memory is also compatible with token-level, reasoning-trace-level, and inference-state compression mechanisms. Further analyzes show that the gains come from relevant reasoning memories rather than simply increasing context length.",
@@ -5413,37 +5444,6 @@
     "updated": "2026-08-06",
     "url": "http://arxiv.org/abs/2608.05970v1",
     "venue": ""
-  },
-  {
-    "abstract": "Long-term memory is essential for LLM agents that interact across sessions, yet current memory benchmarks primarily evaluate single-hop recall, leaving multi-hop association largely unmeasured. We make three contributions. First, we introduce MemHop, a multi-hop memory benchmark of 1,000 questions at hop depths 1-5 across 10 social-network scenarios, with per-hop evidence annotations. Second, we present Profile-Graph Memory (ProGraph), a two-layer memory architecture combining (i) profile expansion -- substring-matched traversal of entity names that naturally appear in LLM-written profile narratives, a minimal alternative to explicit knowledge-graph construction -- and (ii) compression residuals -- exact dates, quantities, and named items co-extracted with each profile update at zero extra API cost. Third, a full-grid ablation shows cross-benchmark mechanism specialization: profile expansion drives multi-hop reasoning (-22.6pp on MemHop when removed) while compression residuals drive precision recall (-8.6pp on LoCoMo when not co-extracted), with cross-effects under 3pp within a single architecture. ProGraph averages 80.1% on MemHop (matching the FullContext reference) and 78.4% on LoCoMo (exceeding FullContext by 11.3pp), outperforming Mem0, A-Mem, HippoRAG, and RAG on both. We release MemHop, ProGraph, and baseline implementations.",
-    "authors": [],
-    "categories": [
-      "aclweb.org/ACL/ARR/2026/August/-/Submission"
-    ],
-    "id": "openreview:8oUXCzERe8",
-    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, compression, context` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 August Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Long-term memory is essential for LLM agents that interact across sessions, yet current memory benchmarks primarily evaluate single-hop recall, leaving multi-hop association largely unmeasured.\n\n进一步看，论文的核心做法或实验重点可以概括为：We make three contributions.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
-    "matched_keywords": [
-      "long-term memory",
-      "memory benchmark",
-      "memory benchmarks"
-    ],
-    "one_liner": "Long-term memory is essential for LLM agents that interact across sessions, yet current memory benchmarks primarily evaluate single-hop recall, leaving multi-hop association...",
-    "published": "2026-08-04",
-    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 August Submission\n- 高亮主题命中：agent, benchmark, compression, context, long-term\n- 检索关键词命中：long-term memory, memory benchmark, memory benchmarks\n- 来源分类信息：aclweb.org/ACL/ARR/2026/August/-/Submission",
-    "slug": "profile-graph-memory-for-llm-agents-implicit-cross-entity-traversal-through-narr",
-    "source": "OpenReview",
-    "source_key": "8oUXCzERe8",
-    "tags": [
-      "agent",
-      "benchmark",
-      "compression",
-      "context",
-      "long-term"
-    ],
-    "title": "Profile-Graph Memory for LLM Agents: Implicit Cross-Entity Traversal through Narrative Profiles",
-    "updated": "2026-08-06",
-    "url": "https://openreview.net/forum?id=8oUXCzERe8",
-    "venue": "ACL ARR 2026 August Submission"
   },
   {
     "abstract": "LLM agents increasingly maintain long-term memory of user facts across sessions. Yet such memory is usually evaluated by aggregating accuracy over question rows or episodes. Because this approach scores question rows independently, even when several questions probe the same fact, it cannot show how that fact behaves as conditions change. We introduce MemTrace, a benchmark whose unit of measurement is the knowledge point: a single typed fact about the user, rather than an individual question. MemTrace probes each fact along three controlled dimensions: memory age, defined by how many sessions ago the fact appeared in the history; question type, covering current state, earlier state, and trajectory of change; and evidence condition, covering present, missing, and contradicted-by-false-premise settings. Evaluating 13 memory-system configurations across four paradigms, we find that similar pooled accuracy hides different failures: recovering a fact's current and earlier states does not imply tracking how it changed, and safe abstention does not imply correcting a false premise. The dominant bottleneck is evidence use, not retrieval: when systems fail, the evidence was retrievable 10 times more often than it was missing. These results suggest that improving long-term memory requires better use of reachable evidence, not simply more storage or retrieval.",
