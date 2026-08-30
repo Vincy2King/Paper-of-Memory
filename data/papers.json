@@ -1,5 +1,100 @@
 [
   {
+    "abstract": "Prior research on memory mechanisms in RAG-based conversational systems has focused on how memory is stored and retrieved. However, less is known about how memories with different functional roles influence response quality, shape agents' responses across conversational contexts, and lead to distinct response behaviors. Existing evaluations are also largely reference-based, often missing response nuances that address users' preferences differently. In this work, we study the impact of different memory types on agent responses. We present a fine-grained taxonomy of conversational memory, classify retrieved memories by functional role, and design a user-centric evaluation framework that simulates user perspectives. Through comparative experiments on long-term datasets and frontier LLMs, our analysis reveals differentiated effects of memory: e.g., clarifying memory improves factual accuracy and constraint awareness, making responses more correct and personalized, while irrelevant memory reduces topic relevance and degrades constraint awareness. These findings show that, despite the power of frontier LLMs, different memory types can be leveraged to produce more personalized responses and motivate further research in this direction.",
+    "authors": [
+      "Yuxin Wang",
+      "Paul Thomas",
+      "Zhiwei Yu",
+      "Yuan Gao",
+      "Saeed Hassanpour",
+      "Soroush Vosoughi",
+      "Robert Sim",
+      "Nick Craswell"
+    ],
+    "categories": [
+      "EMNLP/2026/Workshop/GroundLM/-/Submission"
+    ],
+    "id": "openreview:q6THlzdjqH",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, context, conversation, long-term` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `GroundLM` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Prior research on memory mechanisms in RAG-based conversational systems has focused on how memory is stored and retrieved.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, less is known about how memories with different functional roles influence response quality, shape agents' responses across conversational contexts, and lead to distinct response behaviors.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "conversational memory"
+    ],
+    "one_liner": "Prior research on memory mechanisms in RAG-based conversational systems has focused on how memory is stored and retrieved.",
+    "published": "2026-08-30",
+    "relevance": "- 来源：OpenReview\n- Venue：GroundLM\n- 高亮主题命中：agent, context, conversation, long-term\n- 检索关键词命中：conversational memory\n- 来源分类信息：EMNLP/2026/Workshop/GroundLM/-/Submission",
+    "slug": "memory-makes-the-difference-evaluating-how-different-memory-roles-shape-conversa",
+    "source": "OpenReview",
+    "source_key": "q6THlzdjqH",
+    "tags": [
+      "agent",
+      "context",
+      "conversation",
+      "long-term"
+    ],
+    "title": "Memory Makes the Difference: Evaluating How Different Memory Roles Shape Conversational Agents",
+    "updated": "2026-08-30",
+    "url": "https://openreview.net/forum?id=q6THlzdjqH",
+    "venue": "GroundLM"
+  },
+  {
+    "abstract": "Long-context modeling requires tracking entity states across thousands of tokens, yet dense semantic retrieval conflates distinct states of the same entity. We present KGERMAR, a memory-augmented framework that constructs dynamic, context-specific knowledge graphs at both training and inference time. By integrating graph-structural embeddings with textual semantics in a three-bank memory architecture (contextual, semantic, and structural), KGERMAR discriminates between lexically similar passages based on underlying entity relationships. On entity-rich corpora, structural memory provides a stable complementary signal that reduces perplexity by up to 8.5\\% and memory per token by 1.6–2.2× compared to memory-augmented baselines. Ablations show that semantic retrieval dominates at shorter contexts but saturates at 32K tokens, whereas structural memory maintains consistent gains, establishing that dynamic knowledge graphs improve long-context modeling specifically when entity density is high.",
+    "authors": [],
+    "categories": [
+      "aclweb.org/ACL/ARR/2026/August/-/Submission"
+    ],
+    "id": "openreview:QdDQUKsvDn",
+    "intro": "这篇论文被纳入仓库，是因为它和 `context, retrieval` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 August Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Long-context modeling requires tracking entity states across thousands of tokens, yet dense semantic retrieval conflates distinct states of the same entity.\n\n进一步看，论文的核心做法或实验重点可以概括为：We present KGERMAR, a memory-augmented framework that constructs dynamic, context-specific knowledge graphs at both training and inference time.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory-augmented"
+    ],
+    "one_liner": "Long-context modeling requires tracking entity states across thousands of tokens, yet dense semantic retrieval conflates distinct states of the same entity.",
+    "published": "2026-08-04",
+    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 August Submission\n- 高亮主题命中：context, retrieval\n- 检索关键词命中：memory-augmented\n- 来源分类信息：aclweb.org/ACL/ARR/2026/August/-/Submission",
+    "slug": "knowledge-graph-enhanced-memory-augmented-retrieval-for-long-context-modeling",
+    "source": "OpenReview",
+    "source_key": "QdDQUKsvDn",
+    "tags": [
+      "context",
+      "retrieval"
+    ],
+    "title": "Knowledge Graph Enhanced Memory-Augmented Retrieval for Long Context Modeling",
+    "updated": "2026-08-30",
+    "url": "https://openreview.net/forum?id=QdDQUKsvDn",
+    "venue": "ACL ARR 2026 August Submission"
+  },
+  {
+    "abstract": "Compressing long multi-turn conversations requires deciding not only how to compress context, but which signal should rank memory candidates under a fixed budget. We study a sparse keep/compress/drop (KCD) codec and compare geometric, semantic, and hybrid scoring signals across conversational memory regimes. On a stress-test benchmark designed to expose support-turn failures, a geometry-scored codec substantially outperforms a semantic signal swap inside the same codec. On MSC (1,000 conversations), we show that geometry-based compression methods substantially outperform LongLLMLingua on geometric fidelity (ΔL2 ≈ +130) while LongLLMLingua modestly improves answer NLL---a geometry-behavior divergence confirming that behavioral metrics alone are insufficient to evaluate memory compression. Among KCD signal variants on MSC (1,000 conversations, Qwen2.5-1.5B), query-conditioned geometry achieves the best combination of geometric fidelity and behavioral quality simultaneously: at budget 0.50 it reduces logit L2 by 109.4 units versus semantic KCD (p<0.001, conversation-level) while also achieving best answer NLL across all budgets. On LongMemEval-S (100 full-length conversations), all KCD variants significantly improve behavioral quality over uniform compression. A Llama-3.2-3B cross-model check shows that the geometry signal advantage is model-family-dependent: semantic compression dominates geometry compression on behavior across all budgets for Llama-3B (p≤0.01, conversation-level). The paper's central claim is that geometry-behavior divergence is real and consequential, and that query-conditioned geometry is the signal that best resolves it on Qwen2.5 models.",
+    "authors": [
+      "Pranav Kompally",
+      "Sibi Chakkaravarthy S"
+    ],
+    "categories": [
+      "EMNLP/2026/Workshop/GroundLM/-/Submission"
+    ],
+    "id": "openreview:XqFFt1fHk2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `benchmark, compression, context, conversation` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `GroundLM Findings` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Compressing long multi-turn conversations requires deciding not only how to compress context, but which signal should rank memory candidates under a fixed budget.\n\n进一步看，论文的核心做法或实验重点可以概括为：We study a sparse keep/compress/drop (KCD) codec and compare geometric, semantic, and hybrid scoring signals across conversational memory regimes.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "conversational memory",
+      "memory compression"
+    ],
+    "one_liner": "Compressing long multi-turn conversations requires deciding not only how to compress context, but which signal should rank memory candidates under a fixed budget.",
+    "published": "2026-08-30",
+    "relevance": "- 来源：OpenReview\n- Venue：GroundLM Findings\n- 高亮主题命中：benchmark, compression, context, conversation\n- 检索关键词命中：conversational memory, memory compression\n- 来源分类信息：EMNLP/2026/Workshop/GroundLM/-/Submission",
+    "slug": "geometry-conditioned-turn-scoring-for-conversational-memory-compression",
+    "source": "OpenReview",
+    "source_key": "XqFFt1fHk2",
+    "tags": [
+      "benchmark",
+      "compression",
+      "context",
+      "conversation"
+    ],
+    "title": "Geometry-Conditioned Turn Scoring for Conversational Memory Compression",
+    "updated": "2026-08-30",
+    "url": "https://openreview.net/forum?id=XqFFt1fHk2",
+    "venue": "GroundLM Findings"
+  },
+  {
     "abstract": "Conversational memory in AI systems becomes crucial for coherent interactions through prolonged conversations. State-of-the-art techniques mainly aim at improving memory by context expansion, using retrieval, or external memory. However, most methods assume that any entity mention should be immediately mapped to one interpretation. This often leads to premature commitments, memory confirmation bias, hallucinations in the conversation, and accumulation of wrong conversational state. This paper states that conversational memory should not hide ambiguity, but should represent it explicitly as part of the reasoning process. This paper proposes an Entity-Centric Conversational Memory Framework that views entity linking as a process of explicit belief management, instead of a deterministic one. It maintains the space of interpretations of entities that includes both correct and incorrect hypotheses, such as $\\mathrm{UNKNOWN}$ hypothesis, processes heterogeneous conversational evidence via belief update, detects ambiguity, and performs one of three actions: Commit, Clarify, or Delay. By doing so, the framework separates entity reasoning from memory updates, allowing to write to memory only when certain. The experiments conducted on ConEL conversational entity linking dataset show that the proposed framework reaches $99.0\\%$ commit precision providing explicit control over the precision-coverage trade-off. The analysis shows several properties of conversational memory and brings important architectural insights to light: the existence of memory confirmation bias, the importance of treating $\\mathrm{UNKNOWN}$ as an active competing hypothesis, and the limitations of fixed ambiguity thresholds on different entity types.",
     "authors": [],
     "categories": [
@@ -113,32 +208,6 @@
     "title": "Profile-Graph Memory for LLM Agents: Implicit Cross-Entity Traversal through Narrative Profiles",
     "updated": "2026-08-28",
     "url": "https://openreview.net/forum?id=8oUXCzERe8",
-    "venue": "ACL ARR 2026 August Submission"
-  },
-  {
-    "abstract": "Long-context modeling requires tracking entity states across thousands of tokens, yet dense semantic retrieval conflates distinct states of the same entity. We present KGERMAR, a memory-augmented framework that constructs dynamic, context-specific knowledge graphs at both training and inference time. By integrating graph-structural embeddings with textual semantics in a three-bank memory architecture (contextual, semantic, and structural), KGERMAR discriminates between lexically similar passages based on underlying entity relationships. On entity-rich corpora, structural memory provides a stable complementary signal that reduces perplexity by up to 8.5\\% and memory per token by 1.6–2.2× compared to memory-augmented baselines. Ablations show that semantic retrieval dominates at shorter contexts but saturates at 32K tokens, whereas structural memory maintains consistent gains, establishing that dynamic knowledge graphs improve long-context modeling specifically when entity density is high.",
-    "authors": [],
-    "categories": [
-      "aclweb.org/ACL/ARR/2026/August/-/Submission"
-    ],
-    "id": "openreview:QdDQUKsvDn",
-    "intro": "这篇论文被纳入仓库，是因为它和 `context, retrieval` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 August Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Long-context modeling requires tracking entity states across thousands of tokens, yet dense semantic retrieval conflates distinct states of the same entity.\n\n进一步看，论文的核心做法或实验重点可以概括为：We present KGERMAR, a memory-augmented framework that constructs dynamic, context-specific knowledge graphs at both training and inference time.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
-    "matched_keywords": [
-      "memory-augmented"
-    ],
-    "one_liner": "Long-context modeling requires tracking entity states across thousands of tokens, yet dense semantic retrieval conflates distinct states of the same entity.",
-    "published": "2026-08-04",
-    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 August Submission\n- 高亮主题命中：context, retrieval\n- 检索关键词命中：memory-augmented\n- 来源分类信息：aclweb.org/ACL/ARR/2026/August/-/Submission",
-    "slug": "knowledge-graph-enhanced-memory-augmented-retrieval-for-long-context-modeling",
-    "source": "OpenReview",
-    "source_key": "QdDQUKsvDn",
-    "tags": [
-      "context",
-      "retrieval"
-    ],
-    "title": "Knowledge Graph Enhanced Memory-Augmented Retrieval for Long Context Modeling",
-    "updated": "2026-08-28",
-    "url": "https://openreview.net/forum?id=QdDQUKsvDn",
     "venue": "ACL ARR 2026 August Submission"
   },
   {
