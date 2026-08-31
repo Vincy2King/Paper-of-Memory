@@ -150,6 +150,35 @@
     "venue": "Decision pending for TMLR"
   },
   {
+    "abstract": "Provenance links keep the evidence behind an inherited belief reachable; an agent with a verification budget must still choose which links to inspect. We study a consolidated memory that states a decision constraint and whose source record has since been superseded by a record that withdraws it: provenance is immutable, the current record has changed, and the memory is stale. In a controlled six-memory scenario with a budget of two records, sixteen language models rarely re-verified a constraint that read as settled: they inspected its provenance path in about one episode in five and, once the constraint had been superseded, produced stale-consistent decisions in 77.3%, 74.7% and 74.7% of episodes across a primary run, a replication and a held-out domain. Re-assigning one of the same two slots to the critical path removed most of them: +74.0, +72.7 and +61.3 points (positive in every model), +80.7 in a prospectively frozen interleaved replication with a repaired non-critical control, and +62.0 on a panel of 10 models from 9 organisations; a corrected re-run of the held-out scenario gave +73.3. The forced-critical policy uses experimenter knowledge of the critical path: it quantifies how much stale-decision risk the same budget can recover and is not a scheduler. Two further deposited experiments locate the failure and a remedy: in this store the constraint's path is selected in 17.0% of episodes at two slots and 88.7% at four of six (above uniform allocation), and at two slots a one-sentence, target-blind rule (prefer memories that state a limit on a candidate direction) moved the agent's own allocation onto the constraint's path and recovered the oracle contrast on decisions (+89.3 points) where that constraint limits the tempting action, while a content-free freshness cue did not materially redirect allocation and a content-matched control rule changed neither selection nor decisions.",
+    "authors": [
+      "Kazuki Nakayashiki"
+    ],
+    "categories": [
+      "cs.IR",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "id": "2608.25553v3",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Provenance links keep the evidence behind an inherited belief reachable; an agent with a verification budget must still choose which links to inspect.\n\n进一步看，论文的核心做法或实验重点可以概括为：We study a consolidated memory that states a decision constraint and whose source record has since been superseded by a record that withdraws it: provenance is immutable, the current record has changed, and the memory...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "Provenance links keep the evidence behind an inherited belief reachable; an agent with a verification budget must still choose which links to inspect.",
+    "published": "2026-08-26",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.IR, cs.AI, cs.CL",
+    "slug": "when-stale-constraints-go-unchecked-budgeted-verification-failures-in-inherited-",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.25553v3",
+    "tags": [
+      "agent"
+    ],
+    "title": "When Stale Constraints Go Unchecked: Budgeted Verification Failures in Inherited Agent Memory",
+    "updated": "2026-08-28",
+    "url": "http://arxiv.org/abs/2608.25553v3",
+    "venue": ""
+  },
+  {
     "abstract": "Long-term memory enables large language models (LLMs) to personalize responses using prior user interactions, yet different queries may require different forms of memory evidence. This study investigates whether behavioral signals, including recency, preference, and user updates, improve personalized memory retrieval and whether these signals can be selected adaptively according to the query. We evaluate six retrieval strategies on 589 PersonaMem queries using a common LLM backbone. Preference-Aware retrieval achieves the highest overall accuracy of 47.88%, followed by Query-Adaptive retrieval at 47.54% and Static Semantic retrieval at 47.20%. Task-level results show that the effectiveness of behavioral signals varies substantially across query types. Query-adaptive routing does not significantly outperform the strongest fixed strategies, while oracle selection reaches 50.42%, leaving only 2.55 percentage points of headroom. These results show that behavioral memory is task-dependent and highlight the need to determine when specific behavioral evidence should be used rather than uniformly combining multiple memory signals.",
     "authors": [
       "Keonvin Park",
@@ -178,6 +207,38 @@
     "updated": "2026-08-28",
     "url": "https://openreview.net/forum?id=hC72QPtiz3",
     "venue": "IEEE IROS 2026 Workshop BEMHAT"
+  },
+  {
+    "abstract": "Reliable handling of unanswerable questions (UAQs) is critical for trustworthy LLM-based agents. Although memory is widely used in agent systems, its role in reliable UAQ handling remains unclear. We present a systematic study of agent memory for UAQ handling under a unified agentic RAG framework, evaluating four representative memory methods across three UAQ-related datasets and two base models. We find that memory can improve UAQ performance in some settings, but such gains are selective rather than universal and remain fragile under dataset shift. Interestingly, cross-model memory reuse is often more feasible than cross-dataset transfer, suggesting that shifts in answerability patterns pose a greater challenge to memory reuse than changes in the base model itself. We further find that UAQ gains are more strongly preserved through decision guidance than through trajectory shaping, and that memory effectiveness depends strongly on representation. In particular, procedural and rule-based memories often provide the most reliable support for UAQ handling, while memory composition is most effective when procedural guidance is combined with complementary behavioral signals. Overall, our findings suggest that reliable UAQ memory depends less on storing larger amounts of experience and more on preserving transferable behavioral guidance.",
+    "authors": [
+      "Chuanyuan Tan",
+      "Junjie Yu",
+      "Yuxin Wang",
+      "Yining Zheng",
+      "Xipeng Qiu",
+      "Wenliang Chen"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "id": "2608.27924v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Reliable handling of unanswerable questions (UAQs) is critical for trustworthy LLM-based agents.\n\n进一步看，论文的核心做法或实验重点可以概括为：Although memory is widely used in agent systems, its role in reliable UAQ handling remains unclear.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "Reliable handling of unanswerable questions (UAQs) is critical for trustworthy LLM-based agents.",
+    "published": "2026-08-28",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.CL",
+    "slug": "what-makes-agent-memory-useful-for-reliable-unanswerable-question-handling",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.27924v1",
+    "tags": [
+      "agent"
+    ],
+    "title": "What Makes Agent Memory Useful for Reliable Unanswerable Question Handling?",
+    "updated": "2026-08-28",
+    "url": "http://arxiv.org/abs/2608.27924v1",
+    "venue": ""
   },
   {
     "abstract": "Long-term memory is essential for LLM agents that interact across sessions, yet current memory benchmarks primarily evaluate single-hop recall, leaving multi-hop association largely unmeasured. We make three contributions. First, we introduce MemHop, a multi-hop memory benchmark of 1,000 questions at hop depths 1-5 across 10 social-network scenarios, with per-hop evidence annotations. Second, we present Profile-Graph Memory (ProGraph), a two-layer memory architecture combining (i) profile expansion -- substring-matched traversal of entity names that naturally appear in LLM-written profile narratives, a minimal alternative to explicit knowledge-graph construction -- and (ii) compression residuals -- exact dates, quantities, and named items co-extracted with each profile update at zero extra API cost. Third, a full-grid ablation shows cross-benchmark mechanism specialization: profile expansion drives multi-hop reasoning (-22.6pp on MemHop when removed) while compression residuals drive precision recall (-8.6pp on LoCoMo when not co-extracted), with cross-effects under 3pp within a single architecture. ProGraph averages 80.1% on MemHop (matching the FullContext reference) and 78.4% on LoCoMo (exceeding FullContext by 11.3pp), outperforming Mem0, A-Mem, HippoRAG, and RAG on both. We release MemHop, ProGraph, and baseline implementations.",
@@ -209,6 +270,134 @@
     "updated": "2026-08-28",
     "url": "https://openreview.net/forum?id=8oUXCzERe8",
     "venue": "ACL ARR 2026 August Submission"
+  },
+  {
+    "abstract": "The ever-expanding volume of the chemical literature offers unprecedented opportunities to generate novel and impactful hypotheses. However, the bottleneck lies in efficiently navigating this vast knowledge base to formulate high-quality, experimentally meaningful insights. While Large Language Models (LLMs) show promise for this task, existing methods often rely on static inspiration corpora, predefined heuristics, or laborious human-in-the-loop pipelines and decision-support frameworks that limit scalability and novelty. In this work, we propose an automated approach, a Memory-augmented, Adaptive, Incremental, and Literature-grounded (MAIL) framework for hypothesis generation in chemistry. Our MAIL method formulates hypothesis generation as a temporally grounded, memory-driven reasoning process, where hypotheses emerge from an evolving conceptual path that continuously accumulates and reinterprets prior knowledge. We evaluated the MAIL framework on a public TOMATO-Chem dataset and a newly curated and disseminated high-novelty nature/science challenge (HN-NS) dataset. Across both datasets, MAIL generates structurally coherent and mechanistically plausible hypotheses, achieves the highest MIOS and MPOS by more effectively recovering the central ideas and methodological elements of the historical target hypotheses, and obtains the highest overall expert-evaluation scores for scientific quality. These results demonstrate the potential of LLMs to autonomously explore chemical domains and generate hypotheses that are both innovative and chemically plausible.",
+    "authors": [
+      "Mahdi Babaei",
+      "Xueshen Li",
+      "Yutao Kuang",
+      "Jolene P. Reid",
+      "Yu Gan"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2608.28315v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `memory-augmented` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：The ever-expanding volume of the chemical literature offers unprecedented opportunities to generate novel and impactful hypotheses.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, the bottleneck lies in efficiently navigating this vast knowledge base to formulate high-quality, experimentally meaningful insights.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory augmented",
+      "memory-augmented"
+    ],
+    "one_liner": "The ever-expanding volume of the chemical literature offers unprecedented opportunities to generate novel and impactful hypotheses.",
+    "published": "2026-08-28",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：memory-augmented\n- 检索关键词命中：memory augmented, memory-augmented\n- 来源分类信息：cs.AI",
+    "slug": "mail-memory-driven-adaptive-incremental-and-literature-grounded-framework-for-hy",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.28315v1",
+    "tags": [
+      "memory-augmented"
+    ],
+    "title": "MAIL: Memory-driven, Adaptive, Incremental, and Literature-grounded Framework for Hypothesis Generation in Chemistry",
+    "updated": "2026-08-28",
+    "url": "http://arxiv.org/abs/2608.28315v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Software and systems security workflows are typically procedural: analysts inspect heterogeneous artifacts, form hypotheses, invoke tools, interpret outputs, and revise plans. Large language model (LLM)-based agents, which can plan, use tools, retain state, and revise actions across multi-step workflows, are being rapidly adopted to automate this work. Given the consequences of delegating security decisions to autonomous systems, understanding how such agents are built, used, and assessed is crucial. Yet to this date, there remains a lack of systematic understanding of what has been done and how far we are in this field: the term \"agent\" is applied inconsistently, applications differ sharply in risk, and assessment protocols are often incomparable. To gain a comprehensive and coherent view of this area hence inform relevant future research, this paper provides a systematic literature review of the (1) technical approaches, including agent architecture, perception, memory, reasoning and planning, action space, orchestration, and self-improvement, (2) applications, with respect to the security tasks served, and (3) assessment, including the datasets, outcome and trajectory metrics, safety measures, and baselines considered, over the peer-reviewed literature spanning the emergence of this area (2023--2026). Our synthesis reveals a field that has built agents able to act but not yet agents whose authority is bounded or whose behavior is auditable. In addition to knowledge systematization, we also extend our insights into the limitations of and challenges faced by current approach, application, and assessment designs, which shed light on potentially promising future research directions.",
+    "authors": [
+      "Jingjing Nie",
+      "Jiawei Guo",
+      "Krishna Meda",
+      "Haipeng Cai"
+    ],
+    "categories": [
+      "cs.CR",
+      "cs.AI"
+    ],
+    "id": "2608.28490v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Software and systems security workflows are typically procedural: analysts inspect heterogeneous artifacts, form hypotheses, invoke tools, interpret outputs, and revise plans.\n\n进一步看，论文的核心做法或实验重点可以概括为：Large language model (LLM)-based agents, which can plan, use tools, retain state, and revise actions across multi-step workflows, are being rapidly adopted to automate this work.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory reasoning"
+    ],
+    "one_liner": "Software and systems security workflows are typically procedural: analysts inspect heterogeneous artifacts, form hypotheses, invoke tools, interpret outputs, and revise plans.",
+    "published": "2026-08-28",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent\n- 检索关键词命中：memory reasoning\n- 来源分类信息：cs.CR, cs.AI",
+    "slug": "llm-based-agents-for-software-and-systems-security-approaches-applications-and-a",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.28490v1",
+    "tags": [
+      "agent"
+    ],
+    "title": "LLM-Based Agents for Software and Systems Security: Approaches, Applications, and Assessment",
+    "updated": "2026-08-28",
+    "url": "http://arxiv.org/abs/2608.28490v1",
+    "venue": ""
+  },
+  {
+    "abstract": "As an initial step toward personal memory retrieval-augmented generation (RAG) for large language models (LLMs), this study presents a retrieval-only case study over one user's LINE conversation history. We segmented 358,896 messages into 22,329 temporally coherent chunks and constructed three search representations: raw_text, a generated summary, and embedding_text, which combines a summary with a raw-text excerpt and other fixed text. We compared BM25, dense vector retrieval, and linear hybrid retrieval on 100 evaluation questions verified by a single annotator. Among individual retrievers, embedding_text_bm25 achieved the highest point estimate, with Recall@5 of 0.584. We then explored six retriever pairings and 21 weights, for 126 configurations on the same evaluation set. The selected combination of embedding_text_bm25 and embedding_text_vector at beta = 0.45 achieved Recall@5 = 0.697, MRR@5 = 0.595, and nDCG@5 = 0.575. Its Recall@5 exceeded that of embedding_text_bm25 by 0.113, with a question-level paired percentile-bootstrap 95% confidence interval of [0.048, 0.184]. This interval is conditional on fixing the configuration selected on the same 100 questions and does not account for uncertainty from configuration selection or weight search. The difference from a summary-based hybrid at beta = 0.50 was 0.050, with a 95% confidence interval of [-0.013, 0.115], so no clear difference could be established. The 17 aggregate questions also yielded lower point estimates than the other question types, suggesting that flat chunk-level retrieval struggles when evidence is distributed across multiple times and conversations. This evaluation is an exploratory single-user, single-annotator study conducted on the same question set used for configuration search; it does not evaluate final answer generation or generalization to unseen questions.",
+    "authors": [
+      "Akito Hattori"
+    ],
+    "categories": [
+      "cs.IR"
+    ],
+    "id": "2608.27809v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `conversation, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：As an initial step toward personal memory retrieval-augmented generation (RAG) for large language models (LLMs), this study presents a retrieval-only case study over one user's LINE conversation history.\n\n进一步看，论文的核心做法或实验重点可以概括为：We segmented 358,896 messages into 22,329 temporally coherent chunks and constructed three search representations: raw_text, a generated summary, and embedding_text, which combines a summary with a raw-text excerpt...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory retrieval"
+    ],
+    "one_liner": "As an initial step toward personal memory retrieval-augmented generation (RAG) for large language models (LLMs), this study presents a retrieval-only case study over one user's...",
+    "published": "2026-08-28",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：conversation, retrieval\n- 检索关键词命中：memory retrieval\n- 来源分类信息：cs.IR",
+    "slug": "line-conversation-history-retrieval-for-personal-memory-rag-evaluating-search-re",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.27809v1",
+    "tags": [
+      "conversation",
+      "retrieval"
+    ],
+    "title": "LINE Conversation History Retrieval for Personal Memory RAG: Evaluating Search Representations and Hybrid Retrieval",
+    "updated": "2026-08-28",
+    "url": "http://arxiv.org/abs/2608.27809v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Long-horizon agentic tasks require large language models (LLMs) to iteratively retrieve, integrate, and maintain dispersed information across multi-turn interactions, but preserving all interaction histories leads to a continuously growing working context. Recent proactive context management methods allow models to edit their own working context with specialized tools, yet they still face three key limitations: (1) a limited toolset restricted to search, deletion, and summarization, with no support for global planning, long-term memory, and adaptive compression; (2) inefficient exploration that treats context management actions uniformly despite their heterogeneous impacts on final outcomes; and (3) coarse-grained credit assignment that assigns the final trajectory-level reward to all intermediate context editing actions during RL. To bridge these gaps, we introduce ContextPilot, a proactive context management framework for long-horizon agentic reasoning. Our approach systematically augments the toolset with planning, long-term memory, and soft context offloading tools. We further propose an RL method tailored for context management, which uses context and entropy variation to identify critical editing decisions for branch sampling and estimates action-level advantages from all branched trajectories that pass through the corresponding context editing action. Experiments on long-context QA and deep search tasks show that ContextPilot achieves stronger performance with a more compact working context, consistently outperforming existing baselines across various base models and benchmarks. Code is available at https://github.com/Tencent/ContextPilot.",
+    "authors": [
+      "Zhuoshi Pan",
+      "Qizhi Pei",
+      "Junru Lu",
+      "Honglin Lin",
+      "H. Vicky Zhao",
+      "Di Yin",
+      "Xing Sun"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "id": "2608.28476v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, compression, context` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Long-horizon agentic tasks require large language models (LLMs) to iteratively retrieve, integrate, and maintain dispersed information across multi-turn interactions, but preserving all interaction histories leads to...\n\n进一步看，论文的核心做法或实验重点可以概括为：Recent proactive context management methods allow models to edit their own working context with specialized tools, yet they still face three key limitations: (1) a limited toolset restricted to search, deletion, and...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "long-term memory"
+    ],
+    "one_liner": "Long-horizon agentic tasks require large language models (LLMs) to iteratively retrieve, integrate, and maintain dispersed information across multi-turn interactions, but...",
+    "published": "2026-08-28",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, compression, context, long-term\n- 检索关键词命中：long-term memory\n- 来源分类信息：cs.CL",
+    "slug": "contextpilot-teaching-agents-for-proactive-context-management-via-fine-grained-r",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.28476v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "compression",
+      "context",
+      "long-term"
+    ],
+    "title": "ContextPilot: Teaching Agents for Proactive Context Management via Fine-grained RL",
+    "updated": "2026-08-28",
+    "url": "http://arxiv.org/abs/2608.28476v1",
+    "venue": ""
   },
   {
     "abstract": "An agent that inherits a consolidated memory may inherit a constraint that was true when written and has since been withdrawn by a newer authoritative record. Under a scarce verification budget, does the agent recover the withdrawal, and if not, is the resulting stale-consistent decision avoidable without spending more? We model supersession explicitly -- provenance is immutable; what changes is which record is current -- and assign by design the memory's form, the world's state and the verification policy at a fixed budget of two records: the agent's own allocation, or the same budget with one slot re-assigned to the critical provenance path or to a random record. With a constraint stated, agents inspected its provenance path in about one episode in five; when that constraint had been superseded, native allocation produced stale-consistent decisions in 77.3%, 74.7% and 74.7% of episodes across a primary run, a fresh-wording replication and a held-out domain. Re-assigning one slot to the critical path raised current-record-consistent decisions by +74.0, +72.7 and +61.3 points, positive in six of six models in each run, and left an already near-ceiling rate unchanged when the record agreed with the memory. The held-out scenario was later found to contain a temporal inconsistency; a robustness replication with one sentence corrected, deposited externally before execution, gave +73.3 points (positive in 5 of six models, the sixth at a native missed-path rate of zero) and is reported alongside the original. The intervention uses knowledge of the critical path and is not a scheduler; it quantifies how much of the stale-consistent decision rate the bundled same-budget policy removes: the effect approaches the native missed-path rate in the primary, replication and corrected held-out runs. Memory systems may need freshness or supersession signals separate from relevance.",
