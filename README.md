@@ -39,39 +39,39 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **1047**
+- Total tracked papers: **1059**
 - Last generated: **2026-09-01**
 
 ## Papers by Source
 
 - ACL Anthology: **5**
-- arXiv: **900**
+- arXiv: **912**
 - OpenReview: **142**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-09-01 | OpenReview | [CIRCUIT Memory: Confidence-Aware Multi-Axis Retrieval for Episodic Memory in LLM Agents](content/papers/circuit-memory-confidence-aware-multi-axis-retrieval-for-episodic-memory-in-llm-.md) | agent, episodic, retrieval |
+| 2026-08-31 | arXiv | [When Errors Become Memories: Causal Pathway Tracing in Multi-Turn Memory-Augmented LLMs](content/papers/when-errors-become-memories-causal-pathway-tracing-in-multi-turn-memory-augmente.md) | long-term |
+| 2026-08-31 | arXiv | [UTILMEM: Benchmarking Evidence Utilization in Long-Term Conversational Memory](content/papers/utilmem-benchmarking-evidence-utilization-in-long-term-conversational-memory.md) | agent, benchmark, conversation |
+| 2026-08-31 | arXiv | [The Optimizer Is the Agent: Reasoning-Driven Search across Prompts, Programs, and ML Workflows](content/papers/the-optimizer-is-the-agent-reasoning-driven-search-across-prompts-programs-and-m.md) | agent |
+| 2026-08-31 | arXiv | [Strong Drafts Need Compact Memories: Long-Context Speculative Decoding with Compressed KV Cache](content/papers/strong-drafts-need-compact-memories-long-context-speculative-decoding-with-compr.md) | agent, context |
+| 2026-08-31 | arXiv | [Dual-Layer Agentic Memory with Fast Write Routing and Slow Consolidation](content/papers/dual-layer-agentic-memory-with-fast-write-routing-and-slow-consolidation.md) | agent, retrieval |
 | 2026-08-31 | OpenReview | [D-ACR: Dialogue-Aware Context Retrieval for Long-Term Conversational Memory](content/papers/d-acr-dialogue-aware-context-retrieval-for-long-term-conversational-memory.md) | benchmark, context, conversation |
+| 2026-08-30 | arXiv | [SearchWiki: Learning to Build and Navigate Knowledge Wikis for Active Information Seeking](content/papers/searchwiki-learning-to-build-and-navigate-knowledge-wikis-for-active-information.md) | agent, benchmark, retrieval |
 | 2026-08-30 | OpenReview | [Memory Makes the Difference: Evaluating How Different Memory Roles Shape Conversational Agents](content/papers/memory-makes-the-difference-evaluating-how-different-memory-roles-shape-conversa.md) | agent, context, conversation |
+| 2026-08-30 | arXiv | [MedCache: Efficient and Temporally Valid Memory for Longitudinal Clinical Agents](content/papers/medcache-efficient-and-temporally-valid-memory-for-longitudinal-clinical-agents.md) | agent, benchmark, context |
+| 2026-08-30 | arXiv | [LLMODE: Aligning ODEs with LLMs via Gated Token Injection for Irregular Spatio-Temporal Forecasting](content/papers/llmode-aligning-odes-with-llms-via-gated-token-injection-for-irregular-spatio-te.md) | benchmark, context |
 | 2026-08-30 | OpenReview | [Knowledge Graph Enhanced Memory-Augmented Retrieval for Long Context Modeling](content/papers/knowledge-graph-enhanced-memory-augmented-retrieval-for-long-context-modeling.md) | context, retrieval |
 | 2026-08-30 | OpenReview | [Geometry-Conditioned Turn Scoring for Conversational Memory Compression](content/papers/geometry-conditioned-turn-scoring-for-conversational-memory-compression.md) | benchmark, compression, context |
+| 2026-08-30 | arXiv | [Counter with Evidence! A Multi-Agent Memory Efficient Reasoning Framework for Hate Category Informed Counterspeech Generation](content/papers/counter-with-evidence-a-multi-agent-memory-efficient-reasoning-framework-for-hat.md) | agent, context |
+| 2026-08-30 | arXiv | [Agent Zero Memory: Provenance-Aware Long-Term Memory for LLM Agents](content/papers/agent-zero-memory-provenance-aware-long-term-memory-for-llm-agents.md) | agent, benchmark, conversation |
+| 2026-08-30 | arXiv | [AGM: Achievement-Grounded Memory for Closed-Loop Agents with Frozen VLA Policies](content/papers/agm-achievement-grounded-memory-for-closed-loop-agents-with-frozen-vla-policies.md) | agent, benchmark |
+| 2026-08-29 | arXiv | [Selective Forgetting: A Graph-Based Memory Framework for Long-Term LLM Agents](content/papers/selective-forgetting-a-graph-based-memory-framework-for-long-term-llm-agents.md) | agent, benchmark, conversation |
 | 2026-08-29 | OpenReview | [Reason Before Remembering: An Entity-Centric Framework for Trustworthy Conversational Memory](content/papers/reason-before-remembering-an-entity-centric-framework-for-trustworthy-conversati.md) | context, conversation, retrieval |
 | 2026-08-29 | OpenReview | [MemoryVLN: Memory-Augmented Vision-Language Navigation](content/papers/memoryvln-memory-augmented-vision-language-navigation.md) | agent, benchmark, context |
 | 2026-08-28 | arXiv | [When Stale Constraints Go Unchecked: Budgeted Verification Failures in Inherited Agent Memory](content/papers/when-stale-constraints-go-unchecked-budgeted-verification-failures-in-inherited-.md) | agent |
-| 2026-08-28 | OpenReview | [When Should LLMs Use Behavioral Memory? Task-Dependent Retrieval for Personalized Long-Term Memory](content/papers/when-should-llms-use-behavioral-memory-task-dependent-retrieval-for-personalized.md) | long-term, retrieval |
-| 2026-08-28 | arXiv | [What Makes Agent Memory Useful for Reliable Unanswerable Question Handling?](content/papers/what-makes-agent-memory-useful-for-reliable-unanswerable-question-handling.md) | agent |
-| 2026-08-28 | OpenReview | [Profile-Graph Memory for LLM Agents: Implicit Cross-Entity Traversal through Narrative Profiles](content/papers/profile-graph-memory-for-llm-agents-implicit-cross-entity-traversal-through-narr.md) | agent, benchmark, compression |
-| 2026-08-28 | arXiv | [MAIL: Memory-driven, Adaptive, Incremental, and Literature-grounded Framework for Hypothesis Generation in Chemistry](content/papers/mail-memory-driven-adaptive-incremental-and-literature-grounded-framework-for-hy.md) | memory-augmented |
-| 2026-08-28 | arXiv | [LLM-Based Agents for Software and Systems Security: Approaches, Applications, and Assessment](content/papers/llm-based-agents-for-software-and-systems-security-approaches-applications-and-a.md) | agent |
-| 2026-08-28 | arXiv | [LINE Conversation History Retrieval for Personal Memory RAG: Evaluating Search Representations and Hybrid Retrieval](content/papers/line-conversation-history-retrieval-for-personal-memory-rag-evaluating-search-re.md) | conversation, retrieval |
-| 2026-08-28 | arXiv | [ContextPilot: Teaching Agents for Proactive Context Management via Fine-grained RL](content/papers/contextpilot-teaching-agents-for-proactive-context-management-via-fine-grained-r.md) | agent, benchmark, compression |
-| 2026-08-27 | arXiv | [When Stale Constraints Go Unchecked: Budgeted Verification Failures in Inherited Agent Memory](content/papers/when-stale-constraints-go-unchecked-budgeted-verification-failures-in-inherited-.md) | agent |
-| 2026-08-27 | arXiv | [When Memory Takes Gradients: Collaborative Vector Memory for Agentic Recommender Systems](content/papers/when-memory-takes-gradients-collaborative-vector-memory-for-agentic-recommender-.md) | agent, benchmark, context |
-| 2026-08-27 | arXiv | [VISA: Agentic Self-Evolving Data Synthesis for Multimodal Instruction Following](content/papers/visa-agentic-self-evolving-data-synthesis-for-multimodal-instruction-following.md) | agent, benchmark |
-| 2026-08-27 | arXiv | [GraphMemix: Query-Aware Evidence Forests for Long-Term Multimodal Agent Memory](content/papers/graphmemix-query-aware-evidence-forests-for-long-term-multimodal-agent-memory.md) | agent, benchmark, context |
-| 2026-08-26 | arXiv | [When Stale Constraints Go Unchecked: Budgeted Verification Failures in Inherited Agent Memory](content/papers/when-stale-constraints-go-unchecked-budgeted-verification-failures-in-inherited-.md) | agent |
-| 2026-08-26 | arXiv | [VISA: Agentic Self-Evolving Data Synthesis for Multimodal Instruction Following](content/papers/visa-agentic-self-evolving-data-synthesis-for-multimodal-instruction-following.md) | agent, benchmark |
 
 ## Suggested GitHub Setup
 
