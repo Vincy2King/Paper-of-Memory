@@ -1,5 +1,36 @@
 [
   {
+    "abstract": "AI assistants now accumulate conversation history spanning days, months, or years, making retrieval of past context essential for grounded responses. Users may seek specific details from prior interactions, either explicitly through history search or implicitly during ongoing conversations. Unlike typical document retrieval in RAG settings, dialogue history forms a coherent sequential discourse in which the meaning of an utterance depends on its surrounding context. Existing approaches construct dialogue retrieval units through segmentation, summarization, or hybrid memory construction, but these units are constructed offline and therefore cannot adapt to the information needs expressed by the current query. We propose D-ACR (Dialogue-Aware Context Retrieval), which dynamically identifies relevant segments at query time via KadaneDial, our adaptation of Kadane's maximum-subarray algorithm to the dialogue domain. Across four conversational memory benchmarks and four backbone LLMs, D-ACR achieves the highest retrieval hit and recall while retrieving fewer turns than other strong methods, and maintains stable performance regardless of the backbone LLM.",
+    "authors": [],
+    "categories": [
+      "aclweb.org/ACL/ARR/2026/August/-/Submission"
+    ],
+    "id": "openreview:LJTjY3nUJm",
+    "intro": "这篇论文被纳入仓库，是因为它和 `benchmark, context, conversation, long-term` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 August Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：AI assistants now accumulate conversation history spanning days, months, or years, making retrieval of past context essential for grounded responses.\n\n进一步看，论文的核心做法或实验重点可以概括为：Users may seek specific details from prior interactions, either explicitly through history search or implicitly during ongoing conversations.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "conversational memory",
+      "memory benchmark",
+      "memory benchmarks"
+    ],
+    "one_liner": "AI assistants now accumulate conversation history spanning days, months, or years, making retrieval of past context essential for grounded responses.",
+    "published": "2026-08-04",
+    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 August Submission\n- 高亮主题命中：benchmark, context, conversation, long-term, retrieval\n- 检索关键词命中：conversational memory, memory benchmark, memory benchmarks\n- 来源分类信息：aclweb.org/ACL/ARR/2026/August/-/Submission",
+    "slug": "d-acr-dialogue-aware-context-retrieval-for-long-term-conversational-memory",
+    "source": "OpenReview",
+    "source_key": "LJTjY3nUJm",
+    "tags": [
+      "benchmark",
+      "context",
+      "conversation",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "D-ACR: Dialogue-Aware Context Retrieval for Long-Term Conversational Memory",
+    "updated": "2026-08-31",
+    "url": "https://openreview.net/forum?id=LJTjY3nUJm",
+    "venue": "ACL ARR 2026 August Submission"
+  },
+  {
     "abstract": "Prior research on memory mechanisms in RAG-based conversational systems has focused on how memory is stored and retrieved. However, less is known about how memories with different functional roles influence response quality, shape agents' responses across conversational contexts, and lead to distinct response behaviors. Existing evaluations are also largely reference-based, often missing response nuances that address users' preferences differently. In this work, we study the impact of different memory types on agent responses. We present a fine-grained taxonomy of conversational memory, classify retrieved memories by functional role, and design a user-centric evaluation framework that simulates user perspectives. Through comparative experiments on long-term datasets and frontier LLMs, our analysis reveals differentiated effects of memory: e.g., clarifying memory improves factual accuracy and constraint awareness, making responses more correct and personalized, while irrelevant memory reduces topic relevance and degrades constraint awareness. These findings show that, despite the power of frontier LLMs, different memory types can be leveraged to produce more personalized responses and motivate further research in this direction.",
     "authors": [
       "Yuxin Wang",
@@ -2270,37 +2301,6 @@
     "updated": "2026-08-21",
     "url": "http://arxiv.org/abs/2608.20664v1",
     "venue": ""
-  },
-  {
-    "abstract": "AI assistants now accumulate conversation history spanning days, months, or years, making retrieval of past context essential for grounded responses. Users may seek specific details from prior interactions, either explicitly through history search or implicitly during ongoing conversations. Unlike typical document retrieval in RAG settings, dialogue history forms a coherent sequential discourse in which the meaning of an utterance depends on its surrounding context. Existing approaches construct dialogue retrieval units through segmentation, summarization, or hybrid memory construction, but these units are constructed offline and therefore cannot adapt to the information needs expressed by the current query. We propose D-ACR (Dialogue-Aware Context Retrieval), which dynamically identifies relevant segments at query time via KadaneDial, our adaptation of Kadane's maximum-subarray algorithm to the dialogue domain. Across four conversational memory benchmarks and four backbone LLMs, D-ACR achieves the highest retrieval hit and recall while retrieving fewer turns than other strong methods, and maintains stable performance regardless of the backbone LLM.",
-    "authors": [],
-    "categories": [
-      "aclweb.org/ACL/ARR/2026/August/-/Submission"
-    ],
-    "id": "openreview:LJTjY3nUJm",
-    "intro": "这篇论文被纳入仓库，是因为它和 `benchmark, context, conversation, long-term` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 August Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：AI assistants now accumulate conversation history spanning days, months, or years, making retrieval of past context essential for grounded responses.\n\n进一步看，论文的核心做法或实验重点可以概括为：Users may seek specific details from prior interactions, either explicitly through history search or implicitly during ongoing conversations.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
-    "matched_keywords": [
-      "conversational memory",
-      "memory benchmark",
-      "memory benchmarks"
-    ],
-    "one_liner": "AI assistants now accumulate conversation history spanning days, months, or years, making retrieval of past context essential for grounded responses.",
-    "published": "2026-08-04",
-    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 August Submission\n- 高亮主题命中：benchmark, context, conversation, long-term, retrieval\n- 检索关键词命中：conversational memory, memory benchmark, memory benchmarks\n- 来源分类信息：aclweb.org/ACL/ARR/2026/August/-/Submission",
-    "slug": "d-acr-dialogue-aware-context-retrieval-for-long-term-conversational-memory",
-    "source": "OpenReview",
-    "source_key": "LJTjY3nUJm",
-    "tags": [
-      "benchmark",
-      "context",
-      "conversation",
-      "long-term",
-      "retrieval"
-    ],
-    "title": "D-ACR: Dialogue-Aware Context Retrieval for Long-Term Conversational Memory",
-    "updated": "2026-08-21",
-    "url": "https://openreview.net/forum?id=LJTjY3nUJm",
-    "venue": "ACL ARR 2026 August Submission"
   },
   {
     "abstract": "Question Answering over Temporal Knowledge Graphs (TKGQA) requires reasoning over time-sensitive facts, yet existing embedding-based methods struggle with multi-step queries due to single-pass reasoning pipelines. We propose SABET-QA, a framework that iteratively refines reasoning states across multiple hops via a bidirectional entity-temporal scoring mechanism and a slot-aware contextualization module that aligns question semantics with temporal KG embeddings. A differentiable working memory enables progressive hypothesis refinement, while auxiliary temporal boundaries serve as coarse supervision when available. Experiments on CronQuestions, Complex-CronQuestions, MultiTQ, and TimeQuestions demonstrate consistent improvements over strong baselines, particularly on complex multi-step temporal queries.",

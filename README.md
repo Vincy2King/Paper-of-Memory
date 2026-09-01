@@ -40,7 +40,7 @@ python3 scripts/update_papers.py --build-only
 ## Repository Snapshot
 
 - Total tracked papers: **1047**
-- Last generated: **2026-08-31**
+- Last generated: **2026-09-01**
 
 ## Papers by Source
 
@@ -52,6 +52,7 @@ python3 scripts/update_papers.py --build-only
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-08-31 | OpenReview | [D-ACR: Dialogue-Aware Context Retrieval for Long-Term Conversational Memory](content/papers/d-acr-dialogue-aware-context-retrieval-for-long-term-conversational-memory.md) | benchmark, context, conversation |
 | 2026-08-30 | OpenReview | [Memory Makes the Difference: Evaluating How Different Memory Roles Shape Conversational Agents](content/papers/memory-makes-the-difference-evaluating-how-different-memory-roles-shape-conversa.md) | agent, context, conversation |
 | 2026-08-30 | OpenReview | [Knowledge Graph Enhanced Memory-Augmented Retrieval for Long Context Modeling](content/papers/knowledge-graph-enhanced-memory-augmented-retrieval-for-long-context-modeling.md) | context, retrieval |
 | 2026-08-30 | OpenReview | [Geometry-Conditioned Turn Scoring for Conversational Memory Compression](content/papers/geometry-conditioned-turn-scoring-for-conversational-memory-compression.md) | benchmark, compression, context |
@@ -71,7 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-08-27 | arXiv | [GraphMemix: Query-Aware Evidence Forests for Long-Term Multimodal Agent Memory](content/papers/graphmemix-query-aware-evidence-forests-for-long-term-multimodal-agent-memory.md) | agent, benchmark, context |
 | 2026-08-26 | arXiv | [When Stale Constraints Go Unchecked: Budgeted Verification Failures in Inherited Agent Memory](content/papers/when-stale-constraints-go-unchecked-budgeted-verification-failures-in-inherited-.md) | agent |
 | 2026-08-26 | arXiv | [VISA: Agentic Self-Evolving Data Synthesis for Multimodal Instruction Following](content/papers/visa-agentic-self-evolving-data-synthesis-for-multimodal-instruction-following.md) | agent, benchmark |
-| 2026-08-26 | arXiv | [S-EMBER: A Large-Scale Benchmark for Streaming Egocentric Memory Retrieval](content/papers/s-ember-a-large-scale-benchmark-for-streaming-egocentric-memory-retrieval.md) | agent, benchmark, episodic |
 
 ## Suggested GitHub Setup
 
