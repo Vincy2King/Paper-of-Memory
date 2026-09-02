@@ -1,5 +1,97 @@
 [
   {
+    "abstract": "Modern Text-to-SQL systems often follow generate-execute-select pipelines, generating multiple candidate queries then selecting the best one. Listwise selection, by jointly comparing multiple candidates, has been widely adopted, but fine-tuning listwise selectors is costly. We thus propose a fine-tuning-free listwise selector. We replace two major fine-tuning objectives with inference-time strategies: (1) learning selection criteria as ordering and (2) mitigating positional bias. First, we build reusable structured memories instead of learning selection behavior as model parameters. Given a question, MaP-SQL retrieves memories distilled from training data that encode how natural language maps to schema elements, SQL operations, and expected outputs. These memories serve as explicit decision criteria for evaluating candidates in a listwise manner. Second, to mitigate ordering bias of listwise selectors, we aggregate rankings across multiple input permutations, with inference cost optimized by execution results and pointwise scoring. Our approach improves selection accuracy while maintaining efficiency and compatibility with existing large language models. Across Text-to-SQL benchmarks, it produces more stable selection without fine-tuning and fewer unnecessary comparisons than existing methods. On BIRD-dev, it outperforms the previous state-of-the-art selector-based method R^3-SQL by 2.02 execution accuracy points on average using the same candidate sets, with 2.92x fewer tokens.",
+    "authors": [
+      "Yeonseok Jeong",
+      "Soyoung Yoon",
+      "Seongjun Lee",
+      "Seung-won Hwang"
+    ],
+    "categories": [
+      "cs.SE",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "id": "2609.00834v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `benchmark` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Modern Text-to-SQL systems often follow generate-execute-select pipelines, generating multiple candidate queries then selecting the best one.\n\n进一步看，论文的核心做法或实验重点可以概括为：Listwise selection, by jointly comparing multiple candidates, has been widely adopted, but fine-tuning listwise selectors is costly.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "retrieval memory"
+    ],
+    "one_liner": "Modern Text-to-SQL systems often follow generate-execute-select pipelines, generating multiple candidate queries then selecting the best one.",
+    "published": "2026-09-01",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：benchmark\n- 检索关键词命中：retrieval memory\n- 来源分类信息：cs.SE, cs.AI, cs.CL",
+    "slug": "replacing-training-with-memory-listwise-selection-for-text-to-sql",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2609.00834v1",
+    "tags": [
+      "benchmark"
+    ],
+    "title": "Replacing Training with Memory: Listwise Selection for Text-to-SQL",
+    "updated": "2026-09-01",
+    "url": "http://arxiv.org/abs/2609.00834v1",
+    "venue": ""
+  },
+  {
+    "abstract": "MutMem V1 introduced retention-preserving, cryptographically authorized mutation for persistent agent memory but did not provide a complete portable verification contract or clean-install reproduction path. MutMem V2 closes that publication gap without introducing a second memory engine. It specifies exact canonical bytes, domain-separated object and bundle commitments, mandatory recall-evidence membership and ordering, external trust anchors, identity epochs, revocation, authorization, request receipts, ordered disclosure, and three mutation terminal types. The released protocol contains 18 versioned object schemas, 39 recall vectors, 15 mutation vectors, and 37 closed recall failure reasons. Independent Node and Python implementations agree on verdict and primary reason for all 72 structural and cryptographic terminals; a production-conformance corpus agrees on 42/42 cases across 28 required classes. A clean Node v26.8.1 installation reaches first-boot, restart, and scheduler readiness with no experimental memories. A separately scoped 120-unit Canary experiment supports only explicit-marker traversal. Every public table regenerates from a self-hashed aggregate, and an independent verifier reconstructs the statistics and claim boundaries. Historical V1 empirical results remain historical. MutMem V2 supports claims about portable integrity, authorization, traceability, conformance, and reproducibility under stated assumptions; it does not establish semantic truth, universal robustness, or independent replication.",
+    "authors": [
+      "Walid Saidi"
+    ],
+    "categories": [
+      "cs.CR",
+      "cs.AI"
+    ],
+    "id": "2609.01235v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：MutMem V1 introduced retention-preserving, cryptographically authorized mutation for persistent agent memory but did not provide a complete portable verification contract or clean-install reproduction path.\n\n进一步看，论文的核心做法或实验重点可以概括为：MutMem V2 closes that publication gap without introducing a second memory engine.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "MutMem V1 introduced retention-preserving, cryptographically authorized mutation for persistent agent memory but did not provide a complete portable verification contract or...",
+    "published": "2026-09-01",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.CR, cs.AI",
+    "slug": "mutmem-v2-cryptographically-authorized-mutation-in-persistent-agent-memory-porta",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2609.01235v1",
+    "tags": [
+      "agent"
+    ],
+    "title": "MutMem-V2: Cryptographically Authorized Mutation in Persistent Agent Memory Portable Verification and Reproducible Evidence",
+    "updated": "2026-09-01",
+    "url": "http://arxiv.org/abs/2609.01235v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Clinical LLM assistants must reason over multi-visit patient trajectories, yet whether the compact history representations used to scale them---retrieval, structured timelines, LLM summaries, agentic memory---preserve the longitudinal signal clinical reasoning needs has not been measured. We introduce ClinTraceBench: 385 MIMIC-IV-derived verified dialogues with event-ID provenance, a nine-task taxonomy (T1--T9), and L0--L4 deterministic + L5 human-audit validation (98.92\\% agreement). We evaluate eight history representation strategies---a no-context floor, \\textit{last-visit-only}, \\textit{full-context}, BGE-M3 \\textit{dense-retrieval}, two compression schemes, and two agentic-memory systems (\\textit{Mem0}, \\textit{A-Mem})---across four backbones (DeepSeek-V3, GPT-4o-mini, Haiku~4.5, Sonnet~4.6) on 6{,}271 questions: 32 cells, 200{,}672 predictions. Four findings: (SP4) a controlled T3 injection probe isolates compression-induced \\textit{relation} loss---with the attribution sentence present \\textit{before} construction, \\textit{Mem0}, \\textit{A-Mem} and \\textit{llm-summary} still recover only 0--5.3\\% of the injected positives; (SP1) compressed strategies pay an aggregation tax on multi-visit trends and cross-patient comparisons; (SP2) the blind-to-full gap spans $+29.8$~pp (GPT-4o-mini) to $+62.7$~pp (Haiku); (SP3) abstention scales non-monotonically with context length. On the Pareto frontier Haiku dominates Sonnet under \\textit{full-context} (\\$25.76 vs.\\ \\$106.21), inverting the ``biggest backbone wins'' heuristic.",
+    "authors": [
+      "Huimin Wang",
+      "Zhengyi Zhao",
+      "Yutian Zhao"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "id": "2609.01111v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, compression, context, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Clinical LLM assistants must reason over multi-visit patient trajectories, yet whether the compact history representations used to scale them---retrieval, structured timelines, LLM summaries, agentic memory---preserve...\n\n进一步看，论文的核心做法或实验重点可以概括为：We introduce ClinTraceBench: 385 MIMIC-IV-derived verified dialogues with event-ID provenance, a nine-task taxonomy (T1--T9), and L0--L4 deterministic + L5 human-audit validation (98.92\\% agreement).\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "Clinical LLM assistants must reason over multi-visit patient trajectories, yet whether the compact history representations used to scale them---retrieval, structured timelines,...",
+    "published": "2026-09-01",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, compression, context, retrieval\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.CL",
+    "slug": "clintracebench-source-verifiable-longitudinal-clinical-reasoning-over-ehr-derive",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2609.01111v1",
+    "tags": [
+      "agent",
+      "compression",
+      "context",
+      "retrieval"
+    ],
+    "title": "ClinTraceBench: Source-Verifiable Longitudinal Clinical Reasoning over EHR-Derived Dialogues",
+    "updated": "2026-09-01",
+    "url": "http://arxiv.org/abs/2609.01111v1",
+    "venue": ""
+  },
+  {
     "abstract": "Episodic memory retrieval for LLM agents, whether via dense vector similarity or structured multi-axis indexing, generally assumes every extracted query cue is equally reliable, so an incomplete or ambiguous cue can eliminate relevant memories under rigid intersection. We introduce CIRCUIT Memory, a two-tier structured episodic memory architecture that instead separates query-cue confidence (how reliably a cue was extracted) from evidence matching (how well a memory satisfies it), letting retrieval down-weight unreliable cues rather than enforcing hard intersection across axes. On EPBench, replacing hard multi-axis intersection with this confidence-weighted aggregate, using per-axis held-out calibrated confidence, nearly eliminates zero-retrieval failures (61.1% to 1.0%) and is the most robust rule across two books; on LoCoMo, the same additive form, with per-axis confidence calibrated under held-out cross-validation, reaches 81.2% QA accuracy while scanning 41.6% fewer candidates than flat-scan retrieval. We report these gains alongside a candid analysis of where fixed structured strategies, and confidence-weighting itself, still fall short.",
     "authors": [],
     "categories": [
@@ -26,6 +118,50 @@
     "updated": "2026-09-01",
     "url": "https://openreview.net/forum?id=yLpeuklQK4",
     "venue": "ACL ARR 2026 August Submission"
+  },
+  {
+    "abstract": "Training open-ended agents via reinforcement learning (RL) is hindered by the lack of verifiable gold answers and scalable rubrics. Moreover, even near the model's capability boundary, long-horizon open-ended agentic tasks often yield brittle and unstable rewards, resulting in weak or noisy rollout contrast that obscures fine-grained optimization signals for group-based policy learning. To address these challenges, we propose ARISE-RL, a novel full-cycle self-evolution framework that couples a task/rubric Generator and a reasoning Solver through rubric-mediated co-evolution. The Generator grounds tool-related rubric criteria in real tool observations and is rewarded for producing valid, intermediate-difficulty tasks aligned with the Solver's evolving capability boundary. The Solver, in turn, learns from fine-grained rubric satisfaction signals through multi-step reasoning and tool use. We further introduce Reward-Gated Self-Evolution Distillation (RG-SED), which selectively distills a memory-augmented variant of the same policy back into itself only when the memory yields empirical reward improvement, thereby reducing distribution mismatch and avoiding blind imitation of noisy guidance. Finally, to support rigorous evaluation, we present ECR-Bench, an expert-calibrated rubric benchmark suite covering single-tool deep research and multi-tool travel planning. Extensive experiments demonstrate that ARISE-RL consistently achieves robust and stable overall state-of-the-art performance across all evaluated benchmarks.",
+    "authors": [
+      "Fanrui Zhang",
+      "Ruixue Ding",
+      "Qiang Zhang",
+      "Xi Chen",
+      "Boli Chen",
+      "Shihang Wang",
+      "Qiuchen Wang",
+      "Hongmin Zhan",
+      "Jinxin Bian",
+      "Li xingchao",
+      "Peijin Zheng",
+      "Hao cheng",
+      "Pengjun Xie",
+      "Kaipeng Zhang",
+      "Jiawei Liu",
+      "Zheng-Jun Zha"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2609.01058v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Training open-ended agents via reinforcement learning (RL) is hindered by the lack of verifiable gold answers and scalable rubrics.\n\n进一步看，论文的核心做法或实验重点可以概括为：Moreover, even near the model's capability boundary, long-horizon open-ended agentic tasks often yield brittle and unstable rewards, resulting in weak or noisy rollout contrast that obscures fine-grained optimization...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory augmented",
+      "memory-augmented"
+    ],
+    "one_liner": "Training open-ended agents via reinforcement learning (RL) is hindered by the lack of verifiable gold answers and scalable rubrics.",
+    "published": "2026-09-01",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark\n- 检索关键词命中：memory augmented, memory-augmented\n- 来源分类信息：cs.AI",
+    "slug": "arise-rl-agentic-rubric-grounded-iterative-self-evolution-with-reinforcement-lea",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2609.01058v1",
+    "tags": [
+      "agent",
+      "benchmark"
+    ],
+    "title": "ARISE-RL: Agentic Rubric-Grounded Iterative Self-Evolution with Reinforcement Learning",
+    "updated": "2026-09-01",
+    "url": "http://arxiv.org/abs/2609.01058v1",
+    "venue": ""
   },
   {
     "abstract": "Long-term memory enables large language models (LLMs) to preserve and reuse information across interactions, but it can also turn localized errors into persistent risks. Existing work mainly evaluates whether memory systems store and retrieve information correctly, leaving limited understanding of how errors propagate across responses, memory states, and future interactions. We propose a structural causal model (SCM)-based framework for cross-turn error propagation in memory-augmented LLMs. We model user questions, model responses, and memory states as a dynamic causal process, and identify two entry pathways: internal memory updating and external question feedback. By intervening on these pathways, we construct four counterfactual trajectories and quantify their downstream effects and interaction. Error influence is evaluated at four levels: memory retention, natural responses, targeted diagnostic probing, and probability-level error preference. Experiments show that error influence generally decays with interaction distance, while the memory-update pathway contributes more persistent effects than question feedback; latent errors may remain even after disappearing from natural responses. Propagation patterns also vary across memory categories and memory mechanisms. Pathway-guided restoration further validates this decomposition: Question Repair reduces residual error by 27.5%, Memory Repair by 70.2%, and Joint Repair by 98.3%, nearly eliminating residual propagation.",
@@ -170,6 +306,36 @@
     "venue": ""
   },
   {
+    "abstract": "We investigate how vision-language models (VLMs) handle context-memory conflicts; that is, situations in which the model is given information in context that differs from what was stored parametrically during training. We document asymmetric biases: models tend to prefer in-context information about entities which appear in text, but prefer parametric information about entities which appear in images. We relate this asymmetry to the late representational alignment across modalities, showing that the longer processing time associated with resolving visual entities prevents the suppression of the model's usual factual recall mechanism, thus resulting in more parametric answers. Chain-of-thought reasoning does not appear to resolve the gap, but increasing the amount of visual information in the context does show an effect. These results illustrate the complexity of ensuring consistent behavior as models become increasingly multimodal and retrieval-augmented.",
+    "authors": [
+      "Athulith Paraselli",
+      "Etha Tianze Hua",
+      "Ellie Pavlick"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "id": "2609.00293v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `context, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：We investigate how vision-language models (VLMs) handle context-memory conflicts; that is, situations in which the model is given information in context that differs from what was stored parametrically during training.\n\n进一步看，论文的核心做法或实验重点可以概括为：We document asymmetric biases: models tend to prefer in-context information about entities which appear in text, but prefer parametric information about entities which appear in images.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "context memory"
+    ],
+    "one_liner": "We investigate how vision-language models (VLMs) handle context-memory conflicts; that is, situations in which the model is given information in context that differs from what...",
+    "published": "2026-08-31",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：context, retrieval\n- 检索关键词命中：context memory\n- 来源分类信息：cs.CL",
+    "slug": "slow-to-see-slow-to-suppress-understanding-the-effects-of-modality-in-context-me",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2609.00293v1",
+    "tags": [
+      "context",
+      "retrieval"
+    ],
+    "title": "Slow to See, Slow to Suppress: Understanding the Effects of Modality in Context-Memory Conflicts",
+    "updated": "2026-08-31",
+    "url": "http://arxiv.org/abs/2609.00293v1",
+    "venue": ""
+  },
+  {
     "abstract": "Agent working memory is heterogeneous. Objects such as instructions, artifacts, tool outputs, and agent-generated state play different semantic roles and exhibit different size, retention, and representation profiles. Recent work has begun to explore memory-management mechanisms that account for such heterogeneity. This work focuses on semantic heterogeneity and studies how it should shape the management and evaluation of working memory in coding agents. Across 55 archived coding-agent trajectories, we find that semantically different working-memory objects exhibit distinct retention and compression behavior. This heterogeneity motivates semantically informed memory management. We study two semantically informed strategies: an object-aware compression policy and a retrieval-based policy. Their evaluation shows that calibration gains may not transfer to held-out tasks, and that equal token budgets do not imply equal delivered context or management cost. A real-system replay further exposes serving limits that nominal budgets alone do not capture. Together, these results show why semantic structure matters for agent working memory and why evaluating memory-management strategies requires more than a nominal token budget. We organize these lessons into four levels: stored state, delivered context, management work, and task or process outcome.",
     "authors": [
       "Le Chen",
@@ -241,6 +407,65 @@
     "venue": ""
   },
   {
+    "abstract": "LLM agents that cache recovery suggestions from API errors can skip re-derivation in later episodes, spending fewer tokens and fewer model calls on constraints they have already learned. Server-side data drift turns those cached fixes into silent failures, and the usual remedy, re-deriving on every episode, gives the savings back. We introduce invalidation contracts, a protocol layer that attaches version stamps and cacheability hints to every recovery suggestion so the client can evict stale entries without trial and error, and keep the rest. The contract decomposes realized savings into two independent factors: validity, the fraction of cached suggestions that remain correct after a drift event, and compliance, the fraction the planner applies on the first attempt. Validity depends only on the protocol and is vendor-independent. Compliance depends on the planner model: identical wire bytes yield 100% first-try compliance on Claude Haiku 4.5 and 11% or below on Claude Sonnet 5, which exhibits input-schema conservatism, refusing fixes that add fields the original request did not contain. We evaluate across seven models, three serving paths, two domains, and approximately 9,400 episodes. Row-level invalidation raises compliance by 0 to 66.7 percentage points across the seven models, 55.6 to 66.7 on three, and recovers 29-33% of baseline token cost on four of seven models, while table-level invalidation destroys co-located entries and drops post-drift first-try rates to 0% on five of seven. Eviction precision is 1.00 at row granularity on every model under the row-level oracle of Section 4.1. The contract adds 15% to response payload. Version-stamp validity is deterministic by construction and produced identical results across every model and serving path, with zero contract failures in the entire evaluation.",
+    "authors": [
+      "Michael Wu",
+      "Arquimedes Canedo"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2609.00243v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：LLM agents that cache recovery suggestions from API errors can skip re-derivation in later episodes, spending fewer tokens and fewer model calls on constraints they have already learned.\n\n进一步看，论文的核心做法或实验重点可以概括为：Server-side data drift turns those cached fixes into silent failures, and the usual remedy, re-deriving on every episode, gives the savings back.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "LLM agents that cache recovery suggestions from API errors can skip re-derivation in later episodes, spending fewer tokens and fewer model calls on constraints they have already...",
+    "published": "2026-08-31",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.AI",
+    "slug": "invalidation-contracts-for-cross-episode-agent-memory",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2609.00243v1",
+    "tags": [
+      "agent"
+    ],
+    "title": "Invalidation Contracts for Cross-Episode Agent Memory",
+    "updated": "2026-08-31",
+    "url": "http://arxiv.org/abs/2609.00243v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Memory is widely viewed as an important unsolved problem for LLMs and VLMs, and current benchmarks typically evaluate it by testing accuracy over long text or video. However, accuracy alone misses properties that matter for real long-horizon tasks. We introduce ECCBench, a benchmark and evaluation protocol that measures memory beyond a system's capacity--its raw accuracy at a specific budget--via three axes we call ECC: efficiency--the computation, in FLOPs, needed to answer from memory; compression--whether compressible inputs are remembered more accurately or efficiently; and calibration--whether the system abstains in response to its own uncertainty and the cost of an error. We find that pretrained VLMs compress their memory over text but not video and are poorly calibrated on both. Among a broader set of memory backbones, several non-Transformer architectures achieve better compression-calibration tradeoffs than RoPE Transformers, suggesting they may be useful components for agents operating over long horizons.",
+    "authors": [
+      "Shmuel Berman",
+      "Jia Deng"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "id": "2609.00103v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, compression` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Memory is widely viewed as an important unsolved problem for LLMs and VLMs, and current benchmarks typically evaluate it by testing accuracy over long text or video.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, accuracy alone misses properties that matter for real long-horizon tasks.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory compression"
+    ],
+    "one_liner": "Memory is widely viewed as an important unsolved problem for LLMs and VLMs, and current benchmarks typically evaluate it by testing accuracy over long text or video.",
+    "published": "2026-08-31",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, compression\n- 检索关键词命中：memory compression\n- 来源分类信息：cs.LG, cs.AI",
+    "slug": "good-memory-has-ecc-evaluating-the-memory-of-vision-language-models-beyond-accur",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2609.00103v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "compression"
+    ],
+    "title": "Good Memory Has ECC: Evaluating the Memory of Vision-Language Models Beyond Accuracy",
+    "updated": "2026-08-31",
+    "url": "http://arxiv.org/abs/2609.00103v1",
+    "venue": ""
+  },
+  {
     "abstract": "Large language model (LLM) agents operate in dynamic environments where knowledge continuously evolves. Existing memory systems typically treat external memory as a monotonically growing repository, inevitably leading to retrieval degradation and increasing computational costs over time. We argue that the core challenge is not retrieval alone, but managing the knowledge lifecycle: deciding what to externalize, update, or ultimately internalize. Inspired by Complementary Learning Systems (CLS) theory in neuroscience, we propose Dual-Layer Agentic Memory, a framework that shifts memory management to the write phase through cost-aware epistemic routing and periodic parametric consolidation. Incoming information is categorized as non-write, write-new, or write-update, and routed through a small-to-large model cascade that minimizes routing overhead while filtering redundant memories. A subsequent write-back phase selectively consolidates high-value external memories into model parameters via supervised fine-tuning. Experiments demonstrate the dual efficiency of our approach: a 1.7B/8B cascade prunes up to 68% of redundant external memory while escalating fewer than 50% of inputs, yet retains over 98% of the downstream QA Exact Match (EM) achieved by an exhaustive retention baseline. We further show that periodic consolidation successfully internalizes external knowledge, allowing the router to adaptively suppress redundant writes as the model's epistemic boundaries evolve. Overall, our framework presents a unified paradigm for agent memory: selective externalization followed by selective internalization. Code and dataset will be released upon acceptance.",
     "authors": [
       "Wenzhi Li",
@@ -275,6 +500,37 @@
     "title": "Dual-Layer Agentic Memory with Fast Write Routing and Slow Consolidation",
     "updated": "2026-08-31",
     "url": "http://arxiv.org/abs/2608.22215v2",
+    "venue": ""
+  },
+  {
+    "abstract": "End-to-end autonomous driving models plan future trajectories from raw sensor input. While earlier driving benchmarks often measured deviation from the human trajectory, current benchmarks such as NAVSIM and Bench2Drive evaluate models with richer simulation-based metrics intended to capture safe and compliant driving. A high benchmark score should reflect that a model can understand the scene in front of it and act accordingly. But how much of that score specifically comes from reacting to the dynamic part of that scene? To probe this, we remove a model's camera input and replace it with memories from prior drives at the same location. The retrieved memories can provide persistent scene information, including road layout and location-conditioned regularities, but not the current traffic state. Surprisingly, memory is nearly sufficient on NAVSIM, reaching or even exceeding the performance of leading end-to-end methods without actually observing the evaluated scene. Our results suggest that a high NAVSIM score does not require a planner to react to the current traffic scene and should be treated with caution. This effect is benchmark-dependent: driving from memory causes substantially larger performance drops on Bench2Drive and RealEngine. We provide our code at https://github.com/boschresearch/MemoryDrivoR .",
+    "authors": [
+      "Christian Löwens",
+      "Thorben Funke",
+      "Alexandru Paul Condurache"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.LG",
+      "cs.RO"
+    ],
+    "id": "2608.31029v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `benchmark` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：End-to-end autonomous driving models plan future trajectories from raw sensor input.\n\n进一步看，论文的核心做法或实验重点可以概括为：While earlier driving benchmarks often measured deviation from the human trajectory, current benchmarks such as NAVSIM and Bench2Drive evaluate models with richer simulation-based metrics intended to capture safe and...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "retrieval memory"
+    ],
+    "one_liner": "End-to-end autonomous driving models plan future trajectories from raw sensor input.",
+    "published": "2026-08-31",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：benchmark\n- 检索关键词命中：retrieval memory\n- 来源分类信息：cs.CV, cs.LG, cs.RO",
+    "slug": "driving-on-memory",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.31029v1",
+    "tags": [
+      "benchmark"
+    ],
+    "title": "Driving on Memory",
+    "updated": "2026-08-31",
+    "url": "http://arxiv.org/abs/2608.31029v1",
     "venue": ""
   },
   {
@@ -940,6 +1196,42 @@
     "title": "LINE Conversation History Retrieval for Personal Memory RAG: Evaluating Search Representations and Hybrid Retrieval",
     "updated": "2026-08-28",
     "url": "http://arxiv.org/abs/2608.27809v1",
+    "venue": ""
+  },
+  {
+    "abstract": "While Large language models (LLMs) incorporate user personalization signals to improve usability and helpfulness, they increasingly shift from providing balanced, informative responses toward optimizing for user satisfaction when conditioned on personal context such as conversation history, inferred preferences, and user profiles. Specifically, we identify three emerging risks: (1) irrelevant personalization, where models reference personal information in unnecessary contexts; (2) preference narrowing, where models reinforce informational echo chambers; and (3) sycophantic bias, where models agree excessively with user opinions. As a result, models may reference personal information in contexts where it is unnecessary, inadvertently collapse response diversity, or agree excessively with user opinions. Despite the growing use of personalization in AI assistants, there has been limited systematic evaluation of its potential side effects. To bridge this gap, we propose PRISK, a dynamic evaluation framework with automated data generation and tailored metrics that uncovers systematic limitations in current LLM personalization and how personalized information shapes its responses. Our empirical analysis across 13 LLMs demonstrates the presence of user profiles and retrieved memories consistently exacerbates biases, resulting in an average drop of 45.9% in irrelevant personalization, 41.7% in preference narrowing and 61.7% in sycophantic bias.",
+    "authors": [
+      "Yumeng Wang",
+      "Yuchen Wu",
+      "Cheng Qian",
+      "Zhiyuan Fan",
+      "Hyeonjeong Ha",
+      "Shujin Wu",
+      "Jiayu Liu",
+      "Heng Ji",
+      "Ge Wang"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2608.28833v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `context, conversation` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：While Large language models (LLMs) incorporate user personalization signals to improve usability and helpfulness, they increasingly shift from providing balanced, informative responses toward optimizing for user...\n\n进一步看，论文的核心做法或实验重点可以概括为：Specifically, we identify three emerging risks: (1) irrelevant personalization, where models reference personal information in unnecessary contexts; (2) preference narrowing, where models reinforce informational echo...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "retrieval memory"
+    ],
+    "one_liner": "While Large language models (LLMs) incorporate user personalization signals to improve usability and helpfulness, they increasingly shift from providing balanced, informative...",
+    "published": "2026-08-28",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：context, conversation\n- 检索关键词命中：retrieval memory\n- 来源分类信息：cs.AI",
+    "slug": "evaluating-the-hidden-costs-of-personalization-in-large-language-models",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.28833v1",
+    "tags": [
+      "context",
+      "conversation"
+    ],
+    "title": "Evaluating the Hidden Costs of Personalization in Large Language Models",
+    "updated": "2026-08-28",
+    "url": "http://arxiv.org/abs/2608.28833v1",
     "venue": ""
   },
   {
