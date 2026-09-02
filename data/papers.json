@@ -170,6 +170,77 @@
     "venue": ""
   },
   {
+    "abstract": "Agent working memory is heterogeneous. Objects such as instructions, artifacts, tool outputs, and agent-generated state play different semantic roles and exhibit different size, retention, and representation profiles. Recent work has begun to explore memory-management mechanisms that account for such heterogeneity. This work focuses on semantic heterogeneity and studies how it should shape the management and evaluation of working memory in coding agents. Across 55 archived coding-agent trajectories, we find that semantically different working-memory objects exhibit distinct retention and compression behavior. This heterogeneity motivates semantically informed memory management. We study two semantically informed strategies: an object-aware compression policy and a retrieval-based policy. Their evaluation shows that calibration gains may not transfer to held-out tasks, and that equal token budgets do not imply equal delivered context or management cost. A real-system replay further exposes serving limits that nominal budgets alone do not capture. Together, these results show why semantic structure matters for agent working memory and why evaluating memory-management strategies requires more than a nominal token budget. We organize these lessons into four levels: stored state, delivered context, management work, and task or process outcome.",
+    "authors": [
+      "Le Chen",
+      "Zishen Wan",
+      "Baixi Sun",
+      "Xiaolong Ma",
+      "Chih-Hsuan Yang",
+      "Feng Yan",
+      "Sheng Di",
+      "Franck Cappello",
+      "Rajeev Thakur"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2608.31057v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, compression, context, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Agent working memory is heterogeneous.\n\n进一步看，论文的核心做法或实验重点可以概括为：Objects such as instructions, artifacts, tool outputs, and agent-generated state play different semantic roles and exhibit different size, retention, and representation profiles.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "working memory"
+    ],
+    "one_liner": "Agent working memory is heterogeneous.",
+    "published": "2026-08-31",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, compression, context, retrieval\n- 检索关键词命中：working memory\n- 来源分类信息：cs.AI",
+    "slug": "measure-before-you-manage-evaluating-agent-working-memory-in-coding-agents",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.31057v1",
+    "tags": [
+      "agent",
+      "compression",
+      "context",
+      "retrieval"
+    ],
+    "title": "Measure Before You Manage: Evaluating Agent Working Memory in Coding Agents",
+    "updated": "2026-08-31",
+    "url": "http://arxiv.org/abs/2608.31057v1",
+    "venue": ""
+  },
+  {
+    "abstract": "AI agents in partially observable environments need to coordinate active sensing with working memory to maintain an evolving perceptual state. However, existing benchmarks struggle to isolate this perceptual-state construction and interpretation capability because they introduce physical and control complexities. We address this with MNIST-PRO, a benchmark that isolates agentic perception by converting MNIST digit recognition into a sequential, glimpse-based search task with lookback constraints. We evaluate ten multimodal models across four memory representations, including raw visual history, textual states, structured metric grid maps, and a consolidated visual canvas. While models excel under full observability, partial observability exposes a clear performance gap. We identify three distinct bottlenecks. First, perceptual-state construction and interpretation present a challenge, as agents struggle to integrate fragmented glimpses. Second, agents often stop exploring before they see the full sequence. Third, models often fail to revise early, incorrect beliefs even when faced with subsequent contradictory evidence. These results show that simply acquiring visual evidence is not enough. Agents must also be able to build and update a reliable perceptual state.",
+    "authors": [
+      "Vernon Toh",
+      "Navonil Majumder",
+      "Zhengyuan Liu",
+      "Nancy F. Chen",
+      "Soujanya Poria"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.CV"
+    ],
+    "id": "2608.31022v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：AI agents in partially observable environments need to coordinate active sensing with working memory to maintain an evolving perceptual state.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, existing benchmarks struggle to isolate this perceptual-state construction and interpretation capability because they introduce physical and control complexities.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "working memory"
+    ],
+    "one_liner": "AI agents in partially observable environments need to coordinate active sensing with working memory to maintain an evolving perceptual state.",
+    "published": "2026-08-31",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark\n- 检索关键词命中：working memory\n- 来源分类信息：cs.AI, cs.CV",
+    "slug": "mnist-pro-mnist-is-back-as-a-partially-observable-world-for-ai-agents",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.31022v1",
+    "tags": [
+      "agent",
+      "benchmark"
+    ],
+    "title": "MNIST-PRO: MNIST is Back as a Partially Observable World for AI Agents",
+    "updated": "2026-08-31",
+    "url": "http://arxiv.org/abs/2608.31022v1",
+    "venue": ""
+  },
+  {
     "abstract": "Large language model (LLM) agents operate in dynamic environments where knowledge continuously evolves. Existing memory systems typically treat external memory as a monotonically growing repository, inevitably leading to retrieval degradation and increasing computational costs over time. We argue that the core challenge is not retrieval alone, but managing the knowledge lifecycle: deciding what to externalize, update, or ultimately internalize. Inspired by Complementary Learning Systems (CLS) theory in neuroscience, we propose Dual-Layer Agentic Memory, a framework that shifts memory management to the write phase through cost-aware epistemic routing and periodic parametric consolidation. Incoming information is categorized as non-write, write-new, or write-update, and routed through a small-to-large model cascade that minimizes routing overhead while filtering redundant memories. A subsequent write-back phase selectively consolidates high-value external memories into model parameters via supervised fine-tuning. Experiments demonstrate the dual efficiency of our approach: a 1.7B/8B cascade prunes up to 68% of redundant external memory while escalating fewer than 50% of inputs, yet retains over 98% of the downstream QA Exact Match (EM) achieved by an exhaustive retention baseline. We further show that periodic consolidation successfully internalizes external knowledge, allowing the router to adaptively suppress redundant writes as the model's epistemic boundaries evolve. Overall, our framework presents a unified paradigm for agent memory: selective externalization followed by selective internalization. Code and dataset will be released upon acceptance.",
     "authors": [
       "Wenzhi Li",
@@ -539,6 +610,35 @@
     "title": "AGM: Achievement-Grounded Memory for Closed-Loop Agents with Frozen VLA Policies",
     "updated": "2026-08-30",
     "url": "http://arxiv.org/abs/2608.29537v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Large language models (LLMs) are increasingly used to simulate human behavior but frequently fail to exhibit realistic cognitive constraints, suffering from a \"superhuman bias.\" Using a dataset of over 71,000 reading comprehension responses from 2,359 primary-school students (grades 4--6), we demonstrate that standard persona prompting yields near-perfect, deterministic performance, failing to capture the natural variance of developing readers. To address this, we introduce the Cognitively Bounded User Simulator (CBUS), an architectural framework that explicitly models the restricted working memory of young readers through an episodic bottleneck. Within this framework, we formalize two distinct test-taking strategies to emulate different reading behaviors. Our evaluation shows that explicitly modeling cognitive bounds significantly narrows the simulation gap across multiple LLM backbones, demonstrating that enforcing architectural constraints is more effective for high-fidelity simulation than simply scaling raw model capabilities.",
+    "authors": [
+      "Krisztian Balog",
+      "Arild Michel Bakken"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "id": "2608.30033v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `episodic` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Large language models (LLMs) are increasingly used to simulate human behavior but frequently fail to exhibit realistic cognitive constraints, suffering from a \"superhuman bias.\" Using a dataset of over 71,000 reading...\n\n进一步看，论文的核心做法或实验重点可以概括为：To address this, we introduce the Cognitively Bounded User Simulator (CBUS), an architectural framework that explicitly models the restricted working memory of young readers through an episodic bottleneck.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "working memory"
+    ],
+    "one_liner": "Large language models (LLMs) are increasingly used to simulate human behavior but frequently fail to exhibit realistic cognitive constraints, suffering from a \"superhuman bias.\"...",
+    "published": "2026-08-30",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：episodic\n- 检索关键词命中：working memory\n- 来源分类信息：cs.CL, cs.AI",
+    "slug": "act-like-a-5th-grader-is-not-enough-bounding-knowledge-in-llm-based-user-simulat",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.30033v1",
+    "tags": [
+      "episodic"
+    ],
+    "title": "\"Act Like a 5th Grader\" is Not Enough: Bounding Knowledge in LLM-Based User Simulators",
+    "updated": "2026-08-30",
+    "url": "http://arxiv.org/abs/2608.30033v1",
     "venue": ""
   },
   {

@@ -39,13 +39,13 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **1059**
-- Last generated: **2026-09-01**
+- Total tracked papers: **1062**
+- Last generated: **2026-09-02**
 
 ## Papers by Source
 
 - ACL Anthology: **5**
-- arXiv: **912**
+- arXiv: **915**
 - OpenReview: **142**
 
 ## Latest Papers
@@ -57,6 +57,8 @@ python3 scripts/update_papers.py --build-only
 | 2026-08-31 | arXiv | [UTILMEM: Benchmarking Evidence Utilization in Long-Term Conversational Memory](content/papers/utilmem-benchmarking-evidence-utilization-in-long-term-conversational-memory.md) | agent, benchmark, conversation |
 | 2026-08-31 | arXiv | [The Optimizer Is the Agent: Reasoning-Driven Search across Prompts, Programs, and ML Workflows](content/papers/the-optimizer-is-the-agent-reasoning-driven-search-across-prompts-programs-and-m.md) | agent |
 | 2026-08-31 | arXiv | [Strong Drafts Need Compact Memories: Long-Context Speculative Decoding with Compressed KV Cache](content/papers/strong-drafts-need-compact-memories-long-context-speculative-decoding-with-compr.md) | agent, context |
+| 2026-08-31 | arXiv | [Measure Before You Manage: Evaluating Agent Working Memory in Coding Agents](content/papers/measure-before-you-manage-evaluating-agent-working-memory-in-coding-agents.md) | agent, compression, context |
+| 2026-08-31 | arXiv | [MNIST-PRO: MNIST is Back as a Partially Observable World for AI Agents](content/papers/mnist-pro-mnist-is-back-as-a-partially-observable-world-for-ai-agents.md) | agent, benchmark |
 | 2026-08-31 | arXiv | [Dual-Layer Agentic Memory with Fast Write Routing and Slow Consolidation](content/papers/dual-layer-agentic-memory-with-fast-write-routing-and-slow-consolidation.md) | agent, retrieval |
 | 2026-08-31 | OpenReview | [D-ACR: Dialogue-Aware Context Retrieval for Long-Term Conversational Memory](content/papers/d-acr-dialogue-aware-context-retrieval-for-long-term-conversational-memory.md) | benchmark, context, conversation |
 | 2026-08-30 | arXiv | [SearchWiki: Learning to Build and Navigate Knowledge Wikis for Active Information Seeking](content/papers/searchwiki-learning-to-build-and-navigate-knowledge-wikis-for-active-information.md) | agent, benchmark, retrieval |
@@ -68,10 +70,8 @@ python3 scripts/update_papers.py --build-only
 | 2026-08-30 | arXiv | [Counter with Evidence! A Multi-Agent Memory Efficient Reasoning Framework for Hate Category Informed Counterspeech Generation](content/papers/counter-with-evidence-a-multi-agent-memory-efficient-reasoning-framework-for-hat.md) | agent, context |
 | 2026-08-30 | arXiv | [Agent Zero Memory: Provenance-Aware Long-Term Memory for LLM Agents](content/papers/agent-zero-memory-provenance-aware-long-term-memory-for-llm-agents.md) | agent, benchmark, conversation |
 | 2026-08-30 | arXiv | [AGM: Achievement-Grounded Memory for Closed-Loop Agents with Frozen VLA Policies](content/papers/agm-achievement-grounded-memory-for-closed-loop-agents-with-frozen-vla-policies.md) | agent, benchmark |
+| 2026-08-30 | arXiv | ["Act Like a 5th Grader" is Not Enough: Bounding Knowledge in LLM-Based User Simulators](content/papers/act-like-a-5th-grader-is-not-enough-bounding-knowledge-in-llm-based-user-simulat.md) | episodic |
 | 2026-08-29 | arXiv | [Selective Forgetting: A Graph-Based Memory Framework for Long-Term LLM Agents](content/papers/selective-forgetting-a-graph-based-memory-framework-for-long-term-llm-agents.md) | agent, benchmark, conversation |
-| 2026-08-29 | OpenReview | [Reason Before Remembering: An Entity-Centric Framework for Trustworthy Conversational Memory](content/papers/reason-before-remembering-an-entity-centric-framework-for-trustworthy-conversati.md) | context, conversation, retrieval |
-| 2026-08-29 | OpenReview | [MemoryVLN: Memory-Augmented Vision-Language Navigation](content/papers/memoryvln-memory-augmented-vision-language-navigation.md) | agent, benchmark, context |
-| 2026-08-28 | arXiv | [When Stale Constraints Go Unchecked: Budgeted Verification Failures in Inherited Agent Memory](content/papers/when-stale-constraints-go-unchecked-budgeted-verification-failures-in-inherited-.md) | agent |
 
 ## Suggested GitHub Setup
 
