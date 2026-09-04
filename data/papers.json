@@ -1,5 +1,102 @@
 [
   {
+    "abstract": "Large language models (LLMs) are increas- ingly deployed as long-horizon conversational agents, motivating growing interest in mem- ory systems. However, existing benchmarks primarily evaluate memory through QA-style probing rather than in-situ conversational usage. We introduce LOCOMO-CONV, a conversa- tional memory benchmark derived from Lo- CoMo with four query styles: dialog, implicit, counterfactual, and composed. Across five rep- resentative memory systems, we evaluate both retrieval recall and end-to-end response qual- ity. Our experiments show that conversational framing exposes substantial retrieval gaps over- looked by QA benchmarks, especially on im- plicit and composed queries, which multi-facet query rewriting narrows for raw-turn mem- ory but not abstractive memory. We further find that strong retrieval does not fully trans- late into response quality, and that implicit queries exhibit silent grounding, where mem- ory improves contextual grounding without ex- plicitly surfacing the gold fact. These results point to reasoning-based memory elaboration as a promising direction, and we release aux- iliary supportive_memory annotations captur- ing conversationally useful context beyond the original gold evidence.",
+    "authors": [
+      "Wen-Yu Chang",
+      "Yun-Nung Chen"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "id": "2609.03467v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, conversation` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Large language models (LLMs) are increas- ingly deployed as long-horizon conversational agents, motivating growing interest in mem- ory systems.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, existing benchmarks primarily evaluate memory through QA-style probing rather than in-situ conversational usage.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory benchmark",
+      "memory benchmarks",
+      "memory retrieval"
+    ],
+    "one_liner": "Large language models (LLMs) are increas- ingly deployed as long-horizon conversational agents, motivating growing interest in mem- ory systems.",
+    "published": "2026-09-03",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context, conversation, retrieval\n- 检索关键词命中：memory benchmark, memory benchmarks, memory retrieval\n- 来源分类信息：cs.CL, cs.AI",
+    "slug": "when-users-don-t-ask-benchmarking-context-driven-memory-retrieval-in-conversatio",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2609.03467v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "conversation",
+      "retrieval"
+    ],
+    "title": "When Users Don't Ask: Benchmarking Context-Driven Memory Retrieval in Conversational Agents",
+    "updated": "2026-09-03",
+    "url": "http://arxiv.org/abs/2609.03467v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Long-video understanding depends not only on the capability of a vision-language model (VLM), but also on how its limited context is constructed from a much longer video. Existing systems typically introduce hand-designed sampling, retrieval, memory, or agentic control strategies, making the context-construction program itself difficult to study as an independent optimization target. We introduce VideoHarness-RSI, a controlled framework that recursively searches executable context constructors around a frozen VLM while keeping the answering model and interface fixed. We study this baseline under complementary weak- and strong-initialization regimes. From a weak uniform constructor, recursive search progressively discovers more structured context-construction programs; from a stronger AKS harness, the same process further advances an already competitive hand-crafted frontier. The resulting harness retains its advantage under a matched cumulative visual-token control and transfers directly to additional long-video benchmarks without further search. Together, these results establish executable context construction as a distinct optimization layer and provide an auditable baseline for studying harness discovery, transfer, and efficiency around frozen VLMs.",
+    "authors": [
+      "Guoyang Xu",
+      "Hao Chen"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2608.24302v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Long-video understanding depends not only on the capability of a vision-language model (VLM), but also on how its limited context is constructed from a much longer video.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing systems typically introduce hand-designed sampling, retrieval, memory, or agentic control strategies, making the context-construction program itself difficult to study as an independent optimization target.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "retrieval memory"
+    ],
+    "one_liner": "Long-video understanding depends not only on the capability of a vision-language model (VLM), but also on how its limited context is constructed from a much longer video.",
+    "published": "2026-08-25",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context, retrieval\n- 检索关键词命中：retrieval memory\n- 来源分类信息：cs.AI",
+    "slug": "videoharness-rsi-recursive-harness-self-improvement-for-long-video-understanding",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.24302v2",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "retrieval"
+    ],
+    "title": "VideoHarness-RSI: Recursive Harness Self-Improvement for Long-Video Understanding with Frozen Vision-Language Models",
+    "updated": "2026-09-03",
+    "url": "http://arxiv.org/abs/2608.24302v2",
+    "venue": ""
+  },
+  {
+    "abstract": "World models have progressed from compact latent dynamics to generative, controllable, and interactive simulators of embodied environments. However, high predictive likelihood and visual fidelity do not necessarily ensure that a model preserves the evidence required for safe decision-making. This perspective identifies three structural mismatches in current world modeling: likelihood versus risk, prediction versus intervention, and finite-horizon prediction versus accumulated consequences. We propose the Risk-Informed World Model (RIWM) as a decision-centric research direction for safety-critical embodied systems. RIWM organizes world modeling around consequences, intervention, epistemic uncertainty, and recoverability, and integrates four interdependent capabilities: decision-relevant representation, counterfactual reasoning, safety-critical episodic memory, and runtime safety assurance. It distinguishes physical, social, and operational consequences while using epistemic uncertainty to qualify the evidence supporting action. We further discuss open challenges in identifying consequential futures, validating counterfactual reasoning, maintaining revisable safety memories, translating learned consequences into executable constraints, and determining when evidence is sufficient to act. This perspective argues that future world models should move beyond predicting likely futures toward identifying which futures matter, revising judgments through experience, and recognizing when to act, revise, sense, defer, or abstain.",
+    "authors": [
+      "Kailang Ma",
+      "Heye Huang",
+      "Inhi Kim",
+      "Kitae Jang"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.RO"
+    ],
+    "id": "2609.03774v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `episodic` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：World models have progressed from compact latent dynamics to generative, controllable, and interactive simulators of embodied environments.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, high predictive likelihood and visual fidelity do not necessarily ensure that a model preserves the evidence required for safe decision-making.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "episodic memory"
+    ],
+    "one_liner": "World models have progressed from compact latent dynamics to generative, controllable, and interactive simulators of embodied environments.",
+    "published": "2026-09-03",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：episodic\n- 检索关键词命中：episodic memory\n- 来源分类信息：cs.AI, cs.RO",
+    "slug": "rethinking-world-models-for-safety-critical-embodied-systems",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2609.03774v1",
+    "tags": [
+      "episodic"
+    ],
+    "title": "Rethinking World Models for Safety-Critical Embodied Systems",
+    "updated": "2026-09-03",
+    "url": "http://arxiv.org/abs/2609.03774v1",
+    "venue": ""
+  },
+  {
     "abstract": "Conversational memory in AI systems becomes crucial for coherent interactions through prolonged conversations. State-of-the-art techniques mainly aim at improving memory by context expansion, using retrieval, or external memory. However, most methods assume that any entity mention should be immediately mapped to one interpretation. This often leads to premature commitments, memory confirmation bias, hallucinations in the conversation, and accumulation of wrong conversational state. This paper states that conversational memory should not hide ambiguity, but should represent it explicitly as part of the reasoning process. This paper proposes an Entity-Centric Conversational Memory Framework that views entity linking as a process of explicit belief management, instead of a deterministic one. It maintains the space of interpretations of entities that includes both correct and incorrect hypotheses, such as $\\mathrm{UNKNOWN}$ hypothesis, processes heterogeneous conversational evidence via belief update, detects ambiguity, and performs one of three actions: Commit, Clarify, or Delay. By doing so, the framework separates entity reasoning from memory updates, allowing to write to memory only when certain. The experiments conducted on ConEL conversational entity linking dataset show that the proposed framework reaches $99.0\\%$ commit precision providing explicit control over the precision-coverage trade-off. The analysis shows several properties of conversational memory and brings important architectural insights to light: the existence of memory confirmation bias, the importance of treating $\\mathrm{UNKNOWN}$ as an active competing hypothesis, and the limitations of fixed ambiguity thresholds on different entity types.",
     "authors": [],
     "categories": [
@@ -56,6 +153,279 @@
     "updated": "2026-09-03",
     "url": "https://openreview.net/forum?id=8oUXCzERe8",
     "venue": "ACL ARR 2026 August Submission"
+  },
+  {
+    "abstract": "Large language model agents can plan, invoke tools, and modify external states, yet most systems still take an explicit user instruction as a fixed starting point. Proactive service moves the decision upstream: an agent must infer service opportunities from incomplete environmental and user signals, choose among remaining silent, asking, assisting, and acting, and account for interruption, misunderstanding, overreach, and privacy costs. This survey gives an operational definition centered on initiative and formulates the problem as a partially observable sequential decision process constrained by authorization and risk. The formulation represents timing, content, and delivery within one structured action, while making explicit the option value of waiting, the decision value of questions, and feedback-induced state changes. On this basis, we organize existing methods along one decision pipeline (state and need estimation, intervention gating, action construction, and feedback adaptation) and describe prescribed, predictive, model based, and return optimizing mechanisms as nonexclusive policy-construction components. We further normalize decision units and three-axis evidence descriptors across streaming dialogue, screen, video, software-engineering, and human-agent collaboration resources, and formalize metrics for triggering, timing, calibration, user burden, safety, and policy value. The synthesis shows why offline classification performance alone does not predict deployment benefit and why long-term memory is not a defining condition of proactivity. Reliable proactive service instead requires calibrated incremental intervention value, verifiable authorization, recoverable execution, and counterfactual evidence.",
+    "authors": [
+      "Yan Tang",
+      "Tingyu Cao",
+      "Yuanbo Tang",
+      "Huaze Tang",
+      "Keer Hu"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2609.03727v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, long-term` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Large language model agents can plan, invoke tools, and modify external states, yet most systems still take an explicit user instruction as a fixed starting point.\n\n进一步看，论文的核心做法或实验重点可以概括为：Proactive service moves the decision upstream: an agent must infer service opportunities from incomplete environmental and user signals, choose among remaining silent, asking, assisting, and acting, and account for...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "long-term memory"
+    ],
+    "one_liner": "Large language model agents can plan, invoke tools, and modify external states, yet most systems still take an explicit user instruction as a fixed starting point.",
+    "published": "2026-09-03",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, long-term\n- 检索关键词命中：long-term memory\n- 来源分类信息：cs.AI",
+    "slug": "proactive-service-agents-a-unified-decision-framework-methods-and-evaluation",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2609.03727v1",
+    "tags": [
+      "agent",
+      "long-term"
+    ],
+    "title": "Proactive Service Agents: A Unified Decision Framework, Methods, and Evaluation",
+    "updated": "2026-09-03",
+    "url": "http://arxiv.org/abs/2609.03727v1",
+    "venue": ""
+  },
+  {
+    "abstract": "An agent that inherits six one-line memories may pull at most one archived source record before acting; a directive written into the store can steer that choice: a pointer to the record, a criterion that identifies it, or both. Across twelve registered studies on one instrument lineage (14,760 attempts) we measured where the request goes under each form. On six direct-provider models a length-matched criterion exceeded a bare id by +35.0 points [+31.2, +38.8] (Study D); the contrast failed its registered superiority rule on a nine-model OpenRouter-served panel (Study E). Appending the id cancelled the criterion on three Claude models (Opus 5: 40/40 to 0/40; Study F-x); six byte-matched edits gave each exact string its own effect (Study G), and a re-run at eighty runs per cell left fifteen of thirty replication contrasts within the margin, fifteen unresolved and none beyond (Study G'). A ratification line (+96.0 points on Opus 5) and a budget of two credits restored the target on all three (Study J); across five criterion strings the suffix's cancellation held for four of the five wordings on Opus 5 and all five wordings on Fable 5.1 (Study H2); in a second store every model followed the criterion (Study H1). Continued into a decision, the criterion moved the choice toward the current record (+100.0 points, Opus 5) and away from it on Fable 5.1 (Study I). A one-character plan pointer's effect (+78.0 points; Study B, after a correction of its first repository report) returned the same verdict under a prospectively registered re-run (+81.7 points; Study B'). All results are descriptive effects of exact edits on fixed panels with registered intervals and no mechanism claim.",
+    "authors": [
+      "Kazuki Nakayashiki"
+    ],
+    "categories": [
+      "cs.IR",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "id": "2609.03450v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：An agent that inherits six one-line memories may pull at most one archived source record before acting; a directive written into the store can steer that choice: a pointer to the record, a criterion that identifies...\n\n进一步看，论文的核心做法或实验重点可以概括为：Across twelve registered studies on one instrument lineage (14,760 attempts) we measured where the request goes under each form.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "An agent that inherits six one-line memories may pull at most one archived source record before acting; a directive written into the store can steer that choice: a pointer to...",
+    "published": "2026-09-03",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.IR, cs.AI, cs.CL",
+    "slug": "plan-pointers-and-record-directive-form-in-budgeted-verification-of-inherited-ag",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2609.03450v1",
+    "tags": [
+      "agent"
+    ],
+    "title": "Plan Pointers and Record-Directive Form in Budgeted Verification of Inherited Agent Memory",
+    "updated": "2026-09-03",
+    "url": "http://arxiv.org/abs/2609.03450v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Long-running language-model systems accumulate interaction history that outgrows the context window, so they must continually evict. When an eviction policy drops a task-critical detail, for example an access token issued at login or a path the next call needs, the action fails. We present LRE (Learned Relevance Eviction), a kilobyte-scale, CPU-only, language-model-free scorer that learns which units of history are task-critical and keeps them by verbatim extraction. Under a matched-budget comparison, in our experiment, no baseline dominates LRE on the accuracy-cost plane. On agents, LRE recovers 93% of the aggregate accuracy of keeping the entire history (41.1 vs. 44.0) and exceeds it by 27% on the simplest tasks, while requiring zero compressor calls and cutting the worst-case peak prompt by 52%. A controlled study trace shows LRE completes tasks where the others loop, finishing one such task in 37% fewer calls than keeping everything and solving 14 tasks where no other run policy does. On conversational memory, LRE outranks dense and token-pruning encoders at zero neural cost while being 295-1569x smaller in size. In downstream evaluation, LRE gives the best budgeted answer quality on LoCoMo reading 68% fewer tokens. Its supervision can also be annotation-free: training only on the system's own behavior recovers 95% of the supervised scorer's effectiveness. We argue that, because memory eviction in LLM agents is a fidelity problem, it requires a deployable proactive policy where the future query is unavailable and exact state is decisive, and that cheap learned relevance can be sufficient.",
+    "authors": [
+      "Nusrat Jahan Lia",
+      "Aritra Mazumder"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "id": "2606.20954v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, context, conversation` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Long-running language-model systems accumulate interaction history that outgrows the context window, so they must continually evict.\n\n进一步看，论文的核心做法或实验重点可以概括为：When an eviction policy drops a task-critical detail, for example an access token issued at login or a path the next call needs, the action fails.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "conversational memory"
+    ],
+    "one_liner": "Long-running language-model systems accumulate interaction history that outgrows the context window, so they must continually evict.",
+    "published": "2026-06-18",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, context, conversation\n- 检索关键词命中：conversational memory\n- 来源分类信息：cs.CL, cs.AI",
+    "slug": "learning-what-not-to-forget-long-horizon-agent-memory-from-a-few-kilobytes-of-le",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2606.20954v2",
+    "tags": [
+      "agent",
+      "context",
+      "conversation"
+    ],
+    "title": "Learning What Not to Forget: Long-Horizon Agent Memory from a Few Kilobytes of Learning",
+    "updated": "2026-09-03",
+    "url": "http://arxiv.org/abs/2606.20954v2",
+    "venue": ""
+  },
+  {
+    "abstract": "Distributed LLM-agent teams can read the latest shared facts and still act on an obsolete plan. A planner may derive an action from requirement $r_3$, another agent may commit $r_4$, and an executor may receive $r_4$ without replacing the plan derived from $r_3$. We call this \\emph{stale-plan execution}: state freshness does not establish that the plan authorizing an action remains valid. We introduce PlanFence, a dependency-scoped action-validation protocol. Plans cite the exact public records they used, and an executor validates only the records that can affect the pending external action, replanning once or blocking when validation is incomplete. In 30 controlled live workflows with a post-plan revision, a freshness-only executor acts on the obsolete plan in every task, whereas PlanFence completes all tasks without an invalid action. Controlled replay reveals two conditional boundaries: proactive synchronization yields lower coordination stall at low churn, while PlanFence avoids repeated update-path coordination as churn grows and avoids validating unrelated state as the shared keyspace grows. These are controlled safety and systems-cost results, not general task-accuracy gains.",
+    "authors": [
+      "Evan Chen",
+      "Shiqiang Wang",
+      "Christopher G. Brinton"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2609.03340v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Distributed LLM-agent teams can read the latest shared facts and still act on an obsolete plan.\n\n进一步看，论文的核心做法或实验重点可以概括为：A planner may derive an action from requirement $r_3$, another agent may commit $r_4$, and an executor may receive $r_4$ without replacing the plan derived from $r_3$.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "Distributed LLM-agent teams can read the latest shared facts and still act on an obsolete plan.",
+    "published": "2026-09-03",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.AI",
+    "slug": "fresh-memory-stale-plans-dependency-scoped-validation-for-distributed-llm-agent-",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2609.03340v1",
+    "tags": [
+      "agent"
+    ],
+    "title": "Fresh Memory, Stale Plans: Dependency-Scoped Validation for Distributed LLM-Agent Memory",
+    "updated": "2026-09-03",
+    "url": "http://arxiv.org/abs/2609.03340v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Automated evaluation of creativity tasks remains challenging for LLM-as-a-Judge, as LLM is susceptible to biases such as verbosity bias and leniency bias. Such limitations are particularly evident in Contextually-Grounded and Procedurally-Structured Tasks (CGPST), a complex multi-step creativity task where inter-step dependencies, highly subjectivity, and wide scoring ranges lead to more unstable and biased judgments. Existing approaches either rely on task-specific training or directly apply LLM-as-a-Judge, both of which struggle to ensure reliable evaluation under such complexity. To bridge these gaps, we propose CreaEval, an automated creativity evaluator for CGPST that decouples typical LLM-as-a-Judge into analysis and judging. Correspondingly, CreaEval involves two critical phases: Memory-augmented Analysis, a SoT-LLM converts multi-step responses into structured evaluation evidence, incorporating cross-step memory; and Evidence-based Judging, a Judge-LLM uses the extracted evidence for judging without accessing raw responses. Comprehensive experiments show that CreaEval achieves an average performance improvement of 22.74% over the second-best baselines across CGPST and two classic simple creativity tasks, demonstrating its generalizability. The code is available at https://github.com/Jaong/CreaEval.",
+    "authors": [
+      "Xiangyu Wang",
+      "Jin Wu",
+      "Xiaoyu Li",
+      "Chanjin Zheng",
+      "Yifeng Zhou"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "id": "2609.03432v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `context` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Automated evaluation of creativity tasks remains challenging for LLM-as-a-Judge, as LLM is susceptible to biases such as verbosity bias and leniency bias.\n\n进一步看，论文的核心做法或实验重点可以概括为：Such limitations are particularly evident in Contextually-Grounded and Procedurally-Structured Tasks (CGPST), a complex multi-step creativity task where inter-step dependencies, highly subjectivity, and wide scoring...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory augmented",
+      "memory-augmented"
+    ],
+    "one_liner": "Automated evaluation of creativity tasks remains challenging for LLM-as-a-Judge, as LLM is susceptible to biases such as verbosity bias and leniency bias.",
+    "published": "2026-09-03",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：context\n- 检索关键词命中：memory augmented, memory-augmented\n- 来源分类信息：cs.CL",
+    "slug": "decoupled-analysis-judging-an-automated-creativity-evaluator-using-llms-in-compl",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2609.03432v1",
+    "tags": [
+      "context"
+    ],
+    "title": "Decoupled Analysis-Judging: An Automated Creativity Evaluator Using LLMs in Complex Multi-step Creativity Tasks",
+    "updated": "2026-09-03",
+    "url": "http://arxiv.org/abs/2609.03432v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Large language model agents have shown promise in bioinformatics, but most existing systems focus primarily on producing final answers, treating planning, tool use, and code execution as transient interactions. This design is poorly suited to long-horizon bioinformatics tasks, where conclusions must remain connected to the data, computations, and intermediate evidence that support them. We introduce \\textbf{Bioinfoysis}, a multi-agent harness that represents each request as a persistent, artifact-grounded analysis run. Bioinfoysis combines global planning with step-wise, evidence-driven replanning: the planner maintains an executable checklist and revises pending steps using structured handoffs returned after each worker execution. These handoffs bind intermediate results to their responsible agent, checklist step, and plan generation, preventing stale evidence from being silently reused after replanning. A controlled runtime validates generated scripts, tables, and figures before they are used in downstream analysis or reporting, while role-specific context, persistent memory, and governed bioinformatics skills support reliable execution over long analysis trajectories. We evaluate Bioinfoysis on BixBench and two question-answering tracks of LAB-Bench 2. On BixBench, Bioinfoysis achieves state-of-the-art accuracy of 82.4\\%. Across four underlying language models, Bioinfoysis increases average accuracy from 27.81\\% to 64.13\\% on SeqQA2 and from 3.13\\% to 31.25\\% on DbQA2. These results demonstrate that reliable bioinformatics automation depends not only on model capability, but also on the harness that governs planning, execution, memory, and evidence flow. We hope that the emergence of Bioinfoysis will play a driving and leading role in the development of the bioinformatics community. Our demo website can be seen in https://report.bioinfoysis.com/.",
+    "authors": [
+      "Qingyang Shao",
+      "Xin Zhang",
+      "Zhouyang Yuan",
+      "Xianying Chen",
+      "Yujia Xiang",
+      "Zihao Yang",
+      "Tong Ye",
+      "Yangqi Zhang",
+      "Jiakang Xu",
+      "Xiaoqing Yan",
+      "Xuan Luo",
+      "Keyi Li",
+      "Enci Fan",
+      "Kai Kang",
+      "Zhuohan Liu",
+      "Xingyu Jin",
+      "Chunran Teng",
+      "Tao Li",
+      "Xinyu Lv",
+      "Minghui Wang",
+      "Wenfeng Li",
+      "Yidan Gao",
+      "Siyu Liu",
+      "Mingrui Luo",
+      "Zhu Liang",
+      "Guanren Qiao",
+      "Zhiping Xu"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.MA"
+    ],
+    "id": "2609.03871v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, context` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Large language model agents have shown promise in bioinformatics, but most existing systems focus primarily on producing final answers, treating planning, tool use, and code execution as transient interactions.\n\n进一步看，论文的核心做法或实验重点可以概括为：This design is poorly suited to long-horizon bioinformatics tasks, where conclusions must remain connected to the data, computations, and intermediate evidence that support them.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "persistent memory"
+    ],
+    "one_liner": "Large language model agents have shown promise in bioinformatics, but most existing systems focus primarily on producing final answers, treating planning, tool use, and code...",
+    "published": "2026-09-03",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, context\n- 检索关键词命中：persistent memory\n- 来源分类信息：cs.AI, cs.MA",
+    "slug": "bioinfoysis-technical-report",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2609.03871v1",
+    "tags": [
+      "agent",
+      "context"
+    ],
+    "title": "Bioinfoysis Technical Report",
+    "updated": "2026-09-03",
+    "url": "http://arxiv.org/abs/2609.03871v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Most modern optimizers form their momentum as an exponential moving average (EMA) of past gradients, forgetting every direction at one fixed rate. However, the inputs a deep network sees during training can be highly anisotropic, with a few directions queried frequently while most are seen rarely. Preconditioning methods address this anisotropy by wrapping extra processing around this buffer and leave the momentum update itself unchanged. We propose Activation-Keyed Momentum (AK-Momentum), which builds direction-awareness into the momentum update rule. The gradient of a linear layer splits into an input activation that acts as a key and an output-side error that acts as a value. Keying on that activation, AK-Momentum updates the momentum buffer by the canonical delta rule, so each direction is forgotten at a rate set by how often it appears. We prove that it is a valid momentum, that it applies the input-side curvature correction without matrix inversion, and that it clears stale directions faster than EMA under both a fixed and a drifting optimum. It is a drop-in replacement for the momentum buffer of any optimizer, its coefficient transfers across widths under $μ$P, and its extra compute stays between $22.2\\%$ and $25.0\\%$ of a gated-MLP block's linear cost with no persistent memory. In FineWeb-Edu pretraining, AdamW with AK-Momentum (AK-AdamW) reaches AdamW's validation loss in up to $46.39 \\pm 4.32\\%$ fewer steps at 67M and $22.12 \\pm 0.80\\%$ at 370M over three seeds, and the gain persists at 1B on a Chinchilla-optimal budget. A Muon baseline tuned under the same protocol sits above AK-AdamW at both language-model scales, and the gain holds for SGD, ResNet-18, and ViT-Tiny on CIFAR-10. Training-time diagnostics confirm the predicted mechanism, better gradient tracking and healthier input directions.",
+    "authors": [
+      "Euijin Hong",
+      "Guannan Qu"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.CL",
+      "math.OC",
+      "stat.ML"
+    ],
+    "id": "2608.19491v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `persistent memory` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Most modern optimizers form their momentum as an exponential moving average (EMA) of past gradients, forgetting every direction at one fixed rate.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, the inputs a deep network sees during training can be highly anisotropic, with a few directions queried frequently while most are seen rarely.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "persistent memory"
+    ],
+    "one_liner": "Most modern optimizers form their momentum as an exponential moving average (EMA) of past gradients, forgetting every direction at one fixed rate.",
+    "published": "2026-08-19",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：persistent memory\n- 检索关键词命中：persistent memory\n- 来源分类信息：cs.LG, cs.CL, math.OC, stat.ML",
+    "slug": "activation-keyed-momentum-an-anisotropic-momentum-update-via-the-delta-rule",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.19491v2",
+    "tags": [
+      "persistent memory"
+    ],
+    "title": "Activation-Keyed Momentum: An Anisotropic Momentum Update via the Delta Rule",
+    "updated": "2026-09-03",
+    "url": "http://arxiv.org/abs/2608.19491v2",
+    "venue": ""
+  },
+  {
+    "abstract": "Learned graph simulators provide an efficient alternative to high-fidelity solvers for granular dynamics. However, granular motion depends strongly on inter-granular contact history, which is difficult to preserve when particle contacts form, break, and rearrange. Existing simulators mainly store temporal information in node features or node-level memory. Here we introduce TRACE, a graph-network simulator that stores interaction history directly on contact edges. Each edge maintains a persistent memory updated by attention-based message passing and a gated recurrent unit, while an edge-identity dictionary preserves this memory as the contact graph changes. A physics-structured decoder predicts inter-granular normal and tangential contact forces, enforces the Coulomb friction limit, and applies equal-and-opposite internal forces. The model is trained with single-step pretraining followed by autoregressive rollout fine-tuning. We evaluate TRACE on 2D and 3D granular column-collapse benchmarks. In both cases, TRACE produces stable, physically consistent long-horizon rollouts, closely reproducing the final deposit geometry and the kinetic energy released during collapse. Compared with graph network simulator (GNS) and node-memory graph neural simulator (NMGNS), TRACE reduces long-rollout position error by 31-62% and final-deposit error by 58-89% across the two benchmarks, while using fewer parameters and maintaining near-zero particle interpenetration. TRACE also achieves 12.2$\\times$ and 8.9$\\times$ speedups over the material point method (MPM) reference solver in 2D and 3D, respectively. Our code is available at https://github.com/Data-Driven-Computational-Geotechnics/TRACE.",
+    "authors": [
+      "Changjian Zhou",
+      "Negin Yousefpour",
+      "Jie Qi",
+      "Junfeng Fang",
+      "Guillermo A. Narsilio",
+      "Hans Petter Jostad"
+    ],
+    "categories": [
+      "cs.LG",
+      "math.NA",
+      "stat.ML"
+    ],
+    "id": "2609.02991v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `benchmark` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Learned graph simulators provide an efficient alternative to high-fidelity solvers for granular dynamics.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, granular motion depends strongly on inter-granular contact history, which is difficult to preserve when particle contacts form, break, and rearrange.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "persistent memory"
+    ],
+    "one_liner": "Learned graph simulators provide an efficient alternative to high-fidelity solvers for granular dynamics.",
+    "published": "2026-09-02",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：benchmark\n- 检索关键词命中：persistent memory\n- 来源分类信息：cs.LG, math.NA, stat.ML",
+    "slug": "trace-spatiotemporal-contact-memory-graph-network-simulator-for-granular-dynamic",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2609.02991v1",
+    "tags": [
+      "benchmark"
+    ],
+    "title": "TRACE: Spatiotemporal Contact Memory Graph Network Simulator for Granular Dynamics",
+    "updated": "2026-09-02",
+    "url": "http://arxiv.org/abs/2609.02991v1",
+    "venue": ""
   },
   {
     "abstract": "Interview assessment requires per-criterion judgments grounded in behavioral evidence, yet surging applicant volumes have made human-only evaluation costly and inconsistent, while existing AI approaches yield opaque scores without traceable rationale. We introduce PhoenixNest-Video, an evidence-grounded multimodal agent framework for automated video interview assessment. It builds a semantic video graph as structured working memory, performs rubric-conditioned retrieval with cross-modal verification across visual, audio, and textual streams, and produces per-criterion scores anchored to the candidate's materials. A Scorer trained via Rubrics-based Reinforcement Learning with dual rewards for rubric alignment and score-level differentiation internalizes the discriminative structure of multi-level rubrics. PhoenixNest-Video attains 91.50\\% grade-level accuracy on VInterview-2025, outperforming substantially larger proprietary models. A compact, rubric-grounded agent therefore scores candidates in closer agreement with an expert panel than direct prompting of much larger models, and exposes the evidence behind each score for human review.",
@@ -121,6 +491,43 @@
     "title": "NS-Copilot: An LLM-Driven Agent System for Autonomous Neuroscience Analysis",
     "updated": "2026-09-02",
     "url": "http://arxiv.org/abs/2609.01971v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Long-term LLM agents must preserve information across interactions while distinguishing repeated evidence, historical states, updates, and unresolved contradictions. Existing textual memory systems retrieve semantically relevant memories efficiently but often leave these relationships implicit, whereas richer structured approaches model them through global graphs, hierarchical abstractions, or reflection at greater complexity. We introduce MemoryLACE (MemLACE), a lightweight memory framework that explicitly models the lifecycle of textual evidence through sparse merge, supersession, and contradiction relations while preserving atomic natural-language memories and their provenance. Rather than retrieving memories independently, MemLACE reconstructs relation-aware evidence units that expose current, historical, supporting, and conflicting evidence for downstream reasoning. Across BEAM and StructMemEval, using open-weight and proprietary LLM backbones, MemLACE achieves the highest overall performance in same-backbone comparisons while reducing end-to-end runtime on BEAM by 66.6% relative to Hindsight, the strongest reported reflective-memory baseline. Ablation studies identify lifecycle expansion and temporal awareness as the principal contributors to these gains. Together, the results demonstrate that explicitly modeling the local lifecycle of textual evidence is sufficient to substantially improve long-term memory reasoning without requiring comprehensive knowledge graphs or global reflection.",
+    "authors": [
+      "Meriem Yacoubi",
+      "Pia Schmidt",
+      "Nenad Petrovic",
+      "Ahmed Frikha",
+      "Martin Kirchhoff",
+      "Alois Knoll"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.LG"
+    ],
+    "id": "2609.03201v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, long-term, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Long-term LLM agents must preserve information across interactions while distinguishing repeated evidence, historical states, updates, and unresolved contradictions.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing textual memory systems retrieve semantically relevant memories efficiently but often leave these relationships implicit, whereas richer structured approaches model them through global graphs, hierarchical...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "long-term memory",
+      "memory reasoning",
+      "retrieval memory"
+    ],
+    "one_liner": "Long-term LLM agents must preserve information across interactions while distinguishing repeated evidence, historical states, updates, and unresolved contradictions.",
+    "published": "2026-09-02",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, long-term, retrieval\n- 检索关键词命中：long-term memory, memory reasoning, retrieval memory\n- 来源分类信息：cs.CL, cs.LG",
+    "slug": "memorylace-memory-lifecycle-aware-consolidation-and-evidence-retrieval",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2609.03201v1",
+    "tags": [
+      "agent",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "MemoryLACE: Memory Lifecycle-Aware Consolidation and Evidence Retrieval",
+    "updated": "2026-09-02",
+    "url": "http://arxiv.org/abs/2609.03201v1",
     "venue": ""
   },
   {
@@ -2311,6 +2718,42 @@
     "updated": "2026-08-25",
     "url": "http://arxiv.org/abs/2608.23152v2",
     "venue": ""
+  },
+  {
+    "abstract": "",
+    "authors": [
+      "Thomas Baier",
+      "Selene Báez Santamaría",
+      "Piek Vossen",
+      "Hendrik Buschmeier",
+      "Barbara Eugenio",
+      "Patrick Healey",
+      "Casey Kennington",
+      "David Schlangen",
+      "Manfred Stede",
+      "Amir Zeldes"
+    ],
+    "categories": [],
+    "id": "acl:2025.dnd-16.10",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, episodic, long-term` 这些主题直接相关。\n\n它当前来自 `ACL Anthology`，并与 `Dialogue Discourse Volume 16` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：The abstract is not available yet.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "long-term memory"
+    ],
+    "one_liner": "This paper is tracked as a memory-related work and awaits a fuller summary.",
+    "published": "2025-12",
+    "relevance": "- 来源：ACL Anthology\n- Venue：Dialogue Discourse Volume 16\n- 高亮主题命中：agent, episodic, long-term\n- 检索关键词命中：long-term memory",
+    "slug": "a-modular-architecture-for-creating-multimodal-embodied-agents-with-an-episodic-",
+    "source": "ACL Anthology",
+    "source_key": "2025.dnd-16.10",
+    "tags": [
+      "agent",
+      "episodic",
+      "long-term"
+    ],
+    "title": "A modular architecture for creating multimodal embodied agents with an episodic Knowledge Graph as an explainable and controllable long-term memory",
+    "updated": "2026-08-25",
+    "url": "https://aclanthology.org/2025.dnd-16.10",
+    "venue": "Dialogue Discourse Volume 16"
   },
   {
     "abstract": "We measure tablet-2, a production long-term memory engine for language models, on the text benchmarks the field already uses and on cross-lingual retrieval of photographs stored with no text at all. Its retrieval path contains no lexical matching, no keyword scoring, and no language model of its own. On LongMemEval-S (500 questions) it scores 95.7% [93.4, 97.1]; on BEAM-1M (700 questions, 2.21M stored memories) 67.5% [64.8, 70.2]. Those are question-sampling intervals, not the run-to-run spread, which is an order of magnitude narrower. Most of the paper is about how little they mean alone. Holding engine, corpus, settings and judge fixed, changing only the reader moves LongMemEval-S by 2.0 points; changing only the re-ask budget moves BEAM-1M by 8.9. Neither is stated in the reports we compare against, and the second exceeds most gaps there, so we give that table as a placement and not a ranking. For the multimodal axis we run two controls. Against BM25, configured as strongly as we could, we reach 95.2% mean recall@5 over 70 store-and-query language cells where BM25 reaches 19.0% and is exactly zero in 54. On captionless photographs a lexical method has no document to score at all. Open dense baselines on 300 Crossmodal-3600 photographs in 14 languages show that density confers no language independence: one scores 91.0% on English and 4.7% on Russian from identical image vectors, and a multilingual variant collapses on Telugu and Swahili. Our spread across languages is 14.0 against their 27.5 and 27.7. Three results run against us and are reported at equal weight: low-resource languages degrade sharply (Swahili 53.0%, Telugu 64.0%), attaching captions lowers cross-lingual retrieval by 11.4 points, and one setting omitted into one stage of our own retrieval cost 37 points of Korean top-1 accuracy while leaving nine languages untouched.",

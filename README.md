@@ -39,39 +39,39 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **1080**
+- Total tracked papers: **1093**
 - Last generated: **2026-09-04**
 
 ## Papers by Source
 
-- ACL Anthology: **5**
-- arXiv: **933**
+- ACL Anthology: **6**
+- arXiv: **945**
 - OpenReview: **142**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-09-03 | arXiv | [When Users Don't Ask: Benchmarking Context-Driven Memory Retrieval in Conversational Agents](content/papers/when-users-don-t-ask-benchmarking-context-driven-memory-retrieval-in-conversatio.md) | agent, benchmark, context |
+| 2026-09-03 | arXiv | [VideoHarness-RSI: Recursive Harness Self-Improvement for Long-Video Understanding with Frozen Vision-Language Models](content/papers/videoharness-rsi-recursive-harness-self-improvement-for-long-video-understanding.md) | agent, benchmark, context |
+| 2026-09-03 | arXiv | [Rethinking World Models for Safety-Critical Embodied Systems](content/papers/rethinking-world-models-for-safety-critical-embodied-systems.md) | episodic |
 | 2026-09-03 | OpenReview | [Reason Before Remembering: An Entity-Centric Framework for Trustworthy Conversational Memory](content/papers/reason-before-remembering-an-entity-centric-framework-for-trustworthy-conversati.md) | context, conversation, retrieval |
 | 2026-09-03 | OpenReview | [Profile-Graph Memory for LLM Agents: Implicit Cross-Entity Traversal through Narrative Profiles](content/papers/profile-graph-memory-for-llm-agents-implicit-cross-entity-traversal-through-narr.md) | agent, benchmark, compression |
+| 2026-09-03 | arXiv | [Proactive Service Agents: A Unified Decision Framework, Methods, and Evaluation](content/papers/proactive-service-agents-a-unified-decision-framework-methods-and-evaluation.md) | agent, long-term |
+| 2026-09-03 | arXiv | [Plan Pointers and Record-Directive Form in Budgeted Verification of Inherited Agent Memory](content/papers/plan-pointers-and-record-directive-form-in-budgeted-verification-of-inherited-ag.md) | agent |
+| 2026-09-03 | arXiv | [Learning What Not to Forget: Long-Horizon Agent Memory from a Few Kilobytes of Learning](content/papers/learning-what-not-to-forget-long-horizon-agent-memory-from-a-few-kilobytes-of-le.md) | agent, context, conversation |
+| 2026-09-03 | arXiv | [Fresh Memory, Stale Plans: Dependency-Scoped Validation for Distributed LLM-Agent Memory](content/papers/fresh-memory-stale-plans-dependency-scoped-validation-for-distributed-llm-agent-.md) | agent |
+| 2026-09-03 | arXiv | [Decoupled Analysis-Judging: An Automated Creativity Evaluator Using LLMs in Complex Multi-step Creativity Tasks](content/papers/decoupled-analysis-judging-an-automated-creativity-evaluator-using-llms-in-compl.md) | context |
+| 2026-09-03 | arXiv | [Bioinfoysis Technical Report](content/papers/bioinfoysis-technical-report.md) | agent, context |
+| 2026-09-03 | arXiv | [Activation-Keyed Momentum: An Anisotropic Momentum Update via the Delta Rule](content/papers/activation-keyed-momentum-an-anisotropic-momentum-update-via-the-delta-rule.md) | persistent memory |
+| 2026-09-02 | arXiv | [TRACE: Spatiotemporal Contact Memory Graph Network Simulator for Granular Dynamics](content/papers/trace-spatiotemporal-contact-memory-graph-network-simulator-for-granular-dynamic.md) | benchmark |
 | 2026-09-02 | arXiv | [PhoenixNest-Video: Evidence-Grounded Multimodal Agent Framework for Automated Video Interview Assessment](content/papers/phoenixnest-video-evidence-grounded-multimodal-agent-framework-for-automated-vid.md) | agent, retrieval |
 | 2026-09-02 | arXiv | [NS-Copilot: An LLM-Driven Agent System for Autonomous Neuroscience Analysis](content/papers/ns-copilot-an-llm-driven-agent-system-for-autonomous-neuroscience-analysis.md) | agent, benchmark |
+| 2026-09-02 | arXiv | [MemoryLACE: Memory Lifecycle-Aware Consolidation and Evidence Retrieval](content/papers/memorylace-memory-lifecycle-aware-consolidation-and-evidence-retrieval.md) | agent, long-term, retrieval |
 | 2026-09-02 | arXiv | [InsightSeg: Reusing Correction Insights for Guideline-Consistent Segmentation](content/papers/insightseg-reusing-correction-insights-for-guideline-consistent-segmentation.md) | agent, episodic |
 | 2026-09-02 | arXiv | [CAPTURE: Disentangling Preference Drift from Memory Poisoning in Personalized LLM Agents](content/papers/capture-disentangling-preference-drift-from-memory-poisoning-in-personalized-llm.md) | agent, benchmark, context |
 | 2026-09-02 | arXiv | [APEx: Distillation of Agent Procedural Experience for Adaptive Deep Research Question Answering](content/papers/apex-distillation-of-agent-procedural-experience-for-adaptive-deep-research-ques.md) | agent, benchmark |
 | 2026-09-02 | arXiv | [AGI Maze Prediction Datasets: A Compact Benchmark for Learning World Dynamics with Transformers](content/papers/agi-maze-prediction-datasets-a-compact-benchmark-for-learning-world-dynamics-wit.md) | benchmark |
-| 2026-09-01 | arXiv | [Zeta-Lite: A Concurrent, Branchable In-Browser SQL Database for Agentic Memory](content/papers/zeta-lite-a-concurrent-branchable-in-browser-sql-database-for-agentic-memory.md) | agent |
-| 2026-09-01 | arXiv | [The Memory Trust Gap: Capability-Dependent Failures in Persistent-Memory Agents](content/papers/the-memory-trust-gap-capability-dependent-failures-in-persistent-memory-agents.md) | agent, benchmark |
-| 2026-09-01 | arXiv | [Replacing Training with Memory: Listwise Selection for Text-to-SQL](content/papers/replacing-training-with-memory-listwise-selection-for-text-to-sql.md) | benchmark |
-| 2026-09-01 | arXiv | [MutMem-V2: Cryptographically Authorized Mutation in Persistent Agent Memory Portable Verification and Reproducible Evidence](content/papers/mutmem-v2-cryptographically-authorized-mutation-in-persistent-agent-memory-porta.md) | agent |
-| 2026-09-01 | arXiv | [ClinTraceBench: Source-Verifiable Longitudinal Clinical Reasoning over EHR-Derived Dialogues](content/papers/clintracebench-source-verifiable-longitudinal-clinical-reasoning-over-ehr-derive.md) | agent, compression, context |
-| 2026-09-01 | OpenReview | [CIRCUIT Memory: Confidence-Aware Multi-Axis Retrieval for Episodic Memory in LLM Agents](content/papers/circuit-memory-confidence-aware-multi-axis-retrieval-for-episodic-memory-in-llm-.md) | agent, episodic, retrieval |
-| 2026-09-01 | arXiv | [Agent Memory Is a Surface for Endogenous Authorization Laundering](content/papers/agent-memory-is-a-surface-for-endogenous-authorization-laundering.md) | agent |
-| 2026-09-01 | arXiv | [ARISE-RL: Agentic Rubric-Grounded Iterative Self-Evolution with Reinforcement Learning](content/papers/arise-rl-agentic-rubric-grounded-iterative-self-evolution-with-reinforcement-lea.md) | agent, benchmark |
-| 2026-08-31 | arXiv | [When Errors Become Memories: Causal Pathway Tracing in Multi-Turn Memory-Augmented LLMs](content/papers/when-errors-become-memories-causal-pathway-tracing-in-multi-turn-memory-augmente.md) | long-term |
-| 2026-08-31 | arXiv | [UTILMEM: Benchmarking Evidence Utilization in Long-Term Conversational Memory](content/papers/utilmem-benchmarking-evidence-utilization-in-long-term-conversational-memory.md) | agent, benchmark, conversation |
-| 2026-08-31 | arXiv | [The Optimizer Is the Agent: Reasoning-Driven Search across Prompts, Programs, and ML Workflows](content/papers/the-optimizer-is-the-agent-reasoning-driven-search-across-prompts-programs-and-m.md) | agent |
-| 2026-08-31 | arXiv | [Strong Drafts Need Compact Memories: Long-Context Speculative Decoding with Compressed KV Cache](content/papers/strong-drafts-need-compact-memories-long-context-speculative-decoding-with-compr.md) | agent, context |
 
 ## Suggested GitHub Setup
 
