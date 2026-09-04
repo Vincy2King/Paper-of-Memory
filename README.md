@@ -40,7 +40,7 @@ python3 scripts/update_papers.py --build-only
 ## Repository Snapshot
 
 - Total tracked papers: **1080**
-- Last generated: **2026-09-03**
+- Last generated: **2026-09-04**
 
 ## Papers by Source
 
@@ -52,6 +52,8 @@ python3 scripts/update_papers.py --build-only
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-09-03 | OpenReview | [Reason Before Remembering: An Entity-Centric Framework for Trustworthy Conversational Memory](content/papers/reason-before-remembering-an-entity-centric-framework-for-trustworthy-conversati.md) | context, conversation, retrieval |
+| 2026-09-03 | OpenReview | [Profile-Graph Memory for LLM Agents: Implicit Cross-Entity Traversal through Narrative Profiles](content/papers/profile-graph-memory-for-llm-agents-implicit-cross-entity-traversal-through-narr.md) | agent, benchmark, compression |
 | 2026-09-02 | arXiv | [PhoenixNest-Video: Evidence-Grounded Multimodal Agent Framework for Automated Video Interview Assessment](content/papers/phoenixnest-video-evidence-grounded-multimodal-agent-framework-for-automated-vid.md) | agent, retrieval |
 | 2026-09-02 | arXiv | [NS-Copilot: An LLM-Driven Agent System for Autonomous Neuroscience Analysis](content/papers/ns-copilot-an-llm-driven-agent-system-for-autonomous-neuroscience-analysis.md) | agent, benchmark |
 | 2026-09-02 | arXiv | [InsightSeg: Reusing Correction Insights for Guideline-Consistent Segmentation](content/papers/insightseg-reusing-correction-insights-for-guideline-consistent-segmentation.md) | agent, episodic |
@@ -70,8 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-08-31 | arXiv | [UTILMEM: Benchmarking Evidence Utilization in Long-Term Conversational Memory](content/papers/utilmem-benchmarking-evidence-utilization-in-long-term-conversational-memory.md) | agent, benchmark, conversation |
 | 2026-08-31 | arXiv | [The Optimizer Is the Agent: Reasoning-Driven Search across Prompts, Programs, and ML Workflows](content/papers/the-optimizer-is-the-agent-reasoning-driven-search-across-prompts-programs-and-m.md) | agent |
 | 2026-08-31 | arXiv | [Strong Drafts Need Compact Memories: Long-Context Speculative Decoding with Compressed KV Cache](content/papers/strong-drafts-need-compact-memories-long-context-speculative-decoding-with-compr.md) | agent, context |
-| 2026-08-31 | arXiv | [Slow to See, Slow to Suppress: Understanding the Effects of Modality in Context-Memory Conflicts](content/papers/slow-to-see-slow-to-suppress-understanding-the-effects-of-modality-in-context-me.md) | context, retrieval |
-| 2026-08-31 | arXiv | [Measure Before You Manage: Evaluating Agent Working Memory in Coding Agents](content/papers/measure-before-you-manage-evaluating-agent-working-memory-in-coding-agents.md) | agent, compression, context |
 
 ## Suggested GitHub Setup
 
