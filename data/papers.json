@@ -1,5 +1,33 @@
 [
   {
+    "abstract": "Egocentric assistants must continuously process visual streams that can exceed practical storage and computation budgets. Human memory selectively retains goal-relevant information. Drawing on rational action and Theory-of-Mind accounts, we frame memory admission as inferring which observations are relevant to the wearer's goals from observable behavior. We present Rational Episodic Memory (REM), which uses behavioral engagement as a functional approximation of agent-centered relevance. Comparing engagement with visual surprise and uniform sampling, we nd that engagement performs best on longer recordings, whereas surprise is stronger on shorter recordings, consistent with predictive-processing and event-segmentation accounts of event boundaries.",
+    "authors": [
+      "Joseph Letobar"
+    ],
+    "categories": [
+      "thecvf.com/ECCV/2026/Workshop/HCV_Extended_Abstracts/-/Submission"
+    ],
+    "id": "openreview:LEVpNb2NMb",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, episodic` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `HCV 2026 Poster` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Egocentric assistants must continuously process visual streams that can exceed practical storage and computation budgets.\n\n进一步看，论文的核心做法或实验重点可以概括为：Human memory selectively retains goal-relevant information.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "episodic memory"
+    ],
+    "one_liner": "Egocentric assistants must continuously process visual streams that can exceed practical storage and computation budgets.",
+    "published": "2026-09-06",
+    "relevance": "- 来源：OpenReview\n- Venue：HCV 2026 Poster\n- 高亮主题命中：agent, episodic\n- 检索关键词命中：episodic memory\n- 来源分类信息：thecvf.com/ECCV/2026/Workshop/HCV_Extended_Abstracts/-/Submission",
+    "slug": "rational-episodic-memory-from-rational-action-to-agent-centered-memory-in-egocen",
+    "source": "OpenReview",
+    "source_key": "LEVpNb2NMb",
+    "tags": [
+      "agent",
+      "episodic"
+    ],
+    "title": "Rational Episodic Memory: From Rational Action to Agent-Centered Memory in Egocentric Video",
+    "updated": "2026-09-06",
+    "url": "https://openreview.net/forum?id=LEVpNb2NMb",
+    "venue": "HCV 2026 Poster"
+  },
+  {
     "abstract": "Large language models (LLMs) are increas- ingly deployed as long-horizon conversational agents, motivating growing interest in mem- ory systems. However, existing benchmarks primarily evaluate memory through QA-style probing rather than in-situ conversational usage. We introduce LOCOMO-CONV, a conversa- tional memory benchmark derived from Lo- CoMo with four query styles: dialog, implicit, counterfactual, and composed. Across five rep- resentative memory systems, we evaluate both retrieval recall and end-to-end response qual- ity. Our experiments show that conversational framing exposes substantial retrieval gaps over- looked by QA benchmarks, especially on im- plicit and composed queries, which multi-facet query rewriting narrows for raw-turn mem- ory but not abstractive memory. We further find that strong retrieval does not fully trans- late into response quality, and that implicit queries exhibit silent grounding, where mem- ory improves contextual grounding without ex- plicitly surfacing the gold fact. These results point to reasoning-based memory elaboration as a promising direction, and we release aux- iliary supportive_memory annotations captur- ing conversationally useful context beyond the original gold evidence.",
     "authors": [
       "Wen-Yu Chang",

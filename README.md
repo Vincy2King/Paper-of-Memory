@@ -39,19 +39,20 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **1093**
-- Last generated: **2026-09-06**
+- Total tracked papers: **1094**
+- Last generated: **2026-09-07**
 
 ## Papers by Source
 
 - ACL Anthology: **6**
 - arXiv: **945**
-- OpenReview: **142**
+- OpenReview: **143**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-09-06 | OpenReview | [Rational Episodic Memory: From Rational Action to Agent-Centered Memory in Egocentric Video](content/papers/rational-episodic-memory-from-rational-action-to-agent-centered-memory-in-egocen.md) | agent, episodic |
 | 2026-09-03 | arXiv | [When Users Don't Ask: Benchmarking Context-Driven Memory Retrieval in Conversational Agents](content/papers/when-users-don-t-ask-benchmarking-context-driven-memory-retrieval-in-conversatio.md) | agent, benchmark, context |
 | 2026-09-03 | arXiv | [VideoHarness-RSI: Recursive Harness Self-Improvement for Long-Video Understanding with Frozen Vision-Language Models](content/papers/videoharness-rsi-recursive-harness-self-improvement-for-long-video-understanding.md) | agent, benchmark, context |
 | 2026-09-03 | arXiv | [Rethinking World Models for Safety-Critical Embodied Systems](content/papers/rethinking-world-models-for-safety-critical-embodied-systems.md) | episodic |
@@ -71,7 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-09-02 | arXiv | [InsightSeg: Reusing Correction Insights for Guideline-Consistent Segmentation](content/papers/insightseg-reusing-correction-insights-for-guideline-consistent-segmentation.md) | agent, episodic |
 | 2026-09-02 | arXiv | [CAPTURE: Disentangling Preference Drift from Memory Poisoning in Personalized LLM Agents](content/papers/capture-disentangling-preference-drift-from-memory-poisoning-in-personalized-llm.md) | agent, benchmark, context |
 | 2026-09-02 | arXiv | [APEx: Distillation of Agent Procedural Experience for Adaptive Deep Research Question Answering](content/papers/apex-distillation-of-agent-procedural-experience-for-adaptive-deep-research-ques.md) | agent, benchmark |
-| 2026-09-02 | arXiv | [AGI Maze Prediction Datasets: A Compact Benchmark for Learning World Dynamics with Transformers](content/papers/agi-maze-prediction-datasets-a-compact-benchmark-for-learning-world-dynamics-wit.md) | benchmark |
 
 ## Suggested GitHub Setup
 
