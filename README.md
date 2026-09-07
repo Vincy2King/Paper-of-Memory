@@ -39,20 +39,27 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **1094**
+- Total tracked papers: **1100**
 - Last generated: **2026-09-07**
 
 ## Papers by Source
 
 - ACL Anthology: **6**
-- arXiv: **945**
+- arXiv: **951**
 - OpenReview: **143**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-09-07 | OpenReview | [CIRCUIT Memory: Confidence-Aware Multi-Axis Retrieval for Episodic Memory in LLM Agents](content/papers/circuit-memory-confidence-aware-multi-axis-retrieval-for-episodic-memory-in-llm-.md) | agent, episodic, retrieval |
 | 2026-09-06 | OpenReview | [Rational Episodic Memory: From Rational Action to Agent-Centered Memory in Egocentric Video](content/papers/rational-episodic-memory-from-rational-action-to-agent-centered-memory-in-egocen.md) | agent, episodic |
+| 2026-09-04 | arXiv | [SimFuse3D: Source-Guided Target Simulation and Confidence-Guided Multi-Stage Localization Reweighting for Cross-Platform 3D Object Detection](content/papers/simfuse3d-source-guided-target-simulation-and-confidence-guided-multi-stage-loca.md) | memory |
+| 2026-09-04 | arXiv | [OR-Agent: Bridging Evolutionary Search and Structured Research for Automated Heuristic Design](content/papers/or-agent-bridging-evolutionary-search-and-structured-research-for-automated-heur.md) | agent, compression, long-term |
+| 2026-09-04 | arXiv | [Linguistic Trajectory Encoding for Efficient Long-Horizon Spatial Memory in Embodied Agents](content/papers/linguistic-trajectory-encoding-for-efficient-long-horizon-spatial-memory-in-embo.md) | agent, benchmark, compression |
+| 2026-09-04 | arXiv | [Does Your Agent's Memory Survive a Model Upgrade? A Controlled Study of Memory Portability](content/papers/does-your-agent-s-memory-survive-a-model-upgrade-a-controlled-study-of-memory-po.md) | agent, context, retrieval |
+| 2026-09-04 | arXiv | [Compact-Memory LLM Agents via Online Max-Member Clustering and Atom-Aware Packing](content/papers/compact-memory-llm-agents-via-online-max-member-clustering-and-atom-aware-packin.md) | agent, benchmark, context |
+| 2026-09-04 | arXiv | [AtomRec: Evolving Atomic Memory for Agentic Recommendation](content/papers/atomrec-evolving-atomic-memory-for-agentic-recommendation.md) | agent, benchmark |
 | 2026-09-03 | arXiv | [When Users Don't Ask: Benchmarking Context-Driven Memory Retrieval in Conversational Agents](content/papers/when-users-don-t-ask-benchmarking-context-driven-memory-retrieval-in-conversatio.md) | agent, benchmark, context |
 | 2026-09-03 | arXiv | [VideoHarness-RSI: Recursive Harness Self-Improvement for Long-Video Understanding with Frozen Vision-Language Models](content/papers/videoharness-rsi-recursive-harness-self-improvement-for-long-video-understanding.md) | agent, benchmark, context |
 | 2026-09-03 | arXiv | [Rethinking World Models for Safety-Critical Embodied Systems](content/papers/rethinking-world-models-for-safety-critical-embodied-systems.md) | episodic |
@@ -65,13 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-09-03 | arXiv | [Decoupled Analysis-Judging: An Automated Creativity Evaluator Using LLMs in Complex Multi-step Creativity Tasks](content/papers/decoupled-analysis-judging-an-automated-creativity-evaluator-using-llms-in-compl.md) | context |
 | 2026-09-03 | arXiv | [Bioinfoysis Technical Report](content/papers/bioinfoysis-technical-report.md) | agent, context |
 | 2026-09-03 | arXiv | [Activation-Keyed Momentum: An Anisotropic Momentum Update via the Delta Rule](content/papers/activation-keyed-momentum-an-anisotropic-momentum-update-via-the-delta-rule.md) | persistent memory |
-| 2026-09-02 | arXiv | [TRACE: Spatiotemporal Contact Memory Graph Network Simulator for Granular Dynamics](content/papers/trace-spatiotemporal-contact-memory-graph-network-simulator-for-granular-dynamic.md) | benchmark |
-| 2026-09-02 | arXiv | [PhoenixNest-Video: Evidence-Grounded Multimodal Agent Framework for Automated Video Interview Assessment](content/papers/phoenixnest-video-evidence-grounded-multimodal-agent-framework-for-automated-vid.md) | agent, retrieval |
-| 2026-09-02 | arXiv | [NS-Copilot: An LLM-Driven Agent System for Autonomous Neuroscience Analysis](content/papers/ns-copilot-an-llm-driven-agent-system-for-autonomous-neuroscience-analysis.md) | agent, benchmark |
-| 2026-09-02 | arXiv | [MemoryLACE: Memory Lifecycle-Aware Consolidation and Evidence Retrieval](content/papers/memorylace-memory-lifecycle-aware-consolidation-and-evidence-retrieval.md) | agent, long-term, retrieval |
-| 2026-09-02 | arXiv | [InsightSeg: Reusing Correction Insights for Guideline-Consistent Segmentation](content/papers/insightseg-reusing-correction-insights-for-guideline-consistent-segmentation.md) | agent, episodic |
-| 2026-09-02 | arXiv | [CAPTURE: Disentangling Preference Drift from Memory Poisoning in Personalized LLM Agents](content/papers/capture-disentangling-preference-drift-from-memory-poisoning-in-personalized-llm.md) | agent, benchmark, context |
-| 2026-09-02 | arXiv | [APEx: Distillation of Agent Procedural Experience for Adaptive Deep Research Question Answering](content/papers/apex-distillation-of-agent-procedural-experience-for-adaptive-deep-research-ques.md) | agent, benchmark |
 
 ## Suggested GitHub Setup
 

@@ -1,5 +1,33 @@
 [
   {
+    "abstract": "Episodic memory retrieval for LLM agents, whether via dense vector similarity or structured multi-axis indexing, generally assumes every extracted query cue is equally reliable, so an incomplete or ambiguous cue can eliminate relevant memories under rigid intersection. We introduce CIRCUIT Memory, a two-tier structured episodic memory architecture that instead separates query-cue confidence (how reliably a cue was extracted) from evidence matching (how well a memory satisfies it), letting retrieval down-weight unreliable cues rather than enforcing hard intersection across axes. On EPBench, replacing hard multi-axis intersection with this confidence-weighted aggregate, using per-axis held-out calibrated confidence, nearly eliminates zero-retrieval failures (61.1% to 1.0%) and is the most robust rule across two books; on LoCoMo, the same additive form, with per-axis confidence calibrated under held-out cross-validation, reaches 81.2% QA accuracy while scanning 41.6% fewer candidates than flat-scan retrieval. We report these gains alongside a candid analysis of where fixed structured strategies, and confidence-weighting itself, still fall short.",
+    "authors": [],
+    "categories": [
+      "aclweb.org/ACL/ARR/2026/August/-/Submission"
+    ],
+    "id": "openreview:yLpeuklQK4",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, episodic, retrieval` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 August Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Episodic memory retrieval for LLM agents, whether via dense vector similarity or structured multi-axis indexing, generally assumes every extracted query cue is equally reliable, so an incomplete or ambiguous cue can...\n\n进一步看，论文的核心做法或实验重点可以概括为：We introduce CIRCUIT Memory, a two-tier structured episodic memory architecture that instead separates query-cue confidence (how reliably a cue was extracted) from evidence matching (how well a memory satisfies it),...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "episodic memory",
+      "memory retrieval"
+    ],
+    "one_liner": "Episodic memory retrieval for LLM agents, whether via dense vector similarity or structured multi-axis indexing, generally assumes every extracted query cue is equally reliable,...",
+    "published": "2026-08-04",
+    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 August Submission\n- 高亮主题命中：agent, episodic, retrieval\n- 检索关键词命中：episodic memory, memory retrieval\n- 来源分类信息：aclweb.org/ACL/ARR/2026/August/-/Submission",
+    "slug": "circuit-memory-confidence-aware-multi-axis-retrieval-for-episodic-memory-in-llm-",
+    "source": "OpenReview",
+    "source_key": "yLpeuklQK4",
+    "tags": [
+      "agent",
+      "episodic",
+      "retrieval"
+    ],
+    "title": "CIRCUIT Memory: Confidence-Aware Multi-Axis Retrieval for Episodic Memory in LLM Agents",
+    "updated": "2026-09-07",
+    "url": "https://openreview.net/forum?id=yLpeuklQK4",
+    "venue": "ACL ARR 2026 August Submission"
+  },
+  {
     "abstract": "Egocentric assistants must continuously process visual streams that can exceed practical storage and computation budgets. Human memory selectively retains goal-relevant information. Drawing on rational action and Theory-of-Mind accounts, we frame memory admission as inferring which observations are relevant to the wearer's goals from observable behavior. We present Rational Episodic Memory (REM), which uses behavioral engagement as a functional approximation of agent-centered relevance. Comparing engagement with visual surprise and uniform sampling, we nd that engagement performs best on longer recordings, whereas surprise is stronger on shorter recordings, consistent with predictive-processing and event-segmentation accounts of event boundaries.",
     "authors": [
       "Joseph Letobar"
@@ -26,6 +54,219 @@
     "updated": "2026-09-06",
     "url": "https://openreview.net/forum?id=LEVpNb2NMb",
     "venue": "HCV 2026 Poster"
+  },
+  {
+    "abstract": "Changes in sensor height and viewpoint alter object-level point distributions, making cross-platform LiDAR unsupervised domain adaptation (UDA) difficult. Self-training uses labeled source scans and unlabeled target scans, yet a retained prediction may provide a useful target location while enclosing sparse foreground returns, background clutter, or points inconsistent with the predicted box. We refer to this mismatch as box-point inconsistency. We introduce SimFuse3D, which preserves the target placement and repairs the associated pseudo-object using measured geometry from labeled source scans. Object Memory retrieves a compatible labeled source instance. Target Simulation places its ground-truth box at the target location, aligns its points with the target viewing geometry, and filters the aligned crop to approximate the target observation. Confidence-Guided Multi-Stage Localization Reweighting (CMLR) maps each target pseudo-object confidence score to a bounded weight shared by RPN localization and R-CNN box regression. All components operate only during adaptation, leaving the detector architecture and inference graph unchanged. Across six cross-platform transfers, SimFuse3D exceeds Pi3DET-Net on every reported AP metric and ranks first among the compared adaptation methods on nearly all metrics. On nuScenes-to-KITTI, it ranks first among the compared adaptation methods with both evaluated detectors.",
+    "authors": [
+      "Yongchun Lin",
+      "Xinliang Zhang",
+      "Yun Zou",
+      "Zhixuan Xiao",
+      "Liang Lei",
+      "Jianya Guo",
+      "Yuqiang Zhai",
+      "Xiaofeng Wang",
+      "HaiKuo Xu",
+      "Haoang Li"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "id": "2609.04886v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `memory research` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Changes in sensor height and viewpoint alter object-level point distributions, making cross-platform LiDAR unsupervised domain adaptation (UDA) difficult.\n\n进一步看，论文的核心做法或实验重点可以概括为：Self-training uses labeled source scans and unlabeled target scans, yet a retained prediction may provide a useful target location while enclosing sparse foreground returns, background clutter, or points inconsistent...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory retrieval"
+    ],
+    "one_liner": "Changes in sensor height and viewpoint alter object-level point distributions, making cross-platform LiDAR unsupervised domain adaptation (UDA) difficult.",
+    "published": "2026-09-04",
+    "relevance": "- 来源：arXiv\n- 检索关键词命中：memory retrieval\n- 来源分类信息：cs.CV, cs.AI",
+    "slug": "simfuse3d-source-guided-target-simulation-and-confidence-guided-multi-stage-loca",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2609.04886v1",
+    "tags": [],
+    "title": "SimFuse3D: Source-Guided Target Simulation and Confidence-Guided Multi-Stage Localization Reweighting for Cross-Platform 3D Object Detection",
+    "updated": "2026-09-04",
+    "url": "http://arxiv.org/abs/2609.04886v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Automating heuristic design in complex, experiment-driven domains requires more than iterative mutation of solution algorithms. Current LLM-based evolutionary methods often rely on stochastic mutation loops that lack long-term strategic planning and a formal mechanism to learn from historical failures, leading to inefficient exploration and redundant trials. To address this, we present OR-Agent, a multi-agent research framework designed for automated heuristic design in optimization problems with rich experimental environments. OR-Agent organizes heuristic search as tree-based workflow that explicitly models branching hypothesis generation and systematic backtracking. Furthermore, to address the lack of adaptive learning in current agents, we introduce a hierarchical, optimization-inspired reflection system in which short-term reflections act as verbal gradients, long-term reflections as verbal momentum, and memory compression as semantic weight decay - collectively forming a principled mechanism for governing research dynamics. Extensive experiments on classical combinatorial optimization problems (e.g., TSP, CVRP, bin packing) and simulation-based cooperative driving scenarios demonstrate that OR-Agent outperforms strong evolutionary search baselines. All code and experimental data are publicly available at https://github.com/qiliuchn/OR-Agent.",
+    "authors": [
+      "Qi Liu",
+      "Ruochen Hao",
+      "Can Li",
+      "Wanjing Ma"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.CE",
+      "cs.NE"
+    ],
+    "id": "2602.13769v4",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, compression, long-term` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Automating heuristic design in complex, experiment-driven domains requires more than iterative mutation of solution algorithms.\n\n进一步看，论文的核心做法或实验重点可以概括为：Current LLM-based evolutionary methods often rely on stochastic mutation loops that lack long-term strategic planning and a formal mechanism to learn from historical failures, leading to inefficient exploration and...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory compression"
+    ],
+    "one_liner": "Automating heuristic design in complex, experiment-driven domains requires more than iterative mutation of solution algorithms.",
+    "published": "2026-02-14",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, compression, long-term\n- 检索关键词命中：memory compression\n- 来源分类信息：cs.AI, cs.CE, cs.NE",
+    "slug": "or-agent-bridging-evolutionary-search-and-structured-research-for-automated-heur",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2602.13769v4",
+    "tags": [
+      "agent",
+      "compression",
+      "long-term"
+    ],
+    "title": "OR-Agent: Bridging Evolutionary Search and Structured Research for Automated Heuristic Design",
+    "updated": "2026-09-04",
+    "url": "http://arxiv.org/abs/2602.13769v4",
+    "venue": ""
+  },
+  {
+    "abstract": "Embodied agents performing long-horizon tasks require a memory representation in which the state transitions of dynamic objects remain queryable in natural language across hours-to-days observation horizons. Existing systems either drop fine-grained motion (clip-level video-language embeddings), keep it only as raw coordinates (geometric SLAM), or organise it around immediate task context (agent working memories). None of them gives the agent a per-object timeline whose state transitions are themselves queryable in language. Our key contribution is \\textbf{Linguistic Trajectory Encoding} (LTE), which compresses dynamic object motion histories via a hybrid representation combining natural language descriptions, sparse spatial anchors, and visual anchors. LTE adapts compression to motion complexity by anchoring periods without reliable observations to the last seen location, while representing motion with geometric waypoints and linguistic descriptions to preserve accuracy. To evaluate these capabilities across extended time horizons, we construct the \\textbf{Spatial Memory Benchmark} (SMB) from EgoLife multi-day recordings, targeting capabilities absent in existing benchmarks: semantic trajectory retrieval and long-horizon object retrieval. On SMB, the LTE-based system achieves $45.3\\%$ success in semantic trajectory retrieval and $48.7\\%$ in long-horizon object retrieval, outperforming structured-memory and VLM baselines (best prior: $31.9\\%$ and $34.4\\%$). LTE achieves trajectory compression by factors of $8.7\\times$ to $26.1\\times$ with sub-second query latency on $24$\\,h video. On Ego4D natural-language queries, the system reaches $28.75\\%$ / $55.10\\%$ R@1/R@5, $+15.80$ / $+31.30$ pts over EgoVLPv2.",
+    "authors": [
+      "Tianyidan Xie",
+      "Shenyi Wang",
+      "Qiang Tang",
+      "Mingjie Wang",
+      "Zhicheng Qiu",
+      "Xuanfu Li",
+      "Zhan Xu",
+      "Jian Yang",
+      "Lanjun Wang",
+      "Zili Yi"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "id": "2609.04802v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, compression, context` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Embodied agents performing long-horizon tasks require a memory representation in which the state transitions of dynamic objects remain queryable in natural language across hours-to-days observation horizons.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing systems either drop fine-grained motion (clip-level video-language embeddings), keep it only as raw coordinates (geometric SLAM), or organise it around immediate task context (agent working memories).\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory benchmark",
+      "memory benchmarks",
+      "working memory"
+    ],
+    "one_liner": "Embodied agents performing long-horizon tasks require a memory representation in which the state transitions of dynamic objects remain queryable in natural language across...",
+    "published": "2026-09-04",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, compression, context, retrieval\n- 检索关键词命中：memory benchmark, memory benchmarks, working memory\n- 来源分类信息：cs.CV, cs.AI",
+    "slug": "linguistic-trajectory-encoding-for-efficient-long-horizon-spatial-memory-in-embo",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2609.04802v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "compression",
+      "context",
+      "retrieval"
+    ],
+    "title": "Linguistic Trajectory Encoding for Efficient Long-Horizon Spatial Memory in Embodied Agents",
+    "updated": "2026-09-04",
+    "url": "http://arxiv.org/abs/2609.04802v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Model upgrades are routine; memory migrations are not. An agent can keep the same memory store and still forget: a new model may interpret old notes differently, mixed embedding versions may break retrieval, and repair may fail without the original evidence. We compare memory as the same history is preserved verbatim for long-context reading (LC-RAW), divided into chunks for retrieval-augmented generation (RAG), compressed by a model into natural-language notes (NOTES), or normalized into a fixed-schema knowledge graph (KG-fixed). The study uses 48 synthetic histories with randomized answer codes, exact scoring, and two open-weight models with sub 10 billion parameters. Our measurements show that fixed-schema structures transfer reliably, with KG-fixed accuracy changing by only $+0.0004 \\pm 0.0020$ following a writer swap. Conversely, compressed NOTES exhibit high model coupling, with accuracy shifting asymmetrically by $+9.91$ or $-13.28$ percentage points depending on the specific migration direction. In RAG systems, partial embedding migrations using a 50/50 mixed index capture only a 4.96-point accuracy improvement, forfeiting the majority of the 11.90-point gain achieved through full re-embedding. Diagnostic decomposition attributes 80% ($0.467 \\pm 0.014$) of the NOTES accuracy deficit to information lost during initial construction, whereas retrieval failures drive 81% ($0.364 \\pm 0.012$) of the RAG deficit. Finally, store-only repair of NOTES fails to reach a 90% performance recovery target in all 48 test cases, whereas retaining the raw source history enables successful recovery in 34 of 48 cases for one tested direction. These findings highlight the necessity of direction-specific migration testing, strict embedding space isolation, and the retention of source histories for memory repair.",
+    "authors": [
+      "Ankit Goyal",
+      "Jaideep Ray"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.CL",
+      "cs.IR"
+    ],
+    "id": "2609.05339v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, context, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Model upgrades are routine; memory migrations are not.\n\n进一步看，论文的核心做法或实验重点可以概括为：An agent can keep the same memory store and still forget: a new model may interpret old notes differently, mixed embedding versions may break retrieval, and repair may fail without the original evidence.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "Model upgrades are routine; memory migrations are not.",
+    "published": "2026-09-04",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, context, retrieval\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.AI, cs.CL, cs.IR",
+    "slug": "does-your-agent-s-memory-survive-a-model-upgrade-a-controlled-study-of-memory-po",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2609.05339v1",
+    "tags": [
+      "agent",
+      "context",
+      "retrieval"
+    ],
+    "title": "Does Your Agent's Memory Survive a Model Upgrade? A Controlled Study of Memory Portability",
+    "updated": "2026-09-04",
+    "url": "http://arxiv.org/abs/2609.05339v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Many long-horizon LLM deployments face tight prompt budgets: latency, cost, and context limits make full-context prompting impractical as interaction length grows. The key question is then not raw recall alone, but which memory design gives the best quality--token trade-off in the compact-memory regime. We present \\textbf{RSM-full}, an online clustered-memory pipeline designed for a strong quality--token Pareto point. RSM-full combines two design choices: a cosine-gated \\emph{max-member merge} write rule and an atom-aware grouped context packer. On AMA-Bench, our primary compact-memory benchmark, it reaches $83%$ of Full-Context quality at $32%$ of the token cost at a $4$k budget; under four-seed averaging it beats the closest streaming-clustered baseline (Online K-Means) by $+3.5$--$6.0$,pp ($p{<}.001$) across the whole ${\\sim}2.6$k--${\\sim}5$k regime. Three-seed ablations show most of this gain comes from the merge rule ($+5.7$,pp over Online K-Means and matched-$τ$ DP-means) and the grouped packer ($+5.0$,pp over flat concatenation). The pattern reproduces on RealMem, an independent long-horizon persona-memory benchmark: RSM-full improves on Budget-RAG ($+0.69$,pp, $p{=}.006$), is on par with BM25-RAG (paired $Δ{=}{+}0.27$,pp, $p{=}.47$; we do \\emph{not} claim BM25 equivalence in the equivalence-test sense), and significantly outperforms Streaming-Proto ($+2.97$,pp) and the closest reproduced 2025 agentic-memory baseline A-MEM ($+1.65$,pp, $p{<}.001$). Across benchmarks the message is consistent: under tight budgets, compact-memory performance is driven mainly by how streaming memories are merged and how retrieved content is assembled. Overall, RSM-full is most useful when answeroughly $2k$--$5k$ prompt tokens, where itdefines a strong compact-memory Pareto point; higher-token baselines remain stronger outside this regime.",
+    "authors": [
+      "Jiahe Geng",
+      "Jinpeng Wang",
+      "Kun Yuan"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2609.04915v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Many long-horizon LLM deployments face tight prompt budgets: latency, cost, and context limits make full-context prompting impractical as interaction length grows.\n\n进一步看，论文的核心做法或实验重点可以概括为：The key question is then not raw recall alone, but which memory design gives the best quality--token trade-off in the compact-memory regime.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory",
+      "memory benchmark",
+      "memory benchmarks"
+    ],
+    "one_liner": "Many long-horizon LLM deployments face tight prompt budgets: latency, cost, and context limits make full-context prompting impractical as interaction length grows.",
+    "published": "2026-09-04",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context\n- 检索关键词命中：agent memory, memory benchmark, memory benchmarks\n- 来源分类信息：cs.AI",
+    "slug": "compact-memory-llm-agents-via-online-max-member-clustering-and-atom-aware-packin",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2609.04915v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context"
+    ],
+    "title": "Compact-Memory LLM Agents via Online Max-Member Clustering and Atom-Aware Packing",
+    "updated": "2026-09-04",
+    "url": "http://arxiv.org/abs/2609.04915v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Agentic recommender systems use large language models to maintain semantic memory and support evidence-aware recommendation. However, existing memory mechanisms often compress user and item information into coarse summaries and connect them with scalar collaborative links, making it difficult to preserve fine-grained preference stages or retrieve interpretable evidence as user interests evolve. We propose \\textsc{AtomRec}, an agentic recommender with evolving atomic collaborative memory. \\textsc{AtomRec} represents user and item memories as structured atomic units, builds semantic links across related memories, and evolves related historical fields when new interactions arrive. During recommendation, it retrieves linked memories as multi-hop evidence paths rather than isolated neighbor summaries, allowing collaborative signals to support grounded ranking. Experiments on four public benchmarks show that \\textsc{AtomRec} consistently outperforms state-of-the-art agentic and memory-augmented baselines, with around 8.5\\% average relative improvement across metrics.",
+    "authors": [
+      "Peiyu Hu",
+      "Weihai Lu",
+      "Siying Gu",
+      "Zhuodong Liu",
+      "Zhaokai Luo",
+      "Yuean Niu",
+      "Zhiyong Wang",
+      "Jia Wang"
+    ],
+    "categories": [
+      "cs.IR"
+    ],
+    "id": "2609.04882v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Agentic recommender systems use large language models to maintain semantic memory and support evidence-aware recommendation.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, existing memory mechanisms often compress user and item information into coarse summaries and connect them with scalar collaborative links, making it difficult to preserve fine-grained preference stages or...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory augmented",
+      "memory-augmented"
+    ],
+    "one_liner": "Agentic recommender systems use large language models to maintain semantic memory and support evidence-aware recommendation.",
+    "published": "2026-09-04",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark\n- 检索关键词命中：memory augmented, memory-augmented\n- 来源分类信息：cs.IR",
+    "slug": "atomrec-evolving-atomic-memory-for-agentic-recommendation",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2609.04882v1",
+    "tags": [
+      "agent",
+      "benchmark"
+    ],
+    "title": "AtomRec: Evolving Atomic Memory for Agentic Recommendation",
+    "updated": "2026-09-04",
+    "url": "http://arxiv.org/abs/2609.04882v1",
+    "venue": ""
   },
   {
     "abstract": "Large language models (LLMs) are increas- ingly deployed as long-horizon conversational agents, motivating growing interest in mem- ory systems. However, existing benchmarks primarily evaluate memory through QA-style probing rather than in-situ conversational usage. We introduce LOCOMO-CONV, a conversa- tional memory benchmark derived from Lo- CoMo with four query styles: dialog, implicit, counterfactual, and composed. Across five rep- resentative memory systems, we evaluate both retrieval recall and end-to-end response qual- ity. Our experiments show that conversational framing exposes substantial retrieval gaps over- looked by QA benchmarks, especially on im- plicit and composed queries, which multi-facet query rewriting narrows for raw-turn mem- ory but not abstractive memory. We further find that strong retrieval does not fully trans- late into response quality, and that implicit queries exhibit silent grounding, where mem- ory improves contextual grounding without ex- plicitly surfacing the gold fact. These results point to reasoning-based memory elaboration as a promising direction, and we release aux- iliary supportive_memory annotations captur- ing conversationally useful context beyond the original gold evidence.",
@@ -835,34 +1076,6 @@
     "updated": "2026-09-01",
     "url": "http://arxiv.org/abs/2609.01111v1",
     "venue": ""
-  },
-  {
-    "abstract": "Episodic memory retrieval for LLM agents, whether via dense vector similarity or structured multi-axis indexing, generally assumes every extracted query cue is equally reliable, so an incomplete or ambiguous cue can eliminate relevant memories under rigid intersection. We introduce CIRCUIT Memory, a two-tier structured episodic memory architecture that instead separates query-cue confidence (how reliably a cue was extracted) from evidence matching (how well a memory satisfies it), letting retrieval down-weight unreliable cues rather than enforcing hard intersection across axes. On EPBench, replacing hard multi-axis intersection with this confidence-weighted aggregate, using per-axis held-out calibrated confidence, nearly eliminates zero-retrieval failures (61.1% to 1.0%) and is the most robust rule across two books; on LoCoMo, the same additive form, with per-axis confidence calibrated under held-out cross-validation, reaches 81.2% QA accuracy while scanning 41.6% fewer candidates than flat-scan retrieval. We report these gains alongside a candid analysis of where fixed structured strategies, and confidence-weighting itself, still fall short.",
-    "authors": [],
-    "categories": [
-      "aclweb.org/ACL/ARR/2026/August/-/Submission"
-    ],
-    "id": "openreview:yLpeuklQK4",
-    "intro": "这篇论文被纳入仓库，是因为它和 `agent, episodic, retrieval` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 August Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Episodic memory retrieval for LLM agents, whether via dense vector similarity or structured multi-axis indexing, generally assumes every extracted query cue is equally reliable, so an incomplete or ambiguous cue can...\n\n进一步看，论文的核心做法或实验重点可以概括为：We introduce CIRCUIT Memory, a two-tier structured episodic memory architecture that instead separates query-cue confidence (how reliably a cue was extracted) from evidence matching (how well a memory satisfies it),...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
-    "matched_keywords": [
-      "episodic memory",
-      "memory retrieval"
-    ],
-    "one_liner": "Episodic memory retrieval for LLM agents, whether via dense vector similarity or structured multi-axis indexing, generally assumes every extracted query cue is equally reliable,...",
-    "published": "2026-08-04",
-    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 August Submission\n- 高亮主题命中：agent, episodic, retrieval\n- 检索关键词命中：episodic memory, memory retrieval\n- 来源分类信息：aclweb.org/ACL/ARR/2026/August/-/Submission",
-    "slug": "circuit-memory-confidence-aware-multi-axis-retrieval-for-episodic-memory-in-llm-",
-    "source": "OpenReview",
-    "source_key": "yLpeuklQK4",
-    "tags": [
-      "agent",
-      "episodic",
-      "retrieval"
-    ],
-    "title": "CIRCUIT Memory: Confidence-Aware Multi-Axis Retrieval for Episodic Memory in LLM Agents",
-    "updated": "2026-09-01",
-    "url": "https://openreview.net/forum?id=yLpeuklQK4",
-    "venue": "ACL ARR 2026 August Submission"
   },
   {
     "abstract": "Long-running LLM agents rely on persistent memory to carry state across interactions, including permissions, restrictions, and revocations. When memory misrepresents this evolving authorization state, the agent's own records can grant authority that the underlying history never permitted, resulting in misaligned behavior without any external attacks. We term this failure endogenous authorization laundering, where spurious permissions written into memory lead to unauthorized actions as their provenance is washed away. We then introduce EAL-Bench, which measures how accurately persistent memory preserves evolving authorization state and whether errors propagate to downstream unauthorized actions. We evaluate five LLMs as memory writers and two as executors across procurement, cybersecurity, and finance. We find that under incremental memory updates, writers create false authority for up to 50.2% of unauthorized requests; once false authority is present, executors act on it in 98.6% of trials. Two safeguards, requiring stored permissions to be backed by valid source events, and tracking permission changes through bounded event sourcing, substantially reduce laundering, but both also reject more legitimate actions, exposing a safety-utility tradeoff. Persistent memory is therefore not merely a performance component, but a part of an LLM agent's effective authorization policy.",
