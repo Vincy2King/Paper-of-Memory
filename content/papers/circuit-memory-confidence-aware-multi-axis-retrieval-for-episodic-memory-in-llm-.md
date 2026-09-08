@@ -4,7 +4,7 @@
 - Venue: ACL ARR 2026 August Submission
 - Paper ID: openreview:yLpeuklQK4
 - Published: 2026-08-04
-- Updated: 2026-09-07
+- Updated: 2026-09-08
 - Authors: Unknown
 - Tags: agent, episodic, retrieval
 - Categories: aclweb.org/ACL/ARR/2026/August/-/Submission

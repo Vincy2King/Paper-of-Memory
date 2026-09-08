@@ -52,7 +52,7 @@ python3 scripts/update_papers.py --build-only
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
-| 2026-09-07 | OpenReview | [CIRCUIT Memory: Confidence-Aware Multi-Axis Retrieval for Episodic Memory in LLM Agents](content/papers/circuit-memory-confidence-aware-multi-axis-retrieval-for-episodic-memory-in-llm-.md) | agent, episodic, retrieval |
+| 2026-09-08 | OpenReview | [CIRCUIT Memory: Confidence-Aware Multi-Axis Retrieval for Episodic Memory in LLM Agents](content/papers/circuit-memory-confidence-aware-multi-axis-retrieval-for-episodic-memory-in-llm-.md) | agent, episodic, retrieval |
 | 2026-09-06 | OpenReview | [Rational Episodic Memory: From Rational Action to Agent-Centered Memory in Egocentric Video](content/papers/rational-episodic-memory-from-rational-action-to-agent-centered-memory-in-egocen.md) | agent, episodic |
 | 2026-09-04 | arXiv | [SimFuse3D: Source-Guided Target Simulation and Confidence-Guided Multi-Stage Localization Reweighting for Cross-Platform 3D Object Detection](content/papers/simfuse3d-source-guided-target-simulation-and-confidence-guided-multi-stage-loca.md) | memory |
 | 2026-09-04 | arXiv | [OR-Agent: Bridging Evolutionary Search and Structured Research for Automated Heuristic Design](content/papers/or-agent-bridging-evolutionary-search-and-structured-research-for-automated-heur.md) | agent, compression, long-term |
