@@ -4,7 +4,7 @@
 - Venue: HCV 2026 Poster
 - Paper ID: openreview:LEVpNb2NMb
 - Published: 2026-09-06
-- Updated: 2026-09-06
+- Updated: 2026-09-08
 - Authors: Joseph Letobar
 - Tags: agent, episodic
 - Categories: thecvf.com/ECCV/2026/Workshop/HCV_Extended_Abstracts/-/Submission

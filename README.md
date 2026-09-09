@@ -40,7 +40,7 @@ python3 scripts/update_papers.py --build-only
 ## Repository Snapshot
 
 - Total tracked papers: **1100**
-- Last generated: **2026-09-08**
+- Last generated: **2026-09-09**
 
 ## Papers by Source
 
@@ -52,8 +52,9 @@ python3 scripts/update_papers.py --build-only
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-09-08 | OpenReview | [Rational Episodic Memory: From Rational Action to Agent-Centered Memory in Egocentric Video](content/papers/rational-episodic-memory-from-rational-action-to-agent-centered-memory-in-egocen.md) | agent, episodic |
+| 2026-09-08 | OpenReview | [Profile-Graph Memory for LLM Agents: Implicit Cross-Entity Traversal through Narrative Profiles](content/papers/profile-graph-memory-for-llm-agents-implicit-cross-entity-traversal-through-narr.md) | agent, benchmark, compression |
 | 2026-09-08 | OpenReview | [CIRCUIT Memory: Confidence-Aware Multi-Axis Retrieval for Episodic Memory in LLM Agents](content/papers/circuit-memory-confidence-aware-multi-axis-retrieval-for-episodic-memory-in-llm-.md) | agent, episodic, retrieval |
-| 2026-09-06 | OpenReview | [Rational Episodic Memory: From Rational Action to Agent-Centered Memory in Egocentric Video](content/papers/rational-episodic-memory-from-rational-action-to-agent-centered-memory-in-egocen.md) | agent, episodic |
 | 2026-09-04 | arXiv | [SimFuse3D: Source-Guided Target Simulation and Confidence-Guided Multi-Stage Localization Reweighting for Cross-Platform 3D Object Detection](content/papers/simfuse3d-source-guided-target-simulation-and-confidence-guided-multi-stage-loca.md) | memory |
 | 2026-09-04 | arXiv | [OR-Agent: Bridging Evolutionary Search and Structured Research for Automated Heuristic Design](content/papers/or-agent-bridging-evolutionary-search-and-structured-research-for-automated-heur.md) | agent, compression, long-term |
 | 2026-09-04 | arXiv | [Linguistic Trajectory Encoding for Efficient Long-Horizon Spatial Memory in Embodied Agents](content/papers/linguistic-trajectory-encoding-for-efficient-long-horizon-spatial-memory-in-embo.md) | agent, benchmark, compression |
@@ -64,7 +65,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-09-03 | arXiv | [VideoHarness-RSI: Recursive Harness Self-Improvement for Long-Video Understanding with Frozen Vision-Language Models](content/papers/videoharness-rsi-recursive-harness-self-improvement-for-long-video-understanding.md) | agent, benchmark, context |
 | 2026-09-03 | arXiv | [Rethinking World Models for Safety-Critical Embodied Systems](content/papers/rethinking-world-models-for-safety-critical-embodied-systems.md) | episodic |
 | 2026-09-03 | OpenReview | [Reason Before Remembering: An Entity-Centric Framework for Trustworthy Conversational Memory](content/papers/reason-before-remembering-an-entity-centric-framework-for-trustworthy-conversati.md) | context, conversation, retrieval |
-| 2026-09-03 | OpenReview | [Profile-Graph Memory for LLM Agents: Implicit Cross-Entity Traversal through Narrative Profiles](content/papers/profile-graph-memory-for-llm-agents-implicit-cross-entity-traversal-through-narr.md) | agent, benchmark, compression |
 | 2026-09-03 | arXiv | [Proactive Service Agents: A Unified Decision Framework, Methods, and Evaluation](content/papers/proactive-service-agents-a-unified-decision-framework-methods-and-evaluation.md) | agent, long-term |
 | 2026-09-03 | arXiv | [Plan Pointers and Record-Directive Form in Budgeted Verification of Inherited Agent Memory](content/papers/plan-pointers-and-record-directive-form-in-budgeted-verification-of-inherited-ag.md) | agent |
 | 2026-09-03 | arXiv | [Learning What Not to Forget: Long-Horizon Agent Memory from a Few Kilobytes of Learning](content/papers/learning-what-not-to-forget-long-horizon-agent-memory-from-a-few-kilobytes-of-le.md) | agent, context, conversation |
