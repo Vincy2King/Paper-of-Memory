@@ -52,9 +52,11 @@ python3 scripts/update_papers.py --build-only
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-09-10 | OpenReview | [Beyond Retrieval: Analytic Memory for Multimodal Agents](content/papers/beyond-retrieval-analytic-memory-for-multimodal-agents.md) | agent, benchmark, context |
 | 2026-09-09 | arXiv | [What Should an Agent Forget? Separating What Is Stored from What Is Used](content/papers/what-should-an-agent-forget-separating-what-is-stored-from-what-is-used.md) | agent, context, conversation |
 | 2026-09-09 | arXiv | [PRAGMA: Evaluating Personalized Guidance with Memory Alignment in Lifelong Conversations](content/papers/pragma-evaluating-personalized-guidance-with-memory-alignment-in-lifelong-conver.md) | benchmark, context, conversation |
 | 2026-09-09 | arXiv | [Myocardial Strain Drift Correction in Deep Learning Based Ultrasound Tracking](content/papers/myocardial-strain-drift-correction-in-deep-learning-based-ultrasound-tracking.md) | persistent memory |
+| 2026-09-09 | OpenReview | [Memory Makes the Difference: Evaluating How Different Memory Roles Shape Conversational Agents](content/papers/memory-makes-the-difference-evaluating-how-different-memory-roles-shape-conversa.md) | agent, context, conversation |
 | 2026-09-09 | arXiv | [HyperTrace: Hypothesis-Based Preference Tracing for Online LLM Personalization](content/papers/hypertrace-hypothesis-based-preference-tracing-for-online-llm-personalization.md) | long-term |
 | 2026-09-08 | arXiv | [What Eviction Destroys: A Restore-Counterfactual Audit of Forgetting in Agent Memory](content/papers/what-eviction-destroys-a-restore-counterfactual-audit-of-forgetting-in-agent-mem.md) | agent, benchmark, context |
 | 2026-09-08 | arXiv | [T-Mem: Memory That Anticipates, Not Archives](content/papers/t-mem-memory-that-anticipates-not-archives.md) | agent, context, conversation |
@@ -70,8 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-09-08 | arXiv | [CreaMem: A Scene-Aware Memory Architecture for Personalized Agents](content/papers/creamem-a-scene-aware-memory-architecture-for-personalized-agents.md) | agent, benchmark, episodic |
 | 2026-09-08 | arXiv | [Closing the Consistency Gap: Self-Evolving Agents That Learn to Stay on Course](content/papers/closing-the-consistency-gap-self-evolving-agents-that-learn-to-stay-on-course.md) | agent, benchmark, episodic |
 | 2026-09-08 | OpenReview | [CIRCUIT Memory: Confidence-Aware Multi-Axis Retrieval for Episodic Memory in LLM Agents](content/papers/circuit-memory-confidence-aware-multi-axis-retrieval-for-episodic-memory-in-llm-.md) | agent, episodic, retrieval |
-| 2026-09-07 | arXiv | [Where to Look and What to Use: Retrieve-Localize-Generate for Long-Term Conversational Memory Question Answering](content/papers/where-to-look-and-what-to-use-retrieve-localize-generate-for-long-term-conversat.md) | benchmark, context, conversation |
-| 2026-09-07 | arXiv | [On the Recall Scaling Laws in Mamba: A Theoretical and Mechanistic Study via Hashing](content/papers/on-the-recall-scaling-laws-in-mamba-a-theoretical-and-mechanistic-study-via-hash.md) | benchmark, context |
 
 ## Suggested GitHub Setup
 

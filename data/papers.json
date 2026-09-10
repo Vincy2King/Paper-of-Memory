@@ -1,5 +1,36 @@
 [
   {
+    "abstract": "Long-term multimodal memory must support not only retrieving relevant information but also computing over observations accumulated across interactions. Existing systems largely emphasize \\emph{retrieval memory}, organizing interaction histories through summaries and indexes to return query-relevant information at multiple granularities, from high-level abstractions to underlying records. In this paper, we formulate \\emph{analytic memory} as a complementary abstraction that organizes recurring multimodal observations into queryable structures supporting filtering, aggregation, ranking, and temporal comparison. We present \\method, a framework that jointly supports retrieval and analytic memory. Rather than relying on application-defined schemas, \\method extracts provenance-linked attribute-value observations from dialogue, images, and contextual metadata, discovers recurring field structures, and materializes them for analytical access. At inference time, a memory-aware planner decomposes queries into retrieval and analytic operations and routes each operation to the appropriate tools. Experiments on two long-term multimodal memory benchmarks, MemEye and MemGallery, show that AdaMM improves performance by up to 11.3\\% and 6.9\\%, respectively.",
+    "authors": [],
+    "categories": [
+      "aclweb.org/ACL/ARR/2026/August/-/Submission"
+    ],
+    "id": "openreview:Mu4CipM8Gd",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, long-term` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 August Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Long-term multimodal memory must support not only retrieving relevant information but also computing over observations accumulated across interactions.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing systems largely emphasize \\emph{retrieval memory}, organizing interaction histories through summaries and indexes to return query-relevant information at multiple granularities, from high-level abstractions...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory benchmark",
+      "memory benchmarks",
+      "retrieval memory"
+    ],
+    "one_liner": "Long-term multimodal memory must support not only retrieving relevant information but also computing over observations accumulated across interactions.",
+    "published": "2026-08-04",
+    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 August Submission\n- 高亮主题命中：agent, benchmark, context, long-term, retrieval\n- 检索关键词命中：memory benchmark, memory benchmarks, retrieval memory\n- 来源分类信息：aclweb.org/ACL/ARR/2026/August/-/Submission",
+    "slug": "beyond-retrieval-analytic-memory-for-multimodal-agents",
+    "source": "OpenReview",
+    "source_key": "Mu4CipM8Gd",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "Beyond Retrieval: Analytic Memory for Multimodal Agents",
+    "updated": "2026-09-10",
+    "url": "https://openreview.net/forum?id=Mu4CipM8Gd",
+    "venue": "ACL ARR 2026 August Submission"
+  },
+  {
     "abstract": "Persistent language agents need stored experience to remain available across time, while each answer requires evidence suited to a particular question. A superseded fact can mislead a current-state answer and still be essential for a historical query. We present RD-Forget, a training-free framework that separates what an agent stores from what it uses. A retained source archive preserves observations, and a query-conditioned memory view controls their influence on the current answer. A frozen language-model curator extracts relevant evidence, groups facts into semantic slots, and preserves the relations needed for multi-hop reasoning. Same-slot replacement links suppress superseded values in current-state contexts, while intent-aware retrieval makes earlier evidence eligible again. A rate-distortion formulation guides construction of the answer-time view within a memory budget. Experiments span conversational memory, knowledge updating, fact consolidation, long-context reasoning, and personalization under a shared answering pipeline. The results associate accurate answers with both query-relevant evidence construction and control over obsolete alternatives. Configurations without forgetting or query conditioning have the largest score deficits, while slot grouping, historical access, and relation preservation contribute complementary functions. Retaining history while selectively controlling its use offers a practical way to accommodate changing facts and future questions.",
     "authors": [
       "Yuhang Li",
@@ -101,6 +132,43 @@
     "updated": "2026-09-09",
     "url": "http://arxiv.org/abs/2609.09577v1",
     "venue": ""
+  },
+  {
+    "abstract": "Memory is a critical component of modern conversational systems. Prior research on memory mechanisms in RAG-based conversational systems has focused on how memory is stored and retrieved. However, less is known about how memories with different functional roles influence response quality, shape agents' responses across conversational contexts, and lead to distinct response behaviors. Existing evaluations are also largely reference-based, often missing response nuances that address users' preferences differently. In this work, we study the impact of different memory types on agent responses. We present a fine-grained taxonomy of conversational memory, classify retrieved memories by functional role, and design a user-centric evaluation framework that simulates user perspectives. Through comparative experiments on long-term datasets and frontier LLMs, our analysis reveals differentiated effects of memory: e.g., clarifying memory is associated with improved factual accuracy and constraint awareness, making responses more correct and personalized, while irrelevant memory reduces topic relevance and degrades constraint awareness. These findings show that, despite the power of frontier LLMs, different memory types can be leveraged to produce responses better aligned with a user's stated constraints, and motivate further research in this direction.",
+    "authors": [
+      "Yuxin Wang",
+      "Paul Thomas",
+      "Zhiwei Yu",
+      "Yuan Gao",
+      "Saeed Hassanpour",
+      "Soroush Vosoughi",
+      "Robert Sim",
+      "Nick Craswell"
+    ],
+    "categories": [
+      "EMNLP/2026/Workshop/GroundLM/-/Submission"
+    ],
+    "id": "openreview:q6THlzdjqH",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, context, conversation, long-term` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `GroundLM` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Prior research on memory mechanisms in RAG-based conversational systems has focused on how memory is stored and retrieved.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, less is known about how memories with different functional roles influence response quality, shape agents' responses across conversational contexts, and lead to distinct response behaviors.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "conversational memory"
+    ],
+    "one_liner": "Prior research on memory mechanisms in RAG-based conversational systems has focused on how memory is stored and retrieved.",
+    "published": "2026-08-30",
+    "relevance": "- 来源：OpenReview\n- Venue：GroundLM\n- 高亮主题命中：agent, context, conversation, long-term\n- 检索关键词命中：conversational memory\n- 来源分类信息：EMNLP/2026/Workshop/GroundLM/-/Submission",
+    "slug": "memory-makes-the-difference-evaluating-how-different-memory-roles-shape-conversa",
+    "source": "OpenReview",
+    "source_key": "q6THlzdjqH",
+    "tags": [
+      "agent",
+      "context",
+      "conversation",
+      "long-term"
+    ],
+    "title": "Memory Makes the Difference: Evaluating How Different Memory Roles Shape Conversational Agents",
+    "updated": "2026-09-09",
+    "url": "https://openreview.net/forum?id=q6THlzdjqH",
+    "venue": "GroundLM"
   },
   {
     "abstract": "Personalized language models aim to adapt responses to individual users, whose preferences are often latent and revealed gradually through interaction. Existing training-free methods rely on stored histories or retrieved memories, but they often struggle to reconcile long- term preferences with short-term topic-specific needs. To address this issue, we propose HyperTrace, a training-free framework that formulates online personalization as latent preference tracing. HyperTrace maintains interpretable natural-language hypotheses over short-term intent and long-term preferences, and updates them through an SMC-style reweight process using an LLM-based surrogate choice model. By updating these hypotheses across turns and sessions, HyperTrace enables personalization without parameter updates. Experiments on PRISM and PersonaMem-v2 show that HyperTrace improves response alignment, preference prediction, and profile consistency over strong online baselines, demonstrating the effectiveness of tracing latent user preferences for robust personalization. Code and scripts are available in the repository: https://github.com/jiseshen/HyperTrace.",
@@ -2499,43 +2567,6 @@
     "updated": "2026-08-30",
     "url": "http://arxiv.org/abs/2608.29953v1",
     "venue": ""
-  },
-  {
-    "abstract": "Prior research on memory mechanisms in RAG-based conversational systems has focused on how memory is stored and retrieved. However, less is known about how memories with different functional roles influence response quality, shape agents' responses across conversational contexts, and lead to distinct response behaviors. Existing evaluations are also largely reference-based, often missing response nuances that address users' preferences differently. In this work, we study the impact of different memory types on agent responses. We present a fine-grained taxonomy of conversational memory, classify retrieved memories by functional role, and design a user-centric evaluation framework that simulates user perspectives. Through comparative experiments on long-term datasets and frontier LLMs, our analysis reveals differentiated effects of memory: e.g., clarifying memory improves factual accuracy and constraint awareness, making responses more correct and personalized, while irrelevant memory reduces topic relevance and degrades constraint awareness. These findings show that, despite the power of frontier LLMs, different memory types can be leveraged to produce more personalized responses and motivate further research in this direction.",
-    "authors": [
-      "Yuxin Wang",
-      "Paul Thomas",
-      "Zhiwei Yu",
-      "Yuan Gao",
-      "Saeed Hassanpour",
-      "Soroush Vosoughi",
-      "Robert Sim",
-      "Nick Craswell"
-    ],
-    "categories": [
-      "EMNLP/2026/Workshop/GroundLM/-/Submission"
-    ],
-    "id": "openreview:q6THlzdjqH",
-    "intro": "这篇论文被纳入仓库，是因为它和 `agent, context, conversation, long-term` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `GroundLM` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Prior research on memory mechanisms in RAG-based conversational systems has focused on how memory is stored and retrieved.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, less is known about how memories with different functional roles influence response quality, shape agents' responses across conversational contexts, and lead to distinct response behaviors.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
-    "matched_keywords": [
-      "conversational memory"
-    ],
-    "one_liner": "Prior research on memory mechanisms in RAG-based conversational systems has focused on how memory is stored and retrieved.",
-    "published": "2026-08-30",
-    "relevance": "- 来源：OpenReview\n- Venue：GroundLM\n- 高亮主题命中：agent, context, conversation, long-term\n- 检索关键词命中：conversational memory\n- 来源分类信息：EMNLP/2026/Workshop/GroundLM/-/Submission",
-    "slug": "memory-makes-the-difference-evaluating-how-different-memory-roles-shape-conversa",
-    "source": "OpenReview",
-    "source_key": "q6THlzdjqH",
-    "tags": [
-      "agent",
-      "context",
-      "conversation",
-      "long-term"
-    ],
-    "title": "Memory Makes the Difference: Evaluating How Different Memory Roles Shape Conversational Agents",
-    "updated": "2026-08-30",
-    "url": "https://openreview.net/forum?id=q6THlzdjqH",
-    "venue": "GroundLM"
   },
   {
     "abstract": "Longitudinal clinical agents must maintain an evolving patient state from evidence distributed across visits, time points, and specialties. However, how agent memory should be designed for this setting remains unclear. We introduce a benchmark of multi-visit, multi-specialty patient records that evaluates long-context evidence retrieval, cross-time evidence aggregation, and cross-specialty clinical reasoning. Using this benchmark, we systematically study four memory design choices: curation, organization, retrieval, and memory-augmented reasoning. We find that temporal validity is more important than simply retaining more history; specialty-factorized memory reduces context but can hide shared evidence; and multiple agents help when specialists must reason together, not merely when evidence comes from multiple memories. Guided by these findings, we propose \\textit{MedCache}, a hybrid framework that constructs temporally valid patient memory, organizes evidence into overlapping specialty views, routes each query to relevant memories, and adaptively invokes one or multiple specialists. Experiments show that MedCache improves reasoning accuracy and memory efficiency over strong single-agent and multi-agent baselines, while generalizing across model backbones and external datasets.",
@@ -8861,37 +8892,6 @@
     "updated": "2026-08-05",
     "url": "http://arxiv.org/abs/2608.04746v1",
     "venue": ""
-  },
-  {
-    "abstract": "Long-term multimodal memory must support not only retrieving relevant information but also computing over observations accumulated across interactions. Existing systems largely emphasize \\emph{retrieval memory}, organizing interaction histories through summaries and indexes to return query-relevant information at multiple granularities, from high-level abstractions to underlying records. In this paper, we formulate \\emph{analytic memory} as a complementary abstraction that organizes recurring multimodal observations into queryable structures supporting filtering, aggregation, ranking, and temporal comparison. We present \\method, a framework that jointly supports retrieval and analytic memory. Rather than relying on application-defined schemas, \\method extracts provenance-linked attribute-value observations from dialogue, images, and contextual metadata, discovers recurring field structures, and materializes them for analytical access. At inference time, a memory-aware planner decomposes queries into retrieval and analytic operations and routes each operation to the appropriate tools. Experiments on two long-term multimodal memory benchmarks, MemEye and MemGallery, show that AdaMM improves performance by up to 11.3\\% and 6.9\\%, respectively.",
-    "authors": [],
-    "categories": [
-      "aclweb.org/ACL/ARR/2026/August/-/Submission"
-    ],
-    "id": "openreview:Mu4CipM8Gd",
-    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, long-term` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2026 August Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Long-term multimodal memory must support not only retrieving relevant information but also computing over observations accumulated across interactions.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing systems largely emphasize \\emph{retrieval memory}, organizing interaction histories through summaries and indexes to return query-relevant information at multiple granularities, from high-level abstractions...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
-    "matched_keywords": [
-      "memory benchmark",
-      "memory benchmarks",
-      "retrieval memory"
-    ],
-    "one_liner": "Long-term multimodal memory must support not only retrieving relevant information but also computing over observations accumulated across interactions.",
-    "published": "2026-08-04",
-    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2026 August Submission\n- 高亮主题命中：agent, benchmark, context, long-term, retrieval\n- 检索关键词命中：memory benchmark, memory benchmarks, retrieval memory\n- 来源分类信息：aclweb.org/ACL/ARR/2026/August/-/Submission",
-    "slug": "beyond-retrieval-analytic-memory-for-multimodal-agents",
-    "source": "OpenReview",
-    "source_key": "Mu4CipM8Gd",
-    "tags": [
-      "agent",
-      "benchmark",
-      "context",
-      "long-term",
-      "retrieval"
-    ],
-    "title": "Beyond Retrieval: Analytic Memory for Multimodal Agents",
-    "updated": "2026-08-05",
-    "url": "https://openreview.net/forum?id=Mu4CipM8Gd",
-    "venue": "ACL ARR 2026 August Submission"
   },
   {
     "abstract": "Attention layers are the backbone of today's most powerful and impactful models. Models with multi-million and billion parameters rely on contextual knowledge provided by attention layers. However, their use goes well beyond just being the core component of large language models. One particularly interesting application is in Memory Augmented Autoencoders (MemAE), specifically for unsupervised representation learning in outlier detection tasks. It was shown that attention helps these models be more effective in centralized learning scenarios. Our work aims to address the lack of specialized aggregation techniques in Federated Learning (FL) when it comes to MemAE models. In this paper we analyze the intricacies of the architecture behind Memory Augmented Autoencoders, and propose novel, guided approaches to effectively aggregate these models in federated scenarios. We demonstrate our approach on non-IID datasets and show that these novel aggregation schemes are more robust when dealing with numerous edge nodes in environments with unbalanced datasets, specifically for unsupervised anomaly detection scenarios. This approach improves the performance of even very shallow autoencoders, allowing them to be used in resource constrained environments.",
