@@ -1,5 +1,144 @@
 [
   {
+    "abstract": "Persistent language agents need stored experience to remain available across time, while each answer requires evidence suited to a particular question. A superseded fact can mislead a current-state answer and still be essential for a historical query. We present RD-Forget, a training-free framework that separates what an agent stores from what it uses. A retained source archive preserves observations, and a query-conditioned memory view controls their influence on the current answer. A frozen language-model curator extracts relevant evidence, groups facts into semantic slots, and preserves the relations needed for multi-hop reasoning. Same-slot replacement links suppress superseded values in current-state contexts, while intent-aware retrieval makes earlier evidence eligible again. A rate-distortion formulation guides construction of the answer-time view within a memory budget. Experiments span conversational memory, knowledge updating, fact consolidation, long-context reasoning, and personalization under a shared answering pipeline. The results associate accurate answers with both query-relevant evidence construction and control over obsolete alternatives. Configurations without forgetting or query conditioning have the largest score deficits, while slot grouping, historical access, and relation preservation contribute complementary functions. Retaining history while selectively controlling its use offers a practical way to accommodate changing facts and future questions.",
+    "authors": [
+      "Yuhang Li",
+      "Yuchen Li"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2609.10263v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, context, conversation, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Persistent language agents need stored experience to remain available across time, while each answer requires evidence suited to a particular question.\n\n进一步看，论文的核心做法或实验重点可以概括为：A superseded fact can mislead a current-state answer and still be essential for a historical query.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "conversational memory"
+    ],
+    "one_liner": "Persistent language agents need stored experience to remain available across time, while each answer requires evidence suited to a particular question.",
+    "published": "2026-09-09",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, context, conversation, retrieval\n- 检索关键词命中：conversational memory\n- 来源分类信息：cs.AI",
+    "slug": "what-should-an-agent-forget-separating-what-is-stored-from-what-is-used",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2609.10263v1",
+    "tags": [
+      "agent",
+      "context",
+      "conversation",
+      "retrieval"
+    ],
+    "title": "What Should an Agent Forget? Separating What Is Stored from What Is Used",
+    "updated": "2026-09-09",
+    "url": "http://arxiv.org/abs/2609.10263v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Large language models (LLMs) are increasingly deployed as personalized assistants that interact with users over extended periods of time. As conversations grow longer, relying on full interaction histories becomes increasingly inefficient and unreliable: long contexts introduce substantial computational overhead, making it difficult for models to consistently identify and utilize the most relevant information for the current request. These challenges have motivated memory systems that structure and retrieve user-specific information. In realistic interactions, users often seek practical guidance such as recommendations, planning, and decision support. Unlike factual recall tasks, personalized guidance requires models to integrate information across multiple past conversations and reason about changing user preferences and experiences. However, existing conversational memory evaluations mainly focus on retrieval and factual recall. To study this challenge, we introduce PRAGMA, a benchmark for evaluating personalized guidance in long-term conversations. PRGAMA contains curated longitudinal conversation histories, evidence annotations, and guidance scenarios grounded in evolving user contexts and incorrect user assumptions. Experiments across retrieval systems, memory systems, and long-context models reveal that current systems struggle both to recover the appropriate conversational evidence and to effectively use it for personalized guidance. Our results highlight the need for memory architectures that support robust conversational retrieval and memory-grounded reasoning beyond evidence recall.",
+    "authors": [
+      "Hyojeong Yu",
+      "Hyukhun Koh",
+      "Minsung Kim",
+      "Yunah Jang",
+      "Kyomin Jung"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2609.09664v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `benchmark, context, conversation, long-term` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Large language models (LLMs) are increasingly deployed as personalized assistants that interact with users over extended periods of time.\n\n进一步看，论文的核心做法或实验重点可以概括为：As conversations grow longer, relying on full interaction histories becomes increasingly inefficient and unreliable: long contexts introduce substantial computational overhead, making it difficult for models to...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "conversational memory"
+    ],
+    "one_liner": "Large language models (LLMs) are increasingly deployed as personalized assistants that interact with users over extended periods of time.",
+    "published": "2026-09-09",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：benchmark, context, conversation, long-term, retrieval\n- 检索关键词命中：conversational memory\n- 来源分类信息：cs.AI",
+    "slug": "pragma-evaluating-personalized-guidance-with-memory-alignment-in-lifelong-conver",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2609.09664v1",
+    "tags": [
+      "benchmark",
+      "context",
+      "conversation",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "PRAGMA: Evaluating Personalized Guidance with Memory Alignment in Lifelong Conversations",
+    "updated": "2026-09-09",
+    "url": "http://arxiv.org/abs/2609.09664v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Myocardial strain from echocardiography is a key biomarker for cardiac function. Recent deep learning methods show strong performance for myocardial motion tracking but often lack physiological constraints, leading to temporal drift across the cardiac cycle. Consequently, tracked points may not return to their relative initial positions at the end of each cardiac cycle, producing inaccurate strain estimates and even divergence in some cases. We propose a deep learning framework that compensates for drift during myocardial tracking. We extend a state-of-the-art echocardiographic tracking method (TAS-Net) with persistent memory tokens that share information across sliding windows over full cardiac cycles. A teacher-student fine-tuning strategy on real echocardiographic data then enforces physiologically consistent cyclic motion while preserving tracking accuracy. Experiments show reduced global and regional strain drift, improved agreement with clinical references, and better test-retest reproducibility, supporting more reliable myocardial strain estimation in clinical practice.",
+    "authors": [
+      "Thierry Judge",
+      "Nicolas Duchateau",
+      "Andreas Østvik",
+      "Havard Dalen",
+      "Bjørnar Grenne",
+      "Pierre-Yves Courand",
+      "Lasse Lovstakken",
+      "Pierre-Marc Jodoin",
+      "Olivier Bernard"
+    ],
+    "categories": [
+      "eess.IV",
+      "cs.AI",
+      "cs.CV"
+    ],
+    "id": "2609.09577v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `persistent memory` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Myocardial strain from echocardiography is a key biomarker for cardiac function.\n\n进一步看，论文的核心做法或实验重点可以概括为：Recent deep learning methods show strong performance for myocardial motion tracking but often lack physiological constraints, leading to temporal drift across the cardiac cycle.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "persistent memory"
+    ],
+    "one_liner": "Myocardial strain from echocardiography is a key biomarker for cardiac function.",
+    "published": "2026-09-09",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：persistent memory\n- 检索关键词命中：persistent memory\n- 来源分类信息：eess.IV, cs.AI, cs.CV",
+    "slug": "myocardial-strain-drift-correction-in-deep-learning-based-ultrasound-tracking",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2609.09577v1",
+    "tags": [
+      "persistent memory"
+    ],
+    "title": "Myocardial Strain Drift Correction in Deep Learning Based Ultrasound Tracking",
+    "updated": "2026-09-09",
+    "url": "http://arxiv.org/abs/2609.09577v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Personalized language models aim to adapt responses to individual users, whose preferences are often latent and revealed gradually through interaction. Existing training-free methods rely on stored histories or retrieved memories, but they often struggle to reconcile long- term preferences with short-term topic-specific needs. To address this issue, we propose HyperTrace, a training-free framework that formulates online personalization as latent preference tracing. HyperTrace maintains interpretable natural-language hypotheses over short-term intent and long-term preferences, and updates them through an SMC-style reweight process using an LLM-based surrogate choice model. By updating these hypotheses across turns and sessions, HyperTrace enables personalization without parameter updates. Experiments on PRISM and PersonaMem-v2 show that HyperTrace improves response alignment, preference prediction, and profile consistency over strong online baselines, demonstrating the effectiveness of tracing latent user preferences for robust personalization. Code and scripts are available in the repository: https://github.com/jiseshen/HyperTrace.",
+    "authors": [
+      "Jianzhi Shen",
+      "Keyu Mao",
+      "Minghao Shao",
+      "Chuanyang Jin",
+      "Yusong Wang",
+      "Ailiang Lin",
+      "Kotaro Funakoshi",
+      "Manabu Okumura",
+      "Tianmin Shu",
+      "Muhammad Shafique"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "id": "2609.09835v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `long-term` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Personalized language models aim to adapt responses to individual users, whose preferences are often latent and revealed gradually through interaction.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing training-free methods rely on stored histories or retrieved memories, but they often struggle to reconcile long- term preferences with short-term topic-specific needs.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "retrieval memory"
+    ],
+    "one_liner": "Personalized language models aim to adapt responses to individual users, whose preferences are often latent and revealed gradually through interaction.",
+    "published": "2026-09-09",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：long-term\n- 检索关键词命中：retrieval memory\n- 来源分类信息：cs.CL",
+    "slug": "hypertrace-hypothesis-based-preference-tracing-for-online-llm-personalization",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2609.09835v1",
+    "tags": [
+      "long-term"
+    ],
+    "title": "HyperTrace: Hypothesis-Based Preference Tracing for Online LLM Personalization",
+    "updated": "2026-09-09",
+    "url": "http://arxiv.org/abs/2609.09835v1",
+    "venue": ""
+  },
+  {
     "abstract": "Agent memory systems must discard stored information when their history exceeds a fixed token budget. Existing budget-accuracy frontiers quantify the resulting loss in accuracy, but do not distinguish irreversible losses caused by eviction from recoverable retrieval failures. We introduce the restore counterfactual, a per-question paired intervention that reinstates the question's gold evidence in the read-time context and reruns the same reader. Combining the change in correctness with whether the evidence was retained after eviction classifies each oracle-answerable error as recoverable, irreversible, or residual; in the residual case, the answer remains incorrect after restoration. We evaluate FIFO, random, redundancy-aware, and LLM-importance eviction on LongMemEval-S at three budgets and under two retrieval regimes, using GPT-4o-mini as the primary reader and judge and GPT-5.4-mini as a robustness reader. Under top-k retrieval at an 80k-token budget, the irreversible share among errors corrected by restoration is 0.67-0.73 for FIFO, random, and redundancy-aware eviction, compared with 0.60 for LLM-importance. At 8k tokens, it reaches 1.00 for all four policies. Recoverable errors occur under top-k retrieval at 80k tokens but are absent under forced-gold injection by construction, so budget-accuracy results are not directly comparable unless the retrieval regime is reported. An exploratory matched-accuracy analysis detects no difference in irreversible rate among accuracy-matched policy pairs at a resolution of 1.2-6 percentage points. The same analysis detects the deliberately destructive control. To our knowledge, this is the first per-item, per-question restore-counterfactual audit of eviction for external agent-memory stores on a standard conversational benchmark.",
     "authors": [
       "Chen Shen"
@@ -335,6 +474,37 @@
     "title": "Does Episodic Memory Help Close the Lexical Frequency Gap in Sensitivity to Syntactic Contrasts? A Test Using Retrieval-Augmented Language Models",
     "updated": "2026-09-08",
     "url": "http://arxiv.org/abs/2608.23851v2",
+    "venue": ""
+  },
+  {
+    "abstract": "Large language models (LLMs) are prone to hallucinating or misinterpreting facts, which impairs their usability in retrieval-augmented generation or data-to-text systems. We analyse how faithfulness of LLMs to provided context depends on how plausible they perceive the context to be (context-memory conflict). To better identify error patterns, we make use of the increased difficulty of non-English and low-resource language text generation and input data based on local knowledge, only partially captured in models' parametric knowledge. We let the models generate text in English, Czech, Slovak and Upper Sorbian from factual (FA), counterfactual (CFA) and fictional (FI) RDF triples containing local Czech and Slovak data. Contrary to our expectations, we observe only a weak context-memory conflict on the human-annotated sample. For Kimi K3 as an LLM judge, which agrees well with human annotations on the sample, counterfactual inputs receive only slightly lower faithfulness scores than factual ones (-0.05 on a 1-5 scale). We also find that a suboptimal choice of LLM judge would lead to overestimating the strength of the context-memory conflict.",
+    "authors": [
+      "Peter Kochelka",
+      "Aleš Manuel Papáček",
+      "Vojtěch Dvořák",
+      "Ondřej Dušek"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "id": "2609.09363v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `context, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Large language models (LLMs) are prone to hallucinating or misinterpreting facts, which impairs their usability in retrieval-augmented generation or data-to-text systems.\n\n进一步看，论文的核心做法或实验重点可以概括为：We analyse how faithfulness of LLMs to provided context depends on how plausible they perceive the context to be (context-memory conflict).\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "context memory"
+    ],
+    "one_liner": "Large language models (LLMs) are prone to hallucinating or misinterpreting facts, which impairs their usability in retrieval-augmented generation or data-to-text systems.",
+    "published": "2026-09-08",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：context, retrieval\n- 检索关键词命中：context memory\n- 来源分类信息：cs.CL",
+    "slug": "do-llms-make-more-mistakes-if-they-do-not-believe-the-input-data",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2609.09363v1",
+    "tags": [
+      "context",
+      "retrieval"
+    ],
+    "title": "Do LLMs Make More Mistakes If They Do Not Believe the Input Data?",
+    "updated": "2026-09-08",
+    "url": "http://arxiv.org/abs/2609.09363v1",
     "venue": ""
   },
   {
