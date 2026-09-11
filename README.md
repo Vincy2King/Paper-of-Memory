@@ -39,13 +39,13 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **1126**
+- Total tracked papers: **1130**
 - Last generated: **2026-09-11**
 
 ## Papers by Source
 
 - ACL Anthology: **6**
-- arXiv: **977**
+- arXiv: **981**
 - OpenReview: **143**
 
 ## Latest Papers
@@ -55,6 +55,10 @@ python3 scripts/update_papers.py --build-only
 | 2026-09-11 | OpenReview | [Representational Geometries of Perception and Working Memory](content/papers/representational-geometries-of-perception-and-working-memory.md) | working memory |
 | 2026-09-11 | OpenReview | [Multiple Oscillatory Neural Rhythms Support Metacognitive Access of Working Memory](content/papers/multiple-oscillatory-neural-rhythms-support-metacognitive-access-of-working-memo.md) | working memory |
 | 2026-09-11 | OpenReview | [Does Working Memory Selectively Modulate Subjective Perception?](content/papers/does-working-memory-selectively-modulate-subjective-perception.md) | working memory |
+| 2026-09-10 | arXiv | [Memory Compression for High-Fanout Agent Sandboxes](content/papers/memory-compression-for-high-fanout-agent-sandboxes.md) | agent, compression |
+| 2026-09-10 | arXiv | [MAPLE: Memory-Augmented Planning with Language and Evolution](content/papers/maple-memory-augmented-planning-with-language-and-evolution.md) | agent, benchmark |
+| 2026-09-10 | arXiv | [Grounding Agent Memory: Environment-Probing Curation for Enterprise Agents](content/papers/grounding-agent-memory-environment-probing-curation-for-enterprise-agents.md) | agent, context |
+| 2026-09-10 | arXiv | [Causal Episodic Memory for Feedback-Driven Agent Repair](content/papers/causal-episodic-memory-for-feedback-driven-agent-repair.md) | agent, benchmark, episodic |
 | 2026-09-10 | OpenReview | [Beyond Retrieval: Analytic Memory for Multimodal Agents](content/papers/beyond-retrieval-analytic-memory-for-multimodal-agents.md) | agent, benchmark, context |
 | 2026-09-09 | arXiv | [What Should an Agent Forget? Separating What Is Stored from What Is Used](content/papers/what-should-an-agent-forget-separating-what-is-stored-from-what-is-used.md) | agent, context, conversation |
 | 2026-09-09 | arXiv | [PRAGMA: Evaluating Personalized Guidance with Memory Alignment in Lifelong Conversations](content/papers/pragma-evaluating-personalized-guidance-with-memory-alignment-in-lifelong-conver.md) | benchmark, context, conversation |
@@ -68,10 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-09-08 | OpenReview | [Profile-Graph Memory for LLM Agents: Implicit Cross-Entity Traversal through Narrative Profiles](content/papers/profile-graph-memory-for-llm-agents-implicit-cross-entity-traversal-through-narr.md) | agent, benchmark, compression |
 | 2026-09-08 | arXiv | [Personalizing LLM Agent Memory Using Biometrics](content/papers/personalizing-llm-agent-memory-using-biometrics.md) | agent, benchmark, retrieval |
 | 2026-09-08 | arXiv | [MemForest: Efficient Agent Memory Management via EventTree Partitioning and Progressive Merging](content/papers/memforest-efficient-agent-memory-management-via-eventtree-partitioning-and-progr.md) | agent, benchmark, compression |
-| 2026-09-08 | arXiv | [MeClear: Cooperative Game-Theoretic Attribution and Risk-Aware Memory Clearance for Long-Horizon LLM Agents](content/papers/meclear-cooperative-game-theoretic-attribution-and-risk-aware-memory-clearance-f.md) | agent, context, retrieval |
-| 2026-09-08 | arXiv | [Graph-Based Personalized Memory for LLM Agents: Representation, Evolution, Retrieval, and Evaluation](content/papers/graph-based-personalized-memory-for-llm-agents-representation-evolution-retrieva.md) | agent, context, long-term |
-| 2026-09-08 | arXiv | [Does Episodic Memory Help Close the Lexical Frequency Gap in Sensitivity to Syntactic Contrasts? A Test Using Retrieval-Augmented Language Models](content/papers/does-episodic-memory-help-close-the-lexical-frequency-gap-in-sensitivity-to-synt.md) | episodic, retrieval |
-| 2026-09-08 | arXiv | [Do LLMs Make More Mistakes If They Do Not Believe the Input Data?](content/papers/do-llms-make-more-mistakes-if-they-do-not-believe-the-input-data.md) | context, retrieval |
 
 ## Suggested GitHub Setup
 

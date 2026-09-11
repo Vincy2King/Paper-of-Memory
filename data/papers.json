@@ -89,6 +89,141 @@
     "venue": "Crossref"
   },
   {
+    "abstract": "High-fanout agent workloads create a growing memory bottleneck because a single task may spawn many concurrent sandbox sessions. Yet these sandboxes are far from independent: they originate from a shared template and execute related trajectories, exposing substantial template-relative and cross-sandbox memory redundancy. Conventional memory compression is poorly matched to this setting in three fundamental dimensions: how to compress, because they fail to exploit similarity across non-identical sandbox pages; what to compress, because they control page-fault overhead through conservative page selection; and when to compress, because compression is either triggered by memory pressure or performed without awareness of agent execution phases. We present AgentZip, the first memory compression system designed specifically for AI-agent sandboxes. AgentZip introduces compression mechanisms that exploit both the template-relative and cross-sandbox redundancy. It broadens the compression scope to any page with a profitable representation and shifts overhead control from compression-time page selection to restore-time prefetching. It further aligns expensive compression with LLM waiting periods to avoid interfering with foreground tool execution. Across LLM training and inference workloads, AgentZip reduces sandbox-owned memory by up to 8.7x, compared with 2.1x for the Linux configuration. Restore prefetching and agent-execution-aware scheduling reduce the slowdown of aggressive compression from as high as 3.1x to 1.40x while retaining nearly all of its memory-saving benefit.",
+    "authors": [
+      "Mengming Li",
+      "Ceyu XU",
+      "Qijun Zhang",
+      "Jiangnan Yu",
+      "Xiangfeng Sun",
+      "Haohui Mai",
+      "Zhiyao Xie"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.OS"
+    ],
+    "id": "2609.11294v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, compression` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：High-fanout agent workloads create a growing memory bottleneck because a single task may spawn many concurrent sandbox sessions.\n\n进一步看，论文的核心做法或实验重点可以概括为：Yet these sandboxes are far from independent: they originate from a shared template and execute related trajectories, exposing substantial template-relative and cross-sandbox memory redundancy.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory compression"
+    ],
+    "one_liner": "High-fanout agent workloads create a growing memory bottleneck because a single task may spawn many concurrent sandbox sessions.",
+    "published": "2026-09-10",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, compression\n- 检索关键词命中：memory compression\n- 来源分类信息：cs.AI, cs.OS",
+    "slug": "memory-compression-for-high-fanout-agent-sandboxes",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2609.11294v1",
+    "tags": [
+      "agent",
+      "compression"
+    ],
+    "title": "Memory Compression for High-Fanout Agent Sandboxes",
+    "updated": "2026-09-10",
+    "url": "http://arxiv.org/abs/2609.11294v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Domain practitioners understand their business constraints but may lack operations-research expertise or dedicated support. LLM-based optimization agents translate natural-language requirements into models or solver programs that established optimization tools can execute. This progress makes optimization more accessible, but real-world operations are dynamic: changing demand, resources, and priorities require updates to data, constraints, and objectives. Methods centered on isolated requests offer limited support for rapid adaptation that preserves earlier decisions and reuses useful search results. We introduce MAPLE (Memory-Augmented Planning with Language and Evolution), an agent for maintaining optimization problems through successive natural-language requests. MAPLE combines language-based problem construction with mathematical programming and evolutionary search. It retains the optimization program, accepted plans, earlier updates, and candidate solutions for subsequent requests. We introduce NLDO, a benchmark of 15 trajectories and 180 updates spanning selection, scheduling, rostering, routing, and cloud-resource placement. In the main evaluation, MAPLE completes all trajectories and achieves online scalar quality of 0.951 and a Pareto hypervolume ratio of 0.875. Controlled comparisons further show that maintaining executable state improves update validity and can preserve useful search information across substantial revisions.",
+    "authors": [
+      "Kesheng Chen",
+      "Yamin Hu",
+      "Wenjian Luo"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2609.11636v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Domain practitioners understand their business constraints but may lack operations-research expertise or dedicated support.\n\n进一步看，论文的核心做法或实验重点可以概括为：LLM-based optimization agents translate natural-language requirements into models or solver programs that established optimization tools can execute.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory augmented",
+      "memory-augmented"
+    ],
+    "one_liner": "Domain practitioners understand their business constraints but may lack operations-research expertise or dedicated support.",
+    "published": "2026-09-10",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark\n- 检索关键词命中：memory augmented, memory-augmented\n- 来源分类信息：cs.AI",
+    "slug": "maple-memory-augmented-planning-with-language-and-evolution",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2609.11636v1",
+    "tags": [
+      "agent",
+      "benchmark"
+    ],
+    "title": "MAPLE: Memory-Augmented Planning with Language and Evolution",
+    "updated": "2026-09-10",
+    "url": "http://arxiv.org/abs/2609.11636v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Persistent memory is entering production-oriented agent platforms to help long-horizon agents accumulate experience across sessions. Yet a post-task curator agent restricted to completed trajectories can preserve errors, overgeneralize partial evidence, or retain stale knowledge. We introduce environment-probing curation, a deployment-compatible extension that gives an existing asynchronous curator agent least-privilege, read-only world tools to check, scope, and refresh candidate memories. It requires no model retraining and leaves the task agent, retriever, memory representation, and production write authority unchanged. In a production-like GitHub Copilot (GHCP) harness built on its SDK, we compare stateless execution, full in-context learning, GHCP + Mem, and GHCP + Mem (w/ Env Probing) on CLBench database exploration and 90 adapted APEX management-consulting tasks. On CLBench, probing raises pass rate from 39% to 73% and pass-discounted reward from 8.60 to 22.60 while reducing queries from 8.8 to 4.7 per question and task-agent cost from \\$3.38 to \\$1.68. Across six APEX worlds, all 18 memory-versus-baseline mean reward comparisons are positive and task-agent tool calls fall by 16--75%; probing gives the best task-agent reward gain per dollar in five worlds. Probing also attains higher mean reward than GHCP + Mem on both Sonnet 4.6 and Opus 4.7 without schema drift. Environment probing therefore turns existing agent-memory curation into an environment-informed, auditable process while preserving a compact task-time interface.",
+    "authors": [
+      "Susheel Suresh",
+      "Hazel Mak",
+      "Sahil Bhatnagar",
+      "Chhaya Methani",
+      "Alejandro Gutierrez Munoz"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.SE"
+    ],
+    "id": "2609.11060v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, context` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Persistent memory is entering production-oriented agent platforms to help long-horizon agents accumulate experience across sessions.\n\n进一步看，论文的核心做法或实验重点可以概括为：Yet a post-task curator agent restricted to completed trajectories can preserve errors, overgeneralize partial evidence, or retain stale knowledge.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory",
+      "persistent memory",
+      "retrieval memory"
+    ],
+    "one_liner": "Persistent memory is entering production-oriented agent platforms to help long-horizon agents accumulate experience across sessions.",
+    "published": "2026-09-10",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, context\n- 检索关键词命中：agent memory, persistent memory, retrieval memory\n- 来源分类信息：cs.AI, cs.SE",
+    "slug": "grounding-agent-memory-environment-probing-curation-for-enterprise-agents",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2609.11060v1",
+    "tags": [
+      "agent",
+      "context"
+    ],
+    "title": "Grounding Agent Memory: Environment-Probing Curation for Enterprise Agents",
+    "updated": "2026-09-10",
+    "url": "http://arxiv.org/abs/2609.11060v1",
+    "venue": ""
+  },
+  {
+    "abstract": "LLM agents that repair failures often discard successful corrections, forcing later episodes to rediscover similar solutions. We study whether finalized repair outcomes can improve subsequent Text-to-SQL episodes without parameter updates. We introduce MERIT, a training-free agent that maintains an online dual-polarity memory of oracle-verified corrections and observed unsuccessful directions. Under oracle-assisted benchmark feedback, only memories from earlier finalized episodes are eligible for retrieval. A deterministic classifier assigns a coarse failure type, which conditions a hybrid lexical-dense retriever before the frozen model generates each revision. Using Qwen2.5-7B-Instruct with identical initial predictions and repair budgets, \\method{} improves execution accuracy over stateless iterative repair from \\(66.34\\%\\) to \\(69.79\\%\\) on Spider and from \\(47.35\\%\\) to \\(48.44\\%\\) on BIRD. Paired analyses provide clear evidence for the Spider gain but weaker evidence on BIRD. MERIT is not reliably separated from untyped dynamic retrieval on either benchmark, while Reflexion-style memory reaches \\(51.24\\%\\) on BIRD at substantially higher inference cost. Ablations show that negative memory contributes modestly, the value of type conditioning and lexical-dense ranking is dataset dependent, and schema-local experience provides the most consistent benefit. These results clarify when causal cross-query memory improves repair and when broader memory representations remain preferable. Our implementation is available here:",
+    "authors": [
+      "Khang Nhat Hoang Vo",
+      "Tam Minh Chu",
+      "Anh Trac Duc Dinh",
+      "Thuyen Vinh Ha Bui",
+      "Tho Quan"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "id": "2608.05906v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, episodic, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：LLM agents that repair failures often discard successful corrections, forcing later episodes to rediscover similar solutions.\n\n进一步看，论文的核心做法或实验重点可以概括为：We study whether finalized repair outcomes can improve subsequent Text-to-SQL episodes without parameter updates.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "episodic memory"
+    ],
+    "one_liner": "LLM agents that repair failures often discard successful corrections, forcing later episodes to rediscover similar solutions.",
+    "published": "2026-08-06",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, episodic, retrieval\n- 检索关键词命中：episodic memory\n- 来源分类信息：cs.CL",
+    "slug": "causal-episodic-memory-for-feedback-driven-agent-repair",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2608.05906v2",
+    "tags": [
+      "agent",
+      "benchmark",
+      "episodic",
+      "retrieval"
+    ],
+    "title": "Causal Episodic Memory for Feedback-Driven Agent Repair",
+    "updated": "2026-09-10",
+    "url": "http://arxiv.org/abs/2608.05906v2",
+    "venue": ""
+  },
+  {
     "abstract": "Long-term multimodal memory must support not only retrieving relevant information but also computing over observations accumulated across interactions. Existing systems largely emphasize \\emph{retrieval memory}, organizing interaction histories through summaries and indexes to return query-relevant information at multiple granularities, from high-level abstractions to underlying records. In this paper, we formulate \\emph{analytic memory} as a complementary abstraction that organizes recurring multimodal observations into queryable structures supporting filtering, aggregation, ranking, and temporal comparison. We present \\method, a framework that jointly supports retrieval and analytic memory. Rather than relying on application-defined schemas, \\method extracts provenance-linked attribute-value observations from dialogue, images, and contextual metadata, discovers recurring field structures, and materializes them for analytical access. At inference time, a memory-aware planner decomposes queries into retrieval and analytic operations and routes each operation to the appropriate tools. Experiments on two long-term multimodal memory benchmarks, MemEye and MemGallery, show that AdaMM improves performance by up to 11.3\\% and 6.9\\%, respectively.",
     "authors": [],
     "categories": [
