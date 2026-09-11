@@ -40,7 +40,7 @@ python3 scripts/update_papers.py --build-only
 ## Repository Snapshot
 
 - Total tracked papers: **1126**
-- Last generated: **2026-09-10**
+- Last generated: **2026-09-11**
 
 ## Papers by Source
 
@@ -52,6 +52,9 @@ python3 scripts/update_papers.py --build-only
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-09-11 | OpenReview | [Representational Geometries of Perception and Working Memory](content/papers/representational-geometries-of-perception-and-working-memory.md) | working memory |
+| 2026-09-11 | OpenReview | [Multiple Oscillatory Neural Rhythms Support Metacognitive Access of Working Memory](content/papers/multiple-oscillatory-neural-rhythms-support-metacognitive-access-of-working-memo.md) | working memory |
+| 2026-09-11 | OpenReview | [Does Working Memory Selectively Modulate Subjective Perception?](content/papers/does-working-memory-selectively-modulate-subjective-perception.md) | working memory |
 | 2026-09-10 | OpenReview | [Beyond Retrieval: Analytic Memory for Multimodal Agents](content/papers/beyond-retrieval-analytic-memory-for-multimodal-agents.md) | agent, benchmark, context |
 | 2026-09-09 | arXiv | [What Should an Agent Forget? Separating What Is Stored from What Is Used](content/papers/what-should-an-agent-forget-separating-what-is-stored-from-what-is-used.md) | agent, context, conversation |
 | 2026-09-09 | arXiv | [PRAGMA: Evaluating Personalized Guidance with Memory Alignment in Lifelong Conversations](content/papers/pragma-evaluating-personalized-guidance-with-memory-alignment-in-lifelong-conver.md) | benchmark, context, conversation |
@@ -69,9 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-09-08 | arXiv | [Graph-Based Personalized Memory for LLM Agents: Representation, Evolution, Retrieval, and Evaluation](content/papers/graph-based-personalized-memory-for-llm-agents-representation-evolution-retrieva.md) | agent, context, long-term |
 | 2026-09-08 | arXiv | [Does Episodic Memory Help Close the Lexical Frequency Gap in Sensitivity to Syntactic Contrasts? A Test Using Retrieval-Augmented Language Models](content/papers/does-episodic-memory-help-close-the-lexical-frequency-gap-in-sensitivity-to-synt.md) | episodic, retrieval |
 | 2026-09-08 | arXiv | [Do LLMs Make More Mistakes If They Do Not Believe the Input Data?](content/papers/do-llms-make-more-mistakes-if-they-do-not-believe-the-input-data.md) | context, retrieval |
-| 2026-09-08 | arXiv | [CreaMem: A Scene-Aware Memory Architecture for Personalized Agents](content/papers/creamem-a-scene-aware-memory-architecture-for-personalized-agents.md) | agent, benchmark, episodic |
-| 2026-09-08 | arXiv | [Closing the Consistency Gap: Self-Evolving Agents That Learn to Stay on Course](content/papers/closing-the-consistency-gap-self-evolving-agents-that-learn-to-stay-on-course.md) | agent, benchmark, episodic |
-| 2026-09-08 | OpenReview | [CIRCUIT Memory: Confidence-Aware Multi-Axis Retrieval for Episodic Memory in LLM Agents](content/papers/circuit-memory-confidence-aware-multi-axis-retrieval-for-episodic-memory-in-llm-.md) | agent, episodic, retrieval |
 
 ## Suggested GitHub Setup
 

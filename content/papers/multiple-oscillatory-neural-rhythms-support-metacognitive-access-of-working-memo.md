@@ -4,8 +4,8 @@
 - Venue: Crossref
 - Paper ID: openreview:k5eqDItLAd
 - Published: 2026-04-09
-- Updated: 2026-04-16
-- Authors: Yang Di, Xingwei An, Hsin-Hung Li
+- Updated: 2026-09-11
+- Authors: {'fullname': 'Yang Di'}, {'fullname': 'Xingwei An'}, {'fullname': 'Hsin-Hung Li', 'username': '~Hsin-Hung_Li1'}
 - Tags: working memory
 - Categories: OpenReview.net/Public_Article/ORCID.org/-/Record
 - URL: https://openreview.net/forum?id=k5eqDItLAd

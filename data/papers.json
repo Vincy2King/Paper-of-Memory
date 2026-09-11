@@ -1,5 +1,94 @@
 [
   {
+    "abstract": "h3>Abstract</h3> <p>This study compared the representational geometry of visual perception and visual working memory using human 7T fMRI. Observers viewed a face-scene blended sample, attended to either the face or scene, and judged whether the attended aspect matched a subsequent test image. We found that the stimulus coding dimension distinguishing faces and scenes was rotated when perceptual content entered working memory, in both visual and association areas. In these regions, exclusive combinations (i.e., perceived face and memorized scene vs. perceived scene and memorized face) were linearly decodable, indicating that perception and working memory occupy distinct subspaces. Such high-dimensional, flexible coding may help prevent confusion between perception and memory. In contrast, robust cross-decoding across perception and working memory revealed factorized representational formats, consistent with generalizability of their contents. The balance between flexibility and abstraction varied along the cortical hierarchy: early sensory regions emphasized flexibility, whereas transmodal regions showed greater abstraction.</p><h3>Highlights</h3> <p>Representational geometry rotates when perceptual content enters working memory.</p><p>Such rotation expands the representational dimensionality for flexible coding.</p><p>Perceptual and mnemonic representations are still generalizable across each other.</p><p>Flexibility–generalization tradeoff aligns with the unimodal–transmodal gradient.</p>",
+    "authors": [
+      "{'fullname': 'Tomoya Nakamura', 'username': '~Tomoya_Nakamura3'}",
+      "{'fullname': 'Seng Bum Michael Yoo'}",
+      "{'fullname': 'Kendrick Kay'}",
+      "{'fullname': 'Hakwan Lau'}",
+      "{'fullname': 'Ali Moharramipour'}"
+    ],
+    "categories": [
+      "OpenReview.net/Public_Article/ORCID.org/-/Record"
+    ],
+    "id": "openreview:zcrzzRJ3G8",
+    "intro": "这篇论文被纳入仓库，是因为它和 `working memory` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `Crossref` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：h3>Abstract</h3> <p>This study compared the representational geometry of visual perception and visual working memory using human 7T fMRI.\n\n进一步看，论文的核心做法或实验重点可以概括为：Observers viewed a face-scene blended sample, attended to either the face or scene, and judged whether the attended aspect matched a subsequent test image.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "working memory"
+    ],
+    "one_liner": "h3>Abstract</h3> <p>This study compared the representational geometry of visual perception and visual working memory using human 7T fMRI.",
+    "published": "2025-09-12",
+    "relevance": "- 来源：OpenReview\n- Venue：Crossref\n- 高亮主题命中：working memory\n- 检索关键词命中：working memory\n- 来源分类信息：OpenReview.net/Public_Article/ORCID.org/-/Record",
+    "slug": "representational-geometries-of-perception-and-working-memory",
+    "source": "OpenReview",
+    "source_key": "zcrzzRJ3G8",
+    "tags": [
+      "working memory"
+    ],
+    "title": "Representational Geometries of Perception and Working Memory",
+    "updated": "2026-09-11",
+    "url": "https://openreview.net/forum?id=zcrzzRJ3G8",
+    "venue": "Crossref"
+  },
+  {
+    "abstract": "p>Working memory enables the maintenance of information to guide behavior, yet its representations are inherently noisy and variable. To act effectively, observers must track the uncertainty of their own memory. However, the neural mechanisms supporting uncertainty representations in working memory remain poorly understood, particularly at the level of neural dynamics. Here, we combined electroencephalography (EEG) with a spatial visual working memory task that elicited trial-by-trial uncertainty reports to investigate how oscillatory activity encodes memory uncertainty. We identified two forms of uncertainty supported by distinct oscillatory neural activity. Using a probabilistic encoding-decoding model, we found that memory content can be reconstructed from alpha-band activity, and that the precision of these representations predicts subsequent uncertainty reports, consistent with probabilistic mnemonic representations. In parallel, beta-band activity contained a scalar, magnitude-based, representation of uncertainty. This signal exhibited slow, persistent dynamics across task epochs and tracked uncertainty reports for both the current and previous trials. Together, these findings show that the human brain multiplexes two neural codes for memory uncertainty, representational precision and a scalar confidence signal, across distinct oscillatory rhythms, providing a neural dynamical account of metacognitive access to working memory.</p>",
+    "authors": [
+      "{'fullname': 'Yang Di'}",
+      "{'fullname': 'Xingwei An'}",
+      "{'fullname': 'Hsin-Hung Li', 'username': '~Hsin-Hung_Li1'}"
+    ],
+    "categories": [
+      "OpenReview.net/Public_Article/ORCID.org/-/Record"
+    ],
+    "id": "openreview:k5eqDItLAd",
+    "intro": "这篇论文被纳入仓库，是因为它和 `working memory` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `Crossref` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：p>Working memory enables the maintenance of information to guide behavior, yet its representations are inherently noisy and variable.\n\n进一步看，论文的核心做法或实验重点可以概括为：To act effectively, observers must track the uncertainty of their own memory.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "working memory"
+    ],
+    "one_liner": "p>Working memory enables the maintenance of information to guide behavior, yet its representations are inherently noisy and variable.",
+    "published": "2026-04-09",
+    "relevance": "- 来源：OpenReview\n- Venue：Crossref\n- 高亮主题命中：working memory\n- 检索关键词命中：working memory\n- 来源分类信息：OpenReview.net/Public_Article/ORCID.org/-/Record",
+    "slug": "multiple-oscillatory-neural-rhythms-support-metacognitive-access-of-working-memo",
+    "source": "OpenReview",
+    "source_key": "k5eqDItLAd",
+    "tags": [
+      "working memory"
+    ],
+    "title": "Multiple Oscillatory Neural Rhythms Support Metacognitive Access of Working Memory",
+    "updated": "2026-09-11",
+    "url": "https://openreview.net/forum?id=k5eqDItLAd",
+    "venue": "Crossref"
+  },
+  {
+    "abstract": "This study aimed to investigate how working memory interacts with perception at the behavioral level. We examined whether working memory modulates subjective perception when the general capacity for perceptual processing is kept constant. This possibility is in part motivated by the neuropsychological phenomenon of blindsight, in which subjective perception and general perceptual capacity are dissociated. In a previous pilot study (n = 8), we manipulated the congruency between working memory and perceptual content. We observed a trend suggesting that holding categorically incongruent content in working memory selectively impaired sensitivity (da) in a Yes/No (Y/N) detection task, even when perceptual processing capacity was matched using a two-interval forced choice (2-IFC) task. In the current study (n = 16), we tested the effect of congruency on the Y/N discrimination task with an increased sample size. To match perceptual processing capacity across conditions, we titrated stimulus contrast in a two-interval forced choice (2-IFC) task again. Contrary to the previous pilot study, we did not find evidence that working memory selectively modulates subjective perception, as measured by sensitivity (da) in the Y/N task, when processing capacity in the 2-IFC task was matched. Given this discrepancy, we pre-register a follow-up data collection on the original pilot design (i.e., Y/N detection), including the analysis plan and stopping rule.",
+    "authors": [
+      "{'fullname': 'Wonyi Che'}",
+      "{'fullname': 'Tomoya Nakamura', 'username': '~Tomoya_Nakamura3'}",
+      "{'fullname': 'Hakwan Lau'}"
+    ],
+    "categories": [
+      "OpenReview.net/Public_Article/ORCID.org/-/Record"
+    ],
+    "id": "openreview:RjGRIFqFlU",
+    "intro": "这篇论文被纳入仓库，是因为它和 `working memory` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `Crossref` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：This study aimed to investigate how working memory interacts with perception at the behavioral level.\n\n进一步看，论文的核心做法或实验重点可以概括为：We examined whether working memory modulates subjective perception when the general capacity for perceptual processing is kept constant.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "working memory"
+    ],
+    "one_liner": "This study aimed to investigate how working memory interacts with perception at the behavioral level.",
+    "published": "2025-11-14",
+    "relevance": "- 来源：OpenReview\n- Venue：Crossref\n- 高亮主题命中：working memory\n- 检索关键词命中：working memory\n- 来源分类信息：OpenReview.net/Public_Article/ORCID.org/-/Record",
+    "slug": "does-working-memory-selectively-modulate-subjective-perception",
+    "source": "OpenReview",
+    "source_key": "RjGRIFqFlU",
+    "tags": [
+      "working memory"
+    ],
+    "title": "Does Working Memory Selectively Modulate Subjective Perception?",
+    "updated": "2026-09-11",
+    "url": "https://openreview.net/forum?id=RjGRIFqFlU",
+    "venue": "Crossref"
+  },
+  {
     "abstract": "Long-term multimodal memory must support not only retrieving relevant information but also computing over observations accumulated across interactions. Existing systems largely emphasize \\emph{retrieval memory}, organizing interaction histories through summaries and indexes to return query-relevant information at multiple granularities, from high-level abstractions to underlying records. In this paper, we formulate \\emph{analytic memory} as a complementary abstraction that organizes recurring multimodal observations into queryable structures supporting filtering, aggregation, ranking, and temporal comparison. We present \\method, a framework that jointly supports retrieval and analytic memory. Rather than relying on application-defined schemas, \\method extracts provenance-linked attribute-value observations from dialogue, images, and contextual metadata, discovers recurring field structures, and materializes them for analytical access. At inference time, a memory-aware planner decomposes queries into retrieval and analytic operations and routes each operation to the appropriate tools. Experiments on two long-term multimodal memory benchmarks, MemEye and MemGallery, show that AdaMM improves performance by up to 11.3\\% and 6.9\\%, respectively.",
     "authors": [],
     "categories": [
@@ -38384,35 +38473,6 @@
     "venue": "Crossref"
   },
   {
-    "abstract": "p>Working memory enables the maintenance of information to guide behavior, yet its representations are inherently noisy and variable. To act effectively, observers must track the uncertainty of their own memory. However, the neural mechanisms supporting uncertainty representations in working memory remain poorly understood, particularly at the level of neural dynamics. Here, we combined electroencephalography (EEG) with a spatial visual working memory task that elicited trial-by-trial uncertainty reports to investigate how oscillatory activity encodes memory uncertainty. We identified two forms of uncertainty supported by distinct oscillatory neural activity. Using a probabilistic encoding-decoding model, we found that memory content can be reconstructed from alpha-band activity, and that the precision of these representations predicts subsequent uncertainty reports, consistent with probabilistic mnemonic representations. In parallel, beta-band activity contained a scalar, magnitude-based, representation of uncertainty. This signal exhibited slow, persistent dynamics across task epochs and tracked uncertainty reports for both the current and previous trials. Together, these findings show that the human brain multiplexes two neural codes for memory uncertainty, representational precision and a scalar confidence signal, across distinct oscillatory rhythms, providing a neural dynamical account of metacognitive access to working memory.</p>",
-    "authors": [
-      "Yang Di",
-      "Xingwei An",
-      "Hsin-Hung Li"
-    ],
-    "categories": [
-      "OpenReview.net/Public_Article/ORCID.org/-/Record"
-    ],
-    "id": "openreview:k5eqDItLAd",
-    "intro": "这篇论文被纳入仓库，是因为它和 `working memory` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `Crossref` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：p>Working memory enables the maintenance of information to guide behavior, yet its representations are inherently noisy and variable.\n\n进一步看，论文的核心做法或实验重点可以概括为：To act effectively, observers must track the uncertainty of their own memory.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
-    "matched_keywords": [
-      "working memory"
-    ],
-    "one_liner": "p>Working memory enables the maintenance of information to guide behavior, yet its representations are inherently noisy and variable.",
-    "published": "2026-04-09",
-    "relevance": "- 来源：OpenReview\n- Venue：Crossref\n- 高亮主题命中：working memory\n- 检索关键词命中：working memory\n- 来源分类信息：OpenReview.net/Public_Article/ORCID.org/-/Record",
-    "slug": "multiple-oscillatory-neural-rhythms-support-metacognitive-access-of-working-memo",
-    "source": "OpenReview",
-    "source_key": "k5eqDItLAd",
-    "tags": [
-      "working memory"
-    ],
-    "title": "Multiple Oscillatory Neural Rhythms Support Metacognitive Access of Working Memory",
-    "updated": "2026-04-16",
-    "url": "https://openreview.net/forum?id=k5eqDItLAd",
-    "venue": "Crossref"
-  },
-  {
     "abstract": "Large language models can generate factually inaccurate content, a problem known as hallucination. Recent works have built upon retrieved-augmented generation to improve factuality through iterative prompting but these methods are limited by the traditional RAG design. To address these challenges, we introduce EWE (Explicit Working Memory), a novel approach that enhances factuality in long-form text generation by integrating a working memory that receives real-time feedback from external resources. The memory is refreshed based on online fact-checking and retrieval feedback, allowing EWE to rectify false claims during the generation process and ensure more accurate and reliable outputs. Our experiments demonstrate that Ewe outperforms strong baselines on four fact-seeking long-form generation datasets, increasing the factuality metric, VeriScore, by 2 to 6 points absolute without sacrificing the helpfulness of the responses. Further analysis reveals that the design of rules for memory updates, configurations of memory units, and the quality of the retrieval datastore are crucial factors for influencing model performance.",
     "authors": [
       "Mingda Chen",
@@ -38762,37 +38822,6 @@
     "venue": "LLA 2026 Poster"
   },
   {
-    "abstract": "h3>Abstract</h3> <p>This study compared the representational geometry of visual perception and visual working memory using human 7T fMRI. Observers viewed a face-scene blended sample, attended to either the face or scene, and judged whether the attended aspect matched a subsequent test image. We found that the stimulus coding dimension distinguishing faces and scenes was rotated when perceptual content entered working memory, in both visual and association areas. In these regions, exclusive combinations (i.e., perceived face and memorized scene vs. perceived scene and memorized face) were linearly decodable, indicating that perception and working memory occupy distinct subspaces. Such high-dimensional, flexible coding may help prevent confusion between perception and memory. In contrast, robust cross-decoding across perception and working memory revealed factorized representational formats, consistent with generalizability of their contents. The balance between flexibility and abstraction varied along the cortical hierarchy: early sensory regions emphasized flexibility, whereas transmodal regions showed greater abstraction.</p><h3>Highlights</h3> <p>Representational geometry rotates when perceptual content enters working memory.</p><p>Such rotation expands the representational dimensionality for flexible coding.</p><p>Perceptual and mnemonic representations are still generalizable across each other.</p><p>Flexibility–generalization tradeoff aligns with the unimodal–transmodal gradient.</p>",
-    "authors": [
-      "Tomoya Nakamura",
-      "Seng Bum Michael Yoo",
-      "Kendrick Kay",
-      "Hakwan Lau",
-      "Ali Moharramipour"
-    ],
-    "categories": [
-      "OpenReview.net/Public_Article/ORCID.org/-/Record"
-    ],
-    "id": "openreview:zcrzzRJ3G8",
-    "intro": "这篇论文被纳入仓库，是因为它和 `working memory` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `Crossref` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：h3>Abstract</h3> <p>This study compared the representational geometry of visual perception and visual working memory using human 7T fMRI.\n\n进一步看，论文的核心做法或实验重点可以概括为：Observers viewed a face-scene blended sample, attended to either the face or scene, and judged whether the attended aspect matched a subsequent test image.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
-    "matched_keywords": [
-      "working memory"
-    ],
-    "one_liner": "h3>Abstract</h3> <p>This study compared the representational geometry of visual perception and visual working memory using human 7T fMRI.",
-    "published": "2025-09-12",
-    "relevance": "- 来源：OpenReview\n- Venue：Crossref\n- 高亮主题命中：working memory\n- 检索关键词命中：working memory\n- 来源分类信息：OpenReview.net/Public_Article/ORCID.org/-/Record",
-    "slug": "representational-geometries-of-perception-and-working-memory",
-    "source": "OpenReview",
-    "source_key": "zcrzzRJ3G8",
-    "tags": [
-      "working memory"
-    ],
-    "title": "Representational Geometries of Perception and Working Memory",
-    "updated": "2026-04-10",
-    "url": "https://openreview.net/forum?id=zcrzzRJ3G8",
-    "venue": "Crossref"
-  },
-  {
     "abstract": "Long-term memory is essential for large language model (LLM) agents operating in complex environments, yet existing memory designs are either task-specific and non-transferable, or task-agnostic but less effective due to low task-relevance and context explosion from raw memory retrieval. We propose PlugMem, a task-agnostic plugin memory module that can be attached to arbitrary LLM agents without task-specific redesign. Motivated by the fact that decision-relevant information is concentrated as abstract knowledge rather than raw experience, we draw on cognitive science to structure episodic memories into a compact, extensible knowledge-centric memory graph that explicitly represents propositional and prescriptive knowledge. This representation enables efficient memory retrieval and reasoning over task-relevant knowledge, rather than verbose raw trajectories, and departs from other graph-based methods like GraphRAG by treating knowledge as the unit of memory access and organization instead of entities or text chunks. We evaluate PlugMem unchanged across three heterogeneous benchmarks (long-horizon conversational question answering, multi-hop knowledge retrieval, and web agent tasks). The results show that PlugMem consistently outperforms task-agnostic baselines and exceeds task-specific memory designs, while also achieving the highest information density under a unified information-theoretic analysis.",
     "authors": [
       "Ke Yang",
@@ -38833,34 +38862,5 @@
     "updated": "2026-04-10",
     "url": "https://openreview.net/forum?id=LE664kai2e",
     "venue": "LLA 2026 Poster"
-  },
-  {
-    "abstract": "This study aimed to investigate how working memory interacts with perception at the behavioral level. We examined whether working memory modulates subjective perception when the general capacity for perceptual processing is kept constant. This possibility is in part motivated by the neuropsychological phenomenon of blindsight, in which subjective perception and general perceptual capacity are dissociated. In a previous pilot study (n = 8), we manipulated the congruency between working memory and perceptual content. We observed a trend suggesting that holding categorically incongruent content in working memory selectively impaired sensitivity (da) in a Yes/No (Y/N) detection task, even when perceptual processing capacity was matched using a two-interval forced choice (2-IFC) task. In the current study (n = 16), we tested the effect of congruency on the Y/N discrimination task with an increased sample size. To match perceptual processing capacity across conditions, we titrated stimulus contrast in a two-interval forced choice (2-IFC) task again. Contrary to the previous pilot study, we did not find evidence that working memory selectively modulates subjective perception, as measured by sensitivity (da) in the Y/N task, when processing capacity in the 2-IFC task was matched. Given this discrepancy, we pre-register a follow-up data collection on the original pilot design (i.e., Y/N detection), including the analysis plan and stopping rule.",
-    "authors": [
-      "Wonyi Che",
-      "Tomoya Nakamura",
-      "Hakwan Lau"
-    ],
-    "categories": [
-      "OpenReview.net/Public_Article/ORCID.org/-/Record"
-    ],
-    "id": "openreview:RjGRIFqFlU",
-    "intro": "这篇论文被纳入仓库，是因为它和 `working memory` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `Crossref` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：This study aimed to investigate how working memory interacts with perception at the behavioral level.\n\n进一步看，论文的核心做法或实验重点可以概括为：We examined whether working memory modulates subjective perception when the general capacity for perceptual processing is kept constant.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
-    "matched_keywords": [
-      "working memory"
-    ],
-    "one_liner": "This study aimed to investigate how working memory interacts with perception at the behavioral level.",
-    "published": "2025-11-14",
-    "relevance": "- 来源：OpenReview\n- Venue：Crossref\n- 高亮主题命中：working memory\n- 检索关键词命中：working memory\n- 来源分类信息：OpenReview.net/Public_Article/ORCID.org/-/Record",
-    "slug": "does-working-memory-selectively-modulate-subjective-perception",
-    "source": "OpenReview",
-    "source_key": "RjGRIFqFlU",
-    "tags": [
-      "working memory"
-    ],
-    "title": "Does Working Memory Selectively Modulate Subjective Perception?",
-    "updated": "2026-04-10",
-    "url": "https://openreview.net/forum?id=RjGRIFqFlU",
-    "venue": "Crossref"
   }
 ]

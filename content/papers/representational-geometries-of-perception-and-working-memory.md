@@ -4,8 +4,8 @@
 - Venue: Crossref
 - Paper ID: openreview:zcrzzRJ3G8
 - Published: 2025-09-12
-- Updated: 2026-04-10
-- Authors: Tomoya Nakamura, Seng Bum Michael Yoo, Kendrick Kay, Hakwan Lau, Ali Moharramipour
+- Updated: 2026-09-11
+- Authors: {'fullname': 'Tomoya Nakamura', 'username': '~Tomoya_Nakamura3'}, {'fullname': 'Seng Bum Michael Yoo'}, {'fullname': 'Kendrick Kay'}, {'fullname': 'Hakwan Lau'}, {'fullname': 'Ali Moharramipour'}
 - Tags: working memory
 - Categories: OpenReview.net/Public_Article/ORCID.org/-/Record
 - URL: https://openreview.net/forum?id=zcrzzRJ3G8

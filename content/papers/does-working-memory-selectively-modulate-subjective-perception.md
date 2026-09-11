@@ -4,8 +4,8 @@
 - Venue: Crossref
 - Paper ID: openreview:RjGRIFqFlU
 - Published: 2025-11-14
-- Updated: 2026-04-10
-- Authors: Wonyi Che, Tomoya Nakamura, Hakwan Lau
+- Updated: 2026-09-11
+- Authors: {'fullname': 'Wonyi Che'}, {'fullname': 'Tomoya Nakamura', 'username': '~Tomoya_Nakamura3'}, {'fullname': 'Hakwan Lau'}
 - Tags: working memory
 - Categories: OpenReview.net/Public_Article/ORCID.org/-/Record
 - URL: https://openreview.net/forum?id=RjGRIFqFlU
