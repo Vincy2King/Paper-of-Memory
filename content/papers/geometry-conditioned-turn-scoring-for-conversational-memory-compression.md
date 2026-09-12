@@ -4,7 +4,7 @@
 - Venue: GroundLM Findings
 - Paper ID: openreview:XqFFt1fHk2
 - Published: 2026-08-30
-- Updated: 2026-08-30
+- Updated: 2026-09-12
 - Authors: Pranav Kompally, Sibi Chakkaravarthy S
 - Tags: benchmark, compression, context, conversation
 - Categories: EMNLP/2026/Workshop/GroundLM/-/Submission

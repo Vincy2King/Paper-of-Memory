@@ -40,7 +40,7 @@ python3 scripts/update_papers.py --build-only
 ## Repository Snapshot
 
 - Total tracked papers: **1130**
-- Last generated: **2026-09-11**
+- Last generated: **2026-09-12**
 
 ## Papers by Source
 
@@ -52,6 +52,7 @@ python3 scripts/update_papers.py --build-only
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-09-12 | OpenReview | [Geometry-Conditioned Turn Scoring for Conversational Memory Compression](content/papers/geometry-conditioned-turn-scoring-for-conversational-memory-compression.md) | benchmark, compression, context |
 | 2026-09-11 | OpenReview | [Representational Geometries of Perception and Working Memory](content/papers/representational-geometries-of-perception-and-working-memory.md) | working memory |
 | 2026-09-11 | OpenReview | [Multiple Oscillatory Neural Rhythms Support Metacognitive Access of Working Memory](content/papers/multiple-oscillatory-neural-rhythms-support-metacognitive-access-of-working-memo.md) | working memory |
 | 2026-09-11 | OpenReview | [Does Working Memory Selectively Modulate Subjective Perception?](content/papers/does-working-memory-selectively-modulate-subjective-perception.md) | working memory |
@@ -71,7 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-09-08 | OpenReview | [Rational Episodic Memory: From Rational Action to Agent-Centered Memory in Egocentric Video](content/papers/rational-episodic-memory-from-rational-action-to-agent-centered-memory-in-egocen.md) | agent, episodic |
 | 2026-09-08 | OpenReview | [Profile-Graph Memory for LLM Agents: Implicit Cross-Entity Traversal through Narrative Profiles](content/papers/profile-graph-memory-for-llm-agents-implicit-cross-entity-traversal-through-narr.md) | agent, benchmark, compression |
 | 2026-09-08 | arXiv | [Personalizing LLM Agent Memory Using Biometrics](content/papers/personalizing-llm-agent-memory-using-biometrics.md) | agent, benchmark, retrieval |
-| 2026-09-08 | arXiv | [MemForest: Efficient Agent Memory Management via EventTree Partitioning and Progressive Merging](content/papers/memforest-efficient-agent-memory-management-via-eventtree-partitioning-and-progr.md) | agent, benchmark, compression |
 
 ## Suggested GitHub Setup
 
