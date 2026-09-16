@@ -39,23 +39,27 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **1130**
-- Last generated: **2026-09-15**
+- Total tracked papers: **1134**
+- Last generated: **2026-09-16**
 
 ## Papers by Source
 
 - ACL Anthology: **6**
-- arXiv: **981**
+- arXiv: **985**
 - OpenReview: **143**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-09-15 | arXiv | [LSREP: A Longitudinal State-Replay Protocol for Evaluating Conversational Memory, with ICE v2 as an Audited Local-First Architecture](content/papers/lsrep-a-longitudinal-state-replay-protocol-for-evaluating-conversational-memory-.md) | context, conversation, retrieval |
+| 2026-09-14 | arXiv | [Where to Look and What to Use: Retrieve-Localize-Generate for Long-Term Conversational Memory Question Answering](content/papers/where-to-look-and-what-to-use-retrieve-localize-generate-for-long-term-conversat.md) | benchmark, context, conversation |
 | 2026-09-12 | OpenReview | [Geometry-Conditioned Turn Scoring for Conversational Memory Compression](content/papers/geometry-conditioned-turn-scoring-for-conversational-memory-compression.md) | benchmark, compression, context |
 | 2026-09-11 | OpenReview | [Representational Geometries of Perception and Working Memory](content/papers/representational-geometries-of-perception-and-working-memory.md) | working memory |
 | 2026-09-11 | OpenReview | [Multiple Oscillatory Neural Rhythms Support Metacognitive Access of Working Memory](content/papers/multiple-oscillatory-neural-rhythms-support-metacognitive-access-of-working-memo.md) | working memory |
 | 2026-09-11 | OpenReview | [Does Working Memory Selectively Modulate Subjective Perception?](content/papers/does-working-memory-selectively-modulate-subjective-perception.md) | working memory |
+| 2026-09-11 | arXiv | [CueMem: Cue-Guided Context Reconstruction for Long-Term Conversational Memory](content/papers/cuemem-cue-guided-context-reconstruction-for-long-term-conversational-memory.md) | agent, context, conversation |
+| 2026-09-11 | arXiv | [Can an AI Assistant Really Forget? Auditable Deletion from Addressable Memory](content/papers/can-an-ai-assistant-really-forget-auditable-deletion-from-addressable-memory.md) | conversation |
 | 2026-09-10 | arXiv | [Memory Compression for High-Fanout Agent Sandboxes](content/papers/memory-compression-for-high-fanout-agent-sandboxes.md) | agent, compression |
 | 2026-09-10 | arXiv | [MAPLE: Memory-Augmented Planning with Language and Evolution](content/papers/maple-memory-augmented-planning-with-language-and-evolution.md) | agent, benchmark |
 | 2026-09-10 | arXiv | [Grounding Agent Memory: Environment-Probing Curation for Enterprise Agents](content/papers/grounding-agent-memory-environment-probing-curation-for-enterprise-agents.md) | agent, context |
@@ -68,10 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-09-09 | arXiv | [HyperTrace: Hypothesis-Based Preference Tracing for Online LLM Personalization](content/papers/hypertrace-hypothesis-based-preference-tracing-for-online-llm-personalization.md) | long-term |
 | 2026-09-08 | arXiv | [What Eviction Destroys: A Restore-Counterfactual Audit of Forgetting in Agent Memory](content/papers/what-eviction-destroys-a-restore-counterfactual-audit-of-forgetting-in-agent-mem.md) | agent, benchmark, context |
 | 2026-09-08 | arXiv | [T-Mem: Memory That Anticipates, Not Archives](content/papers/t-mem-memory-that-anticipates-not-archives.md) | agent, context, conversation |
-| 2026-09-08 | arXiv | [Revoked but Still Authoritative: An Empirical Study of Revocation Enforcement in Agent-Memory Systems](content/papers/revoked-but-still-authoritative-an-empirical-study-of-revocation-enforcement-in-.md) | agent, retrieval |
-| 2026-09-08 | OpenReview | [Rational Episodic Memory: From Rational Action to Agent-Centered Memory in Egocentric Video](content/papers/rational-episodic-memory-from-rational-action-to-agent-centered-memory-in-egocen.md) | agent, episodic |
-| 2026-09-08 | OpenReview | [Profile-Graph Memory for LLM Agents: Implicit Cross-Entity Traversal through Narrative Profiles](content/papers/profile-graph-memory-for-llm-agents-implicit-cross-entity-traversal-through-narr.md) | agent, benchmark, compression |
-| 2026-09-08 | arXiv | [Personalizing LLM Agent Memory Using Biometrics](content/papers/personalizing-llm-agent-memory-using-biometrics.md) | agent, benchmark, retrieval |
 
 ## Suggested GitHub Setup
 

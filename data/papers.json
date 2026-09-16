@@ -1,5 +1,79 @@
 [
   {
+    "abstract": "Conversational memory changes during use, so endpoint question answering alone cannot establish how a persistent state accumulates, ages, or incorporates revisions. We introduce LSREP, a Longitudinal State-Replay Evaluation Protocol combining ordered replay, explicit lifecycle schedules, repeated probes, evolving reference answers, and mechanism-fidelity checks. Its architectural case study is ICE v2, a local-first memory middleware with typed stores, retrieval fusion, and dynamic context budgets. The private, single-user instantiation contains 1,985 turns, 219 distinct probes, and 1,211 probe-checkpoint observations across 52 checkpoints. On three ordinary-density datasets, ICE v2 has a near-zero mean quality difference from vector-RAG while selecting 32% fewer fragments but using 6.6% more estimated prompt tokens. A fourth, dense dataset exposes catastrophic failures of the unbudgeted baseline. The fidelity audit limits attribution: procedural retrieval is defective, several mechanisms are unexercised, and graph utility is not established. In a complementary matched public diagnostic, ICE v2 loses decisively to pure vector-RAG on LongMemEval: 50.8% versus 72.8% in the evidence-only oracle and 43.0% versus 69.5% in full-S. Paired differences are -22.0 points (95% CI [-26.6, -17.4]) and -26.5 ([-31.3, -21.8]). Conservative abstention accompanies severe multi-session and temporal failures. ICE uses less context in this diagnostic, establishing a quality-cost trade-off rather than superior efficiency. Together, replay, fidelity auditing, and public endpoint testing expose distinct failure modes that neither architectural descriptions nor aggregate scores identify alone.",
+    "authors": [
+      "Deepesh Sonar"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.CL",
+      "cs.IR"
+    ],
+    "id": "2609.16730v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `context, conversation, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Conversational memory changes during use, so endpoint question answering alone cannot establish how a persistent state accumulates, ages, or incorporates revisions.\n\n进一步看，论文的核心做法或实验重点可以概括为：We introduce LSREP, a Longitudinal State-Replay Evaluation Protocol combining ordered replay, explicit lifecycle schedules, repeated probes, evolving reference answers, and mechanism-fidelity checks.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "conversational memory"
+    ],
+    "one_liner": "Conversational memory changes during use, so endpoint question answering alone cannot establish how a persistent state accumulates, ages, or incorporates revisions.",
+    "published": "2026-09-15",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：context, conversation, retrieval\n- 检索关键词命中：conversational memory\n- 来源分类信息：cs.AI, cs.CL, cs.IR",
+    "slug": "lsrep-a-longitudinal-state-replay-protocol-for-evaluating-conversational-memory-",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2609.16730v1",
+    "tags": [
+      "context",
+      "conversation",
+      "retrieval"
+    ],
+    "title": "LSREP: A Longitudinal State-Replay Protocol for Evaluating Conversational Memory, with ICE v2 as an Audited Local-First Architecture",
+    "updated": "2026-09-15",
+    "url": "http://arxiv.org/abs/2609.16730v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Retrieval-augmented generation (RAG) enables large language models (LLMs) to answer questions by accessing external knowledge and has been widely adopted for long-term conversational memory question answering. However, existing methods suffer from two key challenges: (1) fragmented evidence scattered across temporally distant sessions, and (2) noisy content within retrieved sessions that triggers the lost-in-the-middle effect. To address these challenges, we propose MemLoc, a unified Retrieve-Localize-Generate framework for long-term conversational memory QA. For retrieval, MemLoc decomposes each session into multi-granularity memory units and performs query routing via an inner-memory graph with entropy-based granularity selection. It further models cross-session semantic and temporal dependencies through a cross-memory graph, enabling coarse-to-fine retrieval of top-K relevant memory candidates. For localization, we introduce a reasoning-based evidence locator trained with Self-reflective Hint Policy Optimization (SHPO), which performs progressive refinement by extracting query-relevant fragments within memory units to suppress noise and reranking across candidates to remove redundancy, producing a compact evidence set with lightweight location IDs. For generation, these IDs act as precise grounding signals that guide the LLM to the correct memory positions, mitigating the lost-in-the-middle effect while preserving original contextual integrity. Extensive experiments on four benchmarks demonstrate that MemLoc achieves state-of-the-art retrieval accuracy and response quality while maintaining efficiency. Our code is available at: https://github.com/Nikol-coder/MemLoc.",
+    "authors": [
+      "Yifan Wang",
+      "Xinkui Lin",
+      "Yongxiu Xu",
+      "Shen Gao",
+      "Ruochen Yang",
+      "Kun Huang",
+      "Yubin Wang",
+      "Jie Wu",
+      "Wei Liu",
+      "Jian Luan",
+      "Hongbo Xu",
+      "Shuo Shang"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.IR"
+    ],
+    "id": "2609.07093v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `benchmark, context, conversation, long-term` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Retrieval-augmented generation (RAG) enables large language models (LLMs) to answer questions by accessing external knowledge and has been widely adopted for long-term conversational memory question answering.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, existing methods suffer from two key challenges: (1) fragmented evidence scattered across temporally distant sessions, and (2) noisy content within retrieved sessions that triggers the lost-in-the-middle effect.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "conversational memory"
+    ],
+    "one_liner": "Retrieval-augmented generation (RAG) enables large language models (LLMs) to answer questions by accessing external knowledge and has been widely adopted for long-term...",
+    "published": "2026-09-07",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：benchmark, context, conversation, long-term, retrieval\n- 检索关键词命中：conversational memory\n- 来源分类信息：cs.CL, cs.IR",
+    "slug": "where-to-look-and-what-to-use-retrieve-localize-generate-for-long-term-conversat",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2609.07093v2",
+    "tags": [
+      "benchmark",
+      "context",
+      "conversation",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "Where to Look and What to Use: Retrieve-Localize-Generate for Long-Term Conversational Memory Question Answering",
+    "updated": "2026-09-14",
+    "url": "http://arxiv.org/abs/2609.07093v2",
+    "venue": ""
+  },
+  {
     "abstract": "Compressing long multi-turn conversations requires deciding not only how to compress context, but which signal should rank memory candidates under a fixed budget. We study a sparse keep/compress/drop (KCD) codec and compare geometric, semantic, and hybrid scoring signals across conversational memory regimes. On a stress-test benchmark designed to expose support-turn failures, a geometry-scored codec substantially outperforms a semantic signal swap inside the same codec. On MSC (1,000 conversations), we show that geometry-based compression methods substantially outperform LongLLMLingua on geometric fidelity (ΔL2 ≈ +130) while LongLLMLingua modestly improves answer NLL---a geometry-behavior divergence confirming that behavioral metrics alone are insufficient to evaluate memory compression. Among KCD signal variants on MSC (1,000 conversations, Qwen2.5-1.5B), query-conditioned geometry achieves the best combination of geometric fidelity and behavioral quality simultaneously: at budget 0.50 it reduces logit L2 by 109.4 units versus semantic KCD (p<0.001, conversation-level) while also achieving best answer NLL across all budgets. On LongMemEval-S (100 full-length conversations), all KCD variants significantly improve behavioral quality over uniform compression. A Llama-3.2-3B cross-model check shows that the geometry signal advantage is model-family-dependent: semantic compression dominates geometry compression on behavior across all budgets for Llama-3B (p≤0.01, conversation-level). The paper's central claim is that geometry-behavior divergence is real and consequential, and that query-conditioned geometry is the signal that best resolves it on Qwen2.5 models.",
     "authors": [
       "Pranav Kompally",
@@ -119,6 +193,70 @@
     "updated": "2026-09-11",
     "url": "https://openreview.net/forum?id=RjGRIFqFlU",
     "venue": "Crossref"
+  },
+  {
+    "abstract": "Long-term conversational agents must answer user queries by recalling information from extended dialogue histories, yet directly using the full history is costly and often unreliable, while compressed memory units may lose fine-grained evidence needed for question answering. Motivated by the reconstructive view of autobiographical memory, we propose CueMem, a cue-guided framework that treats extracted memory records as retrieval cues rather than self-contained evidence and reconstructs query-relevant dialogue context from their source turns. During memory construction, CueMem extracts fine-grained memory cues from dialogue turns and links each cue to its source turn. At query time, it retrieves query-relevant cues, maps them to source-turn anchors, and expands from these anchors over a turn graph that captures temporal proximity and semantic relatedness, reconstructing a compact evidence context from the original dialogue for LLM answer generation. Experiments on LoCoMo and LongMemEval show that CueMem consistently outperforms representative long-term memory baselines. Further analyses show that graph-based context reconstruction helps recover supporting dialogue evidence while reducing query-time input tokens and latency compared with the full-history LLM setting. These results highlight retrieval cues as an effective alternative to self-contained memory evidence for long-term conversational question answering.",
+    "authors": [
+      "Changjian Wang",
+      "Rongzhen Li",
+      "Weili Guan",
+      "Shuming Shi",
+      "Quan Lu",
+      "Ning Jiang"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "id": "2609.12354v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, context, conversation, long-term` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Long-term conversational agents must answer user queries by recalling information from extended dialogue histories, yet directly using the full history is costly and often unreliable, while compressed memory units may...\n\n进一步看，论文的核心做法或实验重点可以概括为：Motivated by the reconstructive view of autobiographical memory, we propose CueMem, a cue-guided framework that treats extracted memory records as retrieval cues rather than self-contained evidence and reconstructs...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "conversational memory"
+    ],
+    "one_liner": "Long-term conversational agents must answer user queries by recalling information from extended dialogue histories, yet directly using the full history is costly and often...",
+    "published": "2026-09-11",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, context, conversation, long-term, retrieval\n- 检索关键词命中：conversational memory\n- 来源分类信息：cs.CL",
+    "slug": "cuemem-cue-guided-context-reconstruction-for-long-term-conversational-memory",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2609.12354v1",
+    "tags": [
+      "agent",
+      "context",
+      "conversation",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "CueMem: Cue-Guided Context Reconstruction for Long-Term Conversational Memory",
+    "updated": "2026-09-11",
+    "url": "http://arxiv.org/abs/2609.12354v1",
+    "venue": ""
+  },
+  {
+    "abstract": "An assistant can stop repeating a fact without removing it from memory. To study this difference, we install a support-vector gate in frozen Gemma 3 and record which stored keys and values belong to each exchange. A deletion request excludes the exchange's rows from the long-range readout and recalculates the gate on what remains. We check this operation against an independent refit, then compare it with running the model again on the conversation without the exchange. This second comparison matters because the exchange may already have influenced surviving memory rows. At 4B, the gated model passed checks for recall and feasible deletion on the same six of eight records admitted by the base model, at a perplexity cost under 2%. Admission fell at the smaller and larger checkpoints with the same configuration. The edited memory agreed closely with the local refit on the registered probes, and the model disclosed fewer deleted answers than when simply instructed to forget. However, an attack evaluated separately for each record could still distinguish edited memory from memory that never stored the record. Excluding an exchange's own rows therefore provides a way to edit and audit conversation memory, while leaving a measurable difference from rebuilding it without that exchange. Additional paired studies found no update-speed advantage for the current FP32 proxy and retained-answer matching below half in every tested condition.",
+    "authors": [
+      "Vishwajith Ramesh"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.CL"
+    ],
+    "id": "2607.27539v4",
+    "intro": "这篇论文被纳入仓库，是因为它和 `conversation` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：An assistant can stop repeating a fact without removing it from memory.\n\n进一步看，论文的核心做法或实验重点可以概括为：To study this difference, we install a support-vector gate in frozen Gemma 3 and record which stored keys and values belong to each exchange.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "conversational memory"
+    ],
+    "one_liner": "An assistant can stop repeating a fact without removing it from memory.",
+    "published": "2026-07-30",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：conversation\n- 检索关键词命中：conversational memory\n- 来源分类信息：cs.LG, cs.CL",
+    "slug": "can-an-ai-assistant-really-forget-auditable-deletion-from-addressable-memory",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2607.27539v4",
+    "tags": [
+      "conversation"
+    ],
+    "title": "Can an AI Assistant Really Forget? Auditable Deletion from Addressable Memory",
+    "updated": "2026-09-11",
+    "url": "http://arxiv.org/abs/2607.27539v4",
+    "venue": ""
   },
   {
     "abstract": "High-fanout agent workloads create a growing memory bottleneck because a single task may spawn many concurrent sandbox sessions. Yet these sandboxes are far from independent: they originate from a shared template and execute related trajectories, exposing substantial template-relative and cross-sandbox memory redundancy. Conventional memory compression is poorly matched to this setting in three fundamental dimensions: how to compress, because they fail to exploit similarity across non-identical sandbox pages; what to compress, because they control page-fault overhead through conservative page selection; and when to compress, because compression is either triggered by memory pressure or performed without awareness of agent execution phases. We present AgentZip, the first memory compression system designed specifically for AI-agent sandboxes. AgentZip introduces compression mechanisms that exploit both the template-relative and cross-sandbox redundancy. It broadens the compression scope to any page with a profitable representation and shifts overhead control from compression-time page selection to restore-time prefetching. It further aligns expensive compression with LLM waiting periods to avoid interfering with foreground tool execution. Across LLM training and inference workloads, AgentZip reduces sandbox-owned memory by up to 8.7x, compared with 2.1x for the Linux configuration. Restore prefetching and agent-execution-aware scheduling reduce the slowdown of aggressive compression from as high as 3.1x to 1.40x while retaining nearly all of its memory-saving benefit.",
