@@ -39,39 +39,39 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **1134**
+- Total tracked papers: **1152**
 - Last generated: **2026-09-16**
 
 ## Papers by Source
 
 - ACL Anthology: **6**
-- arXiv: **985**
+- arXiv: **1003**
 - OpenReview: **143**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-09-15 | arXiv | [Smarter by the Moment: Environment-Driven Dynamic Policies for Continual LLM Improvement](content/papers/smarter-by-the-moment-environment-driven-dynamic-policies-for-continual-llm-impr.md) | benchmark, retrieval |
+| 2026-09-15 | arXiv | [Persistent Recurrent Memory Between Transformer Layers - Improves Language Model Generalization](content/papers/persistent-recurrent-memory-between-transformer-layers-improves-language-model-g.md) | persistent memory |
 | 2026-09-15 | arXiv | [LSREP: A Longitudinal State-Replay Protocol for Evaluating Conversational Memory, with ICE v2 as an Audited Local-First Architecture](content/papers/lsrep-a-longitudinal-state-replay-protocol-for-evaluating-conversational-memory-.md) | context, conversation, retrieval |
 | 2026-09-14 | arXiv | [Where to Look and What to Use: Retrieve-Localize-Generate for Long-Term Conversational Memory Question Answering](content/papers/where-to-look-and-what-to-use-retrieve-localize-generate-for-long-term-conversat.md) | benchmark, context, conversation |
+| 2026-09-14 | arXiv | [Semantic-TVM: Structure-Preserving Trustworthy Virtual Memory for Memory-Augmented and Tool-Using Agents](content/papers/semantic-tvm-structure-preserving-trustworthy-virtual-memory-for-memory-augmente.md) | agent, context |
+| 2026-09-13 | arXiv | [The Immutable Past: Formalizing State Mutability and Conflict Resolution in Mutable RAG](content/papers/the-immutable-past-formalizing-state-mutability-and-conflict-resolution-in-mutab.md) | agent, benchmark, context |
+| 2026-09-13 | arXiv | [Retrieval-Driven Memory Reconsolidation for Long-Term LLM Agents](content/papers/retrieval-driven-memory-reconsolidation-for-long-term-llm-agents.md) | agent, long-term, retrieval |
+| 2026-09-13 | arXiv | [Pull: Lazy Materialization of Working Memory for Stateful LLM Conversations](content/papers/pull-lazy-materialization-of-working-memory-for-stateful-llm-conversations.md) | benchmark, compression, context |
+| 2026-09-13 | arXiv | [Bioinfoysis Technical Report](content/papers/bioinfoysis-technical-report.md) | agent, context |
+| 2026-09-12 | arXiv | [When Malicious Instructions Persist: Persistent Memory Poisoning Attack on Harness-Based Agents](content/papers/when-malicious-instructions-persist-persistent-memory-poisoning-attack-on-harnes.md) | agent |
+| 2026-09-12 | arXiv | [Trustworthy Agentic AI: A Comprehensive Cybersecurity and Systems Survey on Threat Landscapes, Defense Architectures, and Open Challenges](content/papers/trustworthy-agentic-ai-a-comprehensive-cybersecurity-and-systems-survey-on-threa.md) | agent, benchmark |
+| 2026-09-12 | arXiv | [LIMBO: Lifelong Inference-Time Memory and Budget Optimization for LLM Agents](content/papers/limbo-lifelong-inference-time-memory-and-budget-optimization-for-llm-agents.md) | agent, retrieval |
 | 2026-09-12 | OpenReview | [Geometry-Conditioned Turn Scoring for Conversational Memory Compression](content/papers/geometry-conditioned-turn-scoring-for-conversational-memory-compression.md) | benchmark, compression, context |
+| 2026-09-12 | arXiv | [GeoSkill:Experience-Driven Hierarchical Skill Learning with Collaborative Revision forGeospatialAgents](content/papers/geoskill-experience-driven-hierarchical-skill-learning-with-collaborative-revisi.md) | agent, retrieval |
+| 2026-09-11 | arXiv | [What a Deletion Certificate Covers, and Where It Expires: Auditable Removal from a Support-Vector Memory](content/papers/what-a-deletion-certificate-covers-and-where-it-expires-auditable-removal-from-a.md) | context |
+| 2026-09-11 | arXiv | [Toward Robust Personalized Alignment for LLMs: Mitigating Persona Drift in Multi-Turn Dialogue](content/papers/toward-robust-personalized-alignment-for-llms-mitigating-persona-drift-in-multi-.md) | benchmark |
+| 2026-09-11 | arXiv | [SoK: Rethinking Jailbreaking in the Era of Agentic AI: Attacks, Defenses, and Practical Consideration](content/papers/sok-rethinking-jailbreaking-in-the-era-of-agentic-ai-attacks-defenses-and-practi.md) | agent, conversation |
+| 2026-09-11 | arXiv | [RunningTensor: Generalizing Linear Attention to Higher-Order Recurrent States](content/papers/runningtensor-generalizing-linear-attention-to-higher-order-recurrent-states.md) | retrieval |
 | 2026-09-11 | OpenReview | [Representational Geometries of Perception and Working Memory](content/papers/representational-geometries-of-perception-and-working-memory.md) | working memory |
 | 2026-09-11 | OpenReview | [Multiple Oscillatory Neural Rhythms Support Metacognitive Access of Working Memory](content/papers/multiple-oscillatory-neural-rhythms-support-metacognitive-access-of-working-memo.md) | working memory |
-| 2026-09-11 | OpenReview | [Does Working Memory Selectively Modulate Subjective Perception?](content/papers/does-working-memory-selectively-modulate-subjective-perception.md) | working memory |
-| 2026-09-11 | arXiv | [CueMem: Cue-Guided Context Reconstruction for Long-Term Conversational Memory](content/papers/cuemem-cue-guided-context-reconstruction-for-long-term-conversational-memory.md) | agent, context, conversation |
-| 2026-09-11 | arXiv | [Can an AI Assistant Really Forget? Auditable Deletion from Addressable Memory](content/papers/can-an-ai-assistant-really-forget-auditable-deletion-from-addressable-memory.md) | conversation |
-| 2026-09-10 | arXiv | [Memory Compression for High-Fanout Agent Sandboxes](content/papers/memory-compression-for-high-fanout-agent-sandboxes.md) | agent, compression |
-| 2026-09-10 | arXiv | [MAPLE: Memory-Augmented Planning with Language and Evolution](content/papers/maple-memory-augmented-planning-with-language-and-evolution.md) | agent, benchmark |
-| 2026-09-10 | arXiv | [Grounding Agent Memory: Environment-Probing Curation for Enterprise Agents](content/papers/grounding-agent-memory-environment-probing-curation-for-enterprise-agents.md) | agent, context |
-| 2026-09-10 | arXiv | [Causal Episodic Memory for Feedback-Driven Agent Repair](content/papers/causal-episodic-memory-for-feedback-driven-agent-repair.md) | agent, benchmark, episodic |
-| 2026-09-10 | OpenReview | [Beyond Retrieval: Analytic Memory for Multimodal Agents](content/papers/beyond-retrieval-analytic-memory-for-multimodal-agents.md) | agent, benchmark, context |
-| 2026-09-09 | arXiv | [What Should an Agent Forget? Separating What Is Stored from What Is Used](content/papers/what-should-an-agent-forget-separating-what-is-stored-from-what-is-used.md) | agent, context, conversation |
-| 2026-09-09 | arXiv | [PRAGMA: Evaluating Personalized Guidance with Memory Alignment in Lifelong Conversations](content/papers/pragma-evaluating-personalized-guidance-with-memory-alignment-in-lifelong-conver.md) | benchmark, context, conversation |
-| 2026-09-09 | arXiv | [Myocardial Strain Drift Correction in Deep Learning Based Ultrasound Tracking](content/papers/myocardial-strain-drift-correction-in-deep-learning-based-ultrasound-tracking.md) | persistent memory |
-| 2026-09-09 | OpenReview | [Memory Makes the Difference: Evaluating How Different Memory Roles Shape Conversational Agents](content/papers/memory-makes-the-difference-evaluating-how-different-memory-roles-shape-conversa.md) | agent, context, conversation |
-| 2026-09-09 | arXiv | [HyperTrace: Hypothesis-Based Preference Tracing for Online LLM Personalization](content/papers/hypertrace-hypothesis-based-preference-tracing-for-online-llm-personalization.md) | long-term |
-| 2026-09-08 | arXiv | [What Eviction Destroys: A Restore-Counterfactual Audit of Forgetting in Agent Memory](content/papers/what-eviction-destroys-a-restore-counterfactual-audit-of-forgetting-in-agent-mem.md) | agent, benchmark, context |
-| 2026-09-08 | arXiv | [T-Mem: Memory That Anticipates, Not Archives](content/papers/t-mem-memory-that-anticipates-not-archives.md) | agent, context, conversation |
 
 ## Suggested GitHub Setup
 

@@ -27,7 +27,7 @@ Long-term conversational agents must answer user queries by recalling informatio
 ## Why It Was Included
 - 来源：arXiv
 - 高亮主题命中：agent, context, conversation, long-term, retrieval
-- 检索关键词命中：conversational memory
+- 检索关键词命中：conversational memory, long-term memory
 - 来源分类信息：cs.CL
 
 ## Abstract Snapshot
