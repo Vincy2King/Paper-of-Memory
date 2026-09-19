@@ -39,19 +39,20 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **1152**
+- Total tracked papers: **1153**
 - Last generated: **2026-09-19**
 
 ## Papers by Source
 
 - ACL Anthology: **6**
 - arXiv: **1003**
-- OpenReview: **143**
+- OpenReview: **144**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-09-19 | OpenReview | [Revisiting Persistent Indexing Structures on Intel Optane DC Persistent Memory](content/papers/revisiting-persistent-indexing-structures-on-intel-optane-dc-persistent-memory.md) | persistent memory |
 | 2026-09-15 | arXiv | [Smarter by the Moment: Environment-Driven Dynamic Policies for Continual LLM Improvement](content/papers/smarter-by-the-moment-environment-driven-dynamic-policies-for-continual-llm-impr.md) | benchmark, retrieval |
 | 2026-09-15 | arXiv | [Persistent Recurrent Memory Between Transformer Layers - Improves Language Model Generalization](content/papers/persistent-recurrent-memory-between-transformer-layers-improves-language-model-g.md) | persistent memory |
 | 2026-09-15 | arXiv | [LSREP: A Longitudinal State-Replay Protocol for Evaluating Conversational Memory, with ICE v2 as an Audited Local-First Architecture](content/papers/lsrep-a-longitudinal-state-replay-protocol-for-evaluating-conversational-memory-.md) | context, conversation, retrieval |
@@ -71,7 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-09-11 | arXiv | [SoK: Rethinking Jailbreaking in the Era of Agentic AI: Attacks, Defenses, and Practical Consideration](content/papers/sok-rethinking-jailbreaking-in-the-era-of-agentic-ai-attacks-defenses-and-practi.md) | agent, conversation |
 | 2026-09-11 | arXiv | [RunningTensor: Generalizing Linear Attention to Higher-Order Recurrent States](content/papers/runningtensor-generalizing-linear-attention-to-higher-order-recurrent-states.md) | retrieval |
 | 2026-09-11 | OpenReview | [Representational Geometries of Perception and Working Memory](content/papers/representational-geometries-of-perception-and-working-memory.md) | working memory |
-| 2026-09-11 | OpenReview | [Multiple Oscillatory Neural Rhythms Support Metacognitive Access of Working Memory](content/papers/multiple-oscillatory-neural-rhythms-support-metacognitive-access-of-working-memo.md) | working memory |
 
 ## Suggested GitHub Setup
 
