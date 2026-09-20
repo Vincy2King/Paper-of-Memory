@@ -1,5 +1,67 @@
 [
   {
+    "abstract": "Memory-augmented Large Language Models (LLMs) can utilize past contexts via recall-reason steps, which may produce biased thoughts, i.e., inconsistent reasoning paths over the same recalled contexts. Motivated by that humans only memorize the metacognition thoughts rather than all details, we propose a self-organizing memory-augmented mechanism called Think-in-Memory (TiM) to flexibly utilize the historical context, which is equipped with a metacognition space and stationary operation actions. Concretely, TiM can imitate human-level self-organization to memorize and update history context in a plug-and-play paradigm without suffering from reasoning inconsistency. The self-organization is formulated as a role-playing LLM agent pipeline to achieve stationary operation actions, i.e., thought generator, retriever, and organizer. Clinical diagnosis is adopted as the evaluation task: (1) we formulate a role-play simulator to simulate long-term interactions between the doctor and patient. (2) we collect a multi-turn medical consultations dataset from the real-world hospitals. Besides, two daily conversation datasets are also involved. Experiments demonstrate that our method achieves remarkable improvements on memory-augmented long-term dialogues about both daily and medical topics.",
+    "authors": [],
+    "categories": [
+      "aclweb.org/ACL/ARR/2025/February/-/Submission"
+    ],
+    "id": "openreview:xWMKJbmgeF",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, context, conversation, long-term` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2025 February Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Memory-augmented Large Language Models (LLMs) can utilize past contexts via recall-reason steps, which may produce biased thoughts, i.e., inconsistent reasoning paths over the same recalled contexts.\n\n进一步看，论文的核心做法或实验重点可以概括为：Motivated by that humans only memorize the metacognition thoughts rather than all details, we propose a self-organizing memory-augmented mechanism called Think-in-Memory (TiM) to flexibly utilize the historical...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "long-term memory",
+      "memory-augmented"
+    ],
+    "one_liner": "Memory-augmented Large Language Models (LLMs) can utilize past contexts via recall-reason steps, which may produce biased thoughts, i.e., inconsistent reasoning paths over the...",
+    "published": "2025-05-09",
+    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2025 February Submission\n- 高亮主题命中：agent, context, conversation, long-term\n- 检索关键词命中：long-term memory, memory-augmented\n- 来源分类信息：aclweb.org/ACL/ARR/2025/February/-/Submission",
+    "slug": "think-in-memory-metacognition-augmented-llm-with-long-term-memory",
+    "source": "OpenReview",
+    "source_key": "xWMKJbmgeF",
+    "tags": [
+      "agent",
+      "context",
+      "conversation",
+      "long-term"
+    ],
+    "title": "Think-in-Memory: Metacognition-Augmented LLM with Long-Term Memory",
+    "updated": "2026-09-20",
+    "url": "https://openreview.net/forum?id=xWMKJbmgeF",
+    "venue": "ACL ARR 2025 February Submission"
+  },
+  {
+    "abstract": "One of the key factors influencing the reasoning capabilities of LLM-based agents is their ability to leverage long-term memory. Integrating long-term memory mechanisms allows agents to make informed decisions grounded in historical interactions. While recent advances have significantly improved the storage and retrieval components—e.g., by encoding memory into dense vectors for similarity search or organizing memory as structured knowledge graphs—most existing approaches fall short in memory updating. In particular, they lack mechanisms for dynamically refining preference memory representations in response to evolving user behaviors and contexts. To address this gap, we propose a Preference-Aware Memory Update Mechanism (PAMU) that enables dynamic and personalized memory refinement. By integrating sliding window averages (SW) with exponential moving averages (EMA), PAMU constructs a fused preference-aware representation that captures both short-term fluctuations and long-term user tendencies. We conduct experiments on five task scenarios of the LoCoMo dataset, and the results show that our mechanism can significantly improve the output quality of LLM in five baselines, validating its effectiveness in long-term conversations.",
+    "authors": [
+      "Haoran Sun",
+      "Zekun Zhang",
+      "Shaoning Zeng"
+    ],
+    "categories": [
+      "OpenReview.net/Archive/-/Direct_Upload"
+    ],
+    "id": "openreview:aG2EsikgYl",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, context, conversation, long-term` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL26` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：One of the key factors influencing the reasoning capabilities of LLM-based agents is their ability to leverage long-term memory.\n\n进一步看，论文的核心做法或实验重点可以概括为：Integrating long-term memory mechanisms allows agents to make informed decisions grounded in historical interactions.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "long-term memory"
+    ],
+    "one_liner": "One of the key factors influencing the reasoning capabilities of LLM-based agents is their ability to leverage long-term memory.",
+    "published": "2026-05-04",
+    "relevance": "- 来源：OpenReview\n- Venue：ACL26\n- 高亮主题命中：agent, context, conversation, long-term, retrieval\n- 检索关键词命中：long-term memory\n- 来源分类信息：OpenReview.net/Archive/-/Direct_Upload",
+    "slug": "preference-aware-memory-update-for-long-term-llm-agents",
+    "source": "OpenReview",
+    "source_key": "aG2EsikgYl",
+    "tags": [
+      "agent",
+      "context",
+      "conversation",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "Preference-aware memory update for long-term llm agents",
+    "updated": "2026-09-20",
+    "url": "https://openreview.net/forum?id=aG2EsikgYl",
+    "venue": "ACL26"
+  },
+  {
     "abstract": "Persistent indexing structures are proposed in response to emerging non-volatile memory (NVM) to provide high performance yet durable indexes. However, due to the lack of real NVM hardware, many prior persistent indexing structures were evaluated via emulation, which varies a lot across different setups and differs from the real deployment. Recently, Intel has released its Optane DC Persistent Memory Module (PMM), which is the first production-ready NVM. In this paper, we revisit popular persistent indexing structures on PMM and conduct comprehensive evaluations to study the performance differences among persistent indexing structures, including persistent hash tables and persistent trees. According to the evaluation results, we find that Cacheline-Conscious Extendible Hashing (CCEH) achieves the best performance among all evaluated persistent hash tables, and Failure-Atomic ShifT B+-Tree (FAST) and Write Optimal Radix Tree (WORT) perform better than other trees. Besides, we find that the insertion performance of hash tables is heavily influenced by data locality, while the insertion latency of trees is dominated by the flush instructions. We also uncover that no existing emulation methods accurately simulate PMM for all the studied data structures. Finally, we provide three suggestions on how to fully utilize PMM for better performance, including using clflushopt/clwb with sfence instead of clflush, flushing continuous data in a batch, and avoiding data access immediately after it is flushed to PMM.",
     "authors": [
       "{'fullname': 'Heng Bu', 'username': ''}",
@@ -18067,35 +18129,6 @@
     "updated": "2026-07-03",
     "url": "http://arxiv.org/abs/2607.03516v1",
     "venue": ""
-  },
-  {
-    "abstract": "Memory-augmented Large Language Models (LLMs) can utilize past contexts via recall-reason steps, which may produce biased thoughts, i.e., inconsistent reasoning paths over the same recalled contexts. Motivated by that humans only memorize the metacognition thoughts rather than all details, we propose a self-organizing memory-augmented mechanism called Think-in-Memory (TiM) to flexibly utilize the historical context, which is equipped with a metacognition space and stationary operation actions. Concretely, TiM can imitate human-level self-organization to memorize and update history context in a plug-and-play paradigm without suffering from reasoning inconsistency. The self-organization is formulated as a role-playing LLM agent pipeline to achieve stationary operation actions, i.e., thought generator, retriever, and organizer. Clinical diagnosis is adopted as the evaluation task: (1) we formulate a role-play simulator to simulate long-term interactions between the doctor and patient. (2) we collect a multi-turn medical consultations dataset from the real-world hospitals. Besides, two daily conversation datasets are also involved. Experiments demonstrate that our method achieves remarkable improvements on memory-augmented long-term dialogues about both daily and medical topics.",
-    "authors": [],
-    "categories": [
-      "aclweb.org/ACL/ARR/2025/February/-/Submission"
-    ],
-    "id": "openreview:xWMKJbmgeF",
-    "intro": "这篇论文被纳入仓库，是因为它和 `agent, context, conversation, long-term` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `ACL ARR 2025 February Submission` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Memory-augmented Large Language Models (LLMs) can utilize past contexts via recall-reason steps, which may produce biased thoughts, i.e., inconsistent reasoning paths over the same recalled contexts.\n\n进一步看，论文的核心做法或实验重点可以概括为：Motivated by that humans only memorize the metacognition thoughts rather than all details, we propose a self-organizing memory-augmented mechanism called Think-in-Memory (TiM) to flexibly utilize the historical...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
-    "matched_keywords": [
-      "long-term memory",
-      "memory-augmented"
-    ],
-    "one_liner": "Memory-augmented Large Language Models (LLMs) can utilize past contexts via recall-reason steps, which may produce biased thoughts, i.e., inconsistent reasoning paths over the...",
-    "published": "2025-05-09",
-    "relevance": "- 来源：OpenReview\n- Venue：ACL ARR 2025 February Submission\n- 高亮主题命中：agent, context, conversation, long-term\n- 检索关键词命中：long-term memory, memory-augmented\n- 来源分类信息：aclweb.org/ACL/ARR/2025/February/-/Submission",
-    "slug": "think-in-memory-metacognition-augmented-llm-with-long-term-memory",
-    "source": "OpenReview",
-    "source_key": "xWMKJbmgeF",
-    "tags": [
-      "agent",
-      "context",
-      "conversation",
-      "long-term"
-    ],
-    "title": "Think-in-Memory: Metacognition-Augmented LLM with Long-Term Memory",
-    "updated": "2026-07-02",
-    "url": "https://openreview.net/forum?id=xWMKJbmgeF",
-    "venue": "ACL ARR 2025 February Submission"
   },
   {
     "abstract": "When instruction-tuned LLMs store past experience in retrieval-augmented memory, much of memory's measured influence in our evaluation flows through verbatim answer copying rather than higher-level reasoning. Across $1{,}866$ controlled experiments spanning three model families, multi-episode agent tasks, and three external conflict benchmarks, removing concrete answer bindings sharply reduces override on the strongest-conflict tasks and attenuates it on more naturalistic benchmarks. Override strength changes at a concentrated boundary we term the *override cliff*: between answer-level and paraphrase-level memory content, override drops $4.5\\times$ on average in a single specificity step. On NQ-Swap, removing the swapped entity reduces override to zero on both tested models, and the cliff replicates on two frontier API models with full closed-book filtering (GPT-4o-mini $1.6\\times$; Claude Haiku 4.5 $1.8\\times$), with attenuated but persistent effect. On $\\tau$-bench, a real agent benchmark with deterministic evaluation, verbatim tool-call memories cause $20.6\\%$ stale parameter copying vs. $6.3\\%$ for strategy-only memories ($p{=}0.017$, cliff ratio $3.3\\times$), even when the agent performs fresh tool lookups. Logit probes are consistent with a ${\\sim}5\\times$ token-level amplification at this boundary, and paraphrased or summarized memories often avoid the strongest override failures.",

@@ -4,7 +4,7 @@
 - Venue: ACL ARR 2025 February Submission
 - Paper ID: openreview:xWMKJbmgeF
 - Published: 2025-05-09
-- Updated: 2026-07-02
+- Updated: 2026-09-20
 - Authors: Unknown
 - Tags: agent, context, conversation, long-term
 - Categories: aclweb.org/ACL/ARR/2025/February/-/Submission

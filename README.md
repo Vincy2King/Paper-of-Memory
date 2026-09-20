@@ -39,19 +39,21 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **1153**
-- Last generated: **2026-09-19**
+- Total tracked papers: **1154**
+- Last generated: **2026-09-20**
 
 ## Papers by Source
 
 - ACL Anthology: **6**
 - arXiv: **1003**
-- OpenReview: **144**
+- OpenReview: **145**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-09-20 | OpenReview | [Think-in-Memory: Metacognition-Augmented LLM with Long-Term Memory](content/papers/think-in-memory-metacognition-augmented-llm-with-long-term-memory.md) | agent, context, conversation |
+| 2026-09-20 | OpenReview | [Preference-aware memory update for long-term llm agents](content/papers/preference-aware-memory-update-for-long-term-llm-agents.md) | agent, context, conversation |
 | 2026-09-19 | OpenReview | [Revisiting Persistent Indexing Structures on Intel Optane DC Persistent Memory](content/papers/revisiting-persistent-indexing-structures-on-intel-optane-dc-persistent-memory.md) | persistent memory |
 | 2026-09-15 | arXiv | [Smarter by the Moment: Environment-Driven Dynamic Policies for Continual LLM Improvement](content/papers/smarter-by-the-moment-environment-driven-dynamic-policies-for-continual-llm-impr.md) | benchmark, retrieval |
 | 2026-09-15 | arXiv | [Persistent Recurrent Memory Between Transformer Layers - Improves Language Model Generalization](content/papers/persistent-recurrent-memory-between-transformer-layers-improves-language-model-g.md) | persistent memory |
@@ -70,8 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-09-11 | arXiv | [What a Deletion Certificate Covers, and Where It Expires: Auditable Removal from a Support-Vector Memory](content/papers/what-a-deletion-certificate-covers-and-where-it-expires-auditable-removal-from-a.md) | context |
 | 2026-09-11 | arXiv | [Toward Robust Personalized Alignment for LLMs: Mitigating Persona Drift in Multi-Turn Dialogue](content/papers/toward-robust-personalized-alignment-for-llms-mitigating-persona-drift-in-multi-.md) | benchmark |
 | 2026-09-11 | arXiv | [SoK: Rethinking Jailbreaking in the Era of Agentic AI: Attacks, Defenses, and Practical Consideration](content/papers/sok-rethinking-jailbreaking-in-the-era-of-agentic-ai-attacks-defenses-and-practi.md) | agent, conversation |
-| 2026-09-11 | arXiv | [RunningTensor: Generalizing Linear Attention to Higher-Order Recurrent States](content/papers/runningtensor-generalizing-linear-attention-to-higher-order-recurrent-states.md) | retrieval |
-| 2026-09-11 | OpenReview | [Representational Geometries of Perception and Working Memory](content/papers/representational-geometries-of-perception-and-working-memory.md) | working memory |
 
 ## Suggested GitHub Setup
 
