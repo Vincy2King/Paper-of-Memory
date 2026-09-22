@@ -4,7 +4,7 @@
 - Venue: ICML 2026 regular
 - Paper ID: openreview:qpkG0eKx4v
 - Published: 2026-04-30
-- Updated: 2026-06-24
+- Updated: 2026-09-22
 - Authors: Guibin Zhang, Haotian Ren, Chong Zhan, Junhao Wang, He Zhu, Wangchunshu Zhou, Shuicheng YAN
 - Tags: agent, benchmark, context
 - Categories: ICML.cc/2026/Conference/-/Submission

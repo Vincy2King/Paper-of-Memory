@@ -4,7 +4,7 @@
 - Venue: ICML 2026 regular
 - Paper ID: openreview:JHYmxqS9Jv
 - Published: 2026-04-30
-- Updated: 2026-06-24
+- Updated: 2026-09-22
 - Authors: Zexue He, Yu Wang, Churan Zhi, Yuanzhe Hu, Tzu-Ping Chen, Lang Yin, Ze Chen, Tong Arthur Wu, Siru Ouyang, Zihan Wang, Jiaxin Pei, Julian McAuley, Yejin Choi, Alex Pentland
 - Tags: agent, benchmark, context, conversation, long-term
 - Categories: ICML.cc/2026/Conference/-/Submission

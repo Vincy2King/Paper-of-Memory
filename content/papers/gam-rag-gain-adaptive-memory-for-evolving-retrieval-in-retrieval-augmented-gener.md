@@ -4,7 +4,7 @@
 - Venue: ICML 2026 regular
 - Paper ID: openreview:9YC7mbloXl
 - Published: 2026-04-30
-- Updated: 2026-06-24
+- Updated: 2026-09-22
 - Authors: Yifan Wang, Mingxuan Jiang, Zhihao Sun, Yixin Cao, Yicun Liu, Keyang Chen, Guangnan Ye, Hongfeng Chai
 - Tags: retrieval
 - Categories: ICML.cc/2026/Conference/-/Submission

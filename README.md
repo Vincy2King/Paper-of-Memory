@@ -52,6 +52,13 @@ python3 scripts/update_papers.py --build-only
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-09-22 | OpenReview | [Temporal Context Reinstatement Drives Episodic-Like Order Memory in Long-Context Language Models](content/papers/temporal-context-reinstatement-drives-episodic-like-order-memory-in-long-context.md) | context, episodic, long-term |
+| 2026-09-22 | OpenReview | [PersistBench: When Should Long-Term Memories Be Forgotten by LLMs?](content/papers/persistbench-when-should-long-term-memories-be-forgotten-by-llms.md) | benchmark, context, conversation |
+| 2026-09-22 | OpenReview | [MemEvolve: Meta-Evolution of Agent Memory Systems](content/papers/memevolve-meta-evolution-of-agent-memory-systems.md) | agent, benchmark, context |
+| 2026-09-22 | OpenReview | [GAM-RAG: Gain-Adaptive Memory for Evolving Retrieval in Retrieval-Augmented Generation](content/papers/gam-rag-gain-adaptive-memory-for-evolving-retrieval-in-retrieval-augmented-gener.md) | retrieval |
+| 2026-09-22 | OpenReview | [Episodic Memory-Guided Controllable Experience Synthesis for Reinforcement Learning](content/papers/episodic-memory-guided-controllable-experience-synthesis-for-reinforcement-learn.md) | episodic |
+| 2026-09-22 | OpenReview | [Benchmarking Agent Memory in Interdependent Multi-Session Agentic Tasks](content/papers/benchmarking-agent-memory-in-interdependent-multi-session-agentic-tasks.md) | agent, benchmark, context |
+| 2026-09-22 | OpenReview | [AMA-Bench: Evaluating Long-Horizon Memory for Agentic Applications](content/papers/ama-bench-evaluating-long-horizon-memory-for-agentic-applications.md) | agent, benchmark, retrieval |
 | 2026-09-21 | OpenReview | [MADrive: Memory-Augmented Driving Scene Modeling](content/papers/madrive-memory-augmented-driving-scene-modeling.md) | retrieval |
 | 2026-09-20 | OpenReview | [Think-in-Memory: Metacognition-Augmented LLM with Long-Term Memory](content/papers/think-in-memory-metacognition-augmented-llm-with-long-term-memory.md) | agent, context, conversation |
 | 2026-09-20 | OpenReview | [Preference-aware memory update for long-term llm agents](content/papers/preference-aware-memory-update-for-long-term-llm-agents.md) | agent, context, conversation |
@@ -65,13 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-09-13 | arXiv | [Retrieval-Driven Memory Reconsolidation for Long-Term LLM Agents](content/papers/retrieval-driven-memory-reconsolidation-for-long-term-llm-agents.md) | agent, long-term, retrieval |
 | 2026-09-13 | arXiv | [Pull: Lazy Materialization of Working Memory for Stateful LLM Conversations](content/papers/pull-lazy-materialization-of-working-memory-for-stateful-llm-conversations.md) | benchmark, compression, context |
 | 2026-09-13 | arXiv | [Bioinfoysis Technical Report](content/papers/bioinfoysis-technical-report.md) | agent, context |
-| 2026-09-12 | arXiv | [When Malicious Instructions Persist: Persistent Memory Poisoning Attack on Harness-Based Agents](content/papers/when-malicious-instructions-persist-persistent-memory-poisoning-attack-on-harnes.md) | agent |
-| 2026-09-12 | arXiv | [Trustworthy Agentic AI: A Comprehensive Cybersecurity and Systems Survey on Threat Landscapes, Defense Architectures, and Open Challenges](content/papers/trustworthy-agentic-ai-a-comprehensive-cybersecurity-and-systems-survey-on-threa.md) | agent, benchmark |
-| 2026-09-12 | arXiv | [LIMBO: Lifelong Inference-Time Memory and Budget Optimization for LLM Agents](content/papers/limbo-lifelong-inference-time-memory-and-budget-optimization-for-llm-agents.md) | agent, retrieval |
-| 2026-09-12 | OpenReview | [Geometry-Conditioned Turn Scoring for Conversational Memory Compression](content/papers/geometry-conditioned-turn-scoring-for-conversational-memory-compression.md) | benchmark, compression, context |
-| 2026-09-12 | arXiv | [GeoSkill:Experience-Driven Hierarchical Skill Learning with Collaborative Revision forGeospatialAgents](content/papers/geoskill-experience-driven-hierarchical-skill-learning-with-collaborative-revisi.md) | agent, retrieval |
-| 2026-09-11 | arXiv | [What a Deletion Certificate Covers, and Where It Expires: Auditable Removal from a Support-Vector Memory](content/papers/what-a-deletion-certificate-covers-and-where-it-expires-auditable-removal-from-a.md) | context |
-| 2026-09-11 | arXiv | [Toward Robust Personalized Alignment for LLMs: Mitigating Persona Drift in Multi-Turn Dialogue](content/papers/toward-robust-personalized-alignment-for-llms-mitigating-persona-drift-in-multi-.md) | benchmark |
 
 ## Suggested GitHub Setup
 
