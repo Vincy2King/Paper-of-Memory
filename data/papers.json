@@ -1,5 +1,37 @@
 [
   {
+    "abstract": "Recent advances in scene reconstruction have pushed toward highly realistic modeling of autonomous driving (AD) environments using 3D Gaussian splatting. However, the resulting reconstructions remain closely tied to the original observations and struggle to support photorealistic synthesis of significantly altered or novel driving scenarios. This work introduces MADrive, a memory-augmented reconstruction framework designed to extend the capabilities of existing scene reconstruction methods by replacing observed vehicles with visually similar 3D assets retrieved from a large-scale external memory bank. Specifically, we release MADrive, a curated dataset of ~70K 360° car videos captured in the wild and present a retrieval module that finds the most similar car instances in the memory bank, reconstructs the corresponding 3D assets from video, and integrates them into the target scene through orientation alignment and relighting. The resulting replacements provide complete multi-view representations of vehicles in the scene, enabling photorealistic synthesis of substantially altered configurations, as demonstrated in our experiments.",
+    "authors": [
+      "Polina Karpikova",
+      "Daniil Selikhanovych",
+      "Kirill Struminsky",
+      "Ruslan Musaev",
+      "Maria Golitsyna",
+      "Dmitry Baranchuk"
+    ],
+    "categories": [
+      "thecvf.com/CVPR/2026/Conference/-/Submission"
+    ],
+    "id": "openreview:uXQUhpd83Q",
+    "intro": "这篇论文被纳入仓库，是因为它和 `retrieval` 这些主题直接相关。\n\n它当前来自 `OpenReview`，并与 `CVPR 2026 Findings` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：Recent advances in scene reconstruction have pushed toward highly realistic modeling of autonomous driving (AD) environments using 3D Gaussian splatting.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, the resulting reconstructions remain closely tied to the original observations and struggle to support photorealistic synthesis of significantly altered or novel driving scenarios.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory-augmented"
+    ],
+    "one_liner": "Recent advances in scene reconstruction have pushed toward highly realistic modeling of autonomous driving (AD) environments using 3D Gaussian splatting.",
+    "published": "2026-09-21",
+    "relevance": "- 来源：OpenReview\n- Venue：CVPR 2026 Findings\n- 高亮主题命中：retrieval\n- 检索关键词命中：memory-augmented\n- 来源分类信息：thecvf.com/CVPR/2026/Conference/-/Submission",
+    "slug": "madrive-memory-augmented-driving-scene-modeling",
+    "source": "OpenReview",
+    "source_key": "uXQUhpd83Q",
+    "tags": [
+      "retrieval"
+    ],
+    "title": "MADrive: Memory-Augmented Driving Scene Modeling",
+    "updated": "2026-09-21",
+    "url": "https://openreview.net/forum?id=uXQUhpd83Q",
+    "venue": "CVPR 2026 Findings"
+  },
+  {
     "abstract": "Memory-augmented Large Language Models (LLMs) can utilize past contexts via recall-reason steps, which may produce biased thoughts, i.e., inconsistent reasoning paths over the same recalled contexts. Motivated by that humans only memorize the metacognition thoughts rather than all details, we propose a self-organizing memory-augmented mechanism called Think-in-Memory (TiM) to flexibly utilize the historical context, which is equipped with a metacognition space and stationary operation actions. Concretely, TiM can imitate human-level self-organization to memorize and update history context in a plug-and-play paradigm without suffering from reasoning inconsistency. The self-organization is formulated as a role-playing LLM agent pipeline to achieve stationary operation actions, i.e., thought generator, retriever, and organizer. Clinical diagnosis is adopted as the evaluation task: (1) we formulate a role-play simulator to simulate long-term interactions between the doctor and patient. (2) we collect a multi-turn medical consultations dataset from the real-world hospitals. Besides, two daily conversation datasets are also involved. Experiments demonstrate that our method achieves remarkable improvements on memory-augmented long-term dialogues about both daily and medical topics.",
     "authors": [],
     "categories": [

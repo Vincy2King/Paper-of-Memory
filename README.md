@@ -39,19 +39,20 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **1154**
-- Last generated: **2026-09-21**
+- Total tracked papers: **1155**
+- Last generated: **2026-09-22**
 
 ## Papers by Source
 
 - ACL Anthology: **6**
 - arXiv: **1003**
-- OpenReview: **145**
+- OpenReview: **146**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-09-21 | OpenReview | [MADrive: Memory-Augmented Driving Scene Modeling](content/papers/madrive-memory-augmented-driving-scene-modeling.md) | retrieval |
 | 2026-09-20 | OpenReview | [Think-in-Memory: Metacognition-Augmented LLM with Long-Term Memory](content/papers/think-in-memory-metacognition-augmented-llm-with-long-term-memory.md) | agent, context, conversation |
 | 2026-09-20 | OpenReview | [Preference-aware memory update for long-term llm agents](content/papers/preference-aware-memory-update-for-long-term-llm-agents.md) | agent, context, conversation |
 | 2026-09-19 | OpenReview | [Revisiting Persistent Indexing Structures on Intel Optane DC Persistent Memory](content/papers/revisiting-persistent-indexing-structures-on-intel-optane-dc-persistent-memory.md) | persistent memory |
@@ -71,7 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-09-12 | arXiv | [GeoSkill:Experience-Driven Hierarchical Skill Learning with Collaborative Revision forGeospatialAgents](content/papers/geoskill-experience-driven-hierarchical-skill-learning-with-collaborative-revisi.md) | agent, retrieval |
 | 2026-09-11 | arXiv | [What a Deletion Certificate Covers, and Where It Expires: Auditable Removal from a Support-Vector Memory](content/papers/what-a-deletion-certificate-covers-and-where-it-expires-auditable-removal-from-a.md) | context |
 | 2026-09-11 | arXiv | [Toward Robust Personalized Alignment for LLMs: Mitigating Persona Drift in Multi-Turn Dialogue](content/papers/toward-robust-personalized-alignment-for-llms-mitigating-persona-drift-in-multi-.md) | benchmark |
-| 2026-09-11 | arXiv | [SoK: Rethinking Jailbreaking in the Era of Agentic AI: Attacks, Defenses, and Practical Consideration](content/papers/sok-rethinking-jailbreaking-in-the-era-of-agentic-ai-attacks-defenses-and-practi.md) | agent, conversation |
 
 ## Suggested GitHub Setup
 
