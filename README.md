@@ -39,39 +39,39 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **1155**
+- Total tracked papers: **1184**
 - Last generated: **2026-09-28**
 
 ## Papers by Source
 
 - ACL Anthology: **6**
-- arXiv: **1003**
+- arXiv: **1032**
 - OpenReview: **146**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
-| 2026-09-22 | OpenReview | [Temporal Context Reinstatement Drives Episodic-Like Order Memory in Long-Context Language Models](content/papers/temporal-context-reinstatement-drives-episodic-like-order-memory-in-long-context.md) | context, episodic, long-term |
-| 2026-09-22 | OpenReview | [PersistBench: When Should Long-Term Memories Be Forgotten by LLMs?](content/papers/persistbench-when-should-long-term-memories-be-forgotten-by-llms.md) | benchmark, context, conversation |
-| 2026-09-22 | OpenReview | [MemEvolve: Meta-Evolution of Agent Memory Systems](content/papers/memevolve-meta-evolution-of-agent-memory-systems.md) | agent, benchmark, context |
-| 2026-09-22 | OpenReview | [GAM-RAG: Gain-Adaptive Memory for Evolving Retrieval in Retrieval-Augmented Generation](content/papers/gam-rag-gain-adaptive-memory-for-evolving-retrieval-in-retrieval-augmented-gener.md) | retrieval |
-| 2026-09-22 | OpenReview | [Episodic Memory-Guided Controllable Experience Synthesis for Reinforcement Learning](content/papers/episodic-memory-guided-controllable-experience-synthesis-for-reinforcement-learn.md) | episodic |
-| 2026-09-22 | OpenReview | [Benchmarking Agent Memory in Interdependent Multi-Session Agentic Tasks](content/papers/benchmarking-agent-memory-in-interdependent-multi-session-agentic-tasks.md) | agent, benchmark, context |
-| 2026-09-22 | OpenReview | [AMA-Bench: Evaluating Long-Horizon Memory for Agentic Applications](content/papers/ama-bench-evaluating-long-horizon-memory-for-agentic-applications.md) | agent, benchmark, retrieval |
-| 2026-09-21 | OpenReview | [MADrive: Memory-Augmented Driving Scene Modeling](content/papers/madrive-memory-augmented-driving-scene-modeling.md) | retrieval |
-| 2026-09-20 | OpenReview | [Think-in-Memory: Metacognition-Augmented LLM with Long-Term Memory](content/papers/think-in-memory-metacognition-augmented-llm-with-long-term-memory.md) | agent, context, conversation |
-| 2026-09-20 | OpenReview | [Preference-aware memory update for long-term llm agents](content/papers/preference-aware-memory-update-for-long-term-llm-agents.md) | agent, context, conversation |
-| 2026-09-19 | OpenReview | [Revisiting Persistent Indexing Structures on Intel Optane DC Persistent Memory](content/papers/revisiting-persistent-indexing-structures-on-intel-optane-dc-persistent-memory.md) | persistent memory |
-| 2026-09-15 | arXiv | [Smarter by the Moment: Environment-Driven Dynamic Policies for Continual LLM Improvement](content/papers/smarter-by-the-moment-environment-driven-dynamic-policies-for-continual-llm-impr.md) | benchmark, retrieval |
-| 2026-09-15 | arXiv | [Persistent Recurrent Memory Between Transformer Layers - Improves Language Model Generalization](content/papers/persistent-recurrent-memory-between-transformer-layers-improves-language-model-g.md) | persistent memory |
-| 2026-09-15 | arXiv | [LSREP: A Longitudinal State-Replay Protocol for Evaluating Conversational Memory, with ICE v2 as an Audited Local-First Architecture](content/papers/lsrep-a-longitudinal-state-replay-protocol-for-evaluating-conversational-memory-.md) | context, conversation, retrieval |
-| 2026-09-14 | arXiv | [Where to Look and What to Use: Retrieve-Localize-Generate for Long-Term Conversational Memory Question Answering](content/papers/where-to-look-and-what-to-use-retrieve-localize-generate-for-long-term-conversat.md) | benchmark, context, conversation |
-| 2026-09-14 | arXiv | [Semantic-TVM: Structure-Preserving Trustworthy Virtual Memory for Memory-Augmented and Tool-Using Agents](content/papers/semantic-tvm-structure-preserving-trustworthy-virtual-memory-for-memory-augmente.md) | agent, context |
-| 2026-09-13 | arXiv | [The Immutable Past: Formalizing State Mutability and Conflict Resolution in Mutable RAG](content/papers/the-immutable-past-formalizing-state-mutability-and-conflict-resolution-in-mutab.md) | agent, benchmark, context |
-| 2026-09-13 | arXiv | [Retrieval-Driven Memory Reconsolidation for Long-Term LLM Agents](content/papers/retrieval-driven-memory-reconsolidation-for-long-term-llm-agents.md) | agent, long-term, retrieval |
-| 2026-09-13 | arXiv | [Pull: Lazy Materialization of Working Memory for Stateful LLM Conversations](content/papers/pull-lazy-materialization-of-working-memory-for-stateful-llm-conversations.md) | benchmark, compression, context |
-| 2026-09-13 | arXiv | [Bioinfoysis Technical Report](content/papers/bioinfoysis-technical-report.md) | agent, context |
+| 2026-09-25 | arXiv | [SimpleMemVLA: A Simple but Effective Native-Video Memory for Vision-Language-Action Models](content/papers/simplememvla-a-simple-but-effective-native-video-memory-for-vision-language-acti.md) | benchmark, compression, context |
+| 2026-09-25 | arXiv | [PIA: A Personal Intelligence Agent Turning Health Conversations into Records and Records into Understanding](content/papers/pia-a-personal-intelligence-agent-turning-health-conversations-into-records-and-.md) | agent, context, conversation |
+| 2026-09-25 | arXiv | [MACBT: A Multi-Agent Cognitive Behavioral Therapy Decision Support System with Longitudinal Memory](content/papers/macbt-a-multi-agent-cognitive-behavioral-therapy-decision-support-system-with-lo.md) | agent |
+| 2026-09-25 | arXiv | [A Benchmark and Diagnostic Study of Epistemic Admission in Shared Agent Memory](content/papers/a-benchmark-and-diagnostic-study-of-epistemic-admission-in-shared-agent-memory.md) | agent, benchmark, retrieval |
+| 2026-09-24 | arXiv | [Scope Before You Persist: Preventing Cross-Family Interference in Agent Memory](content/papers/scope-before-you-persist-preventing-cross-family-interference-in-agent-memory.md) | agent, retrieval |
+| 2026-09-24 | arXiv | [Probing Stability-Plasticity Tradeoffs in Agent Memory through Cognitive Experimental Paradigms](content/papers/probing-stability-plasticity-tradeoffs-in-agent-memory-through-cognitive-experim.md) | agent, long-term |
+| 2026-09-24 | arXiv | [In-Context Binding Capacity in Language Models](content/papers/in-context-binding-capacity-in-language-models.md) | context |
+| 2026-09-24 | arXiv | [Bad Genius: Counterfactual-Guided Harness Evolution Beyond Task-Specific Shortcuts](content/papers/bad-genius-counterfactual-guided-harness-evolution-beyond-task-specific-shortcut.md) | agent, benchmark, retrieval |
+| 2026-09-24 | arXiv | [AutoResearch at Production Scale: Failure Modes and a Multi-Agent Framework](content/papers/autoresearch-at-production-scale-failure-modes-and-a-multi-agent-framework.md) | agent |
+| 2026-09-23 | arXiv | [TWIST: A Proposed Benchmark for Intervention Quality in Conversational Memory, with a Human-Validated Draft-Alignment](content/papers/twist-a-proposed-benchmark-for-intervention-quality-in-conversational-memory-wit.md) | benchmark, conversation, retrieval |
+| 2026-09-23 | arXiv | [SpeakerMem-R1: Speaker-Centered Dual-Track Memory for Multi-Party Dialogue](content/papers/speakermem-r1-speaker-centered-dual-track-memory-for-multi-party-dialogue.md) | benchmark, conversation, long-term |
+| 2026-09-23 | arXiv | [QuantWM: Temporally Consistent 2-Bit KV Cache Quantization for World Models and Video Generation](content/papers/quantwm-temporally-consistent-2-bit-kv-cache-quantization-for-world-models-and-v.md) | benchmark, compression |
+| 2026-09-23 | arXiv | [Policy Complexity, Reaction Time, and Bounded Rationality in Reinforcement Learning](content/papers/policy-complexity-reaction-time-and-bounded-rationality-in-reinforcement-learnin.md) | agent, compression |
+| 2026-09-23 | arXiv | [PRAGMA: Evaluating Personalized Guidance with Memory Alignment in Lifelong Conversations](content/papers/pragma-evaluating-personalized-guidance-with-memory-alignment-in-lifelong-conver.md) | benchmark, context, conversation |
+| 2026-09-23 | arXiv | [MemBodied: Recurrent Associative Memory for Vision-Language-Action Models](content/papers/membodied-recurrent-associative-memory-for-vision-language-action-models.md) | context, episodic |
+| 2026-09-23 | arXiv | [Just-in-Time Memory: Learning to Curate Task-Adaptive Memory for LLM Agents](content/papers/just-in-time-memory-learning-to-curate-task-adaptive-memory-for-llm-agents.md) | agent |
+| 2026-09-23 | arXiv | [EnSIMem: Entity-Structured Indexing for Long-Term Agent Memory](content/papers/ensimem-entity-structured-indexing-for-long-term-agent-memory.md) | agent, benchmark, context |
+| 2026-09-23 | arXiv | [Emergi-PersonaOS: A Persona Agent Operating System for Situational Adaptation and Controllable Evolution](content/papers/emergi-personaos-a-persona-agent-operating-system-for-situational-adaptation-and.md) | agent, long-term |
+| 2026-09-23 | arXiv | [Constraint-Driven Context Engineering: Designing Domain Interfaces for AI Systems](content/papers/constraint-driven-context-engineering-designing-domain-interfaces-for-ai-systems.md) | context, retrieval |
+| 2026-09-23 | arXiv | [Agent Memory with Episodic Retrieval for Financial Decision-Making](content/papers/agent-memory-with-episodic-retrieval-for-financial-decision-making.md) | agent, episodic, retrieval |
 
 ## Suggested GitHub Setup
 
