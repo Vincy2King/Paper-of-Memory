@@ -39,39 +39,39 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **1188**
+- Total tracked papers: **1234**
 - Last generated: **2026-09-29**
 
 ## Papers by Source
 
 - ACL Anthology: **6**
-- arXiv: **1036**
+- arXiv: **1082**
 - OpenReview: **146**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-09-28 | arXiv | [When Does Selection Replace Extraction? A Pre-Registered Test of Agent Memory with a Typed Decision Model](content/papers/when-does-selection-replace-extraction-a-pre-registered-test-of-agent-memory-wit.md) | agent, context, conversation |
+| 2026-09-28 | arXiv | [Stashbird: Efficient Speaker-Indexed Memory for Conversational Agents](content/papers/stashbird-efficient-speaker-indexed-memory-for-conversational-agents.md) | agent, benchmark, conversation |
+| 2026-09-28 | arXiv | [Share-Borne AI Virus: Memory-Hopping Attacks Across LLM Agents](content/papers/share-borne-ai-virus-memory-hopping-attacks-across-llm-agents.md) | agent |
+| 2026-09-28 | arXiv | [RoutePrism: Tracing Construction Order Effects in Agent Memory](content/papers/routeprism-tracing-construction-order-effects-in-agent-memory.md) | agent, context |
+| 2026-09-28 | arXiv | [Remember by Asking: Retrieval-Induced Memory Evolution for LLM Agents](content/papers/remember-by-asking-retrieval-induced-memory-evolution-for-llm-agents.md) | agent, compression, context |
+| 2026-09-28 | arXiv | [Reliability Engineering for AI Systems: Challenges, Methods, and Directions](content/papers/reliability-engineering-for-ai-systems-challenges-methods-and-directions.md) | agent, benchmark, retrieval |
+| 2026-09-28 | arXiv | [ReMCTS: Reflection-Enhanced Monte Carlo Tree Search for Code Generation](content/papers/remcts-reflection-enhanced-monte-carlo-tree-search-for-code-generation.md) | context |
+| 2026-09-28 | arXiv | [QuantWM: Temporally Consistent 2-Bit KV Cache Quantization for Video World Models](content/papers/quantwm-temporally-consistent-2-bit-kv-cache-quantization-for-video-world-models.md) | benchmark, compression |
+| 2026-09-28 | arXiv | [PersMem: Internalizing Personality into Dual-Pathway Memory for LLM Agents](content/papers/persmem-internalizing-personality-into-dual-pathway-memory-for-llm-agents.md) | agent, retrieval |
+| 2026-09-28 | arXiv | [PairPref: When Should Memory Guide the Answer? A Benchmark for Contextual Preference Use](content/papers/pairpref-when-should-memory-guide-the-answer-a-benchmark-for-contextual-preferen.md) | benchmark, context, retrieval |
+| 2026-09-28 | arXiv | [PDEU-Bench: Benchmarking the Personalized Planning Lifecycle of Tool-Calling LLM Agents](content/papers/pdeu-bench-benchmarking-the-personalized-planning-lifecycle-of-tool-calling-llm-.md) | agent, benchmark, long-term |
 | 2026-09-28 | arXiv | [Linguistic Trajectory Encoding for Efficient Long-Horizon Spatial Memory in Embodied Agents](content/papers/linguistic-trajectory-encoding-for-efficient-long-horizon-spatial-memory-in-embo.md) | agent, benchmark, compression |
-| 2026-09-27 | arXiv | [MAC-Net: A Multi-Task Deep Learning Framework for Modeling Cognitive Function From Task-Based fMRI](content/papers/mac-net-a-multi-task-deep-learning-framework-for-modeling-cognitive-function-fro.md) | benchmark |
-| 2026-09-26 | arXiv | [Using LMs to Model the Effects of Context and Coreference during Sentence Comprehension](content/papers/using-lms-to-model-the-effects-of-context-and-coreference-during-sentence-compre.md) | context |
-| 2026-09-26 | arXiv | [Logical subspace in LLMs](content/papers/logical-subspace-in-llms.md) | working memory |
-| 2026-09-25 | arXiv | [SimpleMemVLA: A Simple but Effective Native-Video Memory for Vision-Language-Action Models](content/papers/simplememvla-a-simple-but-effective-native-video-memory-for-vision-language-acti.md) | benchmark, compression, context |
-| 2026-09-25 | arXiv | [PIA: A Personal Intelligence Agent Turning Health Conversations into Records and Records into Understanding](content/papers/pia-a-personal-intelligence-agent-turning-health-conversations-into-records-and-.md) | agent, context, conversation |
-| 2026-09-25 | arXiv | [MACBT: A Multi-Agent Cognitive Behavioral Therapy Decision Support System with Longitudinal Memory](content/papers/macbt-a-multi-agent-cognitive-behavioral-therapy-decision-support-system-with-lo.md) | agent |
-| 2026-09-25 | arXiv | [A Benchmark and Diagnostic Study of Epistemic Admission in Shared Agent Memory](content/papers/a-benchmark-and-diagnostic-study-of-epistemic-admission-in-shared-agent-memory.md) | agent, benchmark, retrieval |
-| 2026-09-24 | arXiv | [Scope Before You Persist: Preventing Cross-Family Interference in Agent Memory](content/papers/scope-before-you-persist-preventing-cross-family-interference-in-agent-memory.md) | agent, retrieval |
-| 2026-09-24 | arXiv | [Probing Stability-Plasticity Tradeoffs in Agent Memory through Cognitive Experimental Paradigms](content/papers/probing-stability-plasticity-tradeoffs-in-agent-memory-through-cognitive-experim.md) | agent, long-term |
-| 2026-09-24 | arXiv | [In-Context Binding Capacity in Language Models](content/papers/in-context-binding-capacity-in-language-models.md) | context |
-| 2026-09-24 | arXiv | [Bad Genius: Counterfactual-Guided Harness Evolution Beyond Task-Specific Shortcuts](content/papers/bad-genius-counterfactual-guided-harness-evolution-beyond-task-specific-shortcut.md) | agent, benchmark, retrieval |
-| 2026-09-24 | arXiv | [AutoResearch at Production Scale: Failure Modes and a Multi-Agent Framework](content/papers/autoresearch-at-production-scale-failure-modes-and-a-multi-agent-framework.md) | agent |
-| 2026-09-23 | arXiv | [TWIST: A Proposed Benchmark for Intervention Quality in Conversational Memory, with a Human-Validated Draft-Alignment](content/papers/twist-a-proposed-benchmark-for-intervention-quality-in-conversational-memory-wit.md) | benchmark, conversation, retrieval |
-| 2026-09-23 | arXiv | [SpeakerMem-R1: Speaker-Centered Dual-Track Memory for Multi-Party Dialogue](content/papers/speakermem-r1-speaker-centered-dual-track-memory-for-multi-party-dialogue.md) | benchmark, conversation, long-term |
-| 2026-09-23 | arXiv | [QuantWM: Temporally Consistent 2-Bit KV Cache Quantization for World Models and Video Generation](content/papers/quantwm-temporally-consistent-2-bit-kv-cache-quantization-for-world-models-and-v.md) | benchmark, compression |
-| 2026-09-23 | arXiv | [Policy Complexity, Reaction Time, and Bounded Rationality in Reinforcement Learning](content/papers/policy-complexity-reaction-time-and-bounded-rationality-in-reinforcement-learnin.md) | agent, compression |
-| 2026-09-23 | arXiv | [PRAGMA: Evaluating Personalized Guidance with Memory Alignment in Lifelong Conversations](content/papers/pragma-evaluating-personalized-guidance-with-memory-alignment-in-lifelong-conver.md) | benchmark, context, conversation |
-| 2026-09-23 | arXiv | [MemBodied: Recurrent Associative Memory for Vision-Language-Action Models](content/papers/membodied-recurrent-associative-memory-for-vision-language-action-models.md) | context, episodic |
-| 2026-09-23 | arXiv | [Just-in-Time Memory: Learning to Curate Task-Adaptive Memory for LLM Agents](content/papers/just-in-time-memory-learning-to-curate-task-adaptive-memory-for-llm-agents.md) | agent |
+| 2026-09-28 | arXiv | [Learning What to Recall: Adaptive Multi-Cue Episodic Memory for World Models](content/papers/learning-what-to-recall-adaptive-multi-cue-episodic-memory-for-world-models.md) | context, episodic, retrieval |
+| 2026-09-28 | arXiv | [Just-In-Time Agent Memory with Runtime Agentic Research](content/papers/just-in-time-agent-memory-with-runtime-agentic-research.md) | agent, benchmark, context |
+| 2026-09-28 | arXiv | [GenMem: Generative Symbolic Memory for Self-Evolving Harness](content/papers/genmem-generative-symbolic-memory-for-self-evolving-harness.md) | agent, long-term, retrieval |
+| 2026-09-28 | arXiv | [From Attack Success to Attack Severity: Counterfactual Memory Attacks on LLM Agents](content/papers/from-attack-success-to-attack-severity-counterfactual-memory-attacks-on-llm-agen.md) | agent, benchmark |
+| 2026-09-28 | arXiv | [Emergi-PersonaOS: A Persona Agent Operating System for Situational Adaptation and Controllable Evolution](content/papers/emergi-personaos-a-persona-agent-operating-system-for-situational-adaptation-and.md) | agent, long-term |
+| 2026-09-28 | arXiv | [ERSkill: Evolving for Skill-Guided Adaptive Memory Retrieval](content/papers/erskill-evolving-for-skill-guided-adaptive-memory-retrieval.md) | agent, benchmark, long-term |
+| 2026-09-28 | arXiv | [EP-Mem: Elastic Privacy Memory for Social Relationship-Aware LLM Agents](content/papers/ep-mem-elastic-privacy-memory-for-social-relationship-aware-llm-agents.md) | agent, benchmark, context |
+| 2026-09-28 | arXiv | [Coding Agent Memory Post-training: Unlocking the Memory Potential of Pre-trained File Operations for Long-Horizon Tasks via Reinforcement Learning](content/papers/coding-agent-memory-post-training-unlocking-the-memory-potential-of-pre-trained-.md) | agent, context |
 
 ## Suggested GitHub Setup
 
