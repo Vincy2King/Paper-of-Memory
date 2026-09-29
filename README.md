@@ -39,19 +39,23 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **1184**
-- Last generated: **2026-09-28**
+- Total tracked papers: **1188**
+- Last generated: **2026-09-29**
 
 ## Papers by Source
 
 - ACL Anthology: **6**
-- arXiv: **1032**
+- arXiv: **1036**
 - OpenReview: **146**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-09-28 | arXiv | [Linguistic Trajectory Encoding for Efficient Long-Horizon Spatial Memory in Embodied Agents](content/papers/linguistic-trajectory-encoding-for-efficient-long-horizon-spatial-memory-in-embo.md) | agent, benchmark, compression |
+| 2026-09-27 | arXiv | [MAC-Net: A Multi-Task Deep Learning Framework for Modeling Cognitive Function From Task-Based fMRI](content/papers/mac-net-a-multi-task-deep-learning-framework-for-modeling-cognitive-function-fro.md) | benchmark |
+| 2026-09-26 | arXiv | [Using LMs to Model the Effects of Context and Coreference during Sentence Comprehension](content/papers/using-lms-to-model-the-effects-of-context-and-coreference-during-sentence-compre.md) | context |
+| 2026-09-26 | arXiv | [Logical subspace in LLMs](content/papers/logical-subspace-in-llms.md) | working memory |
 | 2026-09-25 | arXiv | [SimpleMemVLA: A Simple but Effective Native-Video Memory for Vision-Language-Action Models](content/papers/simplememvla-a-simple-but-effective-native-video-memory-for-vision-language-acti.md) | benchmark, compression, context |
 | 2026-09-25 | arXiv | [PIA: A Personal Intelligence Agent Turning Health Conversations into Records and Records into Understanding](content/papers/pia-a-personal-intelligence-agent-turning-health-conversations-into-records-and-.md) | agent, context, conversation |
 | 2026-09-25 | arXiv | [MACBT: A Multi-Agent Cognitive Behavioral Therapy Decision Support System with Longitudinal Memory](content/papers/macbt-a-multi-agent-cognitive-behavioral-therapy-decision-support-system-with-lo.md) | agent |
@@ -68,10 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-09-23 | arXiv | [PRAGMA: Evaluating Personalized Guidance with Memory Alignment in Lifelong Conversations](content/papers/pragma-evaluating-personalized-guidance-with-memory-alignment-in-lifelong-conver.md) | benchmark, context, conversation |
 | 2026-09-23 | arXiv | [MemBodied: Recurrent Associative Memory for Vision-Language-Action Models](content/papers/membodied-recurrent-associative-memory-for-vision-language-action-models.md) | context, episodic |
 | 2026-09-23 | arXiv | [Just-in-Time Memory: Learning to Curate Task-Adaptive Memory for LLM Agents](content/papers/just-in-time-memory-learning-to-curate-task-adaptive-memory-for-llm-agents.md) | agent |
-| 2026-09-23 | arXiv | [EnSIMem: Entity-Structured Indexing for Long-Term Agent Memory](content/papers/ensimem-entity-structured-indexing-for-long-term-agent-memory.md) | agent, benchmark, context |
-| 2026-09-23 | arXiv | [Emergi-PersonaOS: A Persona Agent Operating System for Situational Adaptation and Controllable Evolution](content/papers/emergi-personaos-a-persona-agent-operating-system-for-situational-adaptation-and.md) | agent, long-term |
-| 2026-09-23 | arXiv | [Constraint-Driven Context Engineering: Designing Domain Interfaces for AI Systems](content/papers/constraint-driven-context-engineering-designing-domain-interfaces-for-ai-systems.md) | context, retrieval |
-| 2026-09-23 | arXiv | [Agent Memory with Episodic Retrieval for Financial Decision-Making](content/papers/agent-memory-with-episodic-retrieval-for-financial-decision-making.md) | agent, episodic, retrieval |
 
 ## Suggested GitHub Setup
 

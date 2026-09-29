@@ -1,5 +1,135 @@
 [
   {
+    "abstract": "Embodied agents performing long-horizon tasks require a memory representation in which the state transitions of dynamic objects remain queryable in natural language across hours-to-days observation horizons. Existing systems either drop fine-grained motion (clip-level video-language embeddings), keep it only as raw coordinates (geometric SLAM), or organise it around immediate task context (agent working memories). None of them gives the agent a per-object timeline whose state transitions are themselves queryable in language. Our key contribution is \\textbf{Linguistic Trajectory Encoding} (LTE), which compresses dynamic object motion histories via a hybrid representation combining natural language descriptions, sparse spatial anchors, and visual anchors. LTE adapts compression to motion complexity by anchoring periods without reliable observations to the last seen location, while representing motion with geometric waypoints and linguistic descriptions to preserve accuracy. To evaluate these capabilities across extended time horizons, we construct the \\textbf{Spatial Memory Benchmark} (SMB) from EgoLife multi-day recordings, targeting capabilities absent in existing benchmarks: semantic trajectory retrieval and long-horizon object retrieval. On SMB, the LTE-based system achieves $45.3\\%$ success in semantic trajectory retrieval and $48.7\\%$ in long-horizon object retrieval, outperforming structured-memory and VLM baselines (best prior: $31.9\\%$ and $34.4\\%$). LTE achieves trajectory compression by factors of $8.7\\times$ to $26.1\\times$ with sub-second query latency on $24$\\,h video. On Ego4D natural-language queries, the system reaches $28.75\\%$ / $55.10\\%$ R@1/R@5, $+15.80$ / $+31.30$ pts over EgoVLPv2.",
+    "authors": [
+      "Tianyidan Xie",
+      "Shenyi Wang",
+      "Qiang Tang",
+      "Mingjie Wang",
+      "Zhicheng Qiu",
+      "Xuanfu Li",
+      "Zhan Xu",
+      "Jian Yang",
+      "Lanjun Wang",
+      "Zili Yi"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "id": "2609.04802v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, compression, context` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Embodied agents performing long-horizon tasks require a memory representation in which the state transitions of dynamic objects remain queryable in natural language across hours-to-days observation horizons.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing systems either drop fine-grained motion (clip-level video-language embeddings), keep it only as raw coordinates (geometric SLAM), or organise it around immediate task context (agent working memories).\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "working memory"
+    ],
+    "one_liner": "Embodied agents performing long-horizon tasks require a memory representation in which the state transitions of dynamic objects remain queryable in natural language across...",
+    "published": "2026-09-04",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, compression, context, retrieval\n- 检索关键词命中：working memory\n- 来源分类信息：cs.CV, cs.AI",
+    "slug": "linguistic-trajectory-encoding-for-efficient-long-horizon-spatial-memory-in-embo",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2609.04802v2",
+    "tags": [
+      "agent",
+      "benchmark",
+      "compression",
+      "context",
+      "retrieval"
+    ],
+    "title": "Linguistic Trajectory Encoding for Efficient Long-Horizon Spatial Memory in Embodied Agents",
+    "updated": "2026-09-28",
+    "url": "http://arxiv.org/abs/2609.04802v2",
+    "venue": ""
+  },
+  {
+    "abstract": "Objective cognitive assessment from neural signals supports neurorehabilitation, but individual-level prediction from task-based fMRI (tfMRI) remains difficult because neural features coexist with substantial demographic and scanner-related variation. We present the Multi-task Activation and Contrast Network (MAC-Net), a covariate-aware deep learning framework for modeling individual cognitive function from regional tfMRI. By isolating tfMRI features into a dedicated neural pathway and restricting participant variables to a terminal late-fusion pathway, MAC-Net prevents dominant covariates from suppressing high-dimensional clinical representations during feature learning. Evaluating baseline data from 6,500 Adolescent Brain Cognitive Development Study participants under family-aware cross-validation, MAC-Net was benchmarked against linear models, random forests, and alternative deep architectures. The N-back plus Monetary Incentive Delay configuration achieved $R^{2}$ values of 0.174, 0.238, and 0.277 for fluid, crystallized, and total cognition, outperforming covariate-only baselines (0.178) and alternative deep models (0.217). N-back was the most informative paradigm, whereas incorporating the Stop Signal Task marginally degraded performance. Feature attributions via Integrated Gradients, DeepLIFT, and Input Gradient were highly concordant, localizing working-memory-related frontal, parietal, and cingulate regions. These findings demonstrate that covariate-aware multi-task modeling yields reproducible cognitive-function estimations, establishing a robust neural engineering framework for clinical translation.",
+    "authors": [
+      "Md. Tanvir Rahman",
+      "Nabil Anan Orka",
+      "Asaduzzaman Khan",
+      "Mohammad Ali Moni"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2609.33440v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `benchmark` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Objective cognitive assessment from neural signals supports neurorehabilitation, but individual-level prediction from task-based fMRI (tfMRI) remains difficult because neural features coexist with substantial...\n\n进一步看，论文的核心做法或实验重点可以概括为：We present the Multi-task Activation and Contrast Network (MAC-Net), a covariate-aware deep learning framework for modeling individual cognitive function from regional tfMRI.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "working memory"
+    ],
+    "one_liner": "Objective cognitive assessment from neural signals supports neurorehabilitation, but individual-level prediction from task-based fMRI (tfMRI) remains difficult because neural...",
+    "published": "2026-09-27",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：benchmark\n- 检索关键词命中：working memory\n- 来源分类信息：cs.AI",
+    "slug": "mac-net-a-multi-task-deep-learning-framework-for-modeling-cognitive-function-fro",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2609.33440v1",
+    "tags": [
+      "benchmark"
+    ],
+    "title": "MAC-Net: A Multi-Task Deep Learning Framework for Modeling Cognitive Function From Task-Based fMRI",
+    "updated": "2026-09-27",
+    "url": "http://arxiv.org/abs/2609.33440v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Language models (LMs) are often used as a tool to model human language processing. Recent studies suggest that severely restricting LMs' context window improves their fit to human psycholinguistic data by simulating human working memory constraints. However, it is possible that this strict memory-decay approach overlooks humans' reliance on long-range structural representations, such as discourse structre. In this work, we systematically vary the context window size of GPT-2 across four large-scale naturalistic English reading-time datasets and observe a U-shaped relationship: Although restricted contexts (< 20 tokens) successfully capture local memory limitations, expanded contexts (500--1,000 tokens) ultimately yield the highest overall psycholinguistic fit. To investigate the mechanism driving this benefit, we conduct a counterfactual inference-time experiment that disrupts cross-sentential entity chains by pronominalizing repeated discourse entities. Obscuring these structural linkages significantly degrades the predictive power of larger context windows by 20% to 40%. Our experiments demonstrate that tracking long-range coreference relations is one important factor for the alignment between LM surprisal and human reading behavior, and approximate the extent to which human comprehenders use global discourse relations during language processing.",
+    "authors": [
+      "Kohei Kajikawa",
+      "Lin Ai",
+      "Tatsuki Kuribayashi",
+      "Ethan Gotlieb Wilcox"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "id": "2609.32119v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `context` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Language models (LMs) are often used as a tool to model human language processing.\n\n进一步看，论文的核心做法或实验重点可以概括为：Recent studies suggest that severely restricting LMs' context window improves their fit to human psycholinguistic data by simulating human working memory constraints.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "working memory"
+    ],
+    "one_liner": "Language models (LMs) are often used as a tool to model human language processing.",
+    "published": "2026-09-26",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：context\n- 检索关键词命中：working memory\n- 来源分类信息：cs.CL",
+    "slug": "using-lms-to-model-the-effects-of-context-and-coreference-during-sentence-compre",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2609.32119v1",
+    "tags": [
+      "context"
+    ],
+    "title": "Using LMs to Model the Effects of Context and Coreference during Sentence Comprehension",
+    "updated": "2026-09-26",
+    "url": "http://arxiv.org/abs/2609.32119v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Recent work has identified a human brain network specialized for abstract formal reasoning (Kean et al., 2025). Does the same hold true in language models? To answer this question, we introduce the minimal viable subspace (MVS) method, which searches for the lowest-rank activation subspace at a layer that preserves task performance when everything outside that subspace is ablated. Using MVS, we demonstrate low-rank subspaces supporting logical inference on Gemma and Qwen models. Furthermore, these subspaces exhibit a clear dissociation from model capacities on other tasks, such that retaining these late logic subspaces preserves inference while impairing factual knowledge, working memory, cognitive control, and arithmetic. Conversely, ablating them reduces logical inference accuracy to chance while largely sparing these other capacities. Our results suggest a functionally localizable core machinery for logic akin to that in the human brain.",
+    "authors": [
+      "Hope Kean",
+      "Enric Boix-Adsera"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.CL"
+    ],
+    "id": "2609.32907v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `working memory` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Recent work has identified a human brain network specialized for abstract formal reasoning (Kean et al., 2025).\n\n进一步看，论文的核心做法或实验重点可以概括为：Does the same hold true in language models?\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "working memory"
+    ],
+    "one_liner": "Recent work has identified a human brain network specialized for abstract formal reasoning (Kean et al., 2025).",
+    "published": "2026-09-26",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：working memory\n- 检索关键词命中：working memory\n- 来源分类信息：cs.AI, cs.CL",
+    "slug": "logical-subspace-in-llms",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2609.32907v1",
+    "tags": [
+      "working memory"
+    ],
+    "title": "Logical subspace in LLMs",
+    "updated": "2026-09-26",
+    "url": "http://arxiv.org/abs/2609.32907v1",
+    "venue": ""
+  },
+  {
     "abstract": "Long-horizon manipulation is partially observable: the information needed to choose the next action may appear only in observations from minutes earlier. Existing memory mechanisms for VLAs, such as retrieval banks, learned compressors and recurrent states, must decide what to keep from the past before knowing what a future decision will require. They were motivated by the assumption that minute-scale history is too large to process directly, which no longer holds for modern VLM backbones. We propose SimpleMemVLA, a VLA without a dedicated memory module that uses the backbone's native video context directly as memory. It keeps the sampled history intact in the timestamped video format the backbone was pretrained to process, routes the evidence it finds to a standard flow-matching action head through the hidden states of a generated sub-task, and prefills the history shared by consecutive decisions during action execution, keeping latency close to that of a single-frame VLA. SimpleMemVLA achieves state-of-the-art results on four memory benchmarks without loss on general-purpose control, and with the same backbone and training setup it outperforms retrieval, compression and recurrent-state methods by a wide margin. History interventions show that the policy reads specific evidence from its past and follows edited histories without parameter updates, a visual form of in-context learning. On a physical dual-arm robot, it completes two tasks whose decisive evidence disappears before the robot acts. Code available at https://github.com/OpenBMB/SimpleMemVLA",
     "authors": [
       "Cheng Yin",
