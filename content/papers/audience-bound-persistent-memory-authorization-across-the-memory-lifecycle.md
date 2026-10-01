@@ -27,7 +27,7 @@ A personal language agent that acts for its owner across private and shared conv
 ## Why It Was Included
 - 来源：arXiv
 - 高亮主题命中：agent, context, conversation, retrieval
-- 检索关键词命中：persistent memory
+- 检索关键词命中：agent memory, persistent memory
 - 来源分类信息：cs.CR, cs.AI
 
 ## Abstract Snapshot

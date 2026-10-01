@@ -27,7 +27,7 @@ Every day, people continuously infer situational context and adjust the way they
 ## Why It Was Included
 - 来源：arXiv
 - 高亮主题命中：context, episodic, long-term, retrieval
-- 检索关键词命中：memory retrieval
+- 检索关键词命中：episodic memory, long-term memory, memory retrieval, retrieval memory, working memory
 - 来源分类信息：cs.AI, cs.NE
 
 ## Abstract Snapshot

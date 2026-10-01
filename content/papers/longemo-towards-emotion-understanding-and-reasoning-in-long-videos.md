@@ -27,7 +27,7 @@ While recent Multimodal Large Language Models (MLLMs) have shown promise in affe
 ## Why It Was Included
 - 来源：arXiv
 - 高亮主题命中：agent, benchmark, episodic
-- 检索关键词命中：memory augmented
+- 检索关键词命中：memory augmented, memory-augmented
 - 来源分类信息：cs.CV, cs.AI
 
 ## Abstract Snapshot

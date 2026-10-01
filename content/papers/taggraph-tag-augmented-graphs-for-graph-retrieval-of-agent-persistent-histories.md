@@ -27,7 +27,7 @@ Long-term memory lets LLM agents recall past interactions and remain consistent 
 ## Why It Was Included
 - 来源：arXiv
 - 高亮主题命中：agent, conversation, long-term, retrieval
-- 检索关键词命中：conversational memory
+- 检索关键词命中：conversational memory, long-term memory
 - 来源分类信息：cs.IR, cs.AI
 
 ## Abstract Snapshot
