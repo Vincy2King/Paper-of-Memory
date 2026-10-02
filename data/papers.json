@@ -1,5 +1,374 @@
 [
   {
+    "abstract": "Some properties of languages, e.g., subject-object-verb (SOV) word order, are more prevalent than others among the thousands of attested natural languages (NLs). Such typological commonality is often attributed to learning biases. Computational simulations, recently with language models (LMs), have facilitated the exploration of this theory. In this paper, we extend existing analyses of the relationship between LMs' learning biases and typological commonality on both data and model sides, focusing on: (i) cross-serial dependencies, the upper limit of attested syntactic complexity, and (ii) stack-based LMs (SLMs), potentially facilitating learning of hierarchical patterns. We first evaluate generalization of SLMs on cross-serial dependencies across diverse artificial languages and confirm that they struggle with such constructions. However, SLMs with limited working memory generalize better suggesting a possible basis for such inductive bias and thus the typological commonality of some word order configurations.",
+    "authors": [
+      "Nadine El-Naggar",
+      "Tatsuki Kuribayashi",
+      "Ted Briscoe"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "id": "2610.02040v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `context` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Some properties of languages, e.g., subject-object-verb (SOV) word order, are more prevalent than others among the thousands of attested natural languages (NLs).\n\n进一步看，论文的核心做法或实验重点可以概括为：Such typological commonality is often attributed to learning biases.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "working memory"
+    ],
+    "one_liner": "Some properties of languages, e.g., subject-object-verb (SOV) word order, are more prevalent than others among the thousands of attested natural languages (NLs).",
+    "published": "2026-10-01",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：context\n- 检索关键词命中：working memory\n- 来源分类信息：cs.CL",
+    "slug": "typological-alignment-of-stack-based-language-models-on-mildly-context-sensitive",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2610.02040v1",
+    "tags": [
+      "context"
+    ],
+    "title": "Typological Alignment of Stack-Based Language Models on Mildly Context-Sensitive Artificial Languages",
+    "updated": "2026-10-01",
+    "url": "http://arxiv.org/abs/2610.02040v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Long-term memory lets LLM agents recall past interactions and remain consistent across sessions, but memory systems are hard to compare because they often vary in representation, indexing, retrieval, and evaluation. We present a controlled evaluation framework based on shared 5W-style conversational memories. Localized graph configurations traverse a common base graph; AdaptiveGraph adds chronological edges and Personalized PageRank diffusion. We also evaluate BM25 over the same extracted notes and OpenClaw as a raw-input external reference. Retrieval rankings vary across memory settings. On LongMemEval-S, AdaptiveGraph is the strongest graph configuration at 0.844 MRR, but BM25 reaches 0.867 and OpenClaw 0.880. On ATANT Core, localized graph traversal outperforms diffusion and BM25, whereas BM25 leads the stress rounds. Reducing LongMemEval-S within the tested range does not reproduce the ATANT diffusion penalty, but the smallest tested store remains larger than ATANT Core, so store size cannot be ruled out. The penalty also persists under a permissive content-match criterion. Vocabulary normalization and extraction quality substantially affect graph retrieval, and missing extraction tags are common among top-five misses. Retrieval strategies should therefore be evaluated jointly with the memory setting and against strong lexical baselines.",
+    "authors": [
+      "Yu-Shu Chen",
+      "Yu-Jung Liang",
+      "Pengtao Xie"
+    ],
+    "categories": [
+      "cs.IR",
+      "cs.AI"
+    ],
+    "id": "2609.38353v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, conversation, long-term, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Long-term memory lets LLM agents recall past interactions and remain consistent across sessions, but memory systems are hard to compare because they often vary in representation, indexing, retrieval, and evaluation.\n\n进一步看，论文的核心做法或实验重点可以概括为：We present a controlled evaluation framework based on shared 5W-style conversational memories.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "conversational memory",
+      "long-term memory"
+    ],
+    "one_liner": "Long-term memory lets LLM agents recall past interactions and remain consistent across sessions, but memory systems are hard to compare because they often vary in...",
+    "published": "2026-09-29",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, conversation, long-term, retrieval\n- 检索关键词命中：conversational memory, long-term memory\n- 来源分类信息：cs.IR, cs.AI",
+    "slug": "taggraph-tag-augmented-graphs-for-graph-retrieval-of-agent-persistent-histories",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2609.38353v2",
+    "tags": [
+      "agent",
+      "conversation",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "TAGGRAPH: Tag-Augmented Graphs for Graph Retrieval of Agent Persistent Histories",
+    "updated": "2026-10-01",
+    "url": "http://arxiv.org/abs/2609.38353v2",
+    "venue": ""
+  },
+  {
+    "abstract": "Large language models often lose track of persistent instructions and relevant information as multi-turn conversations grow. We study this cumulative contextual decay through three related failure modes: attention pollution, dilution, and drift. We propose REA (Role-aware Heuristic Episodic Attention), a context-management framework that assigns different persistence and representation policies to instructions and episodic interactions. Instructional Memory retains identified global constraints in a dedicated prefix. Episodic Memory preserves user inputs and compresses model replies, while heuristic retrieval selects raw text, compressed representations, or omission for each historical turn. On Long-MT-Bench+, REA improves the judge score from 6.32 to 7.36 on a 10-point scale, a 16.5% relative gain over the Vanilla baseline, and reduces average latency by 2.91$\\times$. Additional evaluations show aggregate gains on three backbones spanning 1.7B-7B parameters and on Chinese and English role-playing tasks. These results support role-aware context management as a practical approach to maintaining conversational continuity and instruction adherence.",
+    "authors": [
+      "Wanyang Hong",
+      "Zhaoning Zhang",
+      "Yi Chen",
+      "Libo Zhang",
+      "Baihui Liu",
+      "Linbo Qiao",
+      "Zhiliang Tian",
+      "Dongsheng Li"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "id": "2610.00958v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `context, conversation, episodic, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Large language models often lose track of persistent instructions and relevant information as multi-turn conversations grow.\n\n进一步看，论文的核心做法或实验重点可以概括为：We study this cumulative contextual decay through three related failure modes: attention pollution, dilution, and drift.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "episodic memory"
+    ],
+    "one_liner": "Large language models often lose track of persistent instructions and relevant information as multi-turn conversations grow.",
+    "published": "2026-10-01",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：context, conversation, episodic, retrieval\n- 检索关键词命中：episodic memory\n- 来源分类信息：cs.CL",
+    "slug": "role-aware-heuristic-episodic-attention-for-conversational-llms",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2610.00958v1",
+    "tags": [
+      "context",
+      "conversation",
+      "episodic",
+      "retrieval"
+    ],
+    "title": "Role-aware Heuristic Episodic Attention for Conversational LLMs",
+    "updated": "2026-10-01",
+    "url": "http://arxiv.org/abs/2610.00958v1",
+    "venue": ""
+  },
+  {
+    "abstract": "World models have progressed from compact latent dynamics to generative, controllable, and interactive simulators of embodied environments. However, high predictive likelihood and visual fidelity do not necessarily ensure that a model preserves the evidence required for safe decision-making. This perspective identifies three structural mismatches in current world modeling: likelihood versus risk, prediction versus intervention, and finite-horizon prediction versus accumulated consequences. We propose the Risk-Informed World Model (RIWM) as a decision-centric research direction for safety-critical embodied systems. RIWM organizes world modeling around consequences, intervention, epistemic uncertainty, and recoverability, and integrates four interdependent capabilities: decision-relevant representation, counterfactual reasoning, safety-critical episodic memory, and runtime safety assurance. It distinguishes physical, social, and operational consequences while using epistemic uncertainty to qualify the evidence supporting action. We further discuss open challenges in identifying consequential futures, validating counterfactual reasoning, maintaining revisable safety memories, translating learned consequences into executable constraints, and determining when evidence is sufficient to act. This perspective argues that future world models should move beyond predicting likely futures toward identifying which futures matter, revising judgments through experience, and recognizing when to act, revise, sense, defer, or abstain.",
+    "authors": [
+      "Kailang Ma",
+      "Heye Huang",
+      "Inhi Kim",
+      "Kitae Jang"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.RO"
+    ],
+    "id": "2609.03774v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `episodic` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：World models have progressed from compact latent dynamics to generative, controllable, and interactive simulators of embodied environments.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, high predictive likelihood and visual fidelity do not necessarily ensure that a model preserves the evidence required for safe decision-making.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "episodic memory"
+    ],
+    "one_liner": "World models have progressed from compact latent dynamics to generative, controllable, and interactive simulators of embodied environments.",
+    "published": "2026-09-03",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：episodic\n- 检索关键词命中：episodic memory\n- 来源分类信息：cs.AI, cs.RO",
+    "slug": "rethinking-world-models-for-safety-critical-embodied-systems",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2609.03774v2",
+    "tags": [
+      "episodic"
+    ],
+    "title": "Rethinking World Models for Safety-Critical Embodied Systems",
+    "updated": "2026-10-01",
+    "url": "http://arxiv.org/abs/2609.03774v2",
+    "venue": ""
+  },
+  {
+    "abstract": "Long-term memory systems for large language models (LLMs) have gained popularity for extending reasoning capabilities across applications. Current memory systems rely on LLM agents to organize and consolidate memory, resulting in costly, inefficient write operations. To address this limitation, we propose MemFit, a long-term memory system for conversational agents that reduces the cost and latency of memory operations. Unlike existing systems that rely on expensive LLM calls for memory construction or discard surface-level details through compression, MemFit stores each turn verbatim in an append-only store with near-instantaneous, LLM-free insertion, indexing turns with segment summaries rather than replacing them. Additionally, MemFit uses an LLM-free, multi-path retrieval strategy that combines lexical and semantic signals with cross-encoder reranking over caption- augmented episodes in both textual and multimodal settings. Empirical results on three widely used benchmarks, LoCoMo, MemGallery, and LongMemEval-S, show that MemFit achieves state-of-the-art performance while reducing memory construction time and cost several-fold, providing a scalable and efficient solution for persistent agentic memory.",
+    "authors": [
+      "Mitchell Piehl",
+      "Muchao Ye"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2610.00872v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, compression, conversation` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Long-term memory systems for large language models (LLMs) have gained popularity for extending reasoning capabilities across applications.\n\n进一步看，论文的核心做法或实验重点可以概括为：Current memory systems rely on LLM agents to organize and consolidate memory, resulting in costly, inefficient write operations.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory",
+      "long-term memory"
+    ],
+    "one_liner": "Long-term memory systems for large language models (LLMs) have gained popularity for extending reasoning capabilities across applications.",
+    "published": "2026-10-01",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, compression, conversation, long-term, retrieval\n- 检索关键词命中：agent memory, long-term memory\n- 来源分类信息：cs.AI",
+    "slug": "memfit-efficient-long-term-agentic-memory",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2610.00872v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "compression",
+      "conversation",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "MemFit: Efficient Long-Term Agentic Memory",
+    "updated": "2026-10-01",
+    "url": "http://arxiv.org/abs/2610.00872v1",
+    "venue": ""
+  },
+  {
+    "abstract": "A long-term conversational assistant must recall the right memory at the right moment, yet the memory that matters most is often not similar to what the user says now. Current systems recover such associations by letting an LLM reason at write or read time, at a cost of hundreds to over a thousand LLM calls per memory bank and up to several thousand context tokens per query. We argue that association is a learnable relevance: the pointwise mutual information of memories under how human lives unfold. We introduce Madeleine, which learns amortized association: offline, an LLM life simulator writes simulated lives, whose cue-trigger pairs teach a query encoder a residual association on top of frozen similarity; online, it calls no LLM and plugs into any vector memory by replacing only the query encoder. On LoCoMo-Plus under the official protocol, Madeleine (I) reaches 66.6 when plugged into HyperMem, the highest among all systems evaluated under this protocol; (II) used alone, reaches the score of HyperMem as released (52.4 vs. 52.9) with zero LLM calls and about 1/21 of its answer context; and (III) lifts T-Mem by 26.2 points, significantly outperforms the same untrained backbone inside both systems, and leaves ordinary QA intact on the 4B backbone.",
+    "authors": [
+      "Zhiyun Shi"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.IR"
+    ],
+    "id": "2610.01118v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `context, conversation, long-term` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：A long-term conversational assistant must recall the right memory at the right moment, yet the memory that matters most is often not similar to what the user says now.\n\n进一步看，论文的核心做法或实验重点可以概括为：Current systems recover such associations by letting an LLM reason at write or read time, at a cost of hundreds to over a thousand LLM calls per memory bank and up to several thousand context tokens per query.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "conversational memory"
+    ],
+    "one_liner": "A long-term conversational assistant must recall the right memory at the right moment, yet the memory that matters most is often not similar to what the user says now.",
+    "published": "2026-10-01",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：context, conversation, long-term\n- 检索关键词命中：conversational memory\n- 来源分类信息：cs.CL, cs.AI, cs.IR",
+    "slug": "madeleine-learning-involuntary-recall-for-conversational-memory-from-simulated-l",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2610.01118v1",
+    "tags": [
+      "context",
+      "conversation",
+      "long-term"
+    ],
+    "title": "Madeleine: Learning Involuntary Recall for Conversational Memory from Simulated Lives",
+    "updated": "2026-10-01",
+    "url": "http://arxiv.org/abs/2610.01118v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Large language model (LLM) agents increasingly rely on persistent external sources to solve sequences of knowledge-intensive tasks. Existing methods improve how source content is accessed and organized, while agent-memory systems preserve reusable knowledge from prior interactions, but repeated use of the same source is still largely treated as repeated access rather than an opportunity to progressively improve understanding of that source. We study source learning: developing reusable source-specific competence over a persistent authoritative source. We represent this competence with a persistent source model that captures reusable understanding of the source, including how its knowledge is structured, interpreted, and applied. To construct and progressively refine such models, we propose SourceLearn, which combines two complementary learning mechanisms. Self-Directed Source Learning identifies what remains incompletely understood and adaptively revisits the source, while Task-Guided Source Learning uses downstream experience to reveal local representational gaps and recurring needs in how source knowledge should be organized. In both cases, learning signals determine what should be reconsidered, while persistent updates are reconstructed from the authoritative source. Across five benchmarks and three LLM backends, SourceLearn achieves the best performance in 13 of 15 settings, with gains of up to 22.6 points over Hybrid RAG and substantial overall improvements over static source representations and experience-based memory baselines.",
+    "authors": [
+      "Lucheng Fu",
+      "Kejing Xia",
+      "Yiyang Wang",
+      "Yiqiao Jin",
+      "Jinjin He",
+      "Xiyuan Yang",
+      "Haoxin Liu",
+      "Ye Yu",
+      "Haibo Jin",
+      "Yijia Xiao",
+      "Wenke Lee",
+      "B. Aditya Prakash",
+      "Haohan Wang"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "id": "2610.02150v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Large language model (LLM) agents increasingly rely on persistent external sources to solve sequences of knowledge-intensive tasks.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing methods improve how source content is accessed and organized, while agent-memory systems preserve reusable knowledge from prior interactions, but repeated use of the same source is still largely treated as...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "Large language model (LLM) agents increasingly rely on persistent external sources to solve sequences of knowledge-intensive tasks.",
+    "published": "2026-10-01",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.CL, cs.AI, cs.LG",
+    "slug": "from-knowledge-access-to-source-learning-developing-source-specific-competence",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2610.02150v1",
+    "tags": [
+      "agent",
+      "benchmark"
+    ],
+    "title": "From Knowledge Access to Source Learning: Developing Source-Specific Competence",
+    "updated": "2026-10-01",
+    "url": "http://arxiv.org/abs/2610.02150v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Long-term dependencies remain a major challenge for sequential decision-making in the field of AI: RNNs suffer from vanishing gradients and the limited expressivity of vector-based hidden states, whilst Transformer-based models are limited by the quadratic scaling of attention. Recent work has proposed tackling this problem with the Test-Time Training (TTT) framework, which stores episodic memories in the parameters of a neural network through gradient descent at both train and test-time. This approach has seen success in the domain of Natural Language Processing, however, to the best of our knowledge it has not yet been applied to the domain of Reinforcement Learning (RL), nor has there been a study analysing how this memory practically functions. In this paper, we study the potential of the TTT framework for offline RL by augmenting a Decision Transformer with TTT layers, dubbed the Decision Titan. We analyse performance and properties of the model in the X-Maze environment, an extension of T-Maze designed to test sequential memory, and investigate how the memory mechanism learns by visualising gate values over time. Our key findings are that Decision Titan can learn long-term dependencies with ranges 20x longer than the context window, generalises to lengths 1.7x the training data, but crucially temporal generalisation depends on the time embeddings used, and the ability to learn long-term dependencies depends on how the relevant information is encoded.",
+    "authors": [
+      "Jude Waide",
+      "Robert Lieck"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.LG"
+    ],
+    "id": "2610.01513v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `context, episodic, long-term` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Long-term dependencies remain a major challenge for sequential decision-making in the field of AI: RNNs suffer from vanishing gradients and the limited expressivity of vector-based hidden states, whilst Transformer-...\n\n进一步看，论文的核心做法或实验重点可以概括为：Recent work has proposed tackling this problem with the Test-Time Training (TTT) framework, which stores episodic memories in the parameters of a neural network through gradient descent at both train and test-time.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "episodic memory",
+      "long-term memory"
+    ],
+    "one_liner": "Long-term dependencies remain a major challenge for sequential decision-making in the field of AI: RNNs suffer from vanishing gradients and the limited expressivity of vector-...",
+    "published": "2026-10-01",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：context, episodic, long-term\n- 检索关键词命中：episodic memory, long-term memory\n- 来源分类信息：cs.AI, cs.LG",
+    "slug": "decision-titan-test-time-training-for-long-term-memory-in-offline-reinforcement-",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2610.01513v1",
+    "tags": [
+      "context",
+      "episodic",
+      "long-term"
+    ],
+    "title": "Decision Titan: Test-Time Training for Long-Term Memory in Offline Reinforcement Learning",
+    "updated": "2026-10-01",
+    "url": "http://arxiv.org/abs/2610.01513v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Memory-augmented large language models must decide which memories to retain, and recent systems do so by estimating each memory's effect on task performance. However, these estimates rely entirely on retrieved memories. When a memory is never retrieved, store-level interventions produce identical outcomes, leaving its utility unidentified. This is a retrieval-level positivity violation, invisible to diagnostics that examine only memory operations. We introduce Causal Memory Policy (CMP), a causal framework that restores identification by intervening on retrieval itself, reserving a fixed number of context slots for memories sampled with known propensities. CMP estimates memory utility by self-normalized inverse propensity weighting under a balanced assignment design. We prove the causal factorization of memory utility through retrieval, the unbiasedness and exact variance of the estimator, and the optimal decision rule under irreversible operations. Empirically, identification fails for 54% of required memories on LongMemEval and 67% on LoCoMo, and the failure persists in a deployed memory system. CMP improves discrimination between required and non-required memories from 0.54 to 0.66 AUC. Finally, we show that identified memory utility alone is insufficient for retention decisions: per-query utility reaches 0.78 AUC on the query for which it is estimated, yet no aggregation available to a retention policy predicts a memory's value on unseen queries. Code is available at: https://anonymous.4open.science/r/cmp-release-D0C3/.",
+    "authors": [
+      "Arman Behnam",
+      "Binghui Wang"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2610.02070v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `context, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Memory-augmented large language models must decide which memories to retain, and recent systems do so by estimating each memory's effect on task performance.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, these estimates rely entirely on retrieved memories.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory augmented",
+      "memory-augmented",
+      "retrieval memory"
+    ],
+    "one_liner": "Memory-augmented large language models must decide which memories to retain, and recent systems do so by estimating each memory's effect on task performance.",
+    "published": "2026-10-01",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：context, retrieval\n- 检索关键词命中：memory augmented, memory-augmented, retrieval memory\n- 来源分类信息：cs.AI",
+    "slug": "causal-memory-policy-making-memory-utility-identifiable-by-intervening-on-retrie",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2610.02070v1",
+    "tags": [
+      "context",
+      "retrieval"
+    ],
+    "title": "Causal Memory Policy: Making Memory Utility Identifiable by Intervening on Retrieval",
+    "updated": "2026-10-01",
+    "url": "http://arxiv.org/abs/2610.02070v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Persistent spatial memory enables embodied agents to navigate familiar environments across repeated visits. However, targets may move while unobserved, including during navigation, making remembered locations unreliable by the time an agent arrives. Despite advances in memory retrieval and state prediction, accounting for continued hidden world evolution and revising beliefs under limited visibility remain challenging. We study Evolving-World Navigation, where agents infer target locations from intermittent observations, predict their states at inspection time, and revise beliefs using visual evidence. We propose EvolvingNav, which constructs a time-indexed belief from timestamped 3D object histories through a structured persistence-relocation model. The belief distinguishes persistence at the last observed location from relocation to alternative locations and retains probability mass outside the known candidate set. An event-driven filter propagates the current belief as time elapses, forecasts target occupancy at candidate inspection times, and incorporates new RGB-D evidence. Negative observations downweight location hypotheses according to calibrated, visibility-conditioned detection probabilities, while evidence tracking prevents repeated use of the same observations. A frozen, zero-shot vision-language controller uses the updated belief to choose actions and replan. We further introduce EvoWorld-Bench, a benchmark grounded in human activity traces, comprising 54 scenes and 803,680 tasks with controlled changes before and during navigation. In simulation and real-robot experiments, EvolvingNav improves navigation success and search efficiency over the evaluated baselines. Paired experiments show the clearest gains under learnable temporal patterns, while ablations demonstrate the value of preserving uncertainty and incorporating visibility-aware evidence.",
+    "authors": [
+      "Mingjian Gao",
+      "Zhaocheng Li",
+      "Haoyang Huang",
+      "Wenqiao Zhang",
+      "Yingjie Niu",
+      "Hao Zhou",
+      "Chao Li",
+      "Juncheng Li",
+      "Siliang Tang",
+      "Yueting Zhuang"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2609.39166v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Persistent spatial memory enables embodied agents to navigate familiar environments across repeated visits.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, targets may move while unobserved, including during navigation, making remembered locations unreliable by the time an agent arrives.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory retrieval"
+    ],
+    "one_liner": "Persistent spatial memory enables embodied agents to navigate familiar environments across repeated visits.",
+    "published": "2026-09-30",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, retrieval\n- 检索关键词命中：memory retrieval\n- 来源分类信息：cs.AI",
+    "slug": "beyond-the-remembered-world-predictive-4d-belief-for-persistent-navigation-in-ev",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2609.39166v2",
+    "tags": [
+      "agent",
+      "benchmark",
+      "retrieval"
+    ],
+    "title": "Beyond the Remembered World: Predictive 4D Belief for Persistent Navigation in Evolving Worlds",
+    "updated": "2026-10-01",
+    "url": "http://arxiv.org/abs/2609.39166v2",
+    "venue": ""
+  },
+  {
+    "abstract": "LLM-based personal agents are emerging as persistent carriers of user semantics and intermediaries between users and recommendation platforms, maintaining richer user knowledge locally. As agents interact with one another, the conventional \\textit{User--Platform} relation evolves into a \\textit{User--Agent Web--Platform} information pathway, enabling distributed user-side information to complement item-side information. This new pathway, however, defies conventional recommendation: evidence is scattered across mutually opaque agents and reachable only through bounded queries, only a small portion of it is relevant to the current recommendation decision, and the responses returned by different agents are semantically heterogeneous. We therefore recast recommendation over the agent web as a \\emph{task-time evidence acquisition and fusion} problem under a finite evidence budget by deciding what to ask and what to keep, rather than learning from aggregated data. We propose AgentWebRec, a user-agent-oriented framework that progressively acquires and fuses distributed evidence for each user-item decision while keeping underlying agent memories local. It grounds each decision in platform-provided item semantics and task-relevant evidence from the target user agent's private memory, and conditionally queries neighboring user agents for complementary preference patterns when local evidence is insufficient. Experiments on four InstructRec datasets show that AgentWebRec consistently outperforms baseline recommenders, and ablations verify that the evidence layers contribute complementary gains.",
+    "authors": [
+      "Haoran Qiang",
+      "Guannan Liu",
+      "Liang Zhang",
+      "Junjie Wu"
+    ],
+    "categories": [
+      "cs.IR"
+    ],
+    "id": "2610.01705v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：LLM-based personal agents are emerging as persistent carriers of user semantics and intermediaries between users and recommendation platforms, maintaining richer user knowledge locally.\n\n进一步看，论文的核心做法或实验重点可以概括为：As agents interact with one another, the conventional \\textit{User--Platform} relation evolves into a \\textit{User--Agent Web--Platform} information pathway, enabling distributed user-side information to complement...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "LLM-based personal agents are emerging as persistent carriers of user semantics and intermediaries between users and recommendation platforms, maintaining richer user knowledge...",
+    "published": "2026-10-01",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.IR",
+    "slug": "agentwebrec-compact-evidence-fusion-over-the-agent-web-for-personalized-recommen",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2610.01705v1",
+    "tags": [
+      "agent"
+    ],
+    "title": "AgentWebRec: Compact Evidence Fusion over the Agent Web for Personalized Recommendation",
+    "updated": "2026-10-01",
+    "url": "http://arxiv.org/abs/2610.01705v1",
+    "venue": ""
+  },
+  {
     "abstract": "Complex robotic manipulation tasks frequently require a long-term memory of past events and actions. As conditioning on full histories renders policies prone to spurious correlations and degrades performance, many approaches to policy memory involve compressing historical information through expensive VLM queries in-the-loop to process only task-salient information. In this paper, we propose an alternative approach in which computationally intensive VLM queries are made during train-time to learn a lightweight latent memory that can be efficiently queried at deployment time. Our representation, which we call the workspace token, is trained by (1) using a VLM to identify current and historical information necessary for completing a task, then (2) distilling these into the workspace token using a set-reconstruction decoder loss. In both simulation and hardware, we show that the workspace token can be used as a drop-in replacement for observations during deployment, enabling policies to solve memory-intensive tasks without the need for VLM reasoning in-the-loop, in effect serving as a latent harness for distilling a stronger reasoning models ability to solve long-horizon tasks to a reactive robotic policy. We further demonstrate that the workspace tokens are not only more lightweight, but also lead to better policy performance compared to conditioning policies on explicit modalities like curated past image frames, motivating a latent approach to history curation and reasoning model harnesses more broadly.",
     "authors": [
       "Nitish Dashora",

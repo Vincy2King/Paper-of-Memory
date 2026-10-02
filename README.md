@@ -39,19 +39,30 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **1270**
+- Total tracked papers: **1281**
 - Last generated: **2026-10-02**
 
 ## Papers by Source
 
 - ACL Anthology: **6**
-- arXiv: **1118**
+- arXiv: **1129**
 - OpenReview: **146**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-10-01 | arXiv | [Typological Alignment of Stack-Based Language Models on Mildly Context-Sensitive Artificial Languages](content/papers/typological-alignment-of-stack-based-language-models-on-mildly-context-sensitive.md) | context |
+| 2026-10-01 | arXiv | [TAGGRAPH: Tag-Augmented Graphs for Graph Retrieval of Agent Persistent Histories](content/papers/taggraph-tag-augmented-graphs-for-graph-retrieval-of-agent-persistent-histories.md) | agent, conversation, long-term |
+| 2026-10-01 | arXiv | [Role-aware Heuristic Episodic Attention for Conversational LLMs](content/papers/role-aware-heuristic-episodic-attention-for-conversational-llms.md) | context, conversation, episodic |
+| 2026-10-01 | arXiv | [Rethinking World Models for Safety-Critical Embodied Systems](content/papers/rethinking-world-models-for-safety-critical-embodied-systems.md) | episodic |
+| 2026-10-01 | arXiv | [MemFit: Efficient Long-Term Agentic Memory](content/papers/memfit-efficient-long-term-agentic-memory.md) | agent, benchmark, compression |
+| 2026-10-01 | arXiv | [Madeleine: Learning Involuntary Recall for Conversational Memory from Simulated Lives](content/papers/madeleine-learning-involuntary-recall-for-conversational-memory-from-simulated-l.md) | context, conversation, long-term |
+| 2026-10-01 | arXiv | [From Knowledge Access to Source Learning: Developing Source-Specific Competence](content/papers/from-knowledge-access-to-source-learning-developing-source-specific-competence.md) | agent, benchmark |
+| 2026-10-01 | arXiv | [Decision Titan: Test-Time Training for Long-Term Memory in Offline Reinforcement Learning](content/papers/decision-titan-test-time-training-for-long-term-memory-in-offline-reinforcement-.md) | context, episodic, long-term |
+| 2026-10-01 | arXiv | [Causal Memory Policy: Making Memory Utility Identifiable by Intervening on Retrieval](content/papers/causal-memory-policy-making-memory-utility-identifiable-by-intervening-on-retrie.md) | context, retrieval |
+| 2026-10-01 | arXiv | [Beyond the Remembered World: Predictive 4D Belief for Persistent Navigation in Evolving Worlds](content/papers/beyond-the-remembered-world-predictive-4d-belief-for-persistent-navigation-in-ev.md) | agent, benchmark, retrieval |
+| 2026-10-01 | arXiv | [AgentWebRec: Compact Evidence Fusion over the Agent Web for Personalized Recommendation](content/papers/agentwebrec-compact-evidence-fusion-over-the-agent-web-for-personalized-recommen.md) | agent |
 | 2026-09-30 | arXiv | [Workspace Models: Lightweight Robotic Memory via Saliency-Driven Supervision](content/papers/workspace-models-lightweight-robotic-memory-via-saliency-driven-supervision.md) | long-term |
 | 2026-09-30 | arXiv | [Who Said What, and Will It Be Remembered? Evaluating Persistent Speaker Attribution Across Meetings](content/papers/who-said-what-and-will-it-be-remembered-evaluating-persistent-speaker-attributio.md) | benchmark, conversation, long-term |
 | 2026-09-30 | arXiv | [When Context Changes: Understanding Update Failures in LLMs](content/papers/when-context-changes-understanding-update-failures-in-llms.md) | agent, benchmark, context |
@@ -61,17 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-09-30 | arXiv | [LongEmo: Towards Emotion Understanding and Reasoning in Long Videos](content/papers/longemo-towards-emotion-understanding-and-reasoning-in-long-videos.md) | agent, benchmark, episodic |
 | 2026-09-30 | arXiv | [How Can Recommendation Feedback Evolve Agent Memory?](content/papers/how-can-recommendation-feedback-evolve-agent-memory.md) | agent, benchmark, context |
 | 2026-09-30 | arXiv | [Harness as a Language: A Minimalist Agent Framework With Maximal Expressivity](content/papers/harness-as-a-language-a-minimalist-agent-framework-with-maximal-expressivity.md) | agent, context, long-term |
-| 2026-09-30 | arXiv | [Coding Agent Memory Post-training: Unlocking the Memory Potential of Pre-trained File Operations for Long-Horizon Tasks via Reinforcement Learning](content/papers/coding-agent-memory-post-training-unlocking-the-memory-potential-of-pre-trained-.md) | agent, context |
-| 2026-09-30 | arXiv | [CoEM: Empowering Long-Context Reasoning with Commit-on-Evidence Memory](content/papers/coem-empowering-long-context-reasoning-with-commit-on-evidence-memory.md) | compression, context |
-| 2026-09-30 | arXiv | [Beyond the Remembered World: Predictive 4D Belief for Persistent Navigation in Evolving Worlds](content/papers/beyond-the-remembered-world-predictive-4d-belief-for-persistent-navigation-in-ev.md) | agent, benchmark, retrieval |
-| 2026-09-30 | arXiv | [Action Conditioned Bisimulation For GUI Agent Memory](content/papers/action-conditioned-bisimulation-for-gui-agent-memory.md) | agent |
-| 2026-09-29 | arXiv | [When Correct Memory Goes Wrong: Fuzzing Persistent Memory Use in LLM Agents](content/papers/when-correct-memory-goes-wrong-fuzzing-persistent-memory-use-in-llm-agents.md) | agent, retrieval |
-| 2026-09-29 | arXiv | [UpliftMem: Learning Set-Level Uplift for Agent Memory Retrieval](content/papers/upliftmem-learning-set-level-uplift-for-agent-memory-retrieval.md) | agent, retrieval |
-| 2026-09-29 | arXiv | [Thinking Before Thinking: Scaling Agentic Inference Through Meta-Reasoning](content/papers/thinking-before-thinking-scaling-agentic-inference-through-meta-reasoning.md) | agent, benchmark, context |
-| 2026-09-29 | arXiv | [TAGGRAPH: Tag-Augmented Graphs for Graph Retrieval of Agent Persistent Histories](content/papers/taggraph-tag-augmented-graphs-for-graph-retrieval-of-agent-persistent-histories.md) | agent, conversation, long-term |
-| 2026-09-29 | arXiv | [Simple Agentic Memory for Generalist Robot Policies](content/papers/simple-agentic-memory-for-generalist-robot-policies.md) | agent, benchmark |
-| 2026-09-29 | arXiv | [SimFuse3D: Source-Guided Target Simulation and Confidence-Guided Multi-Stage Localization Reweighting for Cross-Platform 3D Object Detection](content/papers/simfuse3d-source-guided-target-simulation-and-confidence-guided-multi-stage-loca.md) | memory |
-| 2026-09-29 | arXiv | [Reconstructing the Right Episode: Evaluating Interleaved Conversational Memory Beyond Long Context](content/papers/reconstructing-the-right-episode-evaluating-interleaved-conversational-memory-be.md) | benchmark, context, conversation |
 
 ## Suggested GitHub Setup
 
