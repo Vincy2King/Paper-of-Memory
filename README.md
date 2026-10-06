@@ -39,39 +39,39 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **1290**
+- Total tracked papers: **1315**
 - Last generated: **2026-10-06**
 
 ## Papers by Source
 
 - ACL Anthology: **6**
-- arXiv: **1138**
+- arXiv: **1163**
 - OpenReview: **146**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
-| 2026-10-02 | arXiv | [Interpreting at Write Time: A Policy Ablation for Multi-Goal Agent Memory](content/papers/interpreting-at-write-time-a-policy-ablation-for-multi-goal-agent-memory.md) | agent |
-| 2026-10-02 | arXiv | [DyadMem: A Long-Term Memory Benchmark of How Agents Work with Users](content/papers/dyadmem-a-long-term-memory-benchmark-of-how-agents-work-with-users.md) | agent, benchmark, long-term |
-| 2026-10-02 | arXiv | [Decoupling Memory from Context: Structured Memory for Token-Efficient Test-Time Continual Learning](content/papers/decoupling-memory-from-context-structured-memory-for-token-efficient-test-time-c.md) | agent, context, retrieval |
-| 2026-10-02 | arXiv | [Causal Memory Policy: Making Memory Utility Identifiable by Intervening on Retrieval](content/papers/causal-memory-policy-making-memory-utility-identifiable-by-intervening-on-retrie.md) | context, retrieval |
-| 2026-10-02 | arXiv | [Auditing Long-Term Memory Evaluation: Repeated Judging, Reader Variation, and Negative Controls](content/papers/auditing-long-term-memory-evaluation-repeated-judging-reader-variation-and-negat.md) | long-term, retrieval |
-| 2026-10-01 | arXiv | [Typological Alignment of Stack-Based Language Models on Mildly Context-Sensitive Artificial Languages](content/papers/typological-alignment-of-stack-based-language-models-on-mildly-context-sensitive.md) | context |
-| 2026-10-01 | arXiv | [The Surprising Effectiveness of Shared Memory in Looped Transformers](content/papers/the-surprising-effectiveness-of-shared-memory-in-looped-transformers.md) | context |
-| 2026-10-01 | arXiv | [TAGGRAPH: Tag-Augmented Graphs for Graph Retrieval of Agent Persistent Histories](content/papers/taggraph-tag-augmented-graphs-for-graph-retrieval-of-agent-persistent-histories.md) | agent, conversation, long-term |
-| 2026-10-01 | arXiv | [Role-aware Heuristic Episodic Attention for Conversational LLMs](content/papers/role-aware-heuristic-episodic-attention-for-conversational-llms.md) | context, conversation, episodic |
-| 2026-10-01 | arXiv | [Rethinking World Models for Safety-Critical Embodied Systems](content/papers/rethinking-world-models-for-safety-critical-embodied-systems.md) | episodic |
-| 2026-10-01 | arXiv | [Pincer: Resource Authorization for Agents using a Digital Twin](content/papers/pincer-resource-authorization-for-agents-using-a-digital-twin.md) | agent, context |
-| 2026-10-01 | arXiv | [MemFit: Efficient Long-Term Agentic Memory](content/papers/memfit-efficient-long-term-agentic-memory.md) | agent, benchmark, compression |
-| 2026-10-01 | arXiv | [Madeleine: Learning Involuntary Recall for Conversational Memory from Simulated Lives](content/papers/madeleine-learning-involuntary-recall-for-conversational-memory-from-simulated-l.md) | context, conversation, long-term |
-| 2026-10-01 | arXiv | [Harnessing LLMs as Agents: What Does It Cost?](content/papers/harnessing-llms-as-agents-what-does-it-cost.md) | agent, context |
-| 2026-10-01 | arXiv | [From Knowledge Access to Source Learning: Developing Source-Specific Competence](content/papers/from-knowledge-access-to-source-learning-developing-source-specific-competence.md) | agent, benchmark |
-| 2026-10-01 | arXiv | [Decision Titan: Test-Time Training for Long-Term Memory in Offline Reinforcement Learning](content/papers/decision-titan-test-time-training-for-long-term-memory-in-offline-reinforcement-.md) | context, episodic, long-term |
-| 2026-10-01 | arXiv | [Causal Memory Policy: Making Memory Utility Identifiable by Intervening on Retrieval](content/papers/causal-memory-policy-making-memory-utility-identifiable-by-intervening-on-retrie.md) | context, retrieval |
-| 2026-10-01 | arXiv | [Beyond the Remembered World: Predictive 4D Belief for Persistent Navigation in Evolving Worlds](content/papers/beyond-the-remembered-world-predictive-4d-belief-for-persistent-navigation-in-ev.md) | agent, benchmark, retrieval |
-| 2026-10-01 | arXiv | [AgentWebRec: Compact Evidence Fusion over the Agent Web for Personalized Recommendation](content/papers/agentwebrec-compact-evidence-fusion-over-the-agent-web-for-personalized-recommen.md) | agent |
-| 2026-10-01 | arXiv | [APDMem: Agent-Controlled Progressive Disclosure for Query-Adaptive Long-Term Memory](content/papers/apdmem-agent-controlled-progressive-disclosure-for-query-adaptive-long-term-memo.md) | agent, context, conversation |
+| 2026-10-05 | arXiv | [ReMem: Streaming Video Understanding With Long Context Retention](content/papers/remem-streaming-video-understanding-with-long-context-retention.md) | benchmark, compression, context |
+| 2026-10-05 | arXiv | [PACMI: Provenance-Aware Cascading Memory Invalidation for Long-Term LLM Agents](content/papers/pacmi-provenance-aware-cascading-memory-invalidation-for-long-term-llm-agents.md) | agent, benchmark, context |
+| 2026-10-05 | arXiv | [MemPilot: Orchestrating On-Demand Multimodal Memory Curation for LLM Agents](content/papers/mempilot-orchestrating-on-demand-multimodal-memory-curation-for-llm-agents.md) | agent, benchmark |
+| 2026-10-05 | arXiv | [MATE: Adaptive Long- and Short-Term User Memory for LLM-Based Recommendation](content/papers/mate-adaptive-long-and-short-term-user-memory-for-llm-based-recommendation.md) | context, long-term |
+| 2026-10-05 | arXiv | [HLA-WM: Hybrid Linear Attention for Long-Horizon Video World Models](content/papers/hla-wm-hybrid-linear-attention-for-long-horizon-video-world-models.md) | context, retrieval |
+| 2026-10-05 | arXiv | [Capability-Driven Self-Evolution of Agent Memory](content/papers/capability-driven-self-evolution-of-agent-memory.md) | agent |
+| 2026-10-04 | arXiv | [StateWise: Diagnosing and Repairing Persistent Operational State Before Agent Actions](content/papers/statewise-diagnosing-and-repairing-persistent-operational-state-before-agent-act.md) | agent |
+| 2026-10-04 | arXiv | [ReMAP: Restoring the Perceptual Cycle with Reasoning-Time Latent Visual Memory](content/papers/remap-restoring-the-perceptual-cycle-with-reasoning-time-latent-visual-memory.md) | benchmark, context, retrieval |
+| 2026-10-04 | arXiv | [Memory Canonicalization: A Framework and Benchmark for Cross-Model Drift in Persistent LLM Memory](content/papers/memory-canonicalization-a-framework-and-benchmark-for-cross-model-drift-in-persi.md) | agent, benchmark, context |
+| 2026-10-04 | arXiv | [Memadapter: Counterfactual Adaptation Against Memory-induced Sycophancy](content/papers/memadapter-counterfactual-adaptation-against-memory-induced-sycophancy.md) | agent, benchmark, context |
+| 2026-10-04 | arXiv | [MemTrace: State-Consistent Memory for Long-Horizon Coding Agents](content/papers/memtrace-state-consistent-memory-for-long-horizon-coding-agents.md) | agent, benchmark, compression |
+| 2026-10-04 | arXiv | [Have I Scene This Before? Spatially Grounded Conversational Memory for Complex Queries in Egocentric Assistants](content/papers/have-i-scene-this-before-spatially-grounded-conversational-memory-for-complex-qu.md) | benchmark, context, conversation |
+| 2026-10-04 | arXiv | [GitSwarm: Decentralized Compounding Inference](content/papers/gitswarm-decentralized-compounding-inference.md) | agent |
+| 2026-10-04 | arXiv | [From Memory to Guide: Spatio-Temporal Composer for Procedural Coding Memory](content/papers/from-memory-to-guide-spatio-temporal-composer-for-procedural-coding-memory.md) | agent, context |
+| 2026-10-04 | arXiv | [Building LLM Agent Systems the Deep Learning Way: From Modular Design to Architecture Search](content/papers/building-llm-agent-systems-the-deep-learning-way-from-modular-design-to-architec.md) | agent, retrieval |
+| 2026-10-04 | arXiv | [Agentic Trading: When LLM Agents Meet Financial Markets](content/papers/agentic-trading-when-llm-agents-meet-financial-markets.md) | agent, benchmark, context |
+| 2026-10-04 | arXiv | [AgentDiscover: Autonomous Discovery with Minimal Search Scaffolding](content/papers/agentdiscover-autonomous-discovery-with-minimal-search-scaffolding.md) | agent, context, long-term |
+| 2026-10-04 | arXiv | [ASCENT: Online Test-Time Training of Long-Horizon Agents via Self-Distillation of Verified Experience](content/papers/ascent-online-test-time-training-of-long-horizon-agents-via-self-distillation-of.md) | agent, context, retrieval |
+| 2026-10-04 | arXiv | [AECG: Asymmetric Experience Consolidation and Governance In Multi-Agent Systems](content/papers/aecg-asymmetric-experience-consolidation-and-governance-in-multi-agent-systems.md) | agent, benchmark, retrieval |
+| 2026-10-03 | arXiv | [StegoMemory: Agentic Memory Acts as Covert Steganographic Channel](content/papers/stegomemory-agentic-memory-acts-as-covert-steganographic-channel.md) | agent, retrieval |
 
 ## Suggested GitHub Setup
 

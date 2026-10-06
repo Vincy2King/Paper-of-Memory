@@ -27,7 +27,7 @@ This report audits evaluation of a long-term-memory retrieval chain on the 500 L
 ## Why It Was Included
 - 来源：arXiv
 - 高亮主题命中：long-term, retrieval
-- 检索关键词命中：memory retrieval
+- 检索关键词命中：long-term memory, memory retrieval
 - 来源分类信息：cs.CL, cs.AI, cs.IR
 
 ## Abstract Snapshot

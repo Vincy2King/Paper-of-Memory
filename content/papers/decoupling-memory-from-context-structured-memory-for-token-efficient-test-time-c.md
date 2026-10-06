@@ -27,7 +27,7 @@ Large language models (LLMs) are increasingly deployed in enterprise, scientific
 ## Why It Was Included
 - 来源：arXiv
 - 高亮主题命中：agent, context, retrieval
-- 检索关键词命中：agent memory
+- 检索关键词命中：agent memory, retrieval memory
 - 来源分类信息：cs.AI, cs.LG
 
 ## Abstract Snapshot

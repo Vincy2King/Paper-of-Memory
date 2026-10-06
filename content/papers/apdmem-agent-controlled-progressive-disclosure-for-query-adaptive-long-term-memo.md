@@ -27,7 +27,7 @@ Personalized LLM assistants must recover sparse evidence from long conversation 
 ## Why It Was Included
 - 来源：arXiv
 - 高亮主题命中：agent, context, conversation, long-term, retrieval
-- 检索关键词命中：context memory, memory reasoning, memory retrieval
+- 检索关键词命中：context memory, long-term memory, memory reasoning, memory retrieval
 - 来源分类信息：cs.CL, cs.AI
 
 ## Abstract Snapshot
