@@ -39,39 +39,39 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **1344**
+- Total tracked papers: **1364**
 - Last generated: **2026-10-09**
 
 ## Papers by Source
 
 - ACL Anthology: **6**
-- arXiv: **1192**
+- arXiv: **1212**
 - OpenReview: **146**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-10-08 | arXiv | [Workerville: Towards an Organizational Behavior Account of Agent Safety](content/papers/workerville-towards-an-organizational-behavior-account-of-agent-safety.md) | agent, benchmark, long-term |
+| 2026-10-08 | arXiv | [What to Admit and How to Present: Governing Persistent Memory in LLM Agents](content/papers/what-to-admit-and-how-to-present-governing-persistent-memory-in-llm-agents.md) | agent, benchmark, context |
+| 2026-10-08 | arXiv | [Using LMs to Model the Effects of Context and Coreference during Sentence Comprehension](content/papers/using-lms-to-model-the-effects-of-context-and-coreference-during-sentence-compre.md) | context |
+| 2026-10-08 | arXiv | [Use and Disuse: Intent-Structured Experience Consolidation for Memory and Learning in LLM Agents](content/papers/use-and-disuse-intent-structured-experience-consolidation-for-memory-and-learnin.md) | agent, context, long-term |
+| 2026-10-08 | arXiv | [Test-Time Compute for Tabular Foundation Models: Mechanisms, Gains, and Limits](content/papers/test-time-compute-for-tabular-foundation-models-mechanisms-gains-and-limits.md) | benchmark, context, retrieval |
+| 2026-10-08 | arXiv | [ReTeach: Building a Self-Teacher through Multi-Round Reflection and Retry](content/papers/reteach-building-a-self-teacher-through-multi-round-reflection-and-retry.md) | benchmark, context |
+| 2026-10-08 | arXiv | [Memory Type Varies: Empowering LLM Agents for Long-Term Memory with Diverse Strategies](content/papers/memory-type-varies-empowering-llm-agents-for-long-term-memory-with-diverse-strat.md) | agent, long-term, retrieval |
+| 2026-10-08 | arXiv | [MemTrace: State-Consistent Memory for Long-Horizon Coding Agents](content/papers/memtrace-state-consistent-memory-for-long-horizon-coding-agents.md) | agent, benchmark, compression |
+| 2026-10-08 | arXiv | [Gated Memory: Admission-Controlled Memory Formation for Conversational AI](content/papers/gated-memory-admission-controlled-memory-formation-for-conversational-ai.md) | benchmark, context, conversation |
+| 2026-10-08 | arXiv | [Event-Centric Memory with Query-Aware Graph Augmentation for Long-Term Conversational Agents](content/papers/event-centric-memory-with-query-aware-graph-augmentation-for-long-term-conversat.md) | agent, benchmark, context |
+| 2026-10-08 | arXiv | [Do LLMs Learn from Rewards in Context? : Rethinking the role of reward in In-Context Reinforcement Learning](content/papers/do-llms-learn-from-rewards-in-context-rethinking-the-role-of-reward-in-in-contex.md) | agent, benchmark, context |
+| 2026-10-08 | arXiv | [DeltaReplay: Task-Relative Memory Reuse for Mobile GUI Agents](content/papers/deltareplay-task-relative-memory-reuse-for-mobile-gui-agents.md) | agent |
+| 2026-10-08 | arXiv | [Causal Memory Policy: Making Memory Utility Identifiable by Intervening on Retrieval](content/papers/causal-memory-policy-making-memory-utility-identifiable-by-intervening-on-retrie.md) | context, retrieval |
+| 2026-10-08 | arXiv | [Beyond the Remembered World: Predictive 4D Belief for Persistent Navigation in Evolving Worlds](content/papers/beyond-the-remembered-world-predictive-4d-belief-for-persistent-navigation-in-ev.md) | agent, benchmark, retrieval |
+| 2026-10-08 | arXiv | [Beyond Sequences: Distilling Structured Decision Memory for LLM Recommendation](content/papers/beyond-sequences-distilling-structured-decision-memory-for-llm-recommendation.md) | context |
+| 2026-10-08 | arXiv | [BRACE: Differential Privacy for Dense Associative Memory with LSR Energy](content/papers/brace-differential-privacy-for-dense-associative-memory-with-lsr-energy.md) | retrieval |
 | 2026-10-07 | arXiv | [VideoEvolve: Co-Evolving Memory and Retrieval for Long Video Understanding](content/papers/videoevolve-co-evolving-memory-and-retrieval-for-long-video-understanding.md) | agent, benchmark, retrieval |
 | 2026-10-07 | arXiv | [Stale, Misattributed, or Late: Where Personal Memory Fails Before Generation](content/papers/stale-misattributed-or-late-where-personal-memory-fails-before-generation.md) | agent, benchmark, retrieval |
 | 2026-10-07 | arXiv | [SkillForge: Co-Evolving Skills and Agents via Dynamic Skill Lifecycles](content/papers/skillforge-co-evolving-skills-and-agents-via-dynamic-skill-lifecycles.md) | agent, benchmark |
-| 2026-10-07 | arXiv | [Retrieval Is Not Enough: Refreshing Memory for Frozen Time-Series Forecasters](content/papers/retrieval-is-not-enough-refreshing-memory-for-frozen-time-series-forecasters.md) | benchmark, context, retrieval |
-| 2026-10-07 | arXiv | [Relevance Is Not Sufficiency: What Actually Closes the Evidence Gap in Long-Term Memory QA](content/papers/relevance-is-not-sufficiency-what-actually-closes-the-evidence-gap-in-long-term-.md) | agent, context, long-term |
-| 2026-10-07 | arXiv | [Madeleine: Learning Involuntary Recall for Conversational Memory from Simulated Lives](content/papers/madeleine-learning-involuntary-recall-for-conversational-memory-from-simulated-l.md) | context, conversation, long-term |
-| 2026-10-07 | arXiv | [LiveMACE: Process-Aware Evaluation of LLM Agent Capabilities in Evolving Markets](content/papers/livemace-process-aware-evaluation-of-llm-agent-capabilities-in-evolving-markets.md) | agent, benchmark |
-| 2026-10-07 | arXiv | [HGP:An on-device personalized agent memory via hybrid graph storage](content/papers/hgp-an-on-device-personalized-agent-memory-via-hybrid-graph-storage.md) | agent, benchmark, episodic |
-| 2026-10-06 | arXiv | [Whose Memory Is It? Scope-Aware Commit Rules for Long-Term LLM Memory](content/papers/whose-memory-is-it-scope-aware-commit-rules-for-long-term-llm-memory.md) | agent, context, conversation |
-| 2026-10-06 | arXiv | [Towards In-Parameter Memory Augmentation for Large Language Models](content/papers/towards-in-parameter-memory-augmentation-for-large-language-models.md) | agent, context |
-| 2026-10-06 | arXiv | [STRUCTURALCOST: A controlled reading time dataset for modeling human sentence processing difficulty](content/papers/structuralcost-a-controlled-reading-time-dataset-for-modeling-human-sentence-pro.md) | working memory |
-| 2026-10-06 | arXiv | [Retrieval Is Not Enough: Refreshing Memory for Frozen Time-Series Forecasters](content/papers/retrieval-is-not-enough-refreshing-memory-for-frozen-time-series-forecasters.md) | benchmark, context, retrieval |
-| 2026-10-06 | arXiv | [Persistent Memory in Multi-Agent LLM Inference: What It Costs, What It Buys, and When You Can Tell](content/papers/persistent-memory-in-multi-agent-llm-inference-what-it-costs-what-it-buys-and-wh.md) | agent, benchmark, context |
-| 2026-10-06 | arXiv | [PERSIST: Who-What-When Memory Across Sessions for Full-Duplex Spoken Dialogue](content/papers/persist-who-what-when-memory-across-sessions-for-full-duplex-spoken-dialogue.md) | benchmark, conversation, retrieval |
-| 2026-10-06 | arXiv | [Memory Depth and Reconstructed Context Width: A Controlled Evaluation of Hierarchical Retrieval](content/papers/memory-depth-and-reconstructed-context-width-a-controlled-evaluation-of-hierarch.md) | context, conversation, long-term |
-| 2026-10-06 | arXiv | [MINDSET: Energy-based Schema Evolution for Long Conversational Agent Memory](content/papers/mindset-energy-based-schema-evolution-for-long-conversational-agent-memory.md) | agent, context, conversation |
-| 2026-10-06 | arXiv | [Harnessing LLMs as Agents: What Does It Cost?](content/papers/harnessing-llms-as-agents-what-does-it-cost.md) | agent, context |
-| 2026-10-06 | arXiv | [Decoupling Memory from Context: Structured Memory for Token-Efficient Test-Time Continual Learning](content/papers/decoupling-memory-from-context-structured-memory-for-token-efficient-test-time-c.md) | agent, context, retrieval |
-| 2026-10-06 | arXiv | [Decide Before You Look: Learning Which Retrieved Memories Deserve Pixels](content/papers/decide-before-you-look-learning-which-retrieved-memories-deserve-pixels.md) | long-term, retrieval |
-| 2026-10-06 | arXiv | [DAEDALUS: Bootstrapping Agent Memory from Self-Generated Tasks](content/papers/daedalus-bootstrapping-agent-memory-from-self-generated-tasks.md) | agent, benchmark, context |
+| 2026-10-07 | arXiv | [Self-Supervised Keyframe Discovery for Horizon-Invariant Behavior Cloning](content/papers/self-supervised-keyframe-discovery-for-horizon-invariant-behavior-cloning.md) | benchmark, context, long-term |
 
 ## Suggested GitHub Setup
 
