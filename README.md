@@ -39,19 +39,23 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **1364**
+- Total tracked papers: **1368**
 - Last generated: **2026-10-12**
 
 ## Papers by Source
 
 - ACL Anthology: **6**
-- arXiv: **1212**
+- arXiv: **1216**
 - OpenReview: **146**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-10-09 | arXiv | [Temporal Evidence Forests for Long-Horizon Multi-Party Conversational Memory](content/papers/temporal-evidence-forests-for-long-horizon-multi-party-conversational-memory.md) | agent, benchmark, conversation |
+| 2026-10-09 | arXiv | [NEAR: Neighborhood-Aware Residuals for Memory Retrieval](content/papers/near-neighborhood-aware-residuals-for-memory-retrieval.md) | benchmark, context, retrieval |
+| 2026-10-09 | arXiv | [Beyond the Final Embedding: Retrieving Memories from Token-Level Evidence](content/papers/beyond-the-final-embedding-retrieving-memories-from-token-level-evidence.md) | benchmark, context, conversation |
+| 2026-10-09 | arXiv | [A small cognitive core explains human behavior at scale](content/papers/a-small-cognitive-core-explains-human-behavior-at-scale.md) | context, episodic, retrieval |
 | 2026-10-08 | arXiv | [Workerville: Towards an Organizational Behavior Account of Agent Safety](content/papers/workerville-towards-an-organizational-behavior-account-of-agent-safety.md) | agent, benchmark, long-term |
 | 2026-10-08 | arXiv | [What to Admit and How to Present: Governing Persistent Memory in LLM Agents](content/papers/what-to-admit-and-how-to-present-governing-persistent-memory-in-llm-agents.md) | agent, benchmark, context |
 | 2026-10-08 | arXiv | [Using LMs to Model the Effects of Context and Coreference during Sentence Comprehension](content/papers/using-lms-to-model-the-effects-of-context-and-coreference-during-sentence-compre.md) | context |
@@ -68,10 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-10-08 | arXiv | [Beyond the Remembered World: Predictive 4D Belief for Persistent Navigation in Evolving Worlds](content/papers/beyond-the-remembered-world-predictive-4d-belief-for-persistent-navigation-in-ev.md) | agent, benchmark, retrieval |
 | 2026-10-08 | arXiv | [Beyond Sequences: Distilling Structured Decision Memory for LLM Recommendation](content/papers/beyond-sequences-distilling-structured-decision-memory-for-llm-recommendation.md) | context |
 | 2026-10-08 | arXiv | [BRACE: Differential Privacy for Dense Associative Memory with LSR Energy](content/papers/brace-differential-privacy-for-dense-associative-memory-with-lsr-energy.md) | retrieval |
-| 2026-10-07 | arXiv | [VideoEvolve: Co-Evolving Memory and Retrieval for Long Video Understanding](content/papers/videoevolve-co-evolving-memory-and-retrieval-for-long-video-understanding.md) | agent, benchmark, retrieval |
-| 2026-10-07 | arXiv | [Stale, Misattributed, or Late: Where Personal Memory Fails Before Generation](content/papers/stale-misattributed-or-late-where-personal-memory-fails-before-generation.md) | agent, benchmark, retrieval |
-| 2026-10-07 | arXiv | [SkillForge: Co-Evolving Skills and Agents via Dynamic Skill Lifecycles](content/papers/skillforge-co-evolving-skills-and-agents-via-dynamic-skill-lifecycles.md) | agent, benchmark |
-| 2026-10-07 | arXiv | [Self-Supervised Keyframe Discovery for Horizon-Invariant Behavior Cloning](content/papers/self-supervised-keyframe-discovery-for-horizon-invariant-behavior-cloning.md) | benchmark, context, long-term |
 
 ## Suggested GitHub Setup
 
