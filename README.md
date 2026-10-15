@@ -39,19 +39,30 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **1398**
+- Total tracked papers: **1409**
 - Last generated: **2026-10-15**
 
 ## Papers by Source
 
 - ACL Anthology: **6**
-- arXiv: **1246**
+- arXiv: **1257**
 - OpenReview: **146**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-10-14 | arXiv | [SkillForge: Co-Evolving Skills and Agents via Dynamic Skill Lifecycles](content/papers/skillforge-co-evolving-skills-and-agents-via-dynamic-skill-lifecycles.md) | agent, benchmark |
+| 2026-10-14 | arXiv | [Seeing, Maintaining, and Learning: The Evolution of Multimodal Agent Memory](content/papers/seeing-maintaining-and-learning-the-evolution-of-multimodal-agent-memory.md) | agent |
+| 2026-10-14 | arXiv | [STRATA: Self-Maintaining Structured Experience Graphs for Self-Evolving Language Agents](content/papers/strata-self-maintaining-structured-experience-graphs-for-self-evolving-language-.md) | agent, benchmark, context |
+| 2026-10-14 | arXiv | [MemCode: Discrete Semantic Representations for Long-Term Agent Memory](content/papers/memcode-discrete-semantic-representations-for-long-term-agent-memory.md) | agent, context, long-term |
+| 2026-10-14 | arXiv | [How Should a Camera-First AI Agent Work?](content/papers/how-should-a-camera-first-ai-agent-work.md) | agent |
+| 2026-10-14 | arXiv | [HEM-Med: A Hierarchical Agentic Memory Framework for Safe Multi-Center Medication Recommendation](content/papers/hem-med-a-hierarchical-agentic-memory-framework-for-safe-multi-center-medication.md) | agent, context, retrieval |
+| 2026-10-14 | arXiv | [EGCForest: Structured Agent Memory Organization for Enterprise Group Chats](content/papers/egcforest-structured-agent-memory-organization-for-enterprise-group-chats.md) | agent, benchmark, context |
+| 2026-10-14 | arXiv | [Do LLMs Learn from Rewards in Context? : Rethinking the role of reward in In-Context RL](content/papers/do-llms-learn-from-rewards-in-context-rethinking-the-role-of-reward-in-in-contex.md) | agent, benchmark, context |
+| 2026-10-14 | arXiv | [DeltaStreamer: Towards Human-Like Agentic Streaming Video Understanding](content/papers/deltastreamer-towards-human-like-agentic-streaming-video-understanding.md) | agent, retrieval |
+| 2026-10-14 | arXiv | [Beyond Retrieval: Evidence Access and Event Aggregation in Agent Memory](content/papers/beyond-retrieval-evidence-access-and-event-aggregation-in-agent-memory.md) | agent, retrieval |
+| 2026-10-14 | arXiv | [Beyond Benchmark Accuracy: A Diagnostic Test for LLM Chemical Prediction](content/papers/beyond-benchmark-accuracy-a-diagnostic-test-for-llm-chemical-prediction.md) | benchmark, context, retrieval |
 | 2026-10-13 | arXiv | [TacitVLA: Reasoning Vision-Language-Action Models Without Reasoning Latency](content/papers/tacitvla-reasoning-vision-language-action-models-without-reasoning-latency.md) | benchmark, episodic |
 | 2026-10-13 | arXiv | [Propose, Verify, Commit: Evidence-Grounded Memory for Long-Horizon Multi-Actor Conversations](content/papers/propose-verify-commit-evidence-grounded-memory-for-long-horizon-multi-actor-conv.md) | agent, benchmark, context |
 | 2026-10-13 | arXiv | [MemoryVLN: From Ego-Aware Memory Representation to Cross-Context Memory Reuse in Vision-Language Navigation](content/papers/memoryvln-from-ego-aware-memory-representation-to-cross-context-memory-reuse-in-.md) | agent, compression, context |
@@ -61,17 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-10-13 | arXiv | [Kwai Summary Attention V2 Technical Report](content/papers/kwai-summary-attention-v2-technical-report.md) | compression, context |
 | 2026-10-13 | arXiv | [Knowing the User Is Not Knowing What We Established: Grounding Awareness in Personal Agents](content/papers/knowing-the-user-is-not-knowing-what-we-established-grounding-awareness-in-perso.md) | agent, benchmark, retrieval |
 | 2026-10-13 | arXiv | [Hybrid Reasoning Agents](content/papers/hybrid-reasoning-agents.md) | agent, benchmark, context |
-| 2026-10-13 | arXiv | [CineMem: Attention-Aligned Fine-grained Memory Retrieval for Multi-Shot Long Video Generation](content/papers/cinemem-attention-aligned-fine-grained-memory-retrieval-for-multi-shot-long-vide.md) | context, long-term, retrieval |
-| 2026-10-13 | arXiv | [Can Agents Truly Forget? Explore Machine Unlearning for LLM Agents](content/papers/can-agents-truly-forget-explore-machine-unlearning-for-llm-agents.md) | agent, benchmark |
-| 2026-10-13 | arXiv | [Can Agents Forget When Asked? A Benchmark for Memory Unlearning in LLM Agents](content/papers/can-agents-forget-when-asked-a-benchmark-for-memory-unlearning-in-llm-agents.md) | agent, benchmark, context |
-| 2026-10-12 | arXiv | [World-T3: Test-Time Training as Persistent Memory for Real-Time Video World Models](content/papers/world-t3-test-time-training-as-persistent-memory-for-real-time-video-world-model.md) | benchmark, context |
-| 2026-10-12 | arXiv | [When Goals Leak Across Relationships: How Cached Goal Representations Shape Cross-Client Decisions](content/papers/when-goals-leak-across-relationships-how-cached-goal-representations-shape-cross.md) | agent, conversation |
-| 2026-10-12 | arXiv | [REEL: Learning to Retrieve, Evaluate, and Evolve Visual Memory for Any Long-Horizon Multi-Shot Video Generation](content/papers/reel-learning-to-retrieve-evaluate-and-evolve-visual-memory-for-any-long-horizon.md) | agent |
-| 2026-10-12 | arXiv | [Event Memory and Narrative Dynamics: A Large Language Model Framework for Multidimensional State Spaces](content/papers/event-memory-and-narrative-dynamics-a-large-language-model-framework-for-multidi.md) | context, episodic |
-| 2026-10-12 | arXiv | [Do LLMs Learn from Rewards in Context? : Rethinking the role of reward in In-Context RL](content/papers/do-llms-learn-from-rewards-in-context-rethinking-the-role-of-reward-in-in-contex.md) | agent, benchmark, context |
-| 2026-10-12 | arXiv | [Beyond the Remembered World: Predictive 4D Belief for Persistent Navigation in Evolving Worlds](content/papers/beyond-the-remembered-world-predictive-4d-belief-for-persistent-navigation-in-ev.md) | agent, benchmark, retrieval |
-| 2026-10-11 | arXiv | [Suggested Is Not Superseded: A Pre-Registered Evaluation of a System-One Model as a Memory-Retirement Gate](content/papers/suggested-is-not-superseded-a-pre-registered-evaluation-of-a-system-one-model-as.md) | benchmark, conversation, long-term |
-| 2026-10-11 | arXiv | [Recall What Is Missing: Composing Evidence from Long-Term Agent Memory](content/papers/recall-what-is-missing-composing-evidence-from-long-term-agent-memory.md) | agent, benchmark, context |
 
 ## Suggested GitHub Setup
 
