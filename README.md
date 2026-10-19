@@ -39,39 +39,39 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **1421**
+- Total tracked papers: **1433**
 - Last generated: **2026-10-19**
 
 ## Papers by Source
 
 - ACL Anthology: **6**
-- arXiv: **1269**
+- arXiv: **1281**
 - OpenReview: **146**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-10-16 | arXiv | [SAFE-Mem: Secure Agentic Memory with Fine-Grained Authority and Governance-Aware Retrieval](content/papers/safe-mem-secure-agentic-memory-with-fine-grained-authority-and-governance-aware-.md) | agent, long-term, retrieval |
+| 2026-10-16 | arXiv | [RL-Guided Temporal Localization for Dual-Channel Retrieval in Long-Horizon Agent Memory](content/papers/rl-guided-temporal-localization-for-dual-channel-retrieval-in-long-horizon-agent.md) | agent, benchmark, episodic |
+| 2026-10-16 | arXiv | [Learning Personalized Memory Gating from Delayed One-Sided Feedback](content/papers/learning-personalized-memory-gating-from-delayed-one-sided-feedback.md) | agent, context, long-term |
+| 2026-10-16 | arXiv | [HEM-Med: A Hierarchical Agentic Memory Framework for Safe Multi-Center Medication Recommendation](content/papers/hem-med-a-hierarchical-agentic-memory-framework-for-safe-multi-center-medication.md) | agent, context, retrieval |
+| 2026-10-16 | arXiv | [GLOBE: Evolving Structured Agentic Memory for E-commerce Product Optimization in Generative Search](content/papers/globe-evolving-structured-agentic-memory-for-e-commerce-product-optimization-in-.md) | agent, episodic |
+| 2026-10-16 | arXiv | [From Memory Hits to Answerable Evidence: Query-Conditioned Memory Compilation for Long-Term Agent Memory](content/papers/from-memory-hits-to-answerable-evidence-query-conditioned-memory-compilation-for.md) | agent, benchmark, context |
+| 2026-10-16 | arXiv | [Beyond Success Rate: Interventional Evaluation of Memory in Vision-Language-Action Systems](content/papers/beyond-success-rate-interventional-evaluation-of-memory-in-vision-language-actio.md) | agent, retrieval |
+| 2026-10-16 | arXiv | [Beyond Marginal Influence: Interaction-Aware Memory Selection for LLM Agents](content/papers/beyond-marginal-influence-interaction-aware-memory-selection-for-llm-agents.md) | agent, benchmark, compression |
+| 2026-10-16 | arXiv | [All-in-One Memory: Process-Rewarded Reinforcement Learning for Memory Agents](content/papers/all-in-one-memory-process-rewarded-reinforcement-learning-for-memory-agents.md) | agent, benchmark, context |
 | 2026-10-15 | arXiv | [TEM: Temporal State Tracking Memory for Large Language Model Agents](content/papers/tem-temporal-state-tracking-memory-for-large-language-model-agents.md) | agent, conversation, retrieval |
+| 2026-10-15 | arXiv | [Multimodal Filesystem Memory For Long-Horizon Embodied Agents](content/papers/multimodal-filesystem-memory-for-long-horizon-embodied-agents.md) | agent, context, episodic |
 | 2026-10-15 | arXiv | [MemScope: Evolving Agent Memory Architectures through Localized Code Repair](content/papers/memscope-evolving-agent-memory-architectures-through-localized-code-repair.md) | agent |
 | 2026-10-15 | arXiv | [MemCut: Every Secret Leaves a Trail in the Long-Term Memory of LLM Agents](content/papers/memcut-every-secret-leaves-a-trail-in-the-long-term-memory-of-llm-agents.md) | agent, benchmark, conversation |
 | 2026-10-15 | arXiv | [MemComposer: Learning to Assemble Memories for LLM Agents via Reinforcement Learning](content/papers/memcomposer-learning-to-assemble-memories-for-llm-agents-via-reinforcement-learn.md) | agent, context |
 | 2026-10-15 | arXiv | [Language Models Share a Readout Bottleneck in Working Memory](content/papers/language-models-share-a-readout-bottleneck-in-working-memory.md) | working memory |
 | 2026-10-15 | arXiv | [LTM: Latent Transition Based In-Context Memory for Vision-Language-Action Models](content/papers/ltm-latent-transition-based-in-context-memory-for-vision-language-action-models.md) | compression, context |
+| 2026-10-15 | arXiv | [Kwai Summary Attention V2 Technical Report](content/papers/kwai-summary-attention-v2-technical-report.md) | compression, context |
 | 2026-10-15 | arXiv | [Hy-Memory-30B-A3B: Attributed Reinforcement Learning for Long-Term Memory Writing](content/papers/hy-memory-30b-a3b-attributed-reinforcement-learning-for-long-term-memory-writing.md) | benchmark, context, long-term |
+| 2026-10-15 | arXiv | [From Relevant Memories to Sufficient Evidence: Rethinking Memory Utilization in LLM Agents](content/papers/from-relevant-memories-to-sufficient-evidence-rethinking-memory-utilization-in-l.md) | agent, long-term, retrieval |
 | 2026-10-15 | arXiv | [From Long Context to Selective Memory:A Survey of Memory-Centric Compression for Large Language Models](content/papers/from-long-context-to-selective-memory-a-survey-of-memory-centric-compression-for.md) | agent, benchmark, compression |
-| 2026-10-15 | arXiv | [Compression Does Not End at Selection: Post-Selection Positional Geometry for Sparse KV Caches](content/papers/compression-does-not-end-at-selection-post-selection-positional-geometry-for-spa.md) | compression, context, long-term |
-| 2026-10-15 | arXiv | [Co2In: a Bi-level Memory Incremental Learning Framework with Knowledge Encoding, Consolidation, and Integration](content/papers/co2in-a-bi-level-memory-incremental-learning-framework-with-knowledge-encoding-c.md) | long-term |
-| 2026-10-15 | arXiv | [Beyond Downstream QA: Rethinking How We Evaluate Agent Memory](content/papers/beyond-downstream-qa-rethinking-how-we-evaluate-agent-memory.md) | agent, benchmark, conversation |
-| 2026-10-15 | arXiv | [All-in-One Memory: Process-Rewarded Reinforcement Learning for Memory Agents](content/papers/all-in-one-memory-process-rewarded-reinforcement-learning-for-memory-agents.md) | agent, benchmark, context |
-| 2026-10-14 | arXiv | [SkillForge: Co-Evolving Skills and Agents via Dynamic Skill Lifecycles](content/papers/skillforge-co-evolving-skills-and-agents-via-dynamic-skill-lifecycles.md) | agent, benchmark |
-| 2026-10-14 | arXiv | [Seeing, Maintaining, and Learning: The Evolution of Multimodal Agent Memory](content/papers/seeing-maintaining-and-learning-the-evolution-of-multimodal-agent-memory.md) | agent |
-| 2026-10-14 | arXiv | [STRATA: Self-Maintaining Structured Experience Graphs for Self-Evolving Language Agents](content/papers/strata-self-maintaining-structured-experience-graphs-for-self-evolving-language-.md) | agent, benchmark, context |
-| 2026-10-14 | arXiv | [MemCode: Discrete Semantic Representations for Long-Term Agent Memory](content/papers/memcode-discrete-semantic-representations-for-long-term-agent-memory.md) | agent, context, long-term |
-| 2026-10-14 | arXiv | [How Should a Camera-First AI Agent Work?](content/papers/how-should-a-camera-first-ai-agent-work.md) | agent |
-| 2026-10-14 | arXiv | [HEM-Med: A Hierarchical Agentic Memory Framework for Safe Multi-Center Medication Recommendation](content/papers/hem-med-a-hierarchical-agentic-memory-framework-for-safe-multi-center-medication.md) | agent, context, retrieval |
-| 2026-10-14 | arXiv | [EGCForest: Structured Agent Memory Organization for Enterprise Group Chats](content/papers/egcforest-structured-agent-memory-organization-for-enterprise-group-chats.md) | agent, benchmark, context |
-| 2026-10-14 | arXiv | [Do LLMs Learn from Rewards in Context? : Rethinking the role of reward in In-Context RL](content/papers/do-llms-learn-from-rewards-in-context-rethinking-the-role-of-reward-in-in-contex.md) | agent, benchmark, context |
 
 ## Suggested GitHub Setup
 
