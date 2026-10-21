@@ -39,39 +39,39 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **1460**
+- Total tracked papers: **1476**
 - Last generated: **2026-10-21**
 
 ## Papers by Source
 
 - ACL Anthology: **6**
-- arXiv: **1308**
+- arXiv: **1324**
 - OpenReview: **146**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-10-20 | arXiv | [When Does Experience Memory Help Closed-Loop LLM Driving Agents? A Controlled Evaluation with Resampled Warmup Pools, Token-Matched Fillers, and Audited Baselines](content/papers/when-does-experience-memory-help-closed-loop-llm-driving-agents-a-controlled-eva.md) | agent, episodic, retrieval |
+| 2026-10-20 | arXiv | [SAFE-Mem: Secure Agentic Memory with Fine-Grained Authority and Governance-Aware Retrieval](content/papers/safe-mem-secure-agentic-memory-with-fine-grained-authority-and-governance-aware-.md) | agent, long-term, retrieval |
+| 2026-10-20 | arXiv | [Recast the Past: Stable Long Video Generation with Full Context Memory](content/papers/recast-the-past-stable-long-video-generation-with-full-context-memory.md) | context |
+| 2026-10-20 | arXiv | [Memory as Code: Declarative Retrieval over Codified Long-Term Memory](content/papers/memory-as-code-declarative-retrieval-over-codified-long-term-memory.md) | agent, long-term, retrieval |
+| 2026-10-20 | arXiv | [Industrial ReMEmbR: Scaling Spatiotemporal Memory to Robot Fleets](content/papers/industrial-remembr-scaling-spatiotemporal-memory-to-robot-fleets.md) | agent, retrieval |
+| 2026-10-20 | arXiv | [HABIT-Bench: Evaluating Habit Induction from Longitudinal Weak Evidence in Agent Memory](content/papers/habit-bench-evaluating-habit-induction-from-longitudinal-weak-evidence-in-agent-.md) | agent, conversation, long-term |
+| 2026-10-20 | arXiv | [DuplexLedger: Benchmarking Transactional Memory in Full-Duplex Speech Agents](content/papers/duplexledger-benchmarking-transactional-memory-in-full-duplex-speech-agents.md) | agent, benchmark |
+| 2026-10-20 | arXiv | [Disclosure Begets Disclosure: A Self-Reinforcing Privacy Loop in LLM Agents with Persistent Memory](content/papers/disclosure-begets-disclosure-a-self-reinforcing-privacy-loop-in-llm-agents-with-.md) | agent |
+| 2026-10-20 | arXiv | [ClawMMU: Protection-Coherent Virtual Memory for Stateful LLM Agents](content/papers/clawmmu-protection-coherent-virtual-memory-for-stateful-llm-agents.md) | agent, context, long-term |
+| 2026-10-20 | arXiv | [A Radiation-Hardened, Fault-Aware Quantized Neural Network That Self-Heals](content/papers/a-radiation-hardened-fault-aware-quantized-neural-network-that-self-heals.md) | benchmark |
 | 2026-10-19 | arXiv | [Whose Credential Is It? How Owner Attribution in Agent MemoryShapes Cross-User Account Misuse](content/papers/whose-credential-is-it-how-owner-attribution-in-agent-memoryshapes-cross-user-ac.md) | agent, long-term |
 | 2026-10-19 | arXiv | [The Geometry of Agent Memory: Forecasting Retrieval-Bound Memory Failures, and Characterizing Its Limits](content/papers/the-geometry-of-agent-memory-forecasting-retrieval-bound-memory-failures-and-cha.md) | agent, context, conversation |
 | 2026-10-19 | arXiv | [Remembering Has a Price: Learning Memory Worth under Resource Constraints](content/papers/remembering-has-a-price-learning-memory-worth-under-resource-constraints.md) | agent, context, retrieval |
+| 2026-10-19 | arXiv | [REM: What to Store, When to Recall, What to Forget in Experience Memory for Coding Agents](content/papers/rem-what-to-store-when-to-recall-what-to-forget-in-experience-memory-for-coding-.md) | agent, context, retrieval |
 | 2026-10-19 | arXiv | [Procedural Memory for Language Agents: A Neurosymbolic Perspective on Explicit Goal Structure](content/papers/procedural-memory-for-language-agents-a-neurosymbolic-perspective-on-explicit-go.md) | agent, episodic |
+| 2026-10-19 | arXiv | [ProMemAgent: Long-Horizon Proactive Assistance with Context-Aware Prospective Memory from Sensory Perceptions](content/papers/promemagent-long-horizon-proactive-assistance-with-context-aware-prospective-mem.md) | agent, benchmark, context |
+| 2026-10-19 | arXiv | [Magnolia: A Persistent-Memory Agent Framework for Computational Chemistry](content/papers/magnolia-a-persistent-memory-agent-framework-for-computational-chemistry.md) | agent |
+| 2026-10-19 | arXiv | [M-Plan: Comprehensive Planning For LLM Agents with Memory Arrangement](content/papers/m-plan-comprehensive-planning-for-llm-agents-with-memory-arrangement.md) | agent, context, long-term |
 | 2026-10-19 | arXiv | [Learning Complementary Agent Groups via Task Hypergraphs for Next-POI Recommendation with Missing Modalities](content/papers/learning-complementary-agent-groups-via-task-hypergraphs-for-next-poi-recommenda.md) | agent |
 | 2026-10-19 | arXiv | [LSTMem: Hierarchical Long Short-Term Online Memory for Large Language Models](content/papers/lstmem-hierarchical-long-short-term-online-memory-for-large-language-models.md) | agent, benchmark |
-| 2026-10-19 | arXiv | [Good Memory Has ECC: Evaluating the Memory of Vision-Language Models Beyond Accuracy](content/papers/good-memory-has-ecc-evaluating-the-memory-of-vision-language-models-beyond-accur.md) | agent, benchmark, compression |
-| 2026-10-19 | arXiv | [GLOBE: Geometry-Led Online Behavioral Early Exit via Unit-Sphere Trajectories](content/papers/globe-geometry-led-online-behavioral-early-exit-via-unit-sphere-trajectories.md) | agent, benchmark |
-| 2026-10-19 | arXiv | [CoMem: Learning to Anticipate Failures from Retrieved Experience](content/papers/comem-learning-to-anticipate-failures-from-retrieved-experience.md) | agent, benchmark |
-| 2026-10-19 | arXiv | [BetaMem: Learning to Remember a Changing World for Embodied Agents](content/papers/betamem-learning-to-remember-a-changing-world-for-embodied-agents.md) | agent, episodic, long-term |
-| 2026-10-19 | arXiv | [Are Self-Evolving Agents Continual Learners?](content/papers/are-self-evolving-agents-continual-learners.md) | agent, retrieval |
-| 2026-10-18 | arXiv | [Mixture-of-Memories: Low-Overhead Language Modeling with Modular Knowledge Injection](content/papers/mixture-of-memories-low-overhead-language-modeling-with-modular-knowledge-inject.md) | retrieval |
-| 2026-10-18 | arXiv | [Memory, Know Your PLACE: Governing Lifecycle State and Query-Time Eligibility in Persistent-Memory Agents](content/papers/memory-know-your-place-governing-lifecycle-state-and-query-time-eligibility-in-p.md) | agent |
-| 2026-10-18 | arXiv | [Memory as Belief: Bayesian Evolution of Memory for Self-Evolving LLM Agents](content/papers/memory-as-belief-bayesian-evolution-of-memory-for-self-evolving-llm-agents.md) | agent, benchmark, context |
-| 2026-10-18 | arXiv | [MemDerive: A Diagnostic Benchmark for Agent Memory over Evolving Data](content/papers/memderive-a-diagnostic-benchmark-for-agent-memory-over-evolving-data.md) | agent, benchmark, retrieval |
-| 2026-10-18 | arXiv | [MemBubble: Benchmarking How Agent Memory Shapes LLM Response Diversity](content/papers/membubble-benchmarking-how-agent-memory-shapes-llm-response-diversity.md) | agent, benchmark, conversation |
-| 2026-10-18 | arXiv | [MEMORA: A Memory-Enhanced Multimodal Committee Reranking Agent for Reasoning-Intensive Retrieval](content/papers/memora-a-memory-enhanced-multimodal-committee-reranking-agent-for-reasoning-inte.md) | agent, episodic, retrieval |
-| 2026-10-17 | arXiv | [When Agent Memory Needs to Compute: Evidence Access and Executable Aggregation](content/papers/when-agent-memory-needs-to-compute-evidence-access-and-executable-aggregation.md) | agent, retrieval |
-| 2026-10-17 | arXiv | [Stashbird: Episode-Grounded Lifecycle Reconciliation for Conversational Agent Memory](content/papers/stashbird-episode-grounded-lifecycle-reconciliation-for-conversational-agent-mem.md) | agent, benchmark, conversation |
-| 2026-10-17 | arXiv | [MemForest: Efficient Agent Memory Management via EventTree Partitioning and Progressive Merging](content/papers/memforest-efficient-agent-memory-management-via-eventtree-partitioning-and-progr.md) | agent, benchmark, compression |
 
 ## Suggested GitHub Setup
 
