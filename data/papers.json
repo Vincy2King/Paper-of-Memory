@@ -1,5 +1,46 @@
 [
   {
+    "abstract": "Omni-modal assistants must remember not only what users say, but also what they show and convey. Existing long-term memory benchmarks are mostly text-and-image or report a single end-to-end score, so they cannot locate whether evidence is lost when it is represented, retrieved, delivered, or read. We introduce MOSAIC, a benchmark of 923 questions over persona-grounded histories of 11-24 sessions spanning text, image, video, and audio. MOSAIC constructs targeted spatial, temporal, and prosodic signals rather than decorative media, with the strongest causal validation for spatial information and selector-level validation for annotated prosody, and pairs them with a matched diagnostic protocol that freezes the question, reader, prompt, and budget while intervening on representation, retrieval, and delivery. Matched decomposition shows that representation loss is modality-dependent, residual reading dominates even under gold evidence, and abstention remains weak on these controls: strong answerable scores coexist with failures to refuse. MOSAIC thus turns omni-modal memory evaluation from a leaderboard into a diagnosis of write, retrieve, deliver, and read failures.",
+    "authors": [
+      "Hong Ting Tsang",
+      "Boyi Zhang",
+      "Haoyu Huang",
+      "Jiaxin Bai",
+      "Yufei Li",
+      "Yisen Gao",
+      "Zhongwei Xie",
+      "Hongyu Luo",
+      "Jeff Z. Pan",
+      "Yangqiu Song"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "id": "2610.29249v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, conversation, long-term` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Omni-modal assistants must remember not only what users say, but also what they show and convey.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing long-term memory benchmarks are mostly text-and-image or report a single end-to-end score, so they cannot locate whether evidence is lost when it is represented, retrieved, delivered, or read.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory benchmarks"
+    ],
+    "one_liner": "Omni-modal assistants must remember not only what users say, but also what they show and convey.",
+    "published": "2026-10-21",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, conversation, long-term, retrieval\n- 检索关键词命中：memory benchmarks\n- 来源分类信息：cs.CL, cs.AI",
+    "slug": "mosaic-an-omni-modal-benchmark-for-long-term-memory-and-cross-modal-reasoning-in",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2610.29249v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "conversation",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "MOSAIC: An Omni-Modal Benchmark for Long-Term Memory and Cross-Modal Reasoning in Conversational Agents",
+    "updated": "2026-10-21",
+    "url": "http://arxiv.org/abs/2610.29249v1",
+    "venue": ""
+  },
+  {
     "abstract": "When does experience memory help a closed-loop LLM driving agent? Published gains cannot say, because the two factors we find to matter most, which warmup experiences the pool contains and what any injected tokens do to the prompt, are controlled in none of them. We answer with a controlled evaluation on one audited HighwayEnv testbed (1Hz, gpt-4o-mini for the decisive contrasts). We treat the warmup pool as a resampled random factor (ten disjoint pools) and add token-matched irrelevant-filler controls, oracle-certified diagnostics, caution-pricing metrics, and quantified audits of the baseline ports. The probe suite spans flat-text retrieval (a DiLu port), a single-frame grid port (RESPOND-inspired), our episodic temporal-graph memory, a retrieval-free consolidated rulebook, and a flat K-step observation-history baseline. Four findings follow, each a property of this testbed. (1) Headline memory gains belong to the warmup draw. The reported pool is the best of ten for both retrieval memories, which beat No-Memory in only one pool of ten (sign test p=0.011), and even the rulebook's apparent pool-immunity collapsed on five fresh draws. (2) No retrieval design tested exceeds token-matched filler. The collision-only merge ceiling is reached by a single 15-token caution instruction, and metrics that price caution erase the rulebook's lead. (3) Representational sophistication is nowhere robustly operative. (4) Baseline port quality silently inverts conclusions. On this testbed, a single-pool comparison without filler controls would have reported memory gains that these controls reverse. We release the testbed, audited ports, seeds, and caches.",
     "authors": [
       "Yingxin Jia",

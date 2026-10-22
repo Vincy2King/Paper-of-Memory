@@ -39,19 +39,20 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **1476**
-- Last generated: **2026-10-21**
+- Total tracked papers: **1477**
+- Last generated: **2026-10-22**
 
 ## Papers by Source
 
 - ACL Anthology: **6**
-- arXiv: **1324**
+- arXiv: **1325**
 - OpenReview: **146**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-10-21 | arXiv | [MOSAIC: An Omni-Modal Benchmark for Long-Term Memory and Cross-Modal Reasoning in Conversational Agents](content/papers/mosaic-an-omni-modal-benchmark-for-long-term-memory-and-cross-modal-reasoning-in.md) | agent, benchmark, conversation |
 | 2026-10-20 | arXiv | [When Does Experience Memory Help Closed-Loop LLM Driving Agents? A Controlled Evaluation with Resampled Warmup Pools, Token-Matched Fillers, and Audited Baselines](content/papers/when-does-experience-memory-help-closed-loop-llm-driving-agents-a-controlled-eva.md) | agent, episodic, retrieval |
 | 2026-10-20 | arXiv | [SAFE-Mem: Secure Agentic Memory with Fine-Grained Authority and Governance-Aware Retrieval](content/papers/safe-mem-secure-agentic-memory-with-fine-grained-authority-and-governance-aware-.md) | agent, long-term, retrieval |
 | 2026-10-20 | arXiv | [Recast the Past: Stable Long Video Generation with Full Context Memory](content/papers/recast-the-past-stable-long-video-generation-with-full-context-memory.md) | context |
@@ -71,7 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-10-19 | arXiv | [Magnolia: A Persistent-Memory Agent Framework for Computational Chemistry](content/papers/magnolia-a-persistent-memory-agent-framework-for-computational-chemistry.md) | agent |
 | 2026-10-19 | arXiv | [M-Plan: Comprehensive Planning For LLM Agents with Memory Arrangement](content/papers/m-plan-comprehensive-planning-for-llm-agents-with-memory-arrangement.md) | agent, context, long-term |
 | 2026-10-19 | arXiv | [Learning Complementary Agent Groups via Task Hypergraphs for Next-POI Recommendation with Missing Modalities](content/papers/learning-complementary-agent-groups-via-task-hypergraphs-for-next-poi-recommenda.md) | agent |
-| 2026-10-19 | arXiv | [LSTMem: Hierarchical Long Short-Term Online Memory for Large Language Models](content/papers/lstmem-hierarchical-long-short-term-online-memory-for-large-language-models.md) | agent, benchmark |
 
 ## Suggested GitHub Setup
 
