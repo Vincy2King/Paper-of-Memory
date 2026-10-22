@@ -1,5 +1,171 @@
 [
   {
+    "abstract": "Long-term agent memory is shifting from predefined workflows toward learnable policies for memory construction and retrieval. Existing learning-based methods either optimize construction alone or combine retrieval-side online reinforcement learning (RL) with offline construction supervision, limiting co-adaptation between the two stages. In this paper, we explore end-to-end online RL for a unified memory manager (Uni-Mem) that learns both capabilities under a shared policy. However, joint optimization with existing RL algorithms such as GRPO faces confounded group comparisons and sparse feedback over long memory-management trajectories. To this end, we propose Stage-Decoupled GRPO, which alternates construction and retrieval optimization while controlling variation from the other stage within each rollout group, yielding stage-specific learning signals. We further introduce Event-Wise Credit Assignment (ECA), which localizes feedback to responsible events and propagates event-level advantages to their constituent operations. Experiments on LoCoMo and LongMemEval show that Uni-Mem outperforms the strongest RL-based memory, demonstrating the effectiveness of jointly learning memory construction and retrieval via Stage-Decoupled GRPO and ECA.",
+    "authors": [
+      "Zhiqian Xia",
+      "Jielong Tang",
+      "Ling-An Zeng",
+      "Shixiong Kai",
+      "Rong Yao",
+      "Hao Kong",
+      "Xiao Dong",
+      "Wei Wang",
+      "Mingxuan Yuan",
+      "Siyu Xia",
+      "Haifeng Xia"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "id": "2610.29671v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, long-term, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Long-term agent memory is shifting from predefined workflows toward learnable policies for memory construction and retrieval.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing learning-based methods either optimize construction alone or combine retrieval-side online reinforcement learning (RL) with offline construction supervision, limiting co-adaptation between the two stages.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "Long-term agent memory is shifting from predefined workflows toward learnable policies for memory construction and retrieval.",
+    "published": "2026-10-21",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, long-term, retrieval\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.CL",
+    "slug": "uni-mem-learning-a-long-horizon-agentic-memory-manager-with-unified-online-polic",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2610.29671v1",
+    "tags": [
+      "agent",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "Uni-Mem: Learning a Long-Horizon Agentic Memory Manager with Unified Online Policy Optimization",
+    "updated": "2026-10-21",
+    "url": "http://arxiv.org/abs/2610.29671v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Long-term memory for multimodal agents remains challenging, as it must preserve fine-grained visual evidence while tracking entity evolution across sessions. Existing abstraction-based memories compress images into text, often discarding visually discriminative details, whereas pixel-preserving memories retain raw observations but struggle to reliably associate diverse observations with persistent entity identities and track their evolving states. To address these limitations, we propose MHG-Mem, a multimodal hypergraph memory that jointly organizes entity identity, state evolution, and provenance to visual evidence. Specifically, MHG-Mem represents distinct entity mentions and their observed facts as individual nodes, grouping identity-consistent mentions and facts through occurrence hyperedges. It then synthesizes aspect-specific evolution states from these grouped observations and links them to supporting entities, facts, and source evidence through evolutionary and evidential hyperedges. To navigate this structured memory, we introduce hypergraph-based agentic search, which adaptively selects an entry layer, traverses typed hyperedges across memory levels, and inspects source observations when fine-grained verification is required. These designs support both detailed visual verification and reasoning over cross-session state changes. Extensive experiments across three benchmarks demonstrate the effectiveness of MHG-Mem, improving performance by 8.20-9.98% over the strongest baseline.",
+    "authors": [
+      "Jielong Tang",
+      "Ling-An Zeng",
+      "Xujie Yuan",
+      "Xiao Dong",
+      "Zhiqian Xia",
+      "Qingfeng Li",
+      "Shixiong Kai",
+      "Kaichao Liang",
+      "Rong Yao",
+      "Jian Yin"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "id": "2610.29995v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, long-term` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Long-term memory for multimodal agents remains challenging, as it must preserve fine-grained visual evidence while tracking entity evolution across sessions.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing abstraction-based memories compress images into text, often discarding visually discriminative details, whereas pixel-preserving memories retain raw observations but struggle to reliably associate diverse...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "long-term memory",
+      "memory compression"
+    ],
+    "one_liner": "Long-term memory for multimodal agents remains challenging, as it must preserve fine-grained visual evidence while tracking entity evolution across sessions.",
+    "published": "2026-10-21",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, long-term\n- 检索关键词命中：long-term memory, memory compression\n- 来源分类信息：cs.CL",
+    "slug": "remembering-through-change-provenance-preserving-hypergraph-memory-for-multimoda",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2610.29995v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "long-term"
+    ],
+    "title": "Remembering Through Change: Provenance-Preserving Hypergraph Memory for Multimodal Agents",
+    "updated": "2026-10-21",
+    "url": "http://arxiv.org/abs/2610.29995v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Agent memory systems such as Mem0 and Zep decide what to keep before any question arrives; coding agents keep the raw history and let the model search it with its own tools. We ask whether designed memory still helps once the model is strong enough to search for itself. On one LoCoMo conversation (419 turns, 152 questions), we run four memory methods (full context, BM25, Mem0, Zep) and three coding agents (Pi, Codex, Claude Code), each with GPT-4o-mini, GPT-6 Luna and Claude Opus 5.5, and record what every rollout costs. This is a short empirical study, with one conversation and one run per cell. Agent memory is a costly patch for a weak model: Mem0 beats full context only with GPT-4o-mini, and its build alone costs more than a whole full-context rollout. Agent memory also has a ceiling, set by the model that writes it: a stronger reader does not recover what a weaker writer left out. With Claude Opus 5.5, Pi tops the cost-accuracy frontier, scoring 99% for less than half the cost of full context; its one miss is a wrong answer key. Part of that lead comes from photo captions that only the agents could read: on the 88 questions whose evidence has no photo, Pi and full context differ by one answer.",
+    "authors": [
+      "Zedong Peng"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "id": "2610.29823v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, context, conversation` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Agent memory systems such as Mem0 and Zep decide what to keep before any question arrives; coding agents keep the raw history and let the model search it with its own tools.\n\n进一步看，论文的核心做法或实验重点可以概括为：We ask whether designed memory still helps once the model is strong enough to search for itself.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "Agent memory systems such as Mem0 and Zep decide what to keep before any question arrives; coding agents keep the raw history and let the model search it with its own tools.",
+    "published": "2026-10-21",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, context, conversation\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.CL, cs.AI",
+    "slug": "memorytax-the-bitter-lesson-of-agent-memory",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2610.29823v1",
+    "tags": [
+      "agent",
+      "context",
+      "conversation"
+    ],
+    "title": "MemoryTax: The Bitter Lesson of Agent Memory",
+    "updated": "2026-10-21",
+    "url": "http://arxiv.org/abs/2610.29823v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Autonomous agents powered by foundation models can reason, plan, and use tools, but their fixed weights and context limits hinder sustained learning from experience over long-term deployment. While external memory systems attempt to bridge this gap, they mostly act as passive retrieval caches, evaluated primarily by whether they can recall stored facts or past interactions. Whether memory can drive genuine continual learning remains an open question. In this paper, we introduce Memory-Centric Continual Learning (MCCL), arguing that memory should be judged by whether it improves future actions, not merely what it retrieves. MCCL has three main parts. First, a three-axis taxonomy organizes memory by where state is stored (substrates), what form it takes (assets), and how it is managed (policies). This defines a two-loop lifecycle that updates memory state in an inner loop while refining management policies in an outer loop based on task feedback. Second, an evaluation protocol measures retention under interference, adaptation to change, and task transfer to isolate genuine behavioral gains from simple context expansion. Third, a memory scaling framework models how agent performance scales with experience, storage capacity, and compute budgets across non-parametric and parametric memory. Together, these components reframe agent memory from passive lookup to continuous learning, offering a principled route toward self-improving autonomous agents.",
+    "authors": [
+      "Dongfang Li",
+      "Zhuoen Chen",
+      "Bonian Jia",
+      "Zixuan Liu",
+      "Zhengxuan Lu",
+      "Can Deng",
+      "Yukun Shi",
+      "Yuhang Meng",
+      "Xin Zhang",
+      "Jiahe Huang",
+      "Fuhao Li",
+      "Junmai Wang",
+      "Shunyao Wen",
+      "Jingjun Sun",
+      "Jiaxu Tian",
+      "Jiangling Zhang",
+      "Zihan Wang",
+      "Liangyou Li",
+      "Yitong Yao",
+      "Shuangyong Song",
+      "Beilun Wang",
+      "Pengxu Wei",
+      "Hanlin Xu",
+      "Chang Liu",
+      "Yongxiang Li",
+      "Baotian Hu",
+      "Xiangyang Ji",
+      "Min Zhang"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "id": "2610.29357v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, context, long-term, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Autonomous agents powered by foundation models can reason, plan, and use tools, but their fixed weights and context limits hinder sustained learning from experience over long-term deployment.\n\n进一步看，论文的核心做法或实验重点可以概括为：While external memory systems attempt to bridge this gap, they mostly act as passive retrieval caches, evaluated primarily by whether they can recall stored facts or past interactions.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "Autonomous agents powered by foundation models can reason, plan, and use tools, but their fixed weights and context limits hinder sustained learning from experience over long-...",
+    "published": "2026-10-21",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, context, long-term, retrieval\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.CL, cs.AI",
+    "slug": "memory-centric-continual-learning-for-ai-agents",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2610.29357v1",
+    "tags": [
+      "agent",
+      "context",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "Memory-Centric Continual Learning for AI Agents",
+    "updated": "2026-10-21",
+    "url": "http://arxiv.org/abs/2610.29357v1",
+    "venue": ""
+  },
+  {
     "abstract": "Omni-modal assistants must remember not only what users say, but also what they show and convey. Existing long-term memory benchmarks are mostly text-and-image or report a single end-to-end score, so they cannot locate whether evidence is lost when it is represented, retrieved, delivered, or read. We introduce MOSAIC, a benchmark of 923 questions over persona-grounded histories of 11-24 sessions spanning text, image, video, and audio. MOSAIC constructs targeted spatial, temporal, and prosodic signals rather than decorative media, with the strongest causal validation for spatial information and selector-level validation for annotated prosody, and pairs them with a matched diagnostic protocol that freezes the question, reader, prompt, and budget while intervening on representation, retrieval, and delivery. Matched decomposition shows that representation loss is modality-dependent, residual reading dominates even under gold evidence, and abstention remains weak on these controls: strong answerable scores coexist with failures to refuse. MOSAIC thus turns omni-modal memory evaluation from a leaderboard into a diagnosis of write, retrieve, deliver, and read failures.",
     "authors": [
       "Hong Ting Tsang",
@@ -20,11 +186,13 @@
     "id": "2610.29249v1",
     "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, conversation, long-term` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Omni-modal assistants must remember not only what users say, but also what they show and convey.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing long-term memory benchmarks are mostly text-and-image or report a single end-to-end score, so they cannot locate whether evidence is lost when it is represented, retrieved, delivered, or read.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
     "matched_keywords": [
+      "long-term memory",
+      "memory benchmark",
       "memory benchmarks"
     ],
     "one_liner": "Omni-modal assistants must remember not only what users say, but also what they show and convey.",
     "published": "2026-10-21",
-    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, conversation, long-term, retrieval\n- 检索关键词命中：memory benchmarks\n- 来源分类信息：cs.CL, cs.AI",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, conversation, long-term, retrieval\n- 检索关键词命中：long-term memory, memory benchmark, memory benchmarks\n- 来源分类信息：cs.CL, cs.AI",
     "slug": "mosaic-an-omni-modal-benchmark-for-long-term-memory-and-cross-modal-reasoning-in",
     "source": "arXiv",
     "source_key": "http://arxiv.org/abs/2610.29249v1",
@@ -38,6 +206,40 @@
     "title": "MOSAIC: An Omni-Modal Benchmark for Long-Term Memory and Cross-Modal Reasoning in Conversational Agents",
     "updated": "2026-10-21",
     "url": "http://arxiv.org/abs/2610.29249v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Knowledge graph question generation (KGQG) generates natural-language questions from structured graph evidence and a target answer. When the input graph is temporal, a valid question must also preserve the answer field, time condition, reference event, and temporal order that determine the answer set. Existing KGQG methods and prompting baselines can produce fluent questions that alter these conditions, causing temporal semantic drift. This paper studies temporal KGQG as a constraint-preserving graph-to-question problem and proposes ChronoSynth, a memory-augmented and constraint-aware generation framework. ChronoSynth first constructs a Temporal Intent State to make the intended question semantics explicit. It then retrieves compatible typed question patterns from an indexed pattern memory, adapts them to the input graph, and validates the generated question. Validation feedback guides revisions when a supported inconsistency is detected. Experiments on CRONQUESTIONS and MultiTQ demonstrate state-of-the-art generation performance, with ablations supporting the contributions of its components.",
+    "authors": [
+      "Feng Liang",
+      "Weixin Zeng",
+      "Runhao Zhao",
+      "Mingjun Zhou",
+      "Shaoshi Yang",
+      "Xiang Zhao"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "id": "2610.29339v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `memory-augmented` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Knowledge graph question generation (KGQG) generates natural-language questions from structured graph evidence and a target answer.\n\n进一步看，论文的核心做法或实验重点可以概括为：When the input graph is temporal, a valid question must also preserve the answer field, time condition, reference event, and temporal order that determine the answer set.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory augmented",
+      "memory-augmented"
+    ],
+    "one_liner": "Knowledge graph question generation (KGQG) generates natural-language questions from structured graph evidence and a target answer.",
+    "published": "2026-10-21",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：memory-augmented\n- 检索关键词命中：memory augmented, memory-augmented\n- 来源分类信息：cs.CL, cs.AI",
+    "slug": "chronosynth-constraint-aware-question-synthesis-over-temporal-knowledge-graphs",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2610.29339v1",
+    "tags": [
+      "memory-augmented"
+    ],
+    "title": "ChronoSynth: Constraint-Aware Question Synthesis over Temporal Knowledge Graphs",
+    "updated": "2026-10-21",
+    "url": "http://arxiv.org/abs/2610.29339v1",
     "venue": ""
   },
   {
@@ -147,6 +349,38 @@
     "title": "Recast the Past: Stable Long Video Generation with Full Context Memory",
     "updated": "2026-10-20",
     "url": "http://arxiv.org/abs/2610.27986v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Persistent memory is a largely undefended surface for injection and poisoning, and the same risk limits memory sharing among agents. We present PerMIT, a memory architecture with provable integrity guarantees under an explicit trust assumption: only user-typed inputs and values confirmed at a gate are trusted. PerMIT mediates the release and use of untrusted environment-derived values through a finite memory interface, while preserving agent-driven multi-turn planning and tool choice. Over this finite interface, we prove two integrity theorems that are also machine-checked in Lean 4, which together ensure that environment-derived memory reaches a sensitive action only if confirmed at the gate and influences the agent's behavior only through what the gate displays. Every attack in our threat model thereby reduces to a single auditable decision, which a human, an LLM verifier, or both can make in practice. On Trojan Hippo, PerMIT records zero observed attack success with self-verification and lightweight verifiers. Because each confirmation is a logged verdict on exact content, endorsements accumulate across users, and sufficiently endorsed items become community-confirmed with no further verification required. Under explicit assumptions, we prove and corroborate in simulation a co-scaling property: as the community grows, the risks of promoting poison and of wrongly evicting benign knowledge fall, while per-user verification effort does not rise. On $τ^2$-bench, communities of up to 90 autonomous agents use PerMIT to build shared knowledge bases with no direct memory injection promoted, and the resulting knowledge significantly improves new agents on held-out tasks, suggesting a path toward agents that safely self-improve at test time.",
+    "authors": [
+      "Tanqiu Jiang",
+      "Min Bai",
+      "Sadat Shahriar",
+      "Wanyu Du",
+      "Sandesh Swamy"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.CR"
+    ],
+    "id": "2610.28987v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Persistent memory is a largely undefended surface for injection and poisoning, and the same risk limits memory sharing among agents.\n\n进一步看，论文的核心做法或实验重点可以概括为：We present PerMIT, a memory architecture with provable integrity guarantees under an explicit trust assumption: only user-typed inputs and values confirmed at a gate are trusted.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "persistent memory"
+    ],
+    "one_liner": "Persistent memory is a largely undefended surface for injection and poisoning, and the same risk limits memory sharing among agents.",
+    "published": "2026-10-20",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent\n- 检索关键词命中：persistent memory\n- 来源分类信息：cs.AI, cs.CR",
+    "slug": "permit-securing-persistent-memory-for-llm-agents-via-machine-checked-integrity-t",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2610.28987v1",
+    "tags": [
+      "agent"
+    ],
+    "title": "PerMIT: Securing Persistent Memory for LLM Agents via Machine-Checked Integrity Theorems and Scalable Community Trust",
+    "updated": "2026-10-20",
+    "url": "http://arxiv.org/abs/2610.28987v1",
     "venue": ""
   },
   {
@@ -323,6 +557,45 @@
     "title": "Disclosure Begets Disclosure: A Self-Reinforcing Privacy Loop in LLM Agents with Persistent Memory",
     "updated": "2026-10-20",
     "url": "http://arxiv.org/abs/2610.28315v1",
+    "venue": ""
+  },
+  {
+    "abstract": "The widespread adoption of generative artificial intelligence in recent years has brought a parallel rise in prompt injection and jailbreak attacks. By embedding malicious instructions, these exploits manipulate language models to bypass intended behavior and operational boundaries. In traditional chatbots, such attacks are confined to a single session because state memory is not preserved across conversations. However, persistent memory features in modern conversational interfaces enable cross-session attack propagation, establishing a threat vector known as memory injection. This work explores this emerging vulnerability in leading LLM-as-a-service platforms, highlighting its real-world severity and the need for countermeasures. While existing literature focuses on violations tailored to specific platform features, we present a general threat model. We demonstrate that all NIST attack goals are collectively achievable across ChatGPT Instant 5.3, Claude Sonnet 4.6, and Gemini 3 Flash under this model. We also show that memory injections can exploit multiple attack vectors, including personal memories, projects, skills, organization instructions, and Model Context Protocol (MCP)-connected resources. Our findings reveal that all evaluated services can be manipulated to persistently spread disinformation, generate harmful content, or simulate offline unresponsiveness, even in fresh sessions. In the particular case of Claude, shared-memory features allow an attacker to compromise multiple users within an organization and also exfiltrate user prompts. To address these vulnerabilities, we derive defense mechanisms from our proposed threat model and foundational cybersecurity principles. Our analysis indicates that nearly half of these mitigations remain unimplemented across the target services. Datasets and attack artifacts are available at https://github.com/PedroBarcha/Memory-injection.",
+    "authors": [
+      "Pedro H. Barcha Correia",
+      "Matheus Azevedo de Sá",
+      "Paulo H. Gomes de Senna",
+      "Giovanni Mandel Martignago",
+      "Victor Takashi Hayashi",
+      "Charles Christian Miers",
+      "Marcos A. Simplicio"
+    ],
+    "categories": [
+      "cs.CR",
+      "cs.AI",
+      "cs.CL",
+      "cs.LG"
+    ],
+    "id": "2610.28810v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `context, conversation, long-term` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：The widespread adoption of generative artificial intelligence in recent years has brought a parallel rise in prompt injection and jailbreak attacks.\n\n进一步看，论文的核心做法或实验重点可以概括为：By embedding malicious instructions, these exploits manipulate language models to bypass intended behavior and operational boundaries.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "long-term memory",
+      "persistent memory"
+    ],
+    "one_liner": "The widespread adoption of generative artificial intelligence in recent years has brought a parallel rise in prompt injection and jailbreak attacks.",
+    "published": "2026-10-20",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：context, conversation, long-term\n- 检索关键词命中：long-term memory, persistent memory\n- 来源分类信息：cs.CR, cs.AI, cs.CL, cs.LG",
+    "slug": "combining-long-term-memory-and-llms-comes-at-a-high-cost-from-prompt-injection-t",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2610.28810v1",
+    "tags": [
+      "context",
+      "conversation",
+      "long-term"
+    ],
+    "title": "Combining Long-Term Memory and LLMs Comes at a High Cost: From Prompt Injection to Persistent Compromise",
+    "updated": "2026-10-20",
+    "url": "http://arxiv.org/abs/2610.28810v1",
     "venue": ""
   },
   {
