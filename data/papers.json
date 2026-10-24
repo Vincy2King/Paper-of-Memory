@@ -1,5 +1,69 @@
 [
   {
+    "abstract": "",
+    "authors": [
+      "Sanjana Pedada",
+      "Aditya Dhavala",
+      "Neelraj Patil",
+      "Ehsan Kamalloo",
+      "Nicolas Gontier",
+      "Nikolai Rozanov",
+      "Maryam Hashemzadeh",
+      "Akhil Arora"
+    ],
+    "categories": [],
+    "id": "acl:2026.realm-1.1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent` 这些主题直接相关。\n\n它当前来自 `ACL Anthology`，并与 `Proceedings of the Second Workshop for REsearch on Agent Language Models (REALM 2026)` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：The abstract is not available yet.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "persistent memory"
+    ],
+    "one_liner": "This paper is tracked as a memory-related work and awaits a fuller summary.",
+    "published": "2026-10",
+    "relevance": "- 来源：ACL Anthology\n- Venue：Proceedings of the Second Workshop for REsearch on Agent Language Models (REALM 2026)\n- 高亮主题命中：agent\n- 检索关键词命中：persistent memory",
+    "slug": "shared-selective-persistent-memory-for-agentic-llm-systems",
+    "source": "ACL Anthology",
+    "source_key": "2026.realm-1.1",
+    "tags": [
+      "agent"
+    ],
+    "title": "Shared Selective Persistent Memory for Agentic LLM Systems",
+    "updated": "2026-10-22",
+    "url": "https://aclanthology.org/2026.realm-1.1",
+    "venue": "Proceedings of the Second Workshop for REsearch on Agent Language Models (REALM 2026)"
+  },
+  {
+    "abstract": "",
+    "authors": [
+      "Zhang Weizhou",
+      "Lixing Lyu",
+      "Ehsan Kamalloo",
+      "Nicolas Gontier",
+      "Nikolai Rozanov",
+      "Maryam Hashemzadeh",
+      "Akhil Arora"
+    ],
+    "categories": [],
+    "id": "acl:2026.realm-1.20",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, retrieval` 这些主题直接相关。\n\n它当前来自 `ACL Anthology`，并与 `Proceedings of the Second Workshop for REsearch on Agent Language Models (REALM 2026)` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：The abstract is not available yet.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory-augmented"
+    ],
+    "one_liner": "This paper is tracked as a memory-related work and awaits a fuller summary.",
+    "published": "2026-10",
+    "relevance": "- 来源：ACL Anthology\n- Venue：Proceedings of the Second Workshop for REsearch on Agent Language Models (REALM 2026)\n- 高亮主题命中：agent, retrieval\n- 检索关键词命中：memory-augmented",
+    "slug": "retrieval-is-enough-a-memory-augmented-agent-for-algorithm-selection",
+    "source": "ACL Anthology",
+    "source_key": "2026.realm-1.20",
+    "tags": [
+      "agent",
+      "retrieval"
+    ],
+    "title": "Retrieval is Enough: A Memory-Augmented Agent for Algorithm Selection",
+    "updated": "2026-10-22",
+    "url": "https://aclanthology.org/2026.realm-1.20",
+    "venue": "Proceedings of the Second Workshop for REsearch on Agent Language Models (REALM 2026)"
+  },
+  {
     "abstract": "Humanoid loco-manipulation in dynamic scenes is non-Markovian: cues vanish as objects change or are hidden, or leave the view as the robot turns and walks, yet whole-body vision-language-action (VLA) policies see only the present. We present WholeBodyMem, an object-guided perceptual memory that keeps the pre-history of object events seen before the robot acts on its goal. SAM3 tracks the task objects, and their events causally select key frames within an adaptive budget, which the action expert reads by cross-attention together with object tokens encoding appearance, geometry and time. We also contribute HuMeGo, a humanoid memory benchmark with six simulated and six real-world Unitree G1 tasks. Keeping the right frames rather than more frames, WholeBodyMem surpasses memoryless and uniform-memory baselines, raising its base policy's success from 29.1% to 72.6% in simulation and from 36.7% to 88.3% on the real robot, while also improving the standard SIMPLE tasks (70.2% to 86.9%).",
     "authors": [
       "Chenyuan Chen",
@@ -32,6 +96,39 @@
     "updated": "2026-10-22",
     "url": "http://arxiv.org/abs/2610.31166v1",
     "venue": ""
+  },
+  {
+    "abstract": "",
+    "authors": [
+      "Chengfeng Zhao",
+      "Jinhui Chen",
+      "Sirui Liang",
+      "Shizhu He",
+      "Yequan Wang",
+      "Jun Zhao",
+      "Kang Liu",
+      "Sweta Agrawal",
+      "Alberto Abad"
+    ],
+    "categories": [],
+    "id": "acl:2026.emnlp-demos.41",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent` 这些主题直接相关。\n\n它当前来自 `ACL Anthology`，并与 `Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing: System Demonstrations` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：The abstract is not available yet.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "This paper is tracked as a memory-related work and awaits a fuller summary.",
+    "published": "2026-10",
+    "relevance": "- 来源：ACL Anthology\n- Venue：Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing: System Demonstrations\n- 高亮主题命中：agent\n- 检索关键词命中：agent memory",
+    "slug": "memtools-a-unified-research-framework-for-interoperable-agent-memory",
+    "source": "ACL Anthology",
+    "source_key": "2026.emnlp-demos.41",
+    "tags": [
+      "agent"
+    ],
+    "title": "MemTools: A Unified Research Framework for Interoperable Agent Memory",
+    "updated": "2026-10-22",
+    "url": "https://aclanthology.org/2026.emnlp-demos.41",
+    "venue": "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing: System Demonstrations"
   },
   {
     "abstract": "LLM memory is widely used in long-term conversation understanding. Agentic memory systems often use mutation, structural organization, learned retrieval strategies, or other complex operations. Is this complexity always necessary? We study Raw-RAG, a naive RAG baseline using dense retrieval and reranking over raw history to supply evidence to a reader LLM. Across LoCoMo, LongMemEval, MEME, and MemoryAgentBench, Raw-RAG ranks first among the compared memory systems in six of seven benchmark-model settings, outperforming the strongest compared agentic memory system by 0.13-5.53 points. We investigate why raw-history retrieval remains competitive. Evidence analysis shows that its higher coverage of necessary evidence can offset lower utilization. Useful evidence includes both answer values and the relations and dependency paths needed to derive them. Even complete access to transformed memory stores leaves an accuracy gap relative to raw evidence, highlighting the importance of preserving raw information. These findings challenge the necessity of complex agentic memory for the evaluated conversation tasks and establish naive RAG as an essential baseline.",
@@ -134,6 +231,75 @@
     "updated": "2026-10-22",
     "url": "http://arxiv.org/abs/2610.28315v2",
     "venue": ""
+  },
+  {
+    "abstract": "",
+    "authors": [
+      "Khang Vo",
+      "Tam Minh",
+      "Anh Dinh",
+      "Thuyen Bui",
+      "Tho Quan",
+      "Ehsan Kamalloo",
+      "Nicolas Gontier",
+      "Nikolai Rozanov",
+      "Maryam Hashemzadeh",
+      "Akhil Arora"
+    ],
+    "categories": [],
+    "id": "acl:2026.realm-1.70",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, episodic` 这些主题直接相关。\n\n它当前来自 `ACL Anthology`，并与 `Proceedings of the Second Workshop for REsearch on Agent Language Models (REALM 2026)` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：The abstract is not available yet.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "episodic memory"
+    ],
+    "one_liner": "This paper is tracked as a memory-related work and awaits a fuller summary.",
+    "published": "2026-10",
+    "relevance": "- 来源：ACL Anthology\n- Venue：Proceedings of the Second Workshop for REsearch on Agent Language Models (REALM 2026)\n- 高亮主题命中：agent, episodic\n- 检索关键词命中：episodic memory",
+    "slug": "causal-episodic-memory-for-feedback-driven-agent-repair",
+    "source": "ACL Anthology",
+    "source_key": "2026.realm-1.70",
+    "tags": [
+      "agent",
+      "episodic"
+    ],
+    "title": "Causal Episodic Memory for Feedback-Driven Agent Repair",
+    "updated": "2026-10-22",
+    "url": "https://aclanthology.org/2026.realm-1.70",
+    "venue": "Proceedings of the Second Workshop for REsearch on Agent Language Models (REALM 2026)"
+  },
+  {
+    "abstract": "",
+    "authors": [
+      "Jonas Schewior",
+      "Deniz Bilgin",
+      "Gonzalo Haefner",
+      "Andreas Wendemuth",
+      "Ehsan Kamalloo",
+      "Nicolas Gontier",
+      "Nikolai Rozanov",
+      "Maryam Hashemzadeh",
+      "Akhil Arora"
+    ],
+    "categories": [],
+    "id": "acl:2026.realm-1.42",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, conversation` 这些主题直接相关。\n\n它当前来自 `ACL Anthology`，并与 `Proceedings of the Second Workshop for REsearch on Agent Language Models (REALM 2026)` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：The abstract is not available yet.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "This paper is tracked as a memory-related work and awaits a fuller summary.",
+    "published": "2026-10",
+    "relevance": "- 来源：ACL Anthology\n- Venue：Proceedings of the Second Workshop for REsearch on Agent Language Models (REALM 2026)\n- 高亮主题命中：agent, conversation\n- 检索关键词命中：agent memory",
+    "slug": "agenticloci-a-multi-agent-memory-framework-for-conversational-ai-with-longitudin",
+    "source": "ACL Anthology",
+    "source_key": "2026.realm-1.42",
+    "tags": [
+      "agent",
+      "conversation"
+    ],
+    "title": "AgenticLOCI: A Multi-Agent Memory Framework for Conversational AI with Longitudinal Personalization",
+    "updated": "2026-10-22",
+    "url": "https://aclanthology.org/2026.realm-1.42",
+    "venue": "Proceedings of the Second Workshop for REsearch on Agent Language Models (REALM 2026)"
   },
   {
     "abstract": "Many LLM agents maintain external persistent memory and derive additional state from past interactions, such as summaries. Deleting an original memory record therefore need not remove information carried by its descendants. We introduce AfterDeleteBench, a controlled behavioral audit for this failure mode in fixed-weight LLM agents. For each synthetic secret, we compare an exposed-then-deleted agent with an otherwise matched agent that was never exposed to the secret, allowing post-deletion recovery to be attributed to the original exposure. In our primary setting, a single query recovers the deleted secret from Qwen2.5-7B-Instruct in roughly two thirds of cases, while matched never-exposed controls have zero recovery. Crucially, recovery does not require a surviving verbatim copy: when the complete secret string is absent and only separately stored components remain under a public composition rule, exact reconstruction succeeds in 62-99% of cases across Qwen, Mistral, and Phi-3. We also show that the response interface is part of the measurement system: target-bearing replies can be scored as failures when the requested format and parser are misaligned. Finally, we separate reconstruction from write-back and fresh-session recall. Provenance-aware closure eliminates observed recovery in the tested positive-baseline settings, whereas an exact-literal write filter blocks reinsertion but cannot erase information already present. Together, these results show that source deletion should be evaluated behaviorally at the level of the agent and its memory system, not only as a storage operation.",
@@ -509,6 +675,210 @@
     "updated": "2026-10-21",
     "url": "http://arxiv.org/abs/2610.29339v1",
     "venue": ""
+  },
+  {
+    "abstract": "",
+    "authors": [
+      "Dohoon Kim",
+      "Junho Park",
+      "Hyunwoong Bae",
+      "Seyoon Kim",
+      "Taesup Moon",
+      "Hung-Yi Lee",
+      "Sunipa Dev",
+      "Jessy Li",
+      "Desmond Elliott"
+    ],
+    "categories": [],
+    "id": "acl:2026.emnlp-main.542",
+    "intro": "这篇论文被纳入仓库，是因为它和 `retrieval` 这些主题直接相关。\n\n它当前来自 `ACL Anthology`，并与 `Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：The abstract is not available yet.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory retrieval"
+    ],
+    "one_liner": "This paper is tracked as a memory-related work and awaits a fuller summary.",
+    "published": "2026-10",
+    "relevance": "- 来源：ACL Anthology\n- Venue：Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing\n- 高亮主题命中：retrieval\n- 检索关键词命中：memory retrieval",
+    "slug": "axis-lora-probing-and-adapting-embedding-models-for-personal-memory-retrieval",
+    "source": "ACL Anthology",
+    "source_key": "2026.emnlp-main.542",
+    "tags": [
+      "retrieval"
+    ],
+    "title": "Axis-LoRA: Probing and Adapting Embedding Models for Personal-Memory Retrieval",
+    "updated": "2026-10-21",
+    "url": "https://aclanthology.org/2026.emnlp-main.542",
+    "venue": "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing"
+  },
+  {
+    "abstract": "",
+    "authors": [
+      "Taeil Kim",
+      "Kangsan Kim",
+      "Sung Hwang",
+      "Hung-Yi Lee",
+      "Sunipa Dev",
+      "Jessy Li",
+      "Desmond Elliott"
+    ],
+    "categories": [],
+    "id": "acl:2026.findings-emnlp.2407",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent` 这些主题直接相关。\n\n它当前来自 `ACL Anthology`，并与 `Findings of the Association for Computational Linguistics: EMNLP 2026` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：The abstract is not available yet.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "This paper is tracked as a memory-related work and awaits a fuller summary.",
+    "published": "2026-10",
+    "relevance": "- 来源：ACL Anthology\n- Venue：Findings of the Association for Computational Linguistics: EMNLP 2026\n- 高亮主题命中：agent\n- 检索关键词命中：agent memory",
+    "slug": "agent-memory-distillation-empowering-small-llm-agents-with-hierarchical-teacher-",
+    "source": "ACL Anthology",
+    "source_key": "2026.findings-emnlp.2407",
+    "tags": [
+      "agent"
+    ],
+    "title": "Agent Memory Distillation: Empowering Small LLM Agents with Hierarchical Teacher Memory",
+    "updated": "2026-10-21",
+    "url": "https://aclanthology.org/2026.findings-emnlp.2407",
+    "venue": "Findings of the Association for Computational Linguistics: EMNLP 2026"
+  },
+  {
+    "abstract": "",
+    "authors": [
+      "Dongzhuoran Zhou",
+      "Yuqicheng Zhu",
+      "Yule Liu",
+      "Zhen Yang",
+      "Rui Lu",
+      "Yuxiao Dong",
+      "Jie Tang",
+      "Evgeny Kharlamov",
+      "Hung-Yi Lee",
+      "Sunipa Dev",
+      "Jessy Li",
+      "Desmond Elliott"
+    ],
+    "categories": [],
+    "id": "acl:2026.findings-emnlp.1915",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent` 这些主题直接相关。\n\n它当前来自 `ACL Anthology`，并与 `Findings of the Association for Computational Linguistics: EMNLP 2026` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：The abstract is not available yet.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "working memory"
+    ],
+    "one_liner": "This paper is tracked as a memory-related work and awaits a fuller summary.",
+    "published": "2026-10",
+    "relevance": "- 来源：ACL Anthology\n- Venue：Findings of the Association for Computational Linguistics: EMNLP 2026\n- 高亮主题命中：agent\n- 检索关键词命中：working memory",
+    "slug": "awm-answerable-working-memory-for-long-document-vqa-agents",
+    "source": "ACL Anthology",
+    "source_key": "2026.findings-emnlp.1915",
+    "tags": [
+      "agent"
+    ],
+    "title": "AWM: Answerable Working Memory for Long-Document VQA Agents",
+    "updated": "2026-10-21",
+    "url": "https://aclanthology.org/2026.findings-emnlp.1915",
+    "venue": "Findings of the Association for Computational Linguistics: EMNLP 2026"
+  },
+  {
+    "abstract": "",
+    "authors": [
+      "Chin-Lun Fu",
+      "Anagha Kulkarni",
+      "Hong Ni",
+      "Behrouz Madahian",
+      "Pepa Atanasova",
+      "Gholamreza Haffari",
+      "Minghan Wang"
+    ],
+    "categories": [],
+    "id": "acl:2026.emnlp-industry.81",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, long-term` 这些主题直接相关。\n\n它当前来自 `ACL Anthology`，并与 `Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing: Industry Track` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：The abstract is not available yet.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "long-term memory"
+    ],
+    "one_liner": "This paper is tracked as a memory-related work and awaits a fuller summary.",
+    "published": "2026-10",
+    "relevance": "- 来源：ACL Anthology\n- Venue：Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing: Industry Track\n- 高亮主题命中：agent, long-term\n- 检索关键词命中：long-term memory",
+    "slug": "apdmem-agent-controlled-progressive-disclosure-for-query-adaptive-long-term-memo",
+    "source": "ACL Anthology",
+    "source_key": "2026.emnlp-industry.81",
+    "tags": [
+      "agent",
+      "long-term"
+    ],
+    "title": "APDMem: Agent-Controlled Progressive Disclosure for Query-Adaptive Long-Term Memory",
+    "updated": "2026-10-21",
+    "url": "https://aclanthology.org/2026.emnlp-industry.81",
+    "venue": "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing: Industry Track"
+  },
+  {
+    "abstract": "",
+    "authors": [
+      "Peilin Wu",
+      "Xinlu Zhang",
+      "Kun Wan",
+      "Wentian Zhao",
+      "Gang Wu",
+      "Xinya Du",
+      "Zhiyu Chen",
+      "Hung-Yi Lee",
+      "Sunipa Dev",
+      "Jessy Li",
+      "Desmond Elliott"
+    ],
+    "categories": [],
+    "id": "acl:2026.findings-emnlp.2152",
+    "intro": "这篇论文被纳入仓库，是因为它和 `memory-augmented` 这些主题直接相关。\n\n它当前来自 `ACL Anthology`，并与 `Findings of the Association for Computational Linguistics: EMNLP 2026` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：The abstract is not available yet.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory-augmented"
+    ],
+    "one_liner": "This paper is tracked as a memory-related work and awaits a fuller summary.",
+    "published": "2026-10",
+    "relevance": "- 来源：ACL Anthology\n- Venue：Findings of the Association for Computational Linguistics: EMNLP 2026\n- 高亮主题命中：memory-augmented\n- 检索关键词命中：memory-augmented",
+    "slug": "amaris-a-memory-augmented-rubric-improvement-system-for-rubric-based-reinforceme",
+    "source": "ACL Anthology",
+    "source_key": "2026.findings-emnlp.2152",
+    "tags": [
+      "memory-augmented"
+    ],
+    "title": "AMARIS: A Memory-Augmented Rubric Improvement System for Rubric-Based Reinforcement Learning",
+    "updated": "2026-10-21",
+    "url": "https://aclanthology.org/2026.findings-emnlp.2152",
+    "venue": "Findings of the Association for Computational Linguistics: EMNLP 2026"
+  },
+  {
+    "abstract": "",
+    "authors": [
+      "Zehao Lin",
+      "Xixuan Hao",
+      "Renyu Fu",
+      "Shaobo Cui",
+      "Kai Chen",
+      "Chunyu Li",
+      "Zhiyu li",
+      "Feiyu Xiong",
+      "Hung-Yi Lee",
+      "Sunipa Dev",
+      "Jessy Li",
+      "Desmond Elliott"
+    ],
+    "categories": [],
+    "id": "acl:2026.emnlp-main.2296",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, long-term` 这些主题直接相关。\n\n它当前来自 `ACL Anthology`，并与 `Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：The abstract is not available yet.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "long-term memory"
+    ],
+    "one_liner": "This paper is tracked as a memory-related work and awaits a fuller summary.",
+    "published": "2026-10",
+    "relevance": "- 来源：ACL Anthology\n- Venue：Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing\n- 高亮主题命中：agent, long-term\n- 检索关键词命中：long-term memory",
+    "slug": "a-survey-on-long-term-memory-security-in-llm-agents-attacks-defenses-and-governa",
+    "source": "ACL Anthology",
+    "source_key": "2026.emnlp-main.2296",
+    "tags": [
+      "agent",
+      "long-term"
+    ],
+    "title": "A Survey on Long-Term Memory Security in LLM Agents: Attacks, Defenses, and Governance Across the Memory Lifecycle",
+    "updated": "2026-10-21",
+    "url": "https://aclanthology.org/2026.emnlp-main.2296",
+    "venue": "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing"
   },
   {
     "abstract": "When does experience memory help a closed-loop LLM driving agent? Published gains cannot say, because the two factors we find to matter most, which warmup experiences the pool contains and what any injected tokens do to the prompt, are controlled in none of them. We answer with a controlled evaluation on one audited HighwayEnv testbed (1Hz, gpt-4o-mini for the decisive contrasts). We treat the warmup pool as a resampled random factor (ten disjoint pools) and add token-matched irrelevant-filler controls, oracle-certified diagnostics, caution-pricing metrics, and quantified audits of the baseline ports. The probe suite spans flat-text retrieval (a DiLu port), a single-frame grid port (RESPOND-inspired), our episodic temporal-graph memory, a retrieval-free consolidated rulebook, and a flat K-step observation-history baseline. Four findings follow, each a property of this testbed. (1) Headline memory gains belong to the warmup draw. The reported pool is the best of ten for both retrieval memories, which beat No-Memory in only one pool of ten (sign test p=0.011), and even the rulebook's apparent pool-immunity collapsed on five fresh draws. (2) No retrieval design tested exceeds token-matched filler. The collision-only merge ceiling is reached by a single 15-token caution instruction, and metrics that price caution erase the rulebook's lead. (3) Representational sophistication is nowhere robustly operative. (4) Baseline port quality silently inverts conclusions. On this testbed, a single-pool comparison without filler controls would have reported memory gains that these controls reverse. We release the testbed, audited ports, seeds, and caches.",
