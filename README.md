@@ -39,19 +39,23 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **1503**
+- Total tracked papers: **1508**
 - Last generated: **2026-10-26**
 
 ## Papers by Source
 
 - ACL Anthology: **17**
-- arXiv: **1340**
+- arXiv: **1345**
 - OpenReview: **146**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-10-23 | arXiv | [When to Trust Memory: Retrieval-Guided Probabilistic Spatiotemporal Forecasting under Distribution Shift](content/papers/when-to-trust-memory-retrieval-guided-probabilistic-spatiotemporal-forecasting-u.md) | retrieval |
+| 2026-10-23 | arXiv | [Lifelong Context Adaptation through Bidirectional Memory-Skill Learning](content/papers/lifelong-context-adaptation-through-bidirectional-memory-skill-learning.md) | agent, context, conversation |
+| 2026-10-23 | arXiv | [Agentic Memory Management Is the Next Frontier of Information Retrieval](content/papers/agentic-memory-management-is-the-next-frontier-of-information-retrieval.md) | agent, benchmark, retrieval |
+| 2026-10-23 | arXiv | [ActionRAG: Evidence-Refining Graph Diffusion for Long-Term Memory in LLM Agents](content/papers/actionrag-evidence-refining-graph-diffusion-for-long-term-memory-in-llm-agents.md) | agent, long-term, retrieval |
 | 2026-10-22 | ACL Anthology | [Shared Selective Persistent Memory for Agentic LLM Systems](content/papers/shared-selective-persistent-memory-for-agentic-llm-systems.md) | agent |
 | 2026-10-22 | ACL Anthology | [Retrieval is Enough: A Memory-Augmented Agent for Algorithm Selection](content/papers/retrieval-is-enough-a-memory-augmented-agent-for-algorithm-selection.md) | agent, retrieval |
 | 2026-10-22 | arXiv | [Memory before Goal: Role of Pre-History Memory for Humanoid Loco-Manipulation](content/papers/memory-before-goal-role-of-pre-history-memory-for-humanoid-loco-manipulation.md) | benchmark |
@@ -62,16 +66,12 @@ python3 scripts/update_papers.py --build-only
 | 2026-10-22 | ACL Anthology | [Causal Episodic Memory for Feedback-Driven Agent Repair](content/papers/causal-episodic-memory-for-feedback-driven-agent-repair.md) | agent, episodic |
 | 2026-10-22 | ACL Anthology | [AgenticLOCI: A Multi-Agent Memory Framework for Conversational AI with Longitudinal Personalization](content/papers/agenticloci-a-multi-agent-memory-framework-for-conversational-ai-with-longitudin.md) | agent, conversation |
 | 2026-10-22 | arXiv | [AfterDeleteBench: Auditing Post-Deletion Information Persistence in LLM Agents](content/papers/afterdeletebench-auditing-post-deletion-information-persistence-in-llm-agents.md) | agent |
+| 2026-10-22 | arXiv | [A Mathematical Theory of the Jacobian Lens](content/papers/a-mathematical-theory-of-the-jacobian-lens.md) | context |
 | 2026-10-21 | arXiv | [Why Bother Me Again? Benchmarking Personal Agent Memory for Interaction Preferences](content/papers/why-bother-me-again-benchmarking-personal-agent-memory-for-interaction-preferenc.md) | agent, benchmark, context |
 | 2026-10-21 | arXiv | [Uni-Mem: Learning a Long-Horizon Agentic Memory Manager with Unified Online Policy Optimization](content/papers/uni-mem-learning-a-long-horizon-agentic-memory-manager-with-unified-online-polic.md) | agent, long-term, retrieval |
 | 2026-10-21 | arXiv | [Remembering Through Change: Provenance-Preserving Hypergraph Memory for Multimodal Agents](content/papers/remembering-through-change-provenance-preserving-hypergraph-memory-for-multimoda.md) | agent, benchmark, long-term |
 | 2026-10-21 | arXiv | [MemoryTax: The Bitter Lesson of Agent Memory](content/papers/memorytax-the-bitter-lesson-of-agent-memory.md) | agent, context, conversation |
 | 2026-10-21 | arXiv | [Memory-Centric Continual Learning for AI Agents](content/papers/memory-centric-continual-learning-for-ai-agents.md) | agent, context, long-term |
-| 2026-10-21 | arXiv | [Memory-Augmented Online Test-Time Adaptation for EEG Motor Imagery via Perturbation Consistency and Confidence Calibration](content/papers/memory-augmented-online-test-time-adaptation-for-eeg-motor-imagery-via-perturbat.md) | memory-augmented |
-| 2026-10-21 | arXiv | [MOSAIC: An Omni-Modal Benchmark for Long-Term Memory and Cross-Modal Reasoning in Conversational Agents](content/papers/mosaic-an-omni-modal-benchmark-for-long-term-memory-and-cross-modal-reasoning-in.md) | agent, benchmark, conversation |
-| 2026-10-21 | arXiv | [Externalise the Memory: A Pre-Registered Study of Where an Embodied Agent's Experience Should Live](content/papers/externalise-the-memory-a-pre-registered-study-of-where-an-embodied-agent-s-exper.md) | agent, retrieval |
-| 2026-10-21 | arXiv | [ChronoSynth: Constraint-Aware Question Synthesis over Temporal Knowledge Graphs](content/papers/chronosynth-constraint-aware-question-synthesis-over-temporal-knowledge-graphs.md) | memory-augmented |
-| 2026-10-21 | ACL Anthology | [Axis-LoRA: Probing and Adapting Embedding Models for Personal-Memory Retrieval](content/papers/axis-lora-probing-and-adapting-embedding-models-for-personal-memory-retrieval.md) | retrieval |
 
 ## Suggested GitHub Setup
 

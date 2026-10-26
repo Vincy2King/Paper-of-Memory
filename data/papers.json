@@ -1,5 +1,130 @@
 [
   {
+    "abstract": "Spatiotemporal forecasting plays an important role in real-world applications, where probabilistic approaches provide uncertainty estimates for decision-making. Real-world systems are inherently non-stationary, leading to distribution shifts between training and test data. However, existing probabilistic methods mainly focus on modeling data distributions under standard settings, while distribution shift methods often handle such shifts in a coarse manner, failing to characterize shift degree and adapt prediction strategy accordingly. As a result, they often produce miscalibrated and unreliable forecasts. To address this issue, we propose REMIND, a retrieval-guided probabilistic framework for spatiotemporal forecasting under distribution shift. REMIND leverages retrieval to estimate how well current observation are supported by historical patterns, enabling adaptive prediction under different shift regimes. It employs spatiotemporal retrieval to construct a memory bank and introduces a dual branch architecture, combining a memory-calibrated probabilistic branch for mild shifts with a deviation-aware probabilistic branch for severe shifts. A shift-adaptive gate, guided by retrieval similarity and memory dispersion, balances the two branches according to shift degree. We further design a hierarchical Gaussian mixture to capture heterogeneous uncertainty over the dual branch predictions, and introduce a memory perturbation training scheme to improve generalization. Experiments on real-world datasets with distribution shifts demonstrate that REMIND consistently outperforms state-of-the-art methods in both forecasting accuracy and probabilistic prediction quality.",
+    "authors": [
+      "Haochen Lv",
+      "Jianhao Zhang",
+      "Zhichen Lei",
+      "Yang Jiang",
+      "Xiaowei Mao",
+      "Shengnan Guo",
+      "Youfang Lin",
+      "Huaiyu Wan"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "id": "2610.32329v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Spatiotemporal forecasting plays an important role in real-world applications, where probabilistic approaches provide uncertainty estimates for decision-making.\n\n进一步看，论文的核心做法或实验重点可以概括为：Real-world systems are inherently non-stationary, leading to distribution shifts between training and test data.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory retrieval"
+    ],
+    "one_liner": "Spatiotemporal forecasting plays an important role in real-world applications, where probabilistic approaches provide uncertainty estimates for decision-making.",
+    "published": "2026-10-23",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：retrieval\n- 检索关键词命中：memory retrieval\n- 来源分类信息：cs.LG",
+    "slug": "when-to-trust-memory-retrieval-guided-probabilistic-spatiotemporal-forecasting-u",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2610.32329v1",
+    "tags": [
+      "retrieval"
+    ],
+    "title": "When to Trust Memory: Retrieval-Guided Probabilistic Spatiotemporal Forecasting under Distribution Shift",
+    "updated": "2026-10-23",
+    "url": "http://arxiv.org/abs/2610.32329v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Lifelong LLM agents must learn from an expanding history of interactions while making each decision within a bounded context window. Memory makes past experience available, but the agent may still need to infer how to solve each new task from the retrieved records. Skills provide reusable procedures, yet may omit the task-specific facts needed to apply them. Because retrieved memory and skills shape the agent's behavior, they also influence the experience available for future learning. We introduce MemCryst, a framework for lifelong context adaptation through bidirectional learning of memory and skills with a frozen language model. Recurring episodes stored in memory support skill creation and revision, and the interactions guided by those skills supply new memory for subsequent learning. Facts retrieved from memory and learned skills jointly form the agent's context, while task outcomes adjust the future retrieval influence of the records actually served without rewriting their content. Across ten settings spanning embodied control, long-document reading, conversation, mathematics, and code, MemCryst leads seven reported comparisons. On ALFWorld, joint serving achieves 63.17% success, compared with 59.83% for memory-only and 50.50% for skill-only serving. Code is available at https://github.com/tianyi0216/Memcryst.git",
+    "authors": [
+      "Tianyi Xu",
+      "Huazheng Wang"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2610.32295v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, context, conversation, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Lifelong LLM agents must learn from an expanding history of interactions while making each decision within a bounded context window.\n\n进一步看，论文的核心做法或实验重点可以概括为：Memory makes past experience available, but the agent may still need to infer how to solve each new task from the retrieved records.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "retrieval memory"
+    ],
+    "one_liner": "Lifelong LLM agents must learn from an expanding history of interactions while making each decision within a bounded context window.",
+    "published": "2026-10-23",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, context, conversation, retrieval\n- 检索关键词命中：retrieval memory\n- 来源分类信息：cs.AI",
+    "slug": "lifelong-context-adaptation-through-bidirectional-memory-skill-learning",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2610.32295v1",
+    "tags": [
+      "agent",
+      "context",
+      "conversation",
+      "retrieval"
+    ],
+    "title": "Lifelong Context Adaptation through Bidirectional Memory-Skill Learning",
+    "updated": "2026-10-23",
+    "url": "http://arxiv.org/abs/2610.32295v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Information retrieval has long been focusing on connecting people with information they need to complete their tasks. Recently, the meaning of this has changed dramatically as more and more AI agents now consume, retain, and act on information on a user's behalf. Consequently, information management now also takes place \\emph{inside} the agent in the form of memory management. In this perspective paper, we argue that \\emph{agentic memory management} (AMM), which studies the structure, analysis, organization, storage, searching, retrieval, and \\emph{use} of information in an intelligent agent's memory, is a natural extension of IR research and an area in which the IR community can make distinctive contributions. Specifically, we first present a system-level framework for AMM and introduce a computational taxonomy of memory objects as \\emph{constants}, \\emph{functions}, and \\emph{operators}, each with distinct retrieval semantics. Then, we compare AMM with established IR research and identify their difference and connections. Last but not least, we outline a research agenda covering benchmarks, candidate principles of memory utility, optimization procedures that mix parametric and non-parametric updates, and more. We hope this paper could attract more people, both inside and outside the IR communities, to think more about AMM problems and research from IR perspectives.",
+    "authors": [
+      "Qingyao Ai"
+    ],
+    "categories": [
+      "cs.IR"
+    ],
+    "id": "2610.32464v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Information retrieval has long been focusing on connecting people with information they need to complete their tasks.\n\n进一步看，论文的核心做法或实验重点可以概括为：Recently, the meaning of this has changed dramatically as more and more AI agents now consume, retain, and act on information on a user's behalf.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "Information retrieval has long been focusing on connecting people with information they need to complete their tasks.",
+    "published": "2026-10-23",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, retrieval\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.IR",
+    "slug": "agentic-memory-management-is-the-next-frontier-of-information-retrieval",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2610.32464v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "retrieval"
+    ],
+    "title": "Agentic Memory Management Is the Next Frontier of Information Retrieval",
+    "updated": "2026-10-23",
+    "url": "http://arxiv.org/abs/2610.32464v1",
+    "venue": ""
+  },
+  {
+    "abstract": "LLM agents need long-term memory that can recover precise and mutually consistent evidence from growing interaction histories, particularly when answers depend on relations among facts rather than isolated semantic matches. Current memory pipelines remain vulnerable at two stages: indexing errors can fragment repeated entities or merge distinct ones, and online retrieval often treats initial similarity scores as final even when the surrounding graph provides evidence for revising them. We introduce ActionRAG, a graph memory architecture that couples cautious indexing with query-time graph retroevaluation. Its indexing pipeline reconciles type labels and applies tiered entity resolution. Given a query, dual-channel entity and triple retrieval forms an initial evidence set and induces a bounded local graph. Query-conditioned receiver-normalized diffusion refines triple scores using local path structure. Seed protection, hub-penalized flux, and triple materialization preserve direct evidence while recovering missed connections. We evaluate ActionRAG on MemoryAgentBench (MAB), which tests accurate retrieval, conflict resolution, long-range understanding, and test-time learning. Across its eight deterministic-scoring columns, ActionRAG achieves 55.1 average accuracy, improving over the strongest retrieval-based memory baseline by 5.4 points. Under MAB's query-time cost accounting, mean synthesis cost stays below \\$0.001 per query on the four reported cost columns, and the sum of separately measured retrieval-side p99 components is 440.7 ms on our consumer Apple Silicon setup.",
+    "authors": [
+      "Navyansh Mahla",
+      "Sashank Vandrangi"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.CL"
+    ],
+    "id": "2610.32752v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, long-term, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：LLM agents need long-term memory that can recover precise and mutually consistent evidence from growing interaction histories, particularly when answers depend on relations among facts rather than isolated semantic...\n\n进一步看，论文的核心做法或实验重点可以概括为：Current memory pipelines remain vulnerable at two stages: indexing errors can fragment repeated entities or merge distinct ones, and online retrieval often treats initial similarity scores as final even when the...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "long-term memory"
+    ],
+    "one_liner": "LLM agents need long-term memory that can recover precise and mutually consistent evidence from growing interaction histories, particularly when answers depend on relations...",
+    "published": "2026-10-23",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, long-term, retrieval\n- 检索关键词命中：long-term memory\n- 来源分类信息：cs.AI, cs.CL",
+    "slug": "actionrag-evidence-refining-graph-diffusion-for-long-term-memory-in-llm-agents",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2610.32752v1",
+    "tags": [
+      "agent",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "ActionRAG: Evidence-Refining Graph Diffusion for Long-Term Memory in LLM Agents",
+    "updated": "2026-10-23",
+    "url": "http://arxiv.org/abs/2610.32752v1",
+    "venue": ""
+  },
+  {
     "abstract": "",
     "authors": [
       "Sanjana Pedada",
@@ -332,6 +457,38 @@
     "title": "AfterDeleteBench: Auditing Post-Deletion Information Persistence in LLM Agents",
     "updated": "2026-10-22",
     "url": "http://arxiv.org/abs/2610.31366v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Recent work from Anthropic introduced a new interpretability tool, called the Jacobian lens (J-lens, Gurnee et al., 2026). This method identified linear directions in the hidden states of frontier language models that had properties reminiscent of working memory-like representations. However, it is unclear what mechanistic properties of such features make them detectable to the J-lens. To this end, we introduce a mathematical theory of the J-lens, and show that it preferentially identifies coherent features -- directions that act like leading, spatially coherent Lyapunov modes. Small perturbations along these directions amplify across layers, remain roughly constant across token positions, and are consistent across different contexts. While we are agnostic to whether these properties are necessarily associated with a ``Global Workspace'', the analytically derived preferences of the J-lens nevertheless explain prior empirical applied to both model classes. We validate our analysis on a Bayes filter and a toy transformer, each optimally predicting next tokens emitted from a Hidden Markov Model (HMM). We show how modulating task parameters that change the coherence of features in the Bayes filter correspondingly and predictively modulates the response of the J-lens . We also introduce of a family of J-lenses built to emphasize different temporal scales of information processing in LLMs, which we call $ω$-J-lenses.",
+    "authors": [
+      "Mitchell Ostrow",
+      "Daoyuan Qian",
+      "Toni Liu",
+      "Ila Fiete"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "q-bio.NC"
+    ],
+    "id": "2610.31955v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `context` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Recent work from Anthropic introduced a new interpretability tool, called the Jacobian lens (J-lens, Gurnee et al., 2026).\n\n进一步看，论文的核心做法或实验重点可以概括为：This method identified linear directions in the hidden states of frontier language models that had properties reminiscent of working memory-like representations.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "working memory"
+    ],
+    "one_liner": "Recent work from Anthropic introduced a new interpretability tool, called the Jacobian lens (J-lens, Gurnee et al., 2026).",
+    "published": "2026-10-22",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：context\n- 检索关键词命中：working memory\n- 来源分类信息：cs.LG, cs.AI, q-bio.NC",
+    "slug": "a-mathematical-theory-of-the-jacobian-lens",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2610.31955v1",
+    "tags": [
+      "context"
+    ],
+    "title": "A Mathematical Theory of the Jacobian Lens",
+    "updated": "2026-10-22",
+    "url": "http://arxiv.org/abs/2610.31955v1",
     "venue": ""
   },
   {
