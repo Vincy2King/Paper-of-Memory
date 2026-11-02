@@ -1,5 +1,316 @@
 [
   {
+    "abstract": "Long-context interaction and persistent memory allow LLM assistants to develop history-grounded understandings of users. When users change direction, however, an understanding built through earlier exchanges may conflict with their current instruction. We introduce relational schema lock-in to describe cases in which an assistant grants that accumulated understanding authority to override the current instruction without user authorization for the intervention. Study 1 documents reports of AI assistants using prior interactions to question or alter requested actions. Study 2 reproduces the pattern across controlled histories and six models: models retained history-grounded positions but differed in whether and how those positions shaped task execution. In Study 3 with 360 participants, artifact substitution preserved task completion while reducing faithful enactment: 75.0% sent the AI's suspension letter, including 11 participants who reported cancellation as their final stated intent. Overt resistance reduced task completion while leaving sent artifacts faithful.",
+    "authors": [
+      "Wei Yang"
+    ],
+    "categories": [
+      "cs.HC"
+    ],
+    "id": "2610.41367v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `context` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Long-context interaction and persistent memory allow LLM assistants to develop history-grounded understandings of users.\n\n进一步看，论文的核心做法或实验重点可以概括为：When users change direction, however, an understanding built through earlier exchanges may conflict with their current instruction.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "persistent memory"
+    ],
+    "one_liner": "Long-context interaction and persistent memory allow LLM assistants to develop history-grounded understandings of users.",
+    "published": "2026-10-30",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：context\n- 检索关键词命中：persistent memory\n- 来源分类信息：cs.HC",
+    "slug": "when-history-overrides-intent-relational-schema-lock-in-in-human-llm-interaction",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2610.41367v1",
+    "tags": [
+      "context"
+    ],
+    "title": "When History Overrides Intent: Relational Schema Lock-In in Human-LLM Interaction",
+    "updated": "2026-10-30",
+    "url": "http://arxiv.org/abs/2610.41367v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Unlimited OCR ushers the era of long-horizon parsing, substantially mitigating the growth of working memory as document lengthens. However, as document length scales to hundreds of pages, the visual context grows substantially, sharply increasing the computational cost of each decoding step and limiting the scalability of ultra-long document parsing. Inspired by human book transcription via localized focus without re-scanning preceding pages, we introduce Unlimited OCR 2, a document parsing model that looks only at what it transcribes. Building on Unlimited OCR, we upgrade all the decoder attention modules to Sparse Reference Sliding Window Attention (SR-SWA), bounding active reference tokens to a fixed capacity and thus sustaining constant computational costs across arbitrarily long documents. By combining SR-SWA with Unlimited-Horizon Decoding Paradigm, Unlimited OCR 2 enables document parsing over virtually unlimited lengths without prohibitive memory overhead. At the hundred-page scale, Unlimited OCR 2 achieves 7.0$\\times$ and 5.6$\\times$ per-step speedups over Full Attention and R-SWA, respectively. Furthermore, it delivers state-of-the-art end-to-end performance on both MPDocBench and MarathonDocBench, our newly proposed benchmark targeting hundred-page document parsing. Ultimately, the capacity for uninterrupted, one-shot document parsing signifies a fundamental paradigm shift into the OCR 3.0 era.",
+    "authors": [
+      "Shu Wei",
+      "Jingjing Wu",
+      "Qunyi Xie",
+      "Lingshu Zhang",
+      "Xiangcheng Du",
+      "Yannian Fu",
+      "Mengjie Wang",
+      "Zuyi Wang",
+      "Zhichao Liu",
+      "Yangliu Xu",
+      "Youyang Yin",
+      "Huanhuan Liu",
+      "YY",
+      "Yi Yang"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.CV"
+    ],
+    "id": "2610.39308v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `benchmark, context` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Unlimited OCR ushers the era of long-horizon parsing, substantially mitigating the growth of working memory as document lengthens.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, as document length scales to hundreds of pages, the visual context grows substantially, sharply increasing the computational cost of each decoding step and limiting the scalability of ultra-long document...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "working memory"
+    ],
+    "one_liner": "Unlimited OCR ushers the era of long-horizon parsing, substantially mitigating the growth of working memory as document lengthens.",
+    "published": "2026-10-29",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：benchmark, context\n- 检索关键词命中：working memory\n- 来源分类信息：cs.CL, cs.CV",
+    "slug": "unlimited-ocr-works-2",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2610.39308v2",
+    "tags": [
+      "benchmark",
+      "context"
+    ],
+    "title": "Unlimited OCR Works 2",
+    "updated": "2026-10-30",
+    "url": "http://arxiv.org/abs/2610.39308v2",
+    "venue": ""
+  },
+  {
+    "abstract": "Recent work shows that a frozen robot policy performs far better inside an agent harness, where control code decides when to query the policy, consult vision tools, or command the arm directly. Yet today these harnesses are built by hand and redesigned for each new robot or benchmark. We show that harness design can be automated, offering a strong alternative to finetuning on a novel setup. In RoboArchitect, a coding model observes a robot's rollouts, diagnoses failures, and iteratively revises the harness around the frozen policy. The harness evolves on a set of episodes for its optimization and is evaluated on held-out scenes and tasks. Without updating any model weights, RoboArchitect raises average success from 9.7% to 43.3% on unseen scenes (4.5x) and from 12.7% to 40.2% on unseen tasks (3.2x), across multiple benchmarks and policies. The gains are largest where the benchmark is far from the policy's training data: wrapping a general-purpose policy, the evolved harness yields a specialist that often outperforms even the finetuned version. Intuitive control strategies are automatically designed, such as lifting a jammed arm clear or reaching in horizontally when an obstacle blocks the way from above. The harness also evolves its own persistent memory, carrying learned experience, such as effective grasp depths, into later decisions. These results suggest that substantial headroom in robotic manipulation lies in the agent harness, and its design can be effectively automated and optimized without weight updates.",
+    "authors": [
+      "Shengguang Wu",
+      "Suning Huang",
+      "Cherie Ho",
+      "Ria Doshi",
+      "Hao Zhu",
+      "Serena Yeung-Levy"
+    ],
+    "categories": [
+      "cs.RO",
+      "cs.AI",
+      "cs.CV"
+    ],
+    "id": "2610.42141v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Recent work shows that a frozen robot policy performs far better inside an agent harness, where control code decides when to query the policy, consult vision tools, or command the arm directly.\n\n进一步看，论文的核心做法或实验重点可以概括为：Yet today these harnesses are built by hand and redesigned for each new robot or benchmark.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "persistent memory"
+    ],
+    "one_liner": "Recent work shows that a frozen robot policy performs far better inside an agent harness, where control code decides when to query the policy, consult vision tools, or command...",
+    "published": "2026-10-30",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark\n- 检索关键词命中：persistent memory\n- 来源分类信息：cs.RO, cs.AI, cs.CV",
+    "slug": "roboarchitect-automating-the-design-of-robotic-agents-with-persistent-memory",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2610.42141v1",
+    "tags": [
+      "agent",
+      "benchmark"
+    ],
+    "title": "RoboArchitect: Automating the Design of Robotic Agents with Persistent Memory",
+    "updated": "2026-10-30",
+    "url": "http://arxiv.org/abs/2610.42141v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Low-Earth orbit (LEO) satellite networks present a challenging routing environment due to rapidly changing topology, traffic, and link conditions. Existing deep reinforcement learning (DRL) routing methods typically rely on current observations and information encoded in network weights, limiting their ability to exploit successful past experiences. We propose RAMA, a retrieval-augmented multi-agent DRL framework with Approximate Information State (AIS), in which each satellite combines its local observation, recent routing history, neighboring state information, and retrieved entries from a per-satellite episodic memory. Retrieved experiences are integrated through a Transformer-based decision network trained with AIS-based auxiliary objectives. With weights frozen in a 140-satellite Kepler constellation, RAMA reduces mean end-to-end latency by 13.4% and 99th-percentile latency by 66.7% relative to the state-of-theart double deep Q-network (DDQN) routing method, mainly by avoiding long detours. Updated online, RAMA remains stable while DDQN degrades. On the 1,584-satellite Starlink shell 1, the reduction in mean latency grows to 93.2%, and updating RAMA online lowers its mean latency by a further 25.5%. These results demonstrate the effectiveness of retrieval-augmented memory for scalable decentralized routing in LEO satellite networks.",
+    "authors": [
+      "Xin Ming Li",
+      "Peng Hu"
+    ],
+    "categories": [
+      "cs.NI",
+      "cs.LG"
+    ],
+    "id": "2610.42068v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, episodic, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Low-Earth orbit (LEO) satellite networks present a challenging routing environment due to rapidly changing topology, traffic, and link conditions.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing deep reinforcement learning (DRL) routing methods typically rely on current observations and information encoded in network weights, limiting their ability to exploit successful past experiences.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "episodic memory",
+      "memory retrieval"
+    ],
+    "one_liner": "Low-Earth orbit (LEO) satellite networks present a challenging routing environment due to rapidly changing topology, traffic, and link conditions.",
+    "published": "2026-10-30",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, episodic, retrieval\n- 检索关键词命中：episodic memory, memory retrieval\n- 来源分类信息：cs.NI, cs.LG",
+    "slug": "rama-retrieval-augmented-multi-agent-routing-with-episodic-memory-for-leo-satell",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2610.42068v1",
+    "tags": [
+      "agent",
+      "episodic",
+      "retrieval"
+    ],
+    "title": "RAMA: Retrieval-Augmented Multi-Agent Routing with Episodic Memory for LEO Satellite Networks",
+    "updated": "2026-10-30",
+    "url": "http://arxiv.org/abs/2610.42068v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Deploying 6G network slices across administrative domains requires an online decision for each arriving request: which domain hosts each virtual network function, how traffic crosses domain boundaries, and whether the slice is admitted. This joint decision problem is NP-hard under continuous arrivals. Experiments on a parametrized family of multi-domain topologies show that no fixed planning strategy dominates across all regimes: the performance ranking reverses between topology classes, and feasible placements exist for most rejected requests but remain undiscovered. These findings identify the plan layer as the decisive performance lever. We introduce ORION, a hierarchical orchestrator in which two LLM agents translate service intents into structured requests and generate abstract placement plans. A cooperative multi-agent RL coordinator selects the cross-domain partition, treating the plan as a persistent soft prior, while per-domain agents place the functions. ORION main contribution lies at the plan layer: an outcome-driven episodic memory that records, for each completed attempt, the network-condition profile, the proposed plan, and its verified feasibility outcome. The memory feeds verified successes and labelled failures back to the planner, thereby closing the adaptation loop using deployment feasibility rather than a scalar reward assigned to the planner's own proposals. To isolate the effect of the plan quality, we evaluate the planner on held-out topology families while keeping the downstream selection and execution mechanisms fixed. Under this controlled setting, the proposed memory improves admission by $4.6$--$11.5$ percentage points over the same planner without memory, while importance-based retention accounts for most of the improvement over a first-in-first-out store.",
+    "authors": [
+      "Mahmoud S. Mayaleh",
+      "Fetia Bannour",
+      "Nour-El-Houda Yellas"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "cs.MA",
+      "cs.NI"
+    ],
+    "id": "2610.41563v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, episodic` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Deploying 6G network slices across administrative domains requires an online decision for each arriving request: which domain hosts each virtual network function, how traffic crosses domain boundaries, and whether the...\n\n进一步看，论文的核心做法或实验重点可以概括为：This joint decision problem is NP-hard under continuous arrivals.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "episodic memory"
+    ],
+    "one_liner": "Deploying 6G network slices across administrative domains requires an online decision for each arriving request: which domain hosts each virtual network function, how traffic...",
+    "published": "2026-10-30",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, episodic\n- 检索关键词命中：episodic memory\n- 来源分类信息：cs.LG, cs.AI, cs.MA, cs.NI",
+    "slug": "orion-an-outcome-driven-llm-advisor-for-rl-based-multi-domain-6g-slice-placement",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2610.41563v1",
+    "tags": [
+      "agent",
+      "episodic"
+    ],
+    "title": "ORION: An Outcome-Driven LLM Advisor for RL-Based Multi-Domain 6G Slice Placement",
+    "updated": "2026-10-30",
+    "url": "http://arxiv.org/abs/2610.41563v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Self-distillation methods for large language models with an exponential moving average (EMA) teacher already retain a history of student updates. Muon nevertheless stores a separate momentum buffer, increasing persistent training memory. We propose Muon with Reused Teacher (Muon-RT), which reuses the teacher-student displacement to eliminate momentum buffers for hidden weight matrices. We show that this displacement encodes an exponentially weighted history of applied updates and smooths temporally uncorrelated noise under a local model. Muon-RT removes its radial component, normalizes it spectrally, and mixes it with the current gradient after Newton-Schulz (NS) orthogonalization. Under explicit regularity and alignment assumptions, we establish linear contraction of an expected objective-gap bound toward a residual error level. With Self-Distillation Fine-Tuning (SDFT) on Qwen2.5-7B-Instruct, Muon-RT improves average accuracy over AdamW by 2.6 points with 42% less persistent memory, and over momentum Muon by 5.4 points with 27% less persistent memory. With Self-Distillation Policy Optimization (SDPO) on Olmo-3-7B-Instruct, it improves average accuracy over AdamW by 2.0 points.",
+    "authors": [
+      "Aryan Das",
+      "Vinay Kumar Verma",
+      "Aakansha Mishra"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "cs.CL",
+      "stat.ML"
+    ],
+    "id": "2610.41104v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `persistent memory` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Self-distillation methods for large language models with an exponential moving average (EMA) teacher already retain a history of student updates.\n\n进一步看，论文的核心做法或实验重点可以概括为：Muon nevertheless stores a separate momentum buffer, increasing persistent training memory.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "persistent memory"
+    ],
+    "one_liner": "Self-distillation methods for large language models with an exponential moving average (EMA) teacher already retain a history of student updates.",
+    "published": "2026-10-30",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：persistent memory\n- 检索关键词命中：persistent memory\n- 来源分类信息：cs.LG, cs.AI, cs.CL, stat.ML",
+    "slug": "muon-rt-reusing-the-teacher-s-trajectory-for-momentum-free-muon-for-llm-self-dis",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2610.41104v1",
+    "tags": [
+      "persistent memory"
+    ],
+    "title": "MUON-RT Reusing the Teacher's Trajectory for Momentum-Free Muon for LLM Self-Distillation",
+    "updated": "2026-10-30",
+    "url": "http://arxiv.org/abs/2610.41104v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Memory has become central to self-evolving LLM agents, which store and retrieve experience from past rollouts to guide future decisions. Existing systems represent this experience as free-form natural language and maintain it by rewriting, which fits tasks whose experience is narratable. However, in scientific discovery and optimization, experience is often a quantity measured by an oracle under a specific context. Rewriting it as text leaves no index for where a record should be, replaces a measurement with a description, and cannot express how interventions interact. To address this, we argue that agent memory for biomolecule optimization should instead be indexable, quantitative, and structured, and we introduce MEMIG. This memory construction framework realizes these three properties. In detail, MEMIG addresses each insight with a domain-grounded identifier and accumulates the quantitative effect measured by a property oracle, so that updates remain local and retrieval becomes an exact lookup. Next, MEMIG connects insights whose interventions are applied together and measures their epistasis by decomposing each evaluated set. Our results show that MEMIG improves performance in most settings across in silico antibody optimization tasks.",
+    "authors": [
+      "Yunhui Jang",
+      "Zach Wang",
+      "Jai Doshi",
+      "Kangway Chuang",
+      "Sidney Lisanza",
+      "Taylor Joren"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2610.41245v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, context, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Memory has become central to self-evolving LLM agents, which store and retrieve experience from past rollouts to guide future decisions.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing systems represent this experience as free-form natural language and maintain it by rewriting, which fits tasks whose experience is narratable.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "Memory has become central to self-evolving LLM agents, which store and retrieve experience from past rollouts to guide future decisions.",
+    "published": "2026-10-30",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, context, retrieval\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.AI",
+    "slug": "memig-self-evolving-memory-construction-for-antibody-optimization",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2610.41245v1",
+    "tags": [
+      "agent",
+      "context",
+      "retrieval"
+    ],
+    "title": "MEMIG: Self-evolving Memory Construction for Antibody Optimization",
+    "updated": "2026-10-30",
+    "url": "http://arxiv.org/abs/2610.41245v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Many long-term memory systems for LLM agents are built around embedding-based retrieval. Al- though effective for semantic matching, similarity ranking alone does not establish whether re- trieved memories satisfy the conditions implied by a question. In this paper, we introduce KITE (Knowledge-Indexed Temporal Evidence), a vector-free framework that formulates memory re- trieval as an explicit decision procedure. KITE organizes multi-session conversations as structured knowledge indexed by a governed topic vocabulary, which evolves through controlled expansion and consolidation. At query time, questions are compiled into inspectable retrieval plans over the same knowledge index that guides memory construction. The plans are then executed through fixed lookup and ranking operations, while sparse lexical retrieval recovers surface details omitted from the structured representation. Experiments on LoCoMo and LongMemEval-S show that KITE achieves 93.5% and 86.0% accuracy while using only about 1.6k reader-context tokens per ques- tion. These results demonstrate that conversational memory can move beyond similarity ranking by unifying memory construction and query compilation around a governed index, turning retrieval into an inspectable decision procedure for determining which evidence satisfies the question.",
+    "authors": [
+      "Feng Li",
+      "Kailun Tan",
+      "Zhibo Zhou",
+      "Youxiang Wang",
+      "Lejun Liu",
+      "Huaigu Li",
+      "Fei Du",
+      "Huilong An"
+    ],
+    "categories": [
+      "cs.IR"
+    ],
+    "id": "2610.41521v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, context, conversation, long-term` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Many long-term memory systems for LLM agents are built around embedding-based retrieval.\n\n进一步看，论文的核心做法或实验重点可以概括为：Al- though effective for semantic matching, similarity ranking alone does not establish whether re- trieved memories satisfy the conditions implied by a question.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "conversational memory",
+      "long-term memory"
+    ],
+    "one_liner": "Many long-term memory systems for LLM agents are built around embedding-based retrieval.",
+    "published": "2026-10-30",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, context, conversation, long-term, retrieval\n- 检索关键词命中：conversational memory, long-term memory\n- 来源分类信息：cs.IR",
+    "slug": "kite-retrieval-as-a-decision-procedure-for-long-term-conversational-memory",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2610.41521v1",
+    "tags": [
+      "agent",
+      "context",
+      "conversation",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "KITE: Retrieval as a Decision Procedure for Long-Term Conversational Memory",
+    "updated": "2026-10-30",
+    "url": "http://arxiv.org/abs/2610.41521v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Long-horizon consistency is essential for video world models, yet it becomes difficult to maintain once observed content falls outside the context window. Existing memory mechanisms either retrieve history as implicit context, which remains constrained by context capacity and entangles static and dynamic information or consolidate history into explicit global representations, which struggle to model evolving dynamics and accumulate geometric errors. To overcome these limitations, we introduce GROME, a novel factorized memory framework that augments video world models for long-horizon coherence across both static scenes and dynamic entities. GROME operates via three synergistic components: 1) Static-Dynamic Factorization decouples historical evidence into static and dynamic components, preserving static scene geometry and dynamic entity states separately; 2) Local Memory Retrieval selects spatially aligned static history to eliminate geometric drift alongside the latest dynamic entity states to ensure temporal continuity; 3) Training-Free Memory Injection seamlessly grounds the factorized memory into video world models via their native conditioning pathways. Experiments on long-horizon revisit scenarios demonstrate that GROME substantially enhances scene persistence and dynamic entity fidelity over existing methods, all while preserving the visual quality and controllability of the frozen backbone without additional training. Beyond self-rollouts, GROME readily accommodates external observations as plug-and-play memory, unlocking flexible and controllable video continuation and scene exploration.",
+    "authors": [
+      "Fang Yu",
+      "Xiaoxue Wu",
+      "Haiyu Zhang",
+      "Yangfu Li",
+      "Botong Zhao",
+      "Yu Qiao",
+      "Tianfan Xue",
+      "Yue Lu",
+      "Xinyuan Chen"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.LG"
+    ],
+    "id": "2610.39812v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `context, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Long-horizon consistency is essential for video world models, yet it becomes difficult to maintain once observed content falls outside the context window.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing memory mechanisms either retrieve history as implicit context, which remains constrained by context capacity and entangles static and dynamic information or consolidate history into explicit global...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory retrieval"
+    ],
+    "one_liner": "Long-horizon consistency is essential for video world models, yet it becomes difficult to maintain once observed content falls outside the context window.",
+    "published": "2026-10-29",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：context, retrieval\n- 检索关键词命中：memory retrieval\n- 来源分类信息：cs.CV, cs.LG",
+    "slug": "grome-grounding-factorized-memory-into-video-world-models",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2610.39812v2",
+    "tags": [
+      "context",
+      "retrieval"
+    ],
+    "title": "GROME: GROunding Factorized MEmory into Video World Models",
+    "updated": "2026-10-30",
+    "url": "http://arxiv.org/abs/2610.39812v2",
+    "venue": ""
+  },
+  {
     "abstract": "As preferences, goals, and facts change, LLM agents must use the current state while earlier versions remain in context. Yet they can answer with an old value of the same variable, a failure that we call stale binding. To study when models use outdated information and why, we introduce Controlled In-Context Memory (CICM), a benchmark for tracking and using updated information in conversations and agent logs. We observe that even frontier reasoning models can fail to recover the current state. We find that in open-source models probes can still recover the updated value when the model answers with an old one, pointing to a failure to select information that remains available. Component tests in Qwen and Pythia identify a mechanism for this selection failure: attention drift, where attention favors old values over the current one when producing an answer. We study a one-layer transformer to mathematically understand how this phenomenon happens: when attention scores are similar, several old values can together receive more attention than the current value. Guided by this explanation, we redirect attention toward the current value without further training. When the current value is requested directly, adjusting this intervention for each input corrects most old-value errors across various model families while preserving nearly all initially correct answers. Reliable context management therefore requires more than remembering updated information: models must use it to guide their answers.",
     "authors": [
       "Junyu Guo",
@@ -472,6 +783,75 @@
     "title": "Cheap Retrieval and Observation Credit Assignment from One Quantity: The Value of Information",
     "updated": "2026-10-29",
     "url": "http://arxiv.org/abs/2610.40030v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Human preferences change over time: an established preference may remain valid over time, become uncertain as context shifts, or be explicitly revised. Effective personalization requires conversational AI to adapt its response strategy to evolving preferences rather than relying on passive memory retrieval. We formalize this capability as adaptive personalization under epistemic uncertainty. A human preference study further confirms that people favor state-contingent response strategies as preference uncertainty changes. To evaluate whether language models mirror this adaptation, we create a multilingual benchmark spanning 250 personas, 5 languages, and 25K conversational turns that decouples strategy selection from response execution. Across eight closed- and open-weight models, we uncover a recognition-generation gap: models reliably identify appropriate strategies when selecting among candidate options, but collapse during open-ended generation, suffering a 35-46% drop in strategy calibration. Crucially, this failure is systematic: models default to exploit-first behavior, over-relying on existing preferences regardless of preference epistemic uncertainty. We show this failure is addressable: while prompting interventions fail, targeted training that supervises models' internal strategy representations toward state-conditional human preferences narrows the user acceptability generalization gap by a third on out-of-distribution personas and conversational styles.",
+    "authors": [
+      "Priyanka Dey",
+      "Rajarshi Das",
+      "Vikas Bahirwani",
+      "Qi Zeng",
+      "Julia Kruk",
+      "Qi Qi"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "id": "2610.40930v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `benchmark, context, conversation, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Human preferences change over time: an established preference may remain valid over time, become uncertain as context shifts, or be explicitly revised.\n\n进一步看，论文的核心做法或实验重点可以概括为：Effective personalization requires conversational AI to adapt its response strategy to evolving preferences rather than relying on passive memory retrieval.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory retrieval"
+    ],
+    "one_liner": "Human preferences change over time: an established preference may remain valid over time, become uncertain as context shifts, or be explicitly revised.",
+    "published": "2026-10-29",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：benchmark, context, conversation, retrieval\n- 检索关键词命中：memory retrieval\n- 来源分类信息：cs.CL",
+    "slug": "adaptive-personalization-under-preference-epistemic-uncertainty",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2610.40930v1",
+    "tags": [
+      "benchmark",
+      "context",
+      "conversation",
+      "retrieval"
+    ],
+    "title": "Adaptive Personalization Under Preference Epistemic Uncertainty",
+    "updated": "2026-10-29",
+    "url": "http://arxiv.org/abs/2610.40930v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Since large language model (LLM) agents rely on long-term memory, what they store now shapes what they do later. A memory manager decides how each input changes this memory and which records the agent acts on. It can fail in two ways: keeping a fact that has since changed (outdated memory), or storing a planted passage or injected instruction (memory poisoning). Most prior work studies them separately, yet they call for opposite write decisions, so no fixed write rule handles both. We therefore formalize memory robustness as handling both without doing worse on other inputs. Since accuracy checks only the answer, we measure robustness with evidence-conditioned accuracy (ECA), which also checks that the records the manager selects include all the evidence the answer needs, updated and free of attacks. However, existing memory systems and defenses are not more robust than an untuned manager on our test sets. We improve robustness with a simple one-shot recipe that fine-tunes the manager on episodes synthesized around a single conversation with inserted changes and attacks. On three backbones, it improves every category score on our test sets and more than doubles the untuned manager's overall ECA, though robustness remains incomplete.",
+    "authors": [
+      "Runze Zhao",
+      "Dongruo Zhou",
+      "Sumit Kumar Jha",
+      "Nathaniel D. Bastian",
+      "Ankit Shah"
+    ],
+    "categories": [
+      "cs.CR",
+      "cs.AI"
+    ],
+    "id": "2610.41056v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, conversation, long-term` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Since large language model (LLM) agents rely on long-term memory, what they store now shapes what they do later.\n\n进一步看，论文的核心做法或实验重点可以概括为：A memory manager decides how each input changes this memory and which records the agent acts on.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "long-term memory"
+    ],
+    "one_liner": "Since large language model (LLM) agents rely on long-term memory, what they store now shapes what they do later.",
+    "published": "2026-10-29",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, conversation, long-term\n- 检索关键词命中：long-term memory\n- 来源分类信息：cs.CR, cs.AI",
+    "slug": "accept-changes-reject-attacks-robust-memory-management-for-llm-agents",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2610.41056v1",
+    "tags": [
+      "agent",
+      "conversation",
+      "long-term"
+    ],
+    "title": "Accept Changes, Reject Attacks: Robust Memory Management for LLM Agents",
+    "updated": "2026-10-29",
+    "url": "http://arxiv.org/abs/2610.41056v1",
     "venue": ""
   },
   {

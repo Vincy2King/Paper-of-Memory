@@ -39,19 +39,28 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **1550**
+- Total tracked papers: **1561**
 - Last generated: **2026-11-02**
 
 ## Papers by Source
 
 - ACL Anthology: **17**
-- arXiv: **1387**
+- arXiv: **1398**
 - OpenReview: **146**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-10-30 | arXiv | [When History Overrides Intent: Relational Schema Lock-In in Human-LLM Interaction](content/papers/when-history-overrides-intent-relational-schema-lock-in-in-human-llm-interaction.md) | context |
+| 2026-10-30 | arXiv | [Unlimited OCR Works 2](content/papers/unlimited-ocr-works-2.md) | benchmark, context |
+| 2026-10-30 | arXiv | [RoboArchitect: Automating the Design of Robotic Agents with Persistent Memory](content/papers/roboarchitect-automating-the-design-of-robotic-agents-with-persistent-memory.md) | agent, benchmark |
+| 2026-10-30 | arXiv | [RAMA: Retrieval-Augmented Multi-Agent Routing with Episodic Memory for LEO Satellite Networks](content/papers/rama-retrieval-augmented-multi-agent-routing-with-episodic-memory-for-leo-satell.md) | agent, episodic, retrieval |
+| 2026-10-30 | arXiv | [ORION: An Outcome-Driven LLM Advisor for RL-Based Multi-Domain 6G Slice Placement](content/papers/orion-an-outcome-driven-llm-advisor-for-rl-based-multi-domain-6g-slice-placement.md) | agent, episodic |
+| 2026-10-30 | arXiv | [MUON-RT Reusing the Teacher's Trajectory for Momentum-Free Muon for LLM Self-Distillation](content/papers/muon-rt-reusing-the-teacher-s-trajectory-for-momentum-free-muon-for-llm-self-dis.md) | persistent memory |
+| 2026-10-30 | arXiv | [MEMIG: Self-evolving Memory Construction for Antibody Optimization](content/papers/memig-self-evolving-memory-construction-for-antibody-optimization.md) | agent, context, retrieval |
+| 2026-10-30 | arXiv | [KITE: Retrieval as a Decision Procedure for Long-Term Conversational Memory](content/papers/kite-retrieval-as-a-decision-procedure-for-long-term-conversational-memory.md) | agent, context, conversation |
+| 2026-10-30 | arXiv | [GROME: GROunding Factorized MEmory into Video World Models](content/papers/grome-grounding-factorized-memory-into-video-world-models.md) | context, retrieval |
 | 2026-10-29 | arXiv | [When Context Changes: Understanding Update Failures in LLMs](content/papers/when-context-changes-understanding-update-failures-in-llms.md) | agent, benchmark, context |
 | 2026-10-29 | arXiv | [Unlimited OCR Works 2](content/papers/unlimited-ocr-works-2.md) | benchmark, context |
 | 2026-10-29 | arXiv | [Topology Survives Shuffling: Robust Long-Context Memory Access Prediction for Graph Analytics](content/papers/topology-survives-shuffling-robust-long-context-memory-access-prediction-for-gra.md) | context |
@@ -63,15 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-10-29 | arXiv | [HEMO: Harness Self-Evolution for Multi-Objective Combinatorial Optimization](content/papers/hemo-harness-self-evolution-for-multi-objective-combinatorial-optimization.md) | persistent memory |
 | 2026-10-29 | arXiv | [GROME: GROunding Factorized MEmory into Video World Models](content/papers/grome-grounding-factorized-memory-into-video-world-models.md) | context, retrieval |
 | 2026-10-29 | arXiv | [Finding Is Not Returning, Returning Is Not Reconstructing: A Multi-Dimensional Evaluation of Agent Social Re-entry](content/papers/finding-is-not-returning-returning-is-not-reconstructing-a-multi-dimensional-eva.md) | agent, context, conversation |
-| 2026-10-29 | arXiv | [FIRME: Registry-Anchored Memory Graphs for Evolving, Heterogeneous Investor Knowledge](content/papers/firme-registry-anchored-memory-graphs-for-evolving-heterogeneous-investor-knowle.md) | context |
-| 2026-10-29 | arXiv | [Don't Lose the Thread: Empowering Long-Horizon LLM Agents with Cognitive Resource Self-Allocation](content/papers/don-t-lose-the-thread-empowering-long-horizon-llm-agents-with-cognitive-resource.md) | agent, benchmark, context |
-| 2026-10-29 | arXiv | [Cheap Retrieval and Observation Credit Assignment from One Quantity: The Value of Information](content/papers/cheap-retrieval-and-observation-credit-assignment-from-one-quantity-the-value-of.md) | context, retrieval |
-| 2026-10-28 | arXiv | [Routed Continual Learning](content/papers/routed-continual-learning.md) | agent, context |
-| 2026-10-28 | arXiv | [Multimodal Filesystem Memory For Long-Horizon Embodied Agents](content/papers/multimodal-filesystem-memory-for-long-horizon-embodied-agents.md) | agent, context, episodic |
-| 2026-10-28 | arXiv | [Is it my preference? Role Grounding Attack against Agent's Memory via Social Interaction](content/papers/is-it-my-preference-role-grounding-attack-against-agent-s-memory-via-social-inte.md) | agent, context, conversation |
-| 2026-10-28 | arXiv | [Episodic looking - using reinforcement learning to bias perception enhances few-shot and continual learning with protection from forgetting](content/papers/episodic-looking-using-reinforcement-learning-to-bias-perception-enhances-few-sh.md) | context, episodic, long-term |
-| 2026-10-28 | arXiv | [CALM: Conflict-Aware Lifecycle Memory Governance for Long-Horizon Language Agents](content/papers/calm-conflict-aware-lifecycle-memory-governance-for-long-horizon-language-agents.md) | agent, retrieval |
-| 2026-10-28 | arXiv | [Auditable Belief Updates as a Missing Safety Layer for LLM-Powered Multi-Agent Systems](content/papers/auditable-belief-updates-as-a-missing-safety-layer-for-llm-powered-multi-agent-s.md) | agent, retrieval |
 
 ## Suggested GitHub Setup
 
