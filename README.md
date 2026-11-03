@@ -39,39 +39,39 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **1561**
+- Total tracked papers: **1577**
 - Last generated: **2026-11-03**
 
 ## Papers by Source
 
 - ACL Anthology: **17**
-- arXiv: **1398**
+- arXiv: **1414**
 - OpenReview: **146**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-11-02 | arXiv | [When Prediction Shapes the Future: A BlueSky Agenda for Reflexive Time Series Analysis](content/papers/when-prediction-shapes-the-future-a-bluesky-agenda-for-reflexive-time-series-ana.md) | agent, context |
+| 2026-11-02 | arXiv | [Top-$k$ Retrieval Leaves Memory Value Undetermined](content/papers/top-k-retrieval-leaves-memory-value-undetermined.md) | agent, benchmark, retrieval |
+| 2026-11-02 | arXiv | [InteractionBench: Measuring Timing, Task Accuracy, Whisper and Volume, and Grounding in Real-Time Voice Systems](content/papers/interactionbench-measuring-timing-task-accuracy-whisper-and-volume-and-grounding.md) | benchmark, conversation |
+| 2026-11-02 | arXiv | [Chain on Demand: Deferred Evidence Organization for Long-Term Conversational Memory](content/papers/chain-on-demand-deferred-evidence-organization-for-long-term-conversational-memo.md) | conversation, long-term, retrieval |
+| 2026-11-02 | arXiv | [Agent Memory as Rate-Limited Filtering: Explicit State Outlasts Long Context Beyond a Reader-Dependent Horizon](content/papers/agent-memory-as-rate-limited-filtering-explicit-state-outlasts-long-context-beyo.md) | agent, benchmark, context |
+| 2026-11-02 | arXiv | [A State Change Is Local, Its Consequences Are Not: Dependency-Aware State Revision for Long-Term Agent Memory](content/papers/a-state-change-is-local-its-consequences-are-not-dependency-aware-state-revision.md) | agent, benchmark, long-term |
+| 2026-11-01 | arXiv | [SPAR: Experience-Driven Strategy Evolution in Multi-Session B2B Sales](content/papers/spar-experience-driven-strategy-evolution-in-multi-session-b2b-sales.md) | agent, context, episodic |
+| 2026-11-01 | arXiv | [MemHarmBench: Evaluating Cross-Session Prompt Injection in Memory-Persistent AI Agents](content/papers/memharmbench-evaluating-cross-session-prompt-injection-in-memory-persistent-ai-a.md) | agent, benchmark |
+| 2026-11-01 | arXiv | [Learning by Doing: Autonomously Compiling and Curating Agent Skills from Verified Traces](content/papers/learning-by-doing-autonomously-compiling-and-curating-agent-skills-from-verified.md) | agent, benchmark, episodic |
+| 2026-11-01 | arXiv | [EvoRec: A Unified Self-Evolving Agentic Recommender with Dynamic Reflection Trees](content/papers/evorec-a-unified-self-evolving-agentic-recommender-with-dynamic-reflection-trees.md) | agent, long-term, retrieval |
+| 2026-11-01 | arXiv | [Delivered, Not Used: Evaluating Agent Memory at Its Point of Use](content/papers/delivered-not-used-evaluating-agent-memory-at-its-point-of-use.md) | agent, retrieval |
+| 2026-10-31 | arXiv | [Who Schedules Agent Memory? A Sidecar Approach to Long-Horizon Tasks](content/papers/who-schedules-agent-memory-a-sidecar-approach-to-long-horizon-tasks.md) | agent, retrieval |
+| 2026-10-31 | arXiv | [Trail: Accurate Local Smart Home Control Using Decision Models](content/papers/trail-accurate-local-smart-home-control-using-decision-models.md) | conversation |
+| 2026-10-31 | arXiv | [Pulse: Long-Horizon Tasks Need Streaming Personalization](content/papers/pulse-long-horizon-tasks-need-streaming-personalization.md) | agent, long-term |
 | 2026-10-30 | arXiv | [When History Overrides Intent: Relational Schema Lock-In in Human-LLM Interaction](content/papers/when-history-overrides-intent-relational-schema-lock-in-in-human-llm-interaction.md) | context |
 | 2026-10-30 | arXiv | [Unlimited OCR Works 2](content/papers/unlimited-ocr-works-2.md) | benchmark, context |
 | 2026-10-30 | arXiv | [RoboArchitect: Automating the Design of Robotic Agents with Persistent Memory](content/papers/roboarchitect-automating-the-design-of-robotic-agents-with-persistent-memory.md) | agent, benchmark |
 | 2026-10-30 | arXiv | [RAMA: Retrieval-Augmented Multi-Agent Routing with Episodic Memory for LEO Satellite Networks](content/papers/rama-retrieval-augmented-multi-agent-routing-with-episodic-memory-for-leo-satell.md) | agent, episodic, retrieval |
+| 2026-10-30 | arXiv | [Quantifying Local and Global Fidelity of Nonlinear Embeddings](content/papers/quantifying-local-and-global-fidelity-of-nonlinear-embeddings.md) | agent |
 | 2026-10-30 | arXiv | [ORION: An Outcome-Driven LLM Advisor for RL-Based Multi-Domain 6G Slice Placement](content/papers/orion-an-outcome-driven-llm-advisor-for-rl-based-multi-domain-6g-slice-placement.md) | agent, episodic |
-| 2026-10-30 | arXiv | [MUON-RT Reusing the Teacher's Trajectory for Momentum-Free Muon for LLM Self-Distillation](content/papers/muon-rt-reusing-the-teacher-s-trajectory-for-momentum-free-muon-for-llm-self-dis.md) | persistent memory |
-| 2026-10-30 | arXiv | [MEMIG: Self-evolving Memory Construction for Antibody Optimization](content/papers/memig-self-evolving-memory-construction-for-antibody-optimization.md) | agent, context, retrieval |
-| 2026-10-30 | arXiv | [KITE: Retrieval as a Decision Procedure for Long-Term Conversational Memory](content/papers/kite-retrieval-as-a-decision-procedure-for-long-term-conversational-memory.md) | agent, context, conversation |
-| 2026-10-30 | arXiv | [GROME: GROunding Factorized MEmory into Video World Models](content/papers/grome-grounding-factorized-memory-into-video-world-models.md) | context, retrieval |
-| 2026-10-29 | arXiv | [When Context Changes: Understanding Update Failures in LLMs](content/papers/when-context-changes-understanding-update-failures-in-llms.md) | agent, benchmark, context |
-| 2026-10-29 | arXiv | [Unlimited OCR Works 2](content/papers/unlimited-ocr-works-2.md) | benchmark, context |
-| 2026-10-29 | arXiv | [Topology Survives Shuffling: Robust Long-Context Memory Access Prediction for Graph Analytics](content/papers/topology-survives-shuffling-robust-long-context-memory-access-prediction-for-gra.md) | context |
-| 2026-10-29 | arXiv | [The Price of Scale in Proactive Memory Recall](content/papers/the-price-of-scale-in-proactive-memory-recall.md) | benchmark |
-| 2026-10-29 | arXiv | [The Cost of Working Memory in Streaming Mean Estimation](content/papers/the-cost-of-working-memory-in-streaming-mean-estimation.md) | compression |
-| 2026-10-29 | arXiv | [MemSteer: Turning User Histories into Supervision for Agent Memory Optimization](content/papers/memsteer-turning-user-histories-into-supervision-for-agent-memory-optimization.md) | agent, context, retrieval |
-| 2026-10-29 | arXiv | [Long-Term Agent Memory through Complementary Curation and Consolidation](content/papers/long-term-agent-memory-through-complementary-curation-and-consolidation.md) | agent, benchmark, episodic |
-| 2026-10-29 | arXiv | [Judging Before Propagation: Task-Graph Contextual Integrity for Multi-Agent Privacy](content/papers/judging-before-propagation-task-graph-contextual-integrity-for-multi-agent-priva.md) | agent, benchmark, context |
-| 2026-10-29 | arXiv | [HEMO: Harness Self-Evolution for Multi-Objective Combinatorial Optimization](content/papers/hemo-harness-self-evolution-for-multi-objective-combinatorial-optimization.md) | persistent memory |
-| 2026-10-29 | arXiv | [GROME: GROunding Factorized MEmory into Video World Models](content/papers/grome-grounding-factorized-memory-into-video-world-models.md) | context, retrieval |
-| 2026-10-29 | arXiv | [Finding Is Not Returning, Returning Is Not Reconstructing: A Multi-Dimensional Evaluation of Agent Social Re-entry](content/papers/finding-is-not-returning-returning-is-not-reconstructing-a-multi-dimensional-eva.md) | agent, context, conversation |
 
 ## Suggested GitHub Setup
 

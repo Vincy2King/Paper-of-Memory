@@ -5,7 +5,7 @@
 - Paper ID: acl:2026.emnlp-main.2296
 - Published: 2026-10
 - Updated: 2026-10-21
-- Authors: Zehao Lin, Xixuan Hao, Renyu Fu, Shaobo Cui, Kai Chen, Chunyu Li, Zhiyu li, Feiyu Xiong, Hung-Yi Lee, Sunipa Dev, Jessy Li, Desmond Elliott
+- Authors: Zehao Lin, Xixuan Hao, Renyu Fu, Shaobo Cui, Kai Chen, Chunyu Li, Zhiyu li, Feiyu Xiong, Hung-Yi Lee, Sunipa Dev, Junyi Li, Desmond Elliott
 - Tags: agent, long-term
 - Categories: N/A
 - URL: https://aclanthology.org/2026.emnlp-main.2296
