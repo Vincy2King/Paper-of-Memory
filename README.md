@@ -39,12 +39,12 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **1591**
-- Last generated: **2026-11-04**
+- Total tracked papers: **1598**
+- Last generated: **2026-11-05**
 
 ## Papers by Source
 
-- ACL Anthology: **17**
+- ACL Anthology: **24**
 - arXiv: **1428**
 - OpenReview: **146**
 

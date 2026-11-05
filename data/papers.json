@@ -913,6 +913,37 @@
     "venue": ""
   },
   {
+    "abstract": "",
+    "authors": [
+      "Sung Yoo",
+      "Heyoung Yang",
+      "Btissam Er-Rahmadi",
+      "Sébastien Montella",
+      "Damien Graux",
+      "André Melo",
+      "Hajira Jabeen"
+    ],
+    "categories": [],
+    "id": "acl:2026.nora-1.7",
+    "intro": "这篇论文被纳入仓库，是因为它和 `retrieval` 这些主题直接相关。\n\n它当前来自 `ACL Anthology`，并与 `Proceedings of the 3rd Workshop on KNOwledge GRaphs Agentic Systems Interplay (NORA 2026)` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：The abstract is not available yet.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory retrieval"
+    ],
+    "one_liner": "This paper is tracked as a memory-related work and awaits a fuller summary.",
+    "published": "2026-11",
+    "relevance": "- 来源：ACL Anthology\n- Venue：Proceedings of the 3rd Workshop on KNOwledge GRaphs Agentic Systems Interplay (NORA 2026)\n- 高亮主题命中：retrieval\n- 检索关键词命中：memory retrieval",
+    "slug": "source-aware-memory-retrieval-across-engineering-standards",
+    "source": "ACL Anthology",
+    "source_key": "2026.nora-1.7",
+    "tags": [
+      "retrieval"
+    ],
+    "title": "Source-Aware Memory Retrieval across Engineering Standards",
+    "updated": "2026-10-31",
+    "url": "https://aclanthology.org/2026.nora-1.7",
+    "venue": "Proceedings of the 3rd Workshop on KNOwledge GRaphs Agentic Systems Interplay (NORA 2026)"
+  },
+  {
     "abstract": "Large language model agents increasingly undertake complex, long-horizon tasks that benefit from sustained personalized support through long-term memory. Existing memory-augmented methods retrieve and use memory primarily from the initial request, with limited awareness of ongoing execution and emerging personalization needs. Agents may therefore overlook user preferences and project constraints during multistep tasks. We propose Pulse, a streaming personalization method for long-horizon tasks. An independent, lightweight memory agent continuously monitors execution, identifies emerging personalization needs and potential preference conflicts, and uses user and project memories to provide targeted interventions at appropriate stages. Reinforcement learning optimizes when and how the memory agent intervenes, improving the timeliness and accuracy of personalized support. Pulse scores 71.9% on $π$-Bench and 46.4% on MCP-Persona, achieving the highest overall scores among the compared methods on both datasets while improving task execution efficiency.",
     "authors": [
       "Qijia Zhuang",
@@ -943,6 +974,231 @@
     "updated": "2026-10-31",
     "url": "http://arxiv.org/abs/2611.00988v1",
     "venue": ""
+  },
+  {
+    "abstract": "",
+    "authors": [
+      "Abhishek Gupta",
+      "Dongge Han",
+      "Daniel Madrigal",
+      "Wei-Ning Chen",
+      "Mayukh Das",
+      "Victor Rühle",
+      "Saravan Rajmohan",
+      "Yue Zhang",
+      "Ruifeng Xu",
+      "Ayu Purwarianti",
+      "Tong Rong",
+      "Jun Suzuki"
+    ],
+    "categories": [],
+    "id": "acl:2026.findings-aacl.218",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, long-term` 这些主题直接相关。\n\n它当前来自 `ACL Anthology`，并与 `Findings of the Association for Computational Linguistics: IJCNLP-AACL 2026` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：The abstract is not available yet.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "This paper is tracked as a memory-related work and awaits a fuller summary.",
+    "published": "2026-11",
+    "relevance": "- 来源：ACL Anthology\n- Venue：Findings of the Association for Computational Linguistics: IJCNLP-AACL 2026\n- 高亮主题命中：agent, long-term\n- 检索关键词命中：agent memory",
+    "slug": "long-term-agent-memory-through-complementary-curation-and-consolidation",
+    "source": "ACL Anthology",
+    "source_key": "2026.findings-aacl.218",
+    "tags": [
+      "agent",
+      "long-term"
+    ],
+    "title": "Long-Term Agent Memory through Complementary Curation and Consolidation",
+    "updated": "2026-10-31",
+    "url": "https://aclanthology.org/2026.findings-aacl.218",
+    "venue": "Findings of the Association for Computational Linguistics: IJCNLP-AACL 2026"
+  },
+  {
+    "abstract": "",
+    "authors": [
+      "Zhenheng Tang",
+      "Xin He",
+      "Tiancheng Zhao",
+      "Fanjunduo Wei",
+      "Xiang Liu",
+      "Peijie Dong",
+      "Qian Wang",
+      "Qi Li",
+      "Huacan Wang",
+      "Ronghao Chen",
+      "Sen Hu",
+      "Weidong Guo",
+      "Yu Xu",
+      "Haolan Chen",
+      "Kunfeng Lai",
+      "Kaiyong Zhao",
+      "Keyan Ding",
+      "Ivor Tsang",
+      "Yew-Soon Ong",
+      "Bo Li",
+      "Xiaowen Chu",
+      "Yue Zhang",
+      "Ruifeng Xu",
+      "Ayu Purwarianti",
+      "Tong Rong",
+      "Jun Suzuki"
+    ],
+    "categories": [],
+    "id": "acl:2026.aacl-long.169",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent` 这些主题直接相关。\n\n它当前来自 `ACL Anthology`，并与 `Proceedings of the 15th International Joint Conference on Natural Language Processing and the 5th Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics (Volume 1: Long Papers)` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：The abstract is not available yet.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "This paper is tracked as a memory-related work and awaits a fuller summary.",
+    "published": "2026-11",
+    "relevance": "- 来源：ACL Anthology\n- Venue：Proceedings of the 15th International Joint Conference on Natural Language Processing and the 5th Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics (Volume 1: Long Papers)\n- 高亮主题命中：agent\n- 检索关键词命中：agent memory",
+    "slug": "llm-agent-memory-a-survey-from-a-unified-representationmanagement-perspective",
+    "source": "ACL Anthology",
+    "source_key": "2026.aacl-long.169",
+    "tags": [
+      "agent"
+    ],
+    "title": "Llm agent memory: a survey from a unified representation–management perspective",
+    "updated": "2026-10-31",
+    "url": "https://aclanthology.org/2026.aacl-long.169",
+    "venue": "Proceedings of the 15th International Joint Conference on Natural Language Processing and the 5th Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics (Volume 1: Long Papers)"
+  },
+  {
+    "abstract": "",
+    "authors": [
+      "David Ferreira",
+      "Priscila Ribeiro",
+      "Emanuel Passinato",
+      "Diogo Silva",
+      "Arlindo Galvão Filho",
+      "Yue Zhang",
+      "Ruifeng Xu",
+      "Ayu Purwarianti",
+      "Tong Rong",
+      "Jun Suzuki"
+    ],
+    "categories": [],
+    "id": "acl:2026.aacl-long.19",
+    "intro": "这篇论文被纳入仓库，是因为它和 `compression, episodic` 这些主题直接相关。\n\n它当前来自 `ACL Anthology`，并与 `Proceedings of the 15th International Joint Conference on Natural Language Processing and the 5th Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics (Volume 1: Long Papers)` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：The abstract is not available yet.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "episodic memory"
+    ],
+    "one_liner": "This paper is tracked as a memory-related work and awaits a fuller summary.",
+    "published": "2026-11",
+    "relevance": "- 来源：ACL Anthology\n- Venue：Proceedings of the 15th International Joint Conference on Natural Language Processing and the 5th Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics (Volume 1: Long Papers)\n- 高亮主题命中：compression, episodic\n- 检索关键词命中：episodic memory",
+    "slug": "episodic-memory-from-compression-boundaries-in-latent-representation-space",
+    "source": "ACL Anthology",
+    "source_key": "2026.aacl-long.19",
+    "tags": [
+      "compression",
+      "episodic"
+    ],
+    "title": "Episodic Memory from Compression Boundaries in Latent Representation Space",
+    "updated": "2026-10-31",
+    "url": "https://aclanthology.org/2026.aacl-long.19",
+    "venue": "Proceedings of the 15th International Joint Conference on Natural Language Processing and the 5th Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics (Volume 1: Long Papers)"
+  },
+  {
+    "abstract": "",
+    "authors": [
+      "Zixiao Wang",
+      "Xingbo Du",
+      "Duzhen Zhang",
+      "Le Song",
+      "Yue Zhang",
+      "Ruifeng Xu",
+      "Ayu Purwarianti",
+      "Tong Rong",
+      "Jun Suzuki"
+    ],
+    "categories": [],
+    "id": "acl:2026.aacl-long.88",
+    "intro": "这篇论文被纳入仓库，是因为它和 `conversation` 这些主题直接相关。\n\n它当前来自 `ACL Anthology`，并与 `Proceedings of the 15th International Joint Conference on Natural Language Processing and the 5th Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics (Volume 1: Long Papers)` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：The abstract is not available yet.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "conversational memory"
+    ],
+    "one_liner": "This paper is tracked as a memory-related work and awaits a fuller summary.",
+    "published": "2026-11",
+    "relevance": "- 来源：ACL Anthology\n- Venue：Proceedings of the 15th International Joint Conference on Natural Language Processing and the 5th Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics (Volume 1: Long Papers)\n- 高亮主题命中：conversation\n- 检索关键词命中：conversational memory",
+    "slug": "comma-conflict-aware-read-time-control-for-conversational-memory-qa",
+    "source": "ACL Anthology",
+    "source_key": "2026.aacl-long.88",
+    "tags": [
+      "conversation"
+    ],
+    "title": "CoMMA: Conflict-Aware Read-Time Control for Conversational Memory QA",
+    "updated": "2026-10-31",
+    "url": "https://aclanthology.org/2026.aacl-long.88",
+    "venue": "Proceedings of the 15th International Joint Conference on Natural Language Processing and the 5th Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics (Volume 1: Long Papers)"
+  },
+  {
+    "abstract": "",
+    "authors": [
+      "Khan Reza",
+      "Sanjana Maria",
+      "Sumaiya Nimi",
+      "Btissam Er-Rahmadi",
+      "Sébastien Montella",
+      "Damien Graux",
+      "André Melo",
+      "Hajira Jabeen"
+    ],
+    "categories": [],
+    "id": "acl:2026.nora-1.8",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, retrieval` 这些主题直接相关。\n\n它当前来自 `ACL Anthology`，并与 `Proceedings of the 3rd Workshop on KNOwledge GRaphs Agentic Systems Interplay (NORA 2026)` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：The abstract is not available yet.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "This paper is tracked as a memory-related work and awaits a fuller summary.",
+    "published": "2026-11",
+    "relevance": "- 来源：ACL Anthology\n- Venue：Proceedings of the 3rd Workshop on KNOwledge GRaphs Agentic Systems Interplay (NORA 2026)\n- 高亮主题命中：agent, retrieval\n- 检索关键词命中：agent memory",
+    "slug": "beyond-chunking-node-integrity-and-field-structure-in-bengali-retrieval-augmente",
+    "source": "ACL Anthology",
+    "source_key": "2026.nora-1.8",
+    "tags": [
+      "agent",
+      "retrieval"
+    ],
+    "title": "Beyond Chunking: Node Integrity and Field Structure in Bengali Retrieval-Augmented Agent Memory",
+    "updated": "2026-10-31",
+    "url": "https://aclanthology.org/2026.nora-1.8",
+    "venue": "Proceedings of the 3rd Workshop on KNOwledge GRaphs Agentic Systems Interplay (NORA 2026)"
+  },
+  {
+    "abstract": "",
+    "authors": [
+      "Nuoyue Xu",
+      "Jiang Liu",
+      "Wenxuan Huang",
+      "Xiang Zhang",
+      "Juntai Cao",
+      "Jiaqi Wei",
+      "Yue Zhang",
+      "Ruifeng Xu",
+      "Ayu Purwarianti",
+      "Tong Rong",
+      "Jun Suzuki"
+    ],
+    "categories": [],
+    "id": "acl:2026.findings-aacl.57",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, episodic, retrieval` 这些主题直接相关。\n\n它当前来自 `ACL Anthology`，并与 `Findings of the Association for Computational Linguistics: IJCNLP-AACL 2026` 这个 venue 相关。\n\n从摘要来看，作者主要关注的是：The abstract is not available yet.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "This paper is tracked as a memory-related work and awaits a fuller summary.",
+    "published": "2026-11",
+    "relevance": "- 来源：ACL Anthology\n- Venue：Findings of the Association for Computational Linguistics: IJCNLP-AACL 2026\n- 高亮主题命中：agent, episodic, retrieval\n- 检索关键词命中：agent memory",
+    "slug": "agent-memory-with-episodic-retrieval-for-financial-decision-making",
+    "source": "ACL Anthology",
+    "source_key": "2026.findings-aacl.57",
+    "tags": [
+      "agent",
+      "episodic",
+      "retrieval"
+    ],
+    "title": "Agent Memory with Episodic Retrieval for Financial Decision-Making",
+    "updated": "2026-10-31",
+    "url": "https://aclanthology.org/2026.findings-aacl.57",
+    "venue": "Findings of the Association for Computational Linguistics: IJCNLP-AACL 2026"
   },
   {
     "abstract": "Long-context interaction and persistent memory allow LLM assistants to develop history-grounded understandings of users. When users change direction, however, an understanding built through earlier exchanges may conflict with their current instruction. We introduce relational schema lock-in to describe cases in which an assistant grants that accumulated understanding authority to override the current instruction without user authorization for the intervention. Study 1 documents reports of AI assistants using prior interactions to question or alter requested actions. Study 2 reproduces the pattern across controlled histories and six models: models retained history-grounded positions but differed in whether and how those positions shaped task execution. In Study 3 with 360 participants, artifact substitution preserved task completion while reducing faithful enactment: 75.0% sent the AI's suspension letter, including 11 participants who reported cancellation as their final stated intent. Overt resistance reduced task completion while leaving sent artifacts faithful.",
