@@ -39,22 +39,30 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **1598**
+- Total tracked papers: **1607**
 - Last generated: **2026-11-05**
 
 ## Papers by Source
 
 - ACL Anthology: **24**
-- arXiv: **1428**
+- arXiv: **1437**
 - OpenReview: **146**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-11-04 | arXiv | [Twists and Turns: A Graph-Based Benchmark and Framework for Long-Term Memory in Exploration Tasks](content/papers/twists-and-turns-a-graph-based-benchmark-and-framework-for-long-term-memory-in-e.md) | benchmark, long-term, retrieval |
+| 2026-11-04 | arXiv | [Shallow Encoding Emits Deep Memories](content/papers/shallow-encoding-emits-deep-memories.md) | agent, compression |
+| 2026-11-04 | arXiv | [SUMONE: A Simple and Efficient Summarizer for Plug-and-Play Agent Memory](content/papers/sumone-a-simple-and-efficient-summarizer-for-plug-and-play-agent-memory.md) | agent, compression, context |
+| 2026-11-04 | arXiv | [RECAP: Context-Aware Prediction Recycling with Request-Local and Persistent Memories for Multimodal Speculative Decoding](content/papers/recap-context-aware-prediction-recycling-with-request-local-and-persistent-memor.md) | benchmark, context |
+| 2026-11-04 | arXiv | [FlyHash for LLM Agent Memory: An Empirical Validation and a New Application](content/papers/flyhash-for-llm-agent-memory-an-empirical-validation-and-a-new-application.md) | agent, benchmark, conversation |
+| 2026-11-03 | arXiv | [Toward a Compositional Knowledge Architecture for a Shared Organizational Cortex](content/papers/toward-a-compositional-knowledge-architecture-for-a-shared-organizational-cortex.md) | agent, conversation, retrieval |
 | 2026-11-03 | arXiv | [The Right Source Is Not Enough: Understanding History Interference in Speech-LLM Memory](content/papers/the-right-source-is-not-enough-understanding-history-interference-in-speech-llm-.md) | context, conversation, retrieval |
 | 2026-11-03 | arXiv | [The Price of Scale in Proactive Memory Recall](content/papers/the-price-of-scale-in-proactive-memory-recall.md) | benchmark |
 | 2026-11-03 | arXiv | [Sketchpad: certified exact arithmetic with a small vision-language model](content/papers/sketchpad-certified-exact-arithmetic-with-a-small-vision-language-model.md) | working memory |
+| 2026-11-03 | arXiv | [Route to Remember: Adaptive Memory Selection for LLM Agents](content/papers/route-to-remember-adaptive-memory-selection-for-llm-agents.md) | agent, benchmark, context |
+| 2026-11-03 | arXiv | [Quantifying Local and Global Fidelity of Nonlinear Embeddings](content/papers/quantifying-local-and-global-fidelity-of-nonlinear-embeddings.md) | agent |
 | 2026-11-03 | arXiv | [One Assistant, Many Memories: Benchmarking Real-World Group Assistance When Recall Is Not Enough](content/papers/one-assistant-many-memories-benchmarking-real-world-group-assistance-when-recall.md) | agent, benchmark, context |
 | 2026-11-03 | arXiv | [ModelBlaster: Closing the Performance Gap through Learning-Augmented Agents Across Models, Kernels and Hardware Backends](content/papers/modelblaster-closing-the-performance-gap-through-learning-augmented-agents-acros.md) | agent, context |
 | 2026-11-03 | arXiv | [MINDSET: Energy-based Memory Evolution for Long Conversational Agents](content/papers/mindset-energy-based-memory-evolution-for-long-conversational-agents.md) | agent, context, conversation |
@@ -64,14 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-11-03 | arXiv | [Clocks all the way down: does sequence-processing AI need endogenous temporal structure?](content/papers/clocks-all-the-way-down-does-sequence-processing-ai-need-endogenous-temporal-str.md) | retrieval |
 | 2026-11-02 | arXiv | [When Prediction Shapes the Future: A BlueSky Agenda for Reflexive Time Series Analysis](content/papers/when-prediction-shapes-the-future-a-bluesky-agenda-for-reflexive-time-series-ana.md) | agent, context |
 | 2026-11-02 | arXiv | [What Is This Memory Useful For? Measuring Task-Conditioned Utility in Long-Term Agent Memory](content/papers/what-is-this-memory-useful-for-measuring-task-conditioned-utility-in-long-term-a.md) | agent, benchmark, compression |
-| 2026-11-02 | arXiv | [Top-$k$ Retrieval Leaves Memory Value Undetermined](content/papers/top-k-retrieval-leaves-memory-value-undetermined.md) | agent, benchmark, retrieval |
-| 2026-11-02 | arXiv | [Rethinking Next-Visit Diagnosis Prediction Beyond Aggregate Metrics: Retrieval--Memory Multi-Agent Adjudication](content/papers/rethinking-next-visit-diagnosis-prediction-beyond-aggregate-metrics-retrieval-me.md) | agent, retrieval |
-| 2026-11-02 | arXiv | [InteractionBench: Measuring Timing, Task Accuracy, Whisper and Volume, and Grounding in Real-Time Voice Systems](content/papers/interactionbench-measuring-timing-task-accuracy-whisper-and-volume-and-grounding.md) | benchmark, conversation |
-| 2026-11-02 | arXiv | [EvoMemState: Evolving Memory State for Personal Agents](content/papers/evomemstate-evolving-memory-state-for-personal-agents.md) | agent, benchmark, long-term |
-| 2026-11-02 | arXiv | [EvoGroup: A Self-Evolving Harness for Group Agents in Shared Contexts](content/papers/evogroup-a-self-evolving-harness-for-group-agents-in-shared-contexts.md) | agent, context, long-term |
-| 2026-11-02 | arXiv | [Chain on Demand: Deferred Evidence Organization for Long-Term Conversational Memory](content/papers/chain-on-demand-deferred-evidence-organization-for-long-term-conversational-memo.md) | conversation, long-term, retrieval |
-| 2026-11-02 | arXiv | [Agent Memory as Rate-Limited Filtering: Explicit State Outlasts Long Context Beyond a Reader-Dependent Horizon](content/papers/agent-memory-as-rate-limited-filtering-explicit-state-outlasts-long-context-beyo.md) | agent, benchmark, context |
-| 2026-11-02 | arXiv | [A State Change Is Local, Its Consequences Are Not: Dependency-Aware State Revision for Long-Term Agent Memory](content/papers/a-state-change-is-local-its-consequences-are-not-dependency-aware-state-revision.md) | agent, benchmark, long-term |
 
 ## Suggested GitHub Setup
 

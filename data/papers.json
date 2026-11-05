@@ -1,5 +1,205 @@
 [
   {
+    "abstract": "Long-term problem-solving processes, such as scientific research and software development, proceed along an evolving trial-and-error trajectory toward a central goal. We term these \\textit{exploration tasks}, which require models to remember not only facts but also how solutions are tested against intermediate outcomes and early attempts are continually revised or revived. However, existing long-term memory research focuses on factual recall and updates, overlooking the interconnected nature of exploration. We observe that exploration processes naturally form graphs, with branching approaches linked by revisions and reconsiderations. Motivated by this, we propose \\textsc{LExMem}, a graph-guided benchmark designed to evaluate \\underline{\\textsc{Mem}}ory in \\underline{\\textsc{L}}ong-term \\underline{\\textsc{Ex}}ploration tasks. We model exploration processes as graphs and introduce an evolutionary mechanism to increase their structural complexity, yielding 224 dialogues and 2,018 question-answer instances derived from graph structures. Building on the same insight, we propose \\textsc{LExGraph}, a graph-based memory framework that incrementally organizes dialogues into interconnected memory nodes and retrieves evidence through hybrid retrieval and neighbor expansion. Extensive experiments demonstrate that \\textsc{LExMem} poses a significant challenge to existing retrieval- and memory-based systems, whereas \\textsc{LExGraph} achieves superior performance and generalizes effectively to external benchmarks. Codes and datasets are available at https://github.com/mbzuai-nlp/LExMem.",
+    "authors": [
+      "Chongyuan Dai",
+      "Yaling Shen",
+      "Zirui Song",
+      "Junfeng Liao",
+      "Jinpeng Hu",
+      "Xiuying Chen"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "id": "2611.06414v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `benchmark, long-term, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Long-term problem-solving processes, such as scientific research and software development, proceed along an evolving trial-and-error trajectory toward a central goal.\n\n进一步看，论文的核心做法或实验重点可以概括为：We term these \\textit{exploration tasks}, which require models to remember not only facts but also how solutions are tested against intermediate outcomes and early attempts are continually revised or revived.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "long-term memory"
+    ],
+    "one_liner": "Long-term problem-solving processes, such as scientific research and software development, proceed along an evolving trial-and-error trajectory toward a central goal.",
+    "published": "2026-11-04",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：benchmark, long-term, retrieval\n- 检索关键词命中：long-term memory\n- 来源分类信息：cs.CL",
+    "slug": "twists-and-turns-a-graph-based-benchmark-and-framework-for-long-term-memory-in-e",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2611.06414v1",
+    "tags": [
+      "benchmark",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "Twists and Turns: A Graph-Based Benchmark and Framework for Long-Term Memory in Exploration Tasks",
+    "updated": "2026-11-04",
+    "url": "http://arxiv.org/abs/2611.06414v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Hybrid language models interleave a few softmax-attention layers with many linear-attention or state-space layers, so every layer keeps a memory of earlier tokens: a key-value cache or a fixed-size recurrent state. Serving them spends more compute and high-bandwidth memory on these memories than the output requires. The prefill runs every layer for every prompt token, and every decode step loads and stores whole recurrent states, which on Qwen3.8-Flash-Next take as many bytes per request as the attention cache of thousands of tokens. We find two properties of trained hybrids that locate this excess. First, writes are easier than reads: writing a deep layer's memory of a token needs little of the deep computation that predicting the next token needs. Trained copies of the deep layers' write paths, which we call emitters, therefore write a prompt's deep memories from the residual stream of a shallower anchor layer, and all prompt tokens but the last run as few as 63% of the layers. Second, recurrent states have a state sink: most of their energy lies in a rank-one term along a fixed direction of each head, and the rest is a low-rank working memory. SEED builds on both: it makes the prefill shallow in depth and the decode state shallow in representation. Each recurrent state is stored as its sink plus low-rank factors, which the Gated DeltaNet, Kimi Delta Attention and Mamba-2 updates extend exactly; we prove that the open-loop error of the periodic compressions back to low rank is bounded independently of their number. SEED keeps the original weights frozen, compresses no attention cache, and runs all layers for every generated token. On six checkpoints of five production hybrids of 30B to over 300B parameters, it is nearly lossless on eleven official exams. Served with SGLang on NVIDIA GB300 GPUs on an agentic-coding trace, it raises the per-GPU throughput of Qwen3.8-Flash-Next 1.2-1.4x.",
+    "authors": [
+      "Mingyuan Ma",
+      "Yangmin Li",
+      "Harris Nover",
+      "Zheyu Fu",
+      "Po-Han Huang",
+      "Alex Settle",
+      "Ashwin Nanjappa"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.DC"
+    ],
+    "id": "2611.06084v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, compression` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Hybrid language models interleave a few softmax-attention layers with many linear-attention or state-space layers, so every layer keeps a memory of earlier tokens: a key-value cache or a fixed-size recurrent state.\n\n进一步看，论文的核心做法或实验重点可以概括为：Serving them spends more compute and high-bandwidth memory on these memories than the output requires.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "working memory"
+    ],
+    "one_liner": "Hybrid language models interleave a few softmax-attention layers with many linear-attention or state-space layers, so every layer keeps a memory of earlier tokens: a key-value...",
+    "published": "2026-11-04",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, compression\n- 检索关键词命中：working memory\n- 来源分类信息：cs.LG, cs.DC",
+    "slug": "shallow-encoding-emits-deep-memories",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2611.06084v1",
+    "tags": [
+      "agent",
+      "compression"
+    ],
+    "title": "Shallow Encoding Emits Deep Memories",
+    "updated": "2026-11-04",
+    "url": "http://arxiv.org/abs/2611.06084v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Long-horizon language-model agents accumulate increasingly large interaction histories, making context compaction essential for efficient execution. Existing learned compaction methods often rely on downstream task outcomes or solver behavior, coupling training to specific tasks or agents. We introduce SumOne, a standalone summarizer trained to preserve information in agent histories through masked reconstruction. Given a summary of the expired history, a frozen reconstructor recovers randomly masked portions of the original trajectory; reconstruction quality, combined with a length penalty, provides a task-agnostic reward for optimizing the summarizer with GRPO. This yields self-supervision directly from raw trajectories, without reference summaries or downstream task execution. At inference time, only the lightweight summarizer is retained, enabling plug-and-play context compression for otherwise unchanged agents. We conduct a systematic evaluation of SumOne in long-horizon search and software-engineering tasks. SumOne reduces estimated inference cost by approximately 78\\% on DeepSearchQA and 75\\% on SWE-bench Verified relative to operating with full context, with absolute decreases of 0.04. The same checkpoint also transfers across downstream models and agent harnesses without additional fine-tuning.",
+    "authors": [
+      "Jizhe Zhang",
+      "Ang Li",
+      "Chenheng Zhang",
+      "Yisen Wang"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2611.06445v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, compression, context` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Long-horizon language-model agents accumulate increasingly large interaction histories, making context compaction essential for efficient execution.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing learned compaction methods often rely on downstream task outcomes or solver behavior, coupling training to specific tasks or agents.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "Long-horizon language-model agents accumulate increasingly large interaction histories, making context compaction essential for efficient execution.",
+    "published": "2026-11-04",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, compression, context\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.AI",
+    "slug": "sumone-a-simple-and-efficient-summarizer-for-plug-and-play-agent-memory",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2611.06445v1",
+    "tags": [
+      "agent",
+      "compression",
+      "context"
+    ],
+    "title": "SUMONE: A Simple and Efficient Summarizer for Plug-and-Play Agent Memory",
+    "updated": "2026-11-04",
+    "url": "http://arxiv.org/abs/2611.06445v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Recycling a target model's own predictions offers a training-free source of proposals for speculative decoding. In vision-language models, however, existing recycling indexes predictions by the last token alone, conflating predictions computed under different images and prefixes; we find that such reuse fails most often at image-sensitive decoding states. Longer keys reduce this aliasing but match fewer states. We introduce \\method, which stores target predictions under one-, two-, and three-token keys: contextual memories live only for the current request and are thus implicitly conditioned on its image, while token-level memory persists across requests to retain coverage. At each lookup, entropy-confidence weighting fuses the retrieved predictions according to their key specificity and concentration. Best-first search composes the fused transitions into a candidate tree, supplemented by suffix-matched continuations, and one target pass verifies the tree under greedy decoding. Without training or an auxiliary draft model, \\method\\ achieves mean speedups over autoregressive decoding of $1.66\\speed$ and $1.56\\speed$ across seven single-turn benchmarks on Qwen2.5-VL-7B and LLaVA-1.6-7B, exceeding the strongest training-free baseline, Token Recycling ($1.51\\speed$ and $1.37\\speed$). Our implementation is available in https://github.com/Senmo996/RECAP-official-code.",
+    "authors": [
+      "Hengjie Zhu",
+      "Dayan Wu",
+      "Xinze Liu",
+      "Peng Fu",
+      "Zheng Lin",
+      "Weiping Wang"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2611.05894v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `benchmark, context` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Recycling a target model's own predictions offers a training-free source of proposals for speculative decoding.\n\n进一步看，论文的核心做法或实验重点可以概括为：In vision-language models, however, existing recycling indexes predictions by the last token alone, conflating predictions computed under different images and prefixes; we find that such reuse fails most often at...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "persistent memory"
+    ],
+    "one_liner": "Recycling a target model's own predictions offers a training-free source of proposals for speculative decoding.",
+    "published": "2026-11-04",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：benchmark, context\n- 检索关键词命中：persistent memory\n- 来源分类信息：cs.AI",
+    "slug": "recap-context-aware-prediction-recycling-with-request-local-and-persistent-memor",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2611.05894v1",
+    "tags": [
+      "benchmark",
+      "context"
+    ],
+    "title": "RECAP: Context-Aware Prediction Recycling with Request-Local and Persistent Memories for Multimodal Speculative Decoding",
+    "updated": "2026-11-04",
+    "url": "http://arxiv.org/abs/2611.05894v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Large language model (LLM) agents increasingly rely on external memory stores to retain information across conversations, typically via dense vector embeddings searched with approximate nearest-neighbor methods. The fruit fly's olfactory circuit computes a locality-sensitive hash of sensory input using a strikingly different mechanism - sparse random projection followed by winner-take-all competition - and prior work (Dasgupta et al., 2017) showed this scheme, dubbed FlyHash, preserves neighbor structure better per bit than conventional random-hyperplane hashing (SimHash) on several benchmarks. We apply FlyHash, to our knowledge for the first time, to LLM agent memory retrieval, and ask three questions a practitioner actually needs answered: does the quality advantage hold under a correctly matched-bit protocol (it does, robustly, across 10 seeds and four datasets spanning two modalities, with one specific, previously undocumented comparison pitfall identified and corrected along the way); does that advantage translate into real memory and latency savings, including against the dense-vector indexing (HNSW) practitioners default to today (no: at equal bits FlyHash's codes are larger and slower to compare than SimHash's, and HNSW dominates both hash methods at ordinary scale; a sparse-set comparison we introduce recovers most but not all of a naive latency gap, leaving hashing's practical case narrower and more specific than the quality result alone implies); and does the advantage survive genuine, non-circular agent-memory relevance labels rather than the nearest-neighbor-by-embedding proxy this literature otherwise relies on (it does). We report all three answers precisely, including the two that narrow rather than flatter the headline result, and release our implementation, a working agent-memory demo, and a full account of the methodological pitfalls we found and corrected.",
+    "authors": [
+      "Mohan Bheemadolu",
+      "Chrisogonas O. Odhiambo"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.LG"
+    ],
+    "id": "2611.05791v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, conversation, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Large language model (LLM) agents increasingly rely on external memory stores to retain information across conversations, typically via dense vector embeddings searched with approximate nearest-neighbor methods.\n\n进一步看，论文的核心做法或实验重点可以概括为：The fruit fly's olfactory circuit computes a locality-sensitive hash of sensory input using a strikingly different mechanism - sparse random projection followed by winner-take-all competition - and prior work...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory",
+      "memory retrieval"
+    ],
+    "one_liner": "Large language model (LLM) agents increasingly rely on external memory stores to retain information across conversations, typically via dense vector embeddings searched with...",
+    "published": "2026-11-04",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, conversation, retrieval\n- 检索关键词命中：agent memory, memory retrieval\n- 来源分类信息：cs.AI, cs.LG",
+    "slug": "flyhash-for-llm-agent-memory-an-empirical-validation-and-a-new-application",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2611.05791v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "conversation",
+      "retrieval"
+    ],
+    "title": "FlyHash for LLM Agent Memory: An Empirical Validation and a New Application",
+    "updated": "2026-11-04",
+    "url": "http://arxiv.org/abs/2611.05791v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Organizations accumulate evidence in conversations, documents, decisions and relationships, but they act on interpretations: judgements assembled from several observations, resting on assumptions, and revised as circumstances change. Existing retrieval, knowledge graphs and agent memory keep the records and lose the interpretation. We propose a four-layer architecture, Signals, Domains, Claims and Dimensions, in which interpretations persist with their justifications and standing, a truth-maintenance network revises that standing as evidence changes, and validated, versioned Dimensions position interpretations on named axes. We call the result a shared organizational cortex. In a registered retrieval experiment, the Dimension term gains 0.028 nDCG@10 (p = 0.002). In system-level comparisons, the full retrieval configuration improves nDCG@10 by 0.081 over Signals-only and 0.053 over graph-augmented Signals-only retrieval (both reported p < 0.001). The architecture gives organizations a persistent, revisable basis for shared judgement.",
+    "authors": [
+      "Andrew Miracle",
+      "Phyl Georgiou",
+      "Christine Okoth",
+      "Ese Monday"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.IR"
+    ],
+    "id": "2611.05753v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, conversation, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Organizations accumulate evidence in conversations, documents, decisions and relationships, but they act on interpretations: judgements assembled from several observations, resting on assumptions, and revised as...\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing retrieval, knowledge graphs and agent memory keep the records and lose the interpretation.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "Organizations accumulate evidence in conversations, documents, decisions and relationships, but they act on interpretations: judgements assembled from several observations,...",
+    "published": "2026-11-03",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, conversation, retrieval\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.AI, cs.IR",
+    "slug": "toward-a-compositional-knowledge-architecture-for-a-shared-organizational-cortex",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2611.05753v1",
+    "tags": [
+      "agent",
+      "conversation",
+      "retrieval"
+    ],
+    "title": "Toward a Compositional Knowledge Architecture for a Shared Organizational Cortex",
+    "updated": "2026-11-03",
+    "url": "http://arxiv.org/abs/2611.05753v1",
+    "venue": ""
+  },
+  {
     "abstract": "Speech large language models retain audio history to support multi-turn conversations. Yet remembering an event does not ensure that its information is used only when relevant. We investigate why irrelevant historical audio changes answers even when the queried event remains represented. Controlled experiments on MOSS-Audio and MiMo-Audio show that historical values direct errors toward specific competing answers, beyond a generic effect of context length. Causal interventions distinguish two paths. In open-ended question answering, most history-value errors disappear when subsequent computation cannot directly access the irrelevant source. In multiple-choice answering, many errors persist: early historical influence is carried by question-candidate states even after direct source access is blocked. Low-dimensional interventions further separate source-role information from answer-value information. Their effects peak at different depths, and changing the source-role signal does not eliminate the causal influence of competing values. On naturally occurring errors, strengthening the queried role and counteracting the historical value each improve answers; their joint intervention gives the greatest recovery. These findings support a failure of downstream evidence use beyond source identification alone: source-role information can influence a decision without exclusively controlling which historical values affect it. Reliable conversational memory therefore requires not only retention and retrieval, but also control over how retained information enters answer computation.",
     "authors": [
       "HongJin Song",
@@ -101,6 +301,75 @@
     "title": "Sketchpad: certified exact arithmetic with a small vision-language model",
     "updated": "2026-11-03",
     "url": "http://arxiv.org/abs/2611.04434v1",
+    "venue": ""
+  },
+  {
+    "abstract": "The memory of production agents is increasingly becoming a bottleneck and is built almost exclusively from text: key points are extracted from out-of-limit context and retrieved into context at query time. Therefore, every new query incurs an additional cost that grows with the accumulated history. Weight memory is a complementary alternative that internalizes knowledge into model parameters and answers with no context at all, and has recently proven effective in self-evolving agents for internalizing skills and behaviors. However, its application in episodic and semantic memory, such as user-specific facts, remains comparatively unexplored, and a gap remains between earlier attempts at weight memory and text-based systems regarding recall performance. We study how to make weight memory competitive as a long-term factual store by applying on-policy self-distillation (OPSD). It trains a context-free student from a teacher, which is the same model conditioned on the user's memory, together with a verify-then-regenerate router that lets weight and text memory each cover the queries they handle best. On the HaluMem benchmark, OPSD matches or surpasses strong text-memory baselines, including full-context prompting and retrieval systems, while reading fewer tokens per query. We further conduct an extensive study that characterizes the behavior of weight memory and analyzes how different training recipes affect its performance. As agent harnesses move toward persistent, multi-session deployments, these results position weight memory as a practical, low-cost component of agent memory and provide insights into feasible training and evaluation protocols for combining it with retrieval.",
+    "authors": [
+      "Zeyu Fang",
+      "Jun Yin",
+      "Yongsheng Mei",
+      "Xu Han",
+      "Chaitali Joshi",
+      "Zhongkai Sun",
+      "Jie Hao",
+      "Bin Guo",
+      "Chengyuan Ma",
+      "Benjamin Z. Yao",
+      "Chenlei Guo"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2611.05636v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, episodic` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：The memory of production agents is increasingly becoming a bottleneck and is built almost exclusively from text: key points are extracted from out-of-limit context and retrieved into context at query time.\n\n进一步看，论文的核心做法或实验重点可以概括为：Therefore, every new query incurs an additional cost that grows with the accumulated history.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "The memory of production agents is increasingly becoming a bottleneck and is built almost exclusively from text: key points are extracted from out-of-limit context and retrieved...",
+    "published": "2026-11-03",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context, episodic, long-term, retrieval\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.AI",
+    "slug": "route-to-remember-adaptive-memory-selection-for-llm-agents",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2611.05636v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "episodic",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "Route to Remember: Adaptive Memory Selection for LLM Agents",
+    "updated": "2026-11-03",
+    "url": "http://arxiv.org/abs/2611.05636v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Dimension reduction rests on a claim: t-SNE and UMAP preserve local structure, PCA global structure. Our DLP curve is the share of each point's k nearest neighbors a map keeps. Corrected for chance, it gives L at k=10 and G over 30 to 50% of the data, local and global fidelity. At the midpoint the curve is provably a rank correlation of distances. The LG reversal test decides, with a stated error rate, which of two maps is local and which global. On twelve datasets of up to 1.38 million points, G agrees with established global scores at 0.84 and 0.93, and the area under R_NX at 0.22 and 0.30. The entity fidelity E, read at each point's entity size, predicts which entities a map loses beyond L and G where entity sizes differ. In an agent memory of one million passages, t-SNE and PCA cross at 150,000 passages (p=2.6e-5).",
+    "authors": [
+      "Henry Han"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2611.00290v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Dimension reduction rests on a claim: t-SNE and UMAP preserve local structure, PCA global structure.\n\n进一步看，论文的核心做法或实验重点可以概括为：Our DLP curve is the share of each point's k nearest neighbors a map keeps.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "Dimension reduction rests on a claim: t-SNE and UMAP preserve local structure, PCA global structure.",
+    "published": "2026-10-30",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.AI",
+    "slug": "quantifying-local-and-global-fidelity-of-nonlinear-embeddings",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2611.00290v2",
+    "tags": [
+      "agent"
+    ],
+    "title": "Quantifying Local and Global Fidelity of Nonlinear Embeddings",
+    "updated": "2026-11-03",
+    "url": "http://arxiv.org/abs/2611.00290v2",
     "venue": ""
   },
   {
@@ -469,6 +738,39 @@
     "title": "Rethinking Next-Visit Diagnosis Prediction Beyond Aggregate Metrics: Retrieval--Memory Multi-Agent Adjudication",
     "updated": "2026-11-02",
     "url": "http://arxiv.org/abs/2611.03826v1",
+    "venue": ""
+  },
+  {
+    "abstract": "For decades, non-player characters (NPCs) have been driven by rule-based systems whose personalities and interactions are scripted before release. Large language models (LLMs) promise NPCs that converse openly, adapt to new situations, and behave in ways developers did not fully author, prompting a wave of research and commercial experimentation. Yet the field lacks a unified picture of what has been built, how well it works, and at what cost. We address this gap with a systematic mapping study of 377 papers from the academic literature, yielding 42 papers analysed against a main research question and ten sub-questions across four thematic axes. We provide the first quantitative characterisation of component adoption, latency, safety coverage, and reproducibility: short-term memory and world-state grounding are near-universal (60% and 69%), whereas long-term memory (31%), reflection (38%), and retrieval-augmented generation (14%) remain rare, and response times span 2.6 to 15 seconds. Finally, we identify six structural barriers to commercial adoption and offer evidence-based recommendations for developers and researchers.",
+    "authors": [
+      "Dilan Mian",
+      "Jeremy Bradbury",
+      "Yann-Gaël Guéhéneuc",
+      "Fabio Petrillo",
+      "Cristiano Politowski"
+    ],
+    "categories": [
+      "cs.SE",
+      "cs.AI"
+    ],
+    "id": "2611.05427v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `long-term, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：For decades, non-player characters (NPCs) have been driven by rule-based systems whose personalities and interactions are scripted before release.\n\n进一步看，论文的核心做法或实验重点可以概括为：Large language models (LLMs) promise NPCs that converse openly, adapt to new situations, and behave in ways developers did not fully author, prompting a wave of research and commercial experimentation.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "long-term memory"
+    ],
+    "one_liner": "For decades, non-player characters (NPCs) have been driven by rule-based systems whose personalities and interactions are scripted before release.",
+    "published": "2026-11-02",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：long-term, retrieval\n- 检索关键词命中：long-term memory\n- 来源分类信息：cs.SE, cs.AI",
+    "slug": "llm-based-npcs-in-video-games-a-systematic-mapping-study",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2611.05427v1",
+    "tags": [
+      "long-term",
+      "retrieval"
+    ],
+    "title": "LLM-based NPCs in Video Games: A Systematic Mapping Study",
+    "updated": "2026-11-02",
+    "url": "http://arxiv.org/abs/2611.05427v1",
     "venue": ""
   },
   {
