@@ -39,19 +39,28 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **1607**
-- Last generated: **2026-11-05**
+- Total tracked papers: **1616**
+- Last generated: **2026-11-06**
 
 ## Papers by Source
 
 - ACL Anthology: **24**
-- arXiv: **1437**
+- arXiv: **1446**
 - OpenReview: **146**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-11-05 | arXiv | [The Memory Trap: Language Agents Overgeneralize from Benign Interactions](content/papers/the-memory-trap-language-agents-overgeneralize-from-benign-interactions.md) | agent |
+| 2026-11-05 | arXiv | [NEAR: Neighborhood-Aware Residuals for Memory Retrieval](content/papers/near-neighborhood-aware-residuals-for-memory-retrieval.md) | benchmark, context, retrieval |
+| 2026-11-05 | arXiv | [Memory before Goal: Role of Pre-History Memory for Humanoid Loco-Manipulation](content/papers/memory-before-goal-role-of-pre-history-memory-for-humanoid-loco-manipulation.md) | benchmark |
+| 2026-11-05 | arXiv | [MEMOIR: A Training-Free Memory Lifecycle for Long-Horizon LLM Agents](content/papers/memoir-a-training-free-memory-lifecycle-for-long-horizon-llm-agents.md) | agent, compression, retrieval |
+| 2026-11-05 | arXiv | [HyFlash: A Prefix-Memory Prior for On-Device Speculative Decoding](content/papers/hyflash-a-prefix-memory-prior-for-on-device-speculative-decoding.md) | context |
+| 2026-11-05 | arXiv | [FINCOSMOS: An Open-World Evaluation Paradigm for Agents in Finance](content/papers/fincosmos-an-open-world-evaluation-paradigm-for-agents-in-finance.md) | agent, benchmark |
+| 2026-11-05 | arXiv | [Enhancing Local and Global Structure in Compressed AI Agent Memory](content/papers/enhancing-local-and-global-structure-in-compressed-ai-agent-memory.md) | agent, compression |
+| 2026-11-05 | arXiv | [Beyond the Final Embedding: Retrieving Memories from Token-Level Evidence](content/papers/beyond-the-final-embedding-retrieving-memories-from-token-level-evidence.md) | benchmark, context, conversation |
+| 2026-11-05 | arXiv | [Axis-LoRA: Probing and Adapting Embedding Models for Personal-Memory Retrieval](content/papers/axis-lora-probing-and-adapting-embedding-models-for-personal-memory-retrieval.md) | benchmark, retrieval |
 | 2026-11-04 | arXiv | [Twists and Turns: A Graph-Based Benchmark and Framework for Long-Term Memory in Exploration Tasks](content/papers/twists-and-turns-a-graph-based-benchmark-and-framework-for-long-term-memory-in-e.md) | benchmark, long-term, retrieval |
 | 2026-11-04 | arXiv | [Shallow Encoding Emits Deep Memories](content/papers/shallow-encoding-emits-deep-memories.md) | agent, compression |
 | 2026-11-04 | arXiv | [SUMONE: A Simple and Efficient Summarizer for Plug-and-Play Agent Memory](content/papers/sumone-a-simple-and-efficient-summarizer-for-plug-and-play-agent-memory.md) | agent, compression, context |
@@ -63,15 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-11-03 | arXiv | [Sketchpad: certified exact arithmetic with a small vision-language model](content/papers/sketchpad-certified-exact-arithmetic-with-a-small-vision-language-model.md) | working memory |
 | 2026-11-03 | arXiv | [Route to Remember: Adaptive Memory Selection for LLM Agents](content/papers/route-to-remember-adaptive-memory-selection-for-llm-agents.md) | agent, benchmark, context |
 | 2026-11-03 | arXiv | [Quantifying Local and Global Fidelity of Nonlinear Embeddings](content/papers/quantifying-local-and-global-fidelity-of-nonlinear-embeddings.md) | agent |
-| 2026-11-03 | arXiv | [One Assistant, Many Memories: Benchmarking Real-World Group Assistance When Recall Is Not Enough](content/papers/one-assistant-many-memories-benchmarking-real-world-group-assistance-when-recall.md) | agent, benchmark, context |
-| 2026-11-03 | arXiv | [ModelBlaster: Closing the Performance Gap through Learning-Augmented Agents Across Models, Kernels and Hardware Backends](content/papers/modelblaster-closing-the-performance-gap-through-learning-augmented-agents-acros.md) | agent, context |
-| 2026-11-03 | arXiv | [MINDSET: Energy-based Memory Evolution for Long Conversational Agents](content/papers/mindset-energy-based-memory-evolution-for-long-conversational-agents.md) | agent, context, conversation |
-| 2026-11-03 | arXiv | [HARP: Training-Free Dual-Profile Agentic Communication for LLM-Based Recommendation](content/papers/harp-training-free-dual-profile-agentic-communication-for-llm-based-recommendati.md) | agent, benchmark, context |
-| 2026-11-03 | arXiv | [From Autonomous Agents to Cognitive Symbionts: Toward AI-Augmented Human Intelligence](content/papers/from-autonomous-agents-to-cognitive-symbionts-toward-ai-augmented-human-intellig.md) | agent, context |
-| 2026-11-03 | arXiv | [Drift No More: Spectral Locking for Long-Horizon Open-Weight Multi-Agent AI](content/papers/drift-no-more-spectral-locking-for-long-horizon-open-weight-multi-agent-ai.md) | agent, retrieval |
-| 2026-11-03 | arXiv | [Clocks all the way down: does sequence-processing AI need endogenous temporal structure?](content/papers/clocks-all-the-way-down-does-sequence-processing-ai-need-endogenous-temporal-str.md) | retrieval |
-| 2026-11-02 | arXiv | [When Prediction Shapes the Future: A BlueSky Agenda for Reflexive Time Series Analysis](content/papers/when-prediction-shapes-the-future-a-bluesky-agenda-for-reflexive-time-series-ana.md) | agent, context |
-| 2026-11-02 | arXiv | [What Is This Memory Useful For? Measuring Task-Conditioned Utility in Long-Term Agent Memory](content/papers/what-is-this-memory-useful-for-measuring-task-conditioned-utility-in-long-term-a.md) | agent, benchmark, compression |
 
 ## Suggested GitHub Setup
 
