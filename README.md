@@ -39,39 +39,39 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **1616**
+- Total tracked papers: **1628**
 - Last generated: **2026-11-09**
 
 ## Papers by Source
 
 - ACL Anthology: **24**
-- arXiv: **1446**
+- arXiv: **1458**
 - OpenReview: **146**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-11-06 | arXiv | [TimeOmni-Live: Continuous & Live Time Series Understanding with Long-Term Memory](content/papers/timeomni-live-continuous-live-time-series-understanding-with-long-term-memory.md) | context, long-term |
+| 2026-11-06 | arXiv | [Oscillatory Phase Coding Emerges in Adaptive RNNs for Flexible Working Memory](content/papers/oscillatory-phase-coding-emerges-in-adaptive-rnns-for-flexible-working-memory.md) | working memory |
+| 2026-11-06 | arXiv | [On Agentic Manipulation Policies](content/papers/on-agentic-manipulation-policies.md) | agent, benchmark |
+| 2026-11-06 | arXiv | [Not Your Diary, Just Your Topic: Grading the Wrong-User Control](content/papers/not-your-diary-just-your-topic-grading-the-wrong-user-control.md) | memory |
+| 2026-11-06 | arXiv | [MemoryDojo: Benchmarking Poisoning Through LLM Agent Memory](content/papers/memorydojo-benchmarking-poisoning-through-llm-agent-memory.md) | agent, benchmark |
+| 2026-11-06 | arXiv | [HomeLoop: A Simulation Framework and Benchmark for Robot-IoT Coordination in Everyday Domestic Assistance and Safety](content/papers/homeloop-a-simulation-framework-and-benchmark-for-robot-iot-coordination-in-ever.md) | agent, benchmark, long-term |
+| 2026-11-06 | arXiv | [HiMEM: Hippocampus-Inspired Memory Consolidation, Pruning, and Composition for Vision-Language-Action Models in 3D Scenes](content/papers/himem-hippocampus-inspired-memory-consolidation-pruning-and-composition-for-visi.md) | episodic |
+| 2026-11-06 | arXiv | [Encoding Memory in World Models with Test-Time Model-Based Reinforcement Learning](content/papers/encoding-memory-in-world-models-with-test-time-model-based-reinforcement-learnin.md) | agent, benchmark, context |
+| 2026-11-06 | arXiv | [Compaction, decay and reinforcement in a two-tier conversational memory: a paired evaluation against retrieval-augmented generation](content/papers/compaction-decay-and-reinforcement-in-a-two-tier-conversational-memory-a-paired-.md) | agent, conversation, retrieval |
 | 2026-11-05 | arXiv | [The Memory Trap: Language Agents Overgeneralize from Benign Interactions](content/papers/the-memory-trap-language-agents-overgeneralize-from-benign-interactions.md) | agent |
 | 2026-11-05 | arXiv | [NEAR: Neighborhood-Aware Residuals for Memory Retrieval](content/papers/near-neighborhood-aware-residuals-for-memory-retrieval.md) | benchmark, context, retrieval |
+| 2026-11-05 | arXiv | [Memory-Aware Multi-Agent Architecture with LLM-based Orchestration for Conversational Recommendation](content/papers/memory-aware-multi-agent-architecture-with-llm-based-orchestration-for-conversat.md) | agent, conversation, long-term |
 | 2026-11-05 | arXiv | [Memory before Goal: Role of Pre-History Memory for Humanoid Loco-Manipulation](content/papers/memory-before-goal-role-of-pre-history-memory-for-humanoid-loco-manipulation.md) | benchmark |
 | 2026-11-05 | arXiv | [MEMOIR: A Training-Free Memory Lifecycle for Long-Horizon LLM Agents](content/papers/memoir-a-training-free-memory-lifecycle-for-long-horizon-llm-agents.md) | agent, compression, retrieval |
+| 2026-11-05 | arXiv | [Jacobian-Causal Memory Control for Persistent Memory in Language Model Systems](content/papers/jacobian-causal-memory-control-for-persistent-memory-in-language-model-systems.md) | benchmark, retrieval |
 | 2026-11-05 | arXiv | [HyFlash: A Prefix-Memory Prior for On-Device Speculative Decoding](content/papers/hyflash-a-prefix-memory-prior-for-on-device-speculative-decoding.md) | context |
 | 2026-11-05 | arXiv | [FINCOSMOS: An Open-World Evaluation Paradigm for Agents in Finance](content/papers/fincosmos-an-open-world-evaluation-paradigm-for-agents-in-finance.md) | agent, benchmark |
 | 2026-11-05 | arXiv | [Enhancing Local and Global Structure in Compressed AI Agent Memory](content/papers/enhancing-local-and-global-structure-in-compressed-ai-agent-memory.md) | agent, compression |
+| 2026-11-05 | arXiv | [Decision Context: Persistent Behavioral Learning for AI Agents](content/papers/decision-context-persistent-behavioral-learning-for-ai-agents.md) | agent, benchmark, context |
 | 2026-11-05 | arXiv | [Beyond the Final Embedding: Retrieving Memories from Token-Level Evidence](content/papers/beyond-the-final-embedding-retrieving-memories-from-token-level-evidence.md) | benchmark, context, conversation |
-| 2026-11-05 | arXiv | [Axis-LoRA: Probing and Adapting Embedding Models for Personal-Memory Retrieval](content/papers/axis-lora-probing-and-adapting-embedding-models-for-personal-memory-retrieval.md) | benchmark, retrieval |
-| 2026-11-04 | arXiv | [Twists and Turns: A Graph-Based Benchmark and Framework for Long-Term Memory in Exploration Tasks](content/papers/twists-and-turns-a-graph-based-benchmark-and-framework-for-long-term-memory-in-e.md) | benchmark, long-term, retrieval |
-| 2026-11-04 | arXiv | [Shallow Encoding Emits Deep Memories](content/papers/shallow-encoding-emits-deep-memories.md) | agent, compression |
-| 2026-11-04 | arXiv | [SUMONE: A Simple and Efficient Summarizer for Plug-and-Play Agent Memory](content/papers/sumone-a-simple-and-efficient-summarizer-for-plug-and-play-agent-memory.md) | agent, compression, context |
-| 2026-11-04 | arXiv | [RECAP: Context-Aware Prediction Recycling with Request-Local and Persistent Memories for Multimodal Speculative Decoding](content/papers/recap-context-aware-prediction-recycling-with-request-local-and-persistent-memor.md) | benchmark, context |
-| 2026-11-04 | arXiv | [FlyHash for LLM Agent Memory: An Empirical Validation and a New Application](content/papers/flyhash-for-llm-agent-memory-an-empirical-validation-and-a-new-application.md) | agent, benchmark, conversation |
-| 2026-11-03 | arXiv | [Toward a Compositional Knowledge Architecture for a Shared Organizational Cortex](content/papers/toward-a-compositional-knowledge-architecture-for-a-shared-organizational-cortex.md) | agent, conversation, retrieval |
-| 2026-11-03 | arXiv | [The Right Source Is Not Enough: Understanding History Interference in Speech-LLM Memory](content/papers/the-right-source-is-not-enough-understanding-history-interference-in-speech-llm-.md) | context, conversation, retrieval |
-| 2026-11-03 | arXiv | [The Price of Scale in Proactive Memory Recall](content/papers/the-price-of-scale-in-proactive-memory-recall.md) | benchmark |
-| 2026-11-03 | arXiv | [Sketchpad: certified exact arithmetic with a small vision-language model](content/papers/sketchpad-certified-exact-arithmetic-with-a-small-vision-language-model.md) | working memory |
-| 2026-11-03 | arXiv | [Route to Remember: Adaptive Memory Selection for LLM Agents](content/papers/route-to-remember-adaptive-memory-selection-for-llm-agents.md) | agent, benchmark, context |
-| 2026-11-03 | arXiv | [Quantifying Local and Global Fidelity of Nonlinear Embeddings](content/papers/quantifying-local-and-global-fidelity-of-nonlinear-embeddings.md) | agent |
 
 ## Suggested GitHub Setup
 
