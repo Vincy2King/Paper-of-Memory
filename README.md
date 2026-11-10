@@ -39,39 +39,39 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **1628**
+- Total tracked papers: **1647**
 - Last generated: **2026-11-10**
 
 ## Papers by Source
 
 - ACL Anthology: **24**
-- arXiv: **1458**
+- arXiv: **1477**
 - OpenReview: **146**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-11-09 | arXiv | [TrajLift: Lifting Memory Recall Trajectories with Latency-Modulated Heat Diffusion](content/papers/trajlift-lifting-memory-recall-trajectories-with-latency-modulated-heat-diffusio.md) | benchmark, context, retrieval |
+| 2026-11-09 | arXiv | [MIRIX-2.0: Multi-Agent Memory System](content/papers/mirix-2-0-multi-agent-memory-system.md) | agent, benchmark, episodic |
+| 2026-11-09 | arXiv | [Kwai Summary Attention V2 Technical Report](content/papers/kwai-summary-attention-v2-technical-report.md) | compression, context |
+| 2026-11-09 | arXiv | [HiVe-Mem: Interleaving Horizontal Memory Expansion and Vertical Evidence Composition for Multimodal Agents](content/papers/hive-mem-interleaving-horizontal-memory-expansion-and-vertical-evidence-composit.md) | agent, benchmark, long-term |
+| 2026-11-09 | arXiv | [Correct Answers from Insufficient Histories: A Controlled Study of Agent Memory Evaluation](content/papers/correct-answers-from-insufficient-histories-a-controlled-study-of-agent-memory-e.md) | agent, context |
+| 2026-11-09 | arXiv | [Can LLM Agents Organize Their Own Memory?](content/papers/can-llm-agents-organize-their-own-memory.md) | agent |
+| 2026-11-09 | arXiv | [A Life of Its Own: How Agentic AI Companions Are Configured, Experienced as Autonomous Others, and Held Accountable](content/papers/a-life-of-its-own-how-agentic-ai-companions-are-configured-experienced-as-autono.md) | agent, conversation |
+| 2026-11-08 | arXiv | [Review the Episodes, Refine the Lessons: Simple Memory Evolution for Embodied Agents](content/papers/review-the-episodes-refine-the-lessons-simple-memory-evolution-for-embodied-agen.md) | agent |
+| 2026-11-08 | arXiv | [One Assistant, Many Memories: Benchmarking Real-World Group Assistance When Recall Is Not Enough](content/papers/one-assistant-many-memories-benchmarking-real-world-group-assistance-when-recall.md) | agent, benchmark, context |
+| 2026-11-07 | arXiv | [TransMem: Transition-Aware Retrieval for Evolving Personal Memory](content/papers/transmem-transition-aware-retrieval-for-evolving-personal-memory.md) | agent, context, conversation |
+| 2026-11-07 | arXiv | [Self-Supervised Keyframe Discovery for Horizon-Invariant Behavior Cloning](content/papers/self-supervised-keyframe-discovery-for-horizon-invariant-behavior-cloning.md) | benchmark, context, long-term |
+| 2026-11-07 | arXiv | [REINS: A Self-Evolving Agent Harness for Real-Time Trajectory Planning](content/papers/reins-a-self-evolving-agent-harness-for-real-time-trajectory-planning.md) | agent, benchmark |
+| 2026-11-07 | arXiv | [Pixels over Symbols: Sensory Realism Improves Behavioral Alignment in Models of Cognition](content/papers/pixels-over-symbols-sensory-realism-improves-behavioral-alignment-in-models-of-c.md) | memory |
+| 2026-11-07 | arXiv | [NEAR: Neighborhood-Aware Residuals for Memory Retrieval](content/papers/near-neighborhood-aware-residuals-for-memory-retrieval.md) | benchmark, context, retrieval |
+| 2026-11-07 | arXiv | [Beyond the Final Embedding: Retrieving Memories from Token-Level Evidence](content/papers/beyond-the-final-embedding-retrieving-memories-from-token-level-evidence.md) | benchmark, context, conversation |
+| 2026-11-06 | arXiv | [fNIRSAtlas: A Large-Scale Benchmark for Functional Near-Infrared Spectroscopy Classification](content/papers/fnirsatlas-a-large-scale-benchmark-for-functional-near-infrared-spectroscopy-cla.md) | benchmark |
+| 2026-11-06 | arXiv | [Where Did the Evidence Go? Diagnosing Proof-Set Loss in Long-Term Conversational Memory](content/papers/where-did-the-evidence-go-diagnosing-proof-set-loss-in-long-term-conversational-.md) | benchmark, context, conversation |
 | 2026-11-06 | arXiv | [TimeOmni-Live: Continuous & Live Time Series Understanding with Long-Term Memory](content/papers/timeomni-live-continuous-live-time-series-understanding-with-long-term-memory.md) | context, long-term |
 | 2026-11-06 | arXiv | [Oscillatory Phase Coding Emerges in Adaptive RNNs for Flexible Working Memory](content/papers/oscillatory-phase-coding-emerges-in-adaptive-rnns-for-flexible-working-memory.md) | working memory |
 | 2026-11-06 | arXiv | [On Agentic Manipulation Policies](content/papers/on-agentic-manipulation-policies.md) | agent, benchmark |
-| 2026-11-06 | arXiv | [Not Your Diary, Just Your Topic: Grading the Wrong-User Control](content/papers/not-your-diary-just-your-topic-grading-the-wrong-user-control.md) | memory |
-| 2026-11-06 | arXiv | [MemoryDojo: Benchmarking Poisoning Through LLM Agent Memory](content/papers/memorydojo-benchmarking-poisoning-through-llm-agent-memory.md) | agent, benchmark |
-| 2026-11-06 | arXiv | [HomeLoop: A Simulation Framework and Benchmark for Robot-IoT Coordination in Everyday Domestic Assistance and Safety](content/papers/homeloop-a-simulation-framework-and-benchmark-for-robot-iot-coordination-in-ever.md) | agent, benchmark, long-term |
-| 2026-11-06 | arXiv | [HiMEM: Hippocampus-Inspired Memory Consolidation, Pruning, and Composition for Vision-Language-Action Models in 3D Scenes](content/papers/himem-hippocampus-inspired-memory-consolidation-pruning-and-composition-for-visi.md) | episodic |
-| 2026-11-06 | arXiv | [Encoding Memory in World Models with Test-Time Model-Based Reinforcement Learning](content/papers/encoding-memory-in-world-models-with-test-time-model-based-reinforcement-learnin.md) | agent, benchmark, context |
-| 2026-11-06 | arXiv | [Compaction, decay and reinforcement in a two-tier conversational memory: a paired evaluation against retrieval-augmented generation](content/papers/compaction-decay-and-reinforcement-in-a-two-tier-conversational-memory-a-paired-.md) | agent, conversation, retrieval |
-| 2026-11-05 | arXiv | [The Memory Trap: Language Agents Overgeneralize from Benign Interactions](content/papers/the-memory-trap-language-agents-overgeneralize-from-benign-interactions.md) | agent |
-| 2026-11-05 | arXiv | [NEAR: Neighborhood-Aware Residuals for Memory Retrieval](content/papers/near-neighborhood-aware-residuals-for-memory-retrieval.md) | benchmark, context, retrieval |
-| 2026-11-05 | arXiv | [Memory-Aware Multi-Agent Architecture with LLM-based Orchestration for Conversational Recommendation](content/papers/memory-aware-multi-agent-architecture-with-llm-based-orchestration-for-conversat.md) | agent, conversation, long-term |
-| 2026-11-05 | arXiv | [Memory before Goal: Role of Pre-History Memory for Humanoid Loco-Manipulation](content/papers/memory-before-goal-role-of-pre-history-memory-for-humanoid-loco-manipulation.md) | benchmark |
-| 2026-11-05 | arXiv | [MEMOIR: A Training-Free Memory Lifecycle for Long-Horizon LLM Agents](content/papers/memoir-a-training-free-memory-lifecycle-for-long-horizon-llm-agents.md) | agent, compression, retrieval |
-| 2026-11-05 | arXiv | [Jacobian-Causal Memory Control for Persistent Memory in Language Model Systems](content/papers/jacobian-causal-memory-control-for-persistent-memory-in-language-model-systems.md) | benchmark, retrieval |
-| 2026-11-05 | arXiv | [HyFlash: A Prefix-Memory Prior for On-Device Speculative Decoding](content/papers/hyflash-a-prefix-memory-prior-for-on-device-speculative-decoding.md) | context |
-| 2026-11-05 | arXiv | [FINCOSMOS: An Open-World Evaluation Paradigm for Agents in Finance](content/papers/fincosmos-an-open-world-evaluation-paradigm-for-agents-in-finance.md) | agent, benchmark |
-| 2026-11-05 | arXiv | [Enhancing Local and Global Structure in Compressed AI Agent Memory](content/papers/enhancing-local-and-global-structure-in-compressed-ai-agent-memory.md) | agent, compression |
-| 2026-11-05 | arXiv | [Decision Context: Persistent Behavioral Learning for AI Agents](content/papers/decision-context-persistent-behavioral-learning-for-ai-agents.md) | agent, benchmark, context |
-| 2026-11-05 | arXiv | [Beyond the Final Embedding: Retrieving Memories from Token-Level Evidence](content/papers/beyond-the-final-embedding-retrieving-memories-from-token-level-evidence.md) | benchmark, context, conversation |
 
 ## Suggested GitHub Setup
 
