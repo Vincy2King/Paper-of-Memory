@@ -39,39 +39,39 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **1647**
+- Total tracked papers: **1655**
 - Last generated: **2026-11-11**
 
 ## Papers by Source
 
 - ACL Anthology: **24**
-- arXiv: **1477**
+- arXiv: **1485**
 - OpenReview: **146**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-11-10 | arXiv | [When Should Agents Remember? Falsification-Gated Self-Evolution for LLM Agents](content/papers/when-should-agents-remember-falsification-gated-self-evolution-for-llm-agents.md) | agent, benchmark, long-term |
+| 2026-11-10 | arXiv | [Seeing Without Seeing: A Methodological Review of Visual Mental Imagery Reconstruction from Brain Activity](content/papers/seeing-without-seeing-a-methodological-review-of-visual-mental-imagery-reconstru.md) | benchmark |
+| 2026-11-10 | arXiv | [Personalized Memory Rubrics: Learning What to Remember per User via Rubric-Guided Credit Assignment](content/papers/personalized-memory-rubrics-learning-what-to-remember-per-user-via-rubric-guided.md) | agent, benchmark |
+| 2026-11-10 | arXiv | [Coding Agent Memory Post-Training II: Unlocking the Memory Potential of Pre-trained File Operations for Long-Horizon Tasks via On-Policy Distillation](content/papers/coding-agent-memory-post-training-ii-unlocking-the-memory-potential-of-pre-train.md) | agent, benchmark, context |
+| 2026-11-10 | arXiv | [Broad-Persistent Advising in Interactive Reinforcement Learning via Latent State Encoding](content/papers/broad-persistent-advising-in-interactive-reinforcement-learning-via-latent-state.md) | persistent memory |
+| 2026-11-10 | arXiv | [BioMem: Agentic Memory for Biomedical LLM Agents](content/papers/biomem-agentic-memory-for-biomedical-llm-agents.md) | agent, benchmark, context |
 | 2026-11-09 | arXiv | [TrajLift: Lifting Memory Recall Trajectories with Latency-Modulated Heat Diffusion](content/papers/trajlift-lifting-memory-recall-trajectories-with-latency-modulated-heat-diffusio.md) | benchmark, context, retrieval |
 | 2026-11-09 | arXiv | [MIRIX-2.0: Multi-Agent Memory System](content/papers/mirix-2-0-multi-agent-memory-system.md) | agent, benchmark, episodic |
 | 2026-11-09 | arXiv | [Kwai Summary Attention V2 Technical Report](content/papers/kwai-summary-attention-v2-technical-report.md) | compression, context |
 | 2026-11-09 | arXiv | [HiVe-Mem: Interleaving Horizontal Memory Expansion and Vertical Evidence Composition for Multimodal Agents](content/papers/hive-mem-interleaving-horizontal-memory-expansion-and-vertical-evidence-composit.md) | agent, benchmark, long-term |
+| 2026-11-09 | arXiv | [Ender: Visual Scaffolding for Geometric Proof Comprehension](content/papers/ender-visual-scaffolding-for-geometric-proof-comprehension.md) | working memory |
 | 2026-11-09 | arXiv | [Correct Answers from Insufficient Histories: A Controlled Study of Agent Memory Evaluation](content/papers/correct-answers-from-insufficient-histories-a-controlled-study-of-agent-memory-e.md) | agent, context |
 | 2026-11-09 | arXiv | [Can LLM Agents Organize Their Own Memory?](content/papers/can-llm-agents-organize-their-own-memory.md) | agent |
+| 2026-11-09 | arXiv | [Agent-Guided Discovery of Exchange-Correlation Functionals with Physics-based Validation](content/papers/agent-guided-discovery-of-exchange-correlation-functionals-with-physics-based-va.md) | agent, context |
 | 2026-11-09 | arXiv | [A Life of Its Own: How Agentic AI Companions Are Configured, Experienced as Autonomous Others, and Held Accountable](content/papers/a-life-of-its-own-how-agentic-ai-companions-are-configured-experienced-as-autono.md) | agent, conversation |
 | 2026-11-08 | arXiv | [Review the Episodes, Refine the Lessons: Simple Memory Evolution for Embodied Agents](content/papers/review-the-episodes-refine-the-lessons-simple-memory-evolution-for-embodied-agen.md) | agent |
 | 2026-11-08 | arXiv | [One Assistant, Many Memories: Benchmarking Real-World Group Assistance When Recall Is Not Enough](content/papers/one-assistant-many-memories-benchmarking-real-world-group-assistance-when-recall.md) | agent, benchmark, context |
 | 2026-11-07 | arXiv | [TransMem: Transition-Aware Retrieval for Evolving Personal Memory](content/papers/transmem-transition-aware-retrieval-for-evolving-personal-memory.md) | agent, context, conversation |
 | 2026-11-07 | arXiv | [Self-Supervised Keyframe Discovery for Horizon-Invariant Behavior Cloning](content/papers/self-supervised-keyframe-discovery-for-horizon-invariant-behavior-cloning.md) | benchmark, context, long-term |
 | 2026-11-07 | arXiv | [REINS: A Self-Evolving Agent Harness for Real-Time Trajectory Planning](content/papers/reins-a-self-evolving-agent-harness-for-real-time-trajectory-planning.md) | agent, benchmark |
-| 2026-11-07 | arXiv | [Pixels over Symbols: Sensory Realism Improves Behavioral Alignment in Models of Cognition](content/papers/pixels-over-symbols-sensory-realism-improves-behavioral-alignment-in-models-of-c.md) | memory |
-| 2026-11-07 | arXiv | [NEAR: Neighborhood-Aware Residuals for Memory Retrieval](content/papers/near-neighborhood-aware-residuals-for-memory-retrieval.md) | benchmark, context, retrieval |
-| 2026-11-07 | arXiv | [Beyond the Final Embedding: Retrieving Memories from Token-Level Evidence](content/papers/beyond-the-final-embedding-retrieving-memories-from-token-level-evidence.md) | benchmark, context, conversation |
-| 2026-11-06 | arXiv | [fNIRSAtlas: A Large-Scale Benchmark for Functional Near-Infrared Spectroscopy Classification](content/papers/fnirsatlas-a-large-scale-benchmark-for-functional-near-infrared-spectroscopy-cla.md) | benchmark |
-| 2026-11-06 | arXiv | [Where Did the Evidence Go? Diagnosing Proof-Set Loss in Long-Term Conversational Memory](content/papers/where-did-the-evidence-go-diagnosing-proof-set-loss-in-long-term-conversational-.md) | benchmark, context, conversation |
-| 2026-11-06 | arXiv | [TimeOmni-Live: Continuous & Live Time Series Understanding with Long-Term Memory](content/papers/timeomni-live-continuous-live-time-series-understanding-with-long-term-memory.md) | context, long-term |
-| 2026-11-06 | arXiv | [Oscillatory Phase Coding Emerges in Adaptive RNNs for Flexible Working Memory](content/papers/oscillatory-phase-coding-emerges-in-adaptive-rnns-for-flexible-working-memory.md) | working memory |
-| 2026-11-06 | arXiv | [On Agentic Manipulation Policies](content/papers/on-agentic-manipulation-policies.md) | agent, benchmark |
 
 ## Suggested GitHub Setup
 

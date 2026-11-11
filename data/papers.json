@@ -1,5 +1,221 @@
 [
   {
+    "abstract": "LLM agents increasingly operate in long-horizon, verifier-rich environments, but current self-improvement mechanisms often write episode-derived lessons directly into memory, making local success an unreliable signal for reusable and safe knowledge. This paper addresses the core question of when an experience-derived behavioral update should be admitted into persistent agent state. We propose Falsification-Gated Self-Evolution (FGSE), a verifier-grounded framework that represents each candidate lesson as a structured hypothesis with an explicit precondition, behavior change, expected effect, and verifier. FGSE applies the hypothesis only in a temporary state, tests it on target-transfer, falsification, and archived-regression probes, and then commits, refines, or rejects it according to measured gain and risk. Across web, app, tool-use, and long-term memory benchmarks, FGSE achieves strong task performance, including 39.8 WebArena success rate, 78.8 AppWorld average completion, and 0.724/0.487 Pass$^1$ on $τ$-Retail/$τ$-Airline, while reducing falsification failures to 5.0%, regression damage to 1.3%, and harmful committed updates to 3.6%. These results suggest that testing memory updates as hypotheses supports more reliable long-term adaptation.",
+    "authors": [
+      "Runxuan Tang",
+      "Haoyu Gao",
+      "Yuyan Ding",
+      "Junyi Yao",
+      "Zihao Zheng",
+      "Zecheng Sheng",
+      "Liwei Hou"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.LG"
+    ],
+    "id": "2611.14326v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, long-term` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：LLM agents increasingly operate in long-horizon, verifier-rich environments, but current self-improvement mechanisms often write episode-derived lessons directly into memory, making local success an unreliable signal...\n\n进一步看，论文的核心做法或实验重点可以概括为：This paper addresses the core question of when an experience-derived behavioral update should be admitted into persistent agent state.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "long-term memory",
+      "memory benchmark",
+      "memory benchmarks"
+    ],
+    "one_liner": "LLM agents increasingly operate in long-horizon, verifier-rich environments, but current self-improvement mechanisms often write episode-derived lessons directly into memory,...",
+    "published": "2026-11-10",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, long-term\n- 检索关键词命中：long-term memory, memory benchmark, memory benchmarks\n- 来源分类信息：cs.AI, cs.LG",
+    "slug": "when-should-agents-remember-falsification-gated-self-evolution-for-llm-agents",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2611.14326v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "long-term"
+    ],
+    "title": "When Should Agents Remember? Falsification-Gated Self-Evolution for LLM Agents",
+    "updated": "2026-11-10",
+    "url": "http://arxiv.org/abs/2611.14326v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Reconstructing visual mental imagery from brain activity differs from reconstructing perceived images. Imagery is generated top-down, its signal is weak, and the imagined content is never observed, so decoders are trained and scored against a proxy such as a cue or a seen exemplar. This criterion-guided methodological review of mainly non-invasive studies (fMRI, EEG, MEG) is narrative rather than systematic. We organise the field into a two-stage pipeline, two design axes and four method families, and formalise target-free evaluation, in which the proxy gap is a systematic bias rather than noise. A two-dimensional admissibility criterion crosses trial-level separability from working-memory maintenance with the memory source of the imagined content. Among the studies reviewed, every image-scored reconstruction concerns a recalled exemplar, none builds a scorable target for concept-generated content, and all come from fMRI, consistent with missing image-level targets in electrophysiological data. Published values for five decoders, compared under a common human forced-choice framing, show seen-to-imagined drops of 5.9 to 26.1 percentage points and a change in method ordering. We treat this as a diagnostic signal, not a controlled benchmark result, and specify a within-subject test for an altered neural code. Beyond this synthesis, we make two proposals. First, because frozen generative priors can produce photorealistic images weakly tied to neural signals, we combine existing null-signal controls into a normalised neural dependence with a within-category null, an unvalidated diagnostic quantity. Second, we propose a candidate ten-item reporting checklist with illustrative pass criteria. In an exploratory application to ten studies, none reports all items in a fully checkable form; this describes reporting practice, not study quality.",
+    "authors": [
+      "Shiyi Zhang",
+      "Dong Liang",
+      "Yihang Zhou"
+    ],
+    "categories": [
+      "cs.HC"
+    ],
+    "id": "2611.13691v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `benchmark` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Reconstructing visual mental imagery from brain activity differs from reconstructing perceived images.\n\n进一步看，论文的核心做法或实验重点可以概括为：Imagery is generated top-down, its signal is weak, and the imagined content is never observed, so decoders are trained and scored against a proxy such as a cue or a seen exemplar.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "working memory"
+    ],
+    "one_liner": "Reconstructing visual mental imagery from brain activity differs from reconstructing perceived images.",
+    "published": "2026-11-10",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：benchmark\n- 检索关键词命中：working memory\n- 来源分类信息：cs.HC",
+    "slug": "seeing-without-seeing-a-methodological-review-of-visual-mental-imagery-reconstru",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2611.13691v1",
+    "tags": [
+      "benchmark"
+    ],
+    "title": "Seeing Without Seeing: A Methodological Review of Visual Mental Imagery Reconstruction from Brain Activity",
+    "updated": "2026-11-10",
+    "url": "http://arxiv.org/abs/2611.13691v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Long-horizon personalized agents maintain an evolving memory by continuously deciding what to add, modify, or discard. However, learning an optimal update policy remains challenging. Conventional training relies solely on terminal question-answering accuracy, yielding a coarse feedback signal that treats all intermediate updates identically. Furthermore, update utility is inherently user-specific, as identical memory actions may yield opposite effects across different user personas. Existing methods fail to address this heterogeneity, relying on globally shared evaluation standards with at most a single scalar intermediate reward. To address these challenges, we propose \\textbf{Personalized Memory Rubrics} (\\textbf{PMR}), a framework that translates terminal feedback into fine-grained, per-step, and per-user credit assignment. PMR decomposes evaluation into a universal layer capturing cross-persona failure patterns and a per-user adaptive layer modeling individual traits as a specialized delta over the universal baseline. Through \\textbf{Rubric-Guided Credit Assignment}, PMR redistributes credit at the token level, selectively amplifying validated decisions on successful trajectories while falling back to standard policy optimization on failed ones to avoid unreliable attribution. The rubric and memory policy \\textbf{co-evolve} in a closed loop with anti-circularity guarantees. Crucially, PMR incurs zero inference overhead, operating without any rubric or external judge during deployment. Extensive experiments across four benchmarks demonstrate consistent gains over strong memory-augmented baselines.",
+    "authors": [
+      "Yupeng Han",
+      "Kai Zhang",
+      "Shuochen Liu",
+      "Ze Liu",
+      "Xianquan Wang",
+      "Zhihong Pan",
+      "Xiangyu Zhao",
+      "Qi Liu",
+      "Enhong Chen"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2611.14017v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Long-horizon personalized agents maintain an evolving memory by continuously deciding what to add, modify, or discard.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, learning an optimal update policy remains challenging.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory augmented",
+      "memory-augmented"
+    ],
+    "one_liner": "Long-horizon personalized agents maintain an evolving memory by continuously deciding what to add, modify, or discard.",
+    "published": "2026-11-10",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark\n- 检索关键词命中：memory augmented, memory-augmented\n- 来源分类信息：cs.AI",
+    "slug": "personalized-memory-rubrics-learning-what-to-remember-per-user-via-rubric-guided",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2611.14017v1",
+    "tags": [
+      "agent",
+      "benchmark"
+    ],
+    "title": "Personalized Memory Rubrics: Learning What to Remember per User via Rubric-Guided Credit Assignment",
+    "updated": "2026-11-10",
+    "url": "http://arxiv.org/abs/2611.14017v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Language-model agents increasingly tackle long-horizon tasks whose interaction histories exceed the model's active context. They must therefore decide what to write down and what to read back, and when to do either. Recent work has begun to use on-policy distillation (OPD) to make memory control part of the policy, relying on memory tools and compaction protocols that lie outside either model's pre-training. However, this weakens the distillation on both sides: the teacher cannot give useful guidance on an interface it has never used, and the student samples too few meaningful memory actions for that guidance to take effect. To study this problem, we introduce Coding Agent Memory Gym II (CAMG-II), a suite of long-horizon agentic-RL environments spanning Shop, Coding, AutoResearch, General, and Visual. Alongside each environment's native task interface, CAMG-II provides ordinary Bash access and an episode-persistent workspace, enabling the policy to create, revise, search, and reuse files as memory across context replacements. We also introduce Coding Agent Memory Post-Training II (CAMP-II), which trains a single policy jointly across all five environments with fully asynchronous OPD to learn this file-based memory behavior directly from a frozen teacher with a prior for file operations. On CAMG-II, CAMP-II obtains 2.97 times the gain of the strongest OPD baseline. The memory behavior CAMP-II learns generalizes to two external benchmarks, Terminal-Bench 2.1 and SWE-Bench Pro V2, with improved success rates.",
+    "authors": [
+      "Lirui Luo",
+      "Kelong Mao",
+      "Xinwei Yang",
+      "Rongqing Li",
+      "Luyu Chen",
+      "Kieran Wong",
+      "Yudong Guo",
+      "Xinrui Wang",
+      "Jiayin Zhu",
+      "Gu Simiu",
+      "Sulong Xu",
+      "Cong Fang"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "id": "2611.14009v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Language-model agents increasingly tackle long-horizon tasks whose interaction histories exceed the model's active context.\n\n进一步看，论文的核心做法或实验重点可以概括为：They must therefore decide what to write down and what to read back, and when to do either.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "Language-model agents increasingly tackle long-horizon tasks whose interaction histories exceed the model's active context.",
+    "published": "2026-11-10",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.LG, cs.AI, cs.CL",
+    "slug": "coding-agent-memory-post-training-ii-unlocking-the-memory-potential-of-pre-train",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2611.14009v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context"
+    ],
+    "title": "Coding Agent Memory Post-Training II: Unlocking the Memory Potential of Pre-trained File Operations for Long-Horizon Tasks via On-Policy Distillation",
+    "updated": "2026-11-10",
+    "url": "http://arxiv.org/abs/2611.14009v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Deep Interactive Reinforcement Learning (Deep IntRL) accelerates reinforcement learning training by incorporating external advice. However, conventional Deep IntRL uses each piece of advice only in the current step and discards it after a single interaction. Persistent Advising and Broad-Persistent Advising (BPA) extend this process by storing advice in persistent memory and reusing it in similar states through state generalisation based on K-means clustering. This research proposes Encoder BPA, which employs a latent encoder to retrieve and reuse advice. In this framework, a trained encoder is used to map a state sequence into a latent representation at every time step. Advice can be retrieved through latent comparison, together with a top-(k) aggregation and a consistency condition to improve reuse stability. Experimental results show that Encoder BPA improves learning efficiency and advice utilisation at an early stage of training compared with different Deep IntRL approaches, especially in complex and partially observable environments.",
+    "authors": [
+      "Zhuoran Liang",
+      "Francisco Cruz"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2611.13712v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `persistent memory` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Deep Interactive Reinforcement Learning (Deep IntRL) accelerates reinforcement learning training by incorporating external advice.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, conventional Deep IntRL uses each piece of advice only in the current step and discards it after a single interaction.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "persistent memory"
+    ],
+    "one_liner": "Deep Interactive Reinforcement Learning (Deep IntRL) accelerates reinforcement learning training by incorporating external advice.",
+    "published": "2026-11-10",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：persistent memory\n- 检索关键词命中：persistent memory\n- 来源分类信息：cs.AI",
+    "slug": "broad-persistent-advising-in-interactive-reinforcement-learning-via-latent-state",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2611.13712v1",
+    "tags": [
+      "persistent memory"
+    ],
+    "title": "Broad-Persistent Advising in Interactive Reinforcement Learning via Latent State Encoding",
+    "updated": "2026-11-10",
+    "url": "http://arxiv.org/abs/2611.13712v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Large language models (LLMs) have demonstrated considerable potential in biomedical applications, while agentic memory systems have emerged as a promising approach to preserving and utilizing information across tasks and interactions. However, a fundamental question remains: how effectively and reliably do these systems retain, retrieve, update, and utilize biomedical information? In this study, we systematically investigate agentic memory in the biomedical domain, focusing on task effectiveness, retrieval quality, information fidelity, and long-term robustness. We evaluate five memory approaches across four LLMs in three representative settings: biomedical knowledge reasoning, clinical prediction, and long-term conversational memory. Our analyses reveal how memory construction, evidence relevance, and conversational history shape downstream biomedical performance, highlighting the distinct challenges of retrieving relevant information, preserving its fidelity, and effectively utilizing it for reasoning. Building on these findings, we introduce Hybrid Memory Retrieval and Utilization (HMRU), a training-free framework that jointly enhances evidence accessibility and task-aware utilization to improve biomedical reasoning and long-term conversational memory. HMRU achieves an average relative improvement of 8.6% across biomedical question-answering and conversational memory benchmarks, with additional gains in selected clinical prediction tasks. It further reduces conversational answer errors by 24.9% and closes 48.0% of the performance gap to full-context inference. Our findings provide a systematic characterization of biomedical agentic memory and practical insights into developing more effective and reliable memory-augmented LLM systems.",
+    "authors": [
+      "Mingchen Li",
+      "Yongkang Xiao",
+      "Rumeng Li",
+      "Rui Zhang",
+      "Hong Yu"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "id": "2611.13426v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, conversation` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Large language models (LLMs) have demonstrated considerable potential in biomedical applications, while agentic memory systems have emerged as a promising approach to preserving and utilizing information across tasks...\n\n进一步看，论文的核心做法或实验重点可以概括为：However, a fundamental question remains: how effectively and reliably do these systems retain, retrieve, update, and utilize biomedical information?\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory",
+      "conversational memory",
+      "memory augmented",
+      "memory benchmark",
+      "memory benchmarks",
+      "memory retrieval",
+      "memory-augmented"
+    ],
+    "one_liner": "Large language models (LLMs) have demonstrated considerable potential in biomedical applications, while agentic memory systems have emerged as a promising approach to preserving...",
+    "published": "2026-11-10",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context, conversation, long-term, retrieval\n- 检索关键词命中：agent memory, conversational memory, memory augmented, memory benchmark, memory benchmarks, memory retrieval\n- 来源分类信息：cs.CL",
+    "slug": "biomem-agentic-memory-for-biomedical-llm-agents",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2611.13426v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "conversation",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "BioMem: Agentic Memory for Biomedical LLM Agents",
+    "updated": "2026-11-10",
+    "url": "http://arxiv.org/abs/2611.13426v1",
+    "venue": ""
+  },
+  {
     "abstract": "Verbal memory retrieval carries rich diagnostic information for Alzheimer's disease through the order, hesitation, and categorical organization of recalled words, yet computational modeling of this retrieval process remains largely unexplored. A key challenge is that timing and hierarchical structure are diagnostically entangled: the diagnostic meaning of retrieval timing depends on its hierarchical context. We propose TrajLift, a spectral framework that models verbal recall as timed trajectories on a hierarchical graph. Our central mechanism is latency-modulated heat diffusion on the semantic hierarchy, a unified operator that lifts each recalled word into a representation of both multi-scale hierarchical structure and continuous retrieval timing. Formal analysis shows that the resulting representation is first-order separable into structural and temporal components with spectral selectivity across hierarchical levels. On synthetic benchmarks requiring structure-time interaction, TrajLift stays near-perfect on deep hierarchies where all baselines fail. On real-world clinical data, we show that TrajLift outperforms diverse baselines by jointly modeling timing and semantic structure, with gains that grow as retrieval timing becomes more informative.",
     "authors": [
       "Jiawen Kang",
@@ -175,6 +391,36 @@
     "venue": ""
   },
   {
+    "abstract": "Geometric proof is a foundational but notoriously difficult topic in secondary mathematics, primarily due to the high cognitive load required to integrate visual diagrams with logical text. As proofs evolve, tracking the initial givens and an expanding set of derived truths can easily overwhelm working memory. While established scaffolding techniques are often visual and diagram-based, current digital learning environments mostly rely on static, text-heavy interfaces that force students to manage these complex mental models on their own. This paper introduces Ender, an interactive rendering system designed to visualize the logical status of two-column proofs. Ender's design is grounded in four literature-derived requirements: (1) diagram annotation, (2) structural tracing, (3) support for partial or incorrect work, and (4) synchronization between the diagram and text. To evaluate the system, we conducted a between-subjects, think-aloud experiment with 12 secondary school students in the United States, comparing Ender against a traditional digital proof interface. Our results indicate that students using Ender performed significantly better on proof comprehension tasks--specifically in identifying and correcting logical errors. These findings suggest that dynamic visual scaffolding may ease the working memory burden of digital interfaces, offering a promising building block for future AI-based proof tutoring systems.",
+    "authors": [
+      "Hwei-Shin Harriman",
+      "Yuchen Jin",
+      "Dominik Moritz",
+      "Joshua Sunshine"
+    ],
+    "categories": [
+      "cs.HC"
+    ],
+    "id": "2611.13368v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `working memory` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Geometric proof is a foundational but notoriously difficult topic in secondary mathematics, primarily due to the high cognitive load required to integrate visual diagrams with logical text.\n\n进一步看，论文的核心做法或实验重点可以概括为：As proofs evolve, tracking the initial givens and an expanding set of derived truths can easily overwhelm working memory.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "working memory"
+    ],
+    "one_liner": "Geometric proof is a foundational but notoriously difficult topic in secondary mathematics, primarily due to the high cognitive load required to integrate visual diagrams with...",
+    "published": "2026-11-09",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：working memory\n- 检索关键词命中：working memory\n- 来源分类信息：cs.HC",
+    "slug": "ender-visual-scaffolding-for-geometric-proof-comprehension",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2611.13368v1",
+    "tags": [
+      "working memory"
+    ],
+    "title": "Ender: Visual Scaffolding for Geometric Proof Comprehension",
+    "updated": "2026-11-09",
+    "url": "http://arxiv.org/abs/2611.13368v1",
+    "venue": ""
+  },
+  {
     "abstract": "An answer can match the reference for a complete agent history even when the reader's visible history does not determine it. We study this distinction using executable device logs. Our protocol separates reference agreement, certified evidence sufficiency, and context-appropriate behavior. Insufficiency requires two legal histories yielding byte-identical visible contexts but different answers; public chronology and query cutoffs certify sufficient prefixes. On 80 confirmation histories, Qwen3-32B matches 87 hidden references among 203 insufficient raw-prefix instances, with only seven appropriate abstentions. A fixed-input DeepSeek-V4-Flash replication matches 85 and abstains on 21 of the same 203 instances. Each reader makes 1,600 requests. Compact CSV's estimated appropriateness effects remain inconclusive: +3.16 percentage points, clustered 95% interval [0.00,6.57], for Qwen and +2.46, [-1.84,6.94], for DeepSeek. A separate held-out judge study achieves 99.38% correctness but retains support errors and truncations; a deterministic baseline solves all constructed cases. These results support an evaluation diagnosis across two hosted reader configurations, not gains for a general memory system or natural-language evidence assessment.",
     "authors": [
       "Quan Xue",
@@ -243,6 +489,35 @@
     "title": "Can LLM Agents Organize Their Own Memory?",
     "updated": "2026-11-09",
     "url": "http://arxiv.org/abs/2611.11929v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Accurate, compact exchange--correlation functionals are central to predictive density functional theory. Symbolic search and language-model agents can propose new functional forms, but it remains unclear whether their gains survive self-consistency and external evaluation, whether the new terms carry physical content, whether agents outperform evolutionary search, and how language-model backbones compare. We connect frontier LLM agents to a GPU evaluator through the Model Context Protocol, with training-only fitting, persistent memory, and self-consistent and external evaluation. Opus-5.5 agents passed the screening gate with about 40-fold fewer tokens than Codex (GPT-6-Astra) agents and found a candidate with lower validation and held-out errors; only this candidate advanced to self-consistent evaluation. The resulting 13-parameter functional, O159, multiplies same-spin correlation by a smooth density window. Refitted controls favor a window that scales the entire same-spin factor, reducing it by 15--30\\% at its peak, and that acts on reaction energies mainly in near-iso-orbital regions; against a refitted no-window control, it lowers heavy-atom total-energy errors on GSCDB137 by 29\\%. With about 400 fits each, SyFES evolution did not improve on its GAS22 seed, whereas the agents found forms 0.10--0.13 \\kcal\\ lower in validation error by adding an explicit density scale. Self-consistent O159 lowers the held-out MGCDB84 test error of $ω$B97M-V by 11.7\\%, and its mean normalized error ratio on 36 GSCDB137 datasets (1.139) is comparable to $ω$B97M-V (1.144) and below GAS22 (1.190). Frontier-LLM agents thus produced O159, a compact functional whose improvement over $ω$B97M-V survives self-consistent, physics-based validation.",
+    "authors": [
+      "Achuth Chandrasekhar",
+      "Amir Barati Farimani"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2611.13329v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, context` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Accurate, compact exchange--correlation functionals are central to predictive density functional theory.\n\n进一步看，论文的核心做法或实验重点可以概括为：Symbolic search and language-model agents can propose new functional forms, but it remains unclear whether their gains survive self-consistency and external evaluation, whether the new terms carry physical content,...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "persistent memory"
+    ],
+    "one_liner": "Accurate, compact exchange--correlation functionals are central to predictive density functional theory.",
+    "published": "2026-11-09",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, context\n- 检索关键词命中：persistent memory\n- 来源分类信息：cs.AI",
+    "slug": "agent-guided-discovery-of-exchange-correlation-functionals-with-physics-based-va",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2611.13329v1",
+    "tags": [
+      "agent",
+      "context"
+    ],
+    "title": "Agent-Guided Discovery of Exchange-Correlation Functionals with Physics-based Validation",
+    "updated": "2026-11-09",
+    "url": "http://arxiv.org/abs/2611.13329v1",
     "venue": ""
   },
   {

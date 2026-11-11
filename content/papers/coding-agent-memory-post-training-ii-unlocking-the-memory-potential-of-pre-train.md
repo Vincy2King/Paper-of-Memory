@@ -1,0 +1,39 @@
+# Coding Agent Memory Post-Training II: Unlocking the Memory Potential of Pre-trained File Operations for Long-Horizon Tasks via On-Policy Distillation
+
+- Source: arXiv
+- Venue: N/A
+- Paper ID: 2611.14009v1
+- Published: 2026-11-10
+- Updated: 2026-11-10
+- Authors: Lirui Luo, Kelong Mao, Xinwei Yang, Rongqing Li, Luyu Chen, Kieran Wong, Yudong Guo, Xinrui Wang, Jiayin Zhu, Gu Simiu, Sulong Xu, Cong Fang
+- Tags: agent, benchmark, context
+- Categories: cs.LG, cs.AI, cs.CL
+- URL: http://arxiv.org/abs/2611.14009v1
+
+## One-Sentence Summary
+Language-model agents increasingly tackle long-horizon tasks whose interaction histories exceed the model's active context.
+
+## Introduction
+这篇论文被纳入仓库，是因为它和 `agent, benchmark, context` 这些主题直接相关。
+
+它当前来自 `arXiv`。
+
+从摘要来看，作者主要关注的是：Language-model agents increasingly tackle long-horizon tasks whose interaction histories exceed the model's active context.
+
+进一步看，论文的核心做法或实验重点可以概括为：They must therefore decide what to write down and what to read back, and when to do either.
+
+如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。
+
+## Why It Was Included
+- 来源：arXiv
+- 高亮主题命中：agent, benchmark, context
+- 检索关键词命中：agent memory
+- 来源分类信息：cs.LG, cs.AI, cs.CL
+
+## Abstract Snapshot
+Language-model agents increasingly tackle long-horizon tasks whose interaction histories exceed the model's active context. They must therefore decide what to write down and what to read back, and when to do either. Recent work has begun to use on-policy distillation (OPD) to make memory control part of the policy, relying on memory tools and compaction protocols that lie outside either model's pre-training. However, this weakens the distillation on both sides: the teacher cannot give useful guidance on an interface it has never used, and the student samples too few meaningful memory actions for that guidance to take effect. To study this problem, we introduce Coding Agent Memory Gym II (CAMG-II), a suite of long-horizon agentic-RL environments spanning Shop, Coding, AutoResearch, General, and Visual. Alongside each environment's native task interface, CAMG-II provides ordinary Bash access and an episode-persistent workspace, enabling the policy to create, revise, search, and reuse files as memory across context replacements. We also introduce Coding Agent Memory Post-Training II (CAMP-II), which trains a single policy jointly across all five environments with fully asynchronous OPD to learn this file-based memory behavior directly from a frozen teacher with a prior for file operations. On CAMG-II, CAMP-II obtains 2.97 times the gain of the strongest OPD baseline. The memory behavior CAMP-II learns generalizes to two external benchmarks, Terminal-Bench 2.1 and SWE-Bench Pro V2, with improved success rates.
+
+## Manual Notes
+<!-- MANUAL_NOTES_START -->
+在这里补充你的人工解读、和其他工作的关系、复现记录，或你认为最值得读的段落。
+<!-- MANUAL_NOTES_END -->
