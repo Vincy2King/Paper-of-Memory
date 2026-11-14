@@ -1,0 +1,39 @@
+# DISCERN: Preserve at Write, Resolve at Read for Persistent LLM-Agent Memory
+
+- Source: arXiv
+- Venue: N/A
+- Paper ID: 2611.15729v1
+- Published: 2026-11-11
+- Updated: 2026-11-11
+- Authors: Chirag Ahuja, Vladislav Tanov, Ramcharan Kakarla, Jonathan Taws
+- Tags: agent, benchmark, episodic, retrieval
+- Categories: cs.AI
+- URL: http://arxiv.org/abs/2611.15729v1
+
+## One-Sentence Summary
+Enterprise agents accumulate memory across dozens of sessions in which facts contradict, get superseded, and blur as similarly named entities collide in embedding space.
+
+## Introduction
+这篇论文被纳入仓库，是因为它和 `agent, benchmark, episodic, retrieval` 这些主题直接相关。
+
+它当前来自 `arXiv`。
+
+从摘要来看，作者主要关注的是：Enterprise agents accumulate memory across dozens of sessions in which facts contradict, get superseded, and blur as similarly named entities collide in embedding space.
+
+进一步看，论文的核心做法或实验重点可以概括为：The field treats this as a retrieval problem; we show it is not.
+
+如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。
+
+## Why It Was Included
+- 来源：arXiv
+- 高亮主题命中：agent, benchmark, episodic, retrieval
+- 检索关键词命中：agent memory, episodic memory, memory benchmark, memory benchmarks
+- 来源分类信息：cs.AI
+
+## Abstract Snapshot
+Enterprise agents accumulate memory across dozens of sessions in which facts contradict, get superseded, and blur as similarly named entities collide in embedding space. The field treats this as a retrieval problem; we show it is not. On ENT-310, a synthetic enterprise sales-agent memory benchmark of 310 queries (210 answerable, 100 unanswerable), a vanilla Retrieval-Augmented Generation (RAG) reader over a memory store already matches strong memory systems on the recall pillars. Retention and currency are near-saturated, roughly 0.93 to 0.98 for every competent system, so recall is essentially solved. What remains unsolved is resolution: which entity a query refers to, which time-state is current, and whether to commit an answer at all or decline when evidence is insufficient. We propose DISCERN (DISambiguation and Cross-session Episodic memoRy Navigation), an agent-memory framework built on a single rule: preserve at write, resolve at read. At write time DISCERN builds a strictly additive bi-temporal provenance graph that never merges confusable entities and never drops superseded values. At read time a zero-LLM tool surface drives an agentic loop that navigates this graph and commits exactly one of four gated terminal actions. A four-judge LLM-as-a-Judge council scores two axes: answer correctness on answerable questions, and the answer-versus-abstain decision as a classification problem. On ENT-310, DISCERN is the best-calibrated system on abstention (F1 0.924 versus at most 0.802 across eight baselines) and leads macro answer correctness under equal pillar weighting (0.861 versus 0.806 for the strongest baseline), a lead driven by entity resolution (0.800, where no baseline exceeds 0.40). Applied with zero tuning to the full LoCoMo corpus, the same pipeline again leads macro answer correctness (0.663 versus 0.638) and stays among the best-calibrated on false-premise abstention.
+
+## Manual Notes
+<!-- MANUAL_NOTES_START -->
+在这里补充你的人工解读、和其他工作的关系、复现记录，或你认为最值得读的段落。
+<!-- MANUAL_NOTES_END -->

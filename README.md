@@ -39,19 +39,29 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **1655**
+- Total tracked papers: **1665**
 - Last generated: **2026-11-14**
 
 ## Papers by Source
 
 - ACL Anthology: **24**
-- arXiv: **1485**
+- arXiv: **1495**
 - OpenReview: **146**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-11-12 | arXiv | [We Are What We Remember: Mental-State-Driven Memory for Long-Term Character Dialogue](content/papers/we-are-what-we-remember-mental-state-driven-memory-for-long-term-character-dialo.md) | agent, benchmark, context |
+| 2026-11-12 | arXiv | [HeMeR: Heterogeneous Memory Reconciliation for Embodied Agents via Structured KV Reuse](content/papers/hemer-heterogeneous-memory-reconciliation-for-embodied-agents-via-structured-kv-.md) | agent, context |
+| 2026-11-12 | arXiv | [Discovering Effective Agent Memory Designs through Program Evolution](content/papers/discovering-effective-agent-memory-designs-through-program-evolution.md) | agent, benchmark, conversation |
+| 2026-11-12 | arXiv | [Coding Agent Memory Post-Training II: Unlocking the Memory Potential of Pre-trained File Operations for Long-Horizon Tasks via On-Policy Distillation](content/papers/coding-agent-memory-post-training-ii-unlocking-the-memory-potential-of-pre-train.md) | agent, benchmark, context |
+| 2026-11-11 | arXiv | [MemCredit: From Relevance to Utility for Decision-Time Memory in Long-Horizon Web Agents](content/papers/memcredit-from-relevance-to-utility-for-decision-time-memory-in-long-horizon-web.md) | agent, compression, context |
+| 2026-11-11 | arXiv | [MIGRO: A Decoupled and Portable Long-Term Memory System for Language Models](content/papers/migro-a-decoupled-and-portable-long-term-memory-system-for-language-models.md) | context, long-term, retrieval |
+| 2026-11-11 | arXiv | [Incentive-Responsive Agents: A Principal-Agent Framework, Metric Suite, and Runtime Architecture for Long-Lived Personal AI Agents](content/papers/incentive-responsive-agents-a-principal-agent-framework-metric-suite-and-runtime.md) | agent, long-term, retrieval |
+| 2026-11-11 | arXiv | [DISCERN: Preserve at Write, Resolve at Read for Persistent LLM-Agent Memory](content/papers/discern-preserve-at-write-resolve-at-read-for-persistent-llm-agent-memory.md) | agent, benchmark, episodic |
+| 2026-11-11 | arXiv | [Can Agents Relive Past Experiences? Diagnosing Event-Affect Decoupling in Affective-Episodic Retrospection](content/papers/can-agents-relive-past-experiences-diagnosing-event-affect-decoupling-in-affecti.md) | agent, benchmark, episodic |
+| 2026-11-11 | arXiv | [Agentic Computational Algebra](content/papers/agentic-computational-algebra.md) | agent, benchmark |
 | 2026-11-10 | arXiv | [When Should Agents Remember? Falsification-Gated Self-Evolution for LLM Agents](content/papers/when-should-agents-remember-falsification-gated-self-evolution-for-llm-agents.md) | agent, benchmark, long-term |
 | 2026-11-10 | arXiv | [Seeing Without Seeing: A Methodological Review of Visual Mental Imagery Reconstruction from Brain Activity](content/papers/seeing-without-seeing-a-methodological-review-of-visual-mental-imagery-reconstru.md) | benchmark |
 | 2026-11-10 | arXiv | [Personalized Memory Rubrics: Learning What to Remember per User via Rubric-Guided Credit Assignment](content/papers/personalized-memory-rubrics-learning-what-to-remember-per-user-via-rubric-guided.md) | agent, benchmark |
@@ -62,16 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-11-09 | arXiv | [MIRIX-2.0: Multi-Agent Memory System](content/papers/mirix-2-0-multi-agent-memory-system.md) | agent, benchmark, episodic |
 | 2026-11-09 | arXiv | [Kwai Summary Attention V2 Technical Report](content/papers/kwai-summary-attention-v2-technical-report.md) | compression, context |
 | 2026-11-09 | arXiv | [HiVe-Mem: Interleaving Horizontal Memory Expansion and Vertical Evidence Composition for Multimodal Agents](content/papers/hive-mem-interleaving-horizontal-memory-expansion-and-vertical-evidence-composit.md) | agent, benchmark, long-term |
-| 2026-11-09 | arXiv | [Ender: Visual Scaffolding for Geometric Proof Comprehension](content/papers/ender-visual-scaffolding-for-geometric-proof-comprehension.md) | working memory |
-| 2026-11-09 | arXiv | [Correct Answers from Insufficient Histories: A Controlled Study of Agent Memory Evaluation](content/papers/correct-answers-from-insufficient-histories-a-controlled-study-of-agent-memory-e.md) | agent, context |
-| 2026-11-09 | arXiv | [Can LLM Agents Organize Their Own Memory?](content/papers/can-llm-agents-organize-their-own-memory.md) | agent |
-| 2026-11-09 | arXiv | [Agent-Guided Discovery of Exchange-Correlation Functionals with Physics-based Validation](content/papers/agent-guided-discovery-of-exchange-correlation-functionals-with-physics-based-va.md) | agent, context |
-| 2026-11-09 | arXiv | [A Life of Its Own: How Agentic AI Companions Are Configured, Experienced as Autonomous Others, and Held Accountable](content/papers/a-life-of-its-own-how-agentic-ai-companions-are-configured-experienced-as-autono.md) | agent, conversation |
-| 2026-11-08 | arXiv | [Review the Episodes, Refine the Lessons: Simple Memory Evolution for Embodied Agents](content/papers/review-the-episodes-refine-the-lessons-simple-memory-evolution-for-embodied-agen.md) | agent |
-| 2026-11-08 | arXiv | [One Assistant, Many Memories: Benchmarking Real-World Group Assistance When Recall Is Not Enough](content/papers/one-assistant-many-memories-benchmarking-real-world-group-assistance-when-recall.md) | agent, benchmark, context |
-| 2026-11-07 | arXiv | [TransMem: Transition-Aware Retrieval for Evolving Personal Memory](content/papers/transmem-transition-aware-retrieval-for-evolving-personal-memory.md) | agent, context, conversation |
-| 2026-11-07 | arXiv | [Self-Supervised Keyframe Discovery for Horizon-Invariant Behavior Cloning](content/papers/self-supervised-keyframe-discovery-for-horizon-invariant-behavior-cloning.md) | benchmark, context, long-term |
-| 2026-11-07 | arXiv | [REINS: A Self-Evolving Agent Harness for Real-Time Trajectory Planning](content/papers/reins-a-self-evolving-agent-harness-for-real-time-trajectory-planning.md) | agent, benchmark |
 
 ## Suggested GitHub Setup
 
