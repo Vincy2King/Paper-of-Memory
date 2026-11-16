@@ -1,5 +1,116 @@
 [
   {
+    "abstract": "Multi-agent LLM systems are built by fixing a cast of roles and then designing how the cast coordinates. Which agents should make up the group for a given task is left to the designer, and the same cast is reused for every task. Financial trading makes the cost of that choice visible: stocks trade differently, and the trading styles suited to one need not suit another. We study task-conditioned persona selection, composing the group from the characteristics of the task it will face, and instantiate it with FinPanel, an LLM multi-agent trading system in which a recruiter selects a panel of named trader personas for each stock from a direction-blind statistical sketch of how the stock trades, each persona gives an independent daily call in its own style, and a manager commits the trade after reading the panel's arguments and their desk-kept, hierarchical track records. Because nothing is returned to the traders, the panel stays the panel that was selected, and it can trade a new stock from an empty record. On eight US stocks over the out-of-knowledge year 2025, against three prior LLM trading agents re-implemented in the same framework and against rule-based, predictive and reinforcement-learning baselines, the selected panel is ahead of a fixed panel of the same size and of the prior agents run as their papers prescribe, with a shallower drawdown than buy-and-hold on every stock; it keeps its performance with no warm-up and with no record at all, whereas the memory-augmented agents' returns swing with their warm-up; and neither more seats nor the manager's reading of the arguments substitutes for selecting the right ones. Who is in the group is a design decision to be made per task, before how the group coordinates.",
+    "authors": [
+      "Boming Yang",
+      "Yuquan Wang",
+      "Jiaxian Guo",
+      "Yusuke Iwasawa",
+      "Yutaka Matsuo"
+    ],
+    "categories": [
+      "q-fin.TR",
+      "cs.AI"
+    ],
+    "id": "2611.18150v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Multi-agent LLM systems are built by fixing a cast of roles and then designing how the cast coordinates.\n\n进一步看，论文的核心做法或实验重点可以概括为：Which agents should make up the group for a given task is left to the designer, and the same cast is reused for every task.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory augmented",
+      "memory-augmented"
+    ],
+    "one_liner": "Multi-agent LLM systems are built by fixing a cast of roles and then designing how the cast coordinates.",
+    "published": "2026-11-13",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent\n- 检索关键词命中：memory augmented, memory-augmented\n- 来源分类信息：q-fin.TR, cs.AI",
+    "slug": "who-should-be-on-the-panel-task-conditioned-persona-selection-for-llm-trading-ag",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2611.18150v1",
+    "tags": [
+      "agent"
+    ],
+    "title": "Who Should Be on the Panel? Task-Conditioned Persona Selection for LLM Trading Agents",
+    "updated": "2026-11-13",
+    "url": "http://arxiv.org/abs/2611.18150v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Generative recommendation benefits from long interaction histories, but the cost of processing them directly grows with history length. We propose RecMem, a recurrent memory compression framework guided by three desiderata: space invariance, semantic fidelity, and lifelong evolvability. RecMem compresses historical segments into a fixed set of memory slots using a bifurcated encoder-decoder with shared lower layers and slot-wise forget-gated updates. Recommendation supervision trains the memory to preserve predictive information, while stream-consistency training aligns predictions from sequential and packed processing. By construction, the memory state and decoder context are independent of history length; under contraction and approximate semigroup consistency, we further derive a horizon-independent bound on the state discrepancy between these two processing orders. On MerRec, RecMem uses 16 memory slots and a 216-token decoder context, compared with 1,200 tokens for HSTU-1200, while retaining 87.9% of HSTU-1200's Recall@10 and 97.0% of its Recall@200. It outperforms PHSTU and the evaluated recent-only and retrieval baselines, and analyses of distant history show that archived interactions contribute predictive signal.",
+    "authors": [
+      "Haoyi Hu",
+      "Gaoyang Guo",
+      "Yunjia Xi",
+      "Wen Chen",
+      "Weiwen Liu",
+      "Jian Wu",
+      "Yuning Jiang",
+      "Weinan Zhang"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.IR"
+    ],
+    "id": "2611.17921v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `compression, context, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Generative recommendation benefits from long interaction histories, but the cost of processing them directly grows with history length.\n\n进一步看，论文的核心做法或实验重点可以概括为：We propose RecMem, a recurrent memory compression framework guided by three desiderata: space invariance, semantic fidelity, and lifelong evolvability.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory compression"
+    ],
+    "one_liner": "Generative recommendation benefits from long interaction histories, but the cost of processing them directly grows with history length.",
+    "published": "2026-11-13",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：compression, context, retrieval\n- 检索关键词命中：memory compression\n- 来源分类信息：cs.AI, cs.IR",
+    "slug": "recmem-recurrent-memory-compression-for-long-sequence-generative-recommendation",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2611.17921v1",
+    "tags": [
+      "compression",
+      "context",
+      "retrieval"
+    ],
+    "title": "RecMem: Recurrent Memory Compression for Long-Sequence Generative Recommendation",
+    "updated": "2026-11-13",
+    "url": "http://arxiv.org/abs/2611.17921v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Language models evolve, but the observations, revisions, and context accumulated through user interactions should remain usable. Each new model must be able to retrieve past evidence, track revisions, and add new observations. We present MIGRO, a decoupled long-term memory system that treats experience as a persistent state shared across successive language models. MIGRO follows a simple principle: preserve historical evidence exactly, organize it approximately, and decide what to retrieve only when the question is known. We call this asymmetric fidelity with deferred selectivity. A shared semantic index supports retrieval, while exact records retain observations and their historical relationships. Because models differ in vocabulary and tokenization, host-specific interfaces convert selected evidence into inputs the receiving model can use. Reversible encoding reduces archival storage while enabling exact recovery. The shared state and its access interfaces let successive hosts read and extend the accumulated experience. On matched LoCoMo states, MIGRO scores 7.3% higher and uses 99.3% less private memory than the strongest quality baseline. After handoff, continued writing retains 99.9% of full-history rebuilding quality by extending the inherited state. On million-token BEAM histories, MIGRO uses 57.5% less private storage on average than the most compact baseline. MIGRO combines high answer quality, continued memory growth across hosts, and low storage cost. Code is available at https://github.com/zOUMINGXI/MIGRO.",
+    "authors": [
+      "Mingxi Zou",
+      "Yinghui Xu",
+      "Jiaxiang Chen",
+      "Langzhang Liang",
+      "Wei Zhu",
+      "Peng Ye",
+      "Runkai Zhao",
+      "Ruoxi Jiang",
+      "Sijin Chen",
+      "Song Wang",
+      "Zhuo Wang",
+      "Lizhen Qu",
+      "Zenglin Xu"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2611.15315v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `context, long-term, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Language models evolve, but the observations, revisions, and context accumulated through user interactions should remain usable.\n\n进一步看，论文的核心做法或实验重点可以概括为：Each new model must be able to retrieve past evidence, track revisions, and add new observations.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "long-term memory"
+    ],
+    "one_liner": "Language models evolve, but the observations, revisions, and context accumulated through user interactions should remain usable.",
+    "published": "2026-11-11",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：context, long-term, retrieval\n- 检索关键词命中：long-term memory\n- 来源分类信息：cs.AI",
+    "slug": "migro-a-decoupled-and-portable-long-term-memory-system-for-language-models",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2611.15315v2",
+    "tags": [
+      "context",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "MIGRO: A Decoupled and Portable Long-Term Memory System for Language Models",
+    "updated": "2026-11-13",
+    "url": "http://arxiv.org/abs/2611.15315v2",
+    "venue": ""
+  },
+  {
     "abstract": "Shared history in human dialogue is not merely a repository of facts, but the foundation of evolving relationships and mutual understanding. However, mainstream conversational memory systems rely on passive semantic similarity over external fact stores, frequently retrieving topically similar records while missing relationally pivotal experiences. Inspired by cognitive psychology's Self-Memory System (SMS), we propose MindMem, a mental-state-driven memory framework that asynchronously consolidates shared experiences into source-linked mental states of the character, the user, and their relationship. At each turn, a specialized mental-state reasoner (Mind) contextualizes these persistent states to anticipate latent user needs, form proactive intentions, and recover supporting episodic evidence that surface-level matching overlooks. To evaluate history-sensitive adaptation beyond factual recall, we introduce MemReal-Bench, a longitudinal benchmark grounded in month-long real-user interactions across dyadic and group scenes. By pairing Direct Question Answering (DQA) with Situated Memory Realization (SMR), it tests whether agents bridge the gap between knowing past facts and naturally using shared history, world rules, and relational trajectories. On MemReal-Bench, MindMem reaches 59.03% SMR and 82.58% DQA, exceeding the strongest memory baseline by 24.19 and 9.19 percentage points, respectively, and outperforming oracle target-memory injection on SMR. Code and dataset are available at https://github.com/jiazhicheng7-ctrl/MindMem.",
     "authors": [
       "Zhicheng Jia",

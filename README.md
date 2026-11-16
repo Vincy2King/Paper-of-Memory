@@ -39,19 +39,22 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **1665**
+- Total tracked papers: **1668**
 - Last generated: **2026-11-16**
 
 ## Papers by Source
 
 - ACL Anthology: **24**
-- arXiv: **1495**
+- arXiv: **1498**
 - OpenReview: **146**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-11-13 | arXiv | [Who Should Be on the Panel? Task-Conditioned Persona Selection for LLM Trading Agents](content/papers/who-should-be-on-the-panel-task-conditioned-persona-selection-for-llm-trading-ag.md) | agent |
+| 2026-11-13 | arXiv | [RecMem: Recurrent Memory Compression for Long-Sequence Generative Recommendation](content/papers/recmem-recurrent-memory-compression-for-long-sequence-generative-recommendation.md) | compression, context, retrieval |
+| 2026-11-13 | arXiv | [MIGRO: A Decoupled and Portable Long-Term Memory System for Language Models](content/papers/migro-a-decoupled-and-portable-long-term-memory-system-for-language-models.md) | context, long-term, retrieval |
 | 2026-11-12 | arXiv | [We Are What We Remember: Mental-State-Driven Memory for Long-Term Character Dialogue](content/papers/we-are-what-we-remember-mental-state-driven-memory-for-long-term-character-dialo.md) | agent, benchmark, context |
 | 2026-11-12 | arXiv | [HeMeR: Heterogeneous Memory Reconciliation for Embodied Agents via Structured KV Reuse](content/papers/hemer-heterogeneous-memory-reconciliation-for-embodied-agents-via-structured-kv-.md) | agent, context |
 | 2026-11-12 | arXiv | [Discovering Effective Agent Memory Designs through Program Evolution](content/papers/discovering-effective-agent-memory-designs-through-program-evolution.md) | agent, benchmark, conversation |
@@ -69,9 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-11-10 | arXiv | [Broad-Persistent Advising in Interactive Reinforcement Learning via Latent State Encoding](content/papers/broad-persistent-advising-in-interactive-reinforcement-learning-via-latent-state.md) | persistent memory |
 | 2026-11-10 | arXiv | [BioMem: Agentic Memory for Biomedical LLM Agents](content/papers/biomem-agentic-memory-for-biomedical-llm-agents.md) | agent, benchmark, context |
 | 2026-11-09 | arXiv | [TrajLift: Lifting Memory Recall Trajectories with Latency-Modulated Heat Diffusion](content/papers/trajlift-lifting-memory-recall-trajectories-with-latency-modulated-heat-diffusio.md) | benchmark, context, retrieval |
-| 2026-11-09 | arXiv | [MIRIX-2.0: Multi-Agent Memory System](content/papers/mirix-2-0-multi-agent-memory-system.md) | agent, benchmark, episodic |
-| 2026-11-09 | arXiv | [Kwai Summary Attention V2 Technical Report](content/papers/kwai-summary-attention-v2-technical-report.md) | compression, context |
-| 2026-11-09 | arXiv | [HiVe-Mem: Interleaving Horizontal Memory Expansion and Vertical Evidence Composition for Multimodal Agents](content/papers/hive-mem-interleaving-horizontal-memory-expansion-and-vertical-evidence-composit.md) | agent, benchmark, long-term |
 
 ## Suggested GitHub Setup
 
