@@ -27,7 +27,7 @@ Agentic memory systems give LLMs persistent memory by extracting experience into
 ## Why It Was Included
 - 来源：arXiv
 - 高亮主题命中：agent, conversation, episodic, long-term
-- 检索关键词命中：agent memory
+- 检索关键词命中：agent memory, long-term memory, persistent memory
 - 来源分类信息：cs.CL
 
 ## Abstract Snapshot
