@@ -39,19 +39,25 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **1668**
-- Last generated: **2026-11-16**
+- Total tracked papers: **1674**
+- Last generated: **2026-11-17**
 
 ## Papers by Source
 
 - ACL Anthology: **24**
-- arXiv: **1498**
+- arXiv: **1504**
 - OpenReview: **146**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-11-16 | arXiv | [MemDoctor: Stage-wise Error Attribution and Repair for MLLM Agent Memory](content/papers/memdoctor-stage-wise-error-attribution-and-repair-for-mllm-agent-memory.md) | agent |
+| 2026-11-16 | arXiv | [Instant Weight-Space Consolidation for Long-Term Memory in LLMs](content/papers/instant-weight-space-consolidation-for-long-term-memory-in-llms.md) | agent, conversation, episodic |
+| 2026-11-15 | arXiv | [When Facts Change, Which Decisions Break? Dependency-Aware Context Graphs for Agents](content/papers/when-facts-change-which-decisions-break-dependency-aware-context-graphs-for-agen.md) | agent, benchmark, context |
+| 2026-11-15 | arXiv | [StaleBench: Isolating Stale Retrieval in Agent Memory, and Pricing the Fix](content/papers/stalebench-isolating-stale-retrieval-in-agent-memory-and-pricing-the-fix.md) | agent, retrieval |
+| 2026-11-15 | arXiv | [HEAMS: Holistic Evaluation of Agent Memory Systems](content/papers/heams-holistic-evaluation-of-agent-memory-systems.md) | agent, benchmark, context |
+| 2026-11-14 | arXiv | [Omni-Workspace: Benchmarking Omni-Modal AI Assistants on Multimodal Workspace Tasks](content/papers/omni-workspace-benchmarking-omni-modal-ai-assistants-on-multimodal-workspace-tas.md) | agent, benchmark, context |
 | 2026-11-13 | arXiv | [Who Should Be on the Panel? Task-Conditioned Persona Selection for LLM Trading Agents](content/papers/who-should-be-on-the-panel-task-conditioned-persona-selection-for-llm-trading-ag.md) | agent |
 | 2026-11-13 | arXiv | [RecMem: Recurrent Memory Compression for Long-Sequence Generative Recommendation](content/papers/recmem-recurrent-memory-compression-for-long-sequence-generative-recommendation.md) | compression, context, retrieval |
 | 2026-11-13 | arXiv | [MIGRO: A Decoupled and Portable Long-Term Memory System for Language Models](content/papers/migro-a-decoupled-and-portable-long-term-memory-system-for-language-models.md) | context, long-term, retrieval |
@@ -66,12 +72,6 @@ python3 scripts/update_papers.py --build-only
 | 2026-11-11 | arXiv | [Can Agents Relive Past Experiences? Diagnosing Event-Affect Decoupling in Affective-Episodic Retrospection](content/papers/can-agents-relive-past-experiences-diagnosing-event-affect-decoupling-in-affecti.md) | agent, benchmark, episodic |
 | 2026-11-11 | arXiv | [Agentic Computational Algebra](content/papers/agentic-computational-algebra.md) | agent, benchmark |
 | 2026-11-10 | arXiv | [When Should Agents Remember? Falsification-Gated Self-Evolution for LLM Agents](content/papers/when-should-agents-remember-falsification-gated-self-evolution-for-llm-agents.md) | agent, benchmark, long-term |
-| 2026-11-10 | arXiv | [Seeing Without Seeing: A Methodological Review of Visual Mental Imagery Reconstruction from Brain Activity](content/papers/seeing-without-seeing-a-methodological-review-of-visual-mental-imagery-reconstru.md) | benchmark |
-| 2026-11-10 | arXiv | [Personalized Memory Rubrics: Learning What to Remember per User via Rubric-Guided Credit Assignment](content/papers/personalized-memory-rubrics-learning-what-to-remember-per-user-via-rubric-guided.md) | agent, benchmark |
-| 2026-11-10 | arXiv | [Coding Agent Memory Post-Training II: Unlocking the Memory Potential of Pre-trained File Operations for Long-Horizon Tasks via On-Policy Distillation](content/papers/coding-agent-memory-post-training-ii-unlocking-the-memory-potential-of-pre-train.md) | agent, benchmark, context |
-| 2026-11-10 | arXiv | [Broad-Persistent Advising in Interactive Reinforcement Learning via Latent State Encoding](content/papers/broad-persistent-advising-in-interactive-reinforcement-learning-via-latent-state.md) | persistent memory |
-| 2026-11-10 | arXiv | [BioMem: Agentic Memory for Biomedical LLM Agents](content/papers/biomem-agentic-memory-for-biomedical-llm-agents.md) | agent, benchmark, context |
-| 2026-11-09 | arXiv | [TrajLift: Lifting Memory Recall Trajectories with Latency-Modulated Heat Diffusion](content/papers/trajlift-lifting-memory-recall-trajectories-with-latency-modulated-heat-diffusio.md) | benchmark, context, retrieval |
 
 ## Suggested GitHub Setup
 

@@ -1,5 +1,204 @@
 [
   {
+    "abstract": "Multimodal large language models (MLLMs) now assist users across sessions of images and text, carried by an external memory of what was said and shown. When such an assistant answers wrongly, the failure usually began earlier, in how a record was written, updated or retrieved, and the answer alone does not say where. We formalize multimodal memory as four stages, Write, Update, Retrieve and Answer, and define nine error types across them. A stage-resolved analysis on Mem-Gallery traces most failures to a source stage, and most of those lie before the answer. Injecting known errors against fact-preserving control edits, we then follow each tainted record downstream. Early errors survive to the answer as apparent evidence, and hurt most when no other record holds the fact. A diagnosis that trusts the quoted evidence therefore blames the stage where the error surfaces, not the one where it began. We propose MemDoctor, in which the MLLM that built the memory diagnoses its own failures. It traces each needed fact backward through the four stages, accepts a diagnosis only when the cited evidence is found in memory, and repairs that stage before answering again. On a 4B backbone, MemDoctor improves accuracy on both Mem-Gallery and MemLens, outperforming all evaluated 8B baselines, and the same loop also improves MuRAG and A-Mem.",
+    "authors": [
+      "Ruiyang Jiang",
+      "Xinyang Liao",
+      "Weikai Huang",
+      "Yuqi Niu",
+      "Junjie Zhou",
+      "Yubin Zheng"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "id": "2611.21019v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Multimodal large language models (MLLMs) now assist users across sessions of images and text, carried by an external memory of what was said and shown.\n\n进一步看，论文的核心做法或实验重点可以概括为：When such an assistant answers wrongly, the failure usually began earlier, in how a record was written, updated or retrieved, and the answer alone does not say where.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "Multimodal large language models (MLLMs) now assist users across sessions of images and text, carried by an external memory of what was said and shown.",
+    "published": "2026-11-16",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.CL",
+    "slug": "memdoctor-stage-wise-error-attribution-and-repair-for-mllm-agent-memory",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2611.21019v1",
+    "tags": [
+      "agent"
+    ],
+    "title": "MemDoctor: Stage-wise Error Attribution and Repair for MLLM Agent Memory",
+    "updated": "2026-11-16",
+    "url": "http://arxiv.org/abs/2611.21019v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Agentic memory systems give LLMs persistent memory by extracting experience into text and retrieving it at query time, but the model itself does not evolve: however many interactions it has had, it starts each query the same. Extraction errors compound, implicit cross-session patterns that no single fragment states cannot be surfaced, and the construction cost grows with every conversation. Fine-tuning on past interactions does change the weights, but requires backpropagation at serving time and degrades on long histories. We introduce CLAM (Carried Latent Adapter Memory), which combines the strengths of both: a recurrent hypernetwork performs parametric consolidation, compiling a stream of session activations into a low-rank adapter in a single forward pass with no gradient steps and no language-model generation calls, while a complementary episodic buffer supplies verbatim detail at inference. A gated latent state carries knowledge across sessions in fixed size, so the parametric memory accumulates without growing. On LoCoMo and LongMemEval-S across three open models (2-7B parameters), CLAM leads all agentic baselines by 1-45 points and all gradient-based parametric methods by 10-45 points, while requiring zero generative LLM calls, zero gradient steps, and 3-151x less wall-clock time than extraction systems to build its memory. The two channels are complementary: the consolidated adapter adds 12-15 accuracy points when the episodic buffer misses the gold evidence, and still adds 4-5 points even with an oracle buffer.",
+    "authors": [
+      "Manan Suri",
+      "Dinesh Manocha"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "id": "2611.20759v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, conversation, episodic, long-term` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Agentic memory systems give LLMs persistent memory by extracting experience into text and retrieving it at query time, but the model itself does not evolve: however many interactions it has had, it starts each query...\n\n进一步看，论文的核心做法或实验重点可以概括为：Extraction errors compound, implicit cross-session patterns that no single fragment states cannot be surfaced, and the construction cost grows with every conversation.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "Agentic memory systems give LLMs persistent memory by extracting experience into text and retrieving it at query time, but the model itself does not evolve: however many...",
+    "published": "2026-11-16",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, conversation, episodic, long-term\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.CL",
+    "slug": "instant-weight-space-consolidation-for-long-term-memory-in-llms",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2611.20759v1",
+    "tags": [
+      "agent",
+      "conversation",
+      "episodic",
+      "long-term"
+    ],
+    "title": "Instant Weight-Space Consolidation for Long-Term Memory in LLMs",
+    "updated": "2026-11-16",
+    "url": "http://arxiv.org/abs/2611.20759v1",
+    "venue": ""
+  },
+  {
+    "abstract": "When an observed fact changes, an agent must identify and repair the decisions that depend on it while preserving unaffected outputs. We investigate the reliability-cost trade-off of field-level dependency graphs extracted from actual agent read traces. A controlled benchmark spans three executable workflow domains and four successive updates, with independent imperative and expression-based references. Across 120 workflows, two models and two repeated runs, we compare full recomputation, rolling summary memory, lexical retrieval, trace-extracted dependencies and verified dependency upper bounds. Trace-derived graphs reduce reviewed decisions and estimated total cost, but omitted alternative supports and missing repair context can reduce complete-plan correctness. Paired ablations isolate the effects of edge deletion, spurious edges, transitive propagation and context scope. An exploratory enhancement supplies the existing record ID/field directory during extraction without revealing unread values or reference edges. We evaluate this enhancement on 60 fresh workflows with two repeats per model. On this fresh set, the directory-aware graph matches observed full-context complete-plan correctness for gpt-6.1-sol (100%) with an estimated 4.0% total-cost reduction, but reaches only 84.8% versus 99.6% for gpt-6-luna. The results distinguish potential dependency impact from actual decision invalidity and show why selective repair must be evaluated with both executable correctness and full memory-processing cost. The evidence concerns explicit procedural workflows; broad real-world agent-memory generalization remains untested.",
+    "authors": [
+      "Paul Deepakraj Retinraj"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2611.19859v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：When an observed fact changes, an agent must identify and repair the decisions that depend on it while preserving unaffected outputs.\n\n进一步看，论文的核心做法或实验重点可以概括为：We investigate the reliability-cost trade-off of field-level dependency graphs extracted from actual agent read traces.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "When an observed fact changes, an agent must identify and repair the decisions that depend on it while preserving unaffected outputs.",
+    "published": "2026-11-15",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context, retrieval\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.AI",
+    "slug": "when-facts-change-which-decisions-break-dependency-aware-context-graphs-for-agen",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2611.19859v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "retrieval"
+    ],
+    "title": "When Facts Change, Which Decisions Break? Dependency-Aware Context Graphs for Agents",
+    "updated": "2026-11-15",
+    "url": "http://arxiv.org/abs/2611.19859v1",
+    "venue": ""
+  },
+  {
+    "abstract": "An agent that stores facts over time eventually stores several versions of the same fact. Asked a value-agnostic question - \"which team does X play for now?\" - a similarity retriever cannot prefer the current version, because every version matches the entity the query names. StaleBench isolates this stale-retrieval failure on 892 real updating facts, with currency labels from the source (Wikidata validity years via TempLAMA), never from a retrieval score. Our central result is that retrieval metrics can rank memory policies backwards: a retention policy and its retain-everything control return the identical statement at rank 1 for every test query, yet differ by 29.5 and 65.6 points in reader accuracy on two readers when no date is shown. Contamination@5, the metric we add, ranks them correctly where current@1 and current@5 do not. Withdrawing the lexical anchor that statements carry costs deployed keying mechanisms tens of points of freshness; entity resolution on both the write path and the query recovers most of the loss. Three deployed systems (Mem0, Graphiti, LangMem) and a reimplemented ERASE each handle supersession differently, and no single scoring convention describes all four. We release the data, a frozen evaluator, and reference baselines.",
+    "authors": [
+      "S M Mahbub Murshed"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.IR"
+    ],
+    "id": "2611.19752v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：An agent that stores facts over time eventually stores several versions of the same fact.\n\n进一步看，论文的核心做法或实验重点可以概括为：Asked a value-agnostic question - \"which team does X play for now?\" - a similarity retriever cannot prefer the current version, because every version matches the entity the query names.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "An agent that stores facts over time eventually stores several versions of the same fact.",
+    "published": "2026-11-15",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, retrieval\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.CL, cs.AI, cs.IR",
+    "slug": "stalebench-isolating-stale-retrieval-in-agent-memory-and-pricing-the-fix",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2611.19752v1",
+    "tags": [
+      "agent",
+      "retrieval"
+    ],
+    "title": "StaleBench: Isolating Stale Retrieval in Agent Memory, and Pricing the Fix",
+    "updated": "2026-11-15",
+    "url": "http://arxiv.org/abs/2611.19752v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Memory systems allow AI agents to persist information across interactions, making them more personalized and more capable on long-horizon tasks. This persistence introduces new risks: stored information can be disclosed in inappropriate contexts, resist correction or deletion, be retained beyond what users desire, or be poisoned to influence later agent behaviour. Yet memory systems are typically evaluated on task performance and efficiency alone. We argue that a memory system should instead be understood as the custodian of its user's persistent information, with responsibilities that extend beyond helping an agent complete its tasks, and that it should be evaluated holistically against all such responsibilities. We present Holistic Evaluation of Agent Memory Systems (HEAMS), an open-source framework for evaluating agent memory systems in this way. First, we state the responsibilities of agent memory systems as explicit behavioural desiderata spanning performance, efficiency, security, privacy, and user sovereignty. Second, we assemble a benchmark suite that covers these desiderata and acknowledge the gaps that remain. Third, we develop MilaMem, a prototype memory system, and a governance layer that can wrap any memory system, enabling controlled study of memory system design choices. Fourth, we compare memory systems across the full HEAMS benchmark suite. We find that no memory system leads every performance benchmark, and strong performance scores may coexist with poor privacy, user-sovereignty, and security scores. Governance strongly influences results: recall policies can reduce inappropriate disclosure at a cost in helpfulness, while both recall and retention policies improve poisoning resistance. Performance and efficiency benchmarks alone therefore cannot reveal how well a memory system meets its responsibilities. Code: https://github.com/milatechtransfer/heams",
+    "authors": [
+      "Chirag Goel",
+      "Jacob Lavoie",
+      "Amirhossein Naghshzan",
+      "Jordan Bannister",
+      "Marzia Nouri",
+      "Mehar Bhatia",
+      "Matt Harris",
+      "Siva Reddy",
+      "Arsène Fansi Tchango",
+      "Gaétan Marceau Caron"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.CL",
+      "cs.CR"
+    ],
+    "id": "2611.20144v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Memory systems allow AI agents to persist information across interactions, making them more personalized and more capable on long-horizon tasks.\n\n进一步看，论文的核心做法或实验重点可以概括为：This persistence introduces new risks: stored information can be disclosed in inappropriate contexts, resist correction or deletion, be retained beyond what users desire, or be poisoned to influence later agent...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "Memory systems allow AI agents to persist information across interactions, making them more personalized and more capable on long-horizon tasks.",
+    "published": "2026-11-15",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.AI, cs.CL, cs.CR",
+    "slug": "heams-holistic-evaluation-of-agent-memory-systems",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2611.20144v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context"
+    ],
+    "title": "HEAMS: Holistic Evaluation of Agent Memory Systems",
+    "updated": "2026-11-15",
+    "url": "http://arxiv.org/abs/2611.20144v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Omni-modal agents are expected to move beyond multimodal understanding toward completing complex tasks in realistic multimodal environments. In these settings, information is distributed across heterogeneous files and modalities, with cross-file and cross-modal dependencies requiring agents to continually coordinate perception, reasoning, and tool use as newly gathered evidence informs subsequent actions. However, existing omni-modal benchmarks primarily focus on multimodal perception and understanding, leaving complex task completion through sustained interaction with multimodal workspaces underexplored. We introduce Omni-Workspace, a benchmark comprising 380 deep-research-style tasks across four multimodal workspace types and two difficulty levels. These tasks require agents to inspect and process workspace files, retrieve external information when needed, integrate evidence across files and modalities, and produce artifacts satisfying explicit requirements. Evaluating 18 representative models reveals limitations in long-horizon multimodal workspace execution, with the best model scoring only 65.93 on average. Further analysis identifies multimodal context inflation and task-state drift as recurring challenges. Motivated by these findings, we further propose OmniFocus, a lightweight approach combining multimodal working-memory management with explicit task-state tracking to improve performance and efficiency. Omni-Workspace advances the evaluation and development of omni-modal agents toward autonomous completion of complex tasks in multimodal workspaces.",
+    "authors": [
+      "Yuhao Wang",
+      "Yucheng Zhao",
+      "Yiran Zhong",
+      "Feida Zhu",
+      "Hongcheng Liu",
+      "Qichao Wang",
+      "Ming Ma",
+      "Yu Wang"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "id": "2611.19202v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Omni-modal agents are expected to move beyond multimodal understanding toward completing complex tasks in realistic multimodal environments.\n\n进一步看，论文的核心做法或实验重点可以概括为：In these settings, information is distributed across heterogeneous files and modalities, with cross-file and cross-modal dependencies requiring agents to continually coordinate perception, reasoning, and tool use as...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "working memory"
+    ],
+    "one_liner": "Omni-modal agents are expected to move beyond multimodal understanding toward completing complex tasks in realistic multimodal environments.",
+    "published": "2026-11-14",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context\n- 检索关键词命中：working memory\n- 来源分类信息：cs.CL",
+    "slug": "omni-workspace-benchmarking-omni-modal-ai-assistants-on-multimodal-workspace-tas",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2611.19202v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context"
+    ],
+    "title": "Omni-Workspace: Benchmarking Omni-Modal AI Assistants on Multimodal Workspace Tasks",
+    "updated": "2026-11-14",
+    "url": "http://arxiv.org/abs/2611.19202v1",
+    "venue": ""
+  },
+  {
     "abstract": "Multi-agent LLM systems are built by fixing a cast of roles and then designing how the cast coordinates. Which agents should make up the group for a given task is left to the designer, and the same cast is reused for every task. Financial trading makes the cost of that choice visible: stocks trade differently, and the trading styles suited to one need not suit another. We study task-conditioned persona selection, composing the group from the characteristics of the task it will face, and instantiate it with FinPanel, an LLM multi-agent trading system in which a recruiter selects a panel of named trader personas for each stock from a direction-blind statistical sketch of how the stock trades, each persona gives an independent daily call in its own style, and a manager commits the trade after reading the panel's arguments and their desk-kept, hierarchical track records. Because nothing is returned to the traders, the panel stays the panel that was selected, and it can trade a new stock from an empty record. On eight US stocks over the out-of-knowledge year 2025, against three prior LLM trading agents re-implemented in the same framework and against rule-based, predictive and reinforcement-learning baselines, the selected panel is ahead of a fixed panel of the same size and of the prior agents run as their papers prescribe, with a shallower drawdown than buy-and-hold on every stock; it keeps its performance with no warm-up and with no record at all, whereas the memory-augmented agents' returns swing with their warm-up; and neither more seats nor the manager's reading of the arguments substitutes for selecting the right ones. Who is in the group is a design decision to be made per task, before how the group coordinates.",
     "authors": [
       "Boming Yang",
