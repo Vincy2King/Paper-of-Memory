@@ -39,39 +39,39 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **1683**
+- Total tracked papers: **1701**
 - Last generated: **2026-11-18**
 
 ## Papers by Source
 
 - ACL Anthology: **24**
-- arXiv: **1513**
+- arXiv: **1531**
 - OpenReview: **146**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-11-17 | arXiv | [Variance Restoration over Covariance Rank: Memory-Budgeted Analytic Continual Learning](content/papers/variance-restoration-over-covariance-rank-memory-budgeted-analytic-continual-lea.md) | benchmark |
+| 2026-11-17 | arXiv | [Surfacing Disagreement Beats Resolving It: A Gated Ablation Study of Provenance-Weighted Memory for Multi-Agent Debate](content/papers/surfacing-disagreement-beats-resolving-it-a-gated-ablation-study-of-provenance-w.md) | agent, retrieval |
+| 2026-11-17 | arXiv | [RegimeCouncil: Paired-Evidence Routing For Memory Conflict Governance In LLM Agents](content/papers/regimecouncil-paired-evidence-routing-for-memory-conflict-governance-in-llm-agen.md) | agent, long-term |
+| 2026-11-17 | arXiv | [RAG in a Trenchcoat: When Minimal Memory Is Enough for Agentic Systems, and When It Isn't](content/papers/rag-in-a-trenchcoat-when-minimal-memory-is-enough-for-agentic-systems-and-when-i.md) | agent, benchmark, retrieval |
+| 2026-11-17 | arXiv | [PhysScope: Agentic Multimodal Physics Reasoning with Grounded Visual Memory](content/papers/physscope-agentic-multimodal-physics-reasoning-with-grounded-visual-memory.md) | agent, benchmark |
+| 2026-11-17 | arXiv | [Network-Exposed Configuration Attacks on LLM-Controlled Social Robots](content/papers/network-exposed-configuration-attacks-on-llm-controlled-social-robots.md) | conversation |
+| 2026-11-17 | arXiv | [Natural Language Programming: Rethinking Language, Memory, and Cognition in the Era of Generative AI](content/papers/natural-language-programming-rethinking-language-memory-and-cognition-in-the-era.md) | conversation, episodic |
+| 2026-11-17 | arXiv | [Multi-Agent Memory Inconsistency: Where Factual Conflicts Disappear in LLM Agents](content/papers/multi-agent-memory-inconsistency-where-factual-conflicts-disappear-in-llm-agents.md) | agent, benchmark, context |
+| 2026-11-17 | arXiv | [LMMR: Learned Multigranular Memory Retrieval for Small Language Model Agents](content/papers/lmmr-learned-multigranular-memory-retrieval-for-small-language-model-agents.md) | agent, retrieval |
+| 2026-11-17 | arXiv | [Harnesses That Improve Themselves: A Unifying Framework for Self-Improving Agent Harnesses](content/papers/harnesses-that-improve-themselves-a-unifying-framework-for-self-improving-agent-.md) | agent, benchmark, context |
+| 2026-11-17 | arXiv | [GuardAgent: A Memory-Augmented Agentic Framework for Adaptive Detection of Adversarial Promotions in LLM-Based Recommendation](content/papers/guardagent-a-memory-augmented-agentic-framework-for-adaptive-detection-of-advers.md) | agent |
+| 2026-11-17 | arXiv | [EvoDisco: Strategy Discovery for Evolving Agent Memory](content/papers/evodisco-strategy-discovery-for-evolving-agent-memory.md) | agent, retrieval |
+| 2026-11-17 | arXiv | [Déjà View: A Shared Working-Memory Model for Visual Tasks](content/papers/deja-view-a-shared-working-memory-model-for-visual-tasks.md) | working memory |
+| 2026-11-17 | arXiv | [Colombo: A Frontier-to-Frontier Autoresearch System for Oracle-Based Optimization](content/papers/colombo-a-frontier-to-frontier-autoresearch-system-for-oracle-based-optimization.md) | long-term |
+| 2026-11-17 | arXiv | [A single inference process underlies the behavior and neural circuits of working memory](content/papers/a-single-inference-process-underlies-the-behavior-and-neural-circuits-of-working.md) | working memory |
 | 2026-11-16 | arXiv | [We Are What We Remember: Mental-State-Driven Memory for Long-Term Character Dialogue](content/papers/we-are-what-we-remember-mental-state-driven-memory-for-long-term-character-dialo.md) | agent, benchmark, context |
 | 2026-11-16 | arXiv | [Memadapter: Counterfactual Adaptation Against Memory-induced Sycophancy](content/papers/memadapter-counterfactual-adaptation-against-memory-induced-sycophancy.md) | agent, benchmark, context |
 | 2026-11-16 | arXiv | [MemDoctor: Stage-wise Error Attribution and Repair for MLLM Agent Memory](content/papers/memdoctor-stage-wise-error-attribution-and-repair-for-mllm-agent-memory.md) | agent |
-| 2026-11-16 | arXiv | [Jetriever: Shifting Agent Memory Retrieval from Similarity to Utility](content/papers/jetriever-shifting-agent-memory-retrieval-from-similarity-to-utility.md) | agent, retrieval |
-| 2026-11-16 | arXiv | [Instant Weight-Space Consolidation for Long-Term Memory in LLMs](content/papers/instant-weight-space-consolidation-for-long-term-memory-in-llms.md) | agent, conversation, episodic |
-| 2026-11-15 | arXiv | [When Facts Change, Which Decisions Break? Dependency-Aware Context Graphs for Agents](content/papers/when-facts-change-which-decisions-break-dependency-aware-context-graphs-for-agen.md) | agent, benchmark, context |
-| 2026-11-15 | arXiv | [StaleBench: Isolating Stale Retrieval in Agent Memory, and Pricing the Fix](content/papers/stalebench-isolating-stale-retrieval-in-agent-memory-and-pricing-the-fix.md) | agent, retrieval |
-| 2026-11-15 | arXiv | [Remember, Replay, Adapt: Learning from Past Experience in Online Vision-and-Language Navigation](content/papers/remember-replay-adapt-learning-from-past-experience-in-online-vision-and-languag.md) | benchmark, episodic |
-| 2026-11-15 | arXiv | [MINDSET: Energy-based Memory Evolution for Long Conversational Agents](content/papers/mindset-energy-based-memory-evolution-for-long-conversational-agents.md) | agent, context, conversation |
-| 2026-11-15 | arXiv | [HEAMS: Holistic Evaluation of Agent Memory Systems](content/papers/heams-holistic-evaluation-of-agent-memory-systems.md) | agent, benchmark, context |
-| 2026-11-14 | arXiv | [What Moves a LoCoMo Score? Memory Context, Answer Prompts and Judges](content/papers/what-moves-a-locomo-score-memory-context-answer-prompts-and-judges.md) | agent, benchmark, context |
-| 2026-11-14 | arXiv | [Personalized Memory Rubrics: Learning What to Remember per User via Rubric-Guided Credit Assignment](content/papers/personalized-memory-rubrics-learning-what-to-remember-per-user-via-rubric-guided.md) | agent, benchmark |
-| 2026-11-14 | arXiv | [Omni-Workspace: Benchmarking Omni-Modal AI Assistants on Multimodal Workspace Tasks](content/papers/omni-workspace-benchmarking-omni-modal-ai-assistants-on-multimodal-workspace-tas.md) | agent, benchmark, context |
-| 2026-11-14 | arXiv | [B2G-Agent: An LLM-Based Multi-Agent Tool for End-to-End Building-Grid Interactions](content/papers/b2g-agent-an-llm-based-multi-agent-tool-for-end-to-end-building-grid-interaction.md) | agent, retrieval |
-| 2026-11-13 | arXiv | [Who Should Be on the Panel? Task-Conditioned Persona Selection for LLM Trading Agents](content/papers/who-should-be-on-the-panel-task-conditioned-persona-selection-for-llm-trading-ag.md) | agent |
-| 2026-11-13 | arXiv | [RecMem: Recurrent Memory Compression for Long-Sequence Generative Recommendation](content/papers/recmem-recurrent-memory-compression-for-long-sequence-generative-recommendation.md) | compression, context, retrieval |
-| 2026-11-13 | arXiv | [MIGRO: A Decoupled and Portable Long-Term Memory System for Language Models](content/papers/migro-a-decoupled-and-portable-long-term-memory-system-for-language-models.md) | context, long-term, retrieval |
-| 2026-11-13 | arXiv | [Cheap Retrieval and Observation Credit Assignment from One Quantity: The Value of Information](content/papers/cheap-retrieval-and-observation-credit-assignment-from-one-quantity-the-value-of.md) | retrieval |
-| 2026-11-12 | arXiv | [We Are What We Remember: Mental-State-Driven Memory for Long-Term Character Dialogue](content/papers/we-are-what-we-remember-mental-state-driven-memory-for-long-term-character-dialo.md) | agent, benchmark, context |
-| 2026-11-12 | arXiv | [HeMeR: Heterogeneous Memory Reconciliation for Embodied Agents via Structured KV Reuse](content/papers/hemer-heterogeneous-memory-reconciliation-for-embodied-agents-via-structured-kv-.md) | agent, context |
+| 2026-11-16 | arXiv | [KVUse: Reusable-KV User Memory for Efficient LLM Recommenders](content/papers/kvuse-reusable-kv-user-memory-for-efficient-llm-recommenders.md) | context |
+| 2026-11-16 | arXiv | [KV-LTM: Persistent Per-Session KV Caches as Long-Term Memory for Personal Assistants](content/papers/kv-ltm-persistent-per-session-kv-caches-as-long-term-memory-for-personal-assista.md) | conversation, long-term, retrieval |
 
 ## Suggested GitHub Setup
 
