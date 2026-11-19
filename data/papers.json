@@ -1,5 +1,255 @@
 [
   {
+    "abstract": "Long-term problem-solving processes, such as scientific research and software development, proceed along an evolving trial-and-error trajectory toward a central goal. We term these \\textit{exploration tasks}, which require models to remember not only facts but also how solutions are tested against intermediate outcomes and early attempts are continually revised or revived. However, existing long-term memory research focuses on factual recall and updates, overlooking the interconnected nature of exploration. We observe that exploration processes naturally form graphs, with branching approaches linked by revisions and reconsiderations. Motivated by this, we propose \\textsc{LExMem}, a graph-guided benchmark designed to evaluate \\underline{\\textsc{Mem}}ory in \\underline{\\textsc{L}}ong-term \\underline{\\textsc{Ex}}ploration tasks. We model exploration processes as graphs and introduce an evolutionary mechanism to increase their structural complexity, yielding 224 dialogues and 2,018 question-answer instances derived from graph structures. Building on the same insight, we propose \\textsc{LExGraph}, a graph-based memory framework that incrementally organizes dialogues into interconnected memory nodes and retrieves evidence through hybrid retrieval and neighbor expansion. Extensive experiments demonstrate that \\textsc{LExMem} poses a significant challenge to existing retrieval- and memory-based systems, whereas \\textsc{LExGraph} achieves superior performance and generalizes effectively to external benchmarks. Codes and datasets are available at https://github.com/mbzuai-nlp/LExMem.",
+    "authors": [
+      "Chongyuan Dai",
+      "Yaling Shen",
+      "Zirui Song",
+      "Junfeng Liao",
+      "Jinpeng Hu",
+      "Xiuying Chen"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "id": "2611.06414v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `benchmark, long-term, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Long-term problem-solving processes, such as scientific research and software development, proceed along an evolving trial-and-error trajectory toward a central goal.\n\n进一步看，论文的核心做法或实验重点可以概括为：We term these \\textit{exploration tasks}, which require models to remember not only facts but also how solutions are tested against intermediate outcomes and early attempts are continually revised or revived.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "long-term memory"
+    ],
+    "one_liner": "Long-term problem-solving processes, such as scientific research and software development, proceed along an evolving trial-and-error trajectory toward a central goal.",
+    "published": "2026-11-04",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：benchmark, long-term, retrieval\n- 检索关键词命中：long-term memory\n- 来源分类信息：cs.CL",
+    "slug": "twists-and-turns-a-graph-based-benchmark-and-framework-for-long-term-memory-in-e",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2611.06414v2",
+    "tags": [
+      "benchmark",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "Twists and Turns: A Graph-Based Benchmark and Framework for Long-Term Memory in Exploration Tasks",
+    "updated": "2026-11-18",
+    "url": "http://arxiv.org/abs/2611.06414v2",
+    "venue": ""
+  },
+  {
+    "abstract": "LLM-based agents accumulate extensive interaction histories when solving complex, long-horizon tasks, making efficient memory management critical to their performance and scalability. While existing memory management methods primarily focus on what to retain or retrieve, they often overlook how much perceptual detail should be allocated to individual past interactions. We posit that effective agent memory depends not only on the information preserved, but also on the granularity at which each past interaction is perceived. Motivated by this insight, we propose Resolution as Attention (RAA), a memory perception mechanism that uses visual resolution as a means of attention allocation across interaction histories. RAA renders past interactions as images and dynamically adjusts their resolution at every step according to their relevance to the agent's upcoming decision, preserving fine-grained information for critical interactions while reducing visual-token consumption for less relevant ones. To adaptively determine the perceptual fidelity of each interaction, we train a lightweight relevance estimator with teacher-model guidance and further optimize it to preserve the agent's decision consistency at a reduced visual-token cost. Experiments across multiple tasks and backbones show that RAA reduces token consumption by over 50% without compromising task performance. Moreover, RAA can be integrated as a plug-in perception layer with existing memory management methods, yielding further token savings and revealing adaptive perception as a complementary dimension of agent memory.",
+    "authors": [
+      "Siqi Xiang",
+      "Zhipeng Xu",
+      "Shengrui Liu",
+      "Zulong Chen",
+      "Chunyan Miao",
+      "Shijian Lu"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.CV"
+    ],
+    "id": "2611.24422v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：LLM-based agents accumulate extensive interaction histories when solving complex, long-horizon tasks, making efficient memory management critical to their performance and scalability.\n\n进一步看，论文的核心做法或实验重点可以概括为：While existing memory management methods primarily focus on what to retain or retrieve, they often overlook how much perceptual detail should be allocated to individual past interactions.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "LLM-based agents accumulate extensive interaction histories when solving complex, long-horizon tasks, making efficient memory management critical to their performance and...",
+    "published": "2026-11-18",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.AI, cs.CV",
+    "slug": "resolution-as-attention-for-efficient-agent-memory-perception",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2611.24422v1",
+    "tags": [
+      "agent"
+    ],
+    "title": "Resolution as Attention for Efficient Agent Memory Perception",
+    "updated": "2026-11-18",
+    "url": "http://arxiv.org/abs/2611.24422v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Recent work on robot manipulation has focused on specialist policies trained on demonstrations. We show that generalist AI models can control manipulators more reliably than specialist policies such as vision-language-action models (VLAs) and world-action models (WAMs). We systematically analyze agentic manipulation policies (AMPs), in which a generalist AI model commands the manipulator directly, adapting its actions as the task unfolds. We present AMP1, a reference harness that runs unchanged across single-arm, bimanual, and mobile manipulation. AMP1 achieves state-of-the-art results on the RoboLab-120 and CaP-Gym benchmarks, with no demonstrations or task-specific training. On RoboLab-120, AMP1 reaches an 85.6% success rate zero-shot, compared to 49.2% and 42.9% for leading VLA and WAM policies. The agent succeeds zero-shot in 104 of 108 real-world trials spanning twelve tasks and three robot instances, reducing failure rates by 20x and 15x relative to strong VLA and WAM baselines. The basic harness supplies no grasping, pushing, or placing skills; the agent develops its own strategies, such as searching for hidden objects, using objects as tools, and calibrating its cameras. With the addition of a persistent memory store, the agent can also learn from experience: an augmented harness with a memory representation that is carried across episodes lowers the failure rate on RoboDojo bimanual manipulation tasks by 4.6x relative to zero-shot deployment. Our analysis suggests that AMPs are substantially more general and robust than specialist manipulation policies, providing a promising foundation for robot manipulation.",
+    "authors": [
+      "Chen Chen",
+      "Omid Bagherieh",
+      "Naveen Nikamanth Appiah Balaji",
+      "Jesse T. Gonzalez",
+      "Negin Heravi",
+      "Fahad Islam",
+      "Xueting Li",
+      "Jean-Baptiste Regli",
+      "Kejia Ren",
+      "Petr Švec",
+      "David J. Yoon",
+      "Matthias Müller",
+      "Vladlen Koltun"
+    ],
+    "categories": [
+      "cs.RO",
+      "cs.AI",
+      "cs.CV",
+      "cs.LG"
+    ],
+    "id": "2611.09892v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Recent work on robot manipulation has focused on specialist policies trained on demonstrations.\n\n进一步看，论文的核心做法或实验重点可以概括为：We show that generalist AI models can control manipulators more reliably than specialist policies such as vision-language-action models (VLAs) and world-action models (WAMs).\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "persistent memory"
+    ],
+    "one_liner": "Recent work on robot manipulation has focused on specialist policies trained on demonstrations.",
+    "published": "2026-11-06",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark\n- 检索关键词命中：persistent memory\n- 来源分类信息：cs.RO, cs.AI, cs.CV, cs.LG",
+    "slug": "on-agentic-manipulation-policies",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2611.09892v2",
+    "tags": [
+      "agent",
+      "benchmark"
+    ],
+    "title": "On Agentic Manipulation Policies",
+    "updated": "2026-11-18",
+    "url": "http://arxiv.org/abs/2611.09892v2",
+    "venue": ""
+  },
+  {
+    "abstract": "Multi-agent delegation lets LLM systems distribute evidence collection across workers with separate contexts. This creates a consistency challenge: facts retrieved by workers may be missing from the evidence available to the lead for a joint conclusion. We introduce a benchmark and evidence-flow profiler for studying multi-agent memory inconsistency through controlled factual conflicts in Harvey LAB document-review tasks. Pooled across three models with comparable generation spending, requiring delegation increases retrieval of both conflicting claims from 50.2% to 68.7% relative to single-agent execution, yet conflict detection falls from 16.2% to 13.2%. Within this setting, workers report both claims for only 35.2% of retrieved pairs, and pooled matched comparisons show higher detection than single-agent execution when one worker reads both claims but lower detection when the claims are split across workers. Worker-to-lead handoffs are a central target for improving conflict detection in multi-agent LLMs.",
+    "authors": [
+      "Hejia Zhang",
+      "Zhongming Yu",
+      "Yimin Ding",
+      "Wei-Ting Chen",
+      "Hengjia Yu",
+      "Wentao Ni",
+      "Yijun Liu",
+      "Cong Xu",
+      "Xin Chen",
+      "Matrix Yao",
+      "Fan Zhao",
+      "Jishen Zhao"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.MA"
+    ],
+    "id": "2611.22245v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Multi-agent delegation lets LLM systems distribute evidence collection across workers with separate contexts.\n\n进一步看，论文的核心做法或实验重点可以概括为：This creates a consistency challenge: facts retrieved by workers may be missing from the evidence available to the lead for a joint conclusion.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "Multi-agent delegation lets LLM systems distribute evidence collection across workers with separate contexts.",
+    "published": "2026-11-17",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context, retrieval\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.AI, cs.MA",
+    "slug": "multi-agent-memory-inconsistency-where-factual-conflicts-disappear-in-llm-agents",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2611.22245v2",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "retrieval"
+    ],
+    "title": "Multi-Agent Memory Inconsistency: Where Factual Conflicts Disappear in LLM Agents",
+    "updated": "2026-11-18",
+    "url": "http://arxiv.org/abs/2611.22245v2",
+    "venue": ""
+  },
+  {
+    "abstract": "AI coding agents increasingly manage what context carries across sessions and projects, but developers have limited visibility into what these agents store, retrieve, and apply. This opacity creates a metamemory problem: the developer's meta-level judgments about what should be remembered are separated from the agent's object-level memory operations, disrupting the monitoring and control that keep the two levels aligned. We conducted a formative study with 12 developers and identified what they want to monitor and control across four dimensions of agent memory use. Based on these findings, we designed MemoSync, a co-management system that treats agent memory as a shared, operable representation: the agent proposes memory candidates and reports which items it uses, and the developer reviews, edits, and scopes them. In a between-subjects study (N=132) against two baselines, MemoSync participants achieved significantly higher task performance and the highest mean developer-agent memory alignment. In an exploratory mediation analysis, the alignment advantage was primarily driven by improved monitoring accuracy. Despite performing substantially more monitoring and control actions, participants reported no increase in perceived workload. A week-long deployment with nine developers showed that memory monitoring and control fit into everyday development work. MemoSync is open-sourced at https://github.com/SLEEPYBQ/MemoSync.",
+    "authors": [
+      "Baiqiao Zhang",
+      "Junze Li",
+      "Chunyang Luo",
+      "Yuying Tang",
+      "Wenshuo Zhang",
+      "Shiyuan Piao",
+      "Dingdong Liu",
+      "Shuai Ma",
+      "Xiaojuan Ma"
+    ],
+    "categories": [
+      "cs.HC",
+      "cs.SE"
+    ],
+    "id": "2611.24165v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, context` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：AI coding agents increasingly manage what context carries across sessions and projects, but developers have limited visibility into what these agents store, retrieve, and apply.\n\n进一步看，论文的核心做法或实验重点可以概括为：This opacity creates a metamemory problem: the developer's meta-level judgments about what should be remembered are separated from the agent's object-level memory operations, disrupting the monitoring and control that...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "AI coding agents increasingly manage what context carries across sessions and projects, but developers have limited visibility into what these agents store, retrieve, and apply.",
+    "published": "2026-11-18",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, context\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.HC, cs.SE",
+    "slug": "memosync-co-managing-developer-agent-metamemory-across-contexts",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2611.24165v1",
+    "tags": [
+      "agent",
+      "context"
+    ],
+    "title": "MemoSync: Co-Managing Developer-Agent Metamemory Across Contexts",
+    "updated": "2026-11-18",
+    "url": "http://arxiv.org/abs/2611.24165v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Whether a stored memory helps answer a user's question often depends on world knowledge rather than surface similarity. Jetriever replaces similarity search with full-pool utility scoring: given a query, it uses Jev, an LLM-derived System One decision model, to score every stored memory for the probability that it is useful to the answer, ranking the memory pool directly by those probabilities. On InMind's 125 indirect-query tasks, Jetriever places the gold exchange first in 84.8% of cases (versus 1.6% for BM25 and 0.0% for MiniLM with user-turn indexing) and reaches 76.0% end-to-end Application, compared with at most 16.0% across published retrieval and memory systems. A controlled 20-question comparison disentangles recognizing implicit evidence from ranking it properly: Jev and Qwen3.5-9B both recover 90% of gold exchanges within the top 50 (versus 30% for the BERT-based decision model Laya), yet at rank 1 Jev reaches 85% while Qwen3.5-9B drops to 40%. On a dimension-proportional random sample of 60 MemoryAgentBench questions, Jetriever raises the four-dimension average from 44.3% (ReFind) to 55.4%, at a mean retrieval cost of USD 0.00834 per InMind query and USD 0.03103 per MAB query. Together, these results show that effective utility retrieval hinges on combining broad world knowledge, calibrated ranking probabilities, and affordable full-pool evaluation.",
+    "authors": [
+      "Ruizhe Li",
+      "Licheng Zhang",
+      "Mingxuan Du",
+      "Zhendong Mao"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "id": "2611.21478v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Whether a stored memory helps answer a user's question often depends on world knowledge rather than surface similarity.\n\n进一步看，论文的核心做法或实验重点可以概括为：Jetriever replaces similarity search with full-pool utility scoring: given a query, it uses Jev, an LLM-derived System One decision model, to score every stored memory for the probability that it is useful to the...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory",
+      "memory retrieval"
+    ],
+    "one_liner": "Whether a stored memory helps answer a user's question often depends on world knowledge rather than surface similarity.",
+    "published": "2026-11-16",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, retrieval\n- 检索关键词命中：agent memory, memory retrieval\n- 来源分类信息：cs.CL",
+    "slug": "jetriever-shifting-agent-memory-retrieval-from-similarity-to-utility",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2611.21478v2",
+    "tags": [
+      "agent",
+      "retrieval"
+    ],
+    "title": "Jetriever: Shifting Agent Memory Retrieval from Similarity to Utility",
+    "updated": "2026-11-18",
+    "url": "http://arxiv.org/abs/2611.21478v2",
+    "venue": ""
+  },
+  {
+    "abstract": "Existing work suggests that markets can show volatility with paths rougher than those of Brownian motion. In theory this can happen when the order flow is close to instability with memory that decays as a power law. However, it is not fully clear how such order flow could arise from the predominantly algorithmic market making that characterizes order book dynamics. We show one such consistent mechanism. We treat each market maker as a desk that uses a first-order gradient rule to move the distances of its orders from the mid price toward target distances provided by an unknown oracle. We assume that distinct desks do not act synchronously in time but act whenever new information relevant to their respective oracles arrives, which each desk samples over its own characteristic lookback horizon. Across all desks the rule therefore takes the form of stochastic gradient descent (SGD) with information-driven (mini-batch) noise. In the continuum limit this update rule makes the volume of the order book follow a conservative stochastic partial differential equation (the Dean--Kawasaki equation) whose fluctuations drive the order flow. The distinct horizons of the desks further induce a persistent memory in the order flow that decays as a power law. Standard scaling arguments then lead to rough volatility. We confirm the key predictions of the model on simulated agents and on six months of Binance data with about 790 million orders. In liquid markets governed mainly by market makers, such as the perpetual futures of Binance, the order books are consistent with how our desks change the book.",
+    "authors": [
+      "Sai Niranjan Ramachandran"
+    ],
+    "categories": [
+      "cs.LG",
+      "q-fin.MF",
+      "q-fin.TR"
+    ],
+    "id": "2611.24028v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Existing work suggests that markets can show volatility with paths rougher than those of Brownian motion.\n\n进一步看，论文的核心做法或实验重点可以概括为：In theory this can happen when the order flow is close to instability with memory that decays as a power law.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "persistent memory"
+    ],
+    "one_liner": "Existing work suggests that markets can show volatility with paths rougher than those of Brownian motion.",
+    "published": "2026-11-18",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent\n- 检索关键词命中：persistent memory\n- 来源分类信息：cs.LG, q-fin.MF, q-fin.TR",
+    "slug": "algorithmic-market-making-can-lead-to-rough-volatility-through-the-order-book",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2611.24028v1",
+    "tags": [
+      "agent"
+    ],
+    "title": "Algorithmic Market Making Can Lead to Rough Volatility Through the Order Book",
+    "updated": "2026-11-18",
+    "url": "http://arxiv.org/abs/2611.24028v1",
+    "venue": ""
+  },
+  {
     "abstract": "Analytic continual learning replaces iterative gradient updates with closed-form ridge regression over frozen pre-trained representations, summarizing all past sessions in two running sufficient statistics: the feature autocorrelation matrix $Σ_t$ and the class cross-correlation matrix $Γ_t$. Lifting backbone features into a wide random code of dimension $M \\gg D$ substantially improves linear separability across tasks, but forces $Σ_t$ to grow quadratically as $\\mathcal{O}(M^2)$. Under a fixed persistent memory envelope $\\Bcal$, a learner faces a fundamental structural trade-off: store exact pairwise co-activations inside a narrower feature code, or expand to a wide code while compressing cross-coordinate interactions. We observe that the coordinate self-variances $v_t = \\diag(Σ_t)$ and class statistics $Γ_t$ grow only linearly with $M$, whereas off-diagonal interactions dominate memory. We introduce \\method (\\textbf{Co}ordinate-\\textbf{Re}stored \\textbf{A}nalytic \\textbf{C}ontinual \\textbf{L}earning), which retains $(v_t, Γ_t)$ exactly, maintains off-diagonal co-activations through a streaming rank-$q$ factor $F_t$, restores exact diagonal variances via $\\Sighat_t = F_t^\\top F_t + \\Diag(v_t - \\diag(F_t^\\top F_t))$, and solves the full $M\\times C$ normal equations via the Woodbury identity. Across five class-incremental benchmarks on frozen ViT-B/16, \\method matches dense full-covariance readouts within $0.09$ points while cutting persistent state by $90.7\\%$ ($35.9$ vs.\\ $385.3$ MiB). Under equal memory envelopes of $16$--$80$ MiB, prioritizing expansion width $M$ over covariance rank $q$ outperforms exact narrow readouts in $17$ of $18$ configurations by up to $+2.19$ points.",
     "authors": [
       "Elena Voss",
@@ -461,6 +711,48 @@
     "title": "Colombo: A Frontier-to-Frontier Autoresearch System for Oracle-Based Optimization",
     "updated": "2026-11-17",
     "url": "http://arxiv.org/abs/2611.23080v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Enterprise LLM agents operate in dynamic environments where foundation models evolve rapidly, workflows update frequently, and deployments need to satisfy accuracy and cost requirements. We propose ARISE (Agent Refinement through Iterative Self-Evaluation), a practical memory architecture in which the agent's memory evolves from its own failures without updating model weights, tools, or workflow logic. ARISE uses the model itself or a teacher model to attribute the failures and propose corrections. Then, ARISE keeps the corrections as retrievable micro memory, consolidates them into macro rules, and accepts a rule update only if held-out accuracy rises. Across 14 enterprise-workflow domains from SOP-Bench and $τ^2$-bench using 5 models, ARISE-Teacher, which uses Claude Opus 4.6 for attribution and consolidation, gains 10.9 pp over the baseline on SOP-Bench and 5.8 pp on $τ^2$-bench. ARISE-Teacher also outperforms GEPA by 4.5 pp on $τ^2$-bench and 1.4 pp on SOP-Bench. With the deployment model as its own attributor, ARISE-Self still gains 10.0 pp on SOP-Bench. ARISE-Teacher uses 4.0% fewer model calls and 5.2% fewer output tokens at comparable per-task cost (-1.0%).",
+    "authors": [
+      "Jiangyun Zhang",
+      "Zhou Tang",
+      "Kristen Surrao",
+      "Zhiyu Chen",
+      "Albert Guan",
+      "Tor Nitayanont",
+      "Yupei Zhang",
+      "Roopali Singh",
+      "Yunkai Xiao",
+      "Shreya Pandit",
+      "Julia Huang",
+      "Shayan Ali Akbar",
+      "Erwin Cornejo",
+      "Yuan Li",
+      "Yi Zhang"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.MA"
+    ],
+    "id": "2611.23588v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Enterprise LLM agents operate in dynamic environments where foundation models evolve rapidly, workflows update frequently, and deployments need to satisfy accuracy and cost requirements.\n\n进一步看，论文的核心做法或实验重点可以概括为：We propose ARISE (Agent Refinement through Iterative Self-Evaluation), a practical memory architecture in which the agent's memory evolves from its own failures without updating model weights, tools, or workflow logic.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "Enterprise LLM agents operate in dynamic environments where foundation models evolve rapidly, workflows update frequently, and deployments need to satisfy accuracy and cost...",
+    "published": "2026-11-17",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.AI, cs.MA",
+    "slug": "arise-practical-self-evolving-memory-for-accurate-and-cost-efficient-enterprise-",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2611.23588v1",
+    "tags": [
+      "agent"
+    ],
+    "title": "ARISE: Practical Self-Evolving Memory for Accurate and Cost-Efficient Enterprise Agents",
+    "updated": "2026-11-17",
+    "url": "http://arxiv.org/abs/2611.23588v1",
     "venue": ""
   },
   {
