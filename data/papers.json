@@ -1,5 +1,137 @@
 [
   {
+    "abstract": "Long-video question answering requires retrieving and integrating relevant evidence from videos spanning hours or even days. Recent agentic approaches organize video information into external memories and iteratively retrieve evidence to answer questions. However, effective retrieval and reasoning remain challenging, as agents must determine what information to search for, which memory sources to access, and how to connect evidence across distant temporal intervals. To address these challenges, we propose Video Memory Skill Agent (VMSA), a framework that jointly designs structured video memories and memory skills for long-video understanding. VMSA constructs three complementary memory components. Segment Caption Memory and Entity Event Memory serve as searchable evidence sources, while Entity-Aware Episode Memory provides broad yet detailed video context to guide evidence retrieval and reasoning. To further support effective memory utilization, VMSA induces memory skills from successful agent trajectories, incrementally refining or extending a compact skill library to guide iterative evidence retrieval, reasoning, and verification. Across seven long-video question-answering benchmarks, VMSA achieves the highest accuracy on all three week-long egocentric benchmarks, outperforming the strongest baseline by up to 9.4% on Ego-R1 Bench, and the best or competitive performance on four additional benchmarks. Ablation studies further demonstrate the contributions of all three memory components and memory skills, with memory skills also improving temporal evidence localization.",
+    "authors": [
+      "Changin Choi",
+      "Jungwon Park",
+      "Jungmin Ko",
+      "Jimyeong Kim",
+      "Wonjong Rhee"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "id": "2611.27381v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Long-video question answering requires retrieving and integrating relevant evidence from videos spanning hours or even days.\n\n进一步看，论文的核心做法或实验重点可以概括为：Recent agentic approaches organize video information into external memories and iteratively retrieve evidence to answer questions.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "episodic memory"
+    ],
+    "one_liner": "Long-video question answering requires retrieving and integrating relevant evidence from videos spanning hours or even days.",
+    "published": "2026-11-20",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context, retrieval\n- 检索关键词命中：episodic memory\n- 来源分类信息：cs.CV, cs.AI",
+    "slug": "vmsa-video-memory-skill-agent-for-long-video-understanding",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2611.27381v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "retrieval"
+    ],
+    "title": "VMSA: Video Memory Skill Agent for Long Video Understanding",
+    "updated": "2026-11-20",
+    "url": "http://arxiv.org/abs/2611.27381v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Long-term memory is essential for personalized agentic systems that interact with users over long time periods, yet current architectures only capture what happened while leaving the reasoning of why it happened to be derived later by underlying LLMs. These events can, however, convey not only what a user experienced but also how that experience shaped their behavioral patterns. We introduce STARK, a dual-graph memory architecture which treats these events not just as nodes but also as edges between behavioral insights. STARK maintains an Episodic Graph which records interactions as temporally, causally, and semantically linked episodes; and an Insight Graph which represents LLM-extracted behavioral signals scored by how many events support them, connected by the very events that led to them. At inference, behavioral knowledge is retrieved directly from insight nodes grounded by event-as-edges, eliminating repeated episodic traversal. The event-as-edge structure also naturally enables projecting the knowledge graph into a relational embedding space where cross-user transfer becomes possible under shared contextual circumstances, allowing the system to infer missing insights for cold-start users. Evaluations show that STARK improves by 1.48 judge score on LongMemEval information extraction and 0.93 on LoCoMo open domain questions over state of the art. On the public LongLaMP abstract-generation benchmark, cross-user transfer improves open-ended judge scores by 0.7 points and ROUGE-L by 3 at 5% graph sparsity.",
+    "authors": [
+      "Aryan Jain",
+      "Abhishek Jha",
+      "Anish Nediyanchath",
+      "Promod Yenigalla"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.IR"
+    ],
+    "id": "2611.25705v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, episodic` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Long-term memory is essential for personalized agentic systems that interact with users over long time periods, yet current architectures only capture what happened while leaving the reasoning of why it happened to be...\n\n进一步看，论文的核心做法或实验重点可以概括为：These events can, however, convey not only what a user experienced but also how that experience shaped their behavioral patterns.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "long-term memory"
+    ],
+    "one_liner": "Long-term memory is essential for personalized agentic systems that interact with users over long time periods, yet current architectures only capture what happened while...",
+    "published": "2026-11-19",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context, episodic, long-term\n- 检索关键词命中：long-term memory\n- 来源分类信息：cs.CL, cs.AI, cs.IR",
+    "slug": "stark-moving-towards-personalized-agents-that-truly-learn-and-remember",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2611.25705v2",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "episodic",
+      "long-term"
+    ],
+    "title": "STARK: Moving towards Personalized Agents That Truly Learn and Remember",
+    "updated": "2026-11-20",
+    "url": "http://arxiv.org/abs/2611.25705v2",
+    "venue": ""
+  },
+  {
+    "abstract": "Personal agents carry private experience into later decisions through persistent memory. This thematic survey compares memory admission, maintenance, release, and withdrawal by protected change, observer, and validation setting. Direct evidence in the screened corpus comes from controlled memory workflows. Three worked scenarios follow one private fact through booking, feedback-driven learning, and withdrawal. We show when prompt revision and memory reads compose, when skills inherit a private head's bound, and why reader non-use does not establish cleanup of learned state. Diagnostic experiments measure the utility costs of wider label protection and broad memory deletion, and test how missing lineage obscures descendants.",
+    "authors": [
+      "Zibin Lin",
+      "Taotao Wang",
+      "Shengli Zhang"
+    ],
+    "categories": [
+      "cs.CR",
+      "cs.AI"
+    ],
+    "id": "2611.26983v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Personal agents carry private experience into later decisions through persistent memory.\n\n进一步看，论文的核心做法或实验重点可以概括为：This thematic survey compares memory admission, maintenance, release, and withdrawal by protected change, observer, and validation setting.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "persistent memory"
+    ],
+    "one_liner": "Personal agents carry private experience into later decisions through persistent memory.",
+    "published": "2026-11-20",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent\n- 检索关键词命中：persistent memory\n- 来源分类信息：cs.CR, cs.AI",
+    "slug": "privacy-protection-in-self-evolving-personal-agents-persistent-memory-and-cross-",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2611.26983v1",
+    "tags": [
+      "agent"
+    ],
+    "title": "Privacy Protection in Self-Evolving Personal Agents: Persistent Memory and Cross-Carrier Transfer",
+    "updated": "2026-11-20",
+    "url": "http://arxiv.org/abs/2611.26983v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Language models fuse reports in retrieval, multi-agent consensus and agent memory, where treating shared-source reports as independent can double count evidence. A common remedy is an instruction to count each source once. Its value depends on the receiver's raw baseline. Pricing it needs an exact reference. We build the graded-dependence exact reference: binary worlds with single-report reliability 0.65 and four dependence levels, whose disclosed parameters give every world an exact posterior and every rule a target risk. The paired gain protocol scores raw and instructed answers of four configurations on 2,976 worlds. Agreement and gain separate in both directions. At $δ$ = 0, claude-opus-5-5 and gpt-6.1-sol agreed with the rule within 0.001 in 744 of 744, and the instruction raised their posterior mismatch by 0.044; gpt-6-luna agreed in 165 of 744 and gained 0.0140 (95% interval 0.0064 to 0.0219); claude-haiku-5-5's gain moved from -0.0295 ($δ$ = 0) to +0.0302 ($δ$ = 1) (descriptive). The prespecified first-child endpoint contrast, gain at $δ$ = 1 minus $δ$ = 0, was 0.0342 (0.0303 to 0.0382). In the preregistered tests, the raw source-weight contrast was positive (0.259, 95% interval 0.182 to 0.337; Holm rejected zero) and the grouping endpoint difference was not detected (0.0004, -0.0023 to 0.0031). This interval excludes differences larger than 0.0031 in magnitude and lies within the registered precision bound of $\\pm$0.0046. The reference prices the rule before any model call. The paired gain, estimable as a Brier difference on labelled deployment items, decides adoption per receiver and prompt condition.",
+    "authors": [
+      "Tengfei Shao",
+      "Asma Rezaei",
+      "Ali Reza Kamali"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.CL"
+    ],
+    "id": "2611.27138v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Language models fuse reports in retrieval, multi-agent consensus and agent memory, where treating shared-source reports as independent can double count evidence.\n\n进一步看，论文的核心做法或实验重点可以概括为：A common remedy is an instruction to count each source once.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "Language models fuse reports in retrieval, multi-agent consensus and agent memory, where treating shared-source reports as independent can double count evidence.",
+    "published": "2026-11-20",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, retrieval\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.AI, cs.CL",
+    "slug": "double-counting-in-llm-evidence-fusion-exact-posteriors-separate-rule-compliance",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2611.27138v1",
+    "tags": [
+      "agent",
+      "retrieval"
+    ],
+    "title": "Double counting in LLM evidence fusion: exact posteriors separate rule compliance from posterior gain",
+    "updated": "2026-11-20",
+    "url": "http://arxiv.org/abs/2611.27138v1",
+    "venue": ""
+  },
+  {
     "abstract": "Long-term memory is essential for personalized agentic systems that interact with users over long time periods, yet current architectures only capture what happened while leaving the reasoning of why it happened to be derived later by underlying LLMs.%, and silo knowledge within individual users. These events can, however, convey not only what a user experienced but also how that experience shaped their behavioral patterns. We introduce STARK, a dual-graph memory architecture which treats these events not just as nodes but also as edges between behavioral insights. STARK maintains an Episodic Graph which records interactions as temporally, causally, and semantically linked episodes; and an Insight Graph which represents LLM-extracted behavioral signals scored by how many events support them, connected by the very events that led to them. At inference, behavioral knowledge is retrieved directly from insight nodes grounded by event-as-edges, eliminating repeated episodic traversal. The event-as-edge structure also naturally enables projecting the knowledge graph into a relational embedding space where cross-user transfer becomes possible under shared contextual circumstances, allowing the system to infer missing insights for cold-start users. Evaluations show that STARK improves by 1.48 judge score on LongMemEval information extraction and 0.93 on LoCoMo open domain questions over state of the art. On the public LongLaMP abstract-generation benchmark, cross-user transfer improves open-ended judge scores by 0.7 points and ROUGE-L by 3 at 5% graph sparsity.",
     "authors": [
       "Aryan Jain",
@@ -290,6 +422,65 @@
     "title": "Decoupled Knowledge Retrieval and Compact Memory Enable Reliable Lifelong Model Editing",
     "updated": "2026-11-19",
     "url": "http://arxiv.org/abs/2611.25861v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Deep Interactive Reinforcement Learning (Deep IntRL) accelerates reinforcement learning training by incorporating external advice. However, conventional Deep IntRL uses each piece of advice only in the current step and discards it after a single interaction. Persistent Advising and Broad-Persistent Advising (BPA) extend this process by storing advice in persistent memory and reusing it in similar states through state generalisation based on K-means clustering. This research proposes Encoder BPA, which employs a latent encoder to retrieve and reuse advice. In this framework, a trained encoder is used to map a state sequence into a latent representation at every time step. Advice can be retrieved through latent comparison, together with a top-(k) aggregation and a consistency condition to improve reuse stability. Experimental results show that Encoder BPA improves learning efficiency and advice utilisation at an early stage of training compared with different Deep IntRL approaches, especially in complex and partially observable environments.",
+    "authors": [
+      "Zhuoran Liang",
+      "Francisco Cruz"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2611.13712v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `persistent memory` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Deep Interactive Reinforcement Learning (Deep IntRL) accelerates reinforcement learning training by incorporating external advice.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, conventional Deep IntRL uses each piece of advice only in the current step and discards it after a single interaction.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "persistent memory"
+    ],
+    "one_liner": "Deep Interactive Reinforcement Learning (Deep IntRL) accelerates reinforcement learning training by incorporating external advice.",
+    "published": "2026-11-10",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：persistent memory\n- 检索关键词命中：persistent memory\n- 来源分类信息：cs.AI",
+    "slug": "broad-persistent-advising-in-interactive-reinforcement-learning-via-latent-state",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2611.13712v2",
+    "tags": [
+      "persistent memory"
+    ],
+    "title": "Broad-Persistent Advising in Interactive Reinforcement Learning via Latent State Encoding",
+    "updated": "2026-11-19",
+    "url": "http://arxiv.org/abs/2611.13712v2",
+    "venue": ""
+  },
+  {
+    "abstract": "LLM agents are expected to improve themselves from their own experience across episodes, with fixed weights. Self-improvement in an embodied world cannot be read from one measure. Existing benchmarks measure task progress, world-knowledge question answering (QA), and episodic memory, but a correct answer does not show that the agent ever observed the evidence for it, and progress does not show what the agent learned. We introduce AstronautBench, which measures one agent's self-improvement through three views on the same run: what it knows, whether its own evidence supports that knowledge, and how far it gets in the world. It is built on the game Outer Wilds, where each episode is a 22-minute loop after which the world resets, only the agent's knowledge carries over, and progress is gated by knowledge. After every episode, we measure the places reached and ship-log rumor facts revealed, the correctness of answers to 164 questions about the world, and whether each answer is supported by the frames and position the agent cites from its own recorded play. Two LLM judges from different model families check every answer. In eight-episode baselines with GPT-6.1 Sol and Gemini 4 Argon planners, which act through a learned controller or their own gamepad inputs, the three views do not move together, so any one of them alone gives an incomplete picture of whether the agent is improving. The GPT-6.1 Sol agent's correct answers grow from 14.6% to 26.8% of all questions, but at episode 8 only 59 to 68% of them are supported by its cited evidence. It reveals no new rumor facts after episode 3, while the places it reaches and its memory keep growing. More than half of the answers that become correct after episode 3 cite only evidence from earlier episodes.",
+    "authors": [
+      "Congyuan Yu",
+      "Runping Tian"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.CL"
+    ],
+    "id": "2611.26910v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, episodic` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：LLM agents are expected to improve themselves from their own experience across episodes, with fixed weights.\n\n进一步看，论文的核心做法或实验重点可以概括为：Self-improvement in an embodied world cannot be read from one measure.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "episodic memory"
+    ],
+    "one_liner": "LLM agents are expected to improve themselves from their own experience across episodes, with fixed weights.",
+    "published": "2026-11-19",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, episodic\n- 检索关键词命中：episodic memory\n- 来源分类信息：cs.AI, cs.CL",
+    "slug": "astronautbench-measuring-agent-self-improvement-across-episodes-through-knowledg",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2611.26910v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "episodic"
+    ],
+    "title": "AstronautBench: Measuring Agent Self-Improvement Across Episodes Through Knowledge, Evidence, and Progress",
+    "updated": "2026-11-19",
+    "url": "http://arxiv.org/abs/2611.26910v1",
     "venue": ""
   },
   {
