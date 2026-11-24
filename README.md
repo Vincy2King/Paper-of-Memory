@@ -39,39 +39,39 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **1725**
+- Total tracked papers: **1742**
 - Last generated: **2026-11-24**
 
 ## Papers by Source
 
 - ACL Anthology: **24**
-- arXiv: **1555**
+- arXiv: **1572**
 - OpenReview: **146**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-11-23 | arXiv | [STMemoLLM: A Spatial-Temporal Memory-Augmented LLM for Robust Traffic Forecasting](content/papers/stmemollm-a-spatial-temporal-memory-augmented-llm-for-robust-traffic-forecasting.md) | compression, context, long-term |
+| 2026-11-23 | arXiv | [RoboLiveMem: Is Robot Memory Solved When the World Does Not Wait?](content/papers/robolivemem-is-robot-memory-solved-when-the-world-does-not-wait.md) | agent, benchmark |
+| 2026-11-23 | arXiv | [On the Recall Scaling Laws in Mamba: A Theoretical and Mechanistic Study via Hashing](content/papers/on-the-recall-scaling-laws-in-mamba-a-theoretical-and-mechanistic-study-via-hash.md) | benchmark, context |
+| 2026-11-23 | arXiv | [MemOVCD: Training-Free Open-Vocabulary Change Detection via Cross-Temporal Memory Reasoning and Global-Local Adaptive Rectification](content/papers/memovcd-training-free-open-vocabulary-change-detection-via-cross-temporal-memory.md) | benchmark |
+| 2026-11-23 | arXiv | [MMMem: Self-Improving Agents with Task-Aware Multimodal Experience Consolidation](content/papers/mmmem-self-improving-agents-with-task-aware-multimodal-experience-consolidation.md) | agent, benchmark, context |
+| 2026-11-22 | arXiv | [Zarc: Exact Nearest Neighbors over a Billion Vectors in Seconds](content/papers/zarc-exact-nearest-neighbors-over-a-billion-vectors-in-seconds.md) | context |
+| 2026-11-22 | arXiv | [NoeVera: Can Knowledge Guide Experiments and Experiments Refine Knowledge?](content/papers/noevera-can-knowledge-guide-experiments-and-experiments-refine-knowledge.md) | agent, benchmark, retrieval |
+| 2026-11-22 | arXiv | [MERIT: Experience-Guided Memory for Long-Horizon Persona-Specific Persuasive Dialogue](content/papers/merit-experience-guided-memory-for-long-horizon-persona-specific-persuasive-dial.md) | memory-augmented |
+| 2026-11-22 | arXiv | [From Vanishing Gradients to Recursive Self-Improvement: Evaluating the Most Influential Papers in Large Language Model Evolution (1997-2026)](content/papers/from-vanishing-gradients-to-recursive-self-improvement-evaluating-the-most-influ.md) | agent, context, long-term |
+| 2026-11-22 | arXiv | [ContextFact: Remembering Facts in Context for Long-Term Conversational Agents](content/papers/contextfact-remembering-facts-in-context-for-long-term-conversational-agents.md) | agent, context, conversation |
+| 2026-11-21 | arXiv | [The Price of Scale in Proactive Memory Recall](content/papers/the-price-of-scale-in-proactive-memory-recall.md) | benchmark |
+| 2026-11-21 | arXiv | [PAMS: Preconditioned Activation-Metric Subspace for Zeroth-Order LLM Fine-tuning](content/papers/pams-preconditioned-activation-metric-subspace-for-zeroth-order-llm-fine-tuning.md) | persistent memory |
+| 2026-11-21 | arXiv | [MACE: Memory-Augmented Crop-Disease Evaluation of Frozen Vision-Language Models](content/papers/mace-memory-augmented-crop-disease-evaluation-of-frozen-vision-language-models.md) | memory-augmented |
+| 2026-11-21 | arXiv | [Grounding Collaborative Agents in Group Cognition](content/papers/grounding-collaborative-agents-in-group-cognition.md) | agent, benchmark, context |
 | 2026-11-20 | arXiv | [VMSA: Video Memory Skill Agent for Long Video Understanding](content/papers/vmsa-video-memory-skill-agent-for-long-video-understanding.md) | agent, benchmark, context |
+| 2026-11-20 | arXiv | [Taking the PULSE of Enterprise Workflows: Evaluating Persistent Project-State Understanding](content/papers/taking-the-pulse-of-enterprise-workflows-evaluating-persistent-project-state-und.md) | agent, benchmark, context |
 | 2026-11-20 | arXiv | [STARK: Moving towards Personalized Agents That Truly Learn and Remember](content/papers/stark-moving-towards-personalized-agents-that-truly-learn-and-remember.md) | agent, benchmark, context |
 | 2026-11-20 | arXiv | [Privacy Protection in Self-Evolving Personal Agents: Persistent Memory and Cross-Carrier Transfer](content/papers/privacy-protection-in-self-evolving-personal-agents-persistent-memory-and-cross-.md) | agent |
+| 2026-11-20 | arXiv | [Evaluating Memanto on DolphinBench for AI Agents](content/papers/evaluating-memanto-on-dolphinbench-for-ai-agents.md) | agent, benchmark, conversation |
 | 2026-11-20 | arXiv | [Double counting in LLM evidence fusion: exact posteriors separate rule compliance from posterior gain](content/papers/double-counting-in-llm-evidence-fusion-exact-posteriors-separate-rule-compliance.md) | agent, retrieval |
-| 2026-11-19 | arXiv | [STARK: Moving towards Personalized Agents That Truly Learn and Remember](content/papers/stark-moving-towards-personalized-agents-that-truly-learn-and-remember.md) | agent, benchmark, context |
-| 2026-11-19 | arXiv | [PhysScope: Agentic Multimodal Physics Reasoning with Grounded Visual Memory](content/papers/physscope-agentic-multimodal-physics-reasoning-with-grounded-visual-memory.md) | agent, benchmark |
-| 2026-11-19 | arXiv | [On Agentic Manipulation Policies](content/papers/on-agentic-manipulation-policies.md) | agent, benchmark |
-| 2026-11-19 | arXiv | [MemMend: A Selective Revision Framework for Memory Question Answering](content/papers/memmend-a-selective-revision-framework-for-memory-question-answering.md) | conversation, long-term |
-| 2026-11-19 | arXiv | [MemFolder: Structure-Guided Memory Folding for Efficient Agent Memory Management](content/papers/memfolder-structure-guided-memory-folding-for-efficient-agent-memory-management.md) | agent, benchmark, compression |
-| 2026-11-19 | arXiv | [How Much Should an Agent Remember? Deployment Lessons from Self-Distilled Memory for LLM Agents](content/papers/how-much-should-an-agent-remember-deployment-lessons-from-self-distilled-memory-.md) | agent, benchmark |
-| 2026-11-19 | arXiv | [DriftGuard: Online Memory-Drift Detection via Causal Attribution for LLM Agents](content/papers/driftguard-online-memory-drift-detection-via-causal-attribution-for-llm-agents.md) | agent, retrieval |
-| 2026-11-19 | arXiv | [Decoupled Knowledge Retrieval and Compact Memory Enable Reliable Lifelong Model Editing](content/papers/decoupled-knowledge-retrieval-and-compact-memory-enable-reliable-lifelong-model-.md) | benchmark, long-term, retrieval |
-| 2026-11-19 | arXiv | [Broad-Persistent Advising in Interactive Reinforcement Learning via Latent State Encoding](content/papers/broad-persistent-advising-in-interactive-reinforcement-learning-via-latent-state.md) | persistent memory |
-| 2026-11-19 | arXiv | [AstronautBench: Measuring Agent Self-Improvement Across Episodes Through Knowledge, Evidence, and Progress](content/papers/astronautbench-measuring-agent-self-improvement-across-episodes-through-knowledg.md) | agent, benchmark, episodic |
-| 2026-11-19 | arXiv | [ActMem: From Latent Memory Reasoning to Grounded Robotic Action](content/papers/actmem-from-latent-memory-reasoning-to-grounded-robotic-action.md) | context |
-| 2026-11-18 | arXiv | [Twists and Turns: A Graph-Based Benchmark and Framework for Long-Term Memory in Exploration Tasks](content/papers/twists-and-turns-a-graph-based-benchmark-and-framework-for-long-term-memory-in-e.md) | benchmark, long-term, retrieval |
-| 2026-11-18 | arXiv | [Resolution as Attention for Efficient Agent Memory Perception](content/papers/resolution-as-attention-for-efficient-agent-memory-perception.md) | agent |
-| 2026-11-18 | arXiv | [On Agentic Manipulation Policies](content/papers/on-agentic-manipulation-policies.md) | agent, benchmark |
-| 2026-11-18 | arXiv | [Multi-Agent Memory Inconsistency: Where Factual Conflicts Disappear in LLM Agents](content/papers/multi-agent-memory-inconsistency-where-factual-conflicts-disappear-in-llm-agents.md) | agent, benchmark, context |
-| 2026-11-18 | arXiv | [MemoSync: Co-Managing Developer-Agent Metamemory Across Contexts](content/papers/memosync-co-managing-developer-agent-metamemory-across-contexts.md) | agent, context |
 
 ## Suggested GitHub Setup
 
