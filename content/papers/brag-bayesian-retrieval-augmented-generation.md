@@ -27,7 +27,7 @@ Retrieval-augmented generation (RAG) ranks memory chunks by semantic similarity 
 ## Why It Was Included
 - 来源：arXiv
 - 高亮主题命中：agent, benchmark, long-term, retrieval
-- 检索关键词命中：memory benchmarks
+- 检索关键词命中：agent memory, long-term memory, memory benchmark, memory benchmarks
 - 来源分类信息：cs.AI
 
 ## Abstract Snapshot

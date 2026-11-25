@@ -1,5 +1,80 @@
 [
   {
+    "abstract": "Memory-augmented large language model (LLM) driving agents can reuse past experience, yet previously learned corrections often fail to transfer when traffic conditions change. A key limitation is that existing memories mainly record observed outcomes, providing little evidence about alternative actions. We introduce XMind, a training-free framework that enables LLM-based driving to \"Think Twice\" through cross-memory reasoning. XMind integrates working memory of recent traffic states with episodic memory of critical risk events. The agent first makes an initial decision from the current context and then cross-checks it against retrieved historical experience. If a conflict arises, it makes a second decision guided by the retrieved evidence. To construct reliable episodic memory, XMind evaluates alternative actions through counterfactual rollouts under perturbed traffic conditions and stores the verified outcomes as structured risk capsules. These capsules are retrieved by jointly matching spatial risk patterns and scenario semantics. Across closed-loop highway simulations, XMind achieves success rates of 83.3-93.3%, exceeding the strong baseline by 6.6 percentage points on average. Evaluation on K-Risk further demonstrates lower decision risk on unseen real-world high-risk interactions. Ablation studies confirm the complementary benefits of working memory, risk-text retrieval, and counterfactual verification. Code is available at https://github.com/xiangxiangliuwo/XMind",
+    "authors": [
+      "Zuyi Guo",
+      "Xianjie Dai",
+      "Lei Yang",
+      "Xiaocong Zhao",
+      "Jingguang Li",
+      "Kitae Jang",
+      "Heye Huang"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2611.32209v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, context, episodic, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Memory-augmented large language model (LLM) driving agents can reuse past experience, yet previously learned corrections often fail to transfer when traffic conditions change.\n\n进一步看，论文的核心做法或实验重点可以概括为：A key limitation is that existing memories mainly record observed outcomes, providing little evidence about alternative actions.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "episodic memory",
+      "memory augmented",
+      "memory reasoning",
+      "memory-augmented",
+      "working memory"
+    ],
+    "one_liner": "Memory-augmented large language model (LLM) driving agents can reuse past experience, yet previously learned corrections often fail to transfer when traffic conditions change.",
+    "published": "2026-11-24",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, context, episodic, retrieval\n- 检索关键词命中：episodic memory, memory augmented, memory reasoning, memory-augmented, working memory\n- 来源分类信息：cs.AI",
+    "slug": "xmind-thinking-twice-via-cross-memory-reasoning-for-llm-based-autonomous-driving",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2611.32209v1",
+    "tags": [
+      "agent",
+      "context",
+      "episodic",
+      "retrieval"
+    ],
+    "title": "XMind: Thinking Twice via Cross-Memory Reasoning for LLM-Based Autonomous Driving",
+    "updated": "2026-11-24",
+    "url": "http://arxiv.org/abs/2611.32209v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Long-video question answering requires retrieving and integrating relevant evidence from videos spanning hours or even days. Recent agentic approaches organize video information into external memories and iteratively retrieve evidence to answer questions. However, effective retrieval and reasoning remain challenging, as agents must determine what information to search for, which memory sources to access, and how to connect evidence across distant temporal intervals. To address these challenges, we propose Video Memory Skill Agent (VMSA), a framework that jointly designs structured video memories and memory skills for long-video understanding. VMSA constructs three complementary memory components. Segment Caption Memory and Entity Event Memory serve as searchable evidence sources, while Entity-Aware Episode Memory provides broad yet detailed video context to guide evidence retrieval and reasoning. To further support effective memory utilization, VMSA induces memory skills from successful agent trajectories, incrementally refining or extending a compact skill library to guide iterative evidence retrieval, reasoning, and verification. Across seven long-video question-answering benchmarks, VMSA achieves the highest accuracy on all three week-long egocentric benchmarks, outperforming the strongest baseline by up to 9.4% on Ego-R1 Bench, and the best or competitive performance on four additional benchmarks. Ablation studies further demonstrate the contributions of all three memory components and memory skills, with memory skills also improving temporal evidence localization.",
+    "authors": [
+      "Changin Choi",
+      "Jungwon Park",
+      "Jungmin Ko",
+      "Jimyeong Kim",
+      "Wonjong Rhee"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "id": "2611.27381v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Long-video question answering requires retrieving and integrating relevant evidence from videos spanning hours or even days.\n\n进一步看，论文的核心做法或实验重点可以概括为：Recent agentic approaches organize video information into external memories and iteratively retrieve evidence to answer questions.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "episodic memory"
+    ],
+    "one_liner": "Long-video question answering requires retrieving and integrating relevant evidence from videos spanning hours or even days.",
+    "published": "2026-11-20",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context, retrieval\n- 检索关键词命中：episodic memory\n- 来源分类信息：cs.CV, cs.AI",
+    "slug": "vmsa-video-memory-skill-agent-for-long-video-understanding",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2611.27381v2",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "retrieval"
+    ],
+    "title": "VMSA: Video Memory Skill Agent for Long Video Understanding",
+    "updated": "2026-11-24",
+    "url": "http://arxiv.org/abs/2611.27381v2",
+    "venue": ""
+  },
+  {
     "abstract": "Long-term conversational memory requires retrieving complementary facts scattered across dialogue sessions, including intermediate evidence with limited similarity to the original question. Existing approaches often rely on derived memory representations or persistent relational structures, introducing construction costs and potentially losing source details. We present SAG-Mem, a conversational memory framework that preserves complete dialogue messages in non-overlapping chunks and discovers complementary evidence through query-time lexical expansion. Memory construction requires no model inference, using a lexical index without LLM-based extraction, summarization, or semantic relation construction. At query time, BM25 retrieves initial candidates, an evidence evaluator identifies useful chunks, and lexical cues from selected evidence guide an additional retrieval round. Retrieved dialogue is further annotated with calendar interpretations of supported relative-time expressions, preserving the original wording and temporal granularity. We also introduce SAG-Mem-Lite, an alternative configuration that replaces evidence scoring with embedding-based candidate scoring, achieving lower operational cost than Full Context and all memory-based baselines across both benchmarks with low query latency. On LoCoMo and LongMemEval, SAG-Mem achieves overall scores of 83.08 and 80.20, respectively, the highest among the evaluated methods on both benchmarks. On LongMemEval, it exceeds the strongest compared baseline by 7.20 points. SAG-Mem-Lite achieves scores of 77.09 and 77.20, respectively. These results support dialogue preservation and evidence-guided retrieval expansion as an effective design for long-term conversational memory.",
     "authors": [
       "Yuchao Wu",
@@ -76,6 +151,186 @@
     "title": "On Agentic Manipulation Policies",
     "updated": "2026-11-24",
     "url": "http://arxiv.org/abs/2611.09892v4",
+    "venue": ""
+  },
+  {
+    "abstract": "In-context learning (ICL) offers robots a way to acquire new skills from a single demonstration without parameter updates. However, existing robotic ICL methods either rely on large-scale pretraining constrained by scarce, costly robot interaction data or require additional annotations yet struggle to generalize across tasks. To bridge this gap, we propose MXI-MemICL, a framework for memory-guided ICL in vision-language-action (VLA) models. By treating demonstrations as retrievable memory, MXI-MemICL enables in-context manipulation without additional large-scale pretraining or specialized annotations. Specifically, a visual-action causal encoder turns actions and their observed effects in demonstrations and completed interactions into reusable memory to guide execution. To retrieve experience suited to upcoming execution, an intention predictor forecasts the next stage's intent and uses it to query memory. The retrieved experience conditions the language backbone through experience-token prefixes and gated cross-attention, guiding action generation with a learned gate that regulates its influence. MXI-MemICL improves success over the baseline by +8.2% and +14.4% on RoboCasa365 and RoboTwin 2.0. Real-robot experiments show a +9.0% gain, with demonstrations adding +5.0% on seen and +16.7% on unseen tasks. The code will be made publicly available.",
+    "authors": [
+      "Jialong Peng",
+      "Shihao Zhou",
+      "Feng Yan",
+      "Wen Xiao",
+      "Haozheng Wang",
+      "Wenqi Ren",
+      "Wenyuan Sheng",
+      "Jian Qiao",
+      "Jiaxu Miao",
+      "Lin Ma",
+      "Chao Yang"
+    ],
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "id": "2611.32564v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `context` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：In-context learning (ICL) offers robots a way to acquire new skills from a single demonstration without parameter updates.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, existing robotic ICL methods either rely on large-scale pretraining constrained by scarce, costly robot interaction data or require additional annotations yet struggle to generalize across tasks.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "retrieval memory"
+    ],
+    "one_liner": "In-context learning (ICL) offers robots a way to acquire new skills from a single demonstration without parameter updates.",
+    "published": "2026-11-24",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：context\n- 检索关键词命中：retrieval memory\n- 来源分类信息：cs.RO, cs.AI",
+    "slug": "mxi-memicl-towards-in-context-robot-manipulation-through-self-retrieved-interact",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2611.32564v1",
+    "tags": [
+      "context"
+    ],
+    "title": "MXI-MemICL: Towards In-Context Robot Manipulation through Self-Retrieved Interaction Memory",
+    "updated": "2026-11-24",
+    "url": "http://arxiv.org/abs/2611.32564v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Large language model (LLM) agents rely on external memory to retain and reuse information across interactions. Existing memory systems treat memory as a record of the past and evaluate it by fidelity to the conversation. However, the value of memory lies in whether it improves the agent's response. A memory system decides what to memorize and what to serve before that response exists, and fidelity checks neither decision against it. Faithful memory can therefore fail to improve the response. We instead view memory as a prediction problem and present \\textbf{\\emph{\\leto{}}}, a memory system for LLM agents that focuses on the utility of memory to the future rather than on its fidelity to the past. Because future requests are unknown, \\emph{\\leto{}} preserves access to conversation details through memory indexing, allowing information to remain available through its sources. When a request arrives, memory replay draws on this index to anticipate and supply the context the agent needs beyond what the request explicitly states. The utility of the served context remains uncertain until the response is generated, motivating a utility loop that uses response outcomes to refine future memory selection. We evaluate our system against six memory systems on five benchmarks across three scenarios. In personalization, it outperforms the strongest compared memory system by 16.3 percentage points in accuracy on PrefEval and by 3.1 points in task completion on PERMA. For long-horizon tasks, it achieves the best overall performance on MemoryArena averaged over five environments with a gain that increases with the chain depth. In long-context understanding, it is on par with retrieval over the raw history while serving fewer context tokens.",
+    "authors": [
+      "Shuguang Chen",
+      "Salman Paracha"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "id": "2611.33005v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, conversation` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Large language model (LLM) agents rely on external memory to retain and reuse information across interactions.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing memory systems treat memory as a record of the past and evaluate it by fidelity to the conversation.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory"
+    ],
+    "one_liner": "Large language model (LLM) agents rely on external memory to retain and reuse information across interactions.",
+    "published": "2026-11-24",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context, conversation, retrieval\n- 检索关键词命中：agent memory\n- 来源分类信息：cs.CL",
+    "slug": "leto-utility-centric-agent-memory",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2611.33005v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "conversation",
+      "retrieval"
+    ],
+    "title": "Leto: Utility-Centric Agent Memory",
+    "updated": "2026-11-24",
+    "url": "http://arxiv.org/abs/2611.33005v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Long-term memory retrieval often returns query-relevant records, but relevance does not guarantee sufficient evidence: answering requires a set of records that jointly satisfies a question's factual, relational, temporal, and state constraints. We study this demand--evidence misalignment through MemPath, an interventional framework that diagnoses failures in memory access, demand coverage, and evidence utilization. Guided by this diagnosis, we propose BiDE-Mem, which represents questions as typed demands and uses them to guide retrieval and evidence organization. We formalize demand--evidence support; in the evaluated compact path, it is conveyed through provenance-aware evidence organization and Reader guidance rather than a separate generative four-state verification step. On LoCoMo, BiDE-Mem improves accuracy by 6.23 percentage points over Mnemis; on LongMemEval, it achieves 91.80%, with strong multi-hop and temporal performance. Supplementary Qwen-Reader evaluations place it first among seven systems on LoCoMo and LongMemEval-S under two judging protocols. Ablations and evidence-level analyses show that demand representation, retrieval, and evidence presentation each contribute to answer quality.",
+    "authors": [
+      "Shiyao Liu",
+      "Yixing Fan",
+      "Ruqing Zhang",
+      "Xiaohui Yan",
+      "Jiafeng Guo",
+      "Xueqi Cheng"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2611.32088v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `long-term, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Long-term memory retrieval often returns query-relevant records, but relevance does not guarantee sufficient evidence: answering requires a set of records that jointly satisfies a question's factual, relational,...\n\n进一步看，论文的核心做法或实验重点可以概括为：We study this demand--evidence misalignment through MemPath, an interventional framework that diagnoses failures in memory access, demand coverage, and evidence utilization.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "long-term memory",
+      "memory retrieval"
+    ],
+    "one_liner": "Long-term memory retrieval often returns query-relevant records, but relevance does not guarantee sufficient evidence: answering requires a set of records that jointly satisfies...",
+    "published": "2026-11-24",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：long-term, retrieval\n- 检索关键词命中：long-term memory, memory retrieval\n- 来源分类信息：cs.AI",
+    "slug": "from-memory-access-to-evidence-sufficiency-diagnosing-and-addressing-demand-evid",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2611.32088v1",
+    "tags": [
+      "long-term",
+      "retrieval"
+    ],
+    "title": "From Memory Access to Evidence Sufficiency: Diagnosing and Addressing Demand--Evidence Misalignment",
+    "updated": "2026-11-24",
+    "url": "http://arxiv.org/abs/2611.32088v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Decentralized multi-agent systems (MAS) enable large language model agents to interact without centralized control. Agents need to adapt to other agents at test time and reuse accumulated experience to refine their interaction strategies for future interactions across cooperative, mixed-motive, and adversarial settings. However, existing approaches often develop adaptation mechanisms for particular interaction settings. This raises a central question: how can decentralized MAS support test-time adaptation and reliable experience reuse across interaction settings? We propose EvolveMAS, a unified self-evolution framework that supports experience-driven adaptation within and across episodes. EvolveMAS pairs each main agent with a dedicated MemoryAgent for test-time memory governance, which maintains isolated Structured Memory outside the main agent's reasoning context. EvolveMAS organizes adaptation into two complementary processes: Within-Episode Online Adaptation and Cross-Episode Knowledge Evolution. During Within-Episode Online Adaptation, MemoryAgent updates episodic, semantic, and working memory from interaction evidence to inform subsequent actions. During Cross-Episode Knowledge Evolution, the main agent uses memory and episode outcomes to distill reusable interaction knowledge comprising partner profiles and interaction strategies for subsequent episodes. Across five benchmarks and six evaluation configurations spanning the three interaction settings, EvolveMAS achieves the highest normalized average score of 77.2 among the compared methods. Ablations show that test-time memory governance and cross-episode knowledge reuse both improve performance. Interaction traces further illustrate how updated memory and distilled knowledge guide subsequent interactions. These results support experience-driven adaptation in decentralized MAS without updating model parameters.",
+    "authors": [
+      "Yalun Wu",
+      "Qiwei Ma",
+      "Bingbing Xu",
+      "Dan Zhang",
+      "Long Bai",
+      "Boyang Wang",
+      "Jiatong Li",
+      "Zheqi Lv",
+      "Shaozu Yuan",
+      "Peiying Wang",
+      "Jiawei Wang",
+      "An Zhang",
+      "Tat-Seng Chua"
+    ],
+    "categories": [
+      "cs.MA",
+      "cs.AI"
+    ],
+    "id": "2610.34450v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, context, episodic` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Decentralized multi-agent systems (MAS) enable large language model agents to interact without centralized control.\n\n进一步看，论文的核心做法或实验重点可以概括为：Agents need to adapt to other agents at test time and reuse accumulated experience to refine their interaction strategies for future interactions across cooperative, mixed-motive, and adversarial settings.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "working memory"
+    ],
+    "one_liner": "Decentralized multi-agent systems (MAS) enable large language model agents to interact without centralized control.",
+    "published": "2026-10-25",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, context, episodic\n- 检索关键词命中：working memory\n- 来源分类信息：cs.MA, cs.AI",
+    "slug": "evolvemas-a-unified-self-evolution-framework-for-decentralized-multi-agent-syste",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2610.34450v2",
+    "tags": [
+      "agent",
+      "benchmark",
+      "context",
+      "episodic"
+    ],
+    "title": "EvolveMAS: A Unified Self-Evolution Framework for Decentralized Multi-Agent Systems",
+    "updated": "2026-11-24",
+    "url": "http://arxiv.org/abs/2610.34450v2",
+    "venue": ""
+  },
+  {
+    "abstract": "Episodic-memory embodied question answering enables agents to answer questions based on previously recorded visual observations of the surrounding scenes. However, growing observation histories, varying observation quality across viewpoints, and limited computational resources make it challenging to construct and maintain compact visual memories while retrieving sufficient evidence for question answering. To address these challenges, we introduce CoverMem, which incorporates three key components: (1) a coverage-constrained memory construction method that selects a compact set of informative full frames satisfying object-quality and representative-scene coverage requirements; (2) a coverage-preserving incremental maintenance strategy that locally reselects only the affected frames to satisfy updated coverage requirements as observations arrive; and (3) a budgeted complementary frame selection method that balances question relevance, additional support for question requirements, and redundancy with selected frames within a fixed budget. Experimental results on three benchmarks covering diverse environments and question types demonstrate that CoverMem improves question-answering performance under limited visual budgets.",
+    "authors": [
+      "Ruijie Ma",
+      "Haoyue Liu",
+      "Mingda Zhang",
+      "Dongxu Yue",
+      "Xiaoying Tang"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2611.32119v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, episodic` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Episodic-memory embodied question answering enables agents to answer questions based on previously recorded visual observations of the surrounding scenes.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, growing observation histories, varying observation quality across viewpoints, and limited computational resources make it challenging to construct and maintain compact visual memories while retrieving...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "episodic memory"
+    ],
+    "one_liner": "Episodic-memory embodied question answering enables agents to answer questions based on previously recorded visual observations of the surrounding scenes.",
+    "published": "2026-11-24",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, episodic\n- 检索关键词命中：episodic memory\n- 来源分类信息：cs.AI",
+    "slug": "covermem-coverage-constrained-visual-memory-for-budgeted-embodied-question-answe",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2611.32119v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "episodic"
+    ],
+    "title": "CoverMem: Coverage-Constrained Visual Memory for Budgeted Embodied Question Answering",
+    "updated": "2026-11-24",
+    "url": "http://arxiv.org/abs/2611.32119v1",
     "venue": ""
   },
   {
@@ -184,6 +439,39 @@
     "title": "Reproducible Social Structure Emerges From Free-Form Interaction Among LLM Agents",
     "updated": "2026-11-23",
     "url": "http://arxiv.org/abs/2611.31543v1",
+    "venue": ""
+  },
+  {
+    "abstract": "In modern agentic and semantic retrieval systems, dense embedding models increasingly determine which intent, tool, document, memory, or image to retrieve for a query. We identify a representational failure mode in this pipeline: a meaningful query can be replaced by visibly nonsemantic content while preserving much of its retrieval outcome, even when the candidate bank is hidden from the optimizer. We introduce Embedding-Optimized Noise (EON), constructed using only the natural query representation, without access to candidate embeddings, relevance labels, rankings, retrieval feedback, or guardrail decisions. Despite this corpus-blind objective, EONs frequently preserve intent and tool routing, benchmark document search, episodic agent-memory retrieval, and cross-modal search across multiple dense embedding families. Crucially, this disconnect carries serious security implications: for malicious queries, an EON can reliably evade input guardrails that block the natural query, executing the intended safety-sensitive retrieval undetected. Through the geometry of the embedding space, we then characterize how query-level representation matching can reliably maintain subsequent retrieval outcomes over candidates unseen during optimization. Together, these findings expose a fundamental phenomenon across dual encoders that we call BLINDSPOT, where systems remain operationally blind to nonsemantic artifacts while reliably retrieving real, consequential content.",
+    "authors": [
+      "Ankit Gupta",
+      "Christoph Adami",
+      "Emily Dolson"
+    ],
+    "categories": [
+      "cs.IR"
+    ],
+    "id": "2611.31344v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, episodic, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：In modern agentic and semantic retrieval systems, dense embedding models increasingly determine which intent, tool, document, memory, or image to retrieve for a query.\n\n进一步看，论文的核心做法或实验重点可以概括为：We identify a representational failure mode in this pipeline: a meaningful query can be replaced by visibly nonsemantic content while preserving much of its retrieval outcome, even when the candidate bank is hidden...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "agent memory",
+      "memory retrieval"
+    ],
+    "one_liner": "In modern agentic and semantic retrieval systems, dense embedding models increasingly determine which intent, tool, document, memory, or image to retrieve for a query.",
+    "published": "2026-11-23",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, episodic, retrieval\n- 检索关键词命中：agent memory, memory retrieval\n- 来源分类信息：cs.IR",
+    "slug": "query-obfuscation-with-embedding-optimized-noise-eon-a-representational-blindspo",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2611.31344v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "episodic",
+      "retrieval"
+    ],
+    "title": "Query Obfuscation with Embedding-Optimized Noise (EON): A Representational Blindspot in Agentic Retrieval",
+    "updated": "2026-11-23",
+    "url": "http://arxiv.org/abs/2611.31344v1",
     "venue": ""
   },
   {
@@ -313,11 +601,14 @@
     "id": "2611.31656v1",
     "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, long-term, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Retrieval-augmented generation (RAG) ranks memory chunks by semantic similarity to the query.\n\n进一步看，论文的核心做法或实验重点可以概括为：Many methods improve on this by learning from feedback on what was retrieved, but each is a separate heuristic, with no account of when it is the right choice.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
     "matched_keywords": [
+      "agent memory",
+      "long-term memory",
+      "memory benchmark",
       "memory benchmarks"
     ],
     "one_liner": "Retrieval-augmented generation (RAG) ranks memory chunks by semantic similarity to the query.",
     "published": "2026-11-23",
-    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, long-term, retrieval\n- 检索关键词命中：memory benchmarks\n- 来源分类信息：cs.AI",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, long-term, retrieval\n- 检索关键词命中：agent memory, long-term memory, memory benchmark, memory benchmarks\n- 来源分类信息：cs.AI",
     "slug": "brag-bayesian-retrieval-augmented-generation",
     "source": "arXiv",
     "source_key": "http://arxiv.org/abs/2611.31656v1",
@@ -330,6 +621,38 @@
     "title": "BRAG: Bayesian Retrieval Augmented Generation",
     "updated": "2026-11-23",
     "url": "http://arxiv.org/abs/2611.31656v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Recent work from Anthropic introduced a new interpretability tool, called the Jacobian lens (J-lens, Gurnee et al. 2026). This method identified linear directions in the hidden states of frontier language models that had properties reminiscent of working-memory-like representations. However, it is unclear what mechanistic properties of such features make them detectable by the J-lens. To this end, we introduce a mathematical theory of the J-lens and show that it preferentially identifies coherent features--directions that act like leading, spatially coherent finite-time Lyapunov modes. Small perturbations along these directions maximally amplify across layers, remain roughly constant across token positions, and are consistent across different contexts. While we are agnostic to whether these properties are necessarily associated with a \"Global Workspace'', the analytically derived preferences of the J-lens nevertheless explain prior empirical results. We validate our analysis on a Bayes filter and a toy transformer, each optimally predicting next tokens emitted from a Hidden Markov Model (HMM). We show how modulating task parameters that change the coherence of features in the Bayes filter correspondingly and predictively modulates the response of the J-lens applied to both model classes. We also introduce a family of J-lenses built to emphasize different temporal scales of information processing in LLMs, which we call $ω$-J-lenses.",
+    "authors": [
+      "Mitchell Ostrow",
+      "Daoyuan Qian",
+      "Toni Liu",
+      "Ila Fiete"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "q-bio.NC"
+    ],
+    "id": "2610.31955v2",
+    "intro": "这篇论文被纳入仓库，是因为它和 `context` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Recent work from Anthropic introduced a new interpretability tool, called the Jacobian lens (J-lens, Gurnee et al.\n\n进一步看，论文的核心做法或实验重点可以概括为：2026).\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "working memory"
+    ],
+    "one_liner": "Recent work from Anthropic introduced a new interpretability tool, called the Jacobian lens (J-lens, Gurnee et al.",
+    "published": "2026-10-22",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：context\n- 检索关键词命中：working memory\n- 来源分类信息：cs.LG, cs.AI, q-bio.NC",
+    "slug": "a-mathematical-theory-of-the-jacobian-lens",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2610.31955v2",
+    "tags": [
+      "context"
+    ],
+    "title": "A Mathematical Theory of the Jacobian Lens",
+    "updated": "2026-11-23",
+    "url": "http://arxiv.org/abs/2610.31955v2",
     "venue": ""
   },
   {

@@ -39,39 +39,39 @@ python3 scripts/update_papers.py --build-only
 
 ## Repository Snapshot
 
-- Total tracked papers: **1746**
+- Total tracked papers: **1755**
 - Last generated: **2026-11-25**
 
 ## Papers by Source
 
 - ACL Anthology: **24**
-- arXiv: **1576**
+- arXiv: **1585**
 - OpenReview: **146**
 
 ## Latest Papers
 
 | Date | Source | Paper | Tags |
 | --- | --- | --- | --- |
+| 2026-11-24 | arXiv | [XMind: Thinking Twice via Cross-Memory Reasoning for LLM-Based Autonomous Driving](content/papers/xmind-thinking-twice-via-cross-memory-reasoning-for-llm-based-autonomous-driving.md) | agent, context, episodic |
+| 2026-11-24 | arXiv | [VMSA: Video Memory Skill Agent for Long Video Understanding](content/papers/vmsa-video-memory-skill-agent-for-long-video-understanding.md) | agent, benchmark, context |
 | 2026-11-24 | arXiv | [SAG-Mem-1.0 Technical Report](content/papers/sag-mem-1-0-technical-report.md) | benchmark, context, conversation |
 | 2026-11-24 | arXiv | [On Agentic Manipulation Policies](content/papers/on-agentic-manipulation-policies.md) | agent, benchmark |
+| 2026-11-24 | arXiv | [MXI-MemICL: Towards In-Context Robot Manipulation through Self-Retrieved Interaction Memory](content/papers/mxi-memicl-towards-in-context-robot-manipulation-through-self-retrieved-interact.md) | context |
+| 2026-11-24 | arXiv | [Leto: Utility-Centric Agent Memory](content/papers/leto-utility-centric-agent-memory.md) | agent, benchmark, context |
+| 2026-11-24 | arXiv | [From Memory Access to Evidence Sufficiency: Diagnosing and Addressing Demand--Evidence Misalignment](content/papers/from-memory-access-to-evidence-sufficiency-diagnosing-and-addressing-demand-evid.md) | long-term, retrieval |
+| 2026-11-24 | arXiv | [EvolveMAS: A Unified Self-Evolution Framework for Decentralized Multi-Agent Systems](content/papers/evolvemas-a-unified-self-evolution-framework-for-decentralized-multi-agent-syste.md) | agent, benchmark, context |
+| 2026-11-24 | arXiv | [CoverMem: Coverage-Constrained Visual Memory for Budgeted Embodied Question Answering](content/papers/covermem-coverage-constrained-visual-memory-for-budgeted-embodied-question-answe.md) | agent, benchmark, episodic |
 | 2026-11-23 | arXiv | [STMemoLLM: A Spatial-Temporal Memory-Augmented LLM for Robust Traffic Forecasting](content/papers/stmemollm-a-spatial-temporal-memory-augmented-llm-for-robust-traffic-forecasting.md) | compression, context, long-term |
 | 2026-11-23 | arXiv | [RoboLiveMem: Is Robot Memory Solved When the World Does Not Wait?](content/papers/robolivemem-is-robot-memory-solved-when-the-world-does-not-wait.md) | agent, benchmark |
 | 2026-11-23 | arXiv | [Reproducible Social Structure Emerges From Free-Form Interaction Among LLM Agents](content/papers/reproducible-social-structure-emerges-from-free-form-interaction-among-llm-agent.md) | agent |
+| 2026-11-23 | arXiv | [Query Obfuscation with Embedding-Optimized Noise (EON): A Representational Blindspot in Agentic Retrieval](content/papers/query-obfuscation-with-embedding-optimized-noise-eon-a-representational-blindspo.md) | agent, benchmark, episodic |
 | 2026-11-23 | arXiv | [On the Recall Scaling Laws in Mamba: A Theoretical and Mechanistic Study via Hashing](content/papers/on-the-recall-scaling-laws-in-mamba-a-theoretical-and-mechanistic-study-via-hash.md) | benchmark, context |
 | 2026-11-23 | arXiv | [MemOVCD: Training-Free Open-Vocabulary Change Detection via Cross-Temporal Memory Reasoning and Global-Local Adaptive Rectification](content/papers/memovcd-training-free-open-vocabulary-change-detection-via-cross-temporal-memory.md) | benchmark |
 | 2026-11-23 | arXiv | [MMMem: Self-Improving Agents with Task-Aware Multimodal Experience Consolidation](content/papers/mmmem-self-improving-agents-with-task-aware-multimodal-experience-consolidation.md) | agent, benchmark, context |
 | 2026-11-23 | arXiv | [BRAG: Bayesian Retrieval Augmented Generation](content/papers/brag-bayesian-retrieval-augmented-generation.md) | agent, benchmark, long-term |
+| 2026-11-23 | arXiv | [A Mathematical Theory of the Jacobian Lens](content/papers/a-mathematical-theory-of-the-jacobian-lens.md) | context |
 | 2026-11-22 | arXiv | [Zarc: Exact Nearest Neighbors over a Billion Vectors in Seconds](content/papers/zarc-exact-nearest-neighbors-over-a-billion-vectors-in-seconds.md) | context |
 | 2026-11-22 | arXiv | [NoeVera: Can Knowledge Guide Experiments and Experiments Refine Knowledge?](content/papers/noevera-can-knowledge-guide-experiments-and-experiments-refine-knowledge.md) | agent, benchmark, retrieval |
-| 2026-11-22 | arXiv | [MERIT: Experience-Guided Memory for Long-Horizon Persona-Specific Persuasive Dialogue](content/papers/merit-experience-guided-memory-for-long-horizon-persona-specific-persuasive-dial.md) | memory-augmented |
-| 2026-11-22 | arXiv | [From Vanishing Gradients to Recursive Self-Improvement: Evaluating the Most Influential Papers in Large Language Model Evolution (1997-2026)](content/papers/from-vanishing-gradients-to-recursive-self-improvement-evaluating-the-most-influ.md) | agent, context, long-term |
-| 2026-11-22 | arXiv | [ContextFact: Remembering Facts in Context for Long-Term Conversational Agents](content/papers/contextfact-remembering-facts-in-context-for-long-term-conversational-agents.md) | agent, context, conversation |
-| 2026-11-21 | arXiv | [The Price of Scale in Proactive Memory Recall](content/papers/the-price-of-scale-in-proactive-memory-recall.md) | benchmark |
-| 2026-11-21 | arXiv | [PAMS: Preconditioned Activation-Metric Subspace for Zeroth-Order LLM Fine-tuning](content/papers/pams-preconditioned-activation-metric-subspace-for-zeroth-order-llm-fine-tuning.md) | persistent memory |
-| 2026-11-21 | arXiv | [MACE: Memory-Augmented Crop-Disease Evaluation of Frozen Vision-Language Models](content/papers/mace-memory-augmented-crop-disease-evaluation-of-frozen-vision-language-models.md) | memory-augmented |
-| 2026-11-21 | arXiv | [Grounding Collaborative Agents in Group Cognition](content/papers/grounding-collaborative-agents-in-group-cognition.md) | agent, benchmark, context |
-| 2026-11-20 | arXiv | [VMSA: Video Memory Skill Agent for Long Video Understanding](content/papers/vmsa-video-memory-skill-agent-for-long-video-understanding.md) | agent, benchmark, context |
-| 2026-11-20 | arXiv | [Taking the PULSE of Enterprise Workflows: Evaluating Persistent Project-State Understanding](content/papers/taking-the-pulse-of-enterprise-workflows-evaluating-persistent-project-state-und.md) | agent, benchmark, context |
 
 ## Suggested GitHub Setup
 
