@@ -1,5 +1,84 @@
 [
   {
+    "abstract": "Long-term conversational memory requires retrieving complementary facts scattered across dialogue sessions, including intermediate evidence with limited similarity to the original question. Existing approaches often rely on derived memory representations or persistent relational structures, introducing construction costs and potentially losing source details. We present SAG-Mem, a conversational memory framework that preserves complete dialogue messages in non-overlapping chunks and discovers complementary evidence through query-time lexical expansion. Memory construction requires no model inference, using a lexical index without LLM-based extraction, summarization, or semantic relation construction. At query time, BM25 retrieves initial candidates, an evidence evaluator identifies useful chunks, and lexical cues from selected evidence guide an additional retrieval round. Retrieved dialogue is further annotated with calendar interpretations of supported relative-time expressions, preserving the original wording and temporal granularity. We also introduce SAG-Mem-Lite, an alternative configuration that replaces evidence scoring with embedding-based candidate scoring, achieving lower operational cost than Full Context and all memory-based baselines across both benchmarks with low query latency. On LoCoMo and LongMemEval, SAG-Mem achieves overall scores of 83.08 and 80.20, respectively, the highest among the evaluated methods on both benchmarks. On LongMemEval, it exceeds the strongest compared baseline by 7.20 points. SAG-Mem-Lite achieves scores of 77.09 and 77.20, respectively. These results support dialogue preservation and evidence-guided retrieval expansion as an effective design for long-term conversational memory.",
+    "authors": [
+      "Yuchao Wu",
+      "XingCheng Liang",
+      "Xuanze Wang",
+      "Yini Huang",
+      "Yue Wu"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.IR"
+    ],
+    "id": "2611.33124v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `benchmark, context, conversation, long-term` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Long-term conversational memory requires retrieving complementary facts scattered across dialogue sessions, including intermediate evidence with limited similarity to the original question.\n\n进一步看，论文的核心做法或实验重点可以概括为：Existing approaches often rely on derived memory representations or persistent relational structures, introducing construction costs and potentially losing source details.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "conversational memory"
+    ],
+    "one_liner": "Long-term conversational memory requires retrieving complementary facts scattered across dialogue sessions, including intermediate evidence with limited similarity to the...",
+    "published": "2026-11-24",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：benchmark, context, conversation, long-term, retrieval\n- 检索关键词命中：conversational memory\n- 来源分类信息：cs.CL, cs.IR",
+    "slug": "sag-mem-1-0-technical-report",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2611.33124v1",
+    "tags": [
+      "benchmark",
+      "context",
+      "conversation",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "SAG-Mem-1.0 Technical Report",
+    "updated": "2026-11-24",
+    "url": "http://arxiv.org/abs/2611.33124v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Recent work on robot manipulation has focused on specialist policies trained on demonstrations. We show that generalist AI models can control manipulators more reliably than specialist policies such as vision-language-action models (VLAs) and world-action models (WAMs). We systematically analyze agentic manipulation policies (AMPs), in which a generalist AI model commands the manipulator directly, adapting its actions as the task unfolds. We present AMP1, a reference harness that runs unchanged across single-arm, bimanual, and mobile manipulation. AMP1 achieves state-of-the-art results on the RoboLab-120 and CaP-Gym benchmarks, with no demonstrations or task-specific training. On RoboLab-120, AMP1 reaches an 85.6% success rate zero-shot, compared to 49.2% and 42.9% for leading VLA and WAM policies. The agent succeeds zero-shot in 104 of 108 real-world trials spanning twelve tasks and three robot instances, reducing failure rates by 20x and 15x relative to strong VLA and WAM baselines. The basic harness supplies no grasping, pushing, or placing skills; the agent develops its own strategies, such as searching for hidden objects, using objects as tools, and calibrating its cameras. With the addition of a persistent memory store, the agent can also learn from experience: an augmented harness with a memory representation that is carried across episodes lowers the failure rate on RoboDojo bimanual manipulation tasks by 4.6x relative to zero-shot deployment. Our analysis suggests that AMPs are substantially more general and robust than specialist manipulation policies, providing a promising foundation for robot manipulation. See https://apple-aiml-research.github.io/ml-amp/ for code and videos.",
+    "authors": [
+      "Omid Bagherieh",
+      "Naveen Nikamanth Appiah Balaji",
+      "Chen Chen",
+      "Jesse T. Gonzalez",
+      "Negin Heravi",
+      "Fahad Islam",
+      "Xueting Li",
+      "Jean-Baptiste Regli",
+      "Kejia Ren",
+      "Petr Švec",
+      "David J. Yoon",
+      "Matthias Müller",
+      "Vladlen Koltun"
+    ],
+    "categories": [
+      "cs.RO",
+      "cs.AI",
+      "cs.CV",
+      "cs.LG"
+    ],
+    "id": "2611.09892v4",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Recent work on robot manipulation has focused on specialist policies trained on demonstrations.\n\n进一步看，论文的核心做法或实验重点可以概括为：We show that generalist AI models can control manipulators more reliably than specialist policies such as vision-language-action models (VLAs) and world-action models (WAMs).\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "persistent memory"
+    ],
+    "one_liner": "Recent work on robot manipulation has focused on specialist policies trained on demonstrations.",
+    "published": "2026-11-06",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark\n- 检索关键词命中：persistent memory\n- 来源分类信息：cs.RO, cs.AI, cs.CV, cs.LG",
+    "slug": "on-agentic-manipulation-policies",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2611.09892v4",
+    "tags": [
+      "agent",
+      "benchmark"
+    ],
+    "title": "On Agentic Manipulation Policies",
+    "updated": "2026-11-24",
+    "url": "http://arxiv.org/abs/2611.09892v4",
+    "venue": ""
+  },
+  {
     "abstract": "Traffic forecasting is essential for intelligent transportation systems. However, traditional deep-learning models often rely heavily on high-quality observations. Recent LLM-based approaches incorporate pretrained knowledge to improve forecasting, but they remain sensitive to input perturbations and struggle to preserve long-term patterns. To address this, we propose STMemoLLM, a spatial-temporal memory-augmented LLM for robust traffic forecasting. STMemoLLM introduces memory prototypes to compress inputs into compact summary tokens while extracting reliable dynamics from residual signals, achieving a balance between stability and variability. Specifically, a memory-enhanced tokenizer encodes prototypes and sensor characteristics into attention biases to guide adaptive compression of correlated sensors into semantic summary tokens. A memory-calibrated router further evaluates contextual deviation, compression deficiency, and prototype alignment to identify reliable residual signals, which complement the summaries while suppressing noise. Extensive experiments on eight real-world datasets show that STMemoLLM achieves state-of-the-art performance. Additional experiments examine point masking, additive Gaussian noise, structured missingness, and limited training data, demonstrating strong robustness. Code is available at https://anonymous.4open.science/r/STMemoLLM-70BF.",
     "authors": [
       "Jian Zhou",
@@ -73,6 +152,38 @@
     "title": "RoboLiveMem: Is Robot Memory Solved When the World Does Not Wait?",
     "updated": "2026-11-23",
     "url": "http://arxiv.org/abs/2611.30047v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Multi-agent LLM simulations are increasingly used as models of social systems, but most published findings are anecdotal, i.e., drawn from a single run. It is therefore unclear which observed phenomena are robust findings of the simulated system itself, and which were random events in one particular run. Here, we introduce a repeatable, goal-free, proactive multi-agent framework in which fifty persona-conditioned agents with persistent memory choose whether, with whom, and how to communicate across three social platforms. The framework supports non-perturbative measurements across temporal snapshots and repetitions. Running the same world ten times from identical initial conditions for a total of 700 hours, we find that most measured network- and agent-level parameters are stable across repetitions. Throughout a run, initially broad communication contracts into sparse sustained dyads in all ten worlds. Importantly, we find that many identical dyads re-form across worlds significantly more often than expected by chance or from agent-specific sociability alone. Static personality similarity largely fails to predict these dyads. Instead, alignment and extremity in the emotions and traits expressed during first contact predict whether a pair later forms a sustained dyad. Additionally, individual agents' emotion and trait expression in their chain-of-thought predicts their future behavior. Finally, swapping either persona prompts or accumulated memories between agents causes recipients to exhibit behavior more similar to donors. Both kinds of transplant move the recipients about 60% of the way toward its donor personality, and state-transplanted agents start behaving similar to their donor agent from their next turn on. Overall, we show that repeated worlds enable robust, statistically-grounded conclusions about emergent within-configuration behavior in agent societies.",
+    "authors": [
+      "Tom Alisch",
+      "Sonia Murthy",
+      "Robert Hawkins",
+      "Felix Sosa",
+      "Core Francisco Park"
+    ],
+    "categories": [
+      "cs.MA",
+      "cs.AI"
+    ],
+    "id": "2611.31543v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Multi-agent LLM simulations are increasingly used as models of social systems, but most published findings are anecdotal, i.e., drawn from a single run.\n\n进一步看，论文的核心做法或实验重点可以概括为：It is therefore unclear which observed phenomena are robust findings of the simulated system itself, and which were random events in one particular run.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "persistent memory"
+    ],
+    "one_liner": "Multi-agent LLM simulations are increasingly used as models of social systems, but most published findings are anecdotal, i.e., drawn from a single run.",
+    "published": "2026-11-23",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent\n- 检索关键词命中：persistent memory\n- 来源分类信息：cs.MA, cs.AI",
+    "slug": "reproducible-social-structure-emerges-from-free-form-interaction-among-llm-agent",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2611.31543v1",
+    "tags": [
+      "agent"
+    ],
+    "title": "Reproducible Social Structure Emerges From Free-Form Interaction Among LLM Agents",
+    "updated": "2026-11-23",
+    "url": "http://arxiv.org/abs/2611.31543v1",
     "venue": ""
   },
   {
@@ -184,6 +295,41 @@
     "title": "MMMem: Self-Improving Agents with Task-Aware Multimodal Experience Consolidation",
     "updated": "2026-11-23",
     "url": "http://arxiv.org/abs/2611.30287v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Retrieval-augmented generation (RAG) ranks memory chunks by semantic similarity to the query. Many methods improve on this by learning from feedback on what was retrieved, but each is a separate heuristic, with no account of when it is the right choice. We introduce BRAG, a generative model of retrieval with use. Each chunk generates the queries it answers from a mixture of von Mises-Fisher components anchored at its original embedding, and each chunk has a latent utility that drifts over time. The model gives the optimal inference, a closed-form filter that stores a few keys and two scalars per chunk and updates them online from the labels of a curator, and it frames retrieval as a control problem. It also shows when existing methods are optimal. Query averaging, Rocchio-style feedback and frequency reranking are special cases with fixed parameters, NUDGE is the case of one key per chunk with no dynamics, and LADER the limit of one key per past query. On two public long-term memory benchmarks, BRAG matches these methods on queries asked before, as expected, because when nothing changes over time the assumptions behind these special cases hold. On harder problems, where a new chunk makes an old one obsolete, BRAG outscores them. They all stay at plain-search level (Recall@5 0.67-0.71), while BRAG retrieves the new chunk 0.80-0.86 of the time. We also ran BRAG on three of NUDGE's seven text benchmarks, and it matches or beats NUDGE on all three. On nine months of a personal agent's memory (20,640 chunks), BRAG raises Recall@5 on held-out queries from 0.75 to 0.98 and Recall@1 from 0.44 to 0.97, with little change on chunks never queried.",
+    "authors": [
+      "Javier Movellan",
+      "Manjot Bilkhu",
+      "Young-mok Jung",
+      "Sirajul Salekin",
+      "Henry Tran",
+      "Zhao Huang"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2611.31656v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, long-term, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Retrieval-augmented generation (RAG) ranks memory chunks by semantic similarity to the query.\n\n进一步看，论文的核心做法或实验重点可以概括为：Many methods improve on this by learning from feedback on what was retrieved, but each is a separate heuristic, with no account of when it is the right choice.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory benchmarks"
+    ],
+    "one_liner": "Retrieval-augmented generation (RAG) ranks memory chunks by semantic similarity to the query.",
+    "published": "2026-11-23",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, long-term, retrieval\n- 检索关键词命中：memory benchmarks\n- 来源分类信息：cs.AI",
+    "slug": "brag-bayesian-retrieval-augmented-generation",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2611.31656v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "long-term",
+      "retrieval"
+    ],
+    "title": "BRAG: Bayesian Retrieval Augmented Generation",
+    "updated": "2026-11-23",
+    "url": "http://arxiv.org/abs/2611.31656v1",
     "venue": ""
   },
   {
