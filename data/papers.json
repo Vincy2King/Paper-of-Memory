@@ -90,11 +90,12 @@
     "id": "2611.34624v1",
     "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：The behavior of memory systems for long-running AI assistants is governed by a harness, which consists of the code, prompts, and configurations for memory construction, maintenance, retrieval, and answer generation.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, optimizing the harness of a memory system remains largely manual, and unrestricted editing alone does not ensure structural improvements.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
     "matched_keywords": [
+      "memory benchmark",
       "memory benchmarks"
     ],
     "one_liner": "The behavior of memory systems for long-running AI assistants is governed by a harness, which consists of the code, prompts, and configurations for memory construction,...",
     "published": "2026-11-25",
-    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, retrieval\n- 检索关键词命中：memory benchmarks\n- 来源分类信息：cs.AI, cs.LG",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, retrieval\n- 检索关键词命中：memory benchmark, memory benchmarks\n- 来源分类信息：cs.AI, cs.LG",
     "slug": "home-toward-practical-harness-optimization-of-memory-systems-for-ai-assistants",
     "source": "arXiv",
     "source_key": "http://arxiv.org/abs/2611.34624v1",

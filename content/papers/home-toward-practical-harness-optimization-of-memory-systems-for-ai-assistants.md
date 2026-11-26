@@ -27,7 +27,7 @@ The behavior of memory systems for long-running AI assistants is governed by a h
 ## Why It Was Included
 - 来源：arXiv
 - 高亮主题命中：agent, benchmark, retrieval
-- 检索关键词命中：memory benchmarks
+- 检索关键词命中：memory benchmark, memory benchmarks
 - 来源分类信息：cs.AI, cs.LG
 
 ## Abstract Snapshot
