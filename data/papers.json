@@ -1,5 +1,149 @@
 [
   {
+    "abstract": "Multi-session hiring assistants must infer evolving recruiter preferences and decision patterns across projects and time. We introduce Open Knowledge Format (OKF)-indexed episodic memory to organize interactions and retrieve related events through their lineage. We also introduce Procedure Memory, which learns reusable decision procedures from these episodes through prompted reflection or reinforcement learning. We compare these approaches with no memory, full-history context, and conversation search, and evaluate Jev-class models for index navigation and GPT-5.6 Luna as a lower-cost alternative to GPT-5.4. In our evaluation, OKF-indexed retrieval achieves low-priority preference F1 scores of 0.93-0.95 at medium and high preference overlap between hiring projects. It significantly outperforms full-history context and conversation search in both settings, and no memory at high overlap, while using 69% fewer context tokens than full history. Procedure Memory reduces conversational turns by up to 39% relative to no memory. Qualitative and long-horizon evaluations provide evidence of temporal reasoning, with RL-learned procedures achieving 60% on both correct abstention and exact-field identification. Jev-class models improve conversational efficiency but more frequently miss temporally relevant evidence, highlighting the importance of evidence selection. On PersonaMem-v2, Procedure Memory with OKF retrieval achieves 50.2% accuracy versus 48.6% for full-history context and 29.0% for no memory, using 90.5% fewer reader input tokens than full history. GPT-5.6 Luna performs comparably to GPT-5.4 at lower cost. These findings highlight the value of structured episodic memory and learned decision procedures for efficient personalization and temporal reasoning.",
+    "authors": [
+      "Praveen Kumar Bodigutla",
+      "Yizhi Zhang",
+      "Sai Vivek Kanaparthy",
+      "Arup De"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.HC",
+      "cs.IR"
+    ],
+    "id": "2611.34576v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `context, conversation, episodic, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Multi-session hiring assistants must infer evolving recruiter preferences and decision patterns across projects and time.\n\n进一步看，论文的核心做法或实验重点可以概括为：We introduce Open Knowledge Format (OKF)-indexed episodic memory to organize interactions and retrieve related events through their lineage.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "episodic memory"
+    ],
+    "one_liner": "Multi-session hiring assistants must infer evolving recruiter preferences and decision patterns across projects and time.",
+    "published": "2026-11-25",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：context, conversation, episodic, retrieval\n- 检索关键词命中：episodic memory\n- 来源分类信息：cs.AI, cs.HC, cs.IR",
+    "slug": "procedure-inference-as-memory-learning-recruiter-decision-procedures-from-okf-st",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2611.34576v1",
+    "tags": [
+      "context",
+      "conversation",
+      "episodic",
+      "retrieval"
+    ],
+    "title": "Procedure Inference as Memory: Learning Recruiter Decision Procedures from OKF-Structured Episodes in Multi-Session Hiring Assistants",
+    "updated": "2026-11-25",
+    "url": "http://arxiv.org/abs/2611.34576v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Recent advances in large language models (LLMs) and LLM based agents have expanded the capabilities of AI glasses, enabling egocentric visual question answering, memory retrieval, and proactive assistance. These applications involve diverse inputs, including speech, images, and video, and range from simple device control to complex visual reasoning, posing challenges for efficient computation and communication. While video centric capabilities have received considerable attention, simple text based and device executable tasks remain underexplored despite their prevalence in daily interactions. Efficiently supporting diverse workloads within a unified assistant remains an open challenge. We propose JOVE ICE, an intent guided cloud, edge, and device collaborative framework that routes requests among AI glasses, a paired smartphone, and cloud servers according to user intent. JOVE ICE integrates hierarchical intent classification with dynamic subagent orchestration to select efficient execution paths and flexibly incorporate new applications through specialized subagents. Analysis of real world AI glasses requests reveals that simple device control tasks account for over 30% of interactions, which JOVE ICE handles directly on device to avoid unnecessary cloud computation and costs. Evaluations on three public benchmarks demonstrate that JOVE ICE reduces time to first token by approximately 13% and token usage by over 11% compared with conventional device and cloud architectures, while maintaining task quality. These results demonstrate the potential of intent guided collaboration to improve the efficiency and scalability of AI glasses.",
+    "authors": [
+      "Yuyang Jin",
+      "Bingfeng Pi",
+      "Jiamei Sun",
+      "Wei Jin",
+      "Dongyang Wang",
+      "Yunpeng Li",
+      "Yan Bai",
+      "Lei Zuo"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "id": "2611.33735v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Recent advances in large language models (LLMs) and LLM based agents have expanded the capabilities of AI glasses, enabling egocentric visual question answering, memory retrieval, and proactive assistance.\n\n进一步看，论文的核心做法或实验重点可以概括为：These applications involve diverse inputs, including speech, images, and video, and range from simple device control to complex visual reasoning, posing challenges for efficient computation and communication.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory retrieval"
+    ],
+    "one_liner": "Recent advances in large language models (LLMs) and LLM based agents have expanded the capabilities of AI glasses, enabling egocentric visual question answering, memory...",
+    "published": "2026-11-25",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, retrieval\n- 检索关键词命中：memory retrieval\n- 来源分类信息：cs.AI",
+    "slug": "jove-ice-intent-guided-cloud-edge-device-collaboration-for-ai-glasses",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2611.33735v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "retrieval"
+    ],
+    "title": "JOVE ICE: Intent Guided Cloud Edge Device Collaboration for AI Glasses",
+    "updated": "2026-11-25",
+    "url": "http://arxiv.org/abs/2611.33735v1",
+    "venue": ""
+  },
+  {
+    "abstract": "The behavior of memory systems for long-running AI assistants is governed by a harness, which consists of the code, prompts, and configurations for memory construction, maintenance, retrieval, and answer generation. However, optimizing the harness of a memory system remains largely manual, and unrestricted editing alone does not ensure structural improvements. In this paper, we introduce HoMe, an evaluation-driven framework that iteratively evaluates candidate harnesses and derives each new candidate from any previously evaluated harness by editing any part of it. HoMe combines session-level memory versioning with execution traces to identify shared failure mechanisms across cases and localize them to the responsible sessions and harness components. It encourages early structural exploration through candidate gating and reduces evaluation cost through smoke tests, adaptive sampling, and the reuse of constructed memory. We validate HoMe with the open-source memory system ReMe on two large-scale long-horizon memory benchmarks, LongMemEval-S and BEAM. With six formal candidate evaluations per benchmark, after a full initial evaluation, HoMe discovers harnesses that improve end-task performance over the originally strong harness while consuming far fewer query-time tokens. The code is available at https://github.com/agentscope-ai/ReMe.",
+    "authors": [
+      "Yifei Xu",
+      "Li Yu",
+      "Zhaoyang Liu",
+      "Ce Wang",
+      "Sen Huang",
+      "Yanyan Shen",
+      "Yun Lin",
+      "Linpeng Huang",
+      "Hong Mei"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.LG"
+    ],
+    "id": "2611.34624v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `agent, benchmark, retrieval` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：The behavior of memory systems for long-running AI assistants is governed by a harness, which consists of the code, prompts, and configurations for memory construction, maintenance, retrieval, and answer generation.\n\n进一步看，论文的核心做法或实验重点可以概括为：However, optimizing the harness of a memory system remains largely manual, and unrestricted editing alone does not ensure structural improvements.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "memory benchmarks"
+    ],
+    "one_liner": "The behavior of memory systems for long-running AI assistants is governed by a harness, which consists of the code, prompts, and configurations for memory construction,...",
+    "published": "2026-11-25",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：agent, benchmark, retrieval\n- 检索关键词命中：memory benchmarks\n- 来源分类信息：cs.AI, cs.LG",
+    "slug": "home-toward-practical-harness-optimization-of-memory-systems-for-ai-assistants",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2611.34624v1",
+    "tags": [
+      "agent",
+      "benchmark",
+      "retrieval"
+    ],
+    "title": "HoMe: Toward Practical Harness Optimization of Memory Systems for AI Assistants",
+    "updated": "2026-11-25",
+    "url": "http://arxiv.org/abs/2611.34624v1",
+    "venue": ""
+  },
+  {
+    "abstract": "Long sequence reconstruction must correct accumulated drift while preserving locally consistent geometry. In robotics and autonomous driving, embodied acquisition provides recurring platform- environment geometry and repeated observations of scene structure and platform motion. We present Embodied-VGGT, which exploits these cues to establish reliable local relationships and selectively preserve them during global refinement. Memory-Augmented Grounded Chunks (MAGC) builds on Scal3R's global context memory and uses relative scale references derived from predicted ground geometry to regularize test-time memory updates, encouraging cross-chunk consistency while limiting changes to reliable local geometry. Superpoint Alignment (SA) and Cross-Loop Optimization (CL) jointly address the robust establishment and preservation of geometric relationships. SA balances ground and non-ground evidence across spatial regions to estimate inter-chunk translation. CL uses geometric and motion consistency across interleaved windows to select coherent chunk groups, each receiving a shared Sim(3) correction that preserves its internal relative transformations during global optimization. Experiments on five public driving benchmarks demonstrate consistent and substantial improvements in long sequence reconstruction. On KITTI Odometry, Embodied-VGGT achieves a mean absolute trajectory error of 7.30 m and a Chamfer distance of 2.67 m, reducing these errors by 46.8% and 23.3% compared with the state-of-the-art baseline under same evaluation protocol. To facilitate reproducibility, we released our code: https://github.com/Ang-Sheep/Embodied-VGGT.",
+    "authors": [
+      "Yiheng Han",
+      "Ziang Chen",
+      "Zhuyong Fu",
+      "Yiqing Yin",
+      "Nan Ma"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "id": "2611.33964v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `benchmark, context` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：Long sequence reconstruction must correct accumulated drift while preserving locally consistent geometry.\n\n进一步看，论文的核心做法或实验重点可以概括为：In robotics and autonomous driving, embodied acquisition provides recurring platform- environment geometry and repeated observations of scene structure and platform motion.\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "context memory",
+      "memory augmented",
+      "memory-augmented"
+    ],
+    "one_liner": "Long sequence reconstruction must correct accumulated drift while preserving locally consistent geometry.",
+    "published": "2026-11-25",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：benchmark, context\n- 检索关键词命中：context memory, memory augmented, memory-augmented\n- 来源分类信息：cs.CV, cs.AI",
+    "slug": "embodied-vggt-preserving-reliable-local-geometry-for-long-sequence-reconstructio",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2611.33964v1",
+    "tags": [
+      "benchmark",
+      "context"
+    ],
+    "title": "Embodied-VGGT: Preserving Reliable Local Geometry for Long-Sequence Reconstruction",
+    "updated": "2026-11-25",
+    "url": "http://arxiv.org/abs/2611.33964v1",
+    "venue": ""
+  },
+  {
     "abstract": "Memory-augmented large language model (LLM) driving agents can reuse past experience, yet previously learned corrections often fail to transfer when traffic conditions change. A key limitation is that existing memories mainly record observed outcomes, providing little evidence about alternative actions. We introduce XMind, a training-free framework that enables LLM-based driving to \"Think Twice\" through cross-memory reasoning. XMind integrates working memory of recent traffic states with episodic memory of critical risk events. The agent first makes an initial decision from the current context and then cross-checks it against retrieved historical experience. If a conflict arises, it makes a second decision guided by the retrieved evidence. To construct reliable episodic memory, XMind evaluates alternative actions through counterfactual rollouts under perturbed traffic conditions and stores the verified outcomes as structured risk capsules. These capsules are retrieved by jointly matching spatial risk patterns and scenario semantics. Across closed-loop highway simulations, XMind achieves success rates of 83.3-93.3%, exceeding the strong baseline by 6.6 percentage points on average. Evaluation on K-Risk further demonstrates lower decision risk on unseen real-world high-risk interactions. Ablation studies confirm the complementary benefits of working memory, risk-text retrieval, and counterfactual verification. Code is available at https://github.com/xiangxiangliuwo/XMind",
     "authors": [
       "Zuyi Guo",
@@ -151,6 +295,40 @@
     "title": "On Agentic Manipulation Policies",
     "updated": "2026-11-24",
     "url": "http://arxiv.org/abs/2611.09892v4",
+    "venue": ""
+  },
+  {
+    "abstract": "We investigate whether explicit memory can serve as the organizing principle of a general-purpose visual backbone. Inspired by the interaction between working and long-term memory in human cognition, we introduce DuSAM (Dual-Store Associative Memory), a hierarchical memory-native visual backbone coupling image-local working memory (WM) with a fixed-capacity persistent semantic memory (PM). WM organizes local visual evidence into compact, spatially anchored states that are updated and transported across stages, then read back to refine dense features. PM consolidates semantic evidence from training images and annotated regions into prototypes, whose retrieved content enriches the same working states. With these memory operations in place of self-attention or state-space blocks, DuSAM achieves competitive performance relative to representative, similarly sized backbones on ImageNet-1K classification, ADE20K semantic segmentation, and COCO object detection and instance segmentation. Ablations show contributions from both stores, with PM particularly benefiting class groups with fewer annotated training pixels. At $2048\\times2048$, the complete DuSAM-based UPerNet segmentor achieves $2.36\\times$ the throughput of the evaluated DeiT-S/16 counterpart while using $59.5\\%$ less GPU memory, and $1.24\\times$ the throughput of the linear-complexity VMamba-T. Memory analyses reveal spatially selective WM access and semantic associations between retrieved prototypes and training regions. Class-targeted removal and restoration further demonstrate that category-specific experience can be replenished through state updates without changing network parameters. These results establish explicit memory as a viable organizing principle for visual backbones and provide a foundation for jointly designing contextual computation and addressable semantic memory.",
+    "authors": [
+      "Ruizhi Wang",
+      "Xiangtao Wang",
+      "Bayar Menzat",
+      "Jianfeng Wang",
+      "Thomas Lukasiewicz"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.LG"
+    ],
+    "id": "2611.33475v1",
+    "intro": "这篇论文被纳入仓库，是因为它和 `context, long-term` 这些主题直接相关。\n\n它当前来自 `arXiv`。\n\n从摘要来看，作者主要关注的是：We investigate whether explicit memory can serve as the organizing principle of a general-purpose visual backbone.\n\n进一步看，论文的核心做法或实验重点可以概括为：Inspired by the interaction between working and long-term memory in human cognition, we introduce DuSAM (Dual-Store Associative Memory), a hierarchical memory-native visual backbone coupling image-local working memory...\n\n如果你在持续跟踪 LLM、Agent 或 benchmark 中的记忆能力，这篇工作值得优先阅读。",
+    "matched_keywords": [
+      "long-term memory",
+      "working memory"
+    ],
+    "one_liner": "We investigate whether explicit memory can serve as the organizing principle of a general-purpose visual backbone.",
+    "published": "2026-11-24",
+    "relevance": "- 来源：arXiv\n- 高亮主题命中：context, long-term\n- 检索关键词命中：long-term memory, working memory\n- 来源分类信息：cs.CV, cs.LG",
+    "slug": "memory-as-the-backbone-a-dual-store-associative-memory-architecture-for-visual-r",
+    "source": "arXiv",
+    "source_key": "http://arxiv.org/abs/2611.33475v1",
+    "tags": [
+      "context",
+      "long-term"
+    ],
+    "title": "Memory as the Backbone: A Dual-Store Associative Memory Architecture for Visual Recognition",
+    "updated": "2026-11-24",
+    "url": "http://arxiv.org/abs/2611.33475v1",
     "venue": ""
   },
   {
